@@ -5,12 +5,21 @@ using System.Text;
 
 namespace MarsApp
 {
+    /// <summary>
+    /// Temps martien (temps d'une journée : 24h40)
+    /// </summary>
     public class TimeMartien
     {
         private int heure;
         private int minute;
         private int seconde;
 
+        /// <summary>
+        /// Constructeur paramétré
+        /// </summary>
+        /// <param name="heure">Heures</param>
+        /// <param name="minute">Minutes</param>
+        /// <param name="seconde">Secondes</param>
         public TimeMartien(int heure, int minute, int seconde)
         {
             this.heure = heure;
@@ -18,8 +27,20 @@ namespace MarsApp
             this.seconde = seconde;
         }
 
+        /// <summary>
+        /// Constructeur paramétré
+        /// </summary>
+        /// <param name="heure">Heures</param>
+        /// <param name="minute">Minutes</param>
         public TimeMartien(int heure, int minute) : this(heure, minute, 0) { }
+        /// <summary>
+        /// Constructeur paramétré
+        /// </summary>
+        /// <param name="heure">Heures</param>
         public TimeMartien(int heure) : this(heure, 0, 0) { }
+        /// <summary>
+        /// Constructeur par défaut
+        /// </summary>
         public TimeMartien() : this(0, 0, 0) { }
 
         #region AJOUT DE TEMPS
@@ -170,6 +191,10 @@ namespace MarsApp
         }
         #endregion
 
+        /// <summary>
+        /// Texte affiché pour la classe
+        /// </summary>
+        /// <returns>h:m:s</returns>
         public override string ToString()
         {
             return heure + ":" + minute + ":" + seconde;

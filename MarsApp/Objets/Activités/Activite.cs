@@ -11,6 +11,7 @@ namespace MarsApp
     public class Activite
     {
         private IEtat etat;
+        private TimeMartien timeMartien;
 
         /// <summary>
         /// Constructeur par défaut
@@ -18,6 +19,17 @@ namespace MarsApp
         public Activite()
         {
             etat = new ActiviteFuture();
+            timeMartien = new TimeMartien();
+        }
+
+        /// <summary>
+        /// Constructeur paramétré
+        /// </summary>
+        /// <param name="tm">Un TimeMartien</param>
+        public Activite(TimeMartien tm)
+        {
+            etat = new ActiviteFuture();
+            this.timeMartien = tm;
         }
 
         /// <summary>

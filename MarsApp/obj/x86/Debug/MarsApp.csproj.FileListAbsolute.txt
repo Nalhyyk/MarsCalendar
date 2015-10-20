@@ -12,3 +12,11 @@ C:\Users\amonge.ENSC\Downloads\Mars-2015-10-12\Mars\MarsApp\bin\Debug\MarsApp.pd
 C:\Users\amonge.ENSC\Downloads\Mars-2015-10-12\Mars\MarsApp\obj\x86\Debug\MarsApp.csprojResolveAssemblyReference.cache
 C:\Users\amonge.ENSC\Downloads\Mars-2015-10-12\Mars\MarsApp\obj\x86\Debug\MarsApp.Properties.Resources.resources
 C:\Users\amonge.ENSC\Downloads\Mars-2015-10-12\Mars\MarsApp\obj\x86\Debug\MarsApp.csproj.GenerateResource.Cache
+H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.exe
+H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.pdb
+H:\MarsCalendar\MarsApp\bin\Debug\MarsApp.exe
+H:\MarsCalendar\MarsApp\bin\Debug\MarsApp.pdb
+H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.csprojResolveAssemblyReference.cache
+H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.App.resources
+H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.Properties.Resources.resources
+H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.csproj.GenerateResource.Cache
