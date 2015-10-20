@@ -1,0 +1,14 @@
+C:\Users\amonge\Downloads\Mars-2015-10-12\Mars\MarsApp\obj\x86\Debug\MarsApp.csprojResolveAssemblyReference.cache
+C:\Users\amonge\Downloads\Mars-2015-10-12\Mars\MarsApp\obj\x86\Debug\MarsApp.Properties.Resources.resources
+C:\Users\amonge\Downloads\Mars-2015-10-12\Mars\MarsApp\obj\x86\Debug\MarsApp.csproj.GenerateResource.Cache
+C:\Users\amonge\Downloads\Mars-2015-10-12\Mars\MarsApp\bin\Debug\MarsApp.exe
+C:\Users\amonge\Downloads\Mars-2015-10-12\Mars\MarsApp\bin\Debug\MarsApp.pdb
+C:\Users\amonge\Downloads\Mars-2015-10-12\Mars\MarsApp\obj\x86\Debug\MarsApp.exe
+C:\Users\amonge\Downloads\Mars-2015-10-12\Mars\MarsApp\obj\x86\Debug\MarsApp.pdb
+C:\Users\amonge.ENSC\Downloads\Mars-2015-10-12\Mars\MarsApp\obj\x86\Debug\MarsApp.exe
+C:\Users\amonge.ENSC\Downloads\Mars-2015-10-12\Mars\MarsApp\obj\x86\Debug\MarsApp.pdb
+C:\Users\amonge.ENSC\Downloads\Mars-2015-10-12\Mars\MarsApp\bin\Debug\MarsApp.exe
+C:\Users\amonge.ENSC\Downloads\Mars-2015-10-12\Mars\MarsApp\bin\Debug\MarsApp.pdb
+C:\Users\amonge.ENSC\Downloads\Mars-2015-10-12\Mars\MarsApp\obj\x86\Debug\MarsApp.csprojResolveAssemblyReference.cache
+C:\Users\amonge.ENSC\Downloads\Mars-2015-10-12\Mars\MarsApp\obj\x86\Debug\MarsApp.Properties.Resources.resources
+C:\Users\amonge.ENSC\Downloads\Mars-2015-10-12\Mars\MarsApp\obj\x86\Debug\MarsApp.csproj.GenerateResource.Cache
