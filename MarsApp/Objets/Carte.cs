@@ -11,6 +11,7 @@ namespace MarsApp.Objets
     public class Carte
     {
         private List<Activite> activitesRealisees;
+        private Lieu habitat;
 
         /// <summary>
         /// Constructeur par défaut
@@ -18,6 +19,7 @@ namespace MarsApp.Objets
         public Carte()
         {
             activitesRealisees = new List<Activite>();
+            habitat = new Lieu(0, 0);
         }
     }
 }

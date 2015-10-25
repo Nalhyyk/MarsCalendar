@@ -11,6 +11,7 @@ namespace MarsApp
     public class Activite
     {
         private String nom;
+        private String description;
         private IEtat etat;
         private TimeMartien heureDebut;
         private TimeMartien heureFin;
@@ -20,17 +21,19 @@ namespace MarsApp
         /// Constructeur paramétré
         /// </summary>
         /// <param name="nom">Nom de l'Activite</param>
-        public Activite(String nom) : this(nom, new TimeMartien(), new TimeMartien()) {}
+        public Activite(String nom) : this(nom, "", new TimeMartien(), new TimeMartien()) {}
 
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
         /// <param name="nom">Nom de l'Activite</param>
+        /// <param name="description">Description de l'Activite</param>
         /// <param name="deb">Date de début de l'Activite</param>
         /// <param name="fin">Date de fin de l'Activite</param>
-        public Activite(String nom, TimeMartien deb, TimeMartien fin)
+        public Activite(String nom, String description, TimeMartien deb, TimeMartien fin)
         {
             this.nom = nom;
+            this.description = description;
             etat = new ActiviteFuture();
             this.heureDebut = deb;
             this.heureFin = fin;
@@ -67,6 +70,21 @@ namespace MarsApp
         public void activiteAVenir()
         {
             etat = new ActiviteFuture();
+        }
+
+        /// <summary>
+        /// Modifie la description de l'Activite. Elle doit faire 400 caractères maximum
+        /// </summary>
+        /// <param name="description">Description de l'Activite</param>
+        /// <returns>false si la description fait plus de 400 caractères, true sinon</returns>
+        public bool setDescription(String description)
+        {
+            if (description.Length <= Constantes.LIMITE_DESCRIPTION_ACTIVITE)
+                this.description = description;
+            else
+                return false;
+
+            return true;
         }
     }
 }
