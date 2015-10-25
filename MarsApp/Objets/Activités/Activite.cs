@@ -12,15 +12,12 @@ namespace MarsApp
     {
         private IEtat etat;
         private TimeMartien timeMartien;
+        private List<Astronaute> listeAstronautes;
 
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
-        public Activite()
-        {
-            etat = new ActiviteFuture();
-            timeMartien = new TimeMartien();
-        }
+        public Activite() : this(new TimeMartien()) {}
 
         /// <summary>
         /// Constructeur paramétré
@@ -30,6 +27,7 @@ namespace MarsApp
         {
             etat = new ActiviteFuture();
             this.timeMartien = tm;
+            listeAstronautes = new List<Astronaute>();
         }
 
         /// <summary>
