@@ -25,6 +25,7 @@ namespace MarsApp
             this.heure = heure;
             this.minute = minute;
             this.seconde = seconde;
+            ajouterTemps(0, 0, 0); // On met le TimeMartien sous une forme 'convenable'
         }
 
         /// <summary>

@@ -409,20 +409,20 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="3a9ca49a-c55b-4d55-8ca6-20353fa0fae3"
+            Id="bf57c5ba-02ce-4eb4-a1fe-cb81abc4f460"
             isDerived="false"
             sourceEndRoleName="Journée"
-            targetEndRoleName="Domaine"
+            targetEndRoleName="Activite"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="6c08066b-bc8e-4675-8bd8-a8274e5eba5d"
-              LastKnownName="Domaine"
+              Id="1ba0ea0b-dcdc-4b15-a28f-cc3074dda23a"
+              LastKnownName="Activite"
               LastKnownLocation="Mars.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="35135580-f4fa-43bb-b6e7-7f97a146f422"
+                  Id="b4e65c33-28ea-4382-bee0-97663ac75b31"
                   name="Journée"
                   isLeaf="false"
                   isStatic="false"
@@ -435,8 +435,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="85b0c1ba-82f0-4ee8-88e4-c92563bef290"
-                  name="Domaine"
+                  Id="1766bdab-0944-4ab3-be83-68389027a992"
+                  name="Activite"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -618,49 +618,7 @@
         name="Domaine"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="49f8b79e-246a-4e21-b83e-879e123061c6"
-            isDerived="false"
-            sourceEndRoleName="Domaine"
-            targetEndRoleName="Activite"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="1ba0ea0b-dcdc-4b15-a28f-cc3074dda23a"
-              LastKnownName="Activite"
-              LastKnownLocation="Mars.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="6e5b412c-4fcd-4a53-b9aa-18ce32c039fd"
-                  name="Domaine"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="61ec8049-1674-4f0e-aed9-af04e2abbb29"
-                  name="Activite"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-      </class>
+        isActiveClass="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class

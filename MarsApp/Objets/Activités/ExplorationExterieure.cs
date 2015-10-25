@@ -13,10 +13,13 @@ namespace MarsApp
         private ITransport transport;
 
         /// <summary>
-        /// Constructeur par défaut
+        /// Constructeur paramétré
         /// </summary>
-        public ExplorationExterieure() 
-            : base()
+        /// <param name="nom">Nom de l'Activite</param>
+        /// <param name="debut">Date de début de l'Activite</param>
+        /// <param name="fin">Date de fin de l'Activite</param>
+        public ExplorationExterieure(String nom, TimeMartien debut, TimeMartien fin) 
+            : base(nom, debut, fin)
         {
             transport = new Scaphandre();
         }

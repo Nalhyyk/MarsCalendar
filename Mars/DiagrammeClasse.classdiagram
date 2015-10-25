@@ -67,21 +67,21 @@
       <class Id="49280a4e-29ed-4ba8-9491-509f6b098f74" name="Journée" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f10cc0bd-e5df-4c37-bdcd-66b644afb281" />
         <targetEnds>
-          <association Id="8445c6f1-e161-458f-a684-99ee58e168ec" isDerived="false" sourceEndRoleName="Journée" targetEndRoleName="Domaine" isLeaf="false" isAbstract="false">
-            <classMoniker Id="ecbd7f2a-2776-4c5f-aede-86d35488aac3" LastKnownName="Domaine" />
+          <association Id="a26ac15e-aeb1-455d-8518-98c6e2eafe4f" isDerived="false" sourceEndRoleName="Journée" targetEndRoleName="Activite" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f1e0cea0-5630-4019-ac47-3a0c2fc775a6" LastKnownName="Activite" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="aeff24be-423e-4931-bb96-3dff9d6568d3" name="Journée" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="35135580-f4fa-43bb-b6e7-7f97a146f422" />
+                <memberEnd Id="12a11b78-891a-45f6-8d67-1dd0616c5536" name="Journée" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b4e65c33-28ea-4382-bee0-97663ac75b31" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="38dfd682-9326-4283-b454-593260b42549" name="Domaine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="85b0c1ba-82f0-4ee8-88e4-c92563bef290" />
+                <memberEnd Id="eacd92ba-da25-443e-9c3c-82f8f1c997a6" name="Activite" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1766bdab-0944-4ab3-be83-68389027a992" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="3a9ca49a-c55b-4d55-8ca6-20353fa0fae3" />
+            <elementDefinition Id="bf57c5ba-02ce-4eb4-a1fe-cb81abc4f460" />
           </association>
         </targetEnds>
       </class>
@@ -150,24 +150,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="ecbd7f2a-2776-4c5f-aede-86d35488aac3" name="Domaine" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6c08066b-bc8e-4675-8bd8-a8274e5eba5d" />
-        <targetEnds>
-          <association Id="31b9d784-aca7-46e8-9fc6-435137a2c48c" isDerived="false" sourceEndRoleName="Domaine" targetEndRoleName="Activite" isLeaf="false" isAbstract="false">
-            <classMoniker Id="f1e0cea0-5630-4019-ac47-3a0c2fc775a6" LastKnownName="Activite" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="6d53d497-cf62-4ece-a34c-4e583a89aa3f" name="Domaine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="6e5b412c-4fcd-4a53-b9aa-18ce32c039fd" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="2b5f44e4-0ee5-4695-98a6-599acf3d2643" name="Activite" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <elementDefinition Id="61ec8049-1674-4f0e-aed9-af04e2abbb29" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="49f8b79e-246a-4e21-b83e-879e123061c6" />
-          </association>
-        </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>

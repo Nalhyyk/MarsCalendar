@@ -20,3 +20,11 @@ H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.csprojResolveAssemblyReference.cac
 H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.App.resources
 H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.Properties.Resources.resources
 H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.csproj.GenerateResource.Cache
+C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.exe
+C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.pdb
+C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.csprojResolveAssemblyReference.cache
+C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.App.resources
+C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.Properties.Resources.resources
+C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.csproj.GenerateResource.Cache
+C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\bin\Debug\MarsApp.exe
+C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\bin\Debug\MarsApp.pdb

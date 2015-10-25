@@ -10,32 +10,40 @@ namespace MarsApp
     /// </summary>
     public class Domaine
     {
-        private List<Activite> listeActivites;
+        private String nom;
+        private List<String> listeActivites;
 
         /// <summary>
-        /// Constructeur par défaut
+        /// Constructeur paramétré
         /// </summary>
-        public Domaine()
+        public Domaine(String nom)
         {
-            listeActivites = new List<Activite>();
+            this.nom = nom;
+            listeActivites = new List<String>();
         }
 
         /// <summary>
-        /// Ajouter une Activite
+        /// Ajouter une activité
         /// </summary>
-        /// <param name="a">Une Activite</param>
-        public void ajouterActivite(Activite a)
+        /// <param name="a">Un nom d'activité</param>
+        public void ajouterActivite(String a)
         {
             listeActivites.Add(a);
         }
 
         /// <summary>
-        /// Supprimer une Activite
+        /// Supprimer une activité
         /// </summary>
-        /// <param name="a">Une Activite</param>
-        public void supprimerActivite(Activite a)
+        /// <param name="a">Un nom d'activité</param>
+        public void supprimerActivite(String a)
         {
             listeActivites.Remove(a);
         }
+
+        /// <summary>
+        /// Renvoie le nom de toutes les activités du Domaine
+        /// </summary>
+        /// <returns>Le nom de toutes les activités du Domaine</String></returns>
+        public List<String> getActivites() { return listeActivites; }
     }
 }

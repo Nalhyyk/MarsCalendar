@@ -10,23 +10,30 @@ namespace MarsApp
     /// </summary>
     public class Activite
     {
+        private String nom;
         private IEtat etat;
-        private TimeMartien timeMartien;
+        private TimeMartien heureDebut;
+        private TimeMartien heureFin;
         private List<Astronaute> listeAstronautes;
-
-        /// <summary>
-        /// Constructeur par défaut
-        /// </summary>
-        public Activite() : this(new TimeMartien()) {}
 
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
-        /// <param name="tm">Un TimeMartien</param>
-        public Activite(TimeMartien tm)
+        /// <param name="nom">Nom de l'Activite</param>
+        public Activite(String nom) : this(nom, new TimeMartien(), new TimeMartien()) {}
+
+        /// <summary>
+        /// Constructeur paramétré
+        /// </summary>
+        /// <param name="nom">Nom de l'Activite</param>
+        /// <param name="deb">Date de début de l'Activite</param>
+        /// <param name="fin">Date de fin de l'Activite</param>
+        public Activite(String nom, TimeMartien deb, TimeMartien fin)
         {
+            this.nom = nom;
             etat = new ActiviteFuture();
-            this.timeMartien = tm;
+            this.heureDebut = deb;
+            this.heureFin = fin;
             listeAstronautes = new List<Astronaute>();
         }
 

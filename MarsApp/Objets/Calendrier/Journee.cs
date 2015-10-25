@@ -11,7 +11,7 @@ namespace MarsApp
     public class Journee
     {
         private int numero;
-        private List<Domaine> listeDomaineActivites;
+        private List<Activite> listeActivites;
 
         /// <summary>
         /// Constructeur par défaut
@@ -25,25 +25,33 @@ namespace MarsApp
         public Journee(int numero)
         {
             this.numero = numero;
-            listeDomaineActivites = new List<Domaine>();
+            listeActivites = new List<Activite>();
+            listeActivites.Add(new Activite("Sleeping", new TimeMartien(0), new TimeMartien(7)));
+            listeActivites.Add(new Activite("Eating", new TimeMartien(7), new TimeMartien(8)));
+            listeActivites.Add(new Activite("Private", new TimeMartien(8), new TimeMartien(12)));
+            listeActivites.Add(new Activite("Eating", new TimeMartien(12), new TimeMartien(14)));
+            listeActivites.Add(new Activite("Private", new TimeMartien(14), new TimeMartien(19)));
+            listeActivites.Add(new Activite("Eating", new TimeMartien(19), new TimeMartien(21)));
+            listeActivites.Add(new Activite("Private", new TimeMartien(21), new TimeMartien(23)));
+            listeActivites.Add(new Activite("Sleeping", new TimeMartien(23), new TimeMartien(24, 40)));
         }
 
         /// <summary>
-        /// Ajouter un Domaine d'Activite
+        /// Ajouter une Activite
         /// </summary>
-        /// <param name="d">Un Domaine</param>
-        public void ajouterDomaine(Domaine d)
+        /// <param name="a">Une Activite</param>
+        public void ajouterActivite(Activite a)
         {
-            listeDomaineActivites.Add(d);
+            listeActivites.Add(a);
         }
 
         /// <summary>
-        /// Supprimer un Domaine d'Activite
+        /// Supprimer une Activite
         /// </summary>
-        /// <param name="d">Un Domaine</param>
-        public void supprimerDomaine(Domaine d)
+        /// <param name="a">Une Activite</param>
+        public void supprimerActivite(Activite d)
         {
-            listeDomaineActivites.Remove(d);
+            listeActivites.Remove(d);
         }
     }
 }
