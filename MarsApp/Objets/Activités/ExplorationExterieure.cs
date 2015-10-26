@@ -16,10 +16,12 @@ namespace MarsApp
         /// Constructeur paramétré
         /// </summary>
         /// <param name="nom">Nom de l'Activite</param>
+        /// <param name="description">Description de l'Activite</param>
         /// <param name="debut">Date de début de l'Activite</param>
         /// <param name="fin">Date de fin de l'Activite</param>
-        public ExplorationExterieure(String nom, TimeMartien debut, TimeMartien fin) 
-            : base(nom, debut, fin)
+        /// <param name="lieu">Lieu de l'Activite</param>
+        public ExplorationExterieure(String nom, String description, TimeMartien debut, TimeMartien fin, Lieu lieu) 
+            : base(nom, description, debut, fin, lieu)
         {
             transport = new Scaphandre();
         }

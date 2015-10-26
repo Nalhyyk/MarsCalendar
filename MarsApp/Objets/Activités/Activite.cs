@@ -16,12 +16,13 @@ namespace MarsApp
         private TimeMartien heureDebut;
         private TimeMartien heureFin;
         private List<Astronaute> listeAstronautes;
+        private Lieu lieu;
 
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
         /// <param name="nom">Nom de l'Activite</param>
-        public Activite(String nom) : this(nom, "", new TimeMartien(), new TimeMartien()) {}
+        public Activite(String nom) : this(nom, "", new TimeMartien(), new TimeMartien(), new Lieu(0, 0)) {}
 
         /// <summary>
         /// Constructeur paramétré
@@ -30,7 +31,8 @@ namespace MarsApp
         /// <param name="description">Description de l'Activite</param>
         /// <param name="deb">Date de début de l'Activite</param>
         /// <param name="fin">Date de fin de l'Activite</param>
-        public Activite(String nom, String description, TimeMartien deb, TimeMartien fin)
+        /// <param name="lieu">Lieu de l'Activite</param>
+        public Activite(String nom, String description, TimeMartien deb, TimeMartien fin, Lieu lieu)
         {
             this.nom = nom;
             this.description = description;
@@ -38,6 +40,7 @@ namespace MarsApp
             this.heureDebut = deb;
             this.heureFin = fin;
             listeAstronautes = new List<Astronaute>();
+            this.lieu = lieu;
         }
 
         /// <summary>

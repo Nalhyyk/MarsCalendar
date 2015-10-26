@@ -60,6 +60,7 @@
     <Compile Include="Objets\Activités\Etat\IEtat.cs" />
     <Compile Include="Objets\Activités\ExperienceExterieure.cs" />
     <Compile Include="Objets\Activités\ExplorationExterieure.cs" />
+    <Compile Include="Objets\Activités\Lieu.cs" />
     <Compile Include="Objets\Activités\Transport\ITransport.cs" />
     <Compile Include="Objets\Activités\Transport\Scaphandre.cs" />
     <Compile Include="Objets\Activités\Transport\Vehicule.cs" />
