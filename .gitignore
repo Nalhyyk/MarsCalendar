@@ -1,6 +1,7 @@
 !.gitignore
-\MarsApp\obj\*
-\MarsApp\bin\*
-\Mars\obj\*
-\Mars\bin\*
-\Backup\*
+MarsApp/obj/
+MarsApp/bin/
+Mars/obj/
+Mars/bin/
+Backup/
+*.exe
