@@ -1,5 +1,6 @@
-\MarsApp\obj\
-\MarsApp\bin\
-\Mars\obj\
-\Mars\bin\
-\Backup\
+!.gitignore
+\MarsApp\obj\*
+\MarsApp\bin\*
+\Mars\obj\*
+\Mars\bin\*
+\Backup\*
