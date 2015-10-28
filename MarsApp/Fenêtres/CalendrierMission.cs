@@ -46,9 +46,10 @@ namespace MarsApp
 
             journeesMission[1].journeePassee();
             journeesMission[2].journeeEnCours();
-            journeesMission[189].setJourneeExterieure(true);
+            journeesMission[10].setJourneeExterieure(true);
 
             changerPeriode(periode);
+            verificationChangementPeriode();
         }
 
         public void changerPeriode(int periode)
@@ -75,19 +76,36 @@ namespace MarsApp
             else if (periode > 10)
                 periode = 10;
 
-            if (periode == 1)
-                precedent.Enabled = false;
-            else
-                precedent.Enabled = true;
-
-            if (periode == 10)
-                suivant.Enabled = false;
-            else
-                suivant.Enabled = true;
+            verificationChangementPeriode();
 
             changerPeriode(periode);
 
             periodeNum.Text = "Période " + periode;
+        }
+
+        public void verificationChangementPeriode()
+        {
+            if (periode == 1)
+            {
+                precedent.Enabled = false;
+                precedent.Visible = false;
+            }
+            else
+            {
+                precedent.Enabled = true;
+                precedent.Visible = true;
+            }
+
+            if (periode == 10)
+            {
+                suivant.Enabled = false;
+                suivant.Visible = false;
+            }
+            else
+            {
+                suivant.Enabled = true;
+                suivant.Visible = true;
+            }
         }
     }
 }
