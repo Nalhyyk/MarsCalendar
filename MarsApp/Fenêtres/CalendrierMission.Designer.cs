@@ -32,261 +32,262 @@
             this.periodeNum = new System.Windows.Forms.Label();
             this.jour50 = new System.Windows.Forms.Panel();
             this.num50 = new System.Windows.Forms.Label();
+            this.astro50 = new System.Windows.Forms.PictureBox();
             this.jour30 = new System.Windows.Forms.Panel();
             this.num30 = new System.Windows.Forms.Label();
+            this.astro30 = new System.Windows.Forms.PictureBox();
             this.jour40 = new System.Windows.Forms.Panel();
             this.num40 = new System.Windows.Forms.Label();
+            this.astro40 = new System.Windows.Forms.PictureBox();
             this.jour29 = new System.Windows.Forms.Panel();
             this.num29 = new System.Windows.Forms.Label();
+            this.astro29 = new System.Windows.Forms.PictureBox();
             this.jour49 = new System.Windows.Forms.Panel();
             this.num49 = new System.Windows.Forms.Label();
+            this.astro49 = new System.Windows.Forms.PictureBox();
             this.jour28 = new System.Windows.Forms.Panel();
             this.num28 = new System.Windows.Forms.Label();
+            this.astro28 = new System.Windows.Forms.PictureBox();
             this.jour39 = new System.Windows.Forms.Panel();
             this.num39 = new System.Windows.Forms.Label();
+            this.astro39 = new System.Windows.Forms.PictureBox();
             this.jour27 = new System.Windows.Forms.Panel();
             this.num27 = new System.Windows.Forms.Label();
+            this.astro27 = new System.Windows.Forms.PictureBox();
             this.jour48 = new System.Windows.Forms.Panel();
             this.num48 = new System.Windows.Forms.Label();
+            this.astro48 = new System.Windows.Forms.PictureBox();
             this.jour26 = new System.Windows.Forms.Panel();
             this.num26 = new System.Windows.Forms.Label();
+            this.astro26 = new System.Windows.Forms.PictureBox();
             this.jour38 = new System.Windows.Forms.Panel();
             this.num38 = new System.Windows.Forms.Label();
+            this.astro38 = new System.Windows.Forms.PictureBox();
             this.jour23 = new System.Windows.Forms.Panel();
             this.num23 = new System.Windows.Forms.Label();
+            this.astro23 = new System.Windows.Forms.PictureBox();
             this.jour47 = new System.Windows.Forms.Panel();
             this.num47 = new System.Windows.Forms.Label();
+            this.astro47 = new System.Windows.Forms.PictureBox();
             this.jour25 = new System.Windows.Forms.Panel();
             this.num25 = new System.Windows.Forms.Label();
+            this.astro25 = new System.Windows.Forms.PictureBox();
             this.jour37 = new System.Windows.Forms.Panel();
             this.num37 = new System.Windows.Forms.Label();
+            this.astro37 = new System.Windows.Forms.PictureBox();
             this.jour22 = new System.Windows.Forms.Panel();
             this.num22 = new System.Windows.Forms.Label();
+            this.astro22 = new System.Windows.Forms.PictureBox();
             this.jour46 = new System.Windows.Forms.Panel();
             this.num46 = new System.Windows.Forms.Label();
+            this.astro46 = new System.Windows.Forms.PictureBox();
             this.jour24 = new System.Windows.Forms.Panel();
             this.num24 = new System.Windows.Forms.Label();
+            this.astro24 = new System.Windows.Forms.PictureBox();
             this.jour36 = new System.Windows.Forms.Panel();
             this.num36 = new System.Windows.Forms.Label();
+            this.astro36 = new System.Windows.Forms.PictureBox();
             this.jour21 = new System.Windows.Forms.Panel();
             this.num21 = new System.Windows.Forms.Label();
+            this.astro21 = new System.Windows.Forms.PictureBox();
             this.jour43 = new System.Windows.Forms.Panel();
             this.num43 = new System.Windows.Forms.Label();
+            this.astro43 = new System.Windows.Forms.PictureBox();
             this.jour20 = new System.Windows.Forms.Panel();
             this.num20 = new System.Windows.Forms.Label();
+            this.astro20 = new System.Windows.Forms.PictureBox();
             this.jour33 = new System.Windows.Forms.Panel();
             this.num33 = new System.Windows.Forms.Label();
+            this.astro33 = new System.Windows.Forms.PictureBox();
             this.jour10 = new System.Windows.Forms.Panel();
             this.num10 = new System.Windows.Forms.Label();
+            this.astro10 = new System.Windows.Forms.PictureBox();
             this.jour45 = new System.Windows.Forms.Panel();
             this.num45 = new System.Windows.Forms.Label();
+            this.astro45 = new System.Windows.Forms.PictureBox();
             this.jour19 = new System.Windows.Forms.Panel();
             this.num19 = new System.Windows.Forms.Label();
+            this.astro19 = new System.Windows.Forms.PictureBox();
             this.jour35 = new System.Windows.Forms.Panel();
             this.num35 = new System.Windows.Forms.Label();
+            this.astro35 = new System.Windows.Forms.PictureBox();
             this.jour9 = new System.Windows.Forms.Panel();
             this.num9 = new System.Windows.Forms.Label();
+            this.astro9 = new System.Windows.Forms.PictureBox();
             this.jour42 = new System.Windows.Forms.Panel();
             this.num42 = new System.Windows.Forms.Label();
+            this.astro42 = new System.Windows.Forms.PictureBox();
             this.jour18 = new System.Windows.Forms.Panel();
             this.num18 = new System.Windows.Forms.Label();
+            this.astro18 = new System.Windows.Forms.PictureBox();
             this.jour44 = new System.Windows.Forms.Panel();
             this.num44 = new System.Windows.Forms.Label();
+            this.astro44 = new System.Windows.Forms.PictureBox();
             this.jour8 = new System.Windows.Forms.Panel();
             this.num8 = new System.Windows.Forms.Label();
+            this.astro8 = new System.Windows.Forms.PictureBox();
             this.jour32 = new System.Windows.Forms.Panel();
             this.num32 = new System.Windows.Forms.Label();
+            this.astro32 = new System.Windows.Forms.PictureBox();
             this.jour41 = new System.Windows.Forms.Panel();
             this.num41 = new System.Windows.Forms.Label();
+            this.astro41 = new System.Windows.Forms.PictureBox();
             this.jour17 = new System.Windows.Forms.Panel();
             this.num17 = new System.Windows.Forms.Label();
+            this.astro17 = new System.Windows.Forms.PictureBox();
             this.jour34 = new System.Windows.Forms.Panel();
             this.num34 = new System.Windows.Forms.Label();
+            this.astro34 = new System.Windows.Forms.PictureBox();
             this.jour7 = new System.Windows.Forms.Panel();
             this.num7 = new System.Windows.Forms.Label();
+            this.astro7 = new System.Windows.Forms.PictureBox();
             this.jour31 = new System.Windows.Forms.Panel();
             this.num31 = new System.Windows.Forms.Label();
+            this.astro31 = new System.Windows.Forms.PictureBox();
             this.jour16 = new System.Windows.Forms.Panel();
             this.num16 = new System.Windows.Forms.Label();
+            this.astro16 = new System.Windows.Forms.PictureBox();
             this.jour6 = new System.Windows.Forms.Panel();
             this.num6 = new System.Windows.Forms.Label();
+            this.astro6 = new System.Windows.Forms.PictureBox();
             this.jour13 = new System.Windows.Forms.Panel();
             this.num13 = new System.Windows.Forms.Label();
+            this.astro13 = new System.Windows.Forms.PictureBox();
             this.jour3 = new System.Windows.Forms.Panel();
             this.num3 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.astro3 = new System.Windows.Forms.PictureBox();
             this.jour15 = new System.Windows.Forms.Panel();
             this.num15 = new System.Windows.Forms.Label();
+            this.astro15 = new System.Windows.Forms.PictureBox();
             this.jour5 = new System.Windows.Forms.Panel();
             this.num5 = new System.Windows.Forms.Label();
+            this.astro5 = new System.Windows.Forms.PictureBox();
             this.jour12 = new System.Windows.Forms.Panel();
             this.num12 = new System.Windows.Forms.Label();
+            this.astro12 = new System.Windows.Forms.PictureBox();
             this.jour14 = new System.Windows.Forms.Panel();
             this.num14 = new System.Windows.Forms.Label();
+            this.astro14 = new System.Windows.Forms.PictureBox();
             this.jour2 = new System.Windows.Forms.Panel();
             this.num2 = new System.Windows.Forms.Label();
+            this.astro2 = new System.Windows.Forms.PictureBox();
             this.jour11 = new System.Windows.Forms.Panel();
             this.num11 = new System.Windows.Forms.Label();
+            this.astro11 = new System.Windows.Forms.PictureBox();
             this.jour4 = new System.Windows.Forms.Panel();
             this.num4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.astro4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.jour1 = new System.Windows.Forms.Panel();
             this.num1 = new System.Windows.Forms.Label();
+            this.astro1 = new System.Windows.Forms.PictureBox();
             this.suivant = new System.Windows.Forms.PictureBox();
             this.precedent = new System.Windows.Forms.PictureBox();
-            this.astro50 = new System.Windows.Forms.PictureBox();
-            this.astro30 = new System.Windows.Forms.PictureBox();
-            this.astro40 = new System.Windows.Forms.PictureBox();
-            this.astro29 = new System.Windows.Forms.PictureBox();
-            this.astro49 = new System.Windows.Forms.PictureBox();
-            this.astro28 = new System.Windows.Forms.PictureBox();
-            this.astro39 = new System.Windows.Forms.PictureBox();
-            this.astro27 = new System.Windows.Forms.PictureBox();
-            this.astro48 = new System.Windows.Forms.PictureBox();
-            this.astro26 = new System.Windows.Forms.PictureBox();
-            this.astro38 = new System.Windows.Forms.PictureBox();
-            this.astro23 = new System.Windows.Forms.PictureBox();
-            this.astro47 = new System.Windows.Forms.PictureBox();
-            this.astro25 = new System.Windows.Forms.PictureBox();
-            this.astro37 = new System.Windows.Forms.PictureBox();
-            this.astro22 = new System.Windows.Forms.PictureBox();
-            this.astro46 = new System.Windows.Forms.PictureBox();
-            this.astro24 = new System.Windows.Forms.PictureBox();
-            this.astro36 = new System.Windows.Forms.PictureBox();
-            this.astro21 = new System.Windows.Forms.PictureBox();
-            this.astro43 = new System.Windows.Forms.PictureBox();
-            this.astro20 = new System.Windows.Forms.PictureBox();
-            this.astro33 = new System.Windows.Forms.PictureBox();
-            this.astro10 = new System.Windows.Forms.PictureBox();
-            this.astro45 = new System.Windows.Forms.PictureBox();
-            this.astro19 = new System.Windows.Forms.PictureBox();
-            this.astro35 = new System.Windows.Forms.PictureBox();
-            this.astro9 = new System.Windows.Forms.PictureBox();
-            this.astro42 = new System.Windows.Forms.PictureBox();
-            this.astro18 = new System.Windows.Forms.PictureBox();
-            this.astro44 = new System.Windows.Forms.PictureBox();
-            this.astro8 = new System.Windows.Forms.PictureBox();
-            this.astro32 = new System.Windows.Forms.PictureBox();
-            this.astro41 = new System.Windows.Forms.PictureBox();
-            this.astro17 = new System.Windows.Forms.PictureBox();
-            this.astro34 = new System.Windows.Forms.PictureBox();
-            this.astro7 = new System.Windows.Forms.PictureBox();
-            this.astro31 = new System.Windows.Forms.PictureBox();
-            this.astro16 = new System.Windows.Forms.PictureBox();
-            this.astro6 = new System.Windows.Forms.PictureBox();
-            this.astro13 = new System.Windows.Forms.PictureBox();
-            this.astro3 = new System.Windows.Forms.PictureBox();
-            this.astro15 = new System.Windows.Forms.PictureBox();
-            this.astro5 = new System.Windows.Forms.PictureBox();
-            this.astro12 = new System.Windows.Forms.PictureBox();
-            this.astro14 = new System.Windows.Forms.PictureBox();
-            this.astro2 = new System.Windows.Forms.PictureBox();
-            this.astro11 = new System.Windows.Forms.PictureBox();
-            this.astro4 = new System.Windows.Forms.PictureBox();
-            this.astro1 = new System.Windows.Forms.PictureBox();
+            this.numJourneeLabel = new System.Windows.Forms.Label();
             this.jour50.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro50)).BeginInit();
             this.jour30.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro30)).BeginInit();
             this.jour40.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro40)).BeginInit();
             this.jour29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro29)).BeginInit();
             this.jour49.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro49)).BeginInit();
             this.jour28.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro28)).BeginInit();
             this.jour39.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro39)).BeginInit();
             this.jour27.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro27)).BeginInit();
             this.jour48.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro48)).BeginInit();
             this.jour26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro26)).BeginInit();
             this.jour38.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro38)).BeginInit();
             this.jour23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro23)).BeginInit();
             this.jour47.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro47)).BeginInit();
             this.jour25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro25)).BeginInit();
             this.jour37.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro37)).BeginInit();
             this.jour22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro22)).BeginInit();
             this.jour46.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro46)).BeginInit();
             this.jour24.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro24)).BeginInit();
             this.jour36.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro36)).BeginInit();
             this.jour21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro21)).BeginInit();
             this.jour43.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro43)).BeginInit();
             this.jour20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro20)).BeginInit();
             this.jour33.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro33)).BeginInit();
             this.jour10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro10)).BeginInit();
             this.jour45.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro45)).BeginInit();
             this.jour19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro19)).BeginInit();
             this.jour35.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro35)).BeginInit();
             this.jour9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro9)).BeginInit();
             this.jour42.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro42)).BeginInit();
             this.jour18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro18)).BeginInit();
             this.jour44.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro44)).BeginInit();
             this.jour8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro8)).BeginInit();
             this.jour32.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro32)).BeginInit();
             this.jour41.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro41)).BeginInit();
             this.jour17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro17)).BeginInit();
             this.jour34.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro34)).BeginInit();
             this.jour7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro7)).BeginInit();
             this.jour31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro31)).BeginInit();
             this.jour16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro16)).BeginInit();
             this.jour6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro6)).BeginInit();
             this.jour13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro13)).BeginInit();
             this.jour3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro3)).BeginInit();
             this.jour15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro15)).BeginInit();
             this.jour5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro5)).BeginInit();
             this.jour12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro12)).BeginInit();
             this.jour14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro14)).BeginInit();
             this.jour2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro2)).BeginInit();
             this.jour11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro11)).BeginInit();
             this.jour4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro4)).BeginInit();
             this.jour1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.suivant)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.precedent)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro50)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro49)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro48)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro46)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro1)).BeginInit();
             this.SuspendLayout();
             // 
             // periodeNum
@@ -312,6 +313,7 @@
             this.jour50.Name = "jour50";
             this.jour50.Size = new System.Drawing.Size(70, 70);
             this.jour50.TabIndex = 76;
+            this.jour50.Click += new System.EventHandler(this.jour_click);
             // 
             // num50
             // 
@@ -326,6 +328,17 @@
             this.num50.TabIndex = 109;
             this.num50.Text = "50";
             this.num50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num50.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro50
+            // 
+            this.astro50.Image = ((System.Drawing.Image)(resources.GetObject("astro50.Image")));
+            this.astro50.Location = new System.Drawing.Point(3, 3);
+            this.astro50.Name = "astro50";
+            this.astro50.Size = new System.Drawing.Size(24, 24);
+            this.astro50.TabIndex = 0;
+            this.astro50.TabStop = false;
+            this.astro50.Click += new System.EventHandler(this.jour_click);
             // 
             // jour30
             // 
@@ -335,6 +348,7 @@
             this.jour30.Name = "jour30";
             this.jour30.Size = new System.Drawing.Size(70, 70);
             this.jour30.TabIndex = 66;
+            this.jour30.Click += new System.EventHandler(this.jour_click);
             // 
             // num30
             // 
@@ -349,6 +363,17 @@
             this.num30.TabIndex = 89;
             this.num30.Text = "30";
             this.num30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num30.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro30
+            // 
+            this.astro30.Image = ((System.Drawing.Image)(resources.GetObject("astro30.Image")));
+            this.astro30.Location = new System.Drawing.Point(3, 3);
+            this.astro30.Name = "astro30";
+            this.astro30.Size = new System.Drawing.Size(24, 24);
+            this.astro30.TabIndex = 0;
+            this.astro30.TabStop = false;
+            this.astro30.Click += new System.EventHandler(this.jour_click);
             // 
             // jour40
             // 
@@ -358,6 +383,7 @@
             this.jour40.Name = "jour40";
             this.jour40.Size = new System.Drawing.Size(70, 70);
             this.jour40.TabIndex = 66;
+            this.jour40.Click += new System.EventHandler(this.jour_click);
             // 
             // num40
             // 
@@ -372,6 +398,17 @@
             this.num40.TabIndex = 99;
             this.num40.Text = "40";
             this.num40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num40.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro40
+            // 
+            this.astro40.Image = ((System.Drawing.Image)(resources.GetObject("astro40.Image")));
+            this.astro40.Location = new System.Drawing.Point(3, 3);
+            this.astro40.Name = "astro40";
+            this.astro40.Size = new System.Drawing.Size(24, 24);
+            this.astro40.TabIndex = 0;
+            this.astro40.TabStop = false;
+            this.astro40.Click += new System.EventHandler(this.jour_click);
             // 
             // jour29
             // 
@@ -381,6 +418,7 @@
             this.jour29.Name = "jour29";
             this.jour29.Size = new System.Drawing.Size(70, 70);
             this.jour29.TabIndex = 65;
+            this.jour29.Click += new System.EventHandler(this.jour_click);
             // 
             // num29
             // 
@@ -395,6 +433,17 @@
             this.num29.TabIndex = 88;
             this.num29.Text = "29";
             this.num29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num29.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro29
+            // 
+            this.astro29.Image = ((System.Drawing.Image)(resources.GetObject("astro29.Image")));
+            this.astro29.Location = new System.Drawing.Point(3, 3);
+            this.astro29.Name = "astro29";
+            this.astro29.Size = new System.Drawing.Size(24, 24);
+            this.astro29.TabIndex = 0;
+            this.astro29.TabStop = false;
+            this.astro29.Click += new System.EventHandler(this.jour_click);
             // 
             // jour49
             // 
@@ -404,6 +453,7 @@
             this.jour49.Name = "jour49";
             this.jour49.Size = new System.Drawing.Size(70, 70);
             this.jour49.TabIndex = 75;
+            this.jour49.Click += new System.EventHandler(this.jour_click);
             // 
             // num49
             // 
@@ -418,6 +468,17 @@
             this.num49.TabIndex = 108;
             this.num49.Text = "49";
             this.num49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num49.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro49
+            // 
+            this.astro49.Image = ((System.Drawing.Image)(resources.GetObject("astro49.Image")));
+            this.astro49.Location = new System.Drawing.Point(3, 3);
+            this.astro49.Name = "astro49";
+            this.astro49.Size = new System.Drawing.Size(24, 24);
+            this.astro49.TabIndex = 0;
+            this.astro49.TabStop = false;
+            this.astro49.Click += new System.EventHandler(this.jour_click);
             // 
             // jour28
             // 
@@ -427,6 +488,7 @@
             this.jour28.Name = "jour28";
             this.jour28.Size = new System.Drawing.Size(70, 70);
             this.jour28.TabIndex = 64;
+            this.jour28.Click += new System.EventHandler(this.jour_click);
             // 
             // num28
             // 
@@ -441,6 +503,17 @@
             this.num28.TabIndex = 87;
             this.num28.Text = "28";
             this.num28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num28.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro28
+            // 
+            this.astro28.Image = ((System.Drawing.Image)(resources.GetObject("astro28.Image")));
+            this.astro28.Location = new System.Drawing.Point(3, 3);
+            this.astro28.Name = "astro28";
+            this.astro28.Size = new System.Drawing.Size(24, 24);
+            this.astro28.TabIndex = 0;
+            this.astro28.TabStop = false;
+            this.astro28.Click += new System.EventHandler(this.jour_click);
             // 
             // jour39
             // 
@@ -450,6 +523,7 @@
             this.jour39.Name = "jour39";
             this.jour39.Size = new System.Drawing.Size(70, 70);
             this.jour39.TabIndex = 65;
+            this.jour39.Click += new System.EventHandler(this.jour_click);
             // 
             // num39
             // 
@@ -464,6 +538,17 @@
             this.num39.TabIndex = 98;
             this.num39.Text = "39";
             this.num39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num39.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro39
+            // 
+            this.astro39.Image = ((System.Drawing.Image)(resources.GetObject("astro39.Image")));
+            this.astro39.Location = new System.Drawing.Point(3, 3);
+            this.astro39.Name = "astro39";
+            this.astro39.Size = new System.Drawing.Size(24, 24);
+            this.astro39.TabIndex = 0;
+            this.astro39.TabStop = false;
+            this.astro39.Click += new System.EventHandler(this.jour_click);
             // 
             // jour27
             // 
@@ -473,6 +558,7 @@
             this.jour27.Name = "jour27";
             this.jour27.Size = new System.Drawing.Size(70, 70);
             this.jour27.TabIndex = 63;
+            this.jour27.Click += new System.EventHandler(this.jour_click);
             // 
             // num27
             // 
@@ -487,6 +573,17 @@
             this.num27.TabIndex = 86;
             this.num27.Text = "27";
             this.num27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num27.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro27
+            // 
+            this.astro27.Image = ((System.Drawing.Image)(resources.GetObject("astro27.Image")));
+            this.astro27.Location = new System.Drawing.Point(3, 3);
+            this.astro27.Name = "astro27";
+            this.astro27.Size = new System.Drawing.Size(24, 24);
+            this.astro27.TabIndex = 0;
+            this.astro27.TabStop = false;
+            this.astro27.Click += new System.EventHandler(this.jour_click);
             // 
             // jour48
             // 
@@ -496,6 +593,7 @@
             this.jour48.Name = "jour48";
             this.jour48.Size = new System.Drawing.Size(70, 70);
             this.jour48.TabIndex = 74;
+            this.jour48.Click += new System.EventHandler(this.jour_click);
             // 
             // num48
             // 
@@ -510,6 +608,17 @@
             this.num48.TabIndex = 107;
             this.num48.Text = "48";
             this.num48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num48.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro48
+            // 
+            this.astro48.Image = ((System.Drawing.Image)(resources.GetObject("astro48.Image")));
+            this.astro48.Location = new System.Drawing.Point(3, 3);
+            this.astro48.Name = "astro48";
+            this.astro48.Size = new System.Drawing.Size(24, 24);
+            this.astro48.TabIndex = 0;
+            this.astro48.TabStop = false;
+            this.astro48.Click += new System.EventHandler(this.jour_click);
             // 
             // jour26
             // 
@@ -519,6 +628,7 @@
             this.jour26.Name = "jour26";
             this.jour26.Size = new System.Drawing.Size(70, 70);
             this.jour26.TabIndex = 62;
+            this.jour26.Click += new System.EventHandler(this.jour_click);
             // 
             // num26
             // 
@@ -533,6 +643,17 @@
             this.num26.TabIndex = 86;
             this.num26.Text = "26";
             this.num26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num26.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro26
+            // 
+            this.astro26.Image = ((System.Drawing.Image)(resources.GetObject("astro26.Image")));
+            this.astro26.Location = new System.Drawing.Point(3, 3);
+            this.astro26.Name = "astro26";
+            this.astro26.Size = new System.Drawing.Size(24, 24);
+            this.astro26.TabIndex = 0;
+            this.astro26.TabStop = false;
+            this.astro26.Click += new System.EventHandler(this.jour_click);
             // 
             // jour38
             // 
@@ -542,6 +663,7 @@
             this.jour38.Name = "jour38";
             this.jour38.Size = new System.Drawing.Size(70, 70);
             this.jour38.TabIndex = 64;
+            this.jour38.Click += new System.EventHandler(this.jour_click);
             // 
             // num38
             // 
@@ -556,6 +678,17 @@
             this.num38.TabIndex = 97;
             this.num38.Text = "38";
             this.num38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num38.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro38
+            // 
+            this.astro38.Image = ((System.Drawing.Image)(resources.GetObject("astro38.Image")));
+            this.astro38.Location = new System.Drawing.Point(3, 3);
+            this.astro38.Name = "astro38";
+            this.astro38.Size = new System.Drawing.Size(24, 24);
+            this.astro38.TabIndex = 0;
+            this.astro38.TabStop = false;
+            this.astro38.Click += new System.EventHandler(this.jour_click);
             // 
             // jour23
             // 
@@ -565,6 +698,7 @@
             this.jour23.Name = "jour23";
             this.jour23.Size = new System.Drawing.Size(70, 70);
             this.jour23.TabIndex = 59;
+            this.jour23.Click += new System.EventHandler(this.jour_click);
             // 
             // num23
             // 
@@ -579,6 +713,17 @@
             this.num23.TabIndex = 82;
             this.num23.Text = "23";
             this.num23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num23.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro23
+            // 
+            this.astro23.Image = ((System.Drawing.Image)(resources.GetObject("astro23.Image")));
+            this.astro23.Location = new System.Drawing.Point(3, 3);
+            this.astro23.Name = "astro23";
+            this.astro23.Size = new System.Drawing.Size(24, 24);
+            this.astro23.TabIndex = 0;
+            this.astro23.TabStop = false;
+            this.astro23.Click += new System.EventHandler(this.jour_click);
             // 
             // jour47
             // 
@@ -588,6 +733,7 @@
             this.jour47.Name = "jour47";
             this.jour47.Size = new System.Drawing.Size(70, 70);
             this.jour47.TabIndex = 73;
+            this.jour47.Click += new System.EventHandler(this.jour_click);
             // 
             // num47
             // 
@@ -602,6 +748,17 @@
             this.num47.TabIndex = 106;
             this.num47.Text = "47";
             this.num47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num47.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro47
+            // 
+            this.astro47.Image = ((System.Drawing.Image)(resources.GetObject("astro47.Image")));
+            this.astro47.Location = new System.Drawing.Point(3, 3);
+            this.astro47.Name = "astro47";
+            this.astro47.Size = new System.Drawing.Size(24, 24);
+            this.astro47.TabIndex = 0;
+            this.astro47.TabStop = false;
+            this.astro47.Click += new System.EventHandler(this.jour_click);
             // 
             // jour25
             // 
@@ -611,6 +768,7 @@
             this.jour25.Name = "jour25";
             this.jour25.Size = new System.Drawing.Size(70, 70);
             this.jour25.TabIndex = 61;
+            this.jour25.Click += new System.EventHandler(this.jour_click);
             // 
             // num25
             // 
@@ -625,6 +783,17 @@
             this.num25.TabIndex = 85;
             this.num25.Text = "25";
             this.num25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num25.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro25
+            // 
+            this.astro25.Image = ((System.Drawing.Image)(resources.GetObject("astro25.Image")));
+            this.astro25.Location = new System.Drawing.Point(3, 3);
+            this.astro25.Name = "astro25";
+            this.astro25.Size = new System.Drawing.Size(24, 24);
+            this.astro25.TabIndex = 0;
+            this.astro25.TabStop = false;
+            this.astro25.Click += new System.EventHandler(this.jour_click);
             // 
             // jour37
             // 
@@ -634,6 +803,7 @@
             this.jour37.Name = "jour37";
             this.jour37.Size = new System.Drawing.Size(70, 70);
             this.jour37.TabIndex = 63;
+            this.jour37.Click += new System.EventHandler(this.jour_click);
             // 
             // num37
             // 
@@ -648,6 +818,17 @@
             this.num37.TabIndex = 96;
             this.num37.Text = "37";
             this.num37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num37.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro37
+            // 
+            this.astro37.Image = ((System.Drawing.Image)(resources.GetObject("astro37.Image")));
+            this.astro37.Location = new System.Drawing.Point(3, 3);
+            this.astro37.Name = "astro37";
+            this.astro37.Size = new System.Drawing.Size(24, 24);
+            this.astro37.TabIndex = 0;
+            this.astro37.TabStop = false;
+            this.astro37.Click += new System.EventHandler(this.jour_click);
             // 
             // jour22
             // 
@@ -657,6 +838,7 @@
             this.jour22.Name = "jour22";
             this.jour22.Size = new System.Drawing.Size(70, 70);
             this.jour22.TabIndex = 58;
+            this.jour22.Click += new System.EventHandler(this.jour_click);
             // 
             // num22
             // 
@@ -671,6 +853,17 @@
             this.num22.TabIndex = 80;
             this.num22.Text = "22";
             this.num22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num22.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro22
+            // 
+            this.astro22.Image = ((System.Drawing.Image)(resources.GetObject("astro22.Image")));
+            this.astro22.Location = new System.Drawing.Point(3, 3);
+            this.astro22.Name = "astro22";
+            this.astro22.Size = new System.Drawing.Size(24, 24);
+            this.astro22.TabIndex = 0;
+            this.astro22.TabStop = false;
+            this.astro22.Click += new System.EventHandler(this.jour_click);
             // 
             // jour46
             // 
@@ -680,6 +873,7 @@
             this.jour46.Name = "jour46";
             this.jour46.Size = new System.Drawing.Size(70, 70);
             this.jour46.TabIndex = 72;
+            this.jour46.Click += new System.EventHandler(this.jour_click);
             // 
             // num46
             // 
@@ -694,6 +888,17 @@
             this.num46.TabIndex = 105;
             this.num46.Text = "46";
             this.num46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num46.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro46
+            // 
+            this.astro46.Image = ((System.Drawing.Image)(resources.GetObject("astro46.Image")));
+            this.astro46.Location = new System.Drawing.Point(3, 3);
+            this.astro46.Name = "astro46";
+            this.astro46.Size = new System.Drawing.Size(24, 24);
+            this.astro46.TabIndex = 0;
+            this.astro46.TabStop = false;
+            this.astro46.Click += new System.EventHandler(this.jour_click);
             // 
             // jour24
             // 
@@ -703,6 +908,7 @@
             this.jour24.Name = "jour24";
             this.jour24.Size = new System.Drawing.Size(70, 70);
             this.jour24.TabIndex = 60;
+            this.jour24.Click += new System.EventHandler(this.jour_click);
             // 
             // num24
             // 
@@ -717,6 +923,17 @@
             this.num24.TabIndex = 84;
             this.num24.Text = "24";
             this.num24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num24.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro24
+            // 
+            this.astro24.Image = ((System.Drawing.Image)(resources.GetObject("astro24.Image")));
+            this.astro24.Location = new System.Drawing.Point(3, 3);
+            this.astro24.Name = "astro24";
+            this.astro24.Size = new System.Drawing.Size(24, 24);
+            this.astro24.TabIndex = 0;
+            this.astro24.TabStop = false;
+            this.astro24.Click += new System.EventHandler(this.jour_click);
             // 
             // jour36
             // 
@@ -726,6 +943,7 @@
             this.jour36.Name = "jour36";
             this.jour36.Size = new System.Drawing.Size(70, 70);
             this.jour36.TabIndex = 62;
+            this.jour36.Click += new System.EventHandler(this.jour_click);
             // 
             // num36
             // 
@@ -740,6 +958,17 @@
             this.num36.TabIndex = 95;
             this.num36.Text = "36";
             this.num36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num36.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro36
+            // 
+            this.astro36.Image = ((System.Drawing.Image)(resources.GetObject("astro36.Image")));
+            this.astro36.Location = new System.Drawing.Point(3, 3);
+            this.astro36.Name = "astro36";
+            this.astro36.Size = new System.Drawing.Size(24, 24);
+            this.astro36.TabIndex = 0;
+            this.astro36.TabStop = false;
+            this.astro36.Click += new System.EventHandler(this.jour_click);
             // 
             // jour21
             // 
@@ -749,6 +978,7 @@
             this.jour21.Name = "jour21";
             this.jour21.Size = new System.Drawing.Size(70, 70);
             this.jour21.TabIndex = 57;
+            this.jour21.Click += new System.EventHandler(this.jour_click);
             // 
             // num21
             // 
@@ -763,6 +993,17 @@
             this.num21.TabIndex = 79;
             this.num21.Text = "21";
             this.num21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num21.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro21
+            // 
+            this.astro21.Image = ((System.Drawing.Image)(resources.GetObject("astro21.Image")));
+            this.astro21.Location = new System.Drawing.Point(3, 3);
+            this.astro21.Name = "astro21";
+            this.astro21.Size = new System.Drawing.Size(24, 24);
+            this.astro21.TabIndex = 0;
+            this.astro21.TabStop = false;
+            this.astro21.Click += new System.EventHandler(this.jour_click);
             // 
             // jour43
             // 
@@ -772,6 +1013,7 @@
             this.jour43.Name = "jour43";
             this.jour43.Size = new System.Drawing.Size(70, 70);
             this.jour43.TabIndex = 69;
+            this.jour43.Click += new System.EventHandler(this.jour_click);
             // 
             // num43
             // 
@@ -786,6 +1028,17 @@
             this.num43.TabIndex = 102;
             this.num43.Text = "43";
             this.num43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num43.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro43
+            // 
+            this.astro43.Image = ((System.Drawing.Image)(resources.GetObject("astro43.Image")));
+            this.astro43.Location = new System.Drawing.Point(3, 3);
+            this.astro43.Name = "astro43";
+            this.astro43.Size = new System.Drawing.Size(24, 24);
+            this.astro43.TabIndex = 0;
+            this.astro43.TabStop = false;
+            this.astro43.Click += new System.EventHandler(this.jour_click);
             // 
             // jour20
             // 
@@ -795,6 +1048,7 @@
             this.jour20.Name = "jour20";
             this.jour20.Size = new System.Drawing.Size(70, 70);
             this.jour20.TabIndex = 56;
+            this.jour20.Click += new System.EventHandler(this.jour_click);
             // 
             // num20
             // 
@@ -809,6 +1063,17 @@
             this.num20.TabIndex = 89;
             this.num20.Text = "20";
             this.num20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num20.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro20
+            // 
+            this.astro20.Image = ((System.Drawing.Image)(resources.GetObject("astro20.Image")));
+            this.astro20.Location = new System.Drawing.Point(3, 3);
+            this.astro20.Name = "astro20";
+            this.astro20.Size = new System.Drawing.Size(24, 24);
+            this.astro20.TabIndex = 0;
+            this.astro20.TabStop = false;
+            this.astro20.Click += new System.EventHandler(this.jour_click);
             // 
             // jour33
             // 
@@ -818,6 +1083,7 @@
             this.jour33.Name = "jour33";
             this.jour33.Size = new System.Drawing.Size(70, 70);
             this.jour33.TabIndex = 59;
+            this.jour33.Click += new System.EventHandler(this.jour_click);
             // 
             // num33
             // 
@@ -832,6 +1098,17 @@
             this.num33.TabIndex = 92;
             this.num33.Text = "33";
             this.num33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num33.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro33
+            // 
+            this.astro33.Image = ((System.Drawing.Image)(resources.GetObject("astro33.Image")));
+            this.astro33.Location = new System.Drawing.Point(3, 3);
+            this.astro33.Name = "astro33";
+            this.astro33.Size = new System.Drawing.Size(24, 24);
+            this.astro33.TabIndex = 0;
+            this.astro33.TabStop = false;
+            this.astro33.Click += new System.EventHandler(this.jour_click);
             // 
             // jour10
             // 
@@ -841,6 +1118,7 @@
             this.jour10.Name = "jour10";
             this.jour10.Size = new System.Drawing.Size(70, 70);
             this.jour10.TabIndex = 46;
+            this.jour10.Click += new System.EventHandler(this.jour_click);
             // 
             // num10
             // 
@@ -855,6 +1133,17 @@
             this.num10.TabIndex = 88;
             this.num10.Text = "10";
             this.num10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num10.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro10
+            // 
+            this.astro10.Image = ((System.Drawing.Image)(resources.GetObject("astro10.Image")));
+            this.astro10.Location = new System.Drawing.Point(3, 3);
+            this.astro10.Name = "astro10";
+            this.astro10.Size = new System.Drawing.Size(24, 24);
+            this.astro10.TabIndex = 0;
+            this.astro10.TabStop = false;
+            this.astro10.Click += new System.EventHandler(this.jour_click);
             // 
             // jour45
             // 
@@ -864,6 +1153,7 @@
             this.jour45.Name = "jour45";
             this.jour45.Size = new System.Drawing.Size(70, 70);
             this.jour45.TabIndex = 71;
+            this.jour45.Click += new System.EventHandler(this.jour_click);
             // 
             // num45
             // 
@@ -878,6 +1168,17 @@
             this.num45.TabIndex = 104;
             this.num45.Text = "45";
             this.num45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num45.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro45
+            // 
+            this.astro45.Image = ((System.Drawing.Image)(resources.GetObject("astro45.Image")));
+            this.astro45.Location = new System.Drawing.Point(3, 3);
+            this.astro45.Name = "astro45";
+            this.astro45.Size = new System.Drawing.Size(24, 24);
+            this.astro45.TabIndex = 0;
+            this.astro45.TabStop = false;
+            this.astro45.Click += new System.EventHandler(this.jour_click);
             // 
             // jour19
             // 
@@ -887,6 +1188,7 @@
             this.jour19.Name = "jour19";
             this.jour19.Size = new System.Drawing.Size(70, 70);
             this.jour19.TabIndex = 55;
+            this.jour19.Click += new System.EventHandler(this.jour_click);
             // 
             // num19
             // 
@@ -901,6 +1203,17 @@
             this.num19.TabIndex = 88;
             this.num19.Text = "19";
             this.num19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num19.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro19
+            // 
+            this.astro19.Image = ((System.Drawing.Image)(resources.GetObject("astro19.Image")));
+            this.astro19.Location = new System.Drawing.Point(3, 3);
+            this.astro19.Name = "astro19";
+            this.astro19.Size = new System.Drawing.Size(24, 24);
+            this.astro19.TabIndex = 0;
+            this.astro19.TabStop = false;
+            this.astro19.Click += new System.EventHandler(this.jour_click);
             // 
             // jour35
             // 
@@ -910,6 +1223,7 @@
             this.jour35.Name = "jour35";
             this.jour35.Size = new System.Drawing.Size(70, 70);
             this.jour35.TabIndex = 61;
+            this.jour35.Click += new System.EventHandler(this.jour_click);
             // 
             // num35
             // 
@@ -924,6 +1238,17 @@
             this.num35.TabIndex = 94;
             this.num35.Text = "35";
             this.num35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num35.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro35
+            // 
+            this.astro35.Image = ((System.Drawing.Image)(resources.GetObject("astro35.Image")));
+            this.astro35.Location = new System.Drawing.Point(3, 3);
+            this.astro35.Name = "astro35";
+            this.astro35.Size = new System.Drawing.Size(24, 24);
+            this.astro35.TabIndex = 0;
+            this.astro35.TabStop = false;
+            this.astro35.Click += new System.EventHandler(this.jour_click);
             // 
             // jour9
             // 
@@ -933,6 +1258,7 @@
             this.jour9.Name = "jour9";
             this.jour9.Size = new System.Drawing.Size(70, 70);
             this.jour9.TabIndex = 45;
+            this.jour9.Click += new System.EventHandler(this.jour_click);
             // 
             // num9
             // 
@@ -947,6 +1273,17 @@
             this.num9.TabIndex = 87;
             this.num9.Text = "9";
             this.num9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num9.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro9
+            // 
+            this.astro9.Image = ((System.Drawing.Image)(resources.GetObject("astro9.Image")));
+            this.astro9.Location = new System.Drawing.Point(3, 3);
+            this.astro9.Name = "astro9";
+            this.astro9.Size = new System.Drawing.Size(24, 24);
+            this.astro9.TabIndex = 0;
+            this.astro9.TabStop = false;
+            this.astro9.Click += new System.EventHandler(this.jour_click);
             // 
             // jour42
             // 
@@ -956,6 +1293,7 @@
             this.jour42.Name = "jour42";
             this.jour42.Size = new System.Drawing.Size(70, 70);
             this.jour42.TabIndex = 68;
+            this.jour42.Click += new System.EventHandler(this.jour_click);
             // 
             // num42
             // 
@@ -970,6 +1308,17 @@
             this.num42.TabIndex = 101;
             this.num42.Text = "42";
             this.num42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num42.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro42
+            // 
+            this.astro42.Image = ((System.Drawing.Image)(resources.GetObject("astro42.Image")));
+            this.astro42.Location = new System.Drawing.Point(3, 3);
+            this.astro42.Name = "astro42";
+            this.astro42.Size = new System.Drawing.Size(24, 24);
+            this.astro42.TabIndex = 0;
+            this.astro42.TabStop = false;
+            this.astro42.Click += new System.EventHandler(this.jour_click);
             // 
             // jour18
             // 
@@ -979,6 +1328,7 @@
             this.jour18.Name = "jour18";
             this.jour18.Size = new System.Drawing.Size(70, 70);
             this.jour18.TabIndex = 54;
+            this.jour18.Click += new System.EventHandler(this.jour_click);
             // 
             // num18
             // 
@@ -993,6 +1343,17 @@
             this.num18.TabIndex = 87;
             this.num18.Text = "18";
             this.num18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num18.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro18
+            // 
+            this.astro18.Image = ((System.Drawing.Image)(resources.GetObject("astro18.Image")));
+            this.astro18.Location = new System.Drawing.Point(3, 3);
+            this.astro18.Name = "astro18";
+            this.astro18.Size = new System.Drawing.Size(24, 24);
+            this.astro18.TabIndex = 0;
+            this.astro18.TabStop = false;
+            this.astro18.Click += new System.EventHandler(this.jour_click);
             // 
             // jour44
             // 
@@ -1002,6 +1363,7 @@
             this.jour44.Name = "jour44";
             this.jour44.Size = new System.Drawing.Size(70, 70);
             this.jour44.TabIndex = 70;
+            this.jour44.Click += new System.EventHandler(this.jour_click);
             // 
             // num44
             // 
@@ -1016,6 +1378,17 @@
             this.num44.TabIndex = 103;
             this.num44.Text = "44";
             this.num44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num44.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro44
+            // 
+            this.astro44.Image = ((System.Drawing.Image)(resources.GetObject("astro44.Image")));
+            this.astro44.Location = new System.Drawing.Point(3, 3);
+            this.astro44.Name = "astro44";
+            this.astro44.Size = new System.Drawing.Size(24, 24);
+            this.astro44.TabIndex = 0;
+            this.astro44.TabStop = false;
+            this.astro44.Click += new System.EventHandler(this.jour_click);
             // 
             // jour8
             // 
@@ -1025,6 +1398,7 @@
             this.jour8.Name = "jour8";
             this.jour8.Size = new System.Drawing.Size(70, 70);
             this.jour8.TabIndex = 44;
+            this.jour8.Click += new System.EventHandler(this.jour_click);
             // 
             // num8
             // 
@@ -1039,6 +1413,17 @@
             this.num8.TabIndex = 86;
             this.num8.Text = "8";
             this.num8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num8.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro8
+            // 
+            this.astro8.Image = ((System.Drawing.Image)(resources.GetObject("astro8.Image")));
+            this.astro8.Location = new System.Drawing.Point(3, 3);
+            this.astro8.Name = "astro8";
+            this.astro8.Size = new System.Drawing.Size(24, 24);
+            this.astro8.TabIndex = 0;
+            this.astro8.TabStop = false;
+            this.astro8.Click += new System.EventHandler(this.jour_click);
             // 
             // jour32
             // 
@@ -1048,6 +1433,7 @@
             this.jour32.Name = "jour32";
             this.jour32.Size = new System.Drawing.Size(70, 70);
             this.jour32.TabIndex = 58;
+            this.jour32.Click += new System.EventHandler(this.jour_click);
             // 
             // num32
             // 
@@ -1062,6 +1448,17 @@
             this.num32.TabIndex = 91;
             this.num32.Text = "32";
             this.num32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num32.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro32
+            // 
+            this.astro32.Image = ((System.Drawing.Image)(resources.GetObject("astro32.Image")));
+            this.astro32.Location = new System.Drawing.Point(3, 3);
+            this.astro32.Name = "astro32";
+            this.astro32.Size = new System.Drawing.Size(24, 24);
+            this.astro32.TabIndex = 0;
+            this.astro32.TabStop = false;
+            this.astro32.Click += new System.EventHandler(this.jour_click);
             // 
             // jour41
             // 
@@ -1071,6 +1468,7 @@
             this.jour41.Name = "jour41";
             this.jour41.Size = new System.Drawing.Size(70, 70);
             this.jour41.TabIndex = 67;
+            this.jour41.Click += new System.EventHandler(this.jour_click);
             // 
             // num41
             // 
@@ -1085,6 +1483,17 @@
             this.num41.TabIndex = 100;
             this.num41.Text = "41";
             this.num41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num41.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro41
+            // 
+            this.astro41.Image = ((System.Drawing.Image)(resources.GetObject("astro41.Image")));
+            this.astro41.Location = new System.Drawing.Point(3, 3);
+            this.astro41.Name = "astro41";
+            this.astro41.Size = new System.Drawing.Size(24, 24);
+            this.astro41.TabIndex = 0;
+            this.astro41.TabStop = false;
+            this.astro41.Click += new System.EventHandler(this.jour_click);
             // 
             // jour17
             // 
@@ -1094,6 +1503,7 @@
             this.jour17.Name = "jour17";
             this.jour17.Size = new System.Drawing.Size(70, 70);
             this.jour17.TabIndex = 53;
+            this.jour17.Click += new System.EventHandler(this.jour_click);
             // 
             // num17
             // 
@@ -1108,6 +1518,17 @@
             this.num17.TabIndex = 86;
             this.num17.Text = "17";
             this.num17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num17.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro17
+            // 
+            this.astro17.Image = ((System.Drawing.Image)(resources.GetObject("astro17.Image")));
+            this.astro17.Location = new System.Drawing.Point(3, 3);
+            this.astro17.Name = "astro17";
+            this.astro17.Size = new System.Drawing.Size(24, 24);
+            this.astro17.TabIndex = 0;
+            this.astro17.TabStop = false;
+            this.astro17.Click += new System.EventHandler(this.jour_click);
             // 
             // jour34
             // 
@@ -1117,6 +1538,7 @@
             this.jour34.Name = "jour34";
             this.jour34.Size = new System.Drawing.Size(70, 70);
             this.jour34.TabIndex = 60;
+            this.jour34.Click += new System.EventHandler(this.jour_click);
             // 
             // num34
             // 
@@ -1131,6 +1553,17 @@
             this.num34.TabIndex = 93;
             this.num34.Text = "34";
             this.num34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num34.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro34
+            // 
+            this.astro34.Image = ((System.Drawing.Image)(resources.GetObject("astro34.Image")));
+            this.astro34.Location = new System.Drawing.Point(3, 3);
+            this.astro34.Name = "astro34";
+            this.astro34.Size = new System.Drawing.Size(24, 24);
+            this.astro34.TabIndex = 0;
+            this.astro34.TabStop = false;
+            this.astro34.Click += new System.EventHandler(this.jour_click);
             // 
             // jour7
             // 
@@ -1140,6 +1573,7 @@
             this.jour7.Name = "jour7";
             this.jour7.Size = new System.Drawing.Size(70, 70);
             this.jour7.TabIndex = 43;
+            this.jour7.Click += new System.EventHandler(this.jour_click);
             // 
             // num7
             // 
@@ -1154,6 +1588,17 @@
             this.num7.TabIndex = 85;
             this.num7.Text = "7";
             this.num7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num7.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro7
+            // 
+            this.astro7.Image = ((System.Drawing.Image)(resources.GetObject("astro7.Image")));
+            this.astro7.Location = new System.Drawing.Point(3, 3);
+            this.astro7.Name = "astro7";
+            this.astro7.Size = new System.Drawing.Size(24, 24);
+            this.astro7.TabIndex = 0;
+            this.astro7.TabStop = false;
+            this.astro7.Click += new System.EventHandler(this.jour_click);
             // 
             // jour31
             // 
@@ -1163,6 +1608,7 @@
             this.jour31.Name = "jour31";
             this.jour31.Size = new System.Drawing.Size(70, 70);
             this.jour31.TabIndex = 57;
+            this.jour31.Click += new System.EventHandler(this.jour_click);
             // 
             // num31
             // 
@@ -1177,6 +1623,17 @@
             this.num31.TabIndex = 90;
             this.num31.Text = "31";
             this.num31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num31.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro31
+            // 
+            this.astro31.Image = ((System.Drawing.Image)(resources.GetObject("astro31.Image")));
+            this.astro31.Location = new System.Drawing.Point(3, 3);
+            this.astro31.Name = "astro31";
+            this.astro31.Size = new System.Drawing.Size(24, 24);
+            this.astro31.TabIndex = 0;
+            this.astro31.TabStop = false;
+            this.astro31.Click += new System.EventHandler(this.jour_click);
             // 
             // jour16
             // 
@@ -1186,6 +1643,7 @@
             this.jour16.Name = "jour16";
             this.jour16.Size = new System.Drawing.Size(70, 70);
             this.jour16.TabIndex = 52;
+            this.jour16.Click += new System.EventHandler(this.jour_click);
             // 
             // num16
             // 
@@ -1200,6 +1658,17 @@
             this.num16.TabIndex = 85;
             this.num16.Text = "16";
             this.num16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num16.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro16
+            // 
+            this.astro16.Image = ((System.Drawing.Image)(resources.GetObject("astro16.Image")));
+            this.astro16.Location = new System.Drawing.Point(3, 3);
+            this.astro16.Name = "astro16";
+            this.astro16.Size = new System.Drawing.Size(24, 24);
+            this.astro16.TabIndex = 0;
+            this.astro16.TabStop = false;
+            this.astro16.Click += new System.EventHandler(this.jour_click);
             // 
             // jour6
             // 
@@ -1209,6 +1678,7 @@
             this.jour6.Name = "jour6";
             this.jour6.Size = new System.Drawing.Size(70, 70);
             this.jour6.TabIndex = 42;
+            this.jour6.Click += new System.EventHandler(this.jour_click);
             // 
             // num6
             // 
@@ -1223,6 +1693,17 @@
             this.num6.TabIndex = 84;
             this.num6.Text = "6";
             this.num6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num6.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro6
+            // 
+            this.astro6.Image = ((System.Drawing.Image)(resources.GetObject("astro6.Image")));
+            this.astro6.Location = new System.Drawing.Point(3, 3);
+            this.astro6.Name = "astro6";
+            this.astro6.Size = new System.Drawing.Size(24, 24);
+            this.astro6.TabIndex = 0;
+            this.astro6.TabStop = false;
+            this.astro6.Click += new System.EventHandler(this.jour_click);
             // 
             // jour13
             // 
@@ -1232,6 +1713,7 @@
             this.jour13.Name = "jour13";
             this.jour13.Size = new System.Drawing.Size(70, 70);
             this.jour13.TabIndex = 49;
+            this.jour13.Click += new System.EventHandler(this.jour_click);
             // 
             // num13
             // 
@@ -1246,6 +1728,17 @@
             this.num13.TabIndex = 81;
             this.num13.Text = "13";
             this.num13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num13.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro13
+            // 
+            this.astro13.Image = ((System.Drawing.Image)(resources.GetObject("astro13.Image")));
+            this.astro13.Location = new System.Drawing.Point(3, 3);
+            this.astro13.Name = "astro13";
+            this.astro13.Size = new System.Drawing.Size(24, 24);
+            this.astro13.TabIndex = 0;
+            this.astro13.TabStop = false;
+            this.astro13.Click += new System.EventHandler(this.jour_click);
             // 
             // jour3
             // 
@@ -1256,6 +1749,7 @@
             this.jour3.Name = "jour3";
             this.jour3.Size = new System.Drawing.Size(70, 70);
             this.jour3.TabIndex = 39;
+            this.jour3.Click += new System.EventHandler(this.jour_click);
             // 
             // num3
             // 
@@ -1271,6 +1765,7 @@
             this.num3.TabIndex = 79;
             this.num3.Text = "3";
             this.num3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num3.Click += new System.EventHandler(this.jour_click);
             // 
             // label3
             // 
@@ -1286,6 +1781,16 @@
             this.label3.Text = "1";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // astro3
+            // 
+            this.astro3.Image = global::MarsApp.Properties.Resources.astronaute;
+            this.astro3.Location = new System.Drawing.Point(3, 3);
+            this.astro3.Name = "astro3";
+            this.astro3.Size = new System.Drawing.Size(24, 24);
+            this.astro3.TabIndex = 0;
+            this.astro3.TabStop = false;
+            this.astro3.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour15
             // 
             this.jour15.Controls.Add(this.num15);
@@ -1294,6 +1799,7 @@
             this.jour15.Name = "jour15";
             this.jour15.Size = new System.Drawing.Size(70, 70);
             this.jour15.TabIndex = 51;
+            this.jour15.Click += new System.EventHandler(this.jour_click);
             // 
             // num15
             // 
@@ -1308,6 +1814,17 @@
             this.num15.TabIndex = 84;
             this.num15.Text = "15";
             this.num15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num15.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro15
+            // 
+            this.astro15.Image = ((System.Drawing.Image)(resources.GetObject("astro15.Image")));
+            this.astro15.Location = new System.Drawing.Point(3, 3);
+            this.astro15.Name = "astro15";
+            this.astro15.Size = new System.Drawing.Size(24, 24);
+            this.astro15.TabIndex = 0;
+            this.astro15.TabStop = false;
+            this.astro15.Click += new System.EventHandler(this.jour_click);
             // 
             // jour5
             // 
@@ -1317,6 +1834,7 @@
             this.jour5.Name = "jour5";
             this.jour5.Size = new System.Drawing.Size(70, 70);
             this.jour5.TabIndex = 41;
+            this.jour5.Click += new System.EventHandler(this.jour_click);
             // 
             // num5
             // 
@@ -1331,6 +1849,17 @@
             this.num5.TabIndex = 83;
             this.num5.Text = "5";
             this.num5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num5.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro5
+            // 
+            this.astro5.Image = ((System.Drawing.Image)(resources.GetObject("astro5.Image")));
+            this.astro5.Location = new System.Drawing.Point(3, 3);
+            this.astro5.Name = "astro5";
+            this.astro5.Size = new System.Drawing.Size(24, 24);
+            this.astro5.TabIndex = 0;
+            this.astro5.TabStop = false;
+            this.astro5.Click += new System.EventHandler(this.jour_click);
             // 
             // jour12
             // 
@@ -1340,6 +1869,7 @@
             this.jour12.Name = "jour12";
             this.jour12.Size = new System.Drawing.Size(70, 70);
             this.jour12.TabIndex = 48;
+            this.jour12.Click += new System.EventHandler(this.jour_click);
             // 
             // num12
             // 
@@ -1354,6 +1884,17 @@
             this.num12.TabIndex = 79;
             this.num12.Text = "12";
             this.num12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num12.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro12
+            // 
+            this.astro12.Image = ((System.Drawing.Image)(resources.GetObject("astro12.Image")));
+            this.astro12.Location = new System.Drawing.Point(3, 3);
+            this.astro12.Name = "astro12";
+            this.astro12.Size = new System.Drawing.Size(24, 24);
+            this.astro12.TabIndex = 0;
+            this.astro12.TabStop = false;
+            this.astro12.Click += new System.EventHandler(this.jour_click);
             // 
             // jour14
             // 
@@ -1363,6 +1904,7 @@
             this.jour14.Name = "jour14";
             this.jour14.Size = new System.Drawing.Size(70, 70);
             this.jour14.TabIndex = 50;
+            this.jour14.Click += new System.EventHandler(this.jour_click);
             // 
             // num14
             // 
@@ -1377,6 +1919,17 @@
             this.num14.TabIndex = 83;
             this.num14.Text = "14";
             this.num14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num14.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro14
+            // 
+            this.astro14.Image = ((System.Drawing.Image)(resources.GetObject("astro14.Image")));
+            this.astro14.Location = new System.Drawing.Point(3, 3);
+            this.astro14.Name = "astro14";
+            this.astro14.Size = new System.Drawing.Size(24, 24);
+            this.astro14.TabIndex = 0;
+            this.astro14.TabStop = false;
+            this.astro14.Click += new System.EventHandler(this.jour_click);
             // 
             // jour2
             // 
@@ -1386,6 +1939,7 @@
             this.jour2.Name = "jour2";
             this.jour2.Size = new System.Drawing.Size(70, 70);
             this.jour2.TabIndex = 2;
+            this.jour2.Click += new System.EventHandler(this.jour_click);
             // 
             // num2
             // 
@@ -1401,6 +1955,17 @@
             this.num2.TabIndex = 78;
             this.num2.Text = "2";
             this.num2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num2.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro2
+            // 
+            this.astro2.Image = global::MarsApp.Properties.Resources.astronaute;
+            this.astro2.Location = new System.Drawing.Point(3, 3);
+            this.astro2.Name = "astro2";
+            this.astro2.Size = new System.Drawing.Size(24, 24);
+            this.astro2.TabIndex = 0;
+            this.astro2.TabStop = false;
+            this.astro2.Click += new System.EventHandler(this.jour_click);
             // 
             // jour11
             // 
@@ -1410,6 +1975,7 @@
             this.jour11.Name = "jour11";
             this.jour11.Size = new System.Drawing.Size(70, 70);
             this.jour11.TabIndex = 47;
+            this.jour11.Click += new System.EventHandler(this.jour_click);
             // 
             // num11
             // 
@@ -1424,6 +1990,17 @@
             this.num11.TabIndex = 78;
             this.num11.Text = "11";
             this.num11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num11.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro11
+            // 
+            this.astro11.Image = ((System.Drawing.Image)(resources.GetObject("astro11.Image")));
+            this.astro11.Location = new System.Drawing.Point(3, 3);
+            this.astro11.Name = "astro11";
+            this.astro11.Size = new System.Drawing.Size(24, 24);
+            this.astro11.TabIndex = 0;
+            this.astro11.TabStop = false;
+            this.astro11.Click += new System.EventHandler(this.jour_click);
             // 
             // jour4
             // 
@@ -1435,6 +2012,7 @@
             this.jour4.Name = "jour4";
             this.jour4.Size = new System.Drawing.Size(70, 70);
             this.jour4.TabIndex = 40;
+            this.jour4.Click += new System.EventHandler(this.jour_click);
             // 
             // num4
             // 
@@ -1449,6 +2027,7 @@
             this.num4.TabIndex = 80;
             this.num4.Text = "4";
             this.num4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num4.Click += new System.EventHandler(this.jour_click);
             // 
             // label2
             // 
@@ -1463,6 +2042,16 @@
             this.label2.TabIndex = 81;
             this.label2.Text = "2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // astro4
+            // 
+            this.astro4.Image = ((System.Drawing.Image)(resources.GetObject("astro4.Image")));
+            this.astro4.Location = new System.Drawing.Point(3, 3);
+            this.astro4.Name = "astro4";
+            this.astro4.Size = new System.Drawing.Size(24, 24);
+            this.astro4.TabIndex = 0;
+            this.astro4.TabStop = false;
+            this.astro4.Click += new System.EventHandler(this.jour_click);
             // 
             // label4
             // 
@@ -1487,6 +2076,7 @@
             this.jour1.Name = "jour1";
             this.jour1.Size = new System.Drawing.Size(70, 70);
             this.jour1.TabIndex = 0;
+            this.jour1.Click += new System.EventHandler(this.jour_click);
             // 
             // num1
             // 
@@ -1502,6 +2092,18 @@
             this.num1.TabIndex = 77;
             this.num1.Text = "1";
             this.num1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.num1.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro1
+            // 
+            this.astro1.BackColor = System.Drawing.Color.Transparent;
+            this.astro1.Image = global::MarsApp.Properties.Resources.astronaute;
+            this.astro1.Location = new System.Drawing.Point(3, 3);
+            this.astro1.Name = "astro1";
+            this.astro1.Size = new System.Drawing.Size(24, 24);
+            this.astro1.TabIndex = 0;
+            this.astro1.TabStop = false;
+            this.astro1.Click += new System.EventHandler(this.jour_click);
             // 
             // suivant
             // 
@@ -1527,456 +2129,18 @@
             this.precedent.Tag = "-1";
             this.precedent.Click += new System.EventHandler(this.changerPeriode_Click);
             // 
-            // astro50
-            // 
-            this.astro50.Image = ((System.Drawing.Image)(resources.GetObject("astro50.Image")));
-            this.astro50.Location = new System.Drawing.Point(3, 3);
-            this.astro50.Name = "astro50";
-            this.astro50.Size = new System.Drawing.Size(24, 24);
-            this.astro50.TabIndex = 0;
-            this.astro50.TabStop = false;
-            // 
-            // astro30
-            // 
-            this.astro30.Image = ((System.Drawing.Image)(resources.GetObject("astro30.Image")));
-            this.astro30.Location = new System.Drawing.Point(3, 3);
-            this.astro30.Name = "astro30";
-            this.astro30.Size = new System.Drawing.Size(24, 24);
-            this.astro30.TabIndex = 0;
-            this.astro30.TabStop = false;
-            // 
-            // astro40
-            // 
-            this.astro40.Image = ((System.Drawing.Image)(resources.GetObject("astro40.Image")));
-            this.astro40.Location = new System.Drawing.Point(3, 3);
-            this.astro40.Name = "astro40";
-            this.astro40.Size = new System.Drawing.Size(24, 24);
-            this.astro40.TabIndex = 0;
-            this.astro40.TabStop = false;
-            // 
-            // astro29
-            // 
-            this.astro29.Image = ((System.Drawing.Image)(resources.GetObject("astro29.Image")));
-            this.astro29.Location = new System.Drawing.Point(3, 3);
-            this.astro29.Name = "astro29";
-            this.astro29.Size = new System.Drawing.Size(24, 24);
-            this.astro29.TabIndex = 0;
-            this.astro29.TabStop = false;
-            // 
-            // astro49
-            // 
-            this.astro49.Image = ((System.Drawing.Image)(resources.GetObject("astro49.Image")));
-            this.astro49.Location = new System.Drawing.Point(3, 3);
-            this.astro49.Name = "astro49";
-            this.astro49.Size = new System.Drawing.Size(24, 24);
-            this.astro49.TabIndex = 0;
-            this.astro49.TabStop = false;
-            // 
-            // astro28
-            // 
-            this.astro28.Image = ((System.Drawing.Image)(resources.GetObject("astro28.Image")));
-            this.astro28.Location = new System.Drawing.Point(3, 3);
-            this.astro28.Name = "astro28";
-            this.astro28.Size = new System.Drawing.Size(24, 24);
-            this.astro28.TabIndex = 0;
-            this.astro28.TabStop = false;
-            // 
-            // astro39
-            // 
-            this.astro39.Image = ((System.Drawing.Image)(resources.GetObject("astro39.Image")));
-            this.astro39.Location = new System.Drawing.Point(3, 3);
-            this.astro39.Name = "astro39";
-            this.astro39.Size = new System.Drawing.Size(24, 24);
-            this.astro39.TabIndex = 0;
-            this.astro39.TabStop = false;
-            // 
-            // astro27
-            // 
-            this.astro27.Image = ((System.Drawing.Image)(resources.GetObject("astro27.Image")));
-            this.astro27.Location = new System.Drawing.Point(3, 3);
-            this.astro27.Name = "astro27";
-            this.astro27.Size = new System.Drawing.Size(24, 24);
-            this.astro27.TabIndex = 0;
-            this.astro27.TabStop = false;
-            // 
-            // astro48
-            // 
-            this.astro48.Image = ((System.Drawing.Image)(resources.GetObject("astro48.Image")));
-            this.astro48.Location = new System.Drawing.Point(3, 3);
-            this.astro48.Name = "astro48";
-            this.astro48.Size = new System.Drawing.Size(24, 24);
-            this.astro48.TabIndex = 0;
-            this.astro48.TabStop = false;
-            // 
-            // astro26
-            // 
-            this.astro26.Image = ((System.Drawing.Image)(resources.GetObject("astro26.Image")));
-            this.astro26.Location = new System.Drawing.Point(3, 3);
-            this.astro26.Name = "astro26";
-            this.astro26.Size = new System.Drawing.Size(24, 24);
-            this.astro26.TabIndex = 0;
-            this.astro26.TabStop = false;
-            // 
-            // astro38
-            // 
-            this.astro38.Image = ((System.Drawing.Image)(resources.GetObject("astro38.Image")));
-            this.astro38.Location = new System.Drawing.Point(3, 3);
-            this.astro38.Name = "astro38";
-            this.astro38.Size = new System.Drawing.Size(24, 24);
-            this.astro38.TabIndex = 0;
-            this.astro38.TabStop = false;
-            // 
-            // astro23
-            // 
-            this.astro23.Image = ((System.Drawing.Image)(resources.GetObject("astro23.Image")));
-            this.astro23.Location = new System.Drawing.Point(3, 3);
-            this.astro23.Name = "astro23";
-            this.astro23.Size = new System.Drawing.Size(24, 24);
-            this.astro23.TabIndex = 0;
-            this.astro23.TabStop = false;
-            // 
-            // astro47
-            // 
-            this.astro47.Image = ((System.Drawing.Image)(resources.GetObject("astro47.Image")));
-            this.astro47.Location = new System.Drawing.Point(3, 3);
-            this.astro47.Name = "astro47";
-            this.astro47.Size = new System.Drawing.Size(24, 24);
-            this.astro47.TabIndex = 0;
-            this.astro47.TabStop = false;
-            // 
-            // astro25
-            // 
-            this.astro25.Image = ((System.Drawing.Image)(resources.GetObject("astro25.Image")));
-            this.astro25.Location = new System.Drawing.Point(3, 3);
-            this.astro25.Name = "astro25";
-            this.astro25.Size = new System.Drawing.Size(24, 24);
-            this.astro25.TabIndex = 0;
-            this.astro25.TabStop = false;
-            // 
-            // astro37
-            // 
-            this.astro37.Image = ((System.Drawing.Image)(resources.GetObject("astro37.Image")));
-            this.astro37.Location = new System.Drawing.Point(3, 3);
-            this.astro37.Name = "astro37";
-            this.astro37.Size = new System.Drawing.Size(24, 24);
-            this.astro37.TabIndex = 0;
-            this.astro37.TabStop = false;
-            // 
-            // astro22
-            // 
-            this.astro22.Image = ((System.Drawing.Image)(resources.GetObject("astro22.Image")));
-            this.astro22.Location = new System.Drawing.Point(3, 3);
-            this.astro22.Name = "astro22";
-            this.astro22.Size = new System.Drawing.Size(24, 24);
-            this.astro22.TabIndex = 0;
-            this.astro22.TabStop = false;
-            // 
-            // astro46
-            // 
-            this.astro46.Image = ((System.Drawing.Image)(resources.GetObject("astro46.Image")));
-            this.astro46.Location = new System.Drawing.Point(3, 3);
-            this.astro46.Name = "astro46";
-            this.astro46.Size = new System.Drawing.Size(24, 24);
-            this.astro46.TabIndex = 0;
-            this.astro46.TabStop = false;
-            // 
-            // astro24
-            // 
-            this.astro24.Image = ((System.Drawing.Image)(resources.GetObject("astro24.Image")));
-            this.astro24.Location = new System.Drawing.Point(3, 3);
-            this.astro24.Name = "astro24";
-            this.astro24.Size = new System.Drawing.Size(24, 24);
-            this.astro24.TabIndex = 0;
-            this.astro24.TabStop = false;
-            // 
-            // astro36
-            // 
-            this.astro36.Image = ((System.Drawing.Image)(resources.GetObject("astro36.Image")));
-            this.astro36.Location = new System.Drawing.Point(3, 3);
-            this.astro36.Name = "astro36";
-            this.astro36.Size = new System.Drawing.Size(24, 24);
-            this.astro36.TabIndex = 0;
-            this.astro36.TabStop = false;
-            // 
-            // astro21
-            // 
-            this.astro21.Image = ((System.Drawing.Image)(resources.GetObject("astro21.Image")));
-            this.astro21.Location = new System.Drawing.Point(3, 3);
-            this.astro21.Name = "astro21";
-            this.astro21.Size = new System.Drawing.Size(24, 24);
-            this.astro21.TabIndex = 0;
-            this.astro21.TabStop = false;
-            // 
-            // astro43
-            // 
-            this.astro43.Image = ((System.Drawing.Image)(resources.GetObject("astro43.Image")));
-            this.astro43.Location = new System.Drawing.Point(3, 3);
-            this.astro43.Name = "astro43";
-            this.astro43.Size = new System.Drawing.Size(24, 24);
-            this.astro43.TabIndex = 0;
-            this.astro43.TabStop = false;
-            // 
-            // astro20
-            // 
-            this.astro20.Image = ((System.Drawing.Image)(resources.GetObject("astro20.Image")));
-            this.astro20.Location = new System.Drawing.Point(3, 3);
-            this.astro20.Name = "astro20";
-            this.astro20.Size = new System.Drawing.Size(24, 24);
-            this.astro20.TabIndex = 0;
-            this.astro20.TabStop = false;
-            // 
-            // astro33
-            // 
-            this.astro33.Image = ((System.Drawing.Image)(resources.GetObject("astro33.Image")));
-            this.astro33.Location = new System.Drawing.Point(3, 3);
-            this.astro33.Name = "astro33";
-            this.astro33.Size = new System.Drawing.Size(24, 24);
-            this.astro33.TabIndex = 0;
-            this.astro33.TabStop = false;
-            // 
-            // astro10
-            // 
-            this.astro10.Image = ((System.Drawing.Image)(resources.GetObject("astro10.Image")));
-            this.astro10.Location = new System.Drawing.Point(3, 3);
-            this.astro10.Name = "astro10";
-            this.astro10.Size = new System.Drawing.Size(24, 24);
-            this.astro10.TabIndex = 0;
-            this.astro10.TabStop = false;
-            // 
-            // astro45
-            // 
-            this.astro45.Image = ((System.Drawing.Image)(resources.GetObject("astro45.Image")));
-            this.astro45.Location = new System.Drawing.Point(3, 3);
-            this.astro45.Name = "astro45";
-            this.astro45.Size = new System.Drawing.Size(24, 24);
-            this.astro45.TabIndex = 0;
-            this.astro45.TabStop = false;
-            // 
-            // astro19
-            // 
-            this.astro19.Image = ((System.Drawing.Image)(resources.GetObject("astro19.Image")));
-            this.astro19.Location = new System.Drawing.Point(3, 3);
-            this.astro19.Name = "astro19";
-            this.astro19.Size = new System.Drawing.Size(24, 24);
-            this.astro19.TabIndex = 0;
-            this.astro19.TabStop = false;
-            // 
-            // astro35
-            // 
-            this.astro35.Image = ((System.Drawing.Image)(resources.GetObject("astro35.Image")));
-            this.astro35.Location = new System.Drawing.Point(3, 3);
-            this.astro35.Name = "astro35";
-            this.astro35.Size = new System.Drawing.Size(24, 24);
-            this.astro35.TabIndex = 0;
-            this.astro35.TabStop = false;
-            // 
-            // astro9
-            // 
-            this.astro9.Image = ((System.Drawing.Image)(resources.GetObject("astro9.Image")));
-            this.astro9.Location = new System.Drawing.Point(3, 3);
-            this.astro9.Name = "astro9";
-            this.astro9.Size = new System.Drawing.Size(24, 24);
-            this.astro9.TabIndex = 0;
-            this.astro9.TabStop = false;
-            // 
-            // astro42
-            // 
-            this.astro42.Image = ((System.Drawing.Image)(resources.GetObject("astro42.Image")));
-            this.astro42.Location = new System.Drawing.Point(3, 3);
-            this.astro42.Name = "astro42";
-            this.astro42.Size = new System.Drawing.Size(24, 24);
-            this.astro42.TabIndex = 0;
-            this.astro42.TabStop = false;
-            // 
-            // astro18
-            // 
-            this.astro18.Image = ((System.Drawing.Image)(resources.GetObject("astro18.Image")));
-            this.astro18.Location = new System.Drawing.Point(3, 3);
-            this.astro18.Name = "astro18";
-            this.astro18.Size = new System.Drawing.Size(24, 24);
-            this.astro18.TabIndex = 0;
-            this.astro18.TabStop = false;
-            // 
-            // astro44
-            // 
-            this.astro44.Image = ((System.Drawing.Image)(resources.GetObject("astro44.Image")));
-            this.astro44.Location = new System.Drawing.Point(3, 3);
-            this.astro44.Name = "astro44";
-            this.astro44.Size = new System.Drawing.Size(24, 24);
-            this.astro44.TabIndex = 0;
-            this.astro44.TabStop = false;
-            // 
-            // astro8
-            // 
-            this.astro8.Image = ((System.Drawing.Image)(resources.GetObject("astro8.Image")));
-            this.astro8.Location = new System.Drawing.Point(3, 3);
-            this.astro8.Name = "astro8";
-            this.astro8.Size = new System.Drawing.Size(24, 24);
-            this.astro8.TabIndex = 0;
-            this.astro8.TabStop = false;
-            // 
-            // astro32
-            // 
-            this.astro32.Image = ((System.Drawing.Image)(resources.GetObject("astro32.Image")));
-            this.astro32.Location = new System.Drawing.Point(3, 3);
-            this.astro32.Name = "astro32";
-            this.astro32.Size = new System.Drawing.Size(24, 24);
-            this.astro32.TabIndex = 0;
-            this.astro32.TabStop = false;
-            // 
-            // astro41
-            // 
-            this.astro41.Image = ((System.Drawing.Image)(resources.GetObject("astro41.Image")));
-            this.astro41.Location = new System.Drawing.Point(3, 3);
-            this.astro41.Name = "astro41";
-            this.astro41.Size = new System.Drawing.Size(24, 24);
-            this.astro41.TabIndex = 0;
-            this.astro41.TabStop = false;
-            // 
-            // astro17
-            // 
-            this.astro17.Image = ((System.Drawing.Image)(resources.GetObject("astro17.Image")));
-            this.astro17.Location = new System.Drawing.Point(3, 3);
-            this.astro17.Name = "astro17";
-            this.astro17.Size = new System.Drawing.Size(24, 24);
-            this.astro17.TabIndex = 0;
-            this.astro17.TabStop = false;
-            // 
-            // astro34
-            // 
-            this.astro34.Image = ((System.Drawing.Image)(resources.GetObject("astro34.Image")));
-            this.astro34.Location = new System.Drawing.Point(3, 3);
-            this.astro34.Name = "astro34";
-            this.astro34.Size = new System.Drawing.Size(24, 24);
-            this.astro34.TabIndex = 0;
-            this.astro34.TabStop = false;
-            // 
-            // astro7
-            // 
-            this.astro7.Image = ((System.Drawing.Image)(resources.GetObject("astro7.Image")));
-            this.astro7.Location = new System.Drawing.Point(3, 3);
-            this.astro7.Name = "astro7";
-            this.astro7.Size = new System.Drawing.Size(24, 24);
-            this.astro7.TabIndex = 0;
-            this.astro7.TabStop = false;
-            // 
-            // astro31
-            // 
-            this.astro31.Image = ((System.Drawing.Image)(resources.GetObject("astro31.Image")));
-            this.astro31.Location = new System.Drawing.Point(3, 3);
-            this.astro31.Name = "astro31";
-            this.astro31.Size = new System.Drawing.Size(24, 24);
-            this.astro31.TabIndex = 0;
-            this.astro31.TabStop = false;
-            // 
-            // astro16
-            // 
-            this.astro16.Image = ((System.Drawing.Image)(resources.GetObject("astro16.Image")));
-            this.astro16.Location = new System.Drawing.Point(3, 3);
-            this.astro16.Name = "astro16";
-            this.astro16.Size = new System.Drawing.Size(24, 24);
-            this.astro16.TabIndex = 0;
-            this.astro16.TabStop = false;
-            // 
-            // astro6
-            // 
-            this.astro6.Image = ((System.Drawing.Image)(resources.GetObject("astro6.Image")));
-            this.astro6.Location = new System.Drawing.Point(3, 3);
-            this.astro6.Name = "astro6";
-            this.astro6.Size = new System.Drawing.Size(24, 24);
-            this.astro6.TabIndex = 0;
-            this.astro6.TabStop = false;
-            // 
-            // astro13
-            // 
-            this.astro13.Image = ((System.Drawing.Image)(resources.GetObject("astro13.Image")));
-            this.astro13.Location = new System.Drawing.Point(3, 3);
-            this.astro13.Name = "astro13";
-            this.astro13.Size = new System.Drawing.Size(24, 24);
-            this.astro13.TabIndex = 0;
-            this.astro13.TabStop = false;
-            // 
-            // astro3
-            // 
-            this.astro3.Image = global::MarsApp.Properties.Resources.astronaute;
-            this.astro3.Location = new System.Drawing.Point(3, 3);
-            this.astro3.Name = "astro3";
-            this.astro3.Size = new System.Drawing.Size(24, 24);
-            this.astro3.TabIndex = 0;
-            this.astro3.TabStop = false;
-            // 
-            // astro15
-            // 
-            this.astro15.Image = ((System.Drawing.Image)(resources.GetObject("astro15.Image")));
-            this.astro15.Location = new System.Drawing.Point(3, 3);
-            this.astro15.Name = "astro15";
-            this.astro15.Size = new System.Drawing.Size(24, 24);
-            this.astro15.TabIndex = 0;
-            this.astro15.TabStop = false;
-            // 
-            // astro5
-            // 
-            this.astro5.Image = ((System.Drawing.Image)(resources.GetObject("astro5.Image")));
-            this.astro5.Location = new System.Drawing.Point(3, 3);
-            this.astro5.Name = "astro5";
-            this.astro5.Size = new System.Drawing.Size(24, 24);
-            this.astro5.TabIndex = 0;
-            this.astro5.TabStop = false;
-            // 
-            // astro12
-            // 
-            this.astro12.Image = ((System.Drawing.Image)(resources.GetObject("astro12.Image")));
-            this.astro12.Location = new System.Drawing.Point(3, 3);
-            this.astro12.Name = "astro12";
-            this.astro12.Size = new System.Drawing.Size(24, 24);
-            this.astro12.TabIndex = 0;
-            this.astro12.TabStop = false;
-            // 
-            // astro14
-            // 
-            this.astro14.Image = ((System.Drawing.Image)(resources.GetObject("astro14.Image")));
-            this.astro14.Location = new System.Drawing.Point(3, 3);
-            this.astro14.Name = "astro14";
-            this.astro14.Size = new System.Drawing.Size(24, 24);
-            this.astro14.TabIndex = 0;
-            this.astro14.TabStop = false;
-            // 
-            // astro2
-            // 
-            this.astro2.Image = global::MarsApp.Properties.Resources.astronaute;
-            this.astro2.Location = new System.Drawing.Point(3, 3);
-            this.astro2.Name = "astro2";
-            this.astro2.Size = new System.Drawing.Size(24, 24);
-            this.astro2.TabIndex = 0;
-            this.astro2.TabStop = false;
-            // 
-            // astro11
-            // 
-            this.astro11.Image = ((System.Drawing.Image)(resources.GetObject("astro11.Image")));
-            this.astro11.Location = new System.Drawing.Point(3, 3);
-            this.astro11.Name = "astro11";
-            this.astro11.Size = new System.Drawing.Size(24, 24);
-            this.astro11.TabIndex = 0;
-            this.astro11.TabStop = false;
-            // 
-            // astro4
-            // 
-            this.astro4.Image = ((System.Drawing.Image)(resources.GetObject("astro4.Image")));
-            this.astro4.Location = new System.Drawing.Point(3, 3);
-            this.astro4.Name = "astro4";
-            this.astro4.Size = new System.Drawing.Size(24, 24);
-            this.astro4.TabIndex = 0;
-            this.astro4.TabStop = false;
-            // 
-            // astro1
-            // 
-            this.astro1.BackColor = System.Drawing.Color.Transparent;
-            this.astro1.Image = global::MarsApp.Properties.Resources.astronaute;
-            this.astro1.Location = new System.Drawing.Point(3, 3);
-            this.astro1.Name = "astro1";
-            this.astro1.Size = new System.Drawing.Size(24, 24);
-            this.astro1.TabIndex = 0;
-            this.astro1.TabStop = false;
+            // numJourneeLabel
+            // 
+            this.numJourneeLabel.AutoSize = true;
+            this.numJourneeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numJourneeLabel.Location = new System.Drawing.Point(924, 118);
+            this.numJourneeLabel.MaximumSize = new System.Drawing.Size(150, 0);
+            this.numJourneeLabel.MinimumSize = new System.Drawing.Size(150, 0);
+            this.numJourneeLabel.Name = "numJourneeLabel";
+            this.numJourneeLabel.Size = new System.Drawing.Size(150, 26);
+            this.numJourneeLabel.TabIndex = 80;
+            this.numJourneeLabel.Text = "Journée";
+            this.numJourneeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CalendrierMission
             // 
@@ -1984,6 +2148,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(234)))));
             this.ClientSize = new System.Drawing.Size(1137, 623);
+            this.Controls.Add(this.numJourneeLabel);
             this.Controls.Add(this.suivant);
             this.Controls.Add(this.precedent);
             this.Controls.Add(this.periodeNum);
@@ -2041,156 +2206,156 @@
             this.Text = "CalendrierMission";
             this.jour50.ResumeLayout(false);
             this.jour50.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro50)).EndInit();
             this.jour30.ResumeLayout(false);
             this.jour30.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro30)).EndInit();
             this.jour40.ResumeLayout(false);
             this.jour40.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro40)).EndInit();
             this.jour29.ResumeLayout(false);
             this.jour29.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro29)).EndInit();
             this.jour49.ResumeLayout(false);
             this.jour49.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro49)).EndInit();
             this.jour28.ResumeLayout(false);
             this.jour28.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro28)).EndInit();
             this.jour39.ResumeLayout(false);
             this.jour39.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro39)).EndInit();
             this.jour27.ResumeLayout(false);
             this.jour27.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro27)).EndInit();
             this.jour48.ResumeLayout(false);
             this.jour48.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro48)).EndInit();
             this.jour26.ResumeLayout(false);
             this.jour26.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro26)).EndInit();
             this.jour38.ResumeLayout(false);
             this.jour38.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro38)).EndInit();
             this.jour23.ResumeLayout(false);
             this.jour23.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro23)).EndInit();
             this.jour47.ResumeLayout(false);
             this.jour47.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro47)).EndInit();
             this.jour25.ResumeLayout(false);
             this.jour25.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro25)).EndInit();
             this.jour37.ResumeLayout(false);
             this.jour37.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro37)).EndInit();
             this.jour22.ResumeLayout(false);
             this.jour22.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro22)).EndInit();
             this.jour46.ResumeLayout(false);
             this.jour46.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro46)).EndInit();
             this.jour24.ResumeLayout(false);
             this.jour24.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro24)).EndInit();
             this.jour36.ResumeLayout(false);
             this.jour36.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro36)).EndInit();
             this.jour21.ResumeLayout(false);
             this.jour21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro21)).EndInit();
             this.jour43.ResumeLayout(false);
             this.jour43.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro43)).EndInit();
             this.jour20.ResumeLayout(false);
             this.jour20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro20)).EndInit();
             this.jour33.ResumeLayout(false);
             this.jour33.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro33)).EndInit();
             this.jour10.ResumeLayout(false);
             this.jour10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro10)).EndInit();
             this.jour45.ResumeLayout(false);
             this.jour45.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro45)).EndInit();
             this.jour19.ResumeLayout(false);
             this.jour19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro19)).EndInit();
             this.jour35.ResumeLayout(false);
             this.jour35.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro35)).EndInit();
             this.jour9.ResumeLayout(false);
             this.jour9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro9)).EndInit();
             this.jour42.ResumeLayout(false);
             this.jour42.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro42)).EndInit();
             this.jour18.ResumeLayout(false);
             this.jour18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro18)).EndInit();
             this.jour44.ResumeLayout(false);
             this.jour44.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro44)).EndInit();
             this.jour8.ResumeLayout(false);
             this.jour8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro8)).EndInit();
             this.jour32.ResumeLayout(false);
             this.jour32.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro32)).EndInit();
             this.jour41.ResumeLayout(false);
             this.jour41.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro41)).EndInit();
             this.jour17.ResumeLayout(false);
             this.jour17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro17)).EndInit();
             this.jour34.ResumeLayout(false);
             this.jour34.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro34)).EndInit();
             this.jour7.ResumeLayout(false);
             this.jour7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro7)).EndInit();
             this.jour31.ResumeLayout(false);
             this.jour31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro31)).EndInit();
             this.jour16.ResumeLayout(false);
             this.jour16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro16)).EndInit();
             this.jour6.ResumeLayout(false);
             this.jour6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro6)).EndInit();
             this.jour13.ResumeLayout(false);
             this.jour13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro13)).EndInit();
             this.jour3.ResumeLayout(false);
             this.jour3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro3)).EndInit();
             this.jour15.ResumeLayout(false);
             this.jour15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro15)).EndInit();
             this.jour5.ResumeLayout(false);
             this.jour5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro5)).EndInit();
             this.jour12.ResumeLayout(false);
             this.jour12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro12)).EndInit();
             this.jour14.ResumeLayout(false);
             this.jour14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro14)).EndInit();
             this.jour2.ResumeLayout(false);
             this.jour2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro2)).EndInit();
             this.jour11.ResumeLayout(false);
             this.jour11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro11)).EndInit();
             this.jour4.ResumeLayout(false);
             this.jour4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro4)).EndInit();
             this.jour1.ResumeLayout(false);
             this.jour1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.suivant)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.precedent)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro50)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro49)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro48)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro46)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2354,5 +2519,6 @@
         private System.Windows.Forms.Label periodeNum;
         private System.Windows.Forms.PictureBox suivant;
         private System.Windows.Forms.PictureBox precedent;
+        private System.Windows.Forms.Label numJourneeLabel;
     }
 }

@@ -89,5 +89,10 @@ namespace MarsApp
 
             return true;
         }
+
+        public virtual bool isActiviteExterieure()
+        {
+            return false;
+        }
     }
 }

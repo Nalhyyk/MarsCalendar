@@ -23,5 +23,10 @@ namespace MarsApp
         {
 
         }
+
+        public override bool isActiviteExterieure()
+        {
+            return true;
+        }
     }
 }

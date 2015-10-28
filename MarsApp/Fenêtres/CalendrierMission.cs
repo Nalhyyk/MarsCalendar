@@ -46,7 +46,7 @@ namespace MarsApp
 
             journeesMission[1].journeePassee();
             journeesMission[2].journeeEnCours();
-            journeesMission[10].setJourneeExterieure(true);
+            
 
             changerPeriode(periode);
             verificationChangementPeriode();
@@ -58,6 +58,10 @@ namespace MarsApp
                 for (int i = 1; i < 51; ++i)
                 {
                     numeros[i].Text = (i + 50 * (periode - 1)).ToString();
+                    numeros[i].Tag = (i + 50 * (periode - 1)).ToString();
+                    icones[i].Tag = (i + 50 * (periode - 1)).ToString();
+                    panels[i].Tag = (i + 50 * (periode - 1)).ToString();
+
                     panels[i].BackColor = Color.FromArgb(journeesMission[i + 50 * (periode - 1)].couleurJournee()[0],
                                                         journeesMission[i + 50 * (periode - 1)].couleurJournee()[1],
                                                         journeesMission[i + 50 * (periode - 1)].couleurJournee()[2]);
@@ -106,6 +110,20 @@ namespace MarsApp
                 suivant.Enabled = true;
                 suivant.Visible = true;
             }
+        }
+
+        private void jour_click(object sender, EventArgs e)
+        {
+            int numJournee = 0;
+
+            if (sender as Label != null)
+                numJournee = int.Parse(((Label)sender).Tag.ToString());
+            else if (sender as PictureBox != null)
+                numJournee = int.Parse(((PictureBox)sender).Tag.ToString());
+            else if (sender as Panel != null)
+                numJournee = int.Parse(((Panel)sender).Tag.ToString());
+
+            numJourneeLabel.Text = "Journée " + numJournee;
         }
     }
 }

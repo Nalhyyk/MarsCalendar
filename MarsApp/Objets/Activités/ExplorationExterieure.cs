@@ -49,5 +49,10 @@ namespace MarsApp
         {
             transport.deplacement();
         }
+
+        public override bool isActiviteExterieure()
+        {
+            return true;
+        }
     }
 }
