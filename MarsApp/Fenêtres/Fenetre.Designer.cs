@@ -1,4 +1,4 @@
-﻿namespace MarsApp.Fenêtres
+﻿namespace MarsApp
 {
     partial class Fenetre
     {

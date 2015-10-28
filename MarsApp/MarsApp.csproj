@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fenêtres\Fenetre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\Fenetre.Designer.cs">
+      <DependentUpon>Fenetre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Objets\Activités\Activite.cs" />
     <Compile Include="Fenêtres\App.cs">
       <SubType>Form</SubType>
