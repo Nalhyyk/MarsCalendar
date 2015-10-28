@@ -46,13 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="Fenêtres\Fenetre.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Fenêtres\Fenetre.Designer.cs">
-      <DependentUpon>Fenetre.cs</DependentUpon>
-=======
     <Compile Include="Fenêtres\BaseFenetre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,7 +57,6 @@
     </Compile>
     <Compile Include="Fenêtres\CalendrierMission.Designer.cs">
       <DependentUpon>CalendrierMission.cs</DependentUpon>
->>>>>>> 3c34cbe7d60c8bd067361a766ad2a518ce1e0d9a
     </Compile>
     <Compile Include="Objets\Activités\Activite.cs" />
     <Compile Include="Fenêtres\MenuPrincipal.cs">
