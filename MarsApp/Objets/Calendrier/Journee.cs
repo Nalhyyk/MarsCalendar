@@ -11,38 +11,43 @@ namespace MarsApp
     public class Journee
     {
         private int numero;
+        private IEtat etat;
         private List<Activite> listeActivites;
         private String rapport;
+        private bool journeeExterieure;
 
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
-        public Journee() : this(0, "") {}
+        public Journee() : this(0, "", new Future(), false) {}
 
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
         /// <param name="numero">Numéro de la journée</param>
-        public Journee(int numero) : this(numero, "") {}
+        public Journee(int numero) : this(numero, "", new Future(), false) { }
 
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
         /// <param name="numero">Le numéro de la journée</param>
         /// <param name="rapport">Le rapport de la journée</param>
-        public Journee(int numero, String rapport)
+        public Journee(int numero, String rapport, IEtat etat, bool journeeExterieure)
         {
             this.numero = numero;
             this.rapport = rapport;
             listeActivites = new List<Activite>();
-            listeActivites.Add(new Activite("Repos", "", new TimeMartien(0), new TimeMartien(7)));
-            listeActivites.Add(new Activite("Repas", "", new TimeMartien(7), new TimeMartien(8)));
-            listeActivites.Add(new Activite("Privé", "", new TimeMartien(8), new TimeMartien(12)));
-            listeActivites.Add(new Activite("Repas", "", new TimeMartien(12), new TimeMartien(14)));
-            listeActivites.Add(new Activite("Privé", "", new TimeMartien(14), new TimeMartien(19)));
-            listeActivites.Add(new Activite("Repas", "", new TimeMartien(19), new TimeMartien(21)));
-            listeActivites.Add(new Activite("Privé", "", new TimeMartien(21), new TimeMartien(23)));
-            listeActivites.Add(new Activite("Repos", "", new TimeMartien(23), new TimeMartien(24, 40)));
+            listeActivites.Add(new Activite("Repos", "", new TimeMartien(0), new TimeMartien(7), new Lieu(0, 0)));
+            listeActivites.Add(new Activite("Repas", "", new TimeMartien(7), new TimeMartien(8), new Lieu(0, 0)));
+            listeActivites.Add(new Activite("Privé", "", new TimeMartien(8), new TimeMartien(12), new Lieu(0, 0)));
+            listeActivites.Add(new Activite("Repas", "", new TimeMartien(12), new TimeMartien(14), new Lieu(0, 0)));
+            listeActivites.Add(new Activite("Privé", "", new TimeMartien(14), new TimeMartien(19), new Lieu(0, 0)));
+            listeActivites.Add(new Activite("Repas", "", new TimeMartien(19), new TimeMartien(21), new Lieu(0, 0)));
+            listeActivites.Add(new Activite("Privé", "", new TimeMartien(21), new TimeMartien(23), new Lieu(0, 0)));
+            listeActivites.Add(new Activite("Repos", "", new TimeMartien(23), new TimeMartien(24, 40), new Lieu(0, 0)));
+
+            this.etat = etat;
+            this.journeeExterieure = journeeExterieure;
         }
 
         /// <summary>
@@ -76,6 +81,45 @@ namespace MarsApp
                 return false;
 
             return true;
+        }
+
+        public int[] couleurJournee()
+        {
+            return etat.couleur();
+        }
+
+        /// <summary>
+        /// Définit la journée comme étant passée
+        /// </summary>
+        public void journeePassee()
+        {
+            etat = new Passee();
+        }
+
+        /// <summary>
+        /// Définit la journée comme étant en cours
+        /// </summary>
+        public void journeeEnCours()
+        {
+            etat = new EnCours();
+        }
+
+        /// <summary>
+        /// Définit la journée comme étant à venir
+        /// </summary>
+        public void journeeAVenir()
+        {
+            etat = new Future();
+        }
+
+        public bool isJourneeExterieure()
+        {
+            return journeeExterieure;
+        }
+
+        public void setJourneeExterieure(bool journeeExterieure)
+        {
+            this.journeeExterieure = journeeExterieure;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace MarsApp
 {
-    partial class App
+    partial class MenuPrincipal
     {
         /// <summary>
         /// Variable nécessaire au concepteur.

@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace MarsApp
 {
-    public partial class App : Fenetre
+    public partial class MenuPrincipal : BaseFenetre
     {
-        public App()
+        public MenuPrincipal()
         {
             InitializeComponent();
         }

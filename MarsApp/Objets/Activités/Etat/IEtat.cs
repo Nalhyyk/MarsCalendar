@@ -14,5 +14,10 @@ namespace MarsApp
         /// Affiche l'état de l'activité
         /// </summary>
         void etat();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        int[] couleur();
     }
 }

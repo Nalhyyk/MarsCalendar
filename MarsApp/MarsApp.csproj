@@ -46,23 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Fenêtres\Fenetre.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Fenêtres\Fenetre.Designer.cs">
       <DependentUpon>Fenetre.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Objets\Activités\Activite.cs" />
-    <Compile Include="Fenêtres\App.cs">
+=======
+    <Compile Include="Fenêtres\BaseFenetre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Fenêtres\App.Designer.cs">
-      <DependentUpon>App.cs</DependentUpon>
+    <Compile Include="Fenêtres\BaseFenetre.Designer.cs">
+      <DependentUpon>BaseFenetre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fenêtres\CalendrierMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\CalendrierMission.Designer.cs">
+      <DependentUpon>CalendrierMission.cs</DependentUpon>
+>>>>>>> 3c34cbe7d60c8bd067361a766ad2a518ce1e0d9a
+    </Compile>
+    <Compile Include="Objets\Activités\Activite.cs" />
+    <Compile Include="Fenêtres\MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Objets\Activités\Domaine.cs" />
-    <Compile Include="Objets\Activités\Etat\ActiviteEnCours.cs" />
-    <Compile Include="Objets\Activités\Etat\ActiviteFuture.cs" />
-    <Compile Include="Objets\Activités\Etat\ActivitePassee.cs" />
+    <Compile Include="Objets\Activités\Etat\EnCours.cs" />
+    <Compile Include="Objets\Activités\Etat\Future.cs" />
+    <Compile Include="Objets\Activités\Etat\Passee.cs" />
     <Compile Include="Objets\Activités\Etat\IEtat.cs" />
     <Compile Include="Objets\Activités\ExperienceExterieure.cs" />
     <Compile Include="Objets\Activités\ExplorationExterieure.cs" />
@@ -77,8 +91,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\Constantes.cs" />
-    <EmbeddedResource Include="Fenêtres\App.resx">
-      <DependentUpon>App.cs</DependentUpon>
+    <EmbeddedResource Include="Fenêtres\CalendrierMission.resx">
+      <DependentUpon>CalendrierMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenêtres\MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -88,6 +105,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,7 +117,18 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Ressources\Images\Carte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Images\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Images\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Images\astronaute.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
