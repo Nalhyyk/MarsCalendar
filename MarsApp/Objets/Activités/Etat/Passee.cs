@@ -6,21 +6,27 @@ using System.Text;
 namespace MarsApp
 {
     /// <summary>
-    /// L'activité est en cours
+    /// L'activité/Journée a eu lieu
     /// </summary>
-    class ActiviteEnCours : IEtat
+    class Passee : IEtat
     {
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
-        public ActiviteEnCours()
+        public Passee()
         {
 
         }
 
         public void etat()
         {
-            Console.WriteLine("Activité en cours");
+            Console.WriteLine("Passée");
+        }
+
+
+        public int[] couleur()
+        {
+            return new int[] { 199, 195, 199};
         }
     }
 }

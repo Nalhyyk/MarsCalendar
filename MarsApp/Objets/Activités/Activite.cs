@@ -36,7 +36,7 @@ namespace MarsApp
         {
             this.nom = nom;
             this.description = description;
-            etat = new ActiviteFuture();
+            etat = new Future();
             this.heureDebut = deb;
             this.heureFin = fin;
             listeAstronautes = new List<Astronaute>();
@@ -56,7 +56,7 @@ namespace MarsApp
         /// </summary>
         public void activitePassee()
         {
-            etat = new ActivitePassee();
+            etat = new Passee();
         }
 
         /// <summary>
@@ -64,7 +64,7 @@ namespace MarsApp
         /// </summary>
         public void activiteEnCours()
         {
-            etat = new ActiviteEnCours();
+            etat = new EnCours();
         }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace MarsApp
         /// </summary>
         public void activiteAVenir()
         {
-            etat = new ActiviteFuture();
+            etat = new Future();
         }
 
         /// <summary>

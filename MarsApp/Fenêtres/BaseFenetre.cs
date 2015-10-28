@@ -19,6 +19,7 @@ namespace MarsApp
         /// </summary>
         public BaseFenetre()
         {
+            InitializeComponent();
             centrerFenetre();
         }
 
