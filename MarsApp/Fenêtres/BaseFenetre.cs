@@ -12,12 +12,12 @@ namespace MarsApp
     /// <summary>
     /// Classe mère de tous les WForm
     /// </summary>
-    public partial class Fenetre : Form
+    public partial class BaseFenetre : Form
     {
         /// <summary>
-        /// Constructeur de Fenetre
+        /// Constructeur par défaut
         /// </summary>
-        public Fenetre()
+        public BaseFenetre()
         {
             centrerFenetre();
         }

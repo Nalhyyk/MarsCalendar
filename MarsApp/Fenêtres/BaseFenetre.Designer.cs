@@ -1,6 +1,6 @@
-﻿namespace MarsApp.Fenêtres
+﻿namespace MarsApp
 {
-    partial class Fenetre
+    partial class BaseFenetre
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Fenetre";
+            this.Text = "BaseFenetre";
         }
 
         #endregion

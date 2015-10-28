@@ -10,10 +10,10 @@ namespace MarsApp
     /// </summary>
     public class Constantes
     {
-        public static const int LIMITE_RAPPORT_JOURNEE = 1000;
-        public static const int LIMITE_DESCRIPTION_ACTIVITE = 400;
+        public const int LIMITE_RAPPORT_JOURNEE = 1000;
+        public const int LIMITE_DESCRIPTION_ACTIVITE = 400;
 
-        public static const int LARGEUR_CARTE = 1095;
-        public static const int HAUTEUR_CARTE = 2053;
+        public const int LARGEUR_CARTE = 1095;
+        public const int HAUTEUR_CARTE = 2053;
     }
 }

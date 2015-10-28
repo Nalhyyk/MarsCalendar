@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace MarsApp
 {
-    public partial class App : Fenetre
+    public partial class App : BaseFenetre
     {
         public App()
         {

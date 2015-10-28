@@ -46,10 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Objets\Activités\Activite.cs" />
-    <Compile Include="Fenêtres\App.cs">
+    <Compile Include="Fenêtres\BaseFenetre.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Fenêtres\BaseFenetre.Designer.cs">
+      <DependentUpon>BaseFenetre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objets\Activités\Activite.cs" />
+    <Compile Include="Fenêtres\App.cs" />
     <Compile Include="Fenêtres\App.Designer.cs">
       <DependentUpon>App.cs</DependentUpon>
     </Compile>
