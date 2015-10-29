@@ -192,6 +192,11 @@ namespace MarsApp
         }
         #endregion
 
+
+        public int getHeures() { return heure; }
+        public int getMinutes() { return minute; }
+        public int getSecondes() { return seconde; }
+
         /// <summary>
         /// Texte affiché pour la classe
         /// </summary>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalendrierMission));
             this.periodeNum = new System.Windows.Forms.Label();
             this.jour50 = new System.Windows.Forms.Panel();
@@ -186,6 +187,86 @@
             this.suivant = new System.Windows.Forms.PictureBox();
             this.precedent = new System.Windows.Forms.PictureBox();
             this.numJourneeLabel = new System.Windows.Forms.Label();
+            this.h24 = new System.Windows.Forms.Panel();
+            this.actH24 = new System.Windows.Forms.Label();
+            this.h23 = new System.Windows.Forms.Panel();
+            this.actH23 = new System.Windows.Forms.Label();
+            this.h17 = new System.Windows.Forms.Panel();
+            this.actH17 = new System.Windows.Forms.Label();
+            this.h22 = new System.Windows.Forms.Panel();
+            this.actH22 = new System.Windows.Forms.Label();
+            this.h11 = new System.Windows.Forms.Panel();
+            this.actH11 = new System.Windows.Forms.Label();
+            this.h21 = new System.Windows.Forms.Panel();
+            this.actH21 = new System.Windows.Forms.Label();
+            this.h16 = new System.Windows.Forms.Panel();
+            this.actH16 = new System.Windows.Forms.Label();
+            this.h20 = new System.Windows.Forms.Panel();
+            this.actH20 = new System.Windows.Forms.Label();
+            this.h5 = new System.Windows.Forms.Panel();
+            this.actH5 = new System.Windows.Forms.Label();
+            this.h19 = new System.Windows.Forms.Panel();
+            this.actH19 = new System.Windows.Forms.Label();
+            this.h15 = new System.Windows.Forms.Panel();
+            this.actH15 = new System.Windows.Forms.Label();
+            this.h18 = new System.Windows.Forms.Panel();
+            this.actH18 = new System.Windows.Forms.Label();
+            this.h10 = new System.Windows.Forms.Panel();
+            this.actH10 = new System.Windows.Forms.Label();
+            this.h14 = new System.Windows.Forms.Panel();
+            this.actH14 = new System.Windows.Forms.Label();
+            this.h4 = new System.Windows.Forms.Panel();
+            this.actH4 = new System.Windows.Forms.Label();
+            this.h13 = new System.Windows.Forms.Panel();
+            this.actH13 = new System.Windows.Forms.Label();
+            this.h9 = new System.Windows.Forms.Panel();
+            this.actH9 = new System.Windows.Forms.Label();
+            this.h12 = new System.Windows.Forms.Panel();
+            this.actH12 = new System.Windows.Forms.Label();
+            this.h3 = new System.Windows.Forms.Panel();
+            this.actH3 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.h8 = new System.Windows.Forms.Panel();
+            this.actH8 = new System.Windows.Forms.Label();
+            this.h2 = new System.Windows.Forms.Panel();
+            this.actH2 = new System.Windows.Forms.Label();
+            this.h7 = new System.Windows.Forms.Panel();
+            this.actH7 = new System.Windows.Forms.Label();
+            this.h1 = new System.Windows.Forms.Panel();
+            this.actH1 = new System.Windows.Forms.Label();
+            this.h6 = new System.Windows.Forms.Panel();
+            this.actH6 = new System.Windows.Forms.Label();
+            this.h0 = new System.Windows.Forms.Panel();
+            this.actH0 = new System.Windows.Forms.Label();
+            this.clicDroitActivite = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.Modifier = new System.Windows.Forms.ToolStripMenuItem();
+            this.Supprimer = new System.Windows.Forms.ToolStripMenuItem();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.jour50.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.astro50)).BeginInit();
             this.jour30.SuspendLayout();
@@ -288,6 +369,32 @@
             ((System.ComponentModel.ISupportInitialize)(this.astro1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.suivant)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.precedent)).BeginInit();
+            this.h24.SuspendLayout();
+            this.h23.SuspendLayout();
+            this.h17.SuspendLayout();
+            this.h22.SuspendLayout();
+            this.h11.SuspendLayout();
+            this.h21.SuspendLayout();
+            this.h16.SuspendLayout();
+            this.h20.SuspendLayout();
+            this.h5.SuspendLayout();
+            this.h19.SuspendLayout();
+            this.h15.SuspendLayout();
+            this.h18.SuspendLayout();
+            this.h10.SuspendLayout();
+            this.h14.SuspendLayout();
+            this.h4.SuspendLayout();
+            this.h13.SuspendLayout();
+            this.h9.SuspendLayout();
+            this.h12.SuspendLayout();
+            this.h3.SuspendLayout();
+            this.h8.SuspendLayout();
+            this.h2.SuspendLayout();
+            this.h7.SuspendLayout();
+            this.h1.SuspendLayout();
+            this.h6.SuspendLayout();
+            this.h0.SuspendLayout();
+            this.clicDroitActivite.SuspendLayout();
             this.SuspendLayout();
             // 
             // periodeNum
@@ -2133,7 +2240,7 @@
             // 
             this.numJourneeLabel.AutoSize = true;
             this.numJourneeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numJourneeLabel.Location = new System.Drawing.Point(924, 118);
+            this.numJourneeLabel.Location = new System.Drawing.Point(1002, 31);
             this.numJourneeLabel.MaximumSize = new System.Drawing.Size(150, 0);
             this.numJourneeLabel.MinimumSize = new System.Drawing.Size(150, 0);
             this.numJourneeLabel.Name = "numJourneeLabel";
@@ -2142,12 +2249,884 @@
             this.numJourneeLabel.Text = "Journée";
             this.numJourneeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // h24
+            // 
+            this.h24.Controls.Add(this.actH24);
+            this.h24.Location = new System.Drawing.Point(945, 526);
+            this.h24.Name = "h24";
+            this.h24.Size = new System.Drawing.Size(275, 20);
+            this.h24.TabIndex = 118;
+            // 
+            // actH24
+            // 
+            this.actH24.AutoSize = true;
+            this.actH24.ContextMenuStrip = this.clicDroitActivite;
+            this.actH24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH24.Location = new System.Drawing.Point(3, 4);
+            this.actH24.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH24.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH24.Name = "actH24";
+            this.actH24.Size = new System.Drawing.Size(269, 13);
+            this.actH24.TabIndex = 58;
+            this.actH24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h23
+            // 
+            this.h23.Controls.Add(this.actH23);
+            this.h23.Location = new System.Drawing.Point(945, 507);
+            this.h23.Name = "h23";
+            this.h23.Size = new System.Drawing.Size(275, 20);
+            this.h23.TabIndex = 115;
+            // 
+            // actH23
+            // 
+            this.actH23.AutoSize = true;
+            this.actH23.ContextMenuStrip = this.clicDroitActivite;
+            this.actH23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH23.Location = new System.Drawing.Point(3, 4);
+            this.actH23.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH23.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH23.Name = "actH23";
+            this.actH23.Size = new System.Drawing.Size(269, 13);
+            this.actH23.TabIndex = 57;
+            this.actH23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h17
+            // 
+            this.h17.Controls.Add(this.actH17);
+            this.h17.Location = new System.Drawing.Point(945, 393);
+            this.h17.Name = "h17";
+            this.h17.Size = new System.Drawing.Size(275, 20);
+            this.h17.TabIndex = 116;
+            // 
+            // actH17
+            // 
+            this.actH17.AutoSize = true;
+            this.actH17.ContextMenuStrip = this.clicDroitActivite;
+            this.actH17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH17.Location = new System.Drawing.Point(3, 4);
+            this.actH17.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH17.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH17.Name = "actH17";
+            this.actH17.Size = new System.Drawing.Size(269, 13);
+            this.actH17.TabIndex = 51;
+            this.actH17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h22
+            // 
+            this.h22.Controls.Add(this.actH22);
+            this.h22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.h22.Location = new System.Drawing.Point(945, 488);
+            this.h22.Name = "h22";
+            this.h22.Size = new System.Drawing.Size(275, 20);
+            this.h22.TabIndex = 120;
+            // 
+            // actH22
+            // 
+            this.actH22.AutoSize = true;
+            this.actH22.ContextMenuStrip = this.clicDroitActivite;
+            this.actH22.Location = new System.Drawing.Point(3, 4);
+            this.actH22.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH22.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH22.Name = "actH22";
+            this.actH22.Size = new System.Drawing.Size(269, 13);
+            this.actH22.TabIndex = 56;
+            this.actH22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h11
+            // 
+            this.h11.Controls.Add(this.actH11);
+            this.h11.Location = new System.Drawing.Point(945, 279);
+            this.h11.Name = "h11";
+            this.h11.Size = new System.Drawing.Size(275, 20);
+            this.h11.TabIndex = 117;
+            // 
+            // actH11
+            // 
+            this.actH11.AutoSize = true;
+            this.actH11.ContextMenuStrip = this.clicDroitActivite;
+            this.actH11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH11.Location = new System.Drawing.Point(3, 4);
+            this.actH11.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH11.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH11.Name = "actH11";
+            this.actH11.Size = new System.Drawing.Size(269, 13);
+            this.actH11.TabIndex = 45;
+            this.actH11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h21
+            // 
+            this.h21.Controls.Add(this.actH21);
+            this.h21.Location = new System.Drawing.Point(945, 469);
+            this.h21.Name = "h21";
+            this.h21.Size = new System.Drawing.Size(275, 20);
+            this.h21.TabIndex = 124;
+            // 
+            // actH21
+            // 
+            this.actH21.AutoSize = true;
+            this.actH21.ContextMenuStrip = this.clicDroitActivite;
+            this.actH21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH21.Location = new System.Drawing.Point(3, 4);
+            this.actH21.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH21.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH21.Name = "actH21";
+            this.actH21.Size = new System.Drawing.Size(269, 13);
+            this.actH21.TabIndex = 55;
+            this.actH21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h16
+            // 
+            this.h16.Controls.Add(this.actH16);
+            this.h16.Location = new System.Drawing.Point(945, 374);
+            this.h16.Name = "h16";
+            this.h16.Size = new System.Drawing.Size(275, 20);
+            this.h16.TabIndex = 121;
+            // 
+            // actH16
+            // 
+            this.actH16.AutoSize = true;
+            this.actH16.ContextMenuStrip = this.clicDroitActivite;
+            this.actH16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH16.Location = new System.Drawing.Point(3, 4);
+            this.actH16.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH16.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH16.Name = "actH16";
+            this.actH16.Size = new System.Drawing.Size(269, 13);
+            this.actH16.TabIndex = 50;
+            this.actH16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h20
+            // 
+            this.h20.Controls.Add(this.actH20);
+            this.h20.Location = new System.Drawing.Point(945, 450);
+            this.h20.Name = "h20";
+            this.h20.Size = new System.Drawing.Size(275, 20);
+            this.h20.TabIndex = 125;
+            // 
+            // actH20
+            // 
+            this.actH20.AutoSize = true;
+            this.actH20.ContextMenuStrip = this.clicDroitActivite;
+            this.actH20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH20.Location = new System.Drawing.Point(3, 4);
+            this.actH20.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH20.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH20.Name = "actH20";
+            this.actH20.Size = new System.Drawing.Size(269, 13);
+            this.actH20.TabIndex = 54;
+            this.actH20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h5
+            // 
+            this.h5.Controls.Add(this.actH5);
+            this.h5.Location = new System.Drawing.Point(945, 165);
+            this.h5.Name = "h5";
+            this.h5.Size = new System.Drawing.Size(275, 20);
+            this.h5.TabIndex = 108;
+            // 
+            // actH5
+            // 
+            this.actH5.AutoSize = true;
+            this.actH5.ContextMenuStrip = this.clicDroitActivite;
+            this.actH5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH5.Location = new System.Drawing.Point(3, 4);
+            this.actH5.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH5.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH5.Name = "actH5";
+            this.actH5.Size = new System.Drawing.Size(269, 13);
+            this.actH5.TabIndex = 39;
+            this.actH5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h19
+            // 
+            this.h19.Controls.Add(this.actH19);
+            this.h19.Location = new System.Drawing.Point(945, 431);
+            this.h19.Name = "h19";
+            this.h19.Size = new System.Drawing.Size(275, 20);
+            this.h19.TabIndex = 128;
+            // 
+            // actH19
+            // 
+            this.actH19.AutoSize = true;
+            this.actH19.ContextMenuStrip = this.clicDroitActivite;
+            this.actH19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH19.Location = new System.Drawing.Point(3, 4);
+            this.actH19.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH19.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH19.Name = "actH19";
+            this.actH19.Size = new System.Drawing.Size(269, 13);
+            this.actH19.TabIndex = 53;
+            this.actH19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h15
+            // 
+            this.h15.Controls.Add(this.actH15);
+            this.h15.Location = new System.Drawing.Point(945, 355);
+            this.h15.Name = "h15";
+            this.h15.Size = new System.Drawing.Size(275, 20);
+            this.h15.TabIndex = 122;
+            // 
+            // actH15
+            // 
+            this.actH15.AutoSize = true;
+            this.actH15.ContextMenuStrip = this.clicDroitActivite;
+            this.actH15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH15.Location = new System.Drawing.Point(3, 4);
+            this.actH15.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH15.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH15.Name = "actH15";
+            this.actH15.Size = new System.Drawing.Size(269, 13);
+            this.actH15.TabIndex = 49;
+            this.actH15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h18
+            // 
+            this.h18.Controls.Add(this.actH18);
+            this.h18.Location = new System.Drawing.Point(945, 412);
+            this.h18.Name = "h18";
+            this.h18.Size = new System.Drawing.Size(275, 20);
+            this.h18.TabIndex = 113;
+            // 
+            // actH18
+            // 
+            this.actH18.AutoSize = true;
+            this.actH18.ContextMenuStrip = this.clicDroitActivite;
+            this.actH18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH18.Location = new System.Drawing.Point(3, 4);
+            this.actH18.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH18.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH18.Name = "actH18";
+            this.actH18.Size = new System.Drawing.Size(269, 13);
+            this.actH18.TabIndex = 52;
+            this.actH18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h10
+            // 
+            this.h10.Controls.Add(this.actH10);
+            this.h10.Location = new System.Drawing.Point(945, 260);
+            this.h10.Name = "h10";
+            this.h10.Size = new System.Drawing.Size(275, 20);
+            this.h10.TabIndex = 119;
+            // 
+            // actH10
+            // 
+            this.actH10.AutoSize = true;
+            this.actH10.ContextMenuStrip = this.clicDroitActivite;
+            this.actH10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH10.Location = new System.Drawing.Point(3, 4);
+            this.actH10.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH10.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH10.Name = "actH10";
+            this.actH10.Size = new System.Drawing.Size(269, 13);
+            this.actH10.TabIndex = 44;
+            this.actH10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h14
+            // 
+            this.h14.Controls.Add(this.actH14);
+            this.h14.Location = new System.Drawing.Point(945, 336);
+            this.h14.Name = "h14";
+            this.h14.Size = new System.Drawing.Size(275, 20);
+            this.h14.TabIndex = 127;
+            // 
+            // actH14
+            // 
+            this.actH14.AutoSize = true;
+            this.actH14.ContextMenuStrip = this.clicDroitActivite;
+            this.actH14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH14.Location = new System.Drawing.Point(3, 4);
+            this.actH14.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH14.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH14.Name = "actH14";
+            this.actH14.Size = new System.Drawing.Size(269, 13);
+            this.actH14.TabIndex = 48;
+            this.actH14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h4
+            // 
+            this.h4.Controls.Add(this.actH4);
+            this.h4.Location = new System.Drawing.Point(945, 146);
+            this.h4.Name = "h4";
+            this.h4.Size = new System.Drawing.Size(275, 20);
+            this.h4.TabIndex = 111;
+            // 
+            // actH4
+            // 
+            this.actH4.AutoSize = true;
+            this.actH4.ContextMenuStrip = this.clicDroitActivite;
+            this.actH4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH4.Location = new System.Drawing.Point(3, 4);
+            this.actH4.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH4.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH4.Name = "actH4";
+            this.actH4.Size = new System.Drawing.Size(269, 13);
+            this.actH4.TabIndex = 38;
+            this.actH4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h13
+            // 
+            this.h13.Controls.Add(this.actH13);
+            this.h13.Location = new System.Drawing.Point(945, 317);
+            this.h13.Name = "h13";
+            this.h13.Size = new System.Drawing.Size(275, 20);
+            this.h13.TabIndex = 130;
+            // 
+            // actH13
+            // 
+            this.actH13.AutoSize = true;
+            this.actH13.ContextMenuStrip = this.clicDroitActivite;
+            this.actH13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH13.Location = new System.Drawing.Point(3, 3);
+            this.actH13.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH13.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH13.Name = "actH13";
+            this.actH13.Size = new System.Drawing.Size(269, 13);
+            this.actH13.TabIndex = 47;
+            this.actH13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h9
+            // 
+            this.h9.Controls.Add(this.actH9);
+            this.h9.Location = new System.Drawing.Point(945, 241);
+            this.h9.Name = "h9";
+            this.h9.Size = new System.Drawing.Size(275, 20);
+            this.h9.TabIndex = 123;
+            // 
+            // actH9
+            // 
+            this.actH9.AutoSize = true;
+            this.actH9.ContextMenuStrip = this.clicDroitActivite;
+            this.actH9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH9.Location = new System.Drawing.Point(3, 4);
+            this.actH9.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH9.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH9.Name = "actH9";
+            this.actH9.Size = new System.Drawing.Size(269, 13);
+            this.actH9.TabIndex = 43;
+            this.actH9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h12
+            // 
+            this.h12.Controls.Add(this.actH12);
+            this.h12.Location = new System.Drawing.Point(945, 298);
+            this.h12.Name = "h12";
+            this.h12.Size = new System.Drawing.Size(275, 20);
+            this.h12.TabIndex = 114;
+            // 
+            // actH12
+            // 
+            this.actH12.AutoSize = true;
+            this.actH12.ContextMenuStrip = this.clicDroitActivite;
+            this.actH12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH12.Location = new System.Drawing.Point(3, 4);
+            this.actH12.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH12.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH12.Name = "actH12";
+            this.actH12.Size = new System.Drawing.Size(269, 13);
+            this.actH12.TabIndex = 46;
+            this.actH12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h3
+            // 
+            this.h3.Controls.Add(this.actH3);
+            this.h3.Controls.Add(this.label27);
+            this.h3.Controls.Add(this.label28);
+            this.h3.Location = new System.Drawing.Point(945, 127);
+            this.h3.Name = "h3";
+            this.h3.Size = new System.Drawing.Size(275, 20);
+            this.h3.TabIndex = 110;
+            // 
+            // actH3
+            // 
+            this.actH3.AutoSize = true;
+            this.actH3.ContextMenuStrip = this.clicDroitActivite;
+            this.actH3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH3.Location = new System.Drawing.Point(3, 4);
+            this.actH3.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH3.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH3.Name = "actH3";
+            this.actH3.Size = new System.Drawing.Size(269, 13);
+            this.actH3.TabIndex = 35;
+            this.actH3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(3, 5);
+            this.label27.MaximumSize = new System.Drawing.Size(269, 13);
+            this.label27.MinimumSize = new System.Drawing.Size(269, 13);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(269, 13);
+            this.label27.TabIndex = 36;
+            this.label27.Text = "label26";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(3, 5);
+            this.label28.MaximumSize = new System.Drawing.Size(269, 13);
+            this.label28.MinimumSize = new System.Drawing.Size(269, 13);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(269, 13);
+            this.label28.TabIndex = 37;
+            this.label28.Text = "label26";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h8
+            // 
+            this.h8.Controls.Add(this.actH8);
+            this.h8.Location = new System.Drawing.Point(945, 222);
+            this.h8.Name = "h8";
+            this.h8.Size = new System.Drawing.Size(275, 20);
+            this.h8.TabIndex = 126;
+            // 
+            // actH8
+            // 
+            this.actH8.AutoSize = true;
+            this.actH8.ContextMenuStrip = this.clicDroitActivite;
+            this.actH8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH8.Location = new System.Drawing.Point(3, 4);
+            this.actH8.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH8.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH8.Name = "actH8";
+            this.actH8.Size = new System.Drawing.Size(269, 13);
+            this.actH8.TabIndex = 42;
+            this.actH8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h2
+            // 
+            this.h2.Controls.Add(this.actH2);
+            this.h2.Location = new System.Drawing.Point(945, 108);
+            this.h2.Name = "h2";
+            this.h2.Size = new System.Drawing.Size(275, 20);
+            this.h2.TabIndex = 109;
+            // 
+            // actH2
+            // 
+            this.actH2.AutoSize = true;
+            this.actH2.ContextMenuStrip = this.clicDroitActivite;
+            this.actH2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH2.Location = new System.Drawing.Point(3, 4);
+            this.actH2.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH2.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH2.Name = "actH2";
+            this.actH2.Size = new System.Drawing.Size(269, 13);
+            this.actH2.TabIndex = 34;
+            this.actH2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h7
+            // 
+            this.h7.Controls.Add(this.actH7);
+            this.h7.Location = new System.Drawing.Point(945, 203);
+            this.h7.Name = "h7";
+            this.h7.Size = new System.Drawing.Size(275, 20);
+            this.h7.TabIndex = 129;
+            // 
+            // actH7
+            // 
+            this.actH7.AutoSize = true;
+            this.actH7.ContextMenuStrip = this.clicDroitActivite;
+            this.actH7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH7.Location = new System.Drawing.Point(3, 4);
+            this.actH7.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH7.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH7.Name = "actH7";
+            this.actH7.Size = new System.Drawing.Size(269, 13);
+            this.actH7.TabIndex = 41;
+            this.actH7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h1
+            // 
+            this.h1.Controls.Add(this.actH1);
+            this.h1.Location = new System.Drawing.Point(945, 89);
+            this.h1.Name = "h1";
+            this.h1.Size = new System.Drawing.Size(275, 20);
+            this.h1.TabIndex = 107;
+            // 
+            // actH1
+            // 
+            this.actH1.AutoSize = true;
+            this.actH1.ContextMenuStrip = this.clicDroitActivite;
+            this.actH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH1.Location = new System.Drawing.Point(3, 4);
+            this.actH1.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH1.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH1.Name = "actH1";
+            this.actH1.Size = new System.Drawing.Size(269, 13);
+            this.actH1.TabIndex = 34;
+            this.actH1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h6
+            // 
+            this.h6.Controls.Add(this.actH6);
+            this.h6.Location = new System.Drawing.Point(945, 184);
+            this.h6.Name = "h6";
+            this.h6.Size = new System.Drawing.Size(275, 20);
+            this.h6.TabIndex = 112;
+            // 
+            // actH6
+            // 
+            this.actH6.AutoSize = true;
+            this.actH6.ContextMenuStrip = this.clicDroitActivite;
+            this.actH6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH6.Location = new System.Drawing.Point(3, 4);
+            this.actH6.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH6.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH6.Name = "actH6";
+            this.actH6.Size = new System.Drawing.Size(269, 13);
+            this.actH6.TabIndex = 40;
+            this.actH6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h0
+            // 
+            this.h0.Controls.Add(this.actH0);
+            this.h0.Location = new System.Drawing.Point(945, 70);
+            this.h0.Name = "h0";
+            this.h0.Size = new System.Drawing.Size(275, 20);
+            this.h0.TabIndex = 106;
+            // 
+            // actH0
+            // 
+            this.actH0.AutoSize = true;
+            this.actH0.ContextMenuStrip = this.clicDroitActivite;
+            this.actH0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH0.Location = new System.Drawing.Point(3, 3);
+            this.actH0.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH0.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH0.Name = "actH0";
+            this.actH0.Size = new System.Drawing.Size(269, 13);
+            this.actH0.TabIndex = 33;
+            this.actH0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // clicDroitActivite
+            // 
+            this.clicDroitActivite.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Modifier,
+            this.Supprimer});
+            this.clicDroitActivite.Name = "contextMenuStrip1";
+            this.clicDroitActivite.Size = new System.Drawing.Size(130, 48);
+            // 
+            // Modifier
+            // 
+            this.Modifier.Name = "Modifier";
+            this.Modifier.Size = new System.Drawing.Size(129, 22);
+            this.Modifier.Text = "Modifier";
+            this.Modifier.Click += new System.EventHandler(this.Modifier_Click);
+            // 
+            // Supprimer
+            // 
+            this.Supprimer.Name = "Supprimer";
+            this.Supprimer.Size = new System.Drawing.Size(129, 22);
+            this.Supprimer.Text = "Supprimer";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(867, 526);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(54, 20);
+            this.label25.TabIndex = 105;
+            this.label25.Text = "24h40";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(867, 507);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(36, 20);
+            this.label21.TabIndex = 104;
+            this.label21.Text = "23h";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(867, 488);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(36, 20);
+            this.label22.TabIndex = 103;
+            this.label22.Text = "22h";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(867, 469);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(36, 20);
+            this.label23.TabIndex = 102;
+            this.label23.Text = "21h";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(867, 450);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(36, 20);
+            this.label24.TabIndex = 101;
+            this.label24.Text = "20h";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(867, 431);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(36, 20);
+            this.label17.TabIndex = 100;
+            this.label17.Text = "19h";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(867, 412);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(36, 20);
+            this.label18.TabIndex = 99;
+            this.label18.Text = "18h";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(867, 393);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(36, 20);
+            this.label19.TabIndex = 98;
+            this.label19.Text = "17h";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(867, 374);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(36, 20);
+            this.label20.TabIndex = 97;
+            this.label20.Text = "16h";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(867, 355);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(36, 20);
+            this.label13.TabIndex = 96;
+            this.label13.Text = "15h";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(867, 336);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(36, 20);
+            this.label14.TabIndex = 95;
+            this.label14.Text = "14h";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(867, 317);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(36, 20);
+            this.label15.TabIndex = 94;
+            this.label15.Text = "13h";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(867, 298);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(36, 20);
+            this.label16.TabIndex = 93;
+            this.label16.Text = "12h";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(867, 281);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(36, 20);
+            this.label9.TabIndex = 92;
+            this.label9.Text = "11h";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(867, 262);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(36, 20);
+            this.label10.TabIndex = 91;
+            this.label10.Text = "10h";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(867, 243);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(27, 20);
+            this.label11.TabIndex = 90;
+            this.label11.Text = "9h";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(867, 224);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(27, 20);
+            this.label12.TabIndex = 89;
+            this.label12.Text = "8h";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(867, 205);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(27, 20);
+            this.label5.TabIndex = 88;
+            this.label5.Text = "7h";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(867, 184);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 20);
+            this.label6.TabIndex = 87;
+            this.label6.Text = "6h";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(867, 165);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 20);
+            this.label7.TabIndex = 86;
+            this.label7.Text = "5h";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(867, 146);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(27, 20);
+            this.label8.TabIndex = 85;
+            this.label8.Text = "4h";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(867, 127);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(27, 20);
+            this.label1.TabIndex = 84;
+            this.label1.Text = "3h";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(867, 108);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(27, 20);
+            this.label26.TabIndex = 83;
+            this.label26.Text = "2h";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(867, 89);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(27, 20);
+            this.label29.TabIndex = 82;
+            this.label29.Text = "1h";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(867, 70);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(27, 20);
+            this.label30.TabIndex = 81;
+            this.label30.Text = "0h";
+            // 
             // CalendrierMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(234)))));
-            this.ClientSize = new System.Drawing.Size(1137, 623);
+            this.ClientSize = new System.Drawing.Size(1239, 623);
+            this.Controls.Add(this.h24);
+            this.Controls.Add(this.h23);
+            this.Controls.Add(this.h17);
+            this.Controls.Add(this.h22);
+            this.Controls.Add(this.h11);
+            this.Controls.Add(this.h21);
+            this.Controls.Add(this.h16);
+            this.Controls.Add(this.h20);
+            this.Controls.Add(this.h5);
+            this.Controls.Add(this.h19);
+            this.Controls.Add(this.h15);
+            this.Controls.Add(this.h18);
+            this.Controls.Add(this.h10);
+            this.Controls.Add(this.h14);
+            this.Controls.Add(this.h4);
+            this.Controls.Add(this.h13);
+            this.Controls.Add(this.h9);
+            this.Controls.Add(this.h12);
+            this.Controls.Add(this.h3);
+            this.Controls.Add(this.h8);
+            this.Controls.Add(this.h2);
+            this.Controls.Add(this.h7);
+            this.Controls.Add(this.h1);
+            this.Controls.Add(this.h6);
+            this.Controls.Add(this.h0);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.label29);
+            this.Controls.Add(this.label30);
             this.Controls.Add(this.numJourneeLabel);
             this.Controls.Add(this.suivant);
             this.Controls.Add(this.precedent);
@@ -2356,6 +3335,57 @@
             ((System.ComponentModel.ISupportInitialize)(this.astro1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.suivant)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.precedent)).EndInit();
+            this.h24.ResumeLayout(false);
+            this.h24.PerformLayout();
+            this.h23.ResumeLayout(false);
+            this.h23.PerformLayout();
+            this.h17.ResumeLayout(false);
+            this.h17.PerformLayout();
+            this.h22.ResumeLayout(false);
+            this.h22.PerformLayout();
+            this.h11.ResumeLayout(false);
+            this.h11.PerformLayout();
+            this.h21.ResumeLayout(false);
+            this.h21.PerformLayout();
+            this.h16.ResumeLayout(false);
+            this.h16.PerformLayout();
+            this.h20.ResumeLayout(false);
+            this.h20.PerformLayout();
+            this.h5.ResumeLayout(false);
+            this.h5.PerformLayout();
+            this.h19.ResumeLayout(false);
+            this.h19.PerformLayout();
+            this.h15.ResumeLayout(false);
+            this.h15.PerformLayout();
+            this.h18.ResumeLayout(false);
+            this.h18.PerformLayout();
+            this.h10.ResumeLayout(false);
+            this.h10.PerformLayout();
+            this.h14.ResumeLayout(false);
+            this.h14.PerformLayout();
+            this.h4.ResumeLayout(false);
+            this.h4.PerformLayout();
+            this.h13.ResumeLayout(false);
+            this.h13.PerformLayout();
+            this.h9.ResumeLayout(false);
+            this.h9.PerformLayout();
+            this.h12.ResumeLayout(false);
+            this.h12.PerformLayout();
+            this.h3.ResumeLayout(false);
+            this.h3.PerformLayout();
+            this.h8.ResumeLayout(false);
+            this.h8.PerformLayout();
+            this.h2.ResumeLayout(false);
+            this.h2.PerformLayout();
+            this.h7.ResumeLayout(false);
+            this.h7.PerformLayout();
+            this.h1.ResumeLayout(false);
+            this.h1.PerformLayout();
+            this.h6.ResumeLayout(false);
+            this.h6.PerformLayout();
+            this.h0.ResumeLayout(false);
+            this.h0.PerformLayout();
+            this.clicDroitActivite.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2520,5 +3550,85 @@
         private System.Windows.Forms.PictureBox suivant;
         private System.Windows.Forms.PictureBox precedent;
         private System.Windows.Forms.Label numJourneeLabel;
+        private System.Windows.Forms.Panel h24;
+        private System.Windows.Forms.Label actH24;
+        private System.Windows.Forms.Panel h23;
+        private System.Windows.Forms.Label actH23;
+        private System.Windows.Forms.Panel h17;
+        private System.Windows.Forms.Label actH17;
+        private System.Windows.Forms.Panel h22;
+        private System.Windows.Forms.Label actH22;
+        private System.Windows.Forms.Panel h11;
+        private System.Windows.Forms.Label actH11;
+        private System.Windows.Forms.Panel h21;
+        private System.Windows.Forms.Label actH21;
+        private System.Windows.Forms.Panel h16;
+        private System.Windows.Forms.Label actH16;
+        private System.Windows.Forms.Panel h20;
+        private System.Windows.Forms.Label actH20;
+        private System.Windows.Forms.Panel h5;
+        private System.Windows.Forms.Label actH5;
+        private System.Windows.Forms.Panel h19;
+        private System.Windows.Forms.Label actH19;
+        private System.Windows.Forms.Panel h15;
+        private System.Windows.Forms.Label actH15;
+        private System.Windows.Forms.Panel h18;
+        private System.Windows.Forms.Label actH18;
+        private System.Windows.Forms.Panel h10;
+        private System.Windows.Forms.Label actH10;
+        private System.Windows.Forms.Panel h14;
+        private System.Windows.Forms.Label actH14;
+        private System.Windows.Forms.Panel h4;
+        private System.Windows.Forms.Label actH4;
+        private System.Windows.Forms.Panel h13;
+        private System.Windows.Forms.Label actH13;
+        private System.Windows.Forms.Panel h9;
+        private System.Windows.Forms.Label actH9;
+        private System.Windows.Forms.Panel h12;
+        private System.Windows.Forms.Label actH12;
+        private System.Windows.Forms.Panel h3;
+        private System.Windows.Forms.Label actH3;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Panel h8;
+        private System.Windows.Forms.Label actH8;
+        private System.Windows.Forms.Panel h2;
+        private System.Windows.Forms.Label actH2;
+        private System.Windows.Forms.Panel h7;
+        private System.Windows.Forms.Label actH7;
+        private System.Windows.Forms.Panel h1;
+        private System.Windows.Forms.Label actH1;
+        private System.Windows.Forms.Panel h6;
+        private System.Windows.Forms.Label actH6;
+        private System.Windows.Forms.Panel h0;
+        private System.Windows.Forms.Label actH0;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.ContextMenuStrip clicDroitActivite;
+        private System.Windows.Forms.ToolStripMenuItem Modifier;
+        private System.Windows.Forms.ToolStripMenuItem Supprimer;
     }
 }

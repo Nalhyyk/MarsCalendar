@@ -94,5 +94,9 @@ namespace MarsApp
         {
             return false;
         }
+
+        public TimeMartien getHeureDebut() { return heureDebut; }
+        public TimeMartien getHeureFin() { return heureFin; }
+        public String getNom() { return nom; }
     }
 }

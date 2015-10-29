@@ -123,5 +123,7 @@ namespace MarsApp
         {
             this.journeeExterieure = journeeExterieure;
         }
+
+        public List<Activite> getActivites() { return listeActivites; }
     }
 }
