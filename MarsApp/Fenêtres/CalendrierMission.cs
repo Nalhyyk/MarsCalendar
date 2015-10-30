@@ -193,10 +193,15 @@ namespace MarsApp
                 lierActiviteEtEdt(a);
             }
 
+            int jourPeriode = journee.getNumero();
+            
+            while (jourPeriode > 50)
+                jourPeriode -= 50;
+
             if (journee.isJourneeExterieure())
-                icones[journee.getNumero()].Visible = true;
+                icones[jourPeriode].Visible = true;
             else
-                icones[journee.getNumero()].Visible = false;
+                icones[jourPeriode].Visible = false;
         }
 
         public void lierActiviteEtEdt(Activite a)
