@@ -11,7 +11,7 @@ namespace MarsApp
     public class Domaine
     {
         private String nom;
-        private List<String> listeActivites;
+        private List<TypeActivite> listeActivites;
 
         /// <summary>
         /// Constructeur paramétré
@@ -19,14 +19,14 @@ namespace MarsApp
         public Domaine(String nom)
         {
             this.nom = nom;
-            listeActivites = new List<String>();
+            listeActivites = new List<TypeActivite>();
         }
 
         /// <summary>
         /// Ajouter une activité
         /// </summary>
-        /// <param name="a">Un nom d'activité</param>
-        public void ajouterActivite(String a)
+        /// <param name="a">Un type d'activité</param>
+        public void ajouterActivite(TypeActivite a)
         {
             listeActivites.Add(a);
         }
@@ -34,16 +34,22 @@ namespace MarsApp
         /// <summary>
         /// Supprimer une activité
         /// </summary>
-        /// <param name="a">Un nom d'activité</param>
-        public void supprimerActivite(String a)
+        /// <param name="a">Un type d'activité</param>
+        public void supprimerActivite(TypeActivite a)
         {
             listeActivites.Remove(a);
         }
 
         /// <summary>
-        /// Renvoie le nom de toutes les activités du Domaine
+        /// Renvoie les types d'activités du Domaine
         /// </summary>
-        /// <returns>Le nom de toutes les activités du Domaine</String></returns>
-        public List<String> getActivites() { return listeActivites; }
+        /// <returns>Les types d'activités du Domaine</returns>
+        public List<TypeActivite> getActivites() { return listeActivites; }
+
+        /// <summary>
+        /// Renvoie le nom du Domaine
+        /// </summary>
+        /// <returns>Le nom du Domaine</returns>
+        public String getNom() { return nom; }
     }
 }

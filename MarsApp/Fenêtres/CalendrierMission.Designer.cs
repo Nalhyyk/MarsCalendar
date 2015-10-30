@@ -30,165 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalendrierMission));
-            this.periodeNum = new System.Windows.Forms.Label();
-            this.jour50 = new System.Windows.Forms.Panel();
-            this.num50 = new System.Windows.Forms.Label();
-            this.astro50 = new System.Windows.Forms.PictureBox();
-            this.jour30 = new System.Windows.Forms.Panel();
-            this.num30 = new System.Windows.Forms.Label();
-            this.astro30 = new System.Windows.Forms.PictureBox();
-            this.jour40 = new System.Windows.Forms.Panel();
-            this.num40 = new System.Windows.Forms.Label();
-            this.astro40 = new System.Windows.Forms.PictureBox();
-            this.jour29 = new System.Windows.Forms.Panel();
-            this.num29 = new System.Windows.Forms.Label();
-            this.astro29 = new System.Windows.Forms.PictureBox();
-            this.jour49 = new System.Windows.Forms.Panel();
-            this.num49 = new System.Windows.Forms.Label();
-            this.astro49 = new System.Windows.Forms.PictureBox();
-            this.jour28 = new System.Windows.Forms.Panel();
-            this.num28 = new System.Windows.Forms.Label();
-            this.astro28 = new System.Windows.Forms.PictureBox();
-            this.jour39 = new System.Windows.Forms.Panel();
-            this.num39 = new System.Windows.Forms.Label();
-            this.astro39 = new System.Windows.Forms.PictureBox();
-            this.jour27 = new System.Windows.Forms.Panel();
-            this.num27 = new System.Windows.Forms.Label();
-            this.astro27 = new System.Windows.Forms.PictureBox();
-            this.jour48 = new System.Windows.Forms.Panel();
-            this.num48 = new System.Windows.Forms.Label();
-            this.astro48 = new System.Windows.Forms.PictureBox();
-            this.jour26 = new System.Windows.Forms.Panel();
-            this.num26 = new System.Windows.Forms.Label();
-            this.astro26 = new System.Windows.Forms.PictureBox();
-            this.jour38 = new System.Windows.Forms.Panel();
-            this.num38 = new System.Windows.Forms.Label();
-            this.astro38 = new System.Windows.Forms.PictureBox();
-            this.jour23 = new System.Windows.Forms.Panel();
-            this.num23 = new System.Windows.Forms.Label();
-            this.astro23 = new System.Windows.Forms.PictureBox();
-            this.jour47 = new System.Windows.Forms.Panel();
-            this.num47 = new System.Windows.Forms.Label();
-            this.astro47 = new System.Windows.Forms.PictureBox();
-            this.jour25 = new System.Windows.Forms.Panel();
-            this.num25 = new System.Windows.Forms.Label();
-            this.astro25 = new System.Windows.Forms.PictureBox();
-            this.jour37 = new System.Windows.Forms.Panel();
-            this.num37 = new System.Windows.Forms.Label();
-            this.astro37 = new System.Windows.Forms.PictureBox();
-            this.jour22 = new System.Windows.Forms.Panel();
-            this.num22 = new System.Windows.Forms.Label();
-            this.astro22 = new System.Windows.Forms.PictureBox();
-            this.jour46 = new System.Windows.Forms.Panel();
-            this.num46 = new System.Windows.Forms.Label();
-            this.astro46 = new System.Windows.Forms.PictureBox();
-            this.jour24 = new System.Windows.Forms.Panel();
-            this.num24 = new System.Windows.Forms.Label();
-            this.astro24 = new System.Windows.Forms.PictureBox();
-            this.jour36 = new System.Windows.Forms.Panel();
-            this.num36 = new System.Windows.Forms.Label();
-            this.astro36 = new System.Windows.Forms.PictureBox();
-            this.jour21 = new System.Windows.Forms.Panel();
-            this.num21 = new System.Windows.Forms.Label();
-            this.astro21 = new System.Windows.Forms.PictureBox();
-            this.jour43 = new System.Windows.Forms.Panel();
-            this.num43 = new System.Windows.Forms.Label();
-            this.astro43 = new System.Windows.Forms.PictureBox();
-            this.jour20 = new System.Windows.Forms.Panel();
-            this.num20 = new System.Windows.Forms.Label();
-            this.astro20 = new System.Windows.Forms.PictureBox();
-            this.jour33 = new System.Windows.Forms.Panel();
-            this.num33 = new System.Windows.Forms.Label();
-            this.astro33 = new System.Windows.Forms.PictureBox();
-            this.jour10 = new System.Windows.Forms.Panel();
-            this.num10 = new System.Windows.Forms.Label();
-            this.astro10 = new System.Windows.Forms.PictureBox();
-            this.jour45 = new System.Windows.Forms.Panel();
-            this.num45 = new System.Windows.Forms.Label();
-            this.astro45 = new System.Windows.Forms.PictureBox();
-            this.jour19 = new System.Windows.Forms.Panel();
-            this.num19 = new System.Windows.Forms.Label();
-            this.astro19 = new System.Windows.Forms.PictureBox();
-            this.jour35 = new System.Windows.Forms.Panel();
-            this.num35 = new System.Windows.Forms.Label();
-            this.astro35 = new System.Windows.Forms.PictureBox();
-            this.jour9 = new System.Windows.Forms.Panel();
-            this.num9 = new System.Windows.Forms.Label();
-            this.astro9 = new System.Windows.Forms.PictureBox();
-            this.jour42 = new System.Windows.Forms.Panel();
-            this.num42 = new System.Windows.Forms.Label();
-            this.astro42 = new System.Windows.Forms.PictureBox();
-            this.jour18 = new System.Windows.Forms.Panel();
-            this.num18 = new System.Windows.Forms.Label();
-            this.astro18 = new System.Windows.Forms.PictureBox();
-            this.jour44 = new System.Windows.Forms.Panel();
-            this.num44 = new System.Windows.Forms.Label();
-            this.astro44 = new System.Windows.Forms.PictureBox();
-            this.jour8 = new System.Windows.Forms.Panel();
-            this.num8 = new System.Windows.Forms.Label();
-            this.astro8 = new System.Windows.Forms.PictureBox();
-            this.jour32 = new System.Windows.Forms.Panel();
-            this.num32 = new System.Windows.Forms.Label();
-            this.astro32 = new System.Windows.Forms.PictureBox();
-            this.jour41 = new System.Windows.Forms.Panel();
-            this.num41 = new System.Windows.Forms.Label();
-            this.astro41 = new System.Windows.Forms.PictureBox();
-            this.jour17 = new System.Windows.Forms.Panel();
-            this.num17 = new System.Windows.Forms.Label();
-            this.astro17 = new System.Windows.Forms.PictureBox();
-            this.jour34 = new System.Windows.Forms.Panel();
-            this.num34 = new System.Windows.Forms.Label();
-            this.astro34 = new System.Windows.Forms.PictureBox();
-            this.jour7 = new System.Windows.Forms.Panel();
-            this.num7 = new System.Windows.Forms.Label();
-            this.astro7 = new System.Windows.Forms.PictureBox();
-            this.jour31 = new System.Windows.Forms.Panel();
-            this.num31 = new System.Windows.Forms.Label();
-            this.astro31 = new System.Windows.Forms.PictureBox();
-            this.jour16 = new System.Windows.Forms.Panel();
-            this.num16 = new System.Windows.Forms.Label();
-            this.astro16 = new System.Windows.Forms.PictureBox();
-            this.jour6 = new System.Windows.Forms.Panel();
-            this.num6 = new System.Windows.Forms.Label();
-            this.astro6 = new System.Windows.Forms.PictureBox();
-            this.jour13 = new System.Windows.Forms.Panel();
-            this.num13 = new System.Windows.Forms.Label();
-            this.astro13 = new System.Windows.Forms.PictureBox();
-            this.jour3 = new System.Windows.Forms.Panel();
-            this.num3 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.astro3 = new System.Windows.Forms.PictureBox();
-            this.jour15 = new System.Windows.Forms.Panel();
-            this.num15 = new System.Windows.Forms.Label();
-            this.astro15 = new System.Windows.Forms.PictureBox();
-            this.jour5 = new System.Windows.Forms.Panel();
-            this.num5 = new System.Windows.Forms.Label();
-            this.astro5 = new System.Windows.Forms.PictureBox();
-            this.jour12 = new System.Windows.Forms.Panel();
-            this.num12 = new System.Windows.Forms.Label();
-            this.astro12 = new System.Windows.Forms.PictureBox();
-            this.jour14 = new System.Windows.Forms.Panel();
-            this.num14 = new System.Windows.Forms.Label();
-            this.astro14 = new System.Windows.Forms.PictureBox();
-            this.jour2 = new System.Windows.Forms.Panel();
-            this.num2 = new System.Windows.Forms.Label();
-            this.astro2 = new System.Windows.Forms.PictureBox();
-            this.jour11 = new System.Windows.Forms.Panel();
-            this.num11 = new System.Windows.Forms.Label();
-            this.astro11 = new System.Windows.Forms.PictureBox();
-            this.jour4 = new System.Windows.Forms.Panel();
-            this.num4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.astro4 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.jour1 = new System.Windows.Forms.Panel();
-            this.num1 = new System.Windows.Forms.Label();
-            this.astro1 = new System.Windows.Forms.PictureBox();
-            this.suivant = new System.Windows.Forms.PictureBox();
-            this.precedent = new System.Windows.Forms.PictureBox();
-            this.numJourneeLabel = new System.Windows.Forms.Label();
-            this.h24 = new System.Windows.Forms.Panel();
-            this.actH24 = new System.Windows.Forms.Label();
+            this.clicDroitActivite = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.Modifier = new System.Windows.Forms.ToolStripMenuItem();
+            this.Supprimer = new System.Windows.Forms.ToolStripMenuItem();
             this.h23 = new System.Windows.Forms.Panel();
             this.actH23 = new System.Windows.Forms.Label();
             this.h17 = new System.Windows.Forms.Panel();
@@ -239,9 +83,6 @@
             this.actH6 = new System.Windows.Forms.Label();
             this.h0 = new System.Windows.Forms.Panel();
             this.actH0 = new System.Windows.Forms.Label();
-            this.clicDroitActivite = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.Modifier = new System.Windows.Forms.ToolStripMenuItem();
-            this.Supprimer = new System.Windows.Forms.ToolStripMenuItem();
             this.label25 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -267,109 +108,188 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.jour50.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro50)).BeginInit();
-            this.jour30.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro30)).BeginInit();
-            this.jour40.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro40)).BeginInit();
-            this.jour29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro29)).BeginInit();
-            this.jour49.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro49)).BeginInit();
-            this.jour28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro28)).BeginInit();
-            this.jour39.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro39)).BeginInit();
-            this.jour27.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro27)).BeginInit();
-            this.jour48.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro48)).BeginInit();
-            this.jour26.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro26)).BeginInit();
-            this.jour38.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro38)).BeginInit();
-            this.jour23.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro23)).BeginInit();
-            this.jour47.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro47)).BeginInit();
-            this.jour25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro25)).BeginInit();
-            this.jour37.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro37)).BeginInit();
-            this.jour22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro22)).BeginInit();
-            this.jour46.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro46)).BeginInit();
-            this.jour24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro24)).BeginInit();
-            this.jour36.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro36)).BeginInit();
-            this.jour21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro21)).BeginInit();
-            this.jour43.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro43)).BeginInit();
-            this.jour20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro20)).BeginInit();
-            this.jour33.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro33)).BeginInit();
-            this.jour10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro10)).BeginInit();
-            this.jour45.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro45)).BeginInit();
-            this.jour19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro19)).BeginInit();
-            this.jour35.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro35)).BeginInit();
-            this.jour9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro9)).BeginInit();
-            this.jour42.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro42)).BeginInit();
-            this.jour18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro18)).BeginInit();
-            this.jour44.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro44)).BeginInit();
-            this.jour8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro8)).BeginInit();
-            this.jour32.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro32)).BeginInit();
-            this.jour41.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro41)).BeginInit();
-            this.jour17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro17)).BeginInit();
-            this.jour34.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro34)).BeginInit();
-            this.jour7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro7)).BeginInit();
-            this.jour31.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro31)).BeginInit();
-            this.jour16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro16)).BeginInit();
-            this.jour6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro6)).BeginInit();
-            this.jour13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro13)).BeginInit();
-            this.jour3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro3)).BeginInit();
-            this.jour15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro15)).BeginInit();
-            this.jour5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro5)).BeginInit();
-            this.jour12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro12)).BeginInit();
-            this.jour14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro14)).BeginInit();
-            this.jour2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro2)).BeginInit();
-            this.jour11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro11)).BeginInit();
-            this.jour4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro4)).BeginInit();
-            this.jour1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.suivant)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.precedent)).BeginInit();
-            this.h24.SuspendLayout();
+            this.numJourneeLabel = new System.Windows.Forms.Label();
+            this.periodeNum = new System.Windows.Forms.Label();
+            this.jour50 = new System.Windows.Forms.Panel();
+            this.num50 = new System.Windows.Forms.Label();
+            this.jour30 = new System.Windows.Forms.Panel();
+            this.num30 = new System.Windows.Forms.Label();
+            this.jour40 = new System.Windows.Forms.Panel();
+            this.num40 = new System.Windows.Forms.Label();
+            this.jour29 = new System.Windows.Forms.Panel();
+            this.num29 = new System.Windows.Forms.Label();
+            this.jour49 = new System.Windows.Forms.Panel();
+            this.num49 = new System.Windows.Forms.Label();
+            this.jour28 = new System.Windows.Forms.Panel();
+            this.num28 = new System.Windows.Forms.Label();
+            this.jour39 = new System.Windows.Forms.Panel();
+            this.num39 = new System.Windows.Forms.Label();
+            this.jour27 = new System.Windows.Forms.Panel();
+            this.num27 = new System.Windows.Forms.Label();
+            this.jour48 = new System.Windows.Forms.Panel();
+            this.num48 = new System.Windows.Forms.Label();
+            this.jour26 = new System.Windows.Forms.Panel();
+            this.num26 = new System.Windows.Forms.Label();
+            this.jour38 = new System.Windows.Forms.Panel();
+            this.num38 = new System.Windows.Forms.Label();
+            this.jour23 = new System.Windows.Forms.Panel();
+            this.num23 = new System.Windows.Forms.Label();
+            this.jour47 = new System.Windows.Forms.Panel();
+            this.num47 = new System.Windows.Forms.Label();
+            this.jour25 = new System.Windows.Forms.Panel();
+            this.num25 = new System.Windows.Forms.Label();
+            this.jour37 = new System.Windows.Forms.Panel();
+            this.num37 = new System.Windows.Forms.Label();
+            this.jour22 = new System.Windows.Forms.Panel();
+            this.num22 = new System.Windows.Forms.Label();
+            this.jour46 = new System.Windows.Forms.Panel();
+            this.num46 = new System.Windows.Forms.Label();
+            this.jour24 = new System.Windows.Forms.Panel();
+            this.num24 = new System.Windows.Forms.Label();
+            this.jour36 = new System.Windows.Forms.Panel();
+            this.num36 = new System.Windows.Forms.Label();
+            this.jour21 = new System.Windows.Forms.Panel();
+            this.num21 = new System.Windows.Forms.Label();
+            this.jour43 = new System.Windows.Forms.Panel();
+            this.num43 = new System.Windows.Forms.Label();
+            this.jour20 = new System.Windows.Forms.Panel();
+            this.num20 = new System.Windows.Forms.Label();
+            this.jour33 = new System.Windows.Forms.Panel();
+            this.num33 = new System.Windows.Forms.Label();
+            this.jour10 = new System.Windows.Forms.Panel();
+            this.num10 = new System.Windows.Forms.Label();
+            this.jour45 = new System.Windows.Forms.Panel();
+            this.num45 = new System.Windows.Forms.Label();
+            this.jour19 = new System.Windows.Forms.Panel();
+            this.num19 = new System.Windows.Forms.Label();
+            this.jour35 = new System.Windows.Forms.Panel();
+            this.num35 = new System.Windows.Forms.Label();
+            this.jour9 = new System.Windows.Forms.Panel();
+            this.num9 = new System.Windows.Forms.Label();
+            this.jour42 = new System.Windows.Forms.Panel();
+            this.num42 = new System.Windows.Forms.Label();
+            this.jour18 = new System.Windows.Forms.Panel();
+            this.num18 = new System.Windows.Forms.Label();
+            this.jour44 = new System.Windows.Forms.Panel();
+            this.num44 = new System.Windows.Forms.Label();
+            this.jour8 = new System.Windows.Forms.Panel();
+            this.num8 = new System.Windows.Forms.Label();
+            this.jour32 = new System.Windows.Forms.Panel();
+            this.num32 = new System.Windows.Forms.Label();
+            this.jour41 = new System.Windows.Forms.Panel();
+            this.num41 = new System.Windows.Forms.Label();
+            this.jour17 = new System.Windows.Forms.Panel();
+            this.num17 = new System.Windows.Forms.Label();
+            this.jour34 = new System.Windows.Forms.Panel();
+            this.num34 = new System.Windows.Forms.Label();
+            this.jour7 = new System.Windows.Forms.Panel();
+            this.num7 = new System.Windows.Forms.Label();
+            this.jour31 = new System.Windows.Forms.Panel();
+            this.num31 = new System.Windows.Forms.Label();
+            this.jour16 = new System.Windows.Forms.Panel();
+            this.num16 = new System.Windows.Forms.Label();
+            this.jour6 = new System.Windows.Forms.Panel();
+            this.num6 = new System.Windows.Forms.Label();
+            this.jour13 = new System.Windows.Forms.Panel();
+            this.num13 = new System.Windows.Forms.Label();
+            this.jour3 = new System.Windows.Forms.Panel();
+            this.num3 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.jour15 = new System.Windows.Forms.Panel();
+            this.num15 = new System.Windows.Forms.Label();
+            this.jour5 = new System.Windows.Forms.Panel();
+            this.num5 = new System.Windows.Forms.Label();
+            this.jour12 = new System.Windows.Forms.Panel();
+            this.num12 = new System.Windows.Forms.Label();
+            this.jour14 = new System.Windows.Forms.Panel();
+            this.num14 = new System.Windows.Forms.Label();
+            this.jour2 = new System.Windows.Forms.Panel();
+            this.num2 = new System.Windows.Forms.Label();
+            this.jour11 = new System.Windows.Forms.Panel();
+            this.num11 = new System.Windows.Forms.Label();
+            this.jour4 = new System.Windows.Forms.Panel();
+            this.num4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.jour1 = new System.Windows.Forms.Panel();
+            this.num1 = new System.Windows.Forms.Label();
+            this.h0img = new System.Windows.Forms.PictureBox();
+            this.suivant = new System.Windows.Forms.PictureBox();
+            this.precedent = new System.Windows.Forms.PictureBox();
+            this.astro50 = new System.Windows.Forms.PictureBox();
+            this.astro30 = new System.Windows.Forms.PictureBox();
+            this.astro40 = new System.Windows.Forms.PictureBox();
+            this.astro29 = new System.Windows.Forms.PictureBox();
+            this.astro49 = new System.Windows.Forms.PictureBox();
+            this.astro28 = new System.Windows.Forms.PictureBox();
+            this.astro39 = new System.Windows.Forms.PictureBox();
+            this.astro27 = new System.Windows.Forms.PictureBox();
+            this.astro48 = new System.Windows.Forms.PictureBox();
+            this.astro26 = new System.Windows.Forms.PictureBox();
+            this.astro38 = new System.Windows.Forms.PictureBox();
+            this.astro23 = new System.Windows.Forms.PictureBox();
+            this.astro47 = new System.Windows.Forms.PictureBox();
+            this.astro25 = new System.Windows.Forms.PictureBox();
+            this.astro37 = new System.Windows.Forms.PictureBox();
+            this.astro22 = new System.Windows.Forms.PictureBox();
+            this.astro46 = new System.Windows.Forms.PictureBox();
+            this.astro24 = new System.Windows.Forms.PictureBox();
+            this.astro36 = new System.Windows.Forms.PictureBox();
+            this.astro21 = new System.Windows.Forms.PictureBox();
+            this.astro43 = new System.Windows.Forms.PictureBox();
+            this.astro20 = new System.Windows.Forms.PictureBox();
+            this.astro33 = new System.Windows.Forms.PictureBox();
+            this.astro10 = new System.Windows.Forms.PictureBox();
+            this.astro45 = new System.Windows.Forms.PictureBox();
+            this.astro19 = new System.Windows.Forms.PictureBox();
+            this.astro35 = new System.Windows.Forms.PictureBox();
+            this.astro9 = new System.Windows.Forms.PictureBox();
+            this.astro42 = new System.Windows.Forms.PictureBox();
+            this.astro18 = new System.Windows.Forms.PictureBox();
+            this.astro44 = new System.Windows.Forms.PictureBox();
+            this.astro8 = new System.Windows.Forms.PictureBox();
+            this.astro32 = new System.Windows.Forms.PictureBox();
+            this.astro41 = new System.Windows.Forms.PictureBox();
+            this.astro17 = new System.Windows.Forms.PictureBox();
+            this.astro34 = new System.Windows.Forms.PictureBox();
+            this.astro7 = new System.Windows.Forms.PictureBox();
+            this.astro31 = new System.Windows.Forms.PictureBox();
+            this.astro16 = new System.Windows.Forms.PictureBox();
+            this.astro6 = new System.Windows.Forms.PictureBox();
+            this.astro13 = new System.Windows.Forms.PictureBox();
+            this.astro3 = new System.Windows.Forms.PictureBox();
+            this.astro15 = new System.Windows.Forms.PictureBox();
+            this.astro5 = new System.Windows.Forms.PictureBox();
+            this.astro12 = new System.Windows.Forms.PictureBox();
+            this.astro14 = new System.Windows.Forms.PictureBox();
+            this.astro2 = new System.Windows.Forms.PictureBox();
+            this.astro11 = new System.Windows.Forms.PictureBox();
+            this.astro4 = new System.Windows.Forms.PictureBox();
+            this.astro1 = new System.Windows.Forms.PictureBox();
+            this.h1img = new System.Windows.Forms.PictureBox();
+            this.h3img = new System.Windows.Forms.PictureBox();
+            this.h6img = new System.Windows.Forms.PictureBox();
+            this.h7img = new System.Windows.Forms.PictureBox();
+            this.h8img = new System.Windows.Forms.PictureBox();
+            this.h10img = new System.Windows.Forms.PictureBox();
+            this.h11img = new System.Windows.Forms.PictureBox();
+            this.h12img = new System.Windows.Forms.PictureBox();
+            this.h13img = new System.Windows.Forms.PictureBox();
+            this.h14img = new System.Windows.Forms.PictureBox();
+            this.h15img = new System.Windows.Forms.PictureBox();
+            this.h16img = new System.Windows.Forms.PictureBox();
+            this.h17img = new System.Windows.Forms.PictureBox();
+            this.h18img = new System.Windows.Forms.PictureBox();
+            this.h19img = new System.Windows.Forms.PictureBox();
+            this.h20img = new System.Windows.Forms.PictureBox();
+            this.h21img = new System.Windows.Forms.PictureBox();
+            this.h22img = new System.Windows.Forms.PictureBox();
+            this.h23img = new System.Windows.Forms.PictureBox();
+            this.h4img = new System.Windows.Forms.PictureBox();
+            this.h2img = new System.Windows.Forms.PictureBox();
+            this.h5img = new System.Windows.Forms.PictureBox();
+            this.h9img = new System.Windows.Forms.PictureBox();
+            this.clicDroitActivite.SuspendLayout();
             this.h23.SuspendLayout();
             this.h17.SuspendLayout();
             this.h22.SuspendLayout();
@@ -394,8 +314,1045 @@
             this.h1.SuspendLayout();
             this.h6.SuspendLayout();
             this.h0.SuspendLayout();
-            this.clicDroitActivite.SuspendLayout();
+            this.jour50.SuspendLayout();
+            this.jour30.SuspendLayout();
+            this.jour40.SuspendLayout();
+            this.jour29.SuspendLayout();
+            this.jour49.SuspendLayout();
+            this.jour28.SuspendLayout();
+            this.jour39.SuspendLayout();
+            this.jour27.SuspendLayout();
+            this.jour48.SuspendLayout();
+            this.jour26.SuspendLayout();
+            this.jour38.SuspendLayout();
+            this.jour23.SuspendLayout();
+            this.jour47.SuspendLayout();
+            this.jour25.SuspendLayout();
+            this.jour37.SuspendLayout();
+            this.jour22.SuspendLayout();
+            this.jour46.SuspendLayout();
+            this.jour24.SuspendLayout();
+            this.jour36.SuspendLayout();
+            this.jour21.SuspendLayout();
+            this.jour43.SuspendLayout();
+            this.jour20.SuspendLayout();
+            this.jour33.SuspendLayout();
+            this.jour10.SuspendLayout();
+            this.jour45.SuspendLayout();
+            this.jour19.SuspendLayout();
+            this.jour35.SuspendLayout();
+            this.jour9.SuspendLayout();
+            this.jour42.SuspendLayout();
+            this.jour18.SuspendLayout();
+            this.jour44.SuspendLayout();
+            this.jour8.SuspendLayout();
+            this.jour32.SuspendLayout();
+            this.jour41.SuspendLayout();
+            this.jour17.SuspendLayout();
+            this.jour34.SuspendLayout();
+            this.jour7.SuspendLayout();
+            this.jour31.SuspendLayout();
+            this.jour16.SuspendLayout();
+            this.jour6.SuspendLayout();
+            this.jour13.SuspendLayout();
+            this.jour3.SuspendLayout();
+            this.jour15.SuspendLayout();
+            this.jour5.SuspendLayout();
+            this.jour12.SuspendLayout();
+            this.jour14.SuspendLayout();
+            this.jour2.SuspendLayout();
+            this.jour11.SuspendLayout();
+            this.jour4.SuspendLayout();
+            this.jour1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.h0img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suivant)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.precedent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro50)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro49)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro47)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h1img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h3img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h6img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h7img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h8img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h10img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h11img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h12img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h13img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h14img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h15img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h16img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h17img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h18img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h19img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h20img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h21img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h22img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h23img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h4img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h2img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h5img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h9img)).BeginInit();
             this.SuspendLayout();
+            // 
+            // clicDroitActivite
+            // 
+            this.clicDroitActivite.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Modifier,
+            this.Supprimer});
+            this.clicDroitActivite.Name = "contextMenuStrip1";
+            this.clicDroitActivite.Size = new System.Drawing.Size(130, 48);
+            // 
+            // Modifier
+            // 
+            this.Modifier.Name = "Modifier";
+            this.Modifier.Size = new System.Drawing.Size(129, 22);
+            this.Modifier.Text = "Modifier";
+            this.Modifier.Click += new System.EventHandler(this.Modifier_Click);
+            // 
+            // Supprimer
+            // 
+            this.Supprimer.Name = "Supprimer";
+            this.Supprimer.Size = new System.Drawing.Size(129, 22);
+            this.Supprimer.Text = "Supprimer";
+            this.Supprimer.Click += new System.EventHandler(this.Supprimer_Click);
+            // 
+            // h23
+            // 
+            this.h23.BackColor = System.Drawing.Color.LightGray;
+            this.h23.Controls.Add(this.h23img);
+            this.h23.Controls.Add(this.actH23);
+            this.h23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h23.Location = new System.Drawing.Point(929, 563);
+            this.h23.Name = "h23";
+            this.h23.Size = new System.Drawing.Size(275, 20);
+            this.h23.TabIndex = 115;
+            // 
+            // actH23
+            // 
+            this.actH23.AutoSize = true;
+            this.actH23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH23.Location = new System.Drawing.Point(3, 4);
+            this.actH23.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH23.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH23.Name = "actH23";
+            this.actH23.Size = new System.Drawing.Size(269, 13);
+            this.actH23.TabIndex = 57;
+            this.actH23.Tag = "23";
+            this.actH23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH23.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h17
+            // 
+            this.h17.BackColor = System.Drawing.Color.LightGray;
+            this.h17.Controls.Add(this.h17img);
+            this.h17.Controls.Add(this.actH17);
+            this.h17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h17.Location = new System.Drawing.Point(929, 431);
+            this.h17.Name = "h17";
+            this.h17.Size = new System.Drawing.Size(275, 20);
+            this.h17.TabIndex = 116;
+            // 
+            // actH17
+            // 
+            this.actH17.AutoSize = true;
+            this.actH17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH17.Location = new System.Drawing.Point(3, 4);
+            this.actH17.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH17.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH17.Name = "actH17";
+            this.actH17.Size = new System.Drawing.Size(269, 13);
+            this.actH17.TabIndex = 51;
+            this.actH17.Tag = "17";
+            this.actH17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH17.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h22
+            // 
+            this.h22.BackColor = System.Drawing.Color.LightGray;
+            this.h22.Controls.Add(this.h22img);
+            this.h22.Controls.Add(this.actH22);
+            this.h22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.h22.Location = new System.Drawing.Point(929, 541);
+            this.h22.Name = "h22";
+            this.h22.Size = new System.Drawing.Size(275, 20);
+            this.h22.TabIndex = 120;
+            // 
+            // actH22
+            // 
+            this.actH22.AutoSize = true;
+            this.actH22.Location = new System.Drawing.Point(3, 4);
+            this.actH22.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH22.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH22.Name = "actH22";
+            this.actH22.Size = new System.Drawing.Size(269, 13);
+            this.actH22.TabIndex = 56;
+            this.actH22.Tag = "22";
+            this.actH22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH22.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h11
+            // 
+            this.h11.BackColor = System.Drawing.Color.LightGray;
+            this.h11.Controls.Add(this.h11img);
+            this.h11.Controls.Add(this.actH11);
+            this.h11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h11.Location = new System.Drawing.Point(929, 299);
+            this.h11.Name = "h11";
+            this.h11.Size = new System.Drawing.Size(275, 20);
+            this.h11.TabIndex = 117;
+            // 
+            // actH11
+            // 
+            this.actH11.AutoSize = true;
+            this.actH11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH11.Location = new System.Drawing.Point(3, 4);
+            this.actH11.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH11.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH11.Name = "actH11";
+            this.actH11.Size = new System.Drawing.Size(269, 13);
+            this.actH11.TabIndex = 45;
+            this.actH11.Tag = "11";
+            this.actH11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH11.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h21
+            // 
+            this.h21.BackColor = System.Drawing.Color.LightGray;
+            this.h21.Controls.Add(this.h21img);
+            this.h21.Controls.Add(this.actH21);
+            this.h21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h21.Location = new System.Drawing.Point(929, 519);
+            this.h21.Name = "h21";
+            this.h21.Size = new System.Drawing.Size(275, 20);
+            this.h21.TabIndex = 124;
+            // 
+            // actH21
+            // 
+            this.actH21.AutoSize = true;
+            this.actH21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH21.Location = new System.Drawing.Point(3, 4);
+            this.actH21.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH21.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH21.Name = "actH21";
+            this.actH21.Size = new System.Drawing.Size(269, 13);
+            this.actH21.TabIndex = 55;
+            this.actH21.Tag = "21";
+            this.actH21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH21.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h16
+            // 
+            this.h16.BackColor = System.Drawing.Color.LightGray;
+            this.h16.Controls.Add(this.h16img);
+            this.h16.Controls.Add(this.actH16);
+            this.h16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h16.Location = new System.Drawing.Point(929, 409);
+            this.h16.Name = "h16";
+            this.h16.Size = new System.Drawing.Size(275, 20);
+            this.h16.TabIndex = 121;
+            // 
+            // actH16
+            // 
+            this.actH16.AutoSize = true;
+            this.actH16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH16.Location = new System.Drawing.Point(3, 4);
+            this.actH16.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH16.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH16.Name = "actH16";
+            this.actH16.Size = new System.Drawing.Size(269, 13);
+            this.actH16.TabIndex = 50;
+            this.actH16.Tag = "16";
+            this.actH16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH16.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h20
+            // 
+            this.h20.BackColor = System.Drawing.Color.LightGray;
+            this.h20.Controls.Add(this.h20img);
+            this.h20.Controls.Add(this.actH20);
+            this.h20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h20.Location = new System.Drawing.Point(929, 497);
+            this.h20.Name = "h20";
+            this.h20.Size = new System.Drawing.Size(275, 20);
+            this.h20.TabIndex = 125;
+            // 
+            // actH20
+            // 
+            this.actH20.AutoSize = true;
+            this.actH20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH20.Location = new System.Drawing.Point(3, 4);
+            this.actH20.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH20.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH20.Name = "actH20";
+            this.actH20.Size = new System.Drawing.Size(269, 13);
+            this.actH20.TabIndex = 54;
+            this.actH20.Tag = "20";
+            this.actH20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH20.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h5
+            // 
+            this.h5.BackColor = System.Drawing.Color.LightGray;
+            this.h5.Controls.Add(this.h5img);
+            this.h5.Controls.Add(this.actH5);
+            this.h5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h5.Location = new System.Drawing.Point(929, 167);
+            this.h5.Name = "h5";
+            this.h5.Size = new System.Drawing.Size(275, 20);
+            this.h5.TabIndex = 108;
+            // 
+            // actH5
+            // 
+            this.actH5.AutoSize = true;
+            this.actH5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH5.Location = new System.Drawing.Point(3, 4);
+            this.actH5.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH5.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH5.Name = "actH5";
+            this.actH5.Size = new System.Drawing.Size(269, 13);
+            this.actH5.TabIndex = 39;
+            this.actH5.Tag = "5";
+            this.actH5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h19
+            // 
+            this.h19.BackColor = System.Drawing.Color.LightGray;
+            this.h19.Controls.Add(this.h19img);
+            this.h19.Controls.Add(this.actH19);
+            this.h19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h19.Location = new System.Drawing.Point(929, 475);
+            this.h19.Name = "h19";
+            this.h19.Size = new System.Drawing.Size(275, 20);
+            this.h19.TabIndex = 128;
+            // 
+            // actH19
+            // 
+            this.actH19.AutoSize = true;
+            this.actH19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH19.Location = new System.Drawing.Point(3, 4);
+            this.actH19.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH19.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH19.Name = "actH19";
+            this.actH19.Size = new System.Drawing.Size(269, 13);
+            this.actH19.TabIndex = 53;
+            this.actH19.Tag = "19";
+            this.actH19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH19.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h15
+            // 
+            this.h15.BackColor = System.Drawing.Color.LightGray;
+            this.h15.Controls.Add(this.h15img);
+            this.h15.Controls.Add(this.actH15);
+            this.h15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h15.Location = new System.Drawing.Point(929, 387);
+            this.h15.Name = "h15";
+            this.h15.Size = new System.Drawing.Size(275, 20);
+            this.h15.TabIndex = 122;
+            // 
+            // actH15
+            // 
+            this.actH15.AutoSize = true;
+            this.actH15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH15.Location = new System.Drawing.Point(3, 4);
+            this.actH15.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH15.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH15.Name = "actH15";
+            this.actH15.Size = new System.Drawing.Size(269, 13);
+            this.actH15.TabIndex = 49;
+            this.actH15.Tag = "15";
+            this.actH15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH15.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h18
+            // 
+            this.h18.BackColor = System.Drawing.Color.LightGray;
+            this.h18.Controls.Add(this.h18img);
+            this.h18.Controls.Add(this.actH18);
+            this.h18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h18.Location = new System.Drawing.Point(929, 453);
+            this.h18.Name = "h18";
+            this.h18.Size = new System.Drawing.Size(275, 20);
+            this.h18.TabIndex = 113;
+            // 
+            // actH18
+            // 
+            this.actH18.AutoSize = true;
+            this.actH18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH18.Location = new System.Drawing.Point(3, 4);
+            this.actH18.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH18.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH18.Name = "actH18";
+            this.actH18.Size = new System.Drawing.Size(269, 13);
+            this.actH18.TabIndex = 52;
+            this.actH18.Tag = "18";
+            this.actH18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH18.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h10
+            // 
+            this.h10.BackColor = System.Drawing.Color.LightGray;
+            this.h10.Controls.Add(this.h10img);
+            this.h10.Controls.Add(this.actH10);
+            this.h10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h10.Location = new System.Drawing.Point(929, 277);
+            this.h10.Name = "h10";
+            this.h10.Size = new System.Drawing.Size(275, 20);
+            this.h10.TabIndex = 119;
+            // 
+            // actH10
+            // 
+            this.actH10.AutoSize = true;
+            this.actH10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH10.Location = new System.Drawing.Point(3, 4);
+            this.actH10.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH10.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH10.Name = "actH10";
+            this.actH10.Size = new System.Drawing.Size(269, 13);
+            this.actH10.TabIndex = 44;
+            this.actH10.Tag = "10";
+            this.actH10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH10.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h14
+            // 
+            this.h14.BackColor = System.Drawing.Color.LightGray;
+            this.h14.Controls.Add(this.h14img);
+            this.h14.Controls.Add(this.actH14);
+            this.h14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h14.Location = new System.Drawing.Point(929, 365);
+            this.h14.Name = "h14";
+            this.h14.Size = new System.Drawing.Size(275, 20);
+            this.h14.TabIndex = 127;
+            // 
+            // actH14
+            // 
+            this.actH14.AutoSize = true;
+            this.actH14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH14.Location = new System.Drawing.Point(3, 4);
+            this.actH14.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH14.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH14.Name = "actH14";
+            this.actH14.Size = new System.Drawing.Size(269, 13);
+            this.actH14.TabIndex = 48;
+            this.actH14.Tag = "14";
+            this.actH14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH14.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h4
+            // 
+            this.h4.BackColor = System.Drawing.Color.LightGray;
+            this.h4.Controls.Add(this.h4img);
+            this.h4.Controls.Add(this.actH4);
+            this.h4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h4.Location = new System.Drawing.Point(929, 145);
+            this.h4.Name = "h4";
+            this.h4.Size = new System.Drawing.Size(275, 20);
+            this.h4.TabIndex = 111;
+            // 
+            // actH4
+            // 
+            this.actH4.AutoSize = true;
+            this.actH4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH4.Location = new System.Drawing.Point(3, 4);
+            this.actH4.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH4.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH4.Name = "actH4";
+            this.actH4.Size = new System.Drawing.Size(269, 13);
+            this.actH4.TabIndex = 38;
+            this.actH4.Tag = "4";
+            this.actH4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h13
+            // 
+            this.h13.BackColor = System.Drawing.Color.LightGray;
+            this.h13.Controls.Add(this.h13img);
+            this.h13.Controls.Add(this.actH13);
+            this.h13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h13.Location = new System.Drawing.Point(929, 343);
+            this.h13.Name = "h13";
+            this.h13.Size = new System.Drawing.Size(275, 20);
+            this.h13.TabIndex = 130;
+            // 
+            // actH13
+            // 
+            this.actH13.AutoSize = true;
+            this.actH13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH13.Location = new System.Drawing.Point(3, 3);
+            this.actH13.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH13.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH13.Name = "actH13";
+            this.actH13.Size = new System.Drawing.Size(269, 13);
+            this.actH13.TabIndex = 47;
+            this.actH13.Tag = "13";
+            this.actH13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH13.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h9
+            // 
+            this.h9.BackColor = System.Drawing.Color.LightGray;
+            this.h9.Controls.Add(this.h9img);
+            this.h9.Controls.Add(this.actH9);
+            this.h9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h9.Location = new System.Drawing.Point(929, 255);
+            this.h9.Name = "h9";
+            this.h9.Size = new System.Drawing.Size(275, 20);
+            this.h9.TabIndex = 123;
+            // 
+            // actH9
+            // 
+            this.actH9.AutoSize = true;
+            this.actH9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH9.Location = new System.Drawing.Point(3, 4);
+            this.actH9.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH9.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH9.Name = "actH9";
+            this.actH9.Size = new System.Drawing.Size(269, 13);
+            this.actH9.TabIndex = 43;
+            this.actH9.Tag = "9";
+            this.actH9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h12
+            // 
+            this.h12.BackColor = System.Drawing.Color.LightGray;
+            this.h12.Controls.Add(this.h12img);
+            this.h12.Controls.Add(this.actH12);
+            this.h12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h12.Location = new System.Drawing.Point(929, 321);
+            this.h12.Name = "h12";
+            this.h12.Size = new System.Drawing.Size(275, 20);
+            this.h12.TabIndex = 114;
+            // 
+            // actH12
+            // 
+            this.actH12.AutoSize = true;
+            this.actH12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH12.Location = new System.Drawing.Point(3, 4);
+            this.actH12.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH12.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH12.Name = "actH12";
+            this.actH12.Size = new System.Drawing.Size(269, 13);
+            this.actH12.TabIndex = 46;
+            this.actH12.Tag = "12";
+            this.actH12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH12.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h3
+            // 
+            this.h3.BackColor = System.Drawing.Color.LightGray;
+            this.h3.Controls.Add(this.h3img);
+            this.h3.Controls.Add(this.actH3);
+            this.h3.Controls.Add(this.label27);
+            this.h3.Controls.Add(this.label28);
+            this.h3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h3.Location = new System.Drawing.Point(929, 123);
+            this.h3.Name = "h3";
+            this.h3.Size = new System.Drawing.Size(275, 20);
+            this.h3.TabIndex = 110;
+            // 
+            // actH3
+            // 
+            this.actH3.AutoSize = true;
+            this.actH3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH3.Location = new System.Drawing.Point(3, 4);
+            this.actH3.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH3.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH3.Name = "actH3";
+            this.actH3.Size = new System.Drawing.Size(269, 13);
+            this.actH3.TabIndex = 35;
+            this.actH3.Tag = "3";
+            this.actH3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(3, 5);
+            this.label27.MaximumSize = new System.Drawing.Size(269, 13);
+            this.label27.MinimumSize = new System.Drawing.Size(269, 13);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(269, 13);
+            this.label27.TabIndex = 36;
+            this.label27.Text = "label26";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(3, 5);
+            this.label28.MaximumSize = new System.Drawing.Size(269, 13);
+            this.label28.MinimumSize = new System.Drawing.Size(269, 13);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(269, 13);
+            this.label28.TabIndex = 37;
+            this.label28.Text = "label26";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // h8
+            // 
+            this.h8.BackColor = System.Drawing.Color.LightGray;
+            this.h8.Controls.Add(this.h8img);
+            this.h8.Controls.Add(this.actH8);
+            this.h8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h8.Location = new System.Drawing.Point(929, 233);
+            this.h8.Name = "h8";
+            this.h8.Size = new System.Drawing.Size(275, 20);
+            this.h8.TabIndex = 126;
+            // 
+            // actH8
+            // 
+            this.actH8.AutoSize = true;
+            this.actH8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH8.Location = new System.Drawing.Point(3, 4);
+            this.actH8.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH8.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH8.Name = "actH8";
+            this.actH8.Size = new System.Drawing.Size(269, 13);
+            this.actH8.TabIndex = 42;
+            this.actH8.Tag = "8";
+            this.actH8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h2
+            // 
+            this.h2.BackColor = System.Drawing.Color.LightGray;
+            this.h2.Controls.Add(this.h2img);
+            this.h2.Controls.Add(this.actH2);
+            this.h2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h2.Location = new System.Drawing.Point(929, 101);
+            this.h2.Name = "h2";
+            this.h2.Size = new System.Drawing.Size(275, 20);
+            this.h2.TabIndex = 109;
+            // 
+            // actH2
+            // 
+            this.actH2.AutoSize = true;
+            this.actH2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH2.Location = new System.Drawing.Point(3, 4);
+            this.actH2.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH2.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH2.Name = "actH2";
+            this.actH2.Size = new System.Drawing.Size(269, 13);
+            this.actH2.TabIndex = 34;
+            this.actH2.Tag = "2";
+            this.actH2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h7
+            // 
+            this.h7.BackColor = System.Drawing.Color.LightGray;
+            this.h7.Controls.Add(this.h7img);
+            this.h7.Controls.Add(this.actH7);
+            this.h7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h7.Location = new System.Drawing.Point(929, 211);
+            this.h7.Name = "h7";
+            this.h7.Size = new System.Drawing.Size(275, 20);
+            this.h7.TabIndex = 129;
+            // 
+            // actH7
+            // 
+            this.actH7.AutoSize = true;
+            this.actH7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH7.Location = new System.Drawing.Point(3, 4);
+            this.actH7.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH7.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH7.Name = "actH7";
+            this.actH7.Size = new System.Drawing.Size(269, 13);
+            this.actH7.TabIndex = 41;
+            this.actH7.Tag = "7";
+            this.actH7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h1
+            // 
+            this.h1.BackColor = System.Drawing.Color.LightGray;
+            this.h1.Controls.Add(this.h1img);
+            this.h1.Controls.Add(this.actH1);
+            this.h1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h1.Location = new System.Drawing.Point(929, 79);
+            this.h1.Name = "h1";
+            this.h1.Size = new System.Drawing.Size(275, 20);
+            this.h1.TabIndex = 107;
+            // 
+            // actH1
+            // 
+            this.actH1.AutoSize = true;
+            this.actH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH1.Location = new System.Drawing.Point(3, 4);
+            this.actH1.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH1.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH1.Name = "actH1";
+            this.actH1.Size = new System.Drawing.Size(269, 13);
+            this.actH1.TabIndex = 34;
+            this.actH1.Tag = "1";
+            this.actH1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h6
+            // 
+            this.h6.BackColor = System.Drawing.Color.LightGray;
+            this.h6.Controls.Add(this.h6img);
+            this.h6.Controls.Add(this.actH6);
+            this.h6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h6.Location = new System.Drawing.Point(929, 189);
+            this.h6.Name = "h6";
+            this.h6.Size = new System.Drawing.Size(275, 20);
+            this.h6.TabIndex = 112;
+            // 
+            // actH6
+            // 
+            this.actH6.AutoSize = true;
+            this.actH6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH6.Location = new System.Drawing.Point(3, 4);
+            this.actH6.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH6.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH6.Name = "actH6";
+            this.actH6.Size = new System.Drawing.Size(269, 13);
+            this.actH6.TabIndex = 40;
+            this.actH6.Tag = "6";
+            this.actH6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // h0
+            // 
+            this.h0.BackColor = System.Drawing.Color.LightGray;
+            this.h0.Controls.Add(this.h0img);
+            this.h0.Controls.Add(this.actH0);
+            this.h0.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h0.Location = new System.Drawing.Point(929, 57);
+            this.h0.Name = "h0";
+            this.h0.Size = new System.Drawing.Size(275, 20);
+            this.h0.TabIndex = 106;
+            // 
+            // actH0
+            // 
+            this.actH0.AutoSize = true;
+            this.actH0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH0.Location = new System.Drawing.Point(3, 3);
+            this.actH0.MaximumSize = new System.Drawing.Size(269, 13);
+            this.actH0.MinimumSize = new System.Drawing.Size(269, 13);
+            this.actH0.Name = "actH0";
+            this.actH0.Size = new System.Drawing.Size(269, 13);
+            this.actH0.TabIndex = 33;
+            this.actH0.Tag = "0";
+            this.actH0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(867, 574);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(54, 20);
+            this.label25.TabIndex = 105;
+            this.label25.Text = "24h40";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(867, 552);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(36, 20);
+            this.label21.TabIndex = 104;
+            this.label21.Text = "23h";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(867, 530);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(36, 20);
+            this.label22.TabIndex = 103;
+            this.label22.Text = "22h";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(867, 508);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(36, 20);
+            this.label23.TabIndex = 102;
+            this.label23.Text = "21h";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(867, 486);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(36, 20);
+            this.label24.TabIndex = 101;
+            this.label24.Text = "20h";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(867, 464);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(36, 20);
+            this.label17.TabIndex = 100;
+            this.label17.Text = "19h";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(867, 442);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(36, 20);
+            this.label18.TabIndex = 99;
+            this.label18.Text = "18h";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(867, 420);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(36, 20);
+            this.label19.TabIndex = 98;
+            this.label19.Text = "17h";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(867, 398);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(36, 20);
+            this.label20.TabIndex = 97;
+            this.label20.Text = "16h";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(867, 376);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(36, 20);
+            this.label13.TabIndex = 96;
+            this.label13.Text = "15h";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(867, 354);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(36, 20);
+            this.label14.TabIndex = 95;
+            this.label14.Text = "14h";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(867, 332);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(36, 20);
+            this.label15.TabIndex = 94;
+            this.label15.Text = "13h";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(867, 310);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(36, 20);
+            this.label16.TabIndex = 93;
+            this.label16.Text = "12h";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(867, 290);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(36, 20);
+            this.label9.TabIndex = 92;
+            this.label9.Text = "11h";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(867, 268);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(36, 20);
+            this.label10.TabIndex = 91;
+            this.label10.Text = "10h";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(867, 246);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(27, 20);
+            this.label11.TabIndex = 90;
+            this.label11.Text = "9h";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(867, 224);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(27, 20);
+            this.label12.TabIndex = 89;
+            this.label12.Text = "8h";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(867, 202);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(27, 20);
+            this.label5.TabIndex = 88;
+            this.label5.Text = "7h";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(867, 178);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 20);
+            this.label6.TabIndex = 87;
+            this.label6.Text = "6h";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(867, 156);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 20);
+            this.label7.TabIndex = 86;
+            this.label7.Text = "5h";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(867, 134);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(27, 20);
+            this.label8.TabIndex = 85;
+            this.label8.Text = "4h";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(867, 112);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(27, 20);
+            this.label1.TabIndex = 84;
+            this.label1.Text = "3h";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(867, 90);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(27, 20);
+            this.label26.TabIndex = 83;
+            this.label26.Text = "2h";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(867, 68);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(27, 20);
+            this.label29.TabIndex = 82;
+            this.label29.Text = "1h";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(867, 46);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(27, 20);
+            this.label30.TabIndex = 81;
+            this.label30.Text = "0h";
+            // 
+            // numJourneeLabel
+            // 
+            this.numJourneeLabel.AutoSize = true;
+            this.numJourneeLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.numJourneeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numJourneeLabel.Location = new System.Drawing.Point(987, 9);
+            this.numJourneeLabel.MaximumSize = new System.Drawing.Size(150, 0);
+            this.numJourneeLabel.MinimumSize = new System.Drawing.Size(150, 0);
+            this.numJourneeLabel.Name = "numJourneeLabel";
+            this.numJourneeLabel.Size = new System.Drawing.Size(150, 26);
+            this.numJourneeLabel.TabIndex = 80;
+            this.numJourneeLabel.Text = "Journée";
+            this.numJourneeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // periodeNum
             // 
@@ -437,16 +1394,6 @@
             this.num50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num50.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro50
-            // 
-            this.astro50.Image = ((System.Drawing.Image)(resources.GetObject("astro50.Image")));
-            this.astro50.Location = new System.Drawing.Point(3, 3);
-            this.astro50.Name = "astro50";
-            this.astro50.Size = new System.Drawing.Size(24, 24);
-            this.astro50.TabIndex = 0;
-            this.astro50.TabStop = false;
-            this.astro50.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour30
             // 
             this.jour30.Controls.Add(this.num30);
@@ -471,16 +1418,6 @@
             this.num30.Text = "30";
             this.num30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num30.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro30
-            // 
-            this.astro30.Image = ((System.Drawing.Image)(resources.GetObject("astro30.Image")));
-            this.astro30.Location = new System.Drawing.Point(3, 3);
-            this.astro30.Name = "astro30";
-            this.astro30.Size = new System.Drawing.Size(24, 24);
-            this.astro30.TabIndex = 0;
-            this.astro30.TabStop = false;
-            this.astro30.Click += new System.EventHandler(this.jour_click);
             // 
             // jour40
             // 
@@ -507,16 +1444,6 @@
             this.num40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num40.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro40
-            // 
-            this.astro40.Image = ((System.Drawing.Image)(resources.GetObject("astro40.Image")));
-            this.astro40.Location = new System.Drawing.Point(3, 3);
-            this.astro40.Name = "astro40";
-            this.astro40.Size = new System.Drawing.Size(24, 24);
-            this.astro40.TabIndex = 0;
-            this.astro40.TabStop = false;
-            this.astro40.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour29
             // 
             this.jour29.Controls.Add(this.num29);
@@ -541,16 +1468,6 @@
             this.num29.Text = "29";
             this.num29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num29.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro29
-            // 
-            this.astro29.Image = ((System.Drawing.Image)(resources.GetObject("astro29.Image")));
-            this.astro29.Location = new System.Drawing.Point(3, 3);
-            this.astro29.Name = "astro29";
-            this.astro29.Size = new System.Drawing.Size(24, 24);
-            this.astro29.TabIndex = 0;
-            this.astro29.TabStop = false;
-            this.astro29.Click += new System.EventHandler(this.jour_click);
             // 
             // jour49
             // 
@@ -577,16 +1494,6 @@
             this.num49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num49.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro49
-            // 
-            this.astro49.Image = ((System.Drawing.Image)(resources.GetObject("astro49.Image")));
-            this.astro49.Location = new System.Drawing.Point(3, 3);
-            this.astro49.Name = "astro49";
-            this.astro49.Size = new System.Drawing.Size(24, 24);
-            this.astro49.TabIndex = 0;
-            this.astro49.TabStop = false;
-            this.astro49.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour28
             // 
             this.jour28.Controls.Add(this.num28);
@@ -611,16 +1518,6 @@
             this.num28.Text = "28";
             this.num28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num28.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro28
-            // 
-            this.astro28.Image = ((System.Drawing.Image)(resources.GetObject("astro28.Image")));
-            this.astro28.Location = new System.Drawing.Point(3, 3);
-            this.astro28.Name = "astro28";
-            this.astro28.Size = new System.Drawing.Size(24, 24);
-            this.astro28.TabIndex = 0;
-            this.astro28.TabStop = false;
-            this.astro28.Click += new System.EventHandler(this.jour_click);
             // 
             // jour39
             // 
@@ -647,16 +1544,6 @@
             this.num39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num39.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro39
-            // 
-            this.astro39.Image = ((System.Drawing.Image)(resources.GetObject("astro39.Image")));
-            this.astro39.Location = new System.Drawing.Point(3, 3);
-            this.astro39.Name = "astro39";
-            this.astro39.Size = new System.Drawing.Size(24, 24);
-            this.astro39.TabIndex = 0;
-            this.astro39.TabStop = false;
-            this.astro39.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour27
             // 
             this.jour27.Controls.Add(this.num27);
@@ -681,16 +1568,6 @@
             this.num27.Text = "27";
             this.num27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num27.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro27
-            // 
-            this.astro27.Image = ((System.Drawing.Image)(resources.GetObject("astro27.Image")));
-            this.astro27.Location = new System.Drawing.Point(3, 3);
-            this.astro27.Name = "astro27";
-            this.astro27.Size = new System.Drawing.Size(24, 24);
-            this.astro27.TabIndex = 0;
-            this.astro27.TabStop = false;
-            this.astro27.Click += new System.EventHandler(this.jour_click);
             // 
             // jour48
             // 
@@ -717,16 +1594,6 @@
             this.num48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num48.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro48
-            // 
-            this.astro48.Image = ((System.Drawing.Image)(resources.GetObject("astro48.Image")));
-            this.astro48.Location = new System.Drawing.Point(3, 3);
-            this.astro48.Name = "astro48";
-            this.astro48.Size = new System.Drawing.Size(24, 24);
-            this.astro48.TabIndex = 0;
-            this.astro48.TabStop = false;
-            this.astro48.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour26
             // 
             this.jour26.Controls.Add(this.num26);
@@ -751,16 +1618,6 @@
             this.num26.Text = "26";
             this.num26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num26.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro26
-            // 
-            this.astro26.Image = ((System.Drawing.Image)(resources.GetObject("astro26.Image")));
-            this.astro26.Location = new System.Drawing.Point(3, 3);
-            this.astro26.Name = "astro26";
-            this.astro26.Size = new System.Drawing.Size(24, 24);
-            this.astro26.TabIndex = 0;
-            this.astro26.TabStop = false;
-            this.astro26.Click += new System.EventHandler(this.jour_click);
             // 
             // jour38
             // 
@@ -787,16 +1644,6 @@
             this.num38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num38.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro38
-            // 
-            this.astro38.Image = ((System.Drawing.Image)(resources.GetObject("astro38.Image")));
-            this.astro38.Location = new System.Drawing.Point(3, 3);
-            this.astro38.Name = "astro38";
-            this.astro38.Size = new System.Drawing.Size(24, 24);
-            this.astro38.TabIndex = 0;
-            this.astro38.TabStop = false;
-            this.astro38.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour23
             // 
             this.jour23.Controls.Add(this.num23);
@@ -821,16 +1668,6 @@
             this.num23.Text = "23";
             this.num23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num23.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro23
-            // 
-            this.astro23.Image = ((System.Drawing.Image)(resources.GetObject("astro23.Image")));
-            this.astro23.Location = new System.Drawing.Point(3, 3);
-            this.astro23.Name = "astro23";
-            this.astro23.Size = new System.Drawing.Size(24, 24);
-            this.astro23.TabIndex = 0;
-            this.astro23.TabStop = false;
-            this.astro23.Click += new System.EventHandler(this.jour_click);
             // 
             // jour47
             // 
@@ -857,16 +1694,6 @@
             this.num47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num47.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro47
-            // 
-            this.astro47.Image = ((System.Drawing.Image)(resources.GetObject("astro47.Image")));
-            this.astro47.Location = new System.Drawing.Point(3, 3);
-            this.astro47.Name = "astro47";
-            this.astro47.Size = new System.Drawing.Size(24, 24);
-            this.astro47.TabIndex = 0;
-            this.astro47.TabStop = false;
-            this.astro47.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour25
             // 
             this.jour25.Controls.Add(this.num25);
@@ -891,16 +1718,6 @@
             this.num25.Text = "25";
             this.num25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num25.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro25
-            // 
-            this.astro25.Image = ((System.Drawing.Image)(resources.GetObject("astro25.Image")));
-            this.astro25.Location = new System.Drawing.Point(3, 3);
-            this.astro25.Name = "astro25";
-            this.astro25.Size = new System.Drawing.Size(24, 24);
-            this.astro25.TabIndex = 0;
-            this.astro25.TabStop = false;
-            this.astro25.Click += new System.EventHandler(this.jour_click);
             // 
             // jour37
             // 
@@ -927,16 +1744,6 @@
             this.num37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num37.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro37
-            // 
-            this.astro37.Image = ((System.Drawing.Image)(resources.GetObject("astro37.Image")));
-            this.astro37.Location = new System.Drawing.Point(3, 3);
-            this.astro37.Name = "astro37";
-            this.astro37.Size = new System.Drawing.Size(24, 24);
-            this.astro37.TabIndex = 0;
-            this.astro37.TabStop = false;
-            this.astro37.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour22
             // 
             this.jour22.Controls.Add(this.num22);
@@ -961,16 +1768,6 @@
             this.num22.Text = "22";
             this.num22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num22.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro22
-            // 
-            this.astro22.Image = ((System.Drawing.Image)(resources.GetObject("astro22.Image")));
-            this.astro22.Location = new System.Drawing.Point(3, 3);
-            this.astro22.Name = "astro22";
-            this.astro22.Size = new System.Drawing.Size(24, 24);
-            this.astro22.TabIndex = 0;
-            this.astro22.TabStop = false;
-            this.astro22.Click += new System.EventHandler(this.jour_click);
             // 
             // jour46
             // 
@@ -997,16 +1794,6 @@
             this.num46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num46.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro46
-            // 
-            this.astro46.Image = ((System.Drawing.Image)(resources.GetObject("astro46.Image")));
-            this.astro46.Location = new System.Drawing.Point(3, 3);
-            this.astro46.Name = "astro46";
-            this.astro46.Size = new System.Drawing.Size(24, 24);
-            this.astro46.TabIndex = 0;
-            this.astro46.TabStop = false;
-            this.astro46.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour24
             // 
             this.jour24.Controls.Add(this.num24);
@@ -1031,16 +1818,6 @@
             this.num24.Text = "24";
             this.num24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num24.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro24
-            // 
-            this.astro24.Image = ((System.Drawing.Image)(resources.GetObject("astro24.Image")));
-            this.astro24.Location = new System.Drawing.Point(3, 3);
-            this.astro24.Name = "astro24";
-            this.astro24.Size = new System.Drawing.Size(24, 24);
-            this.astro24.TabIndex = 0;
-            this.astro24.TabStop = false;
-            this.astro24.Click += new System.EventHandler(this.jour_click);
             // 
             // jour36
             // 
@@ -1067,16 +1844,6 @@
             this.num36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num36.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro36
-            // 
-            this.astro36.Image = ((System.Drawing.Image)(resources.GetObject("astro36.Image")));
-            this.astro36.Location = new System.Drawing.Point(3, 3);
-            this.astro36.Name = "astro36";
-            this.astro36.Size = new System.Drawing.Size(24, 24);
-            this.astro36.TabIndex = 0;
-            this.astro36.TabStop = false;
-            this.astro36.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour21
             // 
             this.jour21.Controls.Add(this.num21);
@@ -1101,16 +1868,6 @@
             this.num21.Text = "21";
             this.num21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num21.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro21
-            // 
-            this.astro21.Image = ((System.Drawing.Image)(resources.GetObject("astro21.Image")));
-            this.astro21.Location = new System.Drawing.Point(3, 3);
-            this.astro21.Name = "astro21";
-            this.astro21.Size = new System.Drawing.Size(24, 24);
-            this.astro21.TabIndex = 0;
-            this.astro21.TabStop = false;
-            this.astro21.Click += new System.EventHandler(this.jour_click);
             // 
             // jour43
             // 
@@ -1137,16 +1894,6 @@
             this.num43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num43.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro43
-            // 
-            this.astro43.Image = ((System.Drawing.Image)(resources.GetObject("astro43.Image")));
-            this.astro43.Location = new System.Drawing.Point(3, 3);
-            this.astro43.Name = "astro43";
-            this.astro43.Size = new System.Drawing.Size(24, 24);
-            this.astro43.TabIndex = 0;
-            this.astro43.TabStop = false;
-            this.astro43.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour20
             // 
             this.jour20.Controls.Add(this.num20);
@@ -1171,16 +1918,6 @@
             this.num20.Text = "20";
             this.num20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num20.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro20
-            // 
-            this.astro20.Image = ((System.Drawing.Image)(resources.GetObject("astro20.Image")));
-            this.astro20.Location = new System.Drawing.Point(3, 3);
-            this.astro20.Name = "astro20";
-            this.astro20.Size = new System.Drawing.Size(24, 24);
-            this.astro20.TabIndex = 0;
-            this.astro20.TabStop = false;
-            this.astro20.Click += new System.EventHandler(this.jour_click);
             // 
             // jour33
             // 
@@ -1207,16 +1944,6 @@
             this.num33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num33.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro33
-            // 
-            this.astro33.Image = ((System.Drawing.Image)(resources.GetObject("astro33.Image")));
-            this.astro33.Location = new System.Drawing.Point(3, 3);
-            this.astro33.Name = "astro33";
-            this.astro33.Size = new System.Drawing.Size(24, 24);
-            this.astro33.TabIndex = 0;
-            this.astro33.TabStop = false;
-            this.astro33.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour10
             // 
             this.jour10.Controls.Add(this.num10);
@@ -1241,16 +1968,6 @@
             this.num10.Text = "10";
             this.num10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num10.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro10
-            // 
-            this.astro10.Image = ((System.Drawing.Image)(resources.GetObject("astro10.Image")));
-            this.astro10.Location = new System.Drawing.Point(3, 3);
-            this.astro10.Name = "astro10";
-            this.astro10.Size = new System.Drawing.Size(24, 24);
-            this.astro10.TabIndex = 0;
-            this.astro10.TabStop = false;
-            this.astro10.Click += new System.EventHandler(this.jour_click);
             // 
             // jour45
             // 
@@ -1277,16 +1994,6 @@
             this.num45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num45.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro45
-            // 
-            this.astro45.Image = ((System.Drawing.Image)(resources.GetObject("astro45.Image")));
-            this.astro45.Location = new System.Drawing.Point(3, 3);
-            this.astro45.Name = "astro45";
-            this.astro45.Size = new System.Drawing.Size(24, 24);
-            this.astro45.TabIndex = 0;
-            this.astro45.TabStop = false;
-            this.astro45.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour19
             // 
             this.jour19.Controls.Add(this.num19);
@@ -1311,16 +2018,6 @@
             this.num19.Text = "19";
             this.num19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num19.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro19
-            // 
-            this.astro19.Image = ((System.Drawing.Image)(resources.GetObject("astro19.Image")));
-            this.astro19.Location = new System.Drawing.Point(3, 3);
-            this.astro19.Name = "astro19";
-            this.astro19.Size = new System.Drawing.Size(24, 24);
-            this.astro19.TabIndex = 0;
-            this.astro19.TabStop = false;
-            this.astro19.Click += new System.EventHandler(this.jour_click);
             // 
             // jour35
             // 
@@ -1347,16 +2044,6 @@
             this.num35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num35.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro35
-            // 
-            this.astro35.Image = ((System.Drawing.Image)(resources.GetObject("astro35.Image")));
-            this.astro35.Location = new System.Drawing.Point(3, 3);
-            this.astro35.Name = "astro35";
-            this.astro35.Size = new System.Drawing.Size(24, 24);
-            this.astro35.TabIndex = 0;
-            this.astro35.TabStop = false;
-            this.astro35.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour9
             // 
             this.jour9.Controls.Add(this.num9);
@@ -1381,16 +2068,6 @@
             this.num9.Text = "9";
             this.num9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num9.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro9
-            // 
-            this.astro9.Image = ((System.Drawing.Image)(resources.GetObject("astro9.Image")));
-            this.astro9.Location = new System.Drawing.Point(3, 3);
-            this.astro9.Name = "astro9";
-            this.astro9.Size = new System.Drawing.Size(24, 24);
-            this.astro9.TabIndex = 0;
-            this.astro9.TabStop = false;
-            this.astro9.Click += new System.EventHandler(this.jour_click);
             // 
             // jour42
             // 
@@ -1417,16 +2094,6 @@
             this.num42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num42.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro42
-            // 
-            this.astro42.Image = ((System.Drawing.Image)(resources.GetObject("astro42.Image")));
-            this.astro42.Location = new System.Drawing.Point(3, 3);
-            this.astro42.Name = "astro42";
-            this.astro42.Size = new System.Drawing.Size(24, 24);
-            this.astro42.TabIndex = 0;
-            this.astro42.TabStop = false;
-            this.astro42.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour18
             // 
             this.jour18.Controls.Add(this.num18);
@@ -1451,16 +2118,6 @@
             this.num18.Text = "18";
             this.num18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num18.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro18
-            // 
-            this.astro18.Image = ((System.Drawing.Image)(resources.GetObject("astro18.Image")));
-            this.astro18.Location = new System.Drawing.Point(3, 3);
-            this.astro18.Name = "astro18";
-            this.astro18.Size = new System.Drawing.Size(24, 24);
-            this.astro18.TabIndex = 0;
-            this.astro18.TabStop = false;
-            this.astro18.Click += new System.EventHandler(this.jour_click);
             // 
             // jour44
             // 
@@ -1487,16 +2144,6 @@
             this.num44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num44.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro44
-            // 
-            this.astro44.Image = ((System.Drawing.Image)(resources.GetObject("astro44.Image")));
-            this.astro44.Location = new System.Drawing.Point(3, 3);
-            this.astro44.Name = "astro44";
-            this.astro44.Size = new System.Drawing.Size(24, 24);
-            this.astro44.TabIndex = 0;
-            this.astro44.TabStop = false;
-            this.astro44.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour8
             // 
             this.jour8.Controls.Add(this.num8);
@@ -1521,16 +2168,6 @@
             this.num8.Text = "8";
             this.num8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num8.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro8
-            // 
-            this.astro8.Image = ((System.Drawing.Image)(resources.GetObject("astro8.Image")));
-            this.astro8.Location = new System.Drawing.Point(3, 3);
-            this.astro8.Name = "astro8";
-            this.astro8.Size = new System.Drawing.Size(24, 24);
-            this.astro8.TabIndex = 0;
-            this.astro8.TabStop = false;
-            this.astro8.Click += new System.EventHandler(this.jour_click);
             // 
             // jour32
             // 
@@ -1557,16 +2194,6 @@
             this.num32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num32.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro32
-            // 
-            this.astro32.Image = ((System.Drawing.Image)(resources.GetObject("astro32.Image")));
-            this.astro32.Location = new System.Drawing.Point(3, 3);
-            this.astro32.Name = "astro32";
-            this.astro32.Size = new System.Drawing.Size(24, 24);
-            this.astro32.TabIndex = 0;
-            this.astro32.TabStop = false;
-            this.astro32.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour41
             // 
             this.jour41.Controls.Add(this.num41);
@@ -1591,16 +2218,6 @@
             this.num41.Text = "41";
             this.num41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num41.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro41
-            // 
-            this.astro41.Image = ((System.Drawing.Image)(resources.GetObject("astro41.Image")));
-            this.astro41.Location = new System.Drawing.Point(3, 3);
-            this.astro41.Name = "astro41";
-            this.astro41.Size = new System.Drawing.Size(24, 24);
-            this.astro41.TabIndex = 0;
-            this.astro41.TabStop = false;
-            this.astro41.Click += new System.EventHandler(this.jour_click);
             // 
             // jour17
             // 
@@ -1627,16 +2244,6 @@
             this.num17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num17.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro17
-            // 
-            this.astro17.Image = ((System.Drawing.Image)(resources.GetObject("astro17.Image")));
-            this.astro17.Location = new System.Drawing.Point(3, 3);
-            this.astro17.Name = "astro17";
-            this.astro17.Size = new System.Drawing.Size(24, 24);
-            this.astro17.TabIndex = 0;
-            this.astro17.TabStop = false;
-            this.astro17.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour34
             // 
             this.jour34.Controls.Add(this.num34);
@@ -1661,16 +2268,6 @@
             this.num34.Text = "34";
             this.num34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num34.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro34
-            // 
-            this.astro34.Image = ((System.Drawing.Image)(resources.GetObject("astro34.Image")));
-            this.astro34.Location = new System.Drawing.Point(3, 3);
-            this.astro34.Name = "astro34";
-            this.astro34.Size = new System.Drawing.Size(24, 24);
-            this.astro34.TabIndex = 0;
-            this.astro34.TabStop = false;
-            this.astro34.Click += new System.EventHandler(this.jour_click);
             // 
             // jour7
             // 
@@ -1697,16 +2294,6 @@
             this.num7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num7.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro7
-            // 
-            this.astro7.Image = ((System.Drawing.Image)(resources.GetObject("astro7.Image")));
-            this.astro7.Location = new System.Drawing.Point(3, 3);
-            this.astro7.Name = "astro7";
-            this.astro7.Size = new System.Drawing.Size(24, 24);
-            this.astro7.TabIndex = 0;
-            this.astro7.TabStop = false;
-            this.astro7.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour31
             // 
             this.jour31.Controls.Add(this.num31);
@@ -1731,16 +2318,6 @@
             this.num31.Text = "31";
             this.num31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num31.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro31
-            // 
-            this.astro31.Image = ((System.Drawing.Image)(resources.GetObject("astro31.Image")));
-            this.astro31.Location = new System.Drawing.Point(3, 3);
-            this.astro31.Name = "astro31";
-            this.astro31.Size = new System.Drawing.Size(24, 24);
-            this.astro31.TabIndex = 0;
-            this.astro31.TabStop = false;
-            this.astro31.Click += new System.EventHandler(this.jour_click);
             // 
             // jour16
             // 
@@ -1767,16 +2344,6 @@
             this.num16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num16.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro16
-            // 
-            this.astro16.Image = ((System.Drawing.Image)(resources.GetObject("astro16.Image")));
-            this.astro16.Location = new System.Drawing.Point(3, 3);
-            this.astro16.Name = "astro16";
-            this.astro16.Size = new System.Drawing.Size(24, 24);
-            this.astro16.TabIndex = 0;
-            this.astro16.TabStop = false;
-            this.astro16.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour6
             // 
             this.jour6.Controls.Add(this.num6);
@@ -1802,16 +2369,6 @@
             this.num6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num6.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro6
-            // 
-            this.astro6.Image = ((System.Drawing.Image)(resources.GetObject("astro6.Image")));
-            this.astro6.Location = new System.Drawing.Point(3, 3);
-            this.astro6.Name = "astro6";
-            this.astro6.Size = new System.Drawing.Size(24, 24);
-            this.astro6.TabIndex = 0;
-            this.astro6.TabStop = false;
-            this.astro6.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour13
             // 
             this.jour13.Controls.Add(this.num13);
@@ -1836,16 +2393,6 @@
             this.num13.Text = "13";
             this.num13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num13.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro13
-            // 
-            this.astro13.Image = ((System.Drawing.Image)(resources.GetObject("astro13.Image")));
-            this.astro13.Location = new System.Drawing.Point(3, 3);
-            this.astro13.Name = "astro13";
-            this.astro13.Size = new System.Drawing.Size(24, 24);
-            this.astro13.TabIndex = 0;
-            this.astro13.TabStop = false;
-            this.astro13.Click += new System.EventHandler(this.jour_click);
             // 
             // jour3
             // 
@@ -1888,16 +2435,6 @@
             this.label3.Text = "1";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // astro3
-            // 
-            this.astro3.Image = global::MarsApp.Properties.Resources.astronaute;
-            this.astro3.Location = new System.Drawing.Point(3, 3);
-            this.astro3.Name = "astro3";
-            this.astro3.Size = new System.Drawing.Size(24, 24);
-            this.astro3.TabIndex = 0;
-            this.astro3.TabStop = false;
-            this.astro3.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour15
             // 
             this.jour15.Controls.Add(this.num15);
@@ -1922,16 +2459,6 @@
             this.num15.Text = "15";
             this.num15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num15.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro15
-            // 
-            this.astro15.Image = ((System.Drawing.Image)(resources.GetObject("astro15.Image")));
-            this.astro15.Location = new System.Drawing.Point(3, 3);
-            this.astro15.Name = "astro15";
-            this.astro15.Size = new System.Drawing.Size(24, 24);
-            this.astro15.TabIndex = 0;
-            this.astro15.TabStop = false;
-            this.astro15.Click += new System.EventHandler(this.jour_click);
             // 
             // jour5
             // 
@@ -1958,16 +2485,6 @@
             this.num5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num5.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro5
-            // 
-            this.astro5.Image = ((System.Drawing.Image)(resources.GetObject("astro5.Image")));
-            this.astro5.Location = new System.Drawing.Point(3, 3);
-            this.astro5.Name = "astro5";
-            this.astro5.Size = new System.Drawing.Size(24, 24);
-            this.astro5.TabIndex = 0;
-            this.astro5.TabStop = false;
-            this.astro5.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour12
             // 
             this.jour12.Controls.Add(this.num12);
@@ -1993,16 +2510,6 @@
             this.num12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num12.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro12
-            // 
-            this.astro12.Image = ((System.Drawing.Image)(resources.GetObject("astro12.Image")));
-            this.astro12.Location = new System.Drawing.Point(3, 3);
-            this.astro12.Name = "astro12";
-            this.astro12.Size = new System.Drawing.Size(24, 24);
-            this.astro12.TabIndex = 0;
-            this.astro12.TabStop = false;
-            this.astro12.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour14
             // 
             this.jour14.Controls.Add(this.num14);
@@ -2027,16 +2534,6 @@
             this.num14.Text = "14";
             this.num14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num14.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro14
-            // 
-            this.astro14.Image = ((System.Drawing.Image)(resources.GetObject("astro14.Image")));
-            this.astro14.Location = new System.Drawing.Point(3, 3);
-            this.astro14.Name = "astro14";
-            this.astro14.Size = new System.Drawing.Size(24, 24);
-            this.astro14.TabIndex = 0;
-            this.astro14.TabStop = false;
-            this.astro14.Click += new System.EventHandler(this.jour_click);
             // 
             // jour2
             // 
@@ -2064,16 +2561,6 @@
             this.num2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num2.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro2
-            // 
-            this.astro2.Image = global::MarsApp.Properties.Resources.astronaute;
-            this.astro2.Location = new System.Drawing.Point(3, 3);
-            this.astro2.Name = "astro2";
-            this.astro2.Size = new System.Drawing.Size(24, 24);
-            this.astro2.TabIndex = 0;
-            this.astro2.TabStop = false;
-            this.astro2.Click += new System.EventHandler(this.jour_click);
-            // 
             // jour11
             // 
             this.jour11.Controls.Add(this.num11);
@@ -2098,16 +2585,6 @@
             this.num11.Text = "11";
             this.num11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num11.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro11
-            // 
-            this.astro11.Image = ((System.Drawing.Image)(resources.GetObject("astro11.Image")));
-            this.astro11.Location = new System.Drawing.Point(3, 3);
-            this.astro11.Name = "astro11";
-            this.astro11.Size = new System.Drawing.Size(24, 24);
-            this.astro11.TabIndex = 0;
-            this.astro11.TabStop = false;
-            this.astro11.Click += new System.EventHandler(this.jour_click);
             // 
             // jour4
             // 
@@ -2150,16 +2627,6 @@
             this.label2.Text = "2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // astro4
-            // 
-            this.astro4.Image = ((System.Drawing.Image)(resources.GetObject("astro4.Image")));
-            this.astro4.Location = new System.Drawing.Point(3, 3);
-            this.astro4.Name = "astro4";
-            this.astro4.Size = new System.Drawing.Size(24, 24);
-            this.astro4.TabIndex = 0;
-            this.astro4.TabStop = false;
-            this.astro4.Click += new System.EventHandler(this.jour_click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -2201,16 +2668,15 @@
             this.num1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num1.Click += new System.EventHandler(this.jour_click);
             // 
-            // astro1
+            // h0img
             // 
-            this.astro1.BackColor = System.Drawing.Color.Transparent;
-            this.astro1.Image = global::MarsApp.Properties.Resources.astronaute;
-            this.astro1.Location = new System.Drawing.Point(3, 3);
-            this.astro1.Name = "astro1";
-            this.astro1.Size = new System.Drawing.Size(24, 24);
-            this.astro1.TabIndex = 0;
-            this.astro1.TabStop = false;
-            this.astro1.Click += new System.EventHandler(this.jour_click);
+            this.h0img.BackColor = System.Drawing.Color.Transparent;
+            this.h0img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h0img.Location = new System.Drawing.Point(0, 0);
+            this.h0img.Name = "h0img";
+            this.h0img.Size = new System.Drawing.Size(16, 16);
+            this.h0img.TabIndex = 131;
+            this.h0img.TabStop = false;
             // 
             // suivant
             // 
@@ -2236,840 +2702,736 @@
             this.precedent.Tag = "-1";
             this.precedent.Click += new System.EventHandler(this.changerPeriode_Click);
             // 
-            // numJourneeLabel
-            // 
-            this.numJourneeLabel.AutoSize = true;
-            this.numJourneeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numJourneeLabel.Location = new System.Drawing.Point(1002, 31);
-            this.numJourneeLabel.MaximumSize = new System.Drawing.Size(150, 0);
-            this.numJourneeLabel.MinimumSize = new System.Drawing.Size(150, 0);
-            this.numJourneeLabel.Name = "numJourneeLabel";
-            this.numJourneeLabel.Size = new System.Drawing.Size(150, 26);
-            this.numJourneeLabel.TabIndex = 80;
-            this.numJourneeLabel.Text = "Journée";
-            this.numJourneeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h24
-            // 
-            this.h24.Controls.Add(this.actH24);
-            this.h24.Location = new System.Drawing.Point(945, 526);
-            this.h24.Name = "h24";
-            this.h24.Size = new System.Drawing.Size(275, 20);
-            this.h24.TabIndex = 118;
-            // 
-            // actH24
-            // 
-            this.actH24.AutoSize = true;
-            this.actH24.ContextMenuStrip = this.clicDroitActivite;
-            this.actH24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH24.Location = new System.Drawing.Point(3, 4);
-            this.actH24.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH24.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH24.Name = "actH24";
-            this.actH24.Size = new System.Drawing.Size(269, 13);
-            this.actH24.TabIndex = 58;
-            this.actH24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h23
-            // 
-            this.h23.Controls.Add(this.actH23);
-            this.h23.Location = new System.Drawing.Point(945, 507);
-            this.h23.Name = "h23";
-            this.h23.Size = new System.Drawing.Size(275, 20);
-            this.h23.TabIndex = 115;
-            // 
-            // actH23
-            // 
-            this.actH23.AutoSize = true;
-            this.actH23.ContextMenuStrip = this.clicDroitActivite;
-            this.actH23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH23.Location = new System.Drawing.Point(3, 4);
-            this.actH23.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH23.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH23.Name = "actH23";
-            this.actH23.Size = new System.Drawing.Size(269, 13);
-            this.actH23.TabIndex = 57;
-            this.actH23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h17
-            // 
-            this.h17.Controls.Add(this.actH17);
-            this.h17.Location = new System.Drawing.Point(945, 393);
-            this.h17.Name = "h17";
-            this.h17.Size = new System.Drawing.Size(275, 20);
-            this.h17.TabIndex = 116;
-            // 
-            // actH17
-            // 
-            this.actH17.AutoSize = true;
-            this.actH17.ContextMenuStrip = this.clicDroitActivite;
-            this.actH17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH17.Location = new System.Drawing.Point(3, 4);
-            this.actH17.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH17.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH17.Name = "actH17";
-            this.actH17.Size = new System.Drawing.Size(269, 13);
-            this.actH17.TabIndex = 51;
-            this.actH17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h22
-            // 
-            this.h22.Controls.Add(this.actH22);
-            this.h22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.h22.Location = new System.Drawing.Point(945, 488);
-            this.h22.Name = "h22";
-            this.h22.Size = new System.Drawing.Size(275, 20);
-            this.h22.TabIndex = 120;
-            // 
-            // actH22
-            // 
-            this.actH22.AutoSize = true;
-            this.actH22.ContextMenuStrip = this.clicDroitActivite;
-            this.actH22.Location = new System.Drawing.Point(3, 4);
-            this.actH22.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH22.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH22.Name = "actH22";
-            this.actH22.Size = new System.Drawing.Size(269, 13);
-            this.actH22.TabIndex = 56;
-            this.actH22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h11
-            // 
-            this.h11.Controls.Add(this.actH11);
-            this.h11.Location = new System.Drawing.Point(945, 279);
-            this.h11.Name = "h11";
-            this.h11.Size = new System.Drawing.Size(275, 20);
-            this.h11.TabIndex = 117;
-            // 
-            // actH11
-            // 
-            this.actH11.AutoSize = true;
-            this.actH11.ContextMenuStrip = this.clicDroitActivite;
-            this.actH11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH11.Location = new System.Drawing.Point(3, 4);
-            this.actH11.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH11.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH11.Name = "actH11";
-            this.actH11.Size = new System.Drawing.Size(269, 13);
-            this.actH11.TabIndex = 45;
-            this.actH11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h21
-            // 
-            this.h21.Controls.Add(this.actH21);
-            this.h21.Location = new System.Drawing.Point(945, 469);
-            this.h21.Name = "h21";
-            this.h21.Size = new System.Drawing.Size(275, 20);
-            this.h21.TabIndex = 124;
-            // 
-            // actH21
-            // 
-            this.actH21.AutoSize = true;
-            this.actH21.ContextMenuStrip = this.clicDroitActivite;
-            this.actH21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH21.Location = new System.Drawing.Point(3, 4);
-            this.actH21.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH21.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH21.Name = "actH21";
-            this.actH21.Size = new System.Drawing.Size(269, 13);
-            this.actH21.TabIndex = 55;
-            this.actH21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h16
-            // 
-            this.h16.Controls.Add(this.actH16);
-            this.h16.Location = new System.Drawing.Point(945, 374);
-            this.h16.Name = "h16";
-            this.h16.Size = new System.Drawing.Size(275, 20);
-            this.h16.TabIndex = 121;
-            // 
-            // actH16
-            // 
-            this.actH16.AutoSize = true;
-            this.actH16.ContextMenuStrip = this.clicDroitActivite;
-            this.actH16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH16.Location = new System.Drawing.Point(3, 4);
-            this.actH16.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH16.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH16.Name = "actH16";
-            this.actH16.Size = new System.Drawing.Size(269, 13);
-            this.actH16.TabIndex = 50;
-            this.actH16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h20
-            // 
-            this.h20.Controls.Add(this.actH20);
-            this.h20.Location = new System.Drawing.Point(945, 450);
-            this.h20.Name = "h20";
-            this.h20.Size = new System.Drawing.Size(275, 20);
-            this.h20.TabIndex = 125;
-            // 
-            // actH20
-            // 
-            this.actH20.AutoSize = true;
-            this.actH20.ContextMenuStrip = this.clicDroitActivite;
-            this.actH20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH20.Location = new System.Drawing.Point(3, 4);
-            this.actH20.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH20.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH20.Name = "actH20";
-            this.actH20.Size = new System.Drawing.Size(269, 13);
-            this.actH20.TabIndex = 54;
-            this.actH20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h5
-            // 
-            this.h5.Controls.Add(this.actH5);
-            this.h5.Location = new System.Drawing.Point(945, 165);
-            this.h5.Name = "h5";
-            this.h5.Size = new System.Drawing.Size(275, 20);
-            this.h5.TabIndex = 108;
-            // 
-            // actH5
-            // 
-            this.actH5.AutoSize = true;
-            this.actH5.ContextMenuStrip = this.clicDroitActivite;
-            this.actH5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH5.Location = new System.Drawing.Point(3, 4);
-            this.actH5.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH5.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH5.Name = "actH5";
-            this.actH5.Size = new System.Drawing.Size(269, 13);
-            this.actH5.TabIndex = 39;
-            this.actH5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h19
-            // 
-            this.h19.Controls.Add(this.actH19);
-            this.h19.Location = new System.Drawing.Point(945, 431);
-            this.h19.Name = "h19";
-            this.h19.Size = new System.Drawing.Size(275, 20);
-            this.h19.TabIndex = 128;
-            // 
-            // actH19
-            // 
-            this.actH19.AutoSize = true;
-            this.actH19.ContextMenuStrip = this.clicDroitActivite;
-            this.actH19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH19.Location = new System.Drawing.Point(3, 4);
-            this.actH19.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH19.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH19.Name = "actH19";
-            this.actH19.Size = new System.Drawing.Size(269, 13);
-            this.actH19.TabIndex = 53;
-            this.actH19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h15
-            // 
-            this.h15.Controls.Add(this.actH15);
-            this.h15.Location = new System.Drawing.Point(945, 355);
-            this.h15.Name = "h15";
-            this.h15.Size = new System.Drawing.Size(275, 20);
-            this.h15.TabIndex = 122;
-            // 
-            // actH15
-            // 
-            this.actH15.AutoSize = true;
-            this.actH15.ContextMenuStrip = this.clicDroitActivite;
-            this.actH15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH15.Location = new System.Drawing.Point(3, 4);
-            this.actH15.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH15.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH15.Name = "actH15";
-            this.actH15.Size = new System.Drawing.Size(269, 13);
-            this.actH15.TabIndex = 49;
-            this.actH15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h18
-            // 
-            this.h18.Controls.Add(this.actH18);
-            this.h18.Location = new System.Drawing.Point(945, 412);
-            this.h18.Name = "h18";
-            this.h18.Size = new System.Drawing.Size(275, 20);
-            this.h18.TabIndex = 113;
-            // 
-            // actH18
-            // 
-            this.actH18.AutoSize = true;
-            this.actH18.ContextMenuStrip = this.clicDroitActivite;
-            this.actH18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH18.Location = new System.Drawing.Point(3, 4);
-            this.actH18.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH18.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH18.Name = "actH18";
-            this.actH18.Size = new System.Drawing.Size(269, 13);
-            this.actH18.TabIndex = 52;
-            this.actH18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h10
-            // 
-            this.h10.Controls.Add(this.actH10);
-            this.h10.Location = new System.Drawing.Point(945, 260);
-            this.h10.Name = "h10";
-            this.h10.Size = new System.Drawing.Size(275, 20);
-            this.h10.TabIndex = 119;
-            // 
-            // actH10
-            // 
-            this.actH10.AutoSize = true;
-            this.actH10.ContextMenuStrip = this.clicDroitActivite;
-            this.actH10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH10.Location = new System.Drawing.Point(3, 4);
-            this.actH10.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH10.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH10.Name = "actH10";
-            this.actH10.Size = new System.Drawing.Size(269, 13);
-            this.actH10.TabIndex = 44;
-            this.actH10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h14
-            // 
-            this.h14.Controls.Add(this.actH14);
-            this.h14.Location = new System.Drawing.Point(945, 336);
-            this.h14.Name = "h14";
-            this.h14.Size = new System.Drawing.Size(275, 20);
-            this.h14.TabIndex = 127;
-            // 
-            // actH14
-            // 
-            this.actH14.AutoSize = true;
-            this.actH14.ContextMenuStrip = this.clicDroitActivite;
-            this.actH14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH14.Location = new System.Drawing.Point(3, 4);
-            this.actH14.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH14.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH14.Name = "actH14";
-            this.actH14.Size = new System.Drawing.Size(269, 13);
-            this.actH14.TabIndex = 48;
-            this.actH14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h4
-            // 
-            this.h4.Controls.Add(this.actH4);
-            this.h4.Location = new System.Drawing.Point(945, 146);
-            this.h4.Name = "h4";
-            this.h4.Size = new System.Drawing.Size(275, 20);
-            this.h4.TabIndex = 111;
-            // 
-            // actH4
-            // 
-            this.actH4.AutoSize = true;
-            this.actH4.ContextMenuStrip = this.clicDroitActivite;
-            this.actH4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH4.Location = new System.Drawing.Point(3, 4);
-            this.actH4.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH4.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH4.Name = "actH4";
-            this.actH4.Size = new System.Drawing.Size(269, 13);
-            this.actH4.TabIndex = 38;
-            this.actH4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h13
-            // 
-            this.h13.Controls.Add(this.actH13);
-            this.h13.Location = new System.Drawing.Point(945, 317);
-            this.h13.Name = "h13";
-            this.h13.Size = new System.Drawing.Size(275, 20);
-            this.h13.TabIndex = 130;
-            // 
-            // actH13
-            // 
-            this.actH13.AutoSize = true;
-            this.actH13.ContextMenuStrip = this.clicDroitActivite;
-            this.actH13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH13.Location = new System.Drawing.Point(3, 3);
-            this.actH13.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH13.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH13.Name = "actH13";
-            this.actH13.Size = new System.Drawing.Size(269, 13);
-            this.actH13.TabIndex = 47;
-            this.actH13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h9
-            // 
-            this.h9.Controls.Add(this.actH9);
-            this.h9.Location = new System.Drawing.Point(945, 241);
-            this.h9.Name = "h9";
-            this.h9.Size = new System.Drawing.Size(275, 20);
-            this.h9.TabIndex = 123;
-            // 
-            // actH9
-            // 
-            this.actH9.AutoSize = true;
-            this.actH9.ContextMenuStrip = this.clicDroitActivite;
-            this.actH9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH9.Location = new System.Drawing.Point(3, 4);
-            this.actH9.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH9.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH9.Name = "actH9";
-            this.actH9.Size = new System.Drawing.Size(269, 13);
-            this.actH9.TabIndex = 43;
-            this.actH9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h12
-            // 
-            this.h12.Controls.Add(this.actH12);
-            this.h12.Location = new System.Drawing.Point(945, 298);
-            this.h12.Name = "h12";
-            this.h12.Size = new System.Drawing.Size(275, 20);
-            this.h12.TabIndex = 114;
-            // 
-            // actH12
-            // 
-            this.actH12.AutoSize = true;
-            this.actH12.ContextMenuStrip = this.clicDroitActivite;
-            this.actH12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH12.Location = new System.Drawing.Point(3, 4);
-            this.actH12.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH12.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH12.Name = "actH12";
-            this.actH12.Size = new System.Drawing.Size(269, 13);
-            this.actH12.TabIndex = 46;
-            this.actH12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h3
-            // 
-            this.h3.Controls.Add(this.actH3);
-            this.h3.Controls.Add(this.label27);
-            this.h3.Controls.Add(this.label28);
-            this.h3.Location = new System.Drawing.Point(945, 127);
-            this.h3.Name = "h3";
-            this.h3.Size = new System.Drawing.Size(275, 20);
-            this.h3.TabIndex = 110;
-            // 
-            // actH3
-            // 
-            this.actH3.AutoSize = true;
-            this.actH3.ContextMenuStrip = this.clicDroitActivite;
-            this.actH3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH3.Location = new System.Drawing.Point(3, 4);
-            this.actH3.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH3.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH3.Name = "actH3";
-            this.actH3.Size = new System.Drawing.Size(269, 13);
-            this.actH3.TabIndex = 35;
-            this.actH3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(3, 5);
-            this.label27.MaximumSize = new System.Drawing.Size(269, 13);
-            this.label27.MinimumSize = new System.Drawing.Size(269, 13);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(269, 13);
-            this.label27.TabIndex = 36;
-            this.label27.Text = "label26";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(3, 5);
-            this.label28.MaximumSize = new System.Drawing.Size(269, 13);
-            this.label28.MinimumSize = new System.Drawing.Size(269, 13);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(269, 13);
-            this.label28.TabIndex = 37;
-            this.label28.Text = "label26";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h8
-            // 
-            this.h8.Controls.Add(this.actH8);
-            this.h8.Location = new System.Drawing.Point(945, 222);
-            this.h8.Name = "h8";
-            this.h8.Size = new System.Drawing.Size(275, 20);
-            this.h8.TabIndex = 126;
-            // 
-            // actH8
-            // 
-            this.actH8.AutoSize = true;
-            this.actH8.ContextMenuStrip = this.clicDroitActivite;
-            this.actH8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH8.Location = new System.Drawing.Point(3, 4);
-            this.actH8.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH8.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH8.Name = "actH8";
-            this.actH8.Size = new System.Drawing.Size(269, 13);
-            this.actH8.TabIndex = 42;
-            this.actH8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h2
-            // 
-            this.h2.Controls.Add(this.actH2);
-            this.h2.Location = new System.Drawing.Point(945, 108);
-            this.h2.Name = "h2";
-            this.h2.Size = new System.Drawing.Size(275, 20);
-            this.h2.TabIndex = 109;
-            // 
-            // actH2
-            // 
-            this.actH2.AutoSize = true;
-            this.actH2.ContextMenuStrip = this.clicDroitActivite;
-            this.actH2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH2.Location = new System.Drawing.Point(3, 4);
-            this.actH2.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH2.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH2.Name = "actH2";
-            this.actH2.Size = new System.Drawing.Size(269, 13);
-            this.actH2.TabIndex = 34;
-            this.actH2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h7
-            // 
-            this.h7.Controls.Add(this.actH7);
-            this.h7.Location = new System.Drawing.Point(945, 203);
-            this.h7.Name = "h7";
-            this.h7.Size = new System.Drawing.Size(275, 20);
-            this.h7.TabIndex = 129;
-            // 
-            // actH7
-            // 
-            this.actH7.AutoSize = true;
-            this.actH7.ContextMenuStrip = this.clicDroitActivite;
-            this.actH7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH7.Location = new System.Drawing.Point(3, 4);
-            this.actH7.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH7.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH7.Name = "actH7";
-            this.actH7.Size = new System.Drawing.Size(269, 13);
-            this.actH7.TabIndex = 41;
-            this.actH7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h1
-            // 
-            this.h1.Controls.Add(this.actH1);
-            this.h1.Location = new System.Drawing.Point(945, 89);
-            this.h1.Name = "h1";
-            this.h1.Size = new System.Drawing.Size(275, 20);
-            this.h1.TabIndex = 107;
-            // 
-            // actH1
-            // 
-            this.actH1.AutoSize = true;
-            this.actH1.ContextMenuStrip = this.clicDroitActivite;
-            this.actH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH1.Location = new System.Drawing.Point(3, 4);
-            this.actH1.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH1.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH1.Name = "actH1";
-            this.actH1.Size = new System.Drawing.Size(269, 13);
-            this.actH1.TabIndex = 34;
-            this.actH1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h6
-            // 
-            this.h6.Controls.Add(this.actH6);
-            this.h6.Location = new System.Drawing.Point(945, 184);
-            this.h6.Name = "h6";
-            this.h6.Size = new System.Drawing.Size(275, 20);
-            this.h6.TabIndex = 112;
-            // 
-            // actH6
-            // 
-            this.actH6.AutoSize = true;
-            this.actH6.ContextMenuStrip = this.clicDroitActivite;
-            this.actH6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH6.Location = new System.Drawing.Point(3, 4);
-            this.actH6.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH6.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH6.Name = "actH6";
-            this.actH6.Size = new System.Drawing.Size(269, 13);
-            this.actH6.TabIndex = 40;
-            this.actH6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // h0
-            // 
-            this.h0.Controls.Add(this.actH0);
-            this.h0.Location = new System.Drawing.Point(945, 70);
-            this.h0.Name = "h0";
-            this.h0.Size = new System.Drawing.Size(275, 20);
-            this.h0.TabIndex = 106;
-            // 
-            // actH0
-            // 
-            this.actH0.AutoSize = true;
-            this.actH0.ContextMenuStrip = this.clicDroitActivite;
-            this.actH0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH0.Location = new System.Drawing.Point(3, 3);
-            this.actH0.MaximumSize = new System.Drawing.Size(269, 13);
-            this.actH0.MinimumSize = new System.Drawing.Size(269, 13);
-            this.actH0.Name = "actH0";
-            this.actH0.Size = new System.Drawing.Size(269, 13);
-            this.actH0.TabIndex = 33;
-            this.actH0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // clicDroitActivite
-            // 
-            this.clicDroitActivite.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Modifier,
-            this.Supprimer});
-            this.clicDroitActivite.Name = "contextMenuStrip1";
-            this.clicDroitActivite.Size = new System.Drawing.Size(130, 48);
-            // 
-            // Modifier
-            // 
-            this.Modifier.Name = "Modifier";
-            this.Modifier.Size = new System.Drawing.Size(129, 22);
-            this.Modifier.Text = "Modifier";
-            this.Modifier.Click += new System.EventHandler(this.Modifier_Click);
-            // 
-            // Supprimer
-            // 
-            this.Supprimer.Name = "Supprimer";
-            this.Supprimer.Size = new System.Drawing.Size(129, 22);
-            this.Supprimer.Text = "Supprimer";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(867, 526);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(54, 20);
-            this.label25.TabIndex = 105;
-            this.label25.Text = "24h40";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(867, 507);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(36, 20);
-            this.label21.TabIndex = 104;
-            this.label21.Text = "23h";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(867, 488);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(36, 20);
-            this.label22.TabIndex = 103;
-            this.label22.Text = "22h";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(867, 469);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(36, 20);
-            this.label23.TabIndex = 102;
-            this.label23.Text = "21h";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(867, 450);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(36, 20);
-            this.label24.TabIndex = 101;
-            this.label24.Text = "20h";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(867, 431);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(36, 20);
-            this.label17.TabIndex = 100;
-            this.label17.Text = "19h";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(867, 412);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(36, 20);
-            this.label18.TabIndex = 99;
-            this.label18.Text = "18h";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(867, 393);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(36, 20);
-            this.label19.TabIndex = 98;
-            this.label19.Text = "17h";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(867, 374);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(36, 20);
-            this.label20.TabIndex = 97;
-            this.label20.Text = "16h";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(867, 355);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(36, 20);
-            this.label13.TabIndex = 96;
-            this.label13.Text = "15h";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(867, 336);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(36, 20);
-            this.label14.TabIndex = 95;
-            this.label14.Text = "14h";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(867, 317);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(36, 20);
-            this.label15.TabIndex = 94;
-            this.label15.Text = "13h";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(867, 298);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(36, 20);
-            this.label16.TabIndex = 93;
-            this.label16.Text = "12h";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(867, 281);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 20);
-            this.label9.TabIndex = 92;
-            this.label9.Text = "11h";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(867, 262);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(36, 20);
-            this.label10.TabIndex = 91;
-            this.label10.Text = "10h";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(867, 243);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(27, 20);
-            this.label11.TabIndex = 90;
-            this.label11.Text = "9h";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(867, 224);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(27, 20);
-            this.label12.TabIndex = 89;
-            this.label12.Text = "8h";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(867, 205);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(27, 20);
-            this.label5.TabIndex = 88;
-            this.label5.Text = "7h";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(867, 184);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 20);
-            this.label6.TabIndex = 87;
-            this.label6.Text = "6h";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(867, 165);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 20);
-            this.label7.TabIndex = 86;
-            this.label7.Text = "5h";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(867, 146);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(27, 20);
-            this.label8.TabIndex = 85;
-            this.label8.Text = "4h";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(867, 127);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 20);
-            this.label1.TabIndex = 84;
-            this.label1.Text = "3h";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(867, 108);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(27, 20);
-            this.label26.TabIndex = 83;
-            this.label26.Text = "2h";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(867, 89);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(27, 20);
-            this.label29.TabIndex = 82;
-            this.label29.Text = "1h";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(867, 70);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(27, 20);
-            this.label30.TabIndex = 81;
-            this.label30.Text = "0h";
+            // astro50
+            // 
+            this.astro50.Image = ((System.Drawing.Image)(resources.GetObject("astro50.Image")));
+            this.astro50.Location = new System.Drawing.Point(3, 3);
+            this.astro50.Name = "astro50";
+            this.astro50.Size = new System.Drawing.Size(24, 24);
+            this.astro50.TabIndex = 0;
+            this.astro50.TabStop = false;
+            this.astro50.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro30
+            // 
+            this.astro30.Image = ((System.Drawing.Image)(resources.GetObject("astro30.Image")));
+            this.astro30.Location = new System.Drawing.Point(3, 3);
+            this.astro30.Name = "astro30";
+            this.astro30.Size = new System.Drawing.Size(24, 24);
+            this.astro30.TabIndex = 0;
+            this.astro30.TabStop = false;
+            this.astro30.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro40
+            // 
+            this.astro40.Image = ((System.Drawing.Image)(resources.GetObject("astro40.Image")));
+            this.astro40.Location = new System.Drawing.Point(3, 3);
+            this.astro40.Name = "astro40";
+            this.astro40.Size = new System.Drawing.Size(24, 24);
+            this.astro40.TabIndex = 0;
+            this.astro40.TabStop = false;
+            this.astro40.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro29
+            // 
+            this.astro29.Image = ((System.Drawing.Image)(resources.GetObject("astro29.Image")));
+            this.astro29.Location = new System.Drawing.Point(3, 3);
+            this.astro29.Name = "astro29";
+            this.astro29.Size = new System.Drawing.Size(24, 24);
+            this.astro29.TabIndex = 0;
+            this.astro29.TabStop = false;
+            this.astro29.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro49
+            // 
+            this.astro49.Image = ((System.Drawing.Image)(resources.GetObject("astro49.Image")));
+            this.astro49.Location = new System.Drawing.Point(3, 3);
+            this.astro49.Name = "astro49";
+            this.astro49.Size = new System.Drawing.Size(24, 24);
+            this.astro49.TabIndex = 0;
+            this.astro49.TabStop = false;
+            this.astro49.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro28
+            // 
+            this.astro28.Image = ((System.Drawing.Image)(resources.GetObject("astro28.Image")));
+            this.astro28.Location = new System.Drawing.Point(3, 3);
+            this.astro28.Name = "astro28";
+            this.astro28.Size = new System.Drawing.Size(24, 24);
+            this.astro28.TabIndex = 0;
+            this.astro28.TabStop = false;
+            this.astro28.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro39
+            // 
+            this.astro39.Image = ((System.Drawing.Image)(resources.GetObject("astro39.Image")));
+            this.astro39.Location = new System.Drawing.Point(3, 3);
+            this.astro39.Name = "astro39";
+            this.astro39.Size = new System.Drawing.Size(24, 24);
+            this.astro39.TabIndex = 0;
+            this.astro39.TabStop = false;
+            this.astro39.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro27
+            // 
+            this.astro27.Image = ((System.Drawing.Image)(resources.GetObject("astro27.Image")));
+            this.astro27.Location = new System.Drawing.Point(3, 3);
+            this.astro27.Name = "astro27";
+            this.astro27.Size = new System.Drawing.Size(24, 24);
+            this.astro27.TabIndex = 0;
+            this.astro27.TabStop = false;
+            this.astro27.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro48
+            // 
+            this.astro48.Image = ((System.Drawing.Image)(resources.GetObject("astro48.Image")));
+            this.astro48.Location = new System.Drawing.Point(3, 3);
+            this.astro48.Name = "astro48";
+            this.astro48.Size = new System.Drawing.Size(24, 24);
+            this.astro48.TabIndex = 0;
+            this.astro48.TabStop = false;
+            this.astro48.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro26
+            // 
+            this.astro26.Image = ((System.Drawing.Image)(resources.GetObject("astro26.Image")));
+            this.astro26.Location = new System.Drawing.Point(3, 3);
+            this.astro26.Name = "astro26";
+            this.astro26.Size = new System.Drawing.Size(24, 24);
+            this.astro26.TabIndex = 0;
+            this.astro26.TabStop = false;
+            this.astro26.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro38
+            // 
+            this.astro38.Image = ((System.Drawing.Image)(resources.GetObject("astro38.Image")));
+            this.astro38.Location = new System.Drawing.Point(3, 3);
+            this.astro38.Name = "astro38";
+            this.astro38.Size = new System.Drawing.Size(24, 24);
+            this.astro38.TabIndex = 0;
+            this.astro38.TabStop = false;
+            this.astro38.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro23
+            // 
+            this.astro23.Image = ((System.Drawing.Image)(resources.GetObject("astro23.Image")));
+            this.astro23.Location = new System.Drawing.Point(3, 3);
+            this.astro23.Name = "astro23";
+            this.astro23.Size = new System.Drawing.Size(24, 24);
+            this.astro23.TabIndex = 0;
+            this.astro23.TabStop = false;
+            this.astro23.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro47
+            // 
+            this.astro47.Image = ((System.Drawing.Image)(resources.GetObject("astro47.Image")));
+            this.astro47.Location = new System.Drawing.Point(3, 3);
+            this.astro47.Name = "astro47";
+            this.astro47.Size = new System.Drawing.Size(24, 24);
+            this.astro47.TabIndex = 0;
+            this.astro47.TabStop = false;
+            this.astro47.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro25
+            // 
+            this.astro25.Image = ((System.Drawing.Image)(resources.GetObject("astro25.Image")));
+            this.astro25.Location = new System.Drawing.Point(3, 3);
+            this.astro25.Name = "astro25";
+            this.astro25.Size = new System.Drawing.Size(24, 24);
+            this.astro25.TabIndex = 0;
+            this.astro25.TabStop = false;
+            this.astro25.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro37
+            // 
+            this.astro37.Image = ((System.Drawing.Image)(resources.GetObject("astro37.Image")));
+            this.astro37.Location = new System.Drawing.Point(3, 3);
+            this.astro37.Name = "astro37";
+            this.astro37.Size = new System.Drawing.Size(24, 24);
+            this.astro37.TabIndex = 0;
+            this.astro37.TabStop = false;
+            this.astro37.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro22
+            // 
+            this.astro22.Image = ((System.Drawing.Image)(resources.GetObject("astro22.Image")));
+            this.astro22.Location = new System.Drawing.Point(3, 3);
+            this.astro22.Name = "astro22";
+            this.astro22.Size = new System.Drawing.Size(24, 24);
+            this.astro22.TabIndex = 0;
+            this.astro22.TabStop = false;
+            this.astro22.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro46
+            // 
+            this.astro46.Image = ((System.Drawing.Image)(resources.GetObject("astro46.Image")));
+            this.astro46.Location = new System.Drawing.Point(3, 3);
+            this.astro46.Name = "astro46";
+            this.astro46.Size = new System.Drawing.Size(24, 24);
+            this.astro46.TabIndex = 0;
+            this.astro46.TabStop = false;
+            this.astro46.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro24
+            // 
+            this.astro24.Image = ((System.Drawing.Image)(resources.GetObject("astro24.Image")));
+            this.astro24.Location = new System.Drawing.Point(3, 3);
+            this.astro24.Name = "astro24";
+            this.astro24.Size = new System.Drawing.Size(24, 24);
+            this.astro24.TabIndex = 0;
+            this.astro24.TabStop = false;
+            this.astro24.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro36
+            // 
+            this.astro36.Image = ((System.Drawing.Image)(resources.GetObject("astro36.Image")));
+            this.astro36.Location = new System.Drawing.Point(3, 3);
+            this.astro36.Name = "astro36";
+            this.astro36.Size = new System.Drawing.Size(24, 24);
+            this.astro36.TabIndex = 0;
+            this.astro36.TabStop = false;
+            this.astro36.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro21
+            // 
+            this.astro21.Image = ((System.Drawing.Image)(resources.GetObject("astro21.Image")));
+            this.astro21.Location = new System.Drawing.Point(3, 3);
+            this.astro21.Name = "astro21";
+            this.astro21.Size = new System.Drawing.Size(24, 24);
+            this.astro21.TabIndex = 0;
+            this.astro21.TabStop = false;
+            this.astro21.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro43
+            // 
+            this.astro43.Image = ((System.Drawing.Image)(resources.GetObject("astro43.Image")));
+            this.astro43.Location = new System.Drawing.Point(3, 3);
+            this.astro43.Name = "astro43";
+            this.astro43.Size = new System.Drawing.Size(24, 24);
+            this.astro43.TabIndex = 0;
+            this.astro43.TabStop = false;
+            this.astro43.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro20
+            // 
+            this.astro20.Image = ((System.Drawing.Image)(resources.GetObject("astro20.Image")));
+            this.astro20.Location = new System.Drawing.Point(3, 3);
+            this.astro20.Name = "astro20";
+            this.astro20.Size = new System.Drawing.Size(24, 24);
+            this.astro20.TabIndex = 0;
+            this.astro20.TabStop = false;
+            this.astro20.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro33
+            // 
+            this.astro33.Image = ((System.Drawing.Image)(resources.GetObject("astro33.Image")));
+            this.astro33.Location = new System.Drawing.Point(3, 3);
+            this.astro33.Name = "astro33";
+            this.astro33.Size = new System.Drawing.Size(24, 24);
+            this.astro33.TabIndex = 0;
+            this.astro33.TabStop = false;
+            this.astro33.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro10
+            // 
+            this.astro10.Image = ((System.Drawing.Image)(resources.GetObject("astro10.Image")));
+            this.astro10.Location = new System.Drawing.Point(3, 3);
+            this.astro10.Name = "astro10";
+            this.astro10.Size = new System.Drawing.Size(24, 24);
+            this.astro10.TabIndex = 0;
+            this.astro10.TabStop = false;
+            this.astro10.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro45
+            // 
+            this.astro45.Image = ((System.Drawing.Image)(resources.GetObject("astro45.Image")));
+            this.astro45.Location = new System.Drawing.Point(3, 3);
+            this.astro45.Name = "astro45";
+            this.astro45.Size = new System.Drawing.Size(24, 24);
+            this.astro45.TabIndex = 0;
+            this.astro45.TabStop = false;
+            this.astro45.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro19
+            // 
+            this.astro19.Image = ((System.Drawing.Image)(resources.GetObject("astro19.Image")));
+            this.astro19.Location = new System.Drawing.Point(3, 3);
+            this.astro19.Name = "astro19";
+            this.astro19.Size = new System.Drawing.Size(24, 24);
+            this.astro19.TabIndex = 0;
+            this.astro19.TabStop = false;
+            this.astro19.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro35
+            // 
+            this.astro35.Image = ((System.Drawing.Image)(resources.GetObject("astro35.Image")));
+            this.astro35.Location = new System.Drawing.Point(3, 3);
+            this.astro35.Name = "astro35";
+            this.astro35.Size = new System.Drawing.Size(24, 24);
+            this.astro35.TabIndex = 0;
+            this.astro35.TabStop = false;
+            this.astro35.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro9
+            // 
+            this.astro9.Image = ((System.Drawing.Image)(resources.GetObject("astro9.Image")));
+            this.astro9.Location = new System.Drawing.Point(3, 3);
+            this.astro9.Name = "astro9";
+            this.astro9.Size = new System.Drawing.Size(24, 24);
+            this.astro9.TabIndex = 0;
+            this.astro9.TabStop = false;
+            this.astro9.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro42
+            // 
+            this.astro42.Image = ((System.Drawing.Image)(resources.GetObject("astro42.Image")));
+            this.astro42.Location = new System.Drawing.Point(3, 3);
+            this.astro42.Name = "astro42";
+            this.astro42.Size = new System.Drawing.Size(24, 24);
+            this.astro42.TabIndex = 0;
+            this.astro42.TabStop = false;
+            this.astro42.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro18
+            // 
+            this.astro18.Image = ((System.Drawing.Image)(resources.GetObject("astro18.Image")));
+            this.astro18.Location = new System.Drawing.Point(3, 3);
+            this.astro18.Name = "astro18";
+            this.astro18.Size = new System.Drawing.Size(24, 24);
+            this.astro18.TabIndex = 0;
+            this.astro18.TabStop = false;
+            this.astro18.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro44
+            // 
+            this.astro44.Image = ((System.Drawing.Image)(resources.GetObject("astro44.Image")));
+            this.astro44.Location = new System.Drawing.Point(3, 3);
+            this.astro44.Name = "astro44";
+            this.astro44.Size = new System.Drawing.Size(24, 24);
+            this.astro44.TabIndex = 0;
+            this.astro44.TabStop = false;
+            this.astro44.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro8
+            // 
+            this.astro8.Image = ((System.Drawing.Image)(resources.GetObject("astro8.Image")));
+            this.astro8.Location = new System.Drawing.Point(3, 3);
+            this.astro8.Name = "astro8";
+            this.astro8.Size = new System.Drawing.Size(24, 24);
+            this.astro8.TabIndex = 0;
+            this.astro8.TabStop = false;
+            this.astro8.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro32
+            // 
+            this.astro32.Image = ((System.Drawing.Image)(resources.GetObject("astro32.Image")));
+            this.astro32.Location = new System.Drawing.Point(3, 3);
+            this.astro32.Name = "astro32";
+            this.astro32.Size = new System.Drawing.Size(24, 24);
+            this.astro32.TabIndex = 0;
+            this.astro32.TabStop = false;
+            this.astro32.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro41
+            // 
+            this.astro41.Image = ((System.Drawing.Image)(resources.GetObject("astro41.Image")));
+            this.astro41.Location = new System.Drawing.Point(3, 3);
+            this.astro41.Name = "astro41";
+            this.astro41.Size = new System.Drawing.Size(24, 24);
+            this.astro41.TabIndex = 0;
+            this.astro41.TabStop = false;
+            this.astro41.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro17
+            // 
+            this.astro17.Image = ((System.Drawing.Image)(resources.GetObject("astro17.Image")));
+            this.astro17.Location = new System.Drawing.Point(3, 3);
+            this.astro17.Name = "astro17";
+            this.astro17.Size = new System.Drawing.Size(24, 24);
+            this.astro17.TabIndex = 0;
+            this.astro17.TabStop = false;
+            this.astro17.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro34
+            // 
+            this.astro34.Image = ((System.Drawing.Image)(resources.GetObject("astro34.Image")));
+            this.astro34.Location = new System.Drawing.Point(3, 3);
+            this.astro34.Name = "astro34";
+            this.astro34.Size = new System.Drawing.Size(24, 24);
+            this.astro34.TabIndex = 0;
+            this.astro34.TabStop = false;
+            this.astro34.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro7
+            // 
+            this.astro7.Image = ((System.Drawing.Image)(resources.GetObject("astro7.Image")));
+            this.astro7.Location = new System.Drawing.Point(3, 3);
+            this.astro7.Name = "astro7";
+            this.astro7.Size = new System.Drawing.Size(24, 24);
+            this.astro7.TabIndex = 0;
+            this.astro7.TabStop = false;
+            this.astro7.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro31
+            // 
+            this.astro31.Image = ((System.Drawing.Image)(resources.GetObject("astro31.Image")));
+            this.astro31.Location = new System.Drawing.Point(3, 3);
+            this.astro31.Name = "astro31";
+            this.astro31.Size = new System.Drawing.Size(24, 24);
+            this.astro31.TabIndex = 0;
+            this.astro31.TabStop = false;
+            this.astro31.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro16
+            // 
+            this.astro16.Image = ((System.Drawing.Image)(resources.GetObject("astro16.Image")));
+            this.astro16.Location = new System.Drawing.Point(3, 3);
+            this.astro16.Name = "astro16";
+            this.astro16.Size = new System.Drawing.Size(24, 24);
+            this.astro16.TabIndex = 0;
+            this.astro16.TabStop = false;
+            this.astro16.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro6
+            // 
+            this.astro6.Image = ((System.Drawing.Image)(resources.GetObject("astro6.Image")));
+            this.astro6.Location = new System.Drawing.Point(3, 3);
+            this.astro6.Name = "astro6";
+            this.astro6.Size = new System.Drawing.Size(24, 24);
+            this.astro6.TabIndex = 0;
+            this.astro6.TabStop = false;
+            this.astro6.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro13
+            // 
+            this.astro13.Image = ((System.Drawing.Image)(resources.GetObject("astro13.Image")));
+            this.astro13.Location = new System.Drawing.Point(3, 3);
+            this.astro13.Name = "astro13";
+            this.astro13.Size = new System.Drawing.Size(24, 24);
+            this.astro13.TabIndex = 0;
+            this.astro13.TabStop = false;
+            this.astro13.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro3
+            // 
+            this.astro3.Image = global::MarsApp.Properties.Resources.astronaute;
+            this.astro3.Location = new System.Drawing.Point(3, 3);
+            this.astro3.Name = "astro3";
+            this.astro3.Size = new System.Drawing.Size(24, 24);
+            this.astro3.TabIndex = 0;
+            this.astro3.TabStop = false;
+            this.astro3.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro15
+            // 
+            this.astro15.Image = ((System.Drawing.Image)(resources.GetObject("astro15.Image")));
+            this.astro15.Location = new System.Drawing.Point(3, 3);
+            this.astro15.Name = "astro15";
+            this.astro15.Size = new System.Drawing.Size(24, 24);
+            this.astro15.TabIndex = 0;
+            this.astro15.TabStop = false;
+            this.astro15.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro5
+            // 
+            this.astro5.Image = ((System.Drawing.Image)(resources.GetObject("astro5.Image")));
+            this.astro5.Location = new System.Drawing.Point(3, 3);
+            this.astro5.Name = "astro5";
+            this.astro5.Size = new System.Drawing.Size(24, 24);
+            this.astro5.TabIndex = 0;
+            this.astro5.TabStop = false;
+            this.astro5.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro12
+            // 
+            this.astro12.Image = ((System.Drawing.Image)(resources.GetObject("astro12.Image")));
+            this.astro12.Location = new System.Drawing.Point(3, 3);
+            this.astro12.Name = "astro12";
+            this.astro12.Size = new System.Drawing.Size(24, 24);
+            this.astro12.TabIndex = 0;
+            this.astro12.TabStop = false;
+            this.astro12.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro14
+            // 
+            this.astro14.Image = ((System.Drawing.Image)(resources.GetObject("astro14.Image")));
+            this.astro14.Location = new System.Drawing.Point(3, 3);
+            this.astro14.Name = "astro14";
+            this.astro14.Size = new System.Drawing.Size(24, 24);
+            this.astro14.TabIndex = 0;
+            this.astro14.TabStop = false;
+            this.astro14.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro2
+            // 
+            this.astro2.Image = global::MarsApp.Properties.Resources.astronaute;
+            this.astro2.Location = new System.Drawing.Point(3, 3);
+            this.astro2.Name = "astro2";
+            this.astro2.Size = new System.Drawing.Size(24, 24);
+            this.astro2.TabIndex = 0;
+            this.astro2.TabStop = false;
+            this.astro2.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro11
+            // 
+            this.astro11.Image = ((System.Drawing.Image)(resources.GetObject("astro11.Image")));
+            this.astro11.Location = new System.Drawing.Point(3, 3);
+            this.astro11.Name = "astro11";
+            this.astro11.Size = new System.Drawing.Size(24, 24);
+            this.astro11.TabIndex = 0;
+            this.astro11.TabStop = false;
+            this.astro11.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro4
+            // 
+            this.astro4.Image = ((System.Drawing.Image)(resources.GetObject("astro4.Image")));
+            this.astro4.Location = new System.Drawing.Point(3, 3);
+            this.astro4.Name = "astro4";
+            this.astro4.Size = new System.Drawing.Size(24, 24);
+            this.astro4.TabIndex = 0;
+            this.astro4.TabStop = false;
+            this.astro4.Click += new System.EventHandler(this.jour_click);
+            // 
+            // astro1
+            // 
+            this.astro1.BackColor = System.Drawing.Color.Transparent;
+            this.astro1.Image = global::MarsApp.Properties.Resources.astronaute;
+            this.astro1.Location = new System.Drawing.Point(3, 3);
+            this.astro1.Name = "astro1";
+            this.astro1.Size = new System.Drawing.Size(24, 24);
+            this.astro1.TabIndex = 0;
+            this.astro1.TabStop = false;
+            this.astro1.Click += new System.EventHandler(this.jour_click);
+            // 
+            // h1img
+            // 
+            this.h1img.BackColor = System.Drawing.Color.Transparent;
+            this.h1img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h1img.Location = new System.Drawing.Point(0, 0);
+            this.h1img.Name = "h1img";
+            this.h1img.Size = new System.Drawing.Size(16, 16);
+            this.h1img.TabIndex = 132;
+            this.h1img.TabStop = false;
+            // 
+            // h3img
+            // 
+            this.h3img.BackColor = System.Drawing.Color.Transparent;
+            this.h3img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h3img.Location = new System.Drawing.Point(0, 0);
+            this.h3img.Name = "h3img";
+            this.h3img.Size = new System.Drawing.Size(16, 16);
+            this.h3img.TabIndex = 134;
+            this.h3img.TabStop = false;
+            // 
+            // h6img
+            // 
+            this.h6img.BackColor = System.Drawing.Color.Transparent;
+            this.h6img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h6img.Location = new System.Drawing.Point(0, 0);
+            this.h6img.Name = "h6img";
+            this.h6img.Size = new System.Drawing.Size(16, 16);
+            this.h6img.TabIndex = 137;
+            this.h6img.TabStop = false;
+            // 
+            // h7img
+            // 
+            this.h7img.BackColor = System.Drawing.Color.Transparent;
+            this.h7img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h7img.Location = new System.Drawing.Point(0, 0);
+            this.h7img.Name = "h7img";
+            this.h7img.Size = new System.Drawing.Size(16, 16);
+            this.h7img.TabIndex = 139;
+            this.h7img.TabStop = false;
+            // 
+            // h8img
+            // 
+            this.h8img.BackColor = System.Drawing.Color.Transparent;
+            this.h8img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h8img.Location = new System.Drawing.Point(0, 0);
+            this.h8img.Name = "h8img";
+            this.h8img.Size = new System.Drawing.Size(16, 16);
+            this.h8img.TabIndex = 141;
+            this.h8img.TabStop = false;
+            // 
+            // h10img
+            // 
+            this.h10img.BackColor = System.Drawing.Color.Transparent;
+            this.h10img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h10img.Location = new System.Drawing.Point(0, 0);
+            this.h10img.Name = "h10img";
+            this.h10img.Size = new System.Drawing.Size(16, 16);
+            this.h10img.TabIndex = 145;
+            this.h10img.TabStop = false;
+            // 
+            // h11img
+            // 
+            this.h11img.BackColor = System.Drawing.Color.Transparent;
+            this.h11img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h11img.Location = new System.Drawing.Point(0, 0);
+            this.h11img.Name = "h11img";
+            this.h11img.Size = new System.Drawing.Size(16, 16);
+            this.h11img.TabIndex = 146;
+            this.h11img.TabStop = false;
+            // 
+            // h12img
+            // 
+            this.h12img.BackColor = System.Drawing.Color.Transparent;
+            this.h12img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h12img.Location = new System.Drawing.Point(0, 0);
+            this.h12img.Name = "h12img";
+            this.h12img.Size = new System.Drawing.Size(16, 16);
+            this.h12img.TabIndex = 147;
+            this.h12img.TabStop = false;
+            // 
+            // h13img
+            // 
+            this.h13img.BackColor = System.Drawing.Color.Transparent;
+            this.h13img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h13img.Location = new System.Drawing.Point(0, -2);
+            this.h13img.Name = "h13img";
+            this.h13img.Size = new System.Drawing.Size(16, 16);
+            this.h13img.TabIndex = 148;
+            this.h13img.TabStop = false;
+            // 
+            // h14img
+            // 
+            this.h14img.BackColor = System.Drawing.Color.Transparent;
+            this.h14img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h14img.Location = new System.Drawing.Point(0, 0);
+            this.h14img.Name = "h14img";
+            this.h14img.Size = new System.Drawing.Size(16, 16);
+            this.h14img.TabIndex = 149;
+            this.h14img.TabStop = false;
+            // 
+            // h15img
+            // 
+            this.h15img.BackColor = System.Drawing.Color.Transparent;
+            this.h15img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h15img.Location = new System.Drawing.Point(0, -2);
+            this.h15img.Name = "h15img";
+            this.h15img.Size = new System.Drawing.Size(16, 16);
+            this.h15img.TabIndex = 150;
+            this.h15img.TabStop = false;
+            // 
+            // h16img
+            // 
+            this.h16img.BackColor = System.Drawing.Color.Transparent;
+            this.h16img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h16img.Location = new System.Drawing.Point(0, -2);
+            this.h16img.Name = "h16img";
+            this.h16img.Size = new System.Drawing.Size(16, 16);
+            this.h16img.TabIndex = 151;
+            this.h16img.TabStop = false;
+            // 
+            // h17img
+            // 
+            this.h17img.BackColor = System.Drawing.Color.Transparent;
+            this.h17img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h17img.Location = new System.Drawing.Point(0, -2);
+            this.h17img.Name = "h17img";
+            this.h17img.Size = new System.Drawing.Size(16, 16);
+            this.h17img.TabIndex = 152;
+            this.h17img.TabStop = false;
+            // 
+            // h18img
+            // 
+            this.h18img.BackColor = System.Drawing.Color.Transparent;
+            this.h18img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h18img.Location = new System.Drawing.Point(0, -2);
+            this.h18img.Name = "h18img";
+            this.h18img.Size = new System.Drawing.Size(16, 16);
+            this.h18img.TabIndex = 153;
+            this.h18img.TabStop = false;
+            // 
+            // h19img
+            // 
+            this.h19img.BackColor = System.Drawing.Color.Transparent;
+            this.h19img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h19img.Location = new System.Drawing.Point(0, -2);
+            this.h19img.Name = "h19img";
+            this.h19img.Size = new System.Drawing.Size(16, 16);
+            this.h19img.TabIndex = 154;
+            this.h19img.TabStop = false;
+            // 
+            // h20img
+            // 
+            this.h20img.BackColor = System.Drawing.Color.Transparent;
+            this.h20img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h20img.Location = new System.Drawing.Point(0, -2);
+            this.h20img.Name = "h20img";
+            this.h20img.Size = new System.Drawing.Size(16, 16);
+            this.h20img.TabIndex = 155;
+            this.h20img.TabStop = false;
+            // 
+            // h21img
+            // 
+            this.h21img.BackColor = System.Drawing.Color.Transparent;
+            this.h21img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h21img.Location = new System.Drawing.Point(0, -2);
+            this.h21img.Name = "h21img";
+            this.h21img.Size = new System.Drawing.Size(16, 16);
+            this.h21img.TabIndex = 156;
+            this.h21img.TabStop = false;
+            // 
+            // h22img
+            // 
+            this.h22img.BackColor = System.Drawing.Color.Transparent;
+            this.h22img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h22img.Location = new System.Drawing.Point(0, -2);
+            this.h22img.Name = "h22img";
+            this.h22img.Size = new System.Drawing.Size(16, 16);
+            this.h22img.TabIndex = 157;
+            this.h22img.TabStop = false;
+            // 
+            // h23img
+            // 
+            this.h23img.BackColor = System.Drawing.Color.Transparent;
+            this.h23img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h23img.Location = new System.Drawing.Point(0, -2);
+            this.h23img.Name = "h23img";
+            this.h23img.Size = new System.Drawing.Size(16, 16);
+            this.h23img.TabIndex = 158;
+            this.h23img.TabStop = false;
+            // 
+            // h4img
+            // 
+            this.h4img.BackColor = System.Drawing.Color.Transparent;
+            this.h4img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h4img.Location = new System.Drawing.Point(0, 0);
+            this.h4img.Name = "h4img";
+            this.h4img.Size = new System.Drawing.Size(16, 16);
+            this.h4img.TabIndex = 133;
+            this.h4img.TabStop = false;
+            // 
+            // h2img
+            // 
+            this.h2img.BackColor = System.Drawing.Color.Transparent;
+            this.h2img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h2img.Location = new System.Drawing.Point(0, 0);
+            this.h2img.Name = "h2img";
+            this.h2img.Size = new System.Drawing.Size(16, 16);
+            this.h2img.TabIndex = 133;
+            this.h2img.TabStop = false;
+            // 
+            // h5img
+            // 
+            this.h5img.BackColor = System.Drawing.Color.Transparent;
+            this.h5img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h5img.Location = new System.Drawing.Point(0, 0);
+            this.h5img.Name = "h5img";
+            this.h5img.Size = new System.Drawing.Size(16, 16);
+            this.h5img.TabIndex = 135;
+            this.h5img.TabStop = false;
+            // 
+            // h9img
+            // 
+            this.h9img.BackColor = System.Drawing.Color.Transparent;
+            this.h9img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h9img.Location = new System.Drawing.Point(0, 0);
+            this.h9img.Name = "h9img";
+            this.h9img.Size = new System.Drawing.Size(16, 16);
+            this.h9img.TabIndex = 143;
+            this.h9img.TabStop = false;
             // 
             // CalendrierMission
             // 
@@ -3077,7 +3439,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(234)))));
             this.ClientSize = new System.Drawing.Size(1239, 623);
-            this.Controls.Add(this.h24);
             this.Controls.Add(this.h23);
             this.Controls.Add(this.h17);
             this.Controls.Add(this.h22);
@@ -3183,160 +3544,7 @@
             this.Controls.Add(this.jour1);
             this.Name = "CalendrierMission";
             this.Text = "CalendrierMission";
-            this.jour50.ResumeLayout(false);
-            this.jour50.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro50)).EndInit();
-            this.jour30.ResumeLayout(false);
-            this.jour30.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro30)).EndInit();
-            this.jour40.ResumeLayout(false);
-            this.jour40.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro40)).EndInit();
-            this.jour29.ResumeLayout(false);
-            this.jour29.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro29)).EndInit();
-            this.jour49.ResumeLayout(false);
-            this.jour49.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro49)).EndInit();
-            this.jour28.ResumeLayout(false);
-            this.jour28.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro28)).EndInit();
-            this.jour39.ResumeLayout(false);
-            this.jour39.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro39)).EndInit();
-            this.jour27.ResumeLayout(false);
-            this.jour27.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro27)).EndInit();
-            this.jour48.ResumeLayout(false);
-            this.jour48.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro48)).EndInit();
-            this.jour26.ResumeLayout(false);
-            this.jour26.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro26)).EndInit();
-            this.jour38.ResumeLayout(false);
-            this.jour38.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro38)).EndInit();
-            this.jour23.ResumeLayout(false);
-            this.jour23.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro23)).EndInit();
-            this.jour47.ResumeLayout(false);
-            this.jour47.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro47)).EndInit();
-            this.jour25.ResumeLayout(false);
-            this.jour25.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro25)).EndInit();
-            this.jour37.ResumeLayout(false);
-            this.jour37.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro37)).EndInit();
-            this.jour22.ResumeLayout(false);
-            this.jour22.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro22)).EndInit();
-            this.jour46.ResumeLayout(false);
-            this.jour46.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro46)).EndInit();
-            this.jour24.ResumeLayout(false);
-            this.jour24.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro24)).EndInit();
-            this.jour36.ResumeLayout(false);
-            this.jour36.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro36)).EndInit();
-            this.jour21.ResumeLayout(false);
-            this.jour21.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro21)).EndInit();
-            this.jour43.ResumeLayout(false);
-            this.jour43.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro43)).EndInit();
-            this.jour20.ResumeLayout(false);
-            this.jour20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro20)).EndInit();
-            this.jour33.ResumeLayout(false);
-            this.jour33.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro33)).EndInit();
-            this.jour10.ResumeLayout(false);
-            this.jour10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro10)).EndInit();
-            this.jour45.ResumeLayout(false);
-            this.jour45.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro45)).EndInit();
-            this.jour19.ResumeLayout(false);
-            this.jour19.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro19)).EndInit();
-            this.jour35.ResumeLayout(false);
-            this.jour35.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro35)).EndInit();
-            this.jour9.ResumeLayout(false);
-            this.jour9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro9)).EndInit();
-            this.jour42.ResumeLayout(false);
-            this.jour42.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro42)).EndInit();
-            this.jour18.ResumeLayout(false);
-            this.jour18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro18)).EndInit();
-            this.jour44.ResumeLayout(false);
-            this.jour44.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro44)).EndInit();
-            this.jour8.ResumeLayout(false);
-            this.jour8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro8)).EndInit();
-            this.jour32.ResumeLayout(false);
-            this.jour32.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro32)).EndInit();
-            this.jour41.ResumeLayout(false);
-            this.jour41.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro41)).EndInit();
-            this.jour17.ResumeLayout(false);
-            this.jour17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro17)).EndInit();
-            this.jour34.ResumeLayout(false);
-            this.jour34.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro34)).EndInit();
-            this.jour7.ResumeLayout(false);
-            this.jour7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro7)).EndInit();
-            this.jour31.ResumeLayout(false);
-            this.jour31.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro31)).EndInit();
-            this.jour16.ResumeLayout(false);
-            this.jour16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro16)).EndInit();
-            this.jour6.ResumeLayout(false);
-            this.jour6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro6)).EndInit();
-            this.jour13.ResumeLayout(false);
-            this.jour13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro13)).EndInit();
-            this.jour3.ResumeLayout(false);
-            this.jour3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro3)).EndInit();
-            this.jour15.ResumeLayout(false);
-            this.jour15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro15)).EndInit();
-            this.jour5.ResumeLayout(false);
-            this.jour5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro5)).EndInit();
-            this.jour12.ResumeLayout(false);
-            this.jour12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro12)).EndInit();
-            this.jour14.ResumeLayout(false);
-            this.jour14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro14)).EndInit();
-            this.jour2.ResumeLayout(false);
-            this.jour2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro2)).EndInit();
-            this.jour11.ResumeLayout(false);
-            this.jour11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro11)).EndInit();
-            this.jour4.ResumeLayout(false);
-            this.jour4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro4)).EndInit();
-            this.jour1.ResumeLayout(false);
-            this.jour1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.astro1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.suivant)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.precedent)).EndInit();
-            this.h24.ResumeLayout(false);
-            this.h24.PerformLayout();
+            this.clicDroitActivite.ResumeLayout(false);
             this.h23.ResumeLayout(false);
             this.h23.PerformLayout();
             this.h17.ResumeLayout(false);
@@ -3385,7 +3593,182 @@
             this.h6.PerformLayout();
             this.h0.ResumeLayout(false);
             this.h0.PerformLayout();
-            this.clicDroitActivite.ResumeLayout(false);
+            this.jour50.ResumeLayout(false);
+            this.jour50.PerformLayout();
+            this.jour30.ResumeLayout(false);
+            this.jour30.PerformLayout();
+            this.jour40.ResumeLayout(false);
+            this.jour40.PerformLayout();
+            this.jour29.ResumeLayout(false);
+            this.jour29.PerformLayout();
+            this.jour49.ResumeLayout(false);
+            this.jour49.PerformLayout();
+            this.jour28.ResumeLayout(false);
+            this.jour28.PerformLayout();
+            this.jour39.ResumeLayout(false);
+            this.jour39.PerformLayout();
+            this.jour27.ResumeLayout(false);
+            this.jour27.PerformLayout();
+            this.jour48.ResumeLayout(false);
+            this.jour48.PerformLayout();
+            this.jour26.ResumeLayout(false);
+            this.jour26.PerformLayout();
+            this.jour38.ResumeLayout(false);
+            this.jour38.PerformLayout();
+            this.jour23.ResumeLayout(false);
+            this.jour23.PerformLayout();
+            this.jour47.ResumeLayout(false);
+            this.jour47.PerformLayout();
+            this.jour25.ResumeLayout(false);
+            this.jour25.PerformLayout();
+            this.jour37.ResumeLayout(false);
+            this.jour37.PerformLayout();
+            this.jour22.ResumeLayout(false);
+            this.jour22.PerformLayout();
+            this.jour46.ResumeLayout(false);
+            this.jour46.PerformLayout();
+            this.jour24.ResumeLayout(false);
+            this.jour24.PerformLayout();
+            this.jour36.ResumeLayout(false);
+            this.jour36.PerformLayout();
+            this.jour21.ResumeLayout(false);
+            this.jour21.PerformLayout();
+            this.jour43.ResumeLayout(false);
+            this.jour43.PerformLayout();
+            this.jour20.ResumeLayout(false);
+            this.jour20.PerformLayout();
+            this.jour33.ResumeLayout(false);
+            this.jour33.PerformLayout();
+            this.jour10.ResumeLayout(false);
+            this.jour10.PerformLayout();
+            this.jour45.ResumeLayout(false);
+            this.jour45.PerformLayout();
+            this.jour19.ResumeLayout(false);
+            this.jour19.PerformLayout();
+            this.jour35.ResumeLayout(false);
+            this.jour35.PerformLayout();
+            this.jour9.ResumeLayout(false);
+            this.jour9.PerformLayout();
+            this.jour42.ResumeLayout(false);
+            this.jour42.PerformLayout();
+            this.jour18.ResumeLayout(false);
+            this.jour18.PerformLayout();
+            this.jour44.ResumeLayout(false);
+            this.jour44.PerformLayout();
+            this.jour8.ResumeLayout(false);
+            this.jour8.PerformLayout();
+            this.jour32.ResumeLayout(false);
+            this.jour32.PerformLayout();
+            this.jour41.ResumeLayout(false);
+            this.jour41.PerformLayout();
+            this.jour17.ResumeLayout(false);
+            this.jour17.PerformLayout();
+            this.jour34.ResumeLayout(false);
+            this.jour34.PerformLayout();
+            this.jour7.ResumeLayout(false);
+            this.jour7.PerformLayout();
+            this.jour31.ResumeLayout(false);
+            this.jour31.PerformLayout();
+            this.jour16.ResumeLayout(false);
+            this.jour16.PerformLayout();
+            this.jour6.ResumeLayout(false);
+            this.jour6.PerformLayout();
+            this.jour13.ResumeLayout(false);
+            this.jour13.PerformLayout();
+            this.jour3.ResumeLayout(false);
+            this.jour3.PerformLayout();
+            this.jour15.ResumeLayout(false);
+            this.jour15.PerformLayout();
+            this.jour5.ResumeLayout(false);
+            this.jour5.PerformLayout();
+            this.jour12.ResumeLayout(false);
+            this.jour12.PerformLayout();
+            this.jour14.ResumeLayout(false);
+            this.jour14.PerformLayout();
+            this.jour2.ResumeLayout(false);
+            this.jour2.PerformLayout();
+            this.jour11.ResumeLayout(false);
+            this.jour11.PerformLayout();
+            this.jour4.ResumeLayout(false);
+            this.jour4.PerformLayout();
+            this.jour1.ResumeLayout(false);
+            this.jour1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.h0img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suivant)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.precedent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro49)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro47)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h1img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h3img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h6img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h7img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h8img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h10img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h11img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h12img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h13img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h14img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h15img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h16img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h17img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h18img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h19img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h20img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h21img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h22img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h23img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h4img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h2img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h5img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h9img)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3550,8 +3933,6 @@
         private System.Windows.Forms.PictureBox suivant;
         private System.Windows.Forms.PictureBox precedent;
         private System.Windows.Forms.Label numJourneeLabel;
-        private System.Windows.Forms.Panel h24;
-        private System.Windows.Forms.Label actH24;
         private System.Windows.Forms.Panel h23;
         private System.Windows.Forms.Label actH23;
         private System.Windows.Forms.Panel h17;
@@ -3628,7 +4009,31 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.ContextMenuStrip clicDroitActivite;
-        private System.Windows.Forms.ToolStripMenuItem Modifier;
         private System.Windows.Forms.ToolStripMenuItem Supprimer;
+        private System.Windows.Forms.ToolStripMenuItem Modifier;
+        private System.Windows.Forms.PictureBox h0img;
+        private System.Windows.Forms.PictureBox h23img;
+        private System.Windows.Forms.PictureBox h17img;
+        private System.Windows.Forms.PictureBox h22img;
+        private System.Windows.Forms.PictureBox h11img;
+        private System.Windows.Forms.PictureBox h21img;
+        private System.Windows.Forms.PictureBox h16img;
+        private System.Windows.Forms.PictureBox h20img;
+        private System.Windows.Forms.PictureBox h19img;
+        private System.Windows.Forms.PictureBox h15img;
+        private System.Windows.Forms.PictureBox h18img;
+        private System.Windows.Forms.PictureBox h10img;
+        private System.Windows.Forms.PictureBox h14img;
+        private System.Windows.Forms.PictureBox h13img;
+        private System.Windows.Forms.PictureBox h12img;
+        private System.Windows.Forms.PictureBox h3img;
+        private System.Windows.Forms.PictureBox h8img;
+        private System.Windows.Forms.PictureBox h7img;
+        private System.Windows.Forms.PictureBox h1img;
+        private System.Windows.Forms.PictureBox h6img;
+        private System.Windows.Forms.PictureBox h5img;
+        private System.Windows.Forms.PictureBox h4img;
+        private System.Windows.Forms.PictureBox h9img;
+        private System.Windows.Forms.PictureBox h2img;
     }
 }

@@ -17,11 +17,15 @@ namespace MarsApp
         private int periode;
         private Dictionary<int, Panel> panels;
         private Dictionary<int, PictureBox> icones;
+        private Dictionary<int, PictureBox> iconesActivite;
         private Dictionary<int, Label> numeros;
         private Dictionary<int, Label> heures;
 
-        public static Dictionary<int, Journee> journeesMission;
-        public static int journeeSelectionnee;
+        private Dictionary<int, Journee> journeesMission;
+        private int journeeSelectionnee;
+        private int heureSelectionnee;
+
+        public static List<Domaine> domaines;
 
         /// <summary>
         /// Constructeur par défaut
@@ -35,8 +39,12 @@ namespace MarsApp
 
             panels = new Dictionary<int, Panel>();
             icones = new Dictionary<int, PictureBox>();
+            iconesActivite = new Dictionary<int, PictureBox>();
             numeros = new Dictionary<int, Label>();
             heures = new Dictionary<int, Label>();
+            domaines = new List<Domaine>();
+
+            initialiserDomaines();
 
             journeesMission = new Dictionary<int, Journee>();
 
@@ -55,10 +63,14 @@ namespace MarsApp
                 icones[i] = (PictureBox)ctrl[0];
             }
 
-            for (int i = 0; i < 25; ++i)
+            for (int i = 0; i < 24; ++i)
             {
                 Control[] ctrl = this.Controls.Find("actH" + i, true);
                 heures[i] = (Label)ctrl[0];
+
+                ctrl = this.Controls.Find("h" + i + "img", true);
+                iconesActivite[i] = (PictureBox)ctrl[0];
+                iconesActivite[i].Visible = false;
             }
 
             journeesMission[1].journeePassee();
@@ -68,10 +80,7 @@ namespace MarsApp
             journeesMission[5].journeePassee();
             journeesMission[6].journeePassee();
             journeesMission[7].journeePassee();
-            journeesMission[8].journeeEnCours();
-
-            journeesMission[10].setJourneeExterieure(true);
-            
+            journeesMission[8].journeeEnCours();            
 
             changerPeriode(periode);
             verificationChangementPeriode();
@@ -183,6 +192,11 @@ namespace MarsApp
             {
                 lierActiviteEtEdt(a);
             }
+
+            if (journee.isJourneeExterieure())
+                icones[journee.getNumero()].Visible = true;
+            else
+                icones[journee.getNumero()].Visible = false;
         }
 
         public void lierActiviteEtEdt(Activite a)
@@ -195,13 +209,89 @@ namespace MarsApp
 
             String nom = a.getNom();
 
-            for (int i = debut; i <= fin; ++i)
+            for (int i = debut; i < fin; ++i)
             {
                 heures[i].Text = a.getNom();
+
+                if (a.isActiviteExterieure())
+                    iconesActivite[i].Visible = true;
+                else
+                    iconesActivite[i].Visible = false;
             }
         }
 
+        /// <summary>
+        /// Permet d'initialiser les domaines
+        /// </summary>
+        public void initialiserDomaines()
+        {
+            Domaine d = new Domaine("Vie");
+            d.ajouterActivite(new TypeActivite("Manger"));
+            d.ajouterActivite(new TypeActivite("Dormir"));
+            d.ajouterActivite(new TypeActivite("Entraînement"));
+            d.ajouterActivite(new TypeActivite("Privé"));
+            d.ajouterActivite(new TypeActivite("Contrôle de santé"));
+            d.ajouterActivite(new TypeActivite("Acte médical"));
+            domaines.Add(d);
+
+            d = new Domaine("Science");
+            d.ajouterActivite(new TypeActivite("Exploration"));
+            d.ajouterActivite(new TypeActivite("Briefing"));
+            d.ajouterActivite(new TypeActivite("Débriefing"));
+            d.ajouterActivite(new TypeActivite("Expérience en intérieur"));
+            d.ajouterActivite(new TypeActivite("Expérience en extérieur"));
+            domaines.Add(d);
+
+            d = new Domaine("Maintenance");
+            d.ajouterActivite(new TypeActivite("Nettoyage"));
+            d.ajouterActivite(new TypeActivite("LSS système d'air"));
+            d.ajouterActivite(new TypeActivite("LSS système d'eau"));
+            d.ajouterActivite(new TypeActivite("LSS système de nourriture"));
+            d.ajouterActivite(new TypeActivite("Systèmes électriques"));
+            d.ajouterActivite(new TypeActivite("Combinaison spatiale"));
+            d.ajouterActivite(new TypeActivite("Systèmes électriques"));
+            d.ajouterActivite(new TypeActivite("Autre"));
+            domaines.Add(d);
+
+            d = new Domaine("Communication");
+            d.ajouterActivite(new TypeActivite("Envoyer message"));
+            d.ajouterActivite(new TypeActivite("Recevoir message"));
+            domaines.Add(d);
+
+            d = new Domaine("Réparation");
+            d.ajouterActivite(new TypeActivite("LSS"));
+            d.ajouterActivite(new TypeActivite("Systèmes électriques"));
+            d.ajouterActivite(new TypeActivite("Systèmes de communication"));
+            d.ajouterActivite(new TypeActivite("Systèmes de propulsion"));
+            d.ajouterActivite(new TypeActivite("Habitat"));
+            d.ajouterActivite(new TypeActivite("Combinaison spatiale"));
+            d.ajouterActivite(new TypeActivite("Véhicule"));
+            domaines.Add(d);
+
+            d = new Domaine("Secours");
+            domaines.Add(d);
+        }
+
         private void Modifier_Click(object sender, EventArgs e)
+        {
+            Journee journee = journeesMission[journeeSelectionnee];
+
+            Activite activiteAModifier = journee.trouverActivite(heureSelectionnee);
+
+            ModificationActivite ma = new ModificationActivite(journee, activiteAModifier, this);
+            ma.Show();
+        }
+
+        private void heure_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                heureSelectionnee = int.Parse(((Label)sender).Tag.ToString());
+                clicDroitActivite.Show(Cursor.Position);
+            }
+        }
+
+        private void Supprimer_Click(object sender, EventArgs e)
         {
 
         }

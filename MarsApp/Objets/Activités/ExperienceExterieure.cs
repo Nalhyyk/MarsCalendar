@@ -13,13 +13,18 @@ namespace MarsApp
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
-        /// <param name="nom">Nom de l'Activite</param>
+        /// <param name="typeActivite">Type de l'Activite</param>
         /// <param name="description">Description de l'Activite</param>
         /// <param name="debut">Date de début de l'Activite</param>
         /// <param name="fin">Date de fin de l'Activite</param>
         /// <param name="lieu">Lieu de l'Activite</param>
-        public ExperienceExterieure(String nom, String description, TimeMartien debut, TimeMartien fin, Lieu lieu) 
-            : base(nom, description, debut, fin, lieu)
+        public ExperienceExterieure(TypeActivite typeActivite, String description, TimeMartien debut, TimeMartien fin, Lieu lieu)
+            : base(typeActivite, description, debut, fin, lieu)
+        {
+
+        }
+
+        public ExperienceExterieure(ExperienceExterieure ee) : base(ee)
         {
 
         }
@@ -27,6 +32,11 @@ namespace MarsApp
         public override bool isActiviteExterieure()
         {
             return true;
+        }
+
+        public override bool isExploration()
+        {
+            return false;
         }
     }
 }

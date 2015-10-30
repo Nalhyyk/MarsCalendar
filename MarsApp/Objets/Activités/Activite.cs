@@ -10,7 +10,7 @@ namespace MarsApp
     /// </summary>
     public class Activite
     {
-        private String nom;
+        private TypeActivite typeActivite;
         private String description;
         private IEtat etat;
         private TimeMartien heureDebut;
@@ -21,26 +21,37 @@ namespace MarsApp
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
-        /// <param name="nom">Nom de l'Activite</param>
-        public Activite(String nom) : this(nom, "", new TimeMartien(), new TimeMartien(), new Lieu(0, 0)) {}
+        /// <param name="typeActivite">Type de l'Activite</param>
+        public Activite(TypeActivite typeActivite) : this(typeActivite, "", new TimeMartien(), new TimeMartien(), new Lieu(0, 0)) {}
 
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
-        /// <param name="nom">Nom de l'Activite</param>
+        /// <param name="typeActivite">Type de l'Activite</param>
         /// <param name="description">Description de l'Activite</param>
         /// <param name="deb">Date de début de l'Activite</param>
         /// <param name="fin">Date de fin de l'Activite</param>
         /// <param name="lieu">Lieu de l'Activite</param>
-        public Activite(String nom, String description, TimeMartien deb, TimeMartien fin, Lieu lieu)
+        public Activite(TypeActivite typeActivite, String description, TimeMartien deb, TimeMartien fin, Lieu lieu)
         {
-            this.nom = nom;
+            this.typeActivite = typeActivite;
             this.description = description;
             etat = new Future();
             this.heureDebut = deb;
             this.heureFin = fin;
             listeAstronautes = new List<Astronaute>();
             this.lieu = lieu;
+        }
+
+        public Activite(Activite a)
+        {
+            typeActivite = a.typeActivite;
+            description = a.description;
+            etat = a.etat;
+            heureDebut = a.heureDebut;
+            heureFin = a.heureFin;
+            listeAstronautes = a.listeAstronautes;
+            lieu = a.lieu;
         }
 
         /// <summary>
@@ -90,13 +101,25 @@ namespace MarsApp
             return true;
         }
 
+        /// <summary>
+        /// Permet de savoir si l'activité se déroule en extérieur
+        /// </summary>
+        /// <returns>Vrai si l'activité est une Experience/ExplorationExterieure, faux sinon</returns>
         public virtual bool isActiviteExterieure()
+        {
+            return false;
+        }
+
+        public virtual bool isExploration()
         {
             return false;
         }
 
         public TimeMartien getHeureDebut() { return heureDebut; }
         public TimeMartien getHeureFin() { return heureFin; }
-        public String getNom() { return nom; }
+        public String getNom() { return typeActivite.getNom(); }
+        public void setHeureDebut(TimeMartien tm) { this.heureDebut = tm; }
+        public void setHeureFin(TimeMartien tm) { this.heureFin = tm; }
+        public TimeMartien getDuree() { return heureFin - heureDebut; }
     }
 }
