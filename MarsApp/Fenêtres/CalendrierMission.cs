@@ -78,8 +78,6 @@ namespace MarsApp
                 iconesActivite[i].Visible = false;
             }       
 
-            
-
             TimeMartien nb = TimeMartien.calculerJours(debutMission);
             int numJour = nb.getJours() + 1;
 
@@ -94,6 +92,8 @@ namespace MarsApp
             verificationChangementPeriode();
             mettreAJourHeures();
             miseAJourEdt(journeesMission[journeeSelectionnee]);
+
+            descriptionTexte.Text = journeesMission[journeeSelectionnee].getDescription();
         }
 
         /// <summary>
@@ -188,8 +188,13 @@ namespace MarsApp
 
             journeeSelectionnee = int.Parse(numJournee);
             miseAJourEdt(journeesMission[journeeSelectionnee]);
+            descriptionTexte.Text = journeesMission[journeeSelectionnee].getDescription();
         }
 
+        /// <summary>
+        /// Permet de mettre à jour l'emploi du temps
+        /// </summary>
+        /// <param name="journee">La journée à mettre à jour</param>
         public void miseAJourEdt(Journee journee)
         {
             numJourneeLabel.Text = "Journée " + journeeSelectionnee;
@@ -212,11 +217,10 @@ namespace MarsApp
             avancementMission.Value = (int) ((journeeActuelle.getNumero() * 100) / Constantes.NB_JOUR_MISSION);
         }
 
-        public void determinerJourActuel()
-        {
-            TimeMartien tm = new TimeMartien();
-        }
-
+        /// <summary>
+        /// Permet d'associer une activité à un label ou un groupe de labels
+        /// </summary>
+        /// <param name="a">Une activité</param>
         public void lierActiviteEtEdt(Activite a)
         {
             int debut = a.getHeureDebut().getHeures();
@@ -325,6 +329,9 @@ namespace MarsApp
             }
         }
 
+        /// <summary>
+        /// Permet de mettre à jour les heures terrestre et martienne
+        /// </summary>
         public void mettreAJourHeures()
         {
             terre.Text = DateTime.Now.ToLocalTime().ToString();
@@ -357,6 +364,11 @@ namespace MarsApp
             verificationChangementPeriode();
             mettreAJourHeures();
             miseAJourEdt(journeesMission[journeeSelectionnee]);
+        }
+
+        private void saveDesc_Click(object sender, EventArgs e)
+        {
+            journeesMission[journeeSelectionnee].setRapport(descriptionTexte.Text);
         }
     }
 }

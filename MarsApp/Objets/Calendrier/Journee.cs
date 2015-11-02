@@ -150,7 +150,7 @@ namespace MarsApp
         }
 
         public List<Activite> getActivites() { return listeActivites; }
-
         public int getNumero() { return numero; }
+        public String getDescription() { return rapport; }
     }
 }

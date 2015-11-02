@@ -300,6 +300,9 @@
             this.mars = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.timerJour = new System.Windows.Forms.Timer(this.components);
+            this.descriptionJournee = new System.Windows.Forms.GroupBox();
+            this.saveDesc = new System.Windows.Forms.Button();
+            this.descriptionTexte = new System.Windows.Forms.TextBox();
             this.clicDroitActivite.SuspendLayout();
             this.h23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.h23img)).BeginInit();
@@ -451,6 +454,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.astro1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.suivant)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.precedent)).BeginInit();
+            this.descriptionJournee.SuspendLayout();
             this.SuspendLayout();
             // 
             // clicDroitActivite
@@ -3592,12 +3596,42 @@
             this.timerJour.Interval = 3600000;
             this.timerJour.Tick += new System.EventHandler(this.timerJour_Tick);
             // 
+            // descriptionJournee
+            // 
+            this.descriptionJournee.Controls.Add(this.descriptionTexte);
+            this.descriptionJournee.Controls.Add(this.saveDesc);
+            this.descriptionJournee.Location = new System.Drawing.Point(96, 552);
+            this.descriptionJournee.Name = "descriptionJournee";
+            this.descriptionJournee.Size = new System.Drawing.Size(751, 97);
+            this.descriptionJournee.TabIndex = 140;
+            this.descriptionJournee.TabStop = false;
+            this.descriptionJournee.Text = "Description journée n°";
+            // 
+            // saveDesc
+            // 
+            this.saveDesc.Location = new System.Drawing.Point(681, 68);
+            this.saveDesc.Name = "saveDesc";
+            this.saveDesc.Size = new System.Drawing.Size(64, 23);
+            this.saveDesc.TabIndex = 141;
+            this.saveDesc.Text = "OK";
+            this.saveDesc.UseVisualStyleBackColor = true;
+            this.saveDesc.Click += new System.EventHandler(this.saveDesc_Click);
+            // 
+            // descriptionTexte
+            // 
+            this.descriptionTexte.Location = new System.Drawing.Point(7, 20);
+            this.descriptionTexte.Multiline = true;
+            this.descriptionTexte.Name = "descriptionTexte";
+            this.descriptionTexte.Size = new System.Drawing.Size(671, 71);
+            this.descriptionTexte.TabIndex = 142;
+            // 
             // CalendrierMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(234)))));
-            this.ClientSize = new System.Drawing.Size(1239, 623);
+            this.ClientSize = new System.Drawing.Size(1239, 707);
+            this.Controls.Add(this.descriptionJournee);
             this.Controls.Add(this.mars);
             this.Controls.Add(this.terre);
             this.Controls.Add(this.label35);
@@ -3938,6 +3972,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.astro1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.suivant)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.precedent)).EndInit();
+            this.descriptionJournee.ResumeLayout(false);
+            this.descriptionJournee.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4215,5 +4251,8 @@
         private System.Windows.Forms.Label mars;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Timer timerJour;
+        private System.Windows.Forms.GroupBox descriptionJournee;
+        private System.Windows.Forms.TextBox descriptionTexte;
+        private System.Windows.Forms.Button saveDesc;
     }
 }
