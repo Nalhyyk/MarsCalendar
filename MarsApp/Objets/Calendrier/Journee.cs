@@ -139,6 +139,11 @@ namespace MarsApp
             return journeeExterieure;
         }
 
+        public bool isModifiable()
+        {
+            return etat.modifiable();
+        }
+
         public void setJourneeExterieure(bool journeeExterieure)
         {
             this.journeeExterieure = journeeExterieure;

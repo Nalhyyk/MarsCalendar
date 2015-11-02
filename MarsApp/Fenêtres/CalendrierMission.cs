@@ -76,27 +76,24 @@ namespace MarsApp
                 ctrl = this.Controls.Find("h" + i + "img", true);
                 iconesActivite[i] = (PictureBox)ctrl[0];
                 iconesActivite[i].Visible = false;
-            }
+            }       
 
-            journeeActuelle = journeesMission[500];
+            
 
-            journeesMission[1].journeePassee();
-            journeesMission[2].journeePassee();
-            journeesMission[3].journeePassee();
-            journeesMission[4].journeePassee();
-            journeesMission[5].journeePassee();
-            journeesMission[6].journeePassee();
-            journeesMission[7].journeePassee();
-            journeesMission[8].journeeEnCours();            
+            TimeMartien nb = TimeMartien.calculerJours(debutMission);
+            int numJour = nb.getJours() + 1;
+
+            journeeActuelle = journeesMission[numJour];
+
+            for (int i = 1; i < numJour; ++i)
+                journeesMission[i].journeePassee();
+            journeeActuelle = journeesMission[numJour];
+            journeesMission[numJour].journeeEnCours();
 
             changerPeriode(periode);
             verificationChangementPeriode();
-
-            miseAJourEdt(journeesMission[journeeSelectionnee]);
-
-            TimeMartien nb = TimeMartien.calculerJours(debutMission);
-
             mettreAJourHeures();
+            miseAJourEdt(journeesMission[journeeSelectionnee]);
         }
 
         /// <summary>
@@ -297,10 +294,13 @@ namespace MarsApp
         {
             Journee journee = journeesMission[journeeSelectionnee];
 
-            Activite activiteAModifier = journee.trouverActivite(heureSelectionnee);
+            if (journee.isModifiable())
+            {
+                Activite activiteAModifier = journee.trouverActivite(heureSelectionnee);
 
-            ModificationActivite ma = new ModificationActivite(journee, activiteAModifier, this);
-            ma.Show();
+                ModificationActivite ma = new ModificationActivite(journee, activiteAModifier, this);
+                ma.Show();
+            }
         }
 
         private void heure_MouseClick(object sender, MouseEventArgs e)
@@ -312,13 +312,17 @@ namespace MarsApp
         private void Supprimer_Click(object sender, EventArgs e)
         {
             Journee journee = journeesMission[journeeSelectionnee];
-            Activite activiteAModifier = journee.trouverActivite(heureSelectionnee);
-            Activite a = new Activite(new TypeActivite("Privé"), "", new TimeMartien(activiteAModifier.getHeureDebut().getHeures()), new TimeMartien(activiteAModifier.getHeureFin().getHeures()), new Lieu(0, 0));
 
-            journee.supprimerActivite(activiteAModifier);
-            journee.ajouterActivite(a);
+            if (journee.isModifiable())
+            {
+                Activite activiteAModifier = journee.trouverActivite(heureSelectionnee);
+                Activite a = new Activite(new TypeActivite("Privé"), "", new TimeMartien(activiteAModifier.getHeureDebut().getHeures()), new TimeMartien(activiteAModifier.getHeureFin().getHeures()), new Lieu(0, 0));
 
-            miseAJourEdt(journee);
+                journee.supprimerActivite(activiteAModifier);
+                journee.ajouterActivite(a);
+
+                miseAJourEdt(journee);
+            }
         }
 
         public void mettreAJourHeures()
@@ -330,6 +334,29 @@ namespace MarsApp
         private void timer_Tick(object sender, EventArgs e)
         {
             mettreAJourHeures();
+        }
+
+        private void CalendrierMission_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            fermerApplication();
+        }
+
+        private void timerJour_Tick(object sender, EventArgs e)
+        {
+            TimeMartien nb = TimeMartien.calculerJours(debutMission);
+            int numJour = nb.getJours() + 1;
+
+            journeeActuelle = journeesMission[numJour];
+
+            for (int i = 1; i < numJour; ++i)
+                journeesMission[i].journeePassee();
+            journeeActuelle = journeesMission[numJour];
+            journeesMission[numJour].journeeEnCours();
+
+            changerPeriode(periode);
+            verificationChangementPeriode();
+            mettreAJourHeures();
+            miseAJourEdt(journeesMission[journeeSelectionnee]);
         }
     }
 }

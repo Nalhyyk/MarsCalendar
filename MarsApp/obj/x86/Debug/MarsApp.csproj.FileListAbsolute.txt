@@ -31,3 +31,4 @@ C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.exe
 C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.pdb
 C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.csprojResolveAssemblyReference.cache
 H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.ModificationActivite.resources
+H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.csprojResolveAssemblyReference.cache

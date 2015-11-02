@@ -28,5 +28,11 @@ namespace MarsApp
         {
             return new int[] { 199, 195, 199};
         }
+
+
+        public bool modifiable()
+        {
+            return false;
+        }
     }
 }

@@ -16,8 +16,14 @@ namespace MarsApp
         void etat();
 
         /// <summary>
-        /// 
+        /// Retourne la couleur associée à l'état
         /// </summary>
         int[] couleur();
+
+        /// <summary>
+        /// Indique si on peut modifier l'objet en fonction de l'état
+        /// </summary>
+        /// <returns></returns>
+        bool modifiable();
     }
 }

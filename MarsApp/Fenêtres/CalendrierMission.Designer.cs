@@ -299,6 +299,7 @@
             this.terre = new System.Windows.Forms.Label();
             this.mars = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.timerJour = new System.Windows.Forms.Timer(this.components);
             this.clicDroitActivite.SuspendLayout();
             this.h23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.h23img)).BeginInit();
@@ -3533,45 +3534,50 @@
             // label34
             // 
             this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.Location = new System.Drawing.Point(13, 9);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(98, 13);
+            this.label34.Size = new System.Drawing.Size(131, 17);
             this.label34.TabIndex = 135;
             this.label34.Text = "Date d\'aujourd\'hui :";
             // 
             // labelTerre
             // 
             this.labelTerre.AutoSize = true;
-            this.labelTerre.Location = new System.Drawing.Point(117, 9);
+            this.labelTerre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTerre.Location = new System.Drawing.Point(149, 9);
             this.labelTerre.Name = "labelTerre";
-            this.labelTerre.Size = new System.Drawing.Size(38, 13);
+            this.labelTerre.Size = new System.Drawing.Size(51, 17);
             this.labelTerre.TabIndex = 136;
             this.labelTerre.Text = "Terre :";
             // 
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(120, 26);
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(152, 31);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(36, 13);
+            this.label35.Size = new System.Drawing.Size(47, 17);
             this.label35.TabIndex = 137;
             this.label35.Text = "Mars :";
             // 
             // terre
             // 
             this.terre.AutoSize = true;
-            this.terre.Location = new System.Drawing.Point(162, 8);
+            this.terre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.terre.Location = new System.Drawing.Point(200, 9);
             this.terre.Name = "terre";
-            this.terre.Size = new System.Drawing.Size(28, 13);
+            this.terre.Size = new System.Drawing.Size(38, 17);
             this.terre.TabIndex = 138;
             this.terre.Text = "terre";
             // 
             // mars
             // 
             this.mars.AutoSize = true;
-            this.mars.Location = new System.Drawing.Point(161, 26);
+            this.mars.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mars.Location = new System.Drawing.Point(199, 32);
             this.mars.Name = "mars";
-            this.mars.Size = new System.Drawing.Size(29, 13);
+            this.mars.Size = new System.Drawing.Size(39, 17);
             this.mars.TabIndex = 139;
             this.mars.Text = "mars";
             // 
@@ -3580,6 +3586,11 @@
             this.timer.Enabled = true;
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // timerJour
+            // 
+            this.timerJour.Interval = 3600000;
+            this.timerJour.Tick += new System.EventHandler(this.timerJour_Tick);
             // 
             // CalendrierMission
             // 
@@ -3701,6 +3712,7 @@
             this.Controls.Add(this.jour1);
             this.Name = "CalendrierMission";
             this.Text = "CalendrierMission";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CalendrierMission_FormClosed);
             this.clicDroitActivite.ResumeLayout(false);
             this.h23.ResumeLayout(false);
             this.h23.PerformLayout();
@@ -4202,5 +4214,6 @@
         private System.Windows.Forms.Label terre;
         private System.Windows.Forms.Label mars;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Timer timerJour;
     }
 }

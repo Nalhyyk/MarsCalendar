@@ -115,6 +115,11 @@ namespace MarsApp
             return false;
         }
 
+        public bool isModifiable()
+        {
+            return etat.modifiable();
+        }
+
         public TimeMartien getHeureDebut() { return heureDebut; }
         public TimeMartien getHeureFin() { return heureFin; }
         public String getNom() { return typeActivite.getNom(); }
