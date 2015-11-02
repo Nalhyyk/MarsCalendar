@@ -44,10 +44,29 @@ namespace MarsApp
                 TreeNode tn = treeView.Nodes.Add(d.getNom());
 
                 foreach (TypeActivite ta in d.getActivites())
-                {
                     tn.Nodes.Add(ta.getNom());
-                }
             }
+
+            descriptionTB.Text = a.getDescription();
+
+            if (a.isActiviteExterieure())
+            {
+                exterieurRadio.Checked = true;
+
+                if (a.isExploration())
+                    explorationRadio.Checked = true;
+                else
+                    experienceRadio.Checked = true;
+            }
+            else
+                interieurRadio.Checked = true;
+
+            treeView.ExpandAll();
+
+            foreach (TreeNode tn in treeView.Nodes)
+                foreach (TreeNode tnn in tn.Nodes)
+                    if (tnn.Text.Equals(a.getNom()))
+                        treeView.SelectedNode = tnn;
         }
 
         private void exterieurRadio_CheckedChanged(object sender, EventArgs e)

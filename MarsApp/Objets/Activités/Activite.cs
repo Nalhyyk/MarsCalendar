@@ -10,13 +10,13 @@ namespace MarsApp
     /// </summary>
     public class Activite
     {
-        private TypeActivite typeActivite;
-        private String description;
-        private IEtat etat;
-        private TimeMartien heureDebut;
-        private TimeMartien heureFin;
-        private List<Astronaute> listeAstronautes;
-        private Lieu lieu;
+        protected TypeActivite typeActivite;
+        protected String description;
+        protected IEtat etat;
+        protected TimeMartien heureDebut;
+        protected TimeMartien heureFin;
+        protected List<Astronaute> listeAstronautes;
+        protected Lieu lieu;
 
         /// <summary>
         /// Constructeur paramétré
@@ -121,5 +121,6 @@ namespace MarsApp
         public void setHeureDebut(TimeMartien tm) { this.heureDebut = tm; }
         public void setHeureFin(TimeMartien tm) { this.heureFin = tm; }
         public TimeMartien getDuree() { return heureFin - heureDebut; }
+        public String getDescription() { return description; }
     }
 }

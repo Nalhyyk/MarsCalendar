@@ -15,5 +15,15 @@ namespace MarsApp
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime picker = dateTimePicker1.Value;
+            DateTime dt = new DateTime(picker.Year, picker.Month, picker.Day, (int)heures.Value, (int)minutes.Value, 0);
+            
+            CalendrierMission cm = new CalendrierMission(dt);
+            cm.Show();
+            this.cacherFenetre();
+        }
     }
 }

@@ -15,7 +15,7 @@ namespace MarsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CalendrierMission());
+            Application.Run(new MenuPrincipal());
         }
     }
 }

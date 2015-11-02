@@ -10,6 +10,8 @@ namespace MarsApp
     /// </summary>
     public class TimeMartien
     {
+        private int jours;
+
         private int heure;
         private int minute;
         private int seconde;
@@ -20,12 +22,13 @@ namespace MarsApp
         /// <param name="heure">Heures</param>
         /// <param name="minute">Minutes</param>
         /// <param name="seconde">Secondes</param>
-        public TimeMartien(int heure, int minute, int seconde)
+        public TimeMartien(int jours, int heure, int minute, int seconde)
         {
+            this.jours = jours;
             this.heure = heure;
             this.minute = minute;
             this.seconde = seconde;
-            ajouterTemps(0, 0, 0); // On met le TimeMartien sous une forme 'convenable'
+            ajouterTemps(0, 0, 0, 0); // On met le TimeMartien sous une forme 'convenable'
         }
 
         /// <summary>
@@ -33,16 +36,16 @@ namespace MarsApp
         /// </summary>
         /// <param name="heure">Heures</param>
         /// <param name="minute">Minutes</param>
-        public TimeMartien(int heure, int minute) : this(heure, minute, 0) { }
+        public TimeMartien(int heure, int minute) : this(0, heure, minute, 0) { }
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
         /// <param name="heure">Heures</param>
-        public TimeMartien(int heure) : this(heure, 0, 0) { }
+        public TimeMartien(int heure) : this(0, heure, 0, 0) { }
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
-        public TimeMartien() : this(0, 0, 0) { }
+        public TimeMartien() : this(0, 0, 0, 0) { }
 
         #region AJOUT DE TEMPS
         /// <summary>
@@ -53,7 +56,7 @@ namespace MarsApp
         /// <returns>Résultat addition</returns>
         public static TimeMartien operator +(TimeMartien t1, TimeMartien t2)
         {
-            TimeMartien tR = new TimeMartien(t1.heure, t1.minute, t1.seconde);
+            TimeMartien tR = new TimeMartien(0, t1.heure, t1.minute, t1.seconde);
 
             tR.ajouterTemps(t2);
 
@@ -65,7 +68,7 @@ namespace MarsApp
         /// <param name="tm">Un TimeMartien</param>
         public void ajouterTemps(TimeMartien tm)
         {
-            ajouterTemps(tm.heure, tm.minute, tm.seconde);
+            ajouterTemps(tm.jours, tm.heure, tm.minute, tm.seconde);
         }
         /// <summary>
         /// Permet d'ajouter du temps au TimeMartien
@@ -73,9 +76,10 @@ namespace MarsApp
         /// <param name="heure">Heures</param>
         /// <param name="minute">Minutes</param>
         /// <param name="seconde">Secondes</param>
-        public void ajouterTemps(int heure, int minute, int seconde)
+        public void ajouterTemps(int jour, int heure, int minute, int seconde)
         {
             // On ajoute toutes les h/m/s pour avoir une heure à réduire
+            this.jours += jour;
             this.seconde += seconde;
             this.minute += minute;
             this.heure += heure;
@@ -101,6 +105,7 @@ namespace MarsApp
             {
                 this.heure -= 24;
                 this.minute -= 40;
+                this.jours += 1;
             }
 
             bool passage = false;
@@ -133,7 +138,7 @@ namespace MarsApp
         /// <returns>Résultat soustraction</returns>
         public static TimeMartien operator -(TimeMartien t1, TimeMartien t2)
         {
-            TimeMartien tR = new TimeMartien(t1.heure, t1.minute, t1.seconde);
+            TimeMartien tR = new TimeMartien(t1.jours, t1.heure, t1.minute, t1.seconde);
 
             tR.retirerTemps(t2);
 
@@ -145,7 +150,7 @@ namespace MarsApp
         /// <param name="tm">Un TimeMartien</param>
         public void retirerTemps(TimeMartien tm)
         {
-            retirerTemps(tm.heure, tm.minute, tm.seconde);
+            retirerTemps(tm.jours, tm.heure, tm.minute, tm.seconde);
         }
         /// <summary>
         /// Permet de retirer du temps au TimeMartien
@@ -153,10 +158,11 @@ namespace MarsApp
         /// <param name="heure">Heures</param>
         /// <param name="minute">Minutes</param>
         /// <param name="seconde">Secondes</param>
-        public void retirerTemps(int heure, int minute, int seconde)
+        public void retirerTemps(int jour, int heure, int minute, int seconde)
         {
             // On retire toutes les h/m/s pour avoir une heure à traiter
             bool passage = false;
+            this.jours -= jour;
             this.seconde -= seconde;
             this.minute -= minute;
             this.heure -= heure;
@@ -187,15 +193,37 @@ namespace MarsApp
                 {
                     this.heure += 25;
                     this.minute -= 20;
+                    this.jours -= 1;
                 }
             }
         }
         #endregion
 
+        public static TimeMartien convertirDateTime(DateTime dt)
+        {
+            TimeSpan ts = new TimeSpan(dt.Ticks);
+            TimeMartien tm = new TimeMartien(0, 0, 0, (int)Math.Truncate(ts.TotalSeconds));
+
+            return tm;
+        }
+
+        public static TimeMartien calculerJours(DateTime dateDepart)
+        {
+            DateTime dt = DateTime.Now;
+
+            long ticks = dt.Ticks - dateDepart.Ticks;
+            TimeSpan ts = new TimeSpan(ticks);
+
+            TimeMartien tm = new TimeMartien(0, 0, 0, (int) Math.Truncate(ts.TotalSeconds));
+
+            return tm;
+        }
 
         public int getHeures() { return heure; }
         public int getMinutes() { return minute; }
         public int getSecondes() { return seconde; }
+        public void setJours(int jours) { this.jours = jours; }
+        public int getJours() { return jours; }
 
         /// <summary>
         /// Texte affiché pour la classe
@@ -203,7 +231,7 @@ namespace MarsApp
         /// <returns>h:m:s</returns>
         public override string ToString()
         {
-            return heure + ":" + minute + ":" + seconde;
+            return ++jours + ((jours == 1) ? "er" : "eme") + " jour de mission, " + ((heure.ToString().Length == 1) ? "0" : "") + heure + ":" + ((minute.ToString().Length == 1) ? "0" : "") + minute + ":" + ((seconde.ToString().Length == 1) ? "0" : "") + seconde;
         }
     }
 }

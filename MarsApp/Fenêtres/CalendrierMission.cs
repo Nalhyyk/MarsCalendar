@@ -25,14 +25,19 @@ namespace MarsApp
         private int journeeSelectionnee;
         private int heureSelectionnee;
 
+        private Journee journeeActuelle;
+        private DateTime debutMission;
+
         public static List<Domaine> domaines;
 
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
-        public CalendrierMission()
+        public CalendrierMission(DateTime dt)
         {
             InitializeComponent();
+
+            debutMission = dt;
 
             periode = 1;
             journeeSelectionnee = 1;
@@ -73,6 +78,8 @@ namespace MarsApp
                 iconesActivite[i].Visible = false;
             }
 
+            journeeActuelle = journeesMission[500];
+
             journeesMission[1].journeePassee();
             journeesMission[2].journeePassee();
             journeesMission[3].journeePassee();
@@ -86,6 +93,10 @@ namespace MarsApp
             verificationChangementPeriode();
 
             miseAJourEdt(journeesMission[journeeSelectionnee]);
+
+            TimeMartien nb = TimeMartien.calculerJours(debutMission);
+
+            mettreAJourHeures();
         }
 
         /// <summary>
@@ -111,8 +122,6 @@ namespace MarsApp
                     // Astronaute visible pour les jours en extérieur
                     icones[i].Visible = journeesMission[i + 50 * (periode - 1)].isJourneeExterieure();
                 }
-
-
         }
 
         /// <summary>
@@ -202,6 +211,13 @@ namespace MarsApp
                 icones[jourPeriode].Visible = true;
             else
                 icones[jourPeriode].Visible = false;
+
+            avancementMission.Value = (int) ((journeeActuelle.getNumero() * 100) / Constantes.NB_JOUR_MISSION);
+        }
+
+        public void determinerJourActuel()
+        {
+            TimeMartien tm = new TimeMartien();
         }
 
         public void lierActiviteEtEdt(Activite a)
@@ -289,16 +305,31 @@ namespace MarsApp
 
         private void heure_MouseClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
-            {
-                heureSelectionnee = int.Parse(((Label)sender).Tag.ToString());
-                clicDroitActivite.Show(Cursor.Position);
-            }
+            heureSelectionnee = int.Parse(((Label)sender).Tag.ToString());
+            clicDroitActivite.Show(Cursor.Position);
         }
 
         private void Supprimer_Click(object sender, EventArgs e)
         {
+            Journee journee = journeesMission[journeeSelectionnee];
+            Activite activiteAModifier = journee.trouverActivite(heureSelectionnee);
+            Activite a = new Activite(new TypeActivite("Privé"), "", new TimeMartien(activiteAModifier.getHeureDebut().getHeures()), new TimeMartien(activiteAModifier.getHeureFin().getHeures()), new Lieu(0, 0));
 
+            journee.supprimerActivite(activiteAModifier);
+            journee.ajouterActivite(a);
+
+            miseAJourEdt(journee);
+        }
+
+        public void mettreAJourHeures()
+        {
+            terre.Text = DateTime.Now.ToLocalTime().ToString();
+            mars.Text = TimeMartien.calculerJours(debutMission).ToString();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            mettreAJourHeures();
         }
     }
 }

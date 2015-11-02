@@ -31,7 +31,7 @@
             this.treeView = new System.Windows.Forms.TreeView();
             this.annuler = new System.Windows.Forms.Button();
             this.ok = new System.Windows.Forms.Button();
-            this.intérieurRadio = new System.Windows.Forms.RadioButton();
+            this.interieurRadio = new System.Windows.Forms.RadioButton();
             this.exterieurRadio = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.activiteExterieureGB = new System.Windows.Forms.GroupBox();
@@ -80,17 +80,17 @@
             this.ok.UseVisualStyleBackColor = true;
             this.ok.Click += new System.EventHandler(this.ok_Click);
             // 
-            // intérieurRadio
+            // interieurRadio
             // 
-            this.intérieurRadio.AutoSize = true;
-            this.intérieurRadio.Checked = true;
-            this.intérieurRadio.Location = new System.Drawing.Point(8, 19);
-            this.intérieurRadio.Name = "intérieurRadio";
-            this.intérieurRadio.Size = new System.Drawing.Size(63, 17);
-            this.intérieurRadio.TabIndex = 3;
-            this.intérieurRadio.TabStop = true;
-            this.intérieurRadio.Text = "Intérieur";
-            this.intérieurRadio.UseVisualStyleBackColor = true;
+            this.interieurRadio.AutoSize = true;
+            this.interieurRadio.Checked = true;
+            this.interieurRadio.Location = new System.Drawing.Point(8, 19);
+            this.interieurRadio.Name = "interieurRadio";
+            this.interieurRadio.Size = new System.Drawing.Size(63, 17);
+            this.interieurRadio.TabIndex = 3;
+            this.interieurRadio.TabStop = true;
+            this.interieurRadio.Text = "Intérieur";
+            this.interieurRadio.UseVisualStyleBackColor = true;
             // 
             // exterieurRadio
             // 
@@ -106,7 +106,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.exterieurRadio);
-            this.groupBox1.Controls.Add(this.intérieurRadio);
+            this.groupBox1.Controls.Add(this.interieurRadio);
             this.groupBox1.Location = new System.Drawing.Point(250, 13);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(153, 47);
@@ -255,7 +255,7 @@
         private System.Windows.Forms.TreeView treeView;
         private System.Windows.Forms.Button annuler;
         private System.Windows.Forms.Button ok;
-        private System.Windows.Forms.RadioButton intérieurRadio;
+        private System.Windows.Forms.RadioButton interieurRadio;
         private System.Windows.Forms.RadioButton exterieurRadio;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox activiteExterieureGB;
