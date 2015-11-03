@@ -14,10 +14,13 @@ namespace MarsApp
         private Activite activiteAModifier;
         private Journee journeeAModifier;
         private CalendrierMission cm;
+        private Lieu lieu;
 
         public ModificationActivite(Journee j, Activite a, CalendrierMission cm)
         {
             InitializeComponent();
+
+            lieu = new Lieu(0, 0);
 
             activiteAModifier = a;
             journeeAModifier = j;
@@ -72,6 +75,7 @@ namespace MarsApp
         private void exterieurRadio_CheckedChanged(object sender, EventArgs e)
         {
             activiteExterieureGB.Enabled = (exterieurRadio.Checked) ? true : false;
+            lieuGB.Enabled = (exterieurRadio.Checked) ? true : false;
         }
 
         private void annuler_Click(object sender, EventArgs e)
@@ -88,9 +92,9 @@ namespace MarsApp
 
             if (exterieurRadio.Checked)
                 if (explorationRadio.Checked)
-                    a = new ExplorationExterieure(new TypeActivite(type), descriptionTB.Text, new TimeMartien((int)debutHeure.Value), new TimeMartien((int)finHeure.Value), new Lieu(0, 0));
+                    a = new ExplorationExterieure(new TypeActivite(type), descriptionTB.Text, new TimeMartien((int)debutHeure.Value), new TimeMartien((int)finHeure.Value), lieu);
                 else
-                    a = new ExperienceExterieure(new TypeActivite(type), descriptionTB.Text, new TimeMartien((int)debutHeure.Value), new TimeMartien((int)finHeure.Value), new Lieu(0, 0));
+                    a = new ExperienceExterieure(new TypeActivite(type), descriptionTB.Text, new TimeMartien((int)debutHeure.Value), new TimeMartien((int)finHeure.Value), lieu);
             else
                 a = new Activite(new TypeActivite(type), descriptionTB.Text, new TimeMartien((int)debutHeure.Value), new TimeMartien((int)finHeure.Value), new Lieu(0, 0));
 
@@ -142,6 +146,12 @@ namespace MarsApp
 
             cm.miseAJourEdt(journeeAModifier);
             fermerFenetre();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            SelectionCarte sc = new SelectionCarte(lieu, lieuTB);
+            sc.Show();
         }
     }
 }

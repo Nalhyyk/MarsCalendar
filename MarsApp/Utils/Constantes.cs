@@ -17,5 +17,8 @@ namespace MarsApp
 
         public const int LARGEUR_CARTE = 1095;
         public const int HAUTEUR_CARTE = 2053;
+        public const int POSITION_BASE_X = 700;
+        public const int POSITION_BASE_Y = 1000;
+        public const double RAPPORT_CARTES = 3.421875;
     }
 }

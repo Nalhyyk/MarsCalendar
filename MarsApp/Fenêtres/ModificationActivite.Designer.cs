@@ -44,12 +44,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.descriptionTB = new System.Windows.Forms.TextBox();
+            this.lieuGB = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lieuTB = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.activiteExterieureGB.SuspendLayout();
             this.temps.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.finHeure)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.debutHeure)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.lieuGB.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // treeView
@@ -207,7 +213,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.descriptionTB);
-            this.groupBox2.Location = new System.Drawing.Point(251, 288);
+            this.groupBox2.Location = new System.Drawing.Point(251, 338);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(336, 169);
             this.groupBox2.TabIndex = 8;
@@ -222,11 +228,53 @@
             this.descriptionTB.Size = new System.Drawing.Size(318, 143);
             this.descriptionTB.TabIndex = 0;
             // 
+            // lieuGB
+            // 
+            this.lieuGB.Controls.Add(this.lieuTB);
+            this.lieuGB.Controls.Add(this.label3);
+            this.lieuGB.Controls.Add(this.pictureBox1);
+            this.lieuGB.Enabled = false;
+            this.lieuGB.Location = new System.Drawing.Point(251, 251);
+            this.lieuGB.Name = "lieuGB";
+            this.lieuGB.Size = new System.Drawing.Size(336, 72);
+            this.lieuGB.TabIndex = 9;
+            this.lieuGB.TabStop = false;
+            this.lieuGB.Text = "Lieu";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MarsApp.Properties.Resources.map50px;
+            this.pictureBox1.Location = new System.Drawing.Point(277, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 33);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Coordonnées :";
+            // 
+            // lieuTB
+            // 
+            this.lieuTB.Enabled = false;
+            this.lieuTB.Location = new System.Drawing.Point(99, 30);
+            this.lieuTB.Name = "lieuTB";
+            this.lieuTB.Size = new System.Drawing.Size(172, 20);
+            this.lieuTB.TabIndex = 2;
+            this.lieuTB.Text = "0;0";
+            // 
             // ModificationActivite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(605, 562);
+            this.Controls.Add(this.lieuGB);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.temps);
             this.Controls.Add(this.activiteExterieureGB);
@@ -246,6 +294,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.debutHeure)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.lieuGB.ResumeLayout(false);
+            this.lieuGB.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -268,5 +319,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox descriptionTB;
+        private System.Windows.Forms.GroupBox lieuGB;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox lieuTB;
+        private System.Windows.Forms.Label label3;
     }
 }

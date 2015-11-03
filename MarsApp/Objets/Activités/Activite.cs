@@ -127,5 +127,6 @@ namespace MarsApp
         public void setHeureFin(TimeMartien tm) { this.heureFin = tm; }
         public TimeMartien getDuree() { return heureFin - heureDebut; }
         public String getDescription() { return description; }
+        public Lieu getLieu() { return lieu; }
     }
 }

@@ -370,5 +370,11 @@ namespace MarsApp
         {
             journeesMission[journeeSelectionnee].setRapport(descriptionTexte.Text);
         }
+
+        private void map_Click(object sender, EventArgs e)
+        {
+            GestionCarte gc = new GestionCarte(journeesMission);
+            gc.Show();
+        }
     }
 }

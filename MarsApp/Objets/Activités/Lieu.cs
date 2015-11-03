@@ -33,6 +33,30 @@ namespace MarsApp
         {
             this.x = e.X;
             this.y = e.Y;
+            convertirPosition(ref x, ref y);
+        }
+
+        public override string ToString()
+        {
+            return x + ";" + y;
+        }
+
+        public static void convertirPosition(ref int x, ref int y)
+        {
+            x = (int) Math.Round(x * Constantes.RAPPORT_CARTES, 0) - Constantes.POSITION_BASE_X;
+            y = (int) Math.Round(y * Constantes.RAPPORT_CARTES, 0) - Constantes.POSITION_BASE_Y;
+        }
+
+        public int getX() { return x; }
+        public int getXReduit() { return (int) Math.Round((x + Constantes.POSITION_BASE_X) / Constantes.RAPPORT_CARTES, 0); }
+        public int getY() { return y; }
+        public int getYReduit() { return (int) Math.Round((y + Constantes.POSITION_BASE_Y) / Constantes.RAPPORT_CARTES, 0); }
+
+        public void setLieu(MouseEventArgs e)
+        {
+            this.x = e.X;
+            this.y = e.Y;
+            convertirPosition(ref x, ref y);
         }
     }
 }
