@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8a4f30ce-0939-4871-846c-d8124feb59b9" name="DiagrammeClasse" linkedPackageId="16fd265e-da84-48eb-8ac0-0ebd7e3a24cd" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8a4f30ce-0939-4871-846c-d8124feb59b9" name="DiagrammeClasse" linkedPackageId="16fd265e-da84-48eb-8ac0-0ebd7e3a24cd" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="f1e0cea0-5630-4019-ac47-3a0c2fc775a6" name="Activite" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -36,6 +36,22 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="5cf90a7f-5893-416f-b3d8-4f035a68eb79" />
+          </association>
+          <association Id="ab9e1ed5-792c-4147-bd33-d9e8dbf3037e" isDerived="false" sourceEndRoleName="Activite" targetEndRoleName="TypeActivite" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c31492c1-3a0f-494d-b843-ef217abc346d" LastKnownName="TypeActivite" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b09a3bab-991a-43db-8205-9d245f6021b6" name="Activite" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d855ea73-48b2-4d13-80c2-456adafda7cb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="31cfc70e-c9a5-469c-a9f4-2bb99404c0ce" name="TypeActivite" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="43a89cf2-f142-48da-a284-bbba99072b1e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b49f9fe6-c09d-4ea9-857f-2655fcb5d4dc" />
           </association>
         </targetEnds>
       </class>
@@ -82,6 +98,22 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="bf57c5ba-02ce-4eb4-a1fe-cb81abc4f460" />
+          </association>
+          <association Id="9f4c72e1-c107-4c08-b4c7-6baeb4789269" isDerived="false" sourceEndRoleName="Journée" targetEndRoleName="IEtat" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="e3c883f3-ee34-4bb7-b5ee-14768f7da599" LastKnownName="IEtat" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b88f92ea-539c-4262-8b33-7c1b4b1c29e9" name="Journée" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="63bf1a0a-ce10-4840-8b07-2759a6e38679" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e454ff09-ce9e-4e2d-b518-b680cf7ac35a" name="IEtat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1cbffc80-18a6-41eb-bd50-ea5dad999be5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="02edb257-e0a2-4bd1-860a-612a60d3366f" />
           </association>
         </targetEnds>
       </class>
@@ -150,6 +182,24 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="ecbd7f2a-2776-4c5f-aede-86d35488aac3" name="Domaine" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6c08066b-bc8e-4675-8bd8-a8274e5eba5d" />
+        <targetEnds>
+          <association Id="b153fcf9-f7f0-41f3-b4d4-fba14948dad1" isDerived="false" sourceEndRoleName="Domaine" targetEndRoleName="TypeActivite" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c31492c1-3a0f-494d-b843-ef217abc346d" LastKnownName="TypeActivite" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="35e76268-0dea-41d3-9840-f8e1f0eba425" name="Domaine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="408cc072-bd7b-4df8-b33c-0f5d064a658b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="18cfca15-3a50-45fc-bb67-903881377d37" name="TypeActivite" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="322e5e0a-d226-4fdc-991d-aece97dff5dd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b0f42293-c7a1-4092-9292-375f0e64d661" />
+          </association>
+        </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -184,11 +234,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="6c020982-7349-4956-b44e-8314f29fb253" name="Astronaute" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5a815898-3d3d-4d3a-9eeb-bce5ec2f068f" />
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="ba56def8-68f2-47d5-91b3-aff43e46d280" name="Succès" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="6e1edf44-eba5-4621-89ce-866bccc1cbc0" />
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -227,6 +272,11 @@
             <elementDefinition Id="2c616b42-7917-4dfc-838f-959f2e93c2a1" />
           </generalization>
         </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c31492c1-3a0f-494d-b843-ef217abc346d" name="TypeActivite" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2d64c4f1-4e0a-4cdd-934b-2b02662111a8" />
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

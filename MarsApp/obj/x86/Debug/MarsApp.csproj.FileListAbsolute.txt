@@ -34,3 +34,5 @@ C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\bin\Debug\MarsApp.exe
 C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\bin\Debug\MarsApp.pdb
 C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.csprojResolveAssemblyReference.cache
 C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.SelectionCarte.resources
+H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.GestionCarte.resources
+H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.SelectionCarte.resources
