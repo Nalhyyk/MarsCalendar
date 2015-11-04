@@ -18,6 +18,7 @@ namespace MarsApp
         protected List<Astronaute> listeAstronautes;
         protected Lieu lieu;
 
+        #region Constructeurs
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
@@ -36,7 +37,7 @@ namespace MarsApp
         {
             this.typeActivite = typeActivite;
             this.description = description;
-            etat = new Future();
+            etat = new Futur();
             this.heureDebut = deb;
             this.heureFin = fin;
             listeAstronautes = new List<Astronaute>();
@@ -53,6 +54,7 @@ namespace MarsApp
             listeAstronautes = a.listeAstronautes;
             lieu = a.lieu;
         }
+        #endregion
 
         /// <summary>
         /// Affiche l'état de l'activité
@@ -67,7 +69,7 @@ namespace MarsApp
         /// </summary>
         public void activitePassee()
         {
-            etat = new Passee();
+            etat = new Passe();
         }
 
         /// <summary>
@@ -83,9 +85,10 @@ namespace MarsApp
         /// </summary>
         public void activiteAVenir()
         {
-            etat = new Future();
+            etat = new Futur();
         }
 
+        #region Accesseurs
         /// <summary>
         /// Modifie la description de l'Activite. Elle doit faire 400 caractères maximum
         /// </summary>
@@ -110,23 +113,71 @@ namespace MarsApp
             return false;
         }
 
+        /// <summary>
+        /// Permet de savoir si l'activité est une activité d'exploration
+        /// </summary>
+        /// <returns>Vrai si l'activité est une exploration, faux sinon</returns>
         public virtual bool isExploration()
         {
             return false;
         }
 
+        /// <summary>
+        /// Permet de savoir si l'activité est modifiable
+        /// </summary>
+        /// <returns>Vrai si elle est modifiable, faux sinon</returns>
         public bool isModifiable()
         {
             return etat.modifiable();
         }
 
+        /// <summary>
+        /// Permet d'avoir l'heure de début de l'activité
+        /// </summary>
+        /// <returns>L'heure de début de l'activité</returns>
         public TimeMartien getHeureDebut() { return heureDebut; }
+
+        /// <summary>
+        /// Permet d'avoir l'heure de fin de l'activité
+        /// </summary>
+        /// <returns>L'heure de fin de l'activité</returns>
         public TimeMartien getHeureFin() { return heureFin; }
+
+        /// <summary>
+        /// Permet d'avoir le nom de l'activité
+        /// </summary>
+        /// <returns>Le nom de l'activité</returns>
         public String getNom() { return typeActivite.getNom(); }
+
+        /// <summary>
+        /// Permet de définir l'heure de début de l'activité
+        /// </summary>
+        /// <param name="tm">Un TimeMartien</param>
         public void setHeureDebut(TimeMartien tm) { this.heureDebut = tm; }
+
+        /// <summary>
+        /// Permet de définir l'heure de fin de l'activité
+        /// </summary>
+        /// <param name="tm">Un TimeMartien</param>
         public void setHeureFin(TimeMartien tm) { this.heureFin = tm; }
+
+        /// <summary>
+        /// Permet de connaître la durée de l'activité
+        /// </summary>
+        /// <returns>La durée de l'activité</returns>
         public TimeMartien getDuree() { return heureFin - heureDebut; }
+
+        /// <summary>
+        /// Permet de connaître la description de l'activité
+        /// </summary>
+        /// <returns>La description de l'activité</returns>
         public String getDescription() { return description; }
+
+        /// <summary>
+        /// Permet de connaître le lieu de l'activité
+        /// </summary>
+        /// <returns>Le lieu de l'activité</returns>
         public Lieu getLieu() { return lieu; }
+        #endregion
     }
 }

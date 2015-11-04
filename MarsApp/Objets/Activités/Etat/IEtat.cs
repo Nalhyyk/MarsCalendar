@@ -6,14 +6,14 @@ using System.Text;
 namespace MarsApp
 {
     /// <summary>
-    /// L'état d'avancement d'une activité
+    /// L'état d'avancement
     /// </summary>
     public interface IEtat
     {
         /// <summary>
-        /// Affiche l'état de l'activité
+        /// Retourne l'état de l'activité
         /// </summary>
-        void etat();
+        String etat();
 
         /// <summary>
         /// Retourne la couleur associée à l'état

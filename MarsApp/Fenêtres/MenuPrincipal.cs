@@ -9,13 +9,22 @@ using System.Windows.Forms;
 
 namespace MarsApp
 {
+    /// <summary>
+    /// Menu principal de l'application
+    /// </summary>
     public partial class MenuPrincipal : BaseFenetre
     {
+        #region Constructeurs
+        /// <summary>
+        /// Constructeur par défaut
+        /// </summary>
         public MenuPrincipal()
         {
             InitializeComponent();
         }
+        #endregion
 
+        #region Evènements
         private void button1_Click(object sender, EventArgs e)
         {
             DateTime picker = dateTimePicker1.Value;
@@ -25,5 +34,6 @@ namespace MarsApp
             cm.Show();
             this.cacherFenetre();
         }
+        #endregion
     }
 }

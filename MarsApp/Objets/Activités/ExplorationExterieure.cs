@@ -12,6 +12,7 @@ namespace MarsApp
     {
         private ITransport transport;
 
+        #region Constructeurs
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
@@ -26,10 +27,15 @@ namespace MarsApp
             transport = new Scaphandre();
         }
 
+        /// <summary>
+        /// Constructeur par copie
+        /// </summary>
+        /// <param name="ee">Une ExplorationExterieure</param>
         public ExplorationExterieure(ExplorationExterieure ee) : base(ee)
         {
             this.transport = ee.transport;
         }
+        #endregion
 
         /// <summary>
         /// Définit le déplacement comme étant à pieds
@@ -55,6 +61,7 @@ namespace MarsApp
             transport.deplacement();
         }
 
+        #region Accesseurs
         public override bool isActiviteExterieure()
         {
             return true;
@@ -64,5 +71,6 @@ namespace MarsApp
         {
             return true;
         }
+        #endregion
     }
 }

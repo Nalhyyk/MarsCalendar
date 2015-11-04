@@ -10,6 +10,7 @@ namespace MarsApp
     /// </summary>
     class EnCours : IEtat
     {
+        #region Constructeurs
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
@@ -17,18 +18,17 @@ namespace MarsApp
         {
 
         }
+        #endregion
 
-        public void etat()
+        public String etat()
         {
-            Console.WriteLine("En cours");
+            return "En cours";
         }
-
 
         public int[] couleur()
         {
             return new int[] { 2, 154, 229 };
         }
-
 
         public bool modifiable()
         {

@@ -14,6 +14,7 @@ namespace MarsApp
     /// </summary>
     public partial class BaseFenetre : Form
     {
+        #region Constructeurs
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
@@ -22,6 +23,7 @@ namespace MarsApp
             InitializeComponent();
             centrerFenetre();
         }
+        #endregion
 
         /// <summary>
         /// Permet de centrer la fenêtre sur l'écran

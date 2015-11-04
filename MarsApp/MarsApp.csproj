@@ -100,8 +100,8 @@
     </Compile>
     <Compile Include="Objets\Activités\Domaine.cs" />
     <Compile Include="Objets\Activités\Etat\EnCours.cs" />
-    <Compile Include="Objets\Activités\Etat\Future.cs" />
-    <Compile Include="Objets\Activités\Etat\Passee.cs" />
+    <Compile Include="Objets\Activités\Etat\Futur.cs" />
+    <Compile Include="Objets\Activités\Etat\Passe.cs" />
     <Compile Include="Objets\Activités\Etat\IEtat.cs" />
     <Compile Include="Objets\Activités\ExperienceExterieure.cs" />
     <Compile Include="Objets\Activités\ExplorationExterieure.cs" />

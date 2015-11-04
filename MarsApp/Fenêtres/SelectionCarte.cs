@@ -9,11 +9,20 @@ using System.Windows.Forms;
 
 namespace MarsApp
 {
+    /// <summary>
+    /// Interface de sélection d'un point sur la carte
+    /// </summary>
     public partial class SelectionCarte : BaseFenetre
     {
         private Lieu lieuAModifier;
         private TextBox textBoxAModifier;
 
+        #region Constructeurs
+        /// <summary>
+        /// Constructeur paramétré
+        /// </summary>
+        /// <param name="lieuAModifier">Le lieu à modifier lors de la sélection</param>
+        /// <param name="textBoxAModifier">Le textBox à modifier lors de la sélection</param>
         public SelectionCarte(Lieu lieuAModifier, TextBox textBoxAModifier)
         {
             InitializeComponent();
@@ -21,7 +30,9 @@ namespace MarsApp
             this.lieuAModifier = lieuAModifier;
             this.textBoxAModifier = textBoxAModifier;
         }
+        #endregion
 
+        #region Evènements
         private void map_MouseClick(object sender, MouseEventArgs e)
         {
             lieuAModifier.setLieu(e);
@@ -38,5 +49,6 @@ namespace MarsApp
 
             label1.Text = x + ";" + y;
         }
+        #endregion
     }
 }

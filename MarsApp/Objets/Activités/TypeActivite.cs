@@ -12,6 +12,7 @@ namespace MarsApp
     {
         private String nom;
 
+        #region Constructeurs
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
@@ -20,11 +21,14 @@ namespace MarsApp
         {
             this.nom = nom;
         }
+        #endregion
 
+        #region Accesseurs
         /// <summary>
         /// Permet d'avoir le nom du type d'activité
         /// </summary>
         /// <returns>Le nom du type d'activité</returns>
         public String getNom() { return nom; }
+        #endregion
     }
 }

@@ -13,6 +13,7 @@ namespace MarsApp
         private String nom;
         private List<TypeActivite> listeActivites;
 
+        #region Constructeurs
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
@@ -21,6 +22,7 @@ namespace MarsApp
             this.nom = nom;
             listeActivites = new List<TypeActivite>();
         }
+        #endregion
 
         /// <summary>
         /// Ajouter une activité
@@ -40,6 +42,7 @@ namespace MarsApp
             listeActivites.Remove(a);
         }
 
+        #region Accesseurs
         /// <summary>
         /// Renvoie les types d'activités du Domaine
         /// </summary>
@@ -51,5 +54,6 @@ namespace MarsApp
         /// </summary>
         /// <returns>Le nom du Domaine</returns>
         public String getNom() { return nom; }
+        #endregion
     }
 }

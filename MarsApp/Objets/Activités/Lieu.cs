@@ -14,6 +14,7 @@ namespace MarsApp
         private int x;
         private int y;
 
+        #region Constructeurs
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
@@ -35,12 +36,19 @@ namespace MarsApp
             this.y = e.Y;
             convertirPosition(ref x, ref y);
         }
+        #endregion
 
         public override string ToString()
         {
             return x + ";" + y;
         }
 
+        /// <summary>
+        /// Permet de convertir des coordonnées de la map réduite (en fonction
+        /// de la taille de la map d'origine), et centre la base (700, 1000) en (0, 0)
+        /// </summary>
+        /// <param name="x">Coordonnées x de la map réduite</param>
+        /// <param name="y">Coordonnées y de la map réduite</param>
         public static void convertirPosition(ref int x, ref int y)
         {
             x = (int) Math.Round(x * Constantes.RAPPORT_CARTES, 0) - Constantes.POSITION_BASE_X;

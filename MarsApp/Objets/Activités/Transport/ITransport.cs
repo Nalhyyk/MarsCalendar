@@ -5,6 +5,9 @@ using System.Text;
 
 namespace MarsApp
 {
+    /// <summary>
+    /// Transport utilisé
+    /// </summary>
     public interface ITransport
     {
         /// <summary>

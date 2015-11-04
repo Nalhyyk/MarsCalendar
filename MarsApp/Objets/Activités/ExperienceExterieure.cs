@@ -10,6 +10,7 @@ namespace MarsApp
     /// </summary>
     public class ExperienceExterieure : Activite
     {
+        #region Constructeurs
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
@@ -24,11 +25,17 @@ namespace MarsApp
 
         }
 
+        /// <summary>
+        /// Constructeur par copie
+        /// </summary>
+        /// <param name="ee">Une ExperienceExterieure</param>
         public ExperienceExterieure(ExperienceExterieure ee) : base(ee)
         {
 
         }
+        #endregion
 
+        #region Accesseurs
         public override bool isActiviteExterieure()
         {
             return true;
@@ -38,5 +45,6 @@ namespace MarsApp
         {
             return false;
         }
+        #endregion
     }
 }

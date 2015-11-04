@@ -19,13 +19,13 @@ namespace MarsApp
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
-        public Journee() : this(0, "", new Future(), false) {}
+        public Journee() : this(0, "", new Futur(), false) {}
 
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
         /// <param name="numero">Numéro de la journée</param>
-        public Journee(int numero) : this(numero, "", new Future(), false) { }
+        public Journee(int numero) : this(numero, "", new Futur(), false) { }
 
         /// <summary>
         /// Constructeur paramétré
@@ -104,7 +104,7 @@ namespace MarsApp
         /// </summary>
         public void journeePassee()
         {
-            etat = new Passee();
+            etat = new Passe();
         }
 
         /// <summary>
@@ -120,7 +120,7 @@ namespace MarsApp
         /// </summary>
         public void journeeAVenir()
         {
-            etat = new Future();
+            etat = new Futur();
         }
 
         public Activite trouverActivite(int heure)

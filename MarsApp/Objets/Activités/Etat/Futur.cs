@@ -6,33 +6,35 @@ using System.Text;
 namespace MarsApp
 {
     /// <summary>
-    /// L'activité/Journée a eu lieu
+    /// L'activité/Journée va avoir lieu
     /// </summary>
-    class Passee : IEtat
+    class Futur : IEtat
     {
+        #region Constructeurs
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
-        public Passee()
+        public Futur()
         {
 
         }
+        #endregion
 
-        public void etat()
+        public String etat()
         {
-            Console.WriteLine("Passée");
+            return "Futur";
         }
 
 
         public int[] couleur()
         {
-            return new int[] { 199, 195, 199};
+            return new int[] { 51, 184, 121};
         }
 
 
         public bool modifiable()
         {
-            return false;
+            return true;
         }
     }
 }

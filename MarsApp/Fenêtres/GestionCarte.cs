@@ -9,11 +9,19 @@ using System.Windows.Forms;
 
 namespace MarsApp
 {
+    /// <summary>
+    /// Interface affichant la carte et les activités extérieures
+    /// </summary>
     public partial class GestionCarte : BaseFenetre
     {
         private List<Lieu> lieuxADessiner;
         private Dictionary<int, Journee> journees;
 
+        #region Constructeurs
+        /// <summary>
+        /// Constructeur paramétré
+        /// </summary>
+        /// <param name="journees">Liste des journées de la mission</param>
         public GestionCarte(Dictionary<int, Journee> journees)
         {
             InitializeComponent();
@@ -48,7 +56,11 @@ namespace MarsApp
 
             this.Refresh();
         }
+        #endregion
 
+        /// <summary>
+        /// Stocke dans une liste toutes les activités extérieures
+        /// </summary>
         private void toutesLesActivitesExterieures()
         {
             lieuxADessiner.Clear();
@@ -59,6 +71,10 @@ namespace MarsApp
                             lieuxADessiner.Add(a.getLieu());
         }
 
+        /// <summary>
+        /// Stocke dans une liste toutes les activités extérieures d'une journée
+        /// </summary>
+        /// <param name="journee">Le numéro de la journée</param>
         private void toutesLesActivitesExterieuresJournee(int journee)
         {
             lieuxADessiner.Clear();
@@ -68,6 +84,10 @@ namespace MarsApp
                         lieuxADessiner.Add(a.getLieu());
         }
 
+        /// <summary>
+        /// Stocke dans une liste l'activité si elle se trouve en extérieur
+        /// </summary>
+        /// <param name="a">Une activité</param>
         private void activiteExterieure(Activite a)
         {
             lieuxADessiner.Clear();
@@ -75,6 +95,7 @@ namespace MarsApp
                 lieuxADessiner.Add(a.getLieu());
         }
 
+        #region Evènements
         private void map_Paint(object sender, PaintEventArgs e)
         {
             foreach (Lieu l in lieuxADessiner)
@@ -101,5 +122,6 @@ namespace MarsApp
 
             this.Refresh();
         }
+        #endregion
     }
 }

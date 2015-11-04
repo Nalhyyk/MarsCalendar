@@ -9,6 +9,9 @@ using System.Windows.Forms;
 
 namespace MarsApp
 {
+    /// <summary>
+    /// Interface de modification d'une activité
+    /// </summary>
     public partial class ModificationActivite : BaseFenetre
     {
         private Activite activiteAModifier;
@@ -16,6 +19,13 @@ namespace MarsApp
         private CalendrierMission cm;
         private Lieu lieu;
 
+        #region Constructeurs
+        /// <summary>
+        /// Constructeur paramétré
+        /// </summary>
+        /// <param name="j">Une journée</param>
+        /// <param name="a">Une activité la journée</param>
+        /// <param name="cm">L'interface graphique CalendrierMission</param>
         public ModificationActivite(Journee j, Activite a, CalendrierMission cm)
         {
             InitializeComponent();
@@ -71,7 +81,9 @@ namespace MarsApp
                     if (tnn.Text.Equals(a.getNom()))
                         treeView.SelectedNode = tnn;
         }
+        #endregion
 
+        #region Evènements
         private void exterieurRadio_CheckedChanged(object sender, EventArgs e)
         {
             activiteExterieureGB.Enabled = (exterieurRadio.Checked) ? true : false;
@@ -153,5 +165,6 @@ namespace MarsApp
             SelectionCarte sc = new SelectionCarte(lieu, lieuTB);
             sc.Show();
         }
+        #endregion
     }
 }

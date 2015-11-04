@@ -30,6 +30,7 @@ namespace MarsApp
 
         public static List<Domaine> domaines;
 
+        #region Constructeurs
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
@@ -48,14 +49,15 @@ namespace MarsApp
             numeros = new Dictionary<int, Label>();
             heures = new Dictionary<int, Label>();
             domaines = new List<Domaine>();
+            journeesMission = new Dictionary<int, Journee>();
 
             initialiserDomaines();
 
-            journeesMission = new Dictionary<int, Journee>();
-
+            // Création des jours de mission
             for (int i = 1; i < 501; ++i)
                 journeesMission[i] = new Journee(i);
 
+            // Stockage des éléments de l'interface [journées]
             for (int i = 1; i < 51; ++i)
             {
                 Control[] ctrl = this.Controls.Find("jour" + i, true);
@@ -68,6 +70,7 @@ namespace MarsApp
                 icones[i] = (PictureBox)ctrl[0];
             }
 
+            // Stockage des éléments de l'interface [activités journée]
             for (int i = 0; i < 24; ++i)
             {
                 Control[] ctrl = this.Controls.Find("actH" + i, true);
@@ -83,6 +86,7 @@ namespace MarsApp
 
             journeeActuelle = journeesMission[numJour];
 
+            // Mise à jour des jours : passés | en cours | à venir
             for (int i = 1; i < numJour; ++i)
                 journeesMission[i].journeePassee();
             journeeActuelle = journeesMission[numJour];
@@ -95,6 +99,7 @@ namespace MarsApp
 
             descriptionTexte.Text = journeesMission[journeeSelectionnee].getDescription();
         }
+        #endregion
 
         /// <summary>
         /// Permet de changer de période
@@ -119,27 +124,6 @@ namespace MarsApp
                     // Astronaute visible pour les jours en extérieur
                     icones[i].Visible = journeesMission[i + 50 * (periode - 1)].isJourneeExterieure();
                 }
-        }
-
-        /// <summary>
-        /// Permet de passer à la période précédente/suivante
-        /// </summary>
-        /// <param name="sender">Objet source</param>
-        /// <param name="e">Evènement</param>
-        private void changerPeriode_Click(object sender, EventArgs e)
-        {
-            periode += int.Parse(((PictureBox)sender).Tag.ToString());
-
-            if (periode < 1)
-                periode = 1;
-            else if (periode > 10)
-                periode = 10;
-
-            verificationChangementPeriode();
-
-            changerPeriode(periode);
-
-            periodeNum.Text = "Période " + periode;
         }
 
         /// <summary>
@@ -168,27 +152,6 @@ namespace MarsApp
                 suivant.Enabled = true;
                 suivant.Visible = true;
             }
-        }
-
-        /// <summary>
-        /// Actions lors du clic sur un jour
-        /// </summary>
-        /// <param name="sender">Objet source</param>
-        /// <param name="e">Evènement</param>
-        private void jour_click(object sender, EventArgs e)
-        {
-            String numJournee = "";
-
-            if (sender as Label != null)
-                numJournee = ((Label)sender).Tag.ToString();
-            else if (sender as PictureBox != null)
-                numJournee = ((PictureBox)sender).Tag.ToString();
-            else if (sender as Panel != null)
-                numJournee = ((Panel)sender).Tag.ToString();
-
-            journeeSelectionnee = int.Parse(numJournee);
-            miseAJourEdt(journeesMission[journeeSelectionnee]);
-            descriptionTexte.Text = journeesMission[journeeSelectionnee].getDescription();
         }
 
         /// <summary>
@@ -294,6 +257,7 @@ namespace MarsApp
             domaines.Add(d);
         }
 
+        #region Evènements
         private void Modifier_Click(object sender, EventArgs e)
         {
             Journee journee = journeesMission[journeeSelectionnee];
@@ -305,6 +269,27 @@ namespace MarsApp
                 ModificationActivite ma = new ModificationActivite(journee, activiteAModifier, this);
                 ma.Show();
             }
+        }
+
+        /// <summary>
+        /// Actions lors du clic sur un jour
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
+        private void jour_click(object sender, EventArgs e)
+        {
+            String numJournee = "";
+
+            if (sender as Label != null)
+                numJournee = ((Label)sender).Tag.ToString();
+            else if (sender as PictureBox != null)
+                numJournee = ((PictureBox)sender).Tag.ToString();
+            else if (sender as Panel != null)
+                numJournee = ((Panel)sender).Tag.ToString();
+
+            journeeSelectionnee = int.Parse(numJournee);
+            miseAJourEdt(journeesMission[journeeSelectionnee]);
+            descriptionTexte.Text = journeesMission[journeeSelectionnee].getDescription();
         }
 
         private void heure_MouseClick(object sender, MouseEventArgs e)
@@ -327,6 +312,27 @@ namespace MarsApp
 
                 miseAJourEdt(journee);
             }
+        }
+
+        /// <summary>
+        /// Permet de passer à la période précédente/suivante
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
+        private void changerPeriode_Click(object sender, EventArgs e)
+        {
+            periode += int.Parse(((PictureBox)sender).Tag.ToString());
+
+            if (periode < 1)
+                periode = 1;
+            else if (periode > 10)
+                periode = 10;
+
+            verificationChangementPeriode();
+
+            changerPeriode(periode);
+
+            periodeNum.Text = "Période " + periode;
         }
 
         /// <summary>
@@ -376,5 +382,6 @@ namespace MarsApp
             GestionCarte gc = new GestionCarte(journeesMission);
             gc.Show();
         }
+#endregion
     }
 }

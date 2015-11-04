@@ -10,6 +10,7 @@ namespace MarsApp
     /// </summary>
     class Vehicule : ITransport
     {
+        #region Constructeurs
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
@@ -17,6 +18,7 @@ namespace MarsApp
         {
 
         }
+        #endregion
 
         public void deplacement()
         {
