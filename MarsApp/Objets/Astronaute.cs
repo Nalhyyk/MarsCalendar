@@ -14,6 +14,7 @@ namespace MarsApp
         private String prenom;
         private String age;
 
+        #region Constructeurs
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
@@ -26,5 +27,6 @@ namespace MarsApp
             this.prenom = prenom;
             this.age = age;
         }
+        #endregion
     }
 }

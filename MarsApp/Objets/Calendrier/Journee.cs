@@ -16,6 +16,7 @@ namespace MarsApp
         private String rapport;
         private bool journeeExterieure;
 
+        #region Constructeurs
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
@@ -48,6 +49,7 @@ namespace MarsApp
             ajouterActivite(new Activite(new TypeActivite("Privé"), "", new TimeMartien(21), new TimeMartien(23), new Lieu(0, 0)));
             ajouterActivite(new Activite(new TypeActivite("Dormir"), "", new TimeMartien(23), new TimeMartien(24, 40), new Lieu(0, 0)));
         }
+        #endregion
 
         /// <summary>
         /// Ajouter une Activite
@@ -71,6 +73,10 @@ namespace MarsApp
             journeeExterieure = mettreAJourJourneeExterieure();
         }
 
+        /// <summary>
+        /// Permet de savoir si une activité de la journée se passe en extérieur
+        /// </summary>
+        /// <returns>Vrai si une activité de la journée se passe en extérieur, faux sinon</returns>
         public bool mettreAJourJourneeExterieure()
         {
             foreach (Activite a in listeActivites)
@@ -80,20 +86,9 @@ namespace MarsApp
         }
 
         /// <summary>
-        /// Modifie le rapport de la journée. Il doit faire 1000 caractères maximum
+        /// Permet de connaître la couleur de la journée
         /// </summary>
-        /// <param name="rapport">Rapport de la journée</param>
-        /// <returns>false si le rapport fait plus de 1000 caractères, true sinon</returns>
-        public bool setRapport(String rapport)
-        {
-            if (rapport.Length <= Constantes.LIMITE_RAPPORT_JOURNEE)
-                this.rapport = rapport;
-            else
-                return false;
-
-            return true;
-        }
-
+        /// <returns></returns>
         public int[] couleurJournee()
         {
             return etat.couleur();
@@ -123,6 +118,11 @@ namespace MarsApp
             etat = new Futur();
         }
 
+        /// <summary>
+        /// Permet de trouver une activité dans la journée en fonction d'une heure de début
+        /// </summary>
+        /// <param name="heure">Une heure</param>
+        /// <returns>L'activité se passant à l'heure donnée</returns>
         public Activite trouverActivite(int heure)
         {
             foreach (Activite a in listeActivites)
@@ -134,23 +134,66 @@ namespace MarsApp
             return null;
         }
 
+        #region Accesseurs
+        /// <summary>
+        /// Modifie le rapport de la journée. Il doit faire 1000 caractères maximum
+        /// </summary>
+        /// <param name="rapport">Rapport de la journée</param>
+        /// <returns>false si le rapport fait plus de 1000 caractères, true sinon</returns>
+        public bool setRapport(String rapport)
+        {
+            if (rapport.Length <= Constantes.LIMITE_RAPPORT_JOURNEE)
+                this.rapport = rapport;
+            else
+                return false;
+
+            return true;
+        }
+
+        /// <summary>
+        /// Permet de savoir si la journée se passe en extérieur
+        /// </summary>
+        /// <returns>Vrai si la journée se passe en extérieur, faux sinon</returns>
         public bool isJourneeExterieure()
         {
             return journeeExterieure;
         }
 
+        /// <summary>
+        /// Permet de savoir si la journée est modifiable
+        /// </summary>
+        /// <returns>Vrai si la journée est modifiable, faux sinon</returns>
         public bool isModifiable()
         {
             return etat.modifiable();
         }
 
+        /// <summary>
+        /// Permet de redéfinir si la journée se passe en extérieur
+        /// </summary>
+        /// <param name="journeeExterieure">Un booléen</param>
         public void setJourneeExterieure(bool journeeExterieure)
         {
             this.journeeExterieure = journeeExterieure;
         }
 
+        /// <summary>
+        /// Permet de connaître les différentes activités de la journée
+        /// </summary>
+        /// <returns>La liste des activités de la journée</returns>
         public List<Activite> getActivites() { return listeActivites; }
+
+        /// <summary>
+        /// Permet de connaître le numéro de la journée
+        /// </summary>
+        /// <returns>Le numéro de la journée</returns>
         public int getNumero() { return numero; }
+
+        /// <summary>
+        /// Permet de connaître la description de la journée
+        /// </summary>
+        /// <returns>La description de la journée</returns>
         public String getDescription() { return rapport; }
+        #endregion
     }
 }

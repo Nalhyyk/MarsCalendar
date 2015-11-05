@@ -55,16 +55,41 @@ namespace MarsApp
             y = (int) Math.Round(y * Constantes.RAPPORT_CARTES, 0) - Constantes.POSITION_BASE_Y;
         }
 
+        #region Accesseurs
+        /// <summary>
+        /// Permet de récupérer la coordonnée en x du lieu (échelle normale)
+        /// </summary>
+        /// <returns>La coordonnée en x du lieu</returns>
         public int getX() { return x; }
+
+        /// <summary>
+        /// Permet de récupérer la coordonnée en x du lieu (échelle réduite)
+        /// </summary>
+        /// <returns>La coordonnée en x du lieu</returns>
         public int getXReduit() { return (int) Math.Round((x + Constantes.POSITION_BASE_X) / Constantes.RAPPORT_CARTES, 0); }
+
+        /// <summary>
+        /// Permet de récupérer la coordonnée en y du lieu (échelle normale)
+        /// </summary>
+        /// <returns>La coordonnée en y du lieu</returns>
         public int getY() { return y; }
+
+        /// <summary>
+        /// Permet de récupérer la coordonnée en y du lieu (échelle réduite)
+        /// </summary>
+        /// <returns>La coordonnée en y du lieu</returns>
         public int getYReduit() { return (int) Math.Round((y + Constantes.POSITION_BASE_Y) / Constantes.RAPPORT_CARTES, 0); }
 
+        /// <summary>
+        /// Permet de redéfinir le lieu
+        /// </summary>
+        /// <param name="e">Un MouseEventArgs</param>
         public void setLieu(MouseEventArgs e)
         {
             this.x = e.X;
             this.y = e.Y;
             convertirPosition(ref x, ref y);
         }
+        #endregion
     }
 }

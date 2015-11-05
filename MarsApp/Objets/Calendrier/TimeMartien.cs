@@ -16,6 +16,7 @@ namespace MarsApp
         private int minute;
         private int seconde;
 
+        #region Constructeurs
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
@@ -46,6 +47,7 @@ namespace MarsApp
         /// Constructeur par défaut
         /// </summary>
         public TimeMartien() : this(0, 0, 0, 0) { }
+        #endregion
 
         #region AJOUT DE TEMPS
         /// <summary>
@@ -199,6 +201,11 @@ namespace MarsApp
         }
         #endregion
 
+        /// <summary>
+        /// Permet de convertir un DateTime en TimeMartien
+        /// </summary>
+        /// <param name="dt">Un DateTime</param>
+        /// <returns>Le TImeMartien correspondant au DateTime</returns>
         public static TimeMartien convertirDateTime(DateTime dt)
         {
             TimeSpan ts = new TimeSpan(dt.Ticks);
@@ -207,6 +214,11 @@ namespace MarsApp
             return tm;
         }
 
+        /// <summary>
+        /// Permet de calculer le nombre de jours passés depuis le DateTime spécifié (en temps martien)
+        /// </summary>
+        /// <param name="dateDepart">Un DateTime</param>
+        /// <returns>Le nombre de jours écoulés depuis la date spécifiée, en temps martien</returns>
         public static TimeMartien calculerJours(DateTime dateDepart)
         {
             DateTime dt = DateTime.Now;
@@ -219,11 +231,37 @@ namespace MarsApp
             return tm;
         }
 
+        #region Accesseurs
+        /// <summary>
+        /// Permet de connaître l'heure du temps martien
+        /// </summary>
+        /// <returns>L'heure du temps martien</returns>
         public int getHeures() { return heure; }
+
+        /// <summary>
+        /// Permet de connaître les minutes du temps martien
+        /// </summary>
+        /// <returns>Les minutes du temps martien</returns>
         public int getMinutes() { return minute; }
+
+        /// <summary>
+        /// Permet de connaître les secondes du temps martien
+        /// </summary>
+        /// <returns>Les secondes du temps martien</returns>
         public int getSecondes() { return seconde; }
+
+        /// <summary>
+        /// Permet de redéfinir les jours du temps martien
+        /// </summary>
+        /// <param name="jours">Un nombre de jours</param>
         public void setJours(int jours) { this.jours = jours; }
+
+        /// <summary>
+        /// Permet de connaître les jours du temps martien
+        /// </summary>
+        /// <returns></returns>
         public int getJours() { return jours; }
+        #endregion
 
         /// <summary>
         /// Texte affiché pour la classe
