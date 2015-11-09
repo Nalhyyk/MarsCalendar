@@ -21,9 +21,12 @@ namespace MarsApp
         private Dictionary<int, Label> numeros;
         private Dictionary<int, Label> heures;
 
-        private Dictionary<int, Journee> journeesMission;
         private int journeeSelectionnee;
         private int heureSelectionnee;
+
+        private List<Astronaute> astronautes;
+        private Astronaute astronauteSelectionne;
+        private Dictionary<int, Journee> journeesMission;
 
         private Journee journeeActuelle;
         private DateTime debutMission;
@@ -49,13 +52,17 @@ namespace MarsApp
             numeros = new Dictionary<int, Label>();
             heures = new Dictionary<int, Label>();
             domaines = new List<Domaine>();
-            journeesMission = new Dictionary<int, Journee>();
+            astronautes = new List<Astronaute>();
 
             initialiserDomaines();
 
-            // Création des jours de mission
-            for (int i = 1; i < 501; ++i)
-                journeesMission[i] = new Journee(i);
+            Astronaute a = new Astronaute("Bilat", "Bob", 43);
+            astronauteSelectionne = a;
+            astronautes.Add(a);
+            astronautes.Add(new Astronaute("Filoutub", "René", 57));
+            astronautes.Add(new Astronaute("Pasda", "Madeleine", 64));
+
+            journeesMission = astronauteSelectionne.getJourneesMission();
 
             // Stockage des éléments de l'interface [journées]
             for (int i = 1; i < 51; ++i)
@@ -84,13 +91,13 @@ namespace MarsApp
             TimeMartien nb = TimeMartien.calculerJours(debutMission);
             int numJour = nb.getJours() + 1;
 
-            journeeActuelle = journeesMission[numJour];
+            foreach (Astronaute astro in astronautes)
+            {
+                astro.creerEdT(numJour);
+                astroList.Items.Add(astro);
+            }
 
-            // Mise à jour des jours : passés | en cours | à venir
-            for (int i = 1; i < numJour; ++i)
-                journeesMission[i].journeePassee();
             journeeActuelle = journeesMission[numJour];
-            journeesMission[numJour].journeeEnCours();
 
             changerPeriode(periode);
             verificationChangementPeriode();
@@ -98,6 +105,7 @@ namespace MarsApp
             miseAJourEdt(journeesMission[journeeSelectionnee]);
 
             descriptionTexte.Text = journeesMission[journeeSelectionnee].getDescription();
+            astroList.SelectedItem = astronauteSelectionne;
         }
         #endregion
 
@@ -381,6 +389,15 @@ namespace MarsApp
         {
             GestionCarte gc = new GestionCarte(journeesMission);
             gc.Show();
+        }
+
+        private void astroList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            astronauteSelectionne = (Astronaute) astroList.SelectedItems[0];
+            journeesMission = astronauteSelectionne.getJourneesMission();
+            miseAJourEdt(journeesMission[journeeSelectionnee]);
+            changerPeriode(periode);
+            this.Refresh();
         }
 #endregion
     }
