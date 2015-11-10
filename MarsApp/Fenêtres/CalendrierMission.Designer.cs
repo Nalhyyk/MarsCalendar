@@ -304,8 +304,13 @@
             this.map = new System.Windows.Forms.PictureBox();
             this.suivant = new System.Windows.Forms.PictureBox();
             this.precedent = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.astroList = new System.Windows.Forms.ListBox();
             this.label36 = new System.Windows.Forms.Label();
+=======
+            this.label36 = new System.Windows.Forms.Label();
+            this.astroList = new System.Windows.Forms.ListBox();
+>>>>>>> interface
             this.clicDroitActivite.SuspendLayout();
             this.h23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.h23img)).BeginInit();
@@ -3583,7 +3588,11 @@
             this.descriptionJournee.Size = new System.Drawing.Size(751, 97);
             this.descriptionJournee.TabIndex = 140;
             this.descriptionJournee.TabStop = false;
+<<<<<<< HEAD
             this.descriptionJournee.Text = "Description journée";
+=======
+            this.descriptionJournee.Text = "Description journée n°";
+>>>>>>> interface
             // 
             // descriptionTexte
             // 
@@ -3640,6 +3649,7 @@
             this.precedent.Tag = "-1";
             this.precedent.Click += new System.EventHandler(this.changerPeriode_Click);
             // 
+<<<<<<< HEAD
             // astroList
             // 
             this.astroList.FormattingEnabled = true;
@@ -3658,6 +3668,25 @@
             this.label36.Size = new System.Drawing.Size(92, 17);
             this.label36.TabIndex = 143;
             this.label36.Text = "Astronautes :";
+=======
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(436, 9);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(92, 17);
+            this.label36.TabIndex = 142;
+            this.label36.Text = "Astronautes :";
+            // 
+            // astroList
+            // 
+            this.astroList.FormattingEnabled = true;
+            this.astroList.Location = new System.Drawing.Point(535, 9);
+            this.astroList.Name = "astroList";
+            this.astroList.Size = new System.Drawing.Size(177, 43);
+            this.astroList.TabIndex = 143;
+>>>>>>> interface
             // 
             // CalendrierMission
             // 
@@ -3665,8 +3694,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(234)))));
             this.ClientSize = new System.Drawing.Size(1238, 707);
+<<<<<<< HEAD
             this.Controls.Add(this.label36);
             this.Controls.Add(this.astroList);
+=======
+            this.Controls.Add(this.astroList);
+            this.Controls.Add(this.label36);
+>>>>>>> interface
             this.Controls.Add(this.map);
             this.Controls.Add(this.descriptionJournee);
             this.Controls.Add(this.mars);
@@ -4293,7 +4327,12 @@
         private System.Windows.Forms.TextBox descriptionTexte;
         private System.Windows.Forms.Button saveDesc;
         private System.Windows.Forms.PictureBox map;
+<<<<<<< HEAD
         private System.Windows.Forms.ListBox astroList;
         private System.Windows.Forms.Label label36;
+=======
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.ListBox astroList;
+>>>>>>> interface
     }
 }
