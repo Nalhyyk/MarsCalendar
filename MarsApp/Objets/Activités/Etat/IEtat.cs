@@ -18,6 +18,7 @@ namespace MarsApp
         /// <summary>
         /// Retourne la couleur associée à l'état
         /// </summary>
+        /// <returns></returns>
         int[] couleur();
 
         /// <summary>
