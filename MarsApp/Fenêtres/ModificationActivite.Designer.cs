@@ -45,9 +45,9 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.descriptionTB = new System.Windows.Forms.TextBox();
             this.lieuGB = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.lieuTB = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.activiteExterieureGB.SuspendLayout();
             this.temps.SuspendLayout();
@@ -241,15 +241,13 @@
             this.lieuGB.TabStop = false;
             this.lieuGB.Text = "Lieu";
             // 
-            // pictureBox1
+            // lieuTB
             // 
-            this.pictureBox1.Image = global::MarsApp.Properties.Resources.map50px;
-            this.pictureBox1.Location = new System.Drawing.Point(277, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.lieuTB.Location = new System.Drawing.Point(99, 30);
+            this.lieuTB.Name = "lieuTB";
+            this.lieuTB.Size = new System.Drawing.Size(172, 20);
+            this.lieuTB.TabIndex = 2;
+            this.lieuTB.Text = "0;0";
             // 
             // label3
             // 
@@ -260,14 +258,15 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Coordonnées :";
             // 
-            // lieuTB
+            // pictureBox1
             // 
-            this.lieuTB.Enabled = false;
-            this.lieuTB.Location = new System.Drawing.Point(99, 30);
-            this.lieuTB.Name = "lieuTB";
-            this.lieuTB.Size = new System.Drawing.Size(172, 20);
-            this.lieuTB.TabIndex = 2;
-            this.lieuTB.Text = "0;0";
+            this.pictureBox1.Image = global::MarsApp.Properties.Resources.map50px;
+            this.pictureBox1.Location = new System.Drawing.Point(277, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // ModificationActivite
             // 

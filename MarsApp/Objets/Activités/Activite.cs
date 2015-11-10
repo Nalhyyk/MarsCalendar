@@ -178,6 +178,12 @@ namespace MarsApp
         /// </summary>
         /// <returns>Le lieu de l'activité</returns>
         public Lieu getLieu() { return lieu; }
+
+        /// <summary>
+        /// Permet de connaître le TypeActivite de l'Activite
+        /// </summary>
+        /// <returns>Le TypeActivite de l'Activite</returns>
+        public TypeActivite getTypeActivite() { return typeActivite; }
         #endregion
     }
 }

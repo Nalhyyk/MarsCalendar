@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 
 namespace MarsApp
 {
@@ -11,8 +12,8 @@ namespace MarsApp
     public interface ITransport
     {
         /// <summary>
-        /// Permet de se déplacer
+        /// Renvoie l'image du mode de déplacement
         /// </summary>
-        void deplacement();
+        Bitmap deplacement();
     }
 }

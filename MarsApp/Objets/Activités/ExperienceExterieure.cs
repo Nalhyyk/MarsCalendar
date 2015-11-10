@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 
 namespace MarsApp
 {
@@ -11,6 +12,9 @@ namespace MarsApp
     public class ExperienceExterieure : Activite
     {
         #region Constructeurs
+
+        private ITransport transport;
+
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
@@ -22,7 +26,7 @@ namespace MarsApp
         public ExperienceExterieure(TypeActivite typeActivite, String description, TimeMartien debut, TimeMartien fin, Lieu lieu)
             : base(typeActivite, description, debut, fin, lieu)
         {
-
+            transport = new Scaphandre();
         }
 
         /// <summary>
@@ -31,9 +35,14 @@ namespace MarsApp
         /// <param name="ee">Une ExperienceExterieure</param>
         public ExperienceExterieure(ExperienceExterieure ee) : base(ee)
         {
-
+            transport = new Scaphandre();
         }
         #endregion
+
+        public Bitmap deplacement()
+        {
+            return transport.deplacement();
+        }
 
         #region Accesseurs
         public override bool isActiviteExterieure()

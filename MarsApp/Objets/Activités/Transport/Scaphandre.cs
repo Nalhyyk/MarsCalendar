@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 
 namespace MarsApp
 {
@@ -20,9 +21,9 @@ namespace MarsApp
         }
         #endregion
 
-        public void deplacement()
+        public Bitmap deplacement()
         {
-            Console.WriteLine("Scaphandre");
+            return Properties.Resources.scaphandre;
         }
     }
 }

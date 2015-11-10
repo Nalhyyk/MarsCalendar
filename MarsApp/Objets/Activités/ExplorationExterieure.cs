@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 
 namespace MarsApp
 {
@@ -24,7 +25,7 @@ namespace MarsApp
         public ExplorationExterieure(TypeActivite typeActivite, String description, TimeMartien debut, TimeMartien fin, Lieu lieu)
             : base(typeActivite, description, debut, fin, lieu)
         {
-            transport = new Scaphandre();
+            transport = new Vehicule();
         }
 
         /// <summary>
@@ -56,9 +57,9 @@ namespace MarsApp
         /// <summary>
         /// Moyen de déplacement utilisé pour l'exploration
         /// </summary>
-        public void deplacement()
+        public Bitmap deplacement()
         {
-            transport.deplacement();
+            return transport.deplacement();
         }
 
         #region Accesseurs

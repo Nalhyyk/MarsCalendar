@@ -8,7 +8,7 @@ namespace MarsApp
     /// <summary>
     /// Type d'une activité
     /// </summary>
-    public class TypeActivite
+    public class TypeActivite : IComparer<TypeActivite>
     {
         private String nom;
 
@@ -22,6 +22,14 @@ namespace MarsApp
             this.nom = nom;
         }
         #endregion
+
+        public int Compare(TypeActivite x, TypeActivite y)
+        {
+            if (String.Equals(x.nom, y.nom))
+                return 0;
+            else
+                return -1;
+        }
 
         #region Accesseurs
         /// <summary>
