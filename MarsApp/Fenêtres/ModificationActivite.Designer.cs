@@ -48,6 +48,9 @@
             this.lieuTB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.transportGB = new System.Windows.Forms.GroupBox();
+            this.vehiculeRadio = new System.Windows.Forms.RadioButton();
+            this.scaphandreRadio = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.activiteExterieureGB.SuspendLayout();
             this.temps.SuspendLayout();
@@ -56,6 +59,7 @@
             this.groupBox2.SuspendLayout();
             this.lieuGB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.transportGB.SuspendLayout();
             this.SuspendLayout();
             // 
             // treeView
@@ -161,7 +165,7 @@
             this.temps.Controls.Add(this.debutHeure);
             this.temps.Controls.Add(this.label2);
             this.temps.Controls.Add(this.label1);
-            this.temps.Location = new System.Drawing.Point(250, 107);
+            this.temps.Location = new System.Drawing.Point(250, 122);
             this.temps.Name = "temps";
             this.temps.Size = new System.Drawing.Size(336, 127);
             this.temps.TabIndex = 7;
@@ -213,7 +217,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.descriptionTB);
-            this.groupBox2.Location = new System.Drawing.Point(251, 338);
+            this.groupBox2.Location = new System.Drawing.Point(251, 353);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(336, 169);
             this.groupBox2.TabIndex = 8;
@@ -234,7 +238,7 @@
             this.lieuGB.Controls.Add(this.label3);
             this.lieuGB.Controls.Add(this.pictureBox1);
             this.lieuGB.Enabled = false;
-            this.lieuGB.Location = new System.Drawing.Point(251, 251);
+            this.lieuGB.Location = new System.Drawing.Point(251, 266);
             this.lieuGB.Name = "lieuGB";
             this.lieuGB.Size = new System.Drawing.Size(336, 72);
             this.lieuGB.TabIndex = 9;
@@ -268,11 +272,47 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // transportGB
+            // 
+            this.transportGB.Controls.Add(this.vehiculeRadio);
+            this.transportGB.Controls.Add(this.scaphandreRadio);
+            this.transportGB.Enabled = false;
+            this.transportGB.Location = new System.Drawing.Point(409, 66);
+            this.transportGB.Name = "transportGB";
+            this.transportGB.Size = new System.Drawing.Size(178, 47);
+            this.transportGB.TabIndex = 7;
+            this.transportGB.TabStop = false;
+            this.transportGB.Text = "Transport";
+            // 
+            // vehiculeRadio
+            // 
+            this.vehiculeRadio.AutoSize = true;
+            this.vehiculeRadio.Location = new System.Drawing.Point(92, 19);
+            this.vehiculeRadio.Name = "vehiculeRadio";
+            this.vehiculeRadio.Size = new System.Drawing.Size(66, 17);
+            this.vehiculeRadio.TabIndex = 1;
+            this.vehiculeRadio.TabStop = true;
+            this.vehiculeRadio.Text = "Véhicule";
+            this.vehiculeRadio.UseVisualStyleBackColor = true;
+            // 
+            // scaphandreRadio
+            // 
+            this.scaphandreRadio.AutoSize = true;
+            this.scaphandreRadio.Checked = true;
+            this.scaphandreRadio.Location = new System.Drawing.Point(7, 19);
+            this.scaphandreRadio.Name = "scaphandreRadio";
+            this.scaphandreRadio.Size = new System.Drawing.Size(83, 17);
+            this.scaphandreRadio.TabIndex = 0;
+            this.scaphandreRadio.TabStop = true;
+            this.scaphandreRadio.Text = "Scaphandre";
+            this.scaphandreRadio.UseVisualStyleBackColor = true;
+            // 
             // ModificationActivite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(605, 562);
+            this.Controls.Add(this.transportGB);
             this.Controls.Add(this.lieuGB);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.temps);
@@ -296,6 +336,8 @@
             this.lieuGB.ResumeLayout(false);
             this.lieuGB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.transportGB.ResumeLayout(false);
+            this.transportGB.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -322,5 +364,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox lieuTB;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox transportGB;
+        private System.Windows.Forms.RadioButton vehiculeRadio;
+        private System.Windows.Forms.RadioButton scaphandreRadio;
     }
 }

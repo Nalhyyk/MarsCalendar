@@ -80,6 +80,8 @@ namespace MarsApp
                 foreach (TreeNode tnn in tn.Nodes)
                     if (tnn.Text.Equals(a.getNom()))
                         treeView.SelectedNode = tnn;
+
+            lieuTB.Text = activiteAModifier.getLieu().ToString();
         }
         #endregion
 
@@ -88,6 +90,7 @@ namespace MarsApp
         {
             activiteExterieureGB.Enabled = (exterieurRadio.Checked) ? true : false;
             lieuGB.Enabled = (exterieurRadio.Checked) ? true : false;
+            transportGB.Enabled = (exterieurRadio.Checked) ? true : false;
         }
 
         private void annuler_Click(object sender, EventArgs e)
@@ -103,10 +106,19 @@ namespace MarsApp
             Activite a;
 
             if (exterieurRadio.Checked)
-                if (explorationRadio.Checked)
-                    a = new ExplorationExterieure(new TypeActivite(type), descriptionTB.Text, new TimeMartien((int)debutHeure.Value), new TimeMartien((int)finHeure.Value), lieu);
+            {
+                ITransport transport;
+
+                if (vehiculeRadio.Checked)
+                    transport = new Vehicule();
                 else
-                    a = new ExperienceExterieure(new TypeActivite(type), descriptionTB.Text, new TimeMartien((int)debutHeure.Value), new TimeMartien((int)finHeure.Value), lieu);
+                    transport = new Scaphandre();
+
+                if (explorationRadio.Checked)
+                    a = new ExplorationExterieure(new TypeActivite(type), descriptionTB.Text, new TimeMartien((int)debutHeure.Value), new TimeMartien((int)finHeure.Value), lieu, transport);
+                else
+                    a = new ExperienceExterieure(new TypeActivite(type), descriptionTB.Text, new TimeMartien((int)debutHeure.Value), new TimeMartien((int)finHeure.Value), lieu, transport);
+            }
             else
                 a = new Activite(new TypeActivite(type), descriptionTB.Text, new TimeMartien((int)debutHeure.Value), new TimeMartien((int)finHeure.Value), new Lieu(0, 0));
 

@@ -79,6 +79,12 @@
     <Compile Include="Fenêtres\GestionCarte.Designer.cs">
       <DependentUpon>GestionCarte.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fenêtres\InfoActivite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\InfoActivite.Designer.cs">
+      <DependentUpon>InfoActivite.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fenêtres\ModificationActivite.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fenêtres\GestionCarte.resx">
       <DependentUpon>GestionCarte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenêtres\InfoActivite.resx">
+      <DependentUpon>InfoActivite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fenêtres\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>

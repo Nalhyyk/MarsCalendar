@@ -207,7 +207,7 @@ namespace MarsApp
                 heures[i].Text = a.getNom();
                 
                 foreach (Domaine d in domaines)
-                    if (d.getNomActivites().Contains(a.getNom()))
+                    if (d.getNomActivites().Contains(a.getNom()) || d.getNom().Equals(a.getNom()))
                         heures[i].BackColor = Color.FromArgb(d.getCouleur()[0], d.getCouleur()[1], d.getCouleur()[2]);
 
                 if (a.isActiviteExterieure())
@@ -226,7 +226,7 @@ namespace MarsApp
         /// </summary>
         public void initialiserDomaines()
         {
-            Domaine d = new Domaine("Vie", new int[]{255, 178, 178});
+            Domaine d = new Domaine("Vie", new int[] { 255, 204, 204 });
             d.ajouterActivite(new TypeActivite("Manger"));
             d.ajouterActivite(new TypeActivite("Dormir"));
             d.ajouterActivite(new TypeActivite("Entraînement"));
@@ -235,7 +235,7 @@ namespace MarsApp
             d.ajouterActivite(new TypeActivite("Acte médical"));
             domaines.Add(d);
 
-            d = new Domaine("Science", new int[] {178, 198, 255});
+            d = new Domaine("Science", new int[] { 204, 230, 255 });
             d.ajouterActivite(new TypeActivite("Exploration"));
             d.ajouterActivite(new TypeActivite("Briefing"));
             d.ajouterActivite(new TypeActivite("Débriefing"));
@@ -243,7 +243,7 @@ namespace MarsApp
             d.ajouterActivite(new TypeActivite("Expérience en extérieur"));
             domaines.Add(d);
 
-            d = new Domaine("Maintenance", new int[] {217, 178, 255});
+            d = new Domaine("Maintenance", new int[] { 217, 204, 255 });
             d.ajouterActivite(new TypeActivite("Nettoyage"));
             d.ajouterActivite(new TypeActivite("LSS système d'air"));
             d.ajouterActivite(new TypeActivite("LSS système d'eau"));
@@ -254,12 +254,12 @@ namespace MarsApp
             d.ajouterActivite(new TypeActivite("Autre"));
             domaines.Add(d);
 
-            d = new Domaine("Communication", new int[] {189, 255, 178});
+            d = new Domaine("Communication", new int[] { 204, 255, 204 });
             d.ajouterActivite(new TypeActivite("Envoyer message"));
             d.ajouterActivite(new TypeActivite("Recevoir message"));
             domaines.Add(d);
 
-            d = new Domaine("Réparation", new int[] {178, 255, 226});
+            d = new Domaine("Réparation", new int[] { 240, 240, 192 });
             d.ajouterActivite(new TypeActivite("LSS"));
             d.ajouterActivite(new TypeActivite("Systèmes électriques"));
             d.ajouterActivite(new TypeActivite("Systèmes de communication"));
@@ -269,7 +269,7 @@ namespace MarsApp
             d.ajouterActivite(new TypeActivite("Véhicule"));
             domaines.Add(d);
 
-            d = new Domaine("Secours", new int[] {178, 255, 226});
+            d = new Domaine("Secours", new int[] { 255, 204, 255 });
             domaines.Add(d);
         }
 
@@ -405,7 +405,16 @@ namespace MarsApp
             journeesMission = astronauteSelectionne.getJourneesMission();
             miseAJourEdt(journeesMission[journeeSelectionnee]);
             changerPeriode(periode);
+            descriptionTexte.Text = journeesMission[journeeSelectionnee].getDescription();
             this.Refresh();
+        }
+
+        private void informationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Journee journee = journeesMission[journeeSelectionnee];
+            Activite activiteAAfficher = journee.trouverActivite(heureSelectionnee);
+            InfoActivite ia = new InfoActivite(activiteAAfficher);
+            ia.Show();
         }
 #endregion
     }

@@ -22,10 +22,11 @@ namespace MarsApp
         /// <param name="debut">Date de début de l'Activite</param>
         /// <param name="fin">Date de fin de l'Activite</param>
         /// <param name="lieu">Lieu de l'Activite</param>
-        public ExplorationExterieure(TypeActivite typeActivite, String description, TimeMartien debut, TimeMartien fin, Lieu lieu)
+        /// <param name="transport">Moyen de transport pour l'Activite</param>
+        public ExplorationExterieure(TypeActivite typeActivite, String description, TimeMartien debut, TimeMartien fin, Lieu lieu, ITransport transport)
             : base(typeActivite, description, debut, fin, lieu)
         {
-            transport = new Vehicule();
+            this.transport = transport;
         }
 
         /// <summary>

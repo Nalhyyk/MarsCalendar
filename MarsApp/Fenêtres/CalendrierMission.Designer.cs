@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalendrierMission));
             this.clicDroitActivite = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.informationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Modifier = new System.Windows.Forms.ToolStripMenuItem();
             this.Supprimer = new System.Windows.Forms.ToolStripMenuItem();
             this.label25 = new System.Windows.Forms.Label();
@@ -414,22 +415,30 @@
             // clicDroitActivite
             // 
             this.clicDroitActivite.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.informationsToolStripMenuItem,
             this.Modifier,
             this.Supprimer});
             this.clicDroitActivite.Name = "contextMenuStrip1";
-            this.clicDroitActivite.Size = new System.Drawing.Size(130, 48);
+            this.clicDroitActivite.Size = new System.Drawing.Size(143, 70);
+            // 
+            // informationsToolStripMenuItem
+            // 
+            this.informationsToolStripMenuItem.Name = "informationsToolStripMenuItem";
+            this.informationsToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.informationsToolStripMenuItem.Text = "Informations";
+            this.informationsToolStripMenuItem.Click += new System.EventHandler(this.informationsToolStripMenuItem_Click);
             // 
             // Modifier
             // 
             this.Modifier.Name = "Modifier";
-            this.Modifier.Size = new System.Drawing.Size(129, 22);
+            this.Modifier.Size = new System.Drawing.Size(142, 22);
             this.Modifier.Text = "Modifier";
             this.Modifier.Click += new System.EventHandler(this.Modifier_Click);
             // 
             // Supprimer
             // 
             this.Supprimer.Name = "Supprimer";
-            this.Supprimer.Size = new System.Drawing.Size(129, 22);
+            this.Supprimer.Size = new System.Drawing.Size(142, 22);
             this.Supprimer.Text = "Supprimer";
             this.Supprimer.Click += new System.EventHandler(this.Supprimer_Click);
             // 
@@ -2758,6 +2767,8 @@
             // actH0
             // 
             this.actH0.AutoSize = true;
+            this.actH0.BackColor = System.Drawing.Color.Transparent;
+            this.actH0.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH0.Location = new System.Drawing.Point(932, 54);
@@ -2784,6 +2795,8 @@
             // actH1
             // 
             this.actH1.AutoSize = true;
+            this.actH1.BackColor = System.Drawing.Color.Transparent;
+            this.actH1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH1.Location = new System.Drawing.Point(932, 76);
@@ -2810,6 +2823,8 @@
             // actH3
             // 
             this.actH3.AutoSize = true;
+            this.actH3.BackColor = System.Drawing.Color.Transparent;
+            this.actH3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH3.Location = new System.Drawing.Point(932, 120);
@@ -2836,6 +2851,8 @@
             // actH2
             // 
             this.actH2.AutoSize = true;
+            this.actH2.BackColor = System.Drawing.Color.Transparent;
+            this.actH2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH2.Location = new System.Drawing.Point(932, 98);
@@ -2862,6 +2879,8 @@
             // actH7
             // 
             this.actH7.AutoSize = true;
+            this.actH7.BackColor = System.Drawing.Color.Transparent;
+            this.actH7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH7.Location = new System.Drawing.Point(932, 208);
@@ -2888,6 +2907,8 @@
             // actH6
             // 
             this.actH6.AutoSize = true;
+            this.actH6.BackColor = System.Drawing.Color.Transparent;
+            this.actH6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH6.Location = new System.Drawing.Point(932, 186);
@@ -2914,6 +2935,8 @@
             // actH5
             // 
             this.actH5.AutoSize = true;
+            this.actH5.BackColor = System.Drawing.Color.Transparent;
+            this.actH5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH5.Location = new System.Drawing.Point(932, 164);
@@ -2940,6 +2963,8 @@
             // actH4
             // 
             this.actH4.AutoSize = true;
+            this.actH4.BackColor = System.Drawing.Color.Transparent;
+            this.actH4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH4.Location = new System.Drawing.Point(932, 142);
@@ -2966,6 +2991,8 @@
             // actH11
             // 
             this.actH11.AutoSize = true;
+            this.actH11.BackColor = System.Drawing.Color.Transparent;
+            this.actH11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH11.Location = new System.Drawing.Point(932, 298);
@@ -2992,6 +3019,8 @@
             // actH10
             // 
             this.actH10.AutoSize = true;
+            this.actH10.BackColor = System.Drawing.Color.Transparent;
+            this.actH10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH10.Location = new System.Drawing.Point(932, 276);
@@ -3018,6 +3047,8 @@
             // actH9
             // 
             this.actH9.AutoSize = true;
+            this.actH9.BackColor = System.Drawing.Color.Transparent;
+            this.actH9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH9.Location = new System.Drawing.Point(932, 254);
@@ -3044,6 +3075,8 @@
             // actH8
             // 
             this.actH8.AutoSize = true;
+            this.actH8.BackColor = System.Drawing.Color.Transparent;
+            this.actH8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH8.Location = new System.Drawing.Point(932, 232);
@@ -3070,6 +3103,8 @@
             // actH23
             // 
             this.actH23.AutoSize = true;
+            this.actH23.BackColor = System.Drawing.Color.Transparent;
+            this.actH23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH23.Location = new System.Drawing.Point(932, 564);
@@ -3096,6 +3131,8 @@
             // actH22
             // 
             this.actH22.AutoSize = true;
+            this.actH22.BackColor = System.Drawing.Color.Transparent;
+            this.actH22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH22.Location = new System.Drawing.Point(932, 542);
@@ -3122,6 +3159,8 @@
             // actH21
             // 
             this.actH21.AutoSize = true;
+            this.actH21.BackColor = System.Drawing.Color.Transparent;
+            this.actH21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH21.Location = new System.Drawing.Point(932, 520);
@@ -3148,6 +3187,8 @@
             // actH20
             // 
             this.actH20.AutoSize = true;
+            this.actH20.BackColor = System.Drawing.Color.Transparent;
+            this.actH20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH20.Location = new System.Drawing.Point(932, 498);
@@ -3174,6 +3215,8 @@
             // actH19
             // 
             this.actH19.AutoSize = true;
+            this.actH19.BackColor = System.Drawing.Color.Transparent;
+            this.actH19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH19.Location = new System.Drawing.Point(932, 474);
@@ -3200,6 +3243,8 @@
             // actH18
             // 
             this.actH18.AutoSize = true;
+            this.actH18.BackColor = System.Drawing.Color.Transparent;
+            this.actH18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH18.Location = new System.Drawing.Point(932, 452);
@@ -3226,6 +3271,8 @@
             // actH17
             // 
             this.actH17.AutoSize = true;
+            this.actH17.BackColor = System.Drawing.Color.Transparent;
+            this.actH17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH17.Location = new System.Drawing.Point(932, 430);
@@ -3252,6 +3299,8 @@
             // actH16
             // 
             this.actH16.AutoSize = true;
+            this.actH16.BackColor = System.Drawing.Color.Transparent;
+            this.actH16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH16.Location = new System.Drawing.Point(932, 408);
@@ -3278,6 +3327,8 @@
             // actH15
             // 
             this.actH15.AutoSize = true;
+            this.actH15.BackColor = System.Drawing.Color.Transparent;
+            this.actH15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH15.Location = new System.Drawing.Point(932, 386);
@@ -3304,6 +3355,8 @@
             // actH14
             // 
             this.actH14.AutoSize = true;
+            this.actH14.BackColor = System.Drawing.Color.Transparent;
+            this.actH14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH14.Location = new System.Drawing.Point(932, 364);
@@ -3330,6 +3383,8 @@
             // actH13
             // 
             this.actH13.AutoSize = true;
+            this.actH13.BackColor = System.Drawing.Color.Transparent;
+            this.actH13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH13.Location = new System.Drawing.Point(932, 342);
@@ -3356,6 +3411,8 @@
             // actH12
             // 
             this.actH12.AutoSize = true;
+            this.actH12.BackColor = System.Drawing.Color.Transparent;
+            this.actH12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actH12.Location = new System.Drawing.Point(932, 320);
@@ -3375,52 +3432,52 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(234)))));
             this.ClientSize = new System.Drawing.Size(1238, 707);
             this.Controls.Add(this.h23img);
-            this.Controls.Add(this.actH23);
             this.Controls.Add(this.h22img);
-            this.Controls.Add(this.actH22);
             this.Controls.Add(this.h21img);
-            this.Controls.Add(this.actH21);
             this.Controls.Add(this.h20img);
-            this.Controls.Add(this.actH20);
             this.Controls.Add(this.h19img);
-            this.Controls.Add(this.actH19);
             this.Controls.Add(this.h18img);
-            this.Controls.Add(this.actH18);
             this.Controls.Add(this.h17img);
-            this.Controls.Add(this.actH17);
             this.Controls.Add(this.h16img);
-            this.Controls.Add(this.actH16);
             this.Controls.Add(this.h15img);
-            this.Controls.Add(this.actH15);
             this.Controls.Add(this.h14img);
-            this.Controls.Add(this.actH14);
             this.Controls.Add(this.h13img);
-            this.Controls.Add(this.actH13);
             this.Controls.Add(this.h12img);
-            this.Controls.Add(this.actH12);
             this.Controls.Add(this.h11img);
-            this.Controls.Add(this.actH11);
             this.Controls.Add(this.h10img);
-            this.Controls.Add(this.actH10);
             this.Controls.Add(this.h9img);
-            this.Controls.Add(this.actH9);
             this.Controls.Add(this.h8img);
-            this.Controls.Add(this.actH8);
             this.Controls.Add(this.h7img);
-            this.Controls.Add(this.actH7);
             this.Controls.Add(this.h6img);
-            this.Controls.Add(this.actH6);
             this.Controls.Add(this.h5img);
-            this.Controls.Add(this.actH5);
             this.Controls.Add(this.h4img);
-            this.Controls.Add(this.actH4);
             this.Controls.Add(this.h3img);
-            this.Controls.Add(this.actH3);
             this.Controls.Add(this.h2img);
-            this.Controls.Add(this.actH2);
             this.Controls.Add(this.h1img);
-            this.Controls.Add(this.actH1);
             this.Controls.Add(this.h0img);
+            this.Controls.Add(this.actH23);
+            this.Controls.Add(this.actH22);
+            this.Controls.Add(this.actH21);
+            this.Controls.Add(this.actH20);
+            this.Controls.Add(this.actH19);
+            this.Controls.Add(this.actH18);
+            this.Controls.Add(this.actH17);
+            this.Controls.Add(this.actH16);
+            this.Controls.Add(this.actH15);
+            this.Controls.Add(this.actH14);
+            this.Controls.Add(this.actH13);
+            this.Controls.Add(this.actH12);
+            this.Controls.Add(this.actH11);
+            this.Controls.Add(this.actH10);
+            this.Controls.Add(this.actH9);
+            this.Controls.Add(this.actH8);
+            this.Controls.Add(this.actH7);
+            this.Controls.Add(this.actH6);
+            this.Controls.Add(this.actH5);
+            this.Controls.Add(this.actH4);
+            this.Controls.Add(this.actH3);
+            this.Controls.Add(this.actH2);
+            this.Controls.Add(this.actH1);
             this.Controls.Add(this.actH0);
             this.Controls.Add(this.label36);
             this.Controls.Add(this.astroList);
@@ -3954,5 +4011,6 @@
         private System.Windows.Forms.Label actH13;
         private System.Windows.Forms.PictureBox h12img;
         private System.Windows.Forms.Label actH12;
+        private System.Windows.Forms.ToolStripMenuItem informationsToolStripMenuItem;
     }
 }

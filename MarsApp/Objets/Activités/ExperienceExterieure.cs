@@ -24,9 +24,24 @@ namespace MarsApp
         /// <param name="fin">Date de fin de l'Activite</param>
         /// <param name="lieu">Lieu de l'Activite</param>
         public ExperienceExterieure(TypeActivite typeActivite, String description, TimeMartien debut, TimeMartien fin, Lieu lieu)
+            : this(typeActivite, description, debut, fin, lieu, new Scaphandre())
+        {
+            
+        }
+
+        /// <summary>
+        /// Constructeur paramétré
+        /// </summary>
+        /// <param name="typeActivite">Type de l'Activite</param>
+        /// <param name="description">Description de l'Activite</param>
+        /// <param name="debut">Date de début de l'Activite</param>
+        /// <param name="fin">Date de fin de l'Activite</param>
+        /// <param name="lieu">Lieu de l'Activite</param>
+        /// <param name="transport">Moyen de transport pour l'Activite</param>
+        public ExperienceExterieure(TypeActivite typeActivite, String description, TimeMartien debut, TimeMartien fin, Lieu lieu, ITransport transport)
             : base(typeActivite, description, debut, fin, lieu)
         {
-            transport = new Scaphandre();
+            this.transport = transport;
         }
 
         /// <summary>
