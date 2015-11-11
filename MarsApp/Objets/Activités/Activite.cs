@@ -118,7 +118,25 @@ namespace MarsApp
             activite.AppendChild(typeActivite);
             this.typeActivite.genererXML(xmlDoc, typeActivite);
 
+            XmlNode description = xmlDoc.CreateElement("Description");
+            activite.AppendChild(description);
+            description.InnerText = this.description;
 
+            XmlNode etat = xmlDoc.CreateElement("Etat");
+            etat.InnerText = this.etat.etat();
+            activite.AppendChild(etat);
+
+            XmlNode heureDebut = xmlDoc.CreateElement("HeureDebut");
+            activite.AppendChild(heureDebut);
+            this.heureDebut.genererXML(xmlDoc, heureDebut);
+
+            XmlNode heureFin = xmlDoc.CreateElement("HeureFin");
+            activite.AppendChild(heureFin);
+            this.heureFin.genererXML(xmlDoc, heureFin);
+
+            XmlNode lieu = xmlDoc.CreateElement("Lieu");
+            activite.AppendChild(lieu);
+            this.lieu.genererXML(xmlDoc, lieu);
         }
         #endregion
 

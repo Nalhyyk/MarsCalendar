@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
 
 namespace MarsApp
 {
@@ -230,6 +231,27 @@ namespace MarsApp
 
             return tm;
         }
+
+        #region Génération XML
+        public void genererXML(XmlDocument xmlDoc, XmlNode heureMartienne)
+        {
+            XmlNode jours = xmlDoc.CreateElement("Jours");
+            heureMartienne.AppendChild(jours);
+            jours.InnerText = this.jours.ToString();
+
+            XmlNode heures = xmlDoc.CreateElement("Heures");
+            heureMartienne.AppendChild(heures);
+            heures.InnerText = this.heure.ToString();
+
+            XmlNode minutes = xmlDoc.CreateElement("Minutes");
+            heureMartienne.AppendChild(minutes);
+            minutes.InnerText = this.minute.ToString();
+
+            XmlNode secondes = xmlDoc.CreateElement("Secondes");
+            heureMartienne.AppendChild(secondes);
+            secondes.InnerText = this.seconde.ToString();
+        }
+        #endregion
 
         #region Accesseurs
         /// <summary>

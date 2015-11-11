@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace MarsApp
 {
@@ -54,6 +55,19 @@ namespace MarsApp
             x = (int) Math.Round(x * Constantes.RAPPORT_CARTES, 0) - Constantes.POSITION_BASE_X;
             y = (int) Math.Round(y * Constantes.RAPPORT_CARTES, 0) - Constantes.POSITION_BASE_Y;
         }
+
+        #region Génération XML
+        public void genererXML(XmlDocument xmlDoc, XmlNode lieu)
+        {
+            XmlNode x = xmlDoc.CreateElement("X");
+            x.InnerText = this.x.ToString();
+            lieu.AppendChild(x);
+
+            XmlNode y = xmlDoc.CreateElement("Y");
+            y.InnerText = this.y.ToString();
+            lieu.AppendChild(y);
+        }
+        #endregion
 
         #region Accesseurs
         /// <summary>

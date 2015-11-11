@@ -278,17 +278,48 @@ namespace MarsApp
         public void genererDocXML()
         {
             XmlDocument xmlDoc = new XmlDocument();
+
+            XmlNode donnees = xmlDoc.CreateElement("Donnees");
+            xmlDoc.AppendChild(donnees);
+
+            XmlNode debutMission = xmlDoc.CreateElement("DebutMission");
+            donnees.AppendChild(debutMission);
+
+            XmlNode jour = xmlDoc.CreateElement("Jour");
+            XmlNode mois = xmlDoc.CreateElement("Mois");
+            XmlNode annee = xmlDoc.CreateElement("Annee");
+            XmlNode heures = xmlDoc.CreateElement("Heures");
+            XmlNode minutes = xmlDoc.CreateElement("Minutes");
+            XmlNode secondes = xmlDoc.CreateElement("Secondes");
+
+            debutMission.AppendChild(jour);
+            debutMission.AppendChild(mois);
+            debutMission.AppendChild(annee);
+            debutMission.AppendChild(heures);
+            debutMission.AppendChild(minutes);
+            debutMission.AppendChild(secondes);
+
+            jour.InnerText = this.debutMission.Day.ToString();
+            mois.InnerText = this.debutMission.Month.ToString();
+            annee.InnerText = this.debutMission.Year.ToString();
+            heures.InnerText = this.debutMission.Hour.ToString();
+            minutes.InnerText = this.debutMission.Minute.ToString();
+            secondes.InnerText = this.debutMission.Second.ToString();
+
             XmlNode astronautes = xmlDoc.CreateElement("Astronautes");
-            xmlDoc.AppendChild(astronautes);
+            donnees.AppendChild(astronautes);
             
-            foreach (Astronaute a in astronautes)
+            foreach (Astronaute a in this.astronautes)
             {
                 XmlNode astronaute = xmlDoc.CreateElement("Astronaute");
                 astronautes.AppendChild(astronaute);
                 a.genererXML(xmlDoc, astronaute);
             }
 
-            xmlDoc.Save("Mars-o-Matic.xml");
+            if (!System.IO.Directory.Exists("Donnees"))
+                System.IO.Directory.CreateDirectory("Donnees");
+
+            xmlDoc.Save("Donnees/Mars-o-Matic.xml");
         }
         #endregion
 
@@ -386,6 +417,7 @@ namespace MarsApp
 
         private void CalendrierMission_FormClosed(object sender, FormClosedEventArgs e)
         {
+            genererDocXML();
             fermerApplication();
         }
 
