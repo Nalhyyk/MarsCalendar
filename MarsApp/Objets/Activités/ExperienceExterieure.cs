@@ -69,6 +69,16 @@ namespace MarsApp
         {
             return false;
         }
+
+        public override bool isExperience()
+        {
+            return true;
+        }
+
+        public String nomTransport()
+        {
+            return transport.nomTransport();
+        }
         #endregion
     }
 }

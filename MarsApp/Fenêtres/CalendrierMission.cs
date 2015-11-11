@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace MarsApp
 {
@@ -272,6 +273,24 @@ namespace MarsApp
             d = new Domaine("Secours", new int[] { 255, 204, 255 });
             domaines.Add(d);
         }
+
+        #region Génération XML
+        public void genererDocXML()
+        {
+            XmlDocument xmlDoc = new XmlDocument();
+            XmlNode astronautes = xmlDoc.CreateElement("Astronautes");
+            xmlDoc.AppendChild(astronautes);
+            
+            foreach (Astronaute a in astronautes)
+            {
+                XmlNode astronaute = xmlDoc.CreateElement("Astronaute");
+                astronautes.AppendChild(astronaute);
+                a.genererXML(xmlDoc, astronaute);
+            }
+
+            xmlDoc.Save("Mars-o-Matic.xml");
+        }
+        #endregion
 
         #region Evènements
         private void Modifier_Click(object sender, EventArgs e)

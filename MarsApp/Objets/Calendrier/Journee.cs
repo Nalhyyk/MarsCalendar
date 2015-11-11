@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
 
 namespace MarsApp
 {
@@ -133,6 +134,34 @@ namespace MarsApp
 
             return null;
         }
+
+        #region Génération XML
+        public void genererXML(XmlDocument xmlDoc, XmlNode journee)
+        {
+            XmlNode num = xmlDoc.CreateElement("Numero");
+            num.InnerText = this.numero.ToString();
+            journee.AppendChild(num);
+
+            XmlNode etat = xmlDoc.CreateElement("Etat");
+            etat.InnerText = this.etat.etat();
+            journee.AppendChild(etat);
+
+            XmlNode rapport = xmlDoc.CreateElement("Rapport");
+            rapport.InnerText = this.rapport;
+            journee.AppendChild(rapport);
+
+            XmlNode activites = xmlDoc.CreateElement("Activites");
+            journee.AppendChild(activites);
+
+            foreach (Activite a in listeActivites)
+            {
+                XmlNode activite = xmlDoc.CreateElement("Activite");
+                activites.AppendChild(activite);
+
+                a.genererXML(xmlDoc, activite);
+            }
+        }
+        #endregion
 
         #region Accesseurs
         /// <summary>

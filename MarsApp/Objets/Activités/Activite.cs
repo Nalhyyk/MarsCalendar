@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
 
 namespace MarsApp
 {
@@ -88,6 +89,39 @@ namespace MarsApp
             etat = new Futur();
         }
 
+        #region Génération XML
+        public void genererXML(XmlDocument xmlDoc, XmlNode activite)
+        {
+            bool actExt = (isExploration() || isExperience());
+
+            XmlNode exterieure = xmlDoc.CreateElement("Exterieure");
+            exterieure.InnerText = actExt.ToString();
+            activite.AppendChild(exterieure);
+
+            XmlNode exploration = xmlDoc.CreateElement("Exploration");
+            exploration.InnerText = isExploration().ToString();
+            activite.AppendChild(exploration);
+
+            XmlNode transport = xmlDoc.CreateElement("Transport");
+
+            if (actExt)
+                if (isExploration())
+                    transport.InnerText = ((ExplorationExterieure) this).nomTransport();
+                else
+                    transport.InnerText = ((ExperienceExterieure) this).nomTransport();
+            else
+                transport.InnerText = "null";
+
+            activite.AppendChild(transport);
+
+            XmlNode typeActivite = xmlDoc.CreateElement("TypeActivite");
+            activite.AppendChild(typeActivite);
+            this.typeActivite.genererXML(xmlDoc, typeActivite);
+
+
+        }
+        #endregion
+
         #region Accesseurs
         /// <summary>
         /// Modifie la description de l'Activite. Elle doit faire 400 caractères maximum
@@ -118,6 +152,15 @@ namespace MarsApp
         /// </summary>
         /// <returns>Vrai si l'activité est une exploration, faux sinon</returns>
         public virtual bool isExploration()
+        {
+            return false;
+        }
+
+        /// <summary>
+        /// Permet de savoir si l'activité est une activité d'expérience
+        /// </summary>
+        /// <returns>Vrai si l'activité est une experience, faux sinon</returns>
+        public virtual bool isExperience()
         {
             return false;
         }

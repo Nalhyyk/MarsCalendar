@@ -15,5 +15,11 @@ namespace MarsApp
         /// Renvoie l'image du mode de déplacement
         /// </summary>
         Bitmap deplacement();
+
+        /// <summary>
+        /// Renvoie le nom du transport
+        /// </summary>
+        /// <returns></returns>
+        String nomTransport();
     }
 }

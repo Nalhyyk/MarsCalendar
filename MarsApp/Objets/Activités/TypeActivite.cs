@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
 
 namespace MarsApp
 {
     /// <summary>
     /// Type d'une activité
     /// </summary>
-    public class TypeActivite : IComparer<TypeActivite>
+    public class TypeActivite
     {
         private String nom;
 
@@ -23,13 +24,14 @@ namespace MarsApp
         }
         #endregion
 
-        public int Compare(TypeActivite x, TypeActivite y)
+        #region Génération XML
+        public void genererXML(XmlDocument xmlDoc, XmlNode typeActivite)
         {
-            if (String.Equals(x.nom, y.nom))
-                return 0;
-            else
-                return -1;
+            XmlNode nom = xmlDoc.CreateElement("Nom");
+            typeActivite.AppendChild(nom);
+            nom.InnerText = this.nom;
         }
+        #endregion
 
         #region Accesseurs
         /// <summary>

@@ -16,6 +16,7 @@ namespace MarsApp
     {
         private Activite activiteSelectionnee;
 
+        #region Constructeurs
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
@@ -71,10 +72,13 @@ namespace MarsApp
 
             lieuTB.Text = activiteSelectionnee.getLieu().ToString();
         }
+        #endregion
 
+        #region Evènements
         private void ok_Click(object sender, EventArgs e)
         {
             fermerFenetre();
         }
+        #endregion
     }
 }

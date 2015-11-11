@@ -25,5 +25,11 @@ namespace MarsApp
         {
             return Properties.Resources.scaphandre;
         }
+
+
+        public string nomTransport()
+        {
+            return "Scaphandre";
+        }
     }
 }
