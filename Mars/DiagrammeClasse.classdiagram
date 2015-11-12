@@ -21,22 +21,6 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="1cea8af1-9dda-4da7-a000-d1b33073a718" />
           </association>
-          <association Id="464226c9-f15a-48a5-ae1b-5b518606ce20" isDerived="false" sourceEndRoleName="Activite" targetEndRoleName="Astronaute" isLeaf="false" isAbstract="false">
-            <classMoniker Id="6c020982-7349-4956-b44e-8314f29fb253" LastKnownName="Astronaute" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="d6ab82bc-7814-4d37-a3b1-ec7d3438b0e9" name="Activite" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="01be2e41-2230-4e87-9134-f224308ec145" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="8e768f4d-4028-40ca-99aa-f60e01e7c40d" name="Astronaute" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="c8adc381-a2b0-4ff2-b64e-2427c516778b" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="5cf90a7f-5893-416f-b3d8-4f035a68eb79" />
-          </association>
           <association Id="ab9e1ed5-792c-4147-bd33-d9e8dbf3037e" isDerived="false" sourceEndRoleName="Activite" targetEndRoleName="TypeActivite" isLeaf="false" isAbstract="false">
             <classMoniker Id="c31492c1-3a0f-494d-b843-ef217abc346d" LastKnownName="TypeActivite" />
             <relationshipOwnedElementsInternal>
@@ -83,22 +67,6 @@
       <class Id="49280a4e-29ed-4ba8-9491-509f6b098f74" name="Journée" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f10cc0bd-e5df-4c37-bdcd-66b644afb281" />
         <targetEnds>
-          <association Id="a26ac15e-aeb1-455d-8518-98c6e2eafe4f" isDerived="false" sourceEndRoleName="Journée" targetEndRoleName="Activite" isLeaf="false" isAbstract="false">
-            <classMoniker Id="f1e0cea0-5630-4019-ac47-3a0c2fc775a6" LastKnownName="Activite" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="12a11b78-891a-45f6-8d67-1dd0616c5536" name="Journée" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="b4e65c33-28ea-4382-bee0-97663ac75b31" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="eacd92ba-da25-443e-9c3c-82f8f1c997a6" name="Activite" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="1766bdab-0944-4ab3-be83-68389027a992" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="bf57c5ba-02ce-4eb4-a1fe-cb81abc4f460" />
-          </association>
           <association Id="9f4c72e1-c107-4c08-b4c7-6baeb4789269" isDerived="false" sourceEndRoleName="Journée" targetEndRoleName="IEtat" isLeaf="false" isAbstract="false">
             <interfaceMoniker Id="e3c883f3-ee34-4bb7-b5ee-14768f7da599" LastKnownName="IEtat" />
             <relationshipOwnedElementsInternal>
@@ -114,6 +82,22 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="02edb257-e0a2-4bd1-860a-612a60d3366f" />
+          </association>
+          <association Id="78a38e20-e720-4033-8f6f-345f251e5bac" isDerived="false" sourceEndRoleName="Journée" targetEndRoleName="Activite" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f1e0cea0-5630-4019-ac47-3a0c2fc775a6" LastKnownName="Activite" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5f72b597-a49a-4c75-8611-811aee14ea8e" name="Journée" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8740e6c0-e200-4b63-b603-c1933c1d701b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="720b670d-7b5b-4362-88fc-d97bcdb83f1c" name="Activite" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="5941b8da-424e-4fea-a412-8fc9e27c8845" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5065c2ca-c4d7-4f71-8faa-98ef2b495979" />
           </association>
         </targetEnds>
       </class>
@@ -234,6 +218,24 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="6c020982-7349-4956-b44e-8314f29fb253" name="Astronaute" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5a815898-3d3d-4d3a-9eeb-bce5ec2f068f" />
+        <targetEnds>
+          <association Id="59951860-b894-47b8-b087-8e6c95f17d8d" isDerived="false" sourceEndRoleName="Astronaute" targetEndRoleName="Journée" isLeaf="false" isAbstract="false">
+            <classMoniker Id="49280a4e-29ed-4ba8-9491-509f6b098f74" LastKnownName="Journée" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="602ad976-3415-41c2-bae7-6e4c718d1b7b" name="Astronaute" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b39a66ae-b80a-4fb1-b653-075548a1405c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0dd62c5a-ab7b-43fe-848b-4bbbb19fcfa2" name="Journée" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="f72510c0-ed68-4451-8b0a-7bc99516a07a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e14cbc8f-106a-4161-aee7-78e4f8d1a0b4" />
+          </association>
+        </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>

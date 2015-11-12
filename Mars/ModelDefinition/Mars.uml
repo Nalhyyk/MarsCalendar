@@ -144,45 +144,6 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="5cf90a7f-5893-416f-b3d8-4f035a68eb79"
-            isDerived="false"
-            sourceEndRoleName="Activite"
-            targetEndRoleName="Astronaute"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="5a815898-3d3d-4d3a-9eeb-bce5ec2f068f"
-              LastKnownName="Astronaute"
-              LastKnownLocation="Mars.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="01be2e41-2230-4e87-9134-f224308ec145"
-                  name="Activite"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="c8adc381-a2b0-4ff2-b64e-2427c516778b"
-                  name="Astronaute"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="b49f9fe6-c09d-4ea9-857f-2655fcb5d4dc"
             isDerived="false"
             sourceEndRoleName="Activite"
@@ -448,45 +409,6 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="bf57c5ba-02ce-4eb4-a1fe-cb81abc4f460"
-            isDerived="false"
-            sourceEndRoleName="Journée"
-            targetEndRoleName="Activite"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="1ba0ea0b-dcdc-4b15-a28f-cc3074dda23a"
-              LastKnownName="Activite"
-              LastKnownLocation="Mars.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="b4e65c33-28ea-4382-bee0-97663ac75b31"
-                  name="Journée"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="1766bdab-0944-4ab3-be83-68389027a992"
-                  name="Activite"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="02edb257-e0a2-4bd1-860a-612a60d3366f"
             isDerived="false"
             sourceEndRoleName="Journée"
@@ -522,6 +444,45 @@
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5065c2ca-c4d7-4f71-8faa-98ef2b495979"
+            isDerived="false"
+            sourceEndRoleName="Journée"
+            targetEndRoleName="Activite"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1ba0ea0b-dcdc-4b15-a28f-cc3074dda23a"
+              LastKnownName="Activite"
+              LastKnownLocation="Mars.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8740e6c0-e200-4b63-b603-c1933c1d701b"
+                  name="Journée"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5941b8da-424e-4fea-a412-8fc9e27c8845"
+                  name="Activite"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -814,7 +775,49 @@
         name="Astronaute"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="e14cbc8f-106a-4161-aee7-78e4f8d1a0b4"
+            isDerived="false"
+            sourceEndRoleName="Astronaute"
+            targetEndRoleName="Journée"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f10cc0bd-e5df-4c37-bdcd-66b644afb281"
+              LastKnownName="Journée"
+              LastKnownLocation="Mars.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b39a66ae-b80a-4fb1-b653-075548a1405c"
+                  name="Astronaute"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f72510c0-ed68-4451-8b0a-7bc99516a07a"
+                  name="Journée"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class

@@ -227,6 +227,54 @@ namespace MarsApp
         /// </summary>
         public void initialiserDomaines()
         {
+            XmlDocument xmlDoc = new XmlDocument();
+
+            try
+            {
+                xmlDoc.Load("Donnees/Domaines.xml");
+            }
+            catch
+            {
+                string message = "Aucun fichier de sauvegarde n'a été trouvé.";
+                MessageBox.Show(message);
+                creationDomainesAutomatique();
+                return;
+            }
+
+            XmlNodeList nodeListDomaines = xmlDoc.GetElementsByTagName("Domaine");
+
+            foreach (XmlNode node in nodeListDomaines)
+            {
+                String nom = node.SelectSingleNode("Nom").InnerText;
+                String r = node.SelectSingleNode("R").InnerText;
+                String g = node.SelectSingleNode("G").InnerText;
+                String b = node.SelectSingleNode("B").InnerText;
+                int[] couleur;
+
+                try
+                {
+                    couleur = new int[] { int.Parse(r), int.Parse(g), int.Parse(b) };
+                }
+                catch
+                {
+                    couleur = new int[] { 0, 0, 0 };
+                }
+
+                Domaine d = new Domaine(nom, couleur);
+
+                CalendrierMission.domaines.Add(d);
+
+                XmlNodeList nodeListTA = node.SelectNodes("NomTA");
+
+                foreach (XmlNode nnode in nodeListTA)
+                {
+                    d.ajouterActivite(new TypeActivite(nnode.SelectSingleNode("NomTA").InnerText));
+                }
+            }
+        }
+
+        public void creationDomainesAutomatique()
+        {
             Domaine d = new Domaine("Vie", new int[] { 255, 204, 204 });
             d.ajouterActivite(new TypeActivite("Manger"));
             d.ajouterActivite(new TypeActivite("Dormir"));
@@ -320,6 +368,47 @@ namespace MarsApp
                 System.IO.Directory.CreateDirectory("Donnees");
 
             xmlDoc.Save("Donnees/Mars-o-Matic.xml");
+
+            XmlDocument xmlDocDom = new XmlDocument();
+            XmlNode domaines = xmlDocDom.CreateElement("Domaines");
+            xmlDocDom.AppendChild(domaines);
+
+            foreach (Domaine d in CalendrierMission.domaines)
+            {
+                XmlNode domaine = xmlDocDom.CreateElement("Domaine");
+                domaines.AppendChild(domaine);
+
+                XmlNode nomD = xmlDocDom.CreateElement("NomDom");
+                domaine.AppendChild(nomD);
+                nomD.InnerText = d.getNom();
+
+                XmlNode couleur = xmlDocDom.CreateElement("Couleur");
+                domaine.AppendChild(couleur);
+
+                XmlNode r = xmlDocDom.CreateElement("R");
+                couleur.AppendChild(r);
+                r.InnerText = d.getCouleur()[0].ToString();
+
+                XmlNode g = xmlDocDom.CreateElement("G");
+                couleur.AppendChild(g);
+                g.InnerText = d.getCouleur()[1].ToString();
+
+                XmlNode b = xmlDocDom.CreateElement("B");
+                couleur.AppendChild(b);
+                b.InnerText = d.getCouleur()[2].ToString();
+
+                XmlNode typeActivite = xmlDocDom.CreateElement("TypeActivite");
+                domaine.AppendChild(typeActivite);
+
+                foreach (TypeActivite ta in d.getActivites())
+                {
+                    XmlNode nomType = xmlDocDom.CreateElement("NomTA");
+                    typeActivite.AppendChild(nomType);
+                    nomType.InnerText = ta.getNom();
+                }
+
+                xmlDocDom.Save("Donnees/Domaines.xml");
+            }
         }
         #endregion
 
