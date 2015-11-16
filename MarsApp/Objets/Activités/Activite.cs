@@ -9,8 +9,10 @@ namespace MarsApp
     /// <summary>
     /// Classe regroupant les informations d'une activité
     /// </summary>
-    public class Activite
+    public class Activite : IEquatable<Activite>
     {
+        protected static int nbActivite = 0;
+        protected int numero;
         protected TypeActivite typeActivite;
         protected String description;
         protected IEtat etat;
@@ -43,6 +45,7 @@ namespace MarsApp
             this.heureFin = fin;
             listeAstronautes = new List<Astronaute>();
             this.lieu = lieu;
+            numero = ++nbActivite;
         }
 
         public Activite(Activite a)
@@ -54,6 +57,7 @@ namespace MarsApp
             heureFin = a.heureFin;
             listeAstronautes = a.listeAstronautes;
             lieu = a.lieu;
+            numero = ++nbActivite;
         }
         #endregion
 
@@ -89,18 +93,58 @@ namespace MarsApp
             etat = new Futur();
         }
 
+        public bool Equals(Activite other)
+        {
+            if (other.getNom().Equals(this.getNom()))
+                if (other.isActiviteExterieure() == this.isActiviteExterieure())
+                    if (other.isExperience() == this.isExperience())
+                        return true;
+            return false;
+        }
+
+        public bool activiteRentreeDansFichier(int num, List<Activite> liste)
+        {
+            for (int i = 1; i < num; ++i)
+                if (liste[i].Equals(this))
+                    return true;
+
+            return false;
+        }
+
         #region Génération XML
-        public void genererXML(XmlDocument xmlDoc, XmlNode activite)
+        public void genererXML(XmlDocument xmlDoc, XmlNode activite, XmlNode acts, List<Activite> listeActivites)
         {
             bool actExt = (isExploration() || isExperience());
 
-            XmlNode exterieure = xmlDoc.CreateElement("Exterieure");
-            exterieure.InnerText = actExt.ToString();
-            activite.AppendChild(exterieure);
+            /* Général */
 
-            XmlNode exploration = xmlDoc.CreateElement("Exploration");
-            exploration.InnerText = isExploration().ToString();
-            activite.AppendChild(exploration);
+            if (!activiteRentreeDansFichier(this.numero, listeActivites))
+            {
+                XmlNode act = xmlDoc.CreateElement("Activite");
+                acts.AppendChild(act);
+
+                XmlNode numero = xmlDoc.CreateElement("Numero");
+                numero.InnerText = numero.ToString();
+                act.AppendChild(numero);
+
+                XmlNode exterieure = xmlDoc.CreateElement("Exterieure");
+                exterieure.InnerText = actExt.ToString();
+                act.AppendChild(exterieure);
+
+                XmlNode exploration = xmlDoc.CreateElement("Exploration");
+                exploration.InnerText = isExploration().ToString();
+                act.AppendChild(exploration);
+
+                XmlNode typeActivite = xmlDoc.CreateElement("TypeActivite");
+                act.AppendChild(typeActivite);
+                this.typeActivite.genererXML(xmlDoc, typeActivite);
+            }
+
+            /* Détail activité */
+
+            XmlNode num = xmlDoc.CreateElement("Numero");
+            num.InnerText = this.numero.ToString();
+            activite.AppendChild(num);
 
             XmlNode transport = xmlDoc.CreateElement("Transport");
 
@@ -113,10 +157,6 @@ namespace MarsApp
                 transport.InnerText = "null";
 
             activite.AppendChild(transport);
-
-            XmlNode typeActivite = xmlDoc.CreateElement("TypeActivite");
-            activite.AppendChild(typeActivite);
-            this.typeActivite.genererXML(xmlDoc, typeActivite);
 
             XmlNode description = xmlDoc.CreateElement("Description");
             activite.AppendChild(description);

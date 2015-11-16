@@ -53,7 +53,7 @@ namespace MarsApp
         }
 
         #region Génération XML
-        public void genererXML(XmlDocument xmlDoc, XmlNode astronaute)
+        public void genererXML(XmlDocument xmlDoc, XmlNode astronaute, XmlNode acts)
         {
             XmlNode nom = xmlDoc.CreateElement("Nom");
             nom.InnerText = this.nom;
@@ -75,7 +75,7 @@ namespace MarsApp
                 XmlNode journee = xmlDoc.CreateElement("Journee");
                 journees.AppendChild(journee);
 
-                journeesMission[i].genererXML(xmlDoc, journee);
+                journeesMission[i].genererXML(xmlDoc, journee, acts);
             }
         }
         #endregion

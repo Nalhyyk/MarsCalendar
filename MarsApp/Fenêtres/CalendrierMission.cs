@@ -245,10 +245,10 @@ namespace MarsApp
 
             foreach (XmlNode node in nodeListDomaines)
             {
-                String nom = node.SelectSingleNode("Nom").InnerText;
-                String r = node.SelectSingleNode("R").InnerText;
-                String g = node.SelectSingleNode("G").InnerText;
-                String b = node.SelectSingleNode("B").InnerText;
+                String nom = node.SelectSingleNode("NomDom").InnerText;
+                String r = node.SelectSingleNode("Couleur").SelectSingleNode("R").InnerText;
+                String g = node.SelectSingleNode("Couleur").SelectSingleNode("G").InnerText;
+                String b = node.SelectSingleNode("Couleur").SelectSingleNode("B").InnerText;
                 int[] couleur;
 
                 try
@@ -264,11 +264,11 @@ namespace MarsApp
 
                 CalendrierMission.domaines.Add(d);
 
-                XmlNodeList nodeListTA = node.SelectNodes("NomTA");
+                XmlNodeList nodeListTA = node.SelectSingleNode("TypeActivite").SelectNodes("NomTA");
 
                 foreach (XmlNode nnode in nodeListTA)
                 {
-                    d.ajouterActivite(new TypeActivite(nnode.SelectSingleNode("NomTA").InnerText));
+                    d.ajouterActivite(new TypeActivite(nnode.InnerText));
                 }
             }
         }
@@ -326,9 +326,13 @@ namespace MarsApp
         public void genererDocXML()
         {
             XmlDocument xmlDoc = new XmlDocument();
+            XmlDocument xmlDocActs = new XmlDocument();
 
             XmlNode donnees = xmlDoc.CreateElement("Donnees");
             xmlDoc.AppendChild(donnees);
+
+            XmlNode acts = xmlDocActs.CreateElement("Activites");
+            xmlDocActs.AppendChild(acts);
 
             XmlNode debutMission = xmlDoc.CreateElement("DebutMission");
             donnees.AppendChild(debutMission);
@@ -361,13 +365,14 @@ namespace MarsApp
             {
                 XmlNode astronaute = xmlDoc.CreateElement("Astronaute");
                 astronautes.AppendChild(astronaute);
-                a.genererXML(xmlDoc, astronaute);
+                a.genererXML(xmlDoc, astronaute, acts);
             }
 
             if (!System.IO.Directory.Exists("Donnees"))
                 System.IO.Directory.CreateDirectory("Donnees");
 
             xmlDoc.Save("Donnees/Mars-o-Matic.xml");
+            xmlDocActs.Save("Donnees/ActivitesRefs.xml");
 
             XmlDocument xmlDocDom = new XmlDocument();
             XmlNode domaines = xmlDocDom.CreateElement("Domaines");
@@ -556,6 +561,6 @@ namespace MarsApp
             InfoActivite ia = new InfoActivite(activiteAAfficher);
             ia.Show();
         }
-#endregion
+        #endregion
     }
 }
