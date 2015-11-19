@@ -325,6 +325,17 @@ namespace MarsApp
         #region Génération XML
         public void genererDocXML()
         {
+            int nbElements = this.astronautes.Count;
+            foreach (Astronaute a in this.astronautes)
+                a.nbJournees(ref nbElements);
+
+            nbElements += CalendrierMission.domaines.Count;
+            foreach (Domaine d in CalendrierMission.domaines)
+                d.nbTypeActivite(ref nbElements);
+
+            Progression progression = new Progression(nbElements);
+            progression.Show();
+            
             XmlDocument xmlDoc = new XmlDocument();
             XmlDocument xmlDocActs = new XmlDocument();
 
@@ -365,14 +376,12 @@ namespace MarsApp
             {
                 XmlNode astronaute = xmlDoc.CreateElement("Astronaute");
                 astronautes.AppendChild(astronaute);
-                a.genererXML(xmlDoc, astronaute, acts);
+                a.genererXML(xmlDoc, xmlDocActs, astronaute, acts, progression);
+                progression.incrementer();
             }
 
             if (!System.IO.Directory.Exists("Donnees"))
                 System.IO.Directory.CreateDirectory("Donnees");
-
-            xmlDoc.Save("Donnees/Mars-o-Matic.xml");
-            xmlDocActs.Save("Donnees/ActivitesRefs.xml");
 
             XmlDocument xmlDocDom = new XmlDocument();
             XmlNode domaines = xmlDocDom.CreateElement("Domaines");
@@ -410,10 +419,16 @@ namespace MarsApp
                     XmlNode nomType = xmlDocDom.CreateElement("NomTA");
                     typeActivite.AppendChild(nomType);
                     nomType.InnerText = ta.getNom();
+                    progression.incrementer();
                 }
 
-                xmlDocDom.Save("Donnees/Domaines.xml");
+                progression.incrementer();
             }
+
+            xmlDocDom.Save("Donnees/Domaines.xml");
+            xmlDoc.Save("Donnees/Mars-o-Matic.xml");
+            xmlDocActs.Save("Donnees/ActivitesRefs.xml");
+            progression.fermerFenetre();
         }
         #endregion
 

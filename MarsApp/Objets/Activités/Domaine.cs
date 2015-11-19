@@ -50,6 +50,11 @@ namespace MarsApp
             listeActivites.Remove(a);
         }
 
+        public void nbTypeActivite(ref int nbElements)
+        {
+            nbElements += listeActivites.Count;
+        }
+
         #region Accesseurs
         /// <summary>
         /// Renvoie les types d'activités du Domaine

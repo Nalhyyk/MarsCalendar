@@ -91,6 +91,12 @@
     <Compile Include="Fenêtres\ModificationActivite.Designer.cs">
       <DependentUpon>ModificationActivite.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fenêtres\Progression.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\Progression.Designer.cs">
+      <DependentUpon>Progression.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fenêtres\SelectionCarte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fenêtres\ModificationActivite.resx">
       <DependentUpon>ModificationActivite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenêtres\Progression.resx">
+      <DependentUpon>Progression.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fenêtres\SelectionCarte.resx">
       <DependentUpon>SelectionCarte.cs</DependentUpon>

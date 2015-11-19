@@ -102,48 +102,50 @@ namespace MarsApp
             return false;
         }
 
-        public bool activiteRentreeDansFichier(int num, List<Activite> liste)
+        public int activiteRentreeDansFichier(int num, List<Activite> liste)
         {
             for (int i = 1; i < num; ++i)
                 if (liste[i].Equals(this))
-                    return true;
+                    return liste[i].numero;
 
-            return false;
+            return -1;
         }
 
         #region Génération XML
-        public void genererXML(XmlDocument xmlDoc, XmlNode activite, XmlNode acts, List<Activite> listeActivites)
+        public void genererXML(XmlDocument xmlDoc, XmlDocument xmlDocActs, XmlNode activite, XmlNode acts, List<Activite> listeActivites, Progression progression)
         {
             bool actExt = (isExploration() || isExperience());
 
             /* Général */
 
-            if (!activiteRentreeDansFichier(this.numero, listeActivites))
+            int numRecherche = activiteRentreeDansFichier(this.numero, listeActivites);
+
+            if (numRecherche == -1)
             {
-                XmlNode act = xmlDoc.CreateElement("Activite");
+                XmlNode act = xmlDocActs.CreateElement("Activite");
                 acts.AppendChild(act);
 
-                XmlNode numero = xmlDoc.CreateElement("Numero");
-                numero.InnerText = numero.ToString();
+                XmlNode numero = xmlDocActs.CreateElement("Numero");
+                numero.InnerText = this.numero.ToString();
                 act.AppendChild(numero);
 
-                XmlNode exterieure = xmlDoc.CreateElement("Exterieure");
+                XmlNode exterieure = xmlDocActs.CreateElement("Exterieure");
                 exterieure.InnerText = actExt.ToString();
                 act.AppendChild(exterieure);
 
-                XmlNode exploration = xmlDoc.CreateElement("Exploration");
+                XmlNode exploration = xmlDocActs.CreateElement("Exploration");
                 exploration.InnerText = isExploration().ToString();
                 act.AppendChild(exploration);
 
-                XmlNode typeActivite = xmlDoc.CreateElement("TypeActivite");
+                XmlNode typeActivite = xmlDocActs.CreateElement("TypeActivite");
                 act.AppendChild(typeActivite);
-                this.typeActivite.genererXML(xmlDoc, typeActivite);
+                this.typeActivite.genererXML(xmlDocActs, typeActivite);
             }
 
             /* Détail activité */
 
             XmlNode num = xmlDoc.CreateElement("Numero");
-            num.InnerText = this.numero.ToString();
+            num.InnerText = (numRecherche == -1) ? this.numero.ToString() : numRecherche.ToString();
             activite.AppendChild(num);
 
             XmlNode transport = xmlDoc.CreateElement("Transport");

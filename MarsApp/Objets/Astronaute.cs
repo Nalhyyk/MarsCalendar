@@ -52,8 +52,16 @@ namespace MarsApp
             return nom + " " + prenom;
         }
 
+        public void nbJournees(ref int nbElements)
+        {
+            nbElements += journeesMission.Count;
+
+            for (int i = 1; i < journeesMission.Count + 1; ++i)
+                nbElements += journeesMission[i].getActivites().Count;
+        }
+
         #region Génération XML
-        public void genererXML(XmlDocument xmlDoc, XmlNode astronaute, XmlNode acts)
+        public void genererXML(XmlDocument xmlDoc, XmlDocument xmlDocActs, XmlNode astronaute, XmlNode acts, Progression progression)
         {
             XmlNode nom = xmlDoc.CreateElement("Nom");
             nom.InnerText = this.nom;
@@ -75,7 +83,8 @@ namespace MarsApp
                 XmlNode journee = xmlDoc.CreateElement("Journee");
                 journees.AppendChild(journee);
 
-                journeesMission[i].genererXML(xmlDoc, journee, acts);
+                journeesMission[i].genererXML(xmlDoc, xmlDocActs, journee, acts, progression);
+                progression.incrementer();
             }
         }
         #endregion
