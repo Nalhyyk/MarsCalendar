@@ -11,6 +11,7 @@ namespace MarsApp
     /// </summary>
     public class Activite : IEquatable<Activite>
     {
+        protected static List<Activite> saveFichier;
         protected static int nbActivite = 0;
         protected int numero;
         protected TypeActivite typeActivite;
@@ -44,6 +45,7 @@ namespace MarsApp
             this.heureDebut = deb;
             this.heureFin = fin;
             listeAstronautes = new List<Astronaute>();
+            saveFichier = new List<Activite>();
             this.lieu = lieu;
             numero = ++nbActivite;
         }
@@ -56,6 +58,7 @@ namespace MarsApp
             heureDebut = a.heureDebut;
             heureFin = a.heureFin;
             listeAstronautes = a.listeAstronautes;
+            saveFichier = new List<Activite>();
             lieu = a.lieu;
             numero = ++nbActivite;
         }
@@ -102,11 +105,15 @@ namespace MarsApp
             return false;
         }
 
-        public int activiteRentreeDansFichier(int num, List<Activite> liste)
+        public int activiteRentreeDansFichier(List<Activite> liste)
         {
-            for (int i = 1; i < num; ++i)
-                if (liste[i].Equals(this))
-                    return liste[i].numero;
+            foreach (Activite a in liste)
+                if (this.Equals(a))
+                    if (saveFichier.Contains(a))
+                    {
+                        int num = saveFichier.Find(act => act.Equals(this)).numero;
+                        return num;
+                    }
 
             return -1;
         }
@@ -118,7 +125,7 @@ namespace MarsApp
 
             /* Général */
 
-            int numRecherche = activiteRentreeDansFichier(this.numero, listeActivites);
+            int numRecherche = activiteRentreeDansFichier(listeActivites);
 
             if (numRecherche == -1)
             {
@@ -140,6 +147,8 @@ namespace MarsApp
                 XmlNode typeActivite = xmlDocActs.CreateElement("TypeActivite");
                 act.AppendChild(typeActivite);
                 this.typeActivite.genererXML(xmlDocActs, typeActivite);
+
+                saveFichier.Add(this);
             }
 
             /* Détail activité */
@@ -287,6 +296,24 @@ namespace MarsApp
         /// </summary>
         /// <returns>Le TypeActivite de l'Activite</returns>
         public TypeActivite getTypeActivite() { return typeActivite; }
+
+        /// <summary>
+        /// Redéfini l'état de l'activité
+        /// </summary>
+        /// <param name="etat">Un IEtat</param>
+        public void setEtat(IEtat etat) { this.etat = etat; }
+
+        /// <summary>
+        /// Redéfini le transport de l'activité
+        /// </summary>
+        /// <param name="transport">Un ITransport</param>
+        public virtual void setTransport(ITransport transport) {  }
+
+        /// <summary>
+        /// Redéfini le lieu de l'activité
+        /// </summary>
+        /// <param name="l">Un lieu</param>
+        public void setLieu(Lieu l) { this.lieu = l; }
         #endregion
     }
 }

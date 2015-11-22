@@ -95,6 +95,12 @@ namespace MarsApp
         /// </summary>
         /// <returns>L'emploi du temps de l'astronaute</returns>
         public Dictionary<int, Journee> getJourneesMission() { return journeesMission; }
+
+        /// <summary>
+        /// Permet de définir l'emploi du temps de l'astronaute
+        /// </summary>
+        /// <param name="mission">Un dictionnaire de Journee</param>
+        public void setJourneesMission(Dictionary<int, Journee> mission) { this.journeesMission = mission; }
         #endregion
     }
 }

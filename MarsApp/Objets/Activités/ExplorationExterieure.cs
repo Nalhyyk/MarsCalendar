@@ -83,6 +83,8 @@ namespace MarsApp
         {
             return transport.nomTransport();
         }
+
+        public override void setTransport(ITransport transport) { this.transport = transport; }
         #endregion
     }
 }

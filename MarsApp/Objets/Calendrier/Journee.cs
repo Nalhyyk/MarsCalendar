@@ -224,6 +224,12 @@ namespace MarsApp
         /// </summary>
         /// <returns>La description de la journée</returns>
         public String getDescription() { return rapport; }
+
+        /// <summary>
+        /// Redéfini les activités de la journée
+        /// </summary>
+        /// <param name="activites">Une liste d'activités</param>
+        public void setListeActivites(List<Activite> activites) { this.listeActivites = activites; }
         #endregion
     }
 }

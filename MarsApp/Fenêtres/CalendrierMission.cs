@@ -35,10 +35,15 @@ namespace MarsApp
         public static List<Domaine> domaines;
 
         #region Constructeurs
+        public CalendrierMission(DateTime dt, bool chargement, String marsOMartic, String activitesRefs) : this(dt, chargement)
+        {
+            chargerXml(marsOMartic, activitesRefs);
+        }
+
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
-        public CalendrierMission(DateTime dt)
+        public CalendrierMission(DateTime dt, bool chargement)
         {
             InitializeComponent();
 
@@ -57,14 +62,46 @@ namespace MarsApp
 
             initialiserDomaines();
 
-            Astronaute a = new Astronaute("Bilat", "Bob", 43);
-            astronauteSelectionne = a;
-            astronautes.Add(a);
-            astronautes.Add(new Astronaute("Filoutub", "René", 57));
-            astronautes.Add(new Astronaute("Pasda", "Madeleine", 64));
+            if (!chargement)
+            {
+                Astronaute a = new Astronaute("Bilat", "Bob", 43);
+                astronauteSelectionne = a;
+                astronautes.Add(a);
+                astronautes.Add(new Astronaute("Filoutub", "René", 57));
+                astronautes.Add(new Astronaute("Pasda", "Madeleine", 64));
 
-            journeesMission = astronauteSelectionne.getJourneesMission();
 
+                journeesMission = astronauteSelectionne.getJourneesMission();
+
+                initialisationInterface();
+
+                TimeMartien nb = TimeMartien.calculerJours(debutMission);
+                int numJour = nb.getJours() + 1;
+
+                foreach (Astronaute astro in astronautes)
+                {
+                    astro.creerEdT(numJour);
+                    astroList.Items.Add(astro);
+                }
+
+                journeeActuelle = journeesMission[numJour];
+
+                changerPeriode(periode);
+                verificationChangementPeriode();
+                mettreAJourHeures();
+                miseAJourEdt(journeesMission[journeeSelectionnee]);
+
+                descriptionTexte.Text = journeesMission[journeeSelectionnee].getDescription();
+                astroList.SelectedItem = astronauteSelectionne;
+            }
+        }
+        #endregion
+
+        /// <summary>
+        /// Permet de stocker les contrôles dans les listes
+        /// </summary>
+        public void initialisationInterface()
+        {
             // Stockage des éléments de l'interface [journées]
             for (int i = 1; i < 51; ++i)
             {
@@ -87,28 +124,8 @@ namespace MarsApp
                 ctrl = this.Controls.Find("h" + i + "img", true);
                 iconesActivite[i] = (PictureBox)ctrl[0];
                 iconesActivite[i].Visible = false;
-            }       
-
-            TimeMartien nb = TimeMartien.calculerJours(debutMission);
-            int numJour = nb.getJours() + 1;
-
-            foreach (Astronaute astro in astronautes)
-            {
-                astro.creerEdT(numJour);
-                astroList.Items.Add(astro);
             }
-
-            journeeActuelle = journeesMission[numJour];
-
-            changerPeriode(periode);
-            verificationChangementPeriode();
-            mettreAJourHeures();
-            miseAJourEdt(journeesMission[journeeSelectionnee]);
-
-            descriptionTexte.Text = journeesMission[journeeSelectionnee].getDescription();
-            astroList.SelectedItem = astronauteSelectionne;
         }
-        #endregion
 
         /// <summary>
         /// Permet de changer de période
@@ -323,7 +340,7 @@ namespace MarsApp
         }
 
         #region Génération XML
-        public void genererDocXML()
+        private void genererDocXML()
         {
             int nbElements = this.astronautes.Count;
             foreach (Astronaute a in this.astronautes)
@@ -368,6 +385,10 @@ namespace MarsApp
             heures.InnerText = this.debutMission.Hour.ToString();
             minutes.InnerText = this.debutMission.Minute.ToString();
             secondes.InnerText = this.debutMission.Second.ToString();
+
+            XmlNode nbE = xmlDoc.CreateElement("NbElements");
+            donnees.AppendChild(nbE);
+            nbE.InnerText = nbElements.ToString();
 
             XmlNode astronautes = xmlDoc.CreateElement("Astronautes");
             donnees.AppendChild(astronautes);
@@ -429,6 +450,175 @@ namespace MarsApp
             xmlDoc.Save("Donnees/Mars-o-Matic.xml");
             xmlDocActs.Save("Donnees/ActivitesRefs.xml");
             progression.fermerFenetre();
+        }
+        #endregion
+
+        #region Chargement XML
+        private void chargerXml(String marsOMatic, String activitesRefs)
+        {
+            XmlDocument mars = new XmlDocument();
+            mars.Load(marsOMatic);
+            XmlDocument acts = new XmlDocument();
+            acts.Load(activitesRefs);
+
+            Dictionary<int, Activite> activitesBase = new Dictionary<int, Activite>();
+
+            int nbElements = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("NbElements").InnerText);
+
+            Progression p = new Progression(nbElements);
+            p.Show();
+
+            /* Chargement données des activités de base */
+            XmlNodeList activites = acts.GetElementsByTagName("Activite");
+
+            foreach (XmlNode n in activites)
+            {
+                Activite a;
+
+                int num = int.Parse(n.SelectSingleNode("Numero").InnerText);
+                bool exterieure = bool.Parse(n.SelectSingleNode("Exterieure").InnerText);
+                bool exploration = bool.Parse(n.SelectSingleNode("Exploration").InnerText);
+                TypeActivite ta = new TypeActivite(n.SelectSingleNode("TypeActivite").SelectSingleNode("Nom").InnerText);
+
+                if (exterieure)
+                    if (exploration)
+                        a = new ExplorationExterieure(ta, "", null, null, null, null);
+                    else
+                        a = new ExperienceExterieure(ta, "", null, null, null, null);
+                else
+                    a = new Activite(ta);
+
+                activitesBase.Add(num, a);
+
+                p.incrementer();
+            }
+
+            /* Chargement données */
+            TimeMartien nb = TimeMartien.calculerJours(debutMission);
+            int numJour = nb.getJours() + 1;
+
+            int jour = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Jour").InnerText);
+            int mois = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Mois").InnerText);
+            int annee = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Annee").InnerText);
+            int heures = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Heures").InnerText);
+            int minutes = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Minutes").InnerText);
+            int secondes = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Secondes").InnerText);
+
+            this.debutMission = new DateTime(annee, mois, jour, heures, minutes, secondes);
+
+            XmlNodeList astronautesNodes = mars.GetElementsByTagName("Astronaute");
+
+            foreach (XmlNode n in astronautesNodes)
+            {
+                String nom = n.SelectSingleNode("Nom").InnerText;
+                String prenom = n.SelectSingleNode("Prenom").InnerText;
+                int age = int.Parse(n.SelectSingleNode("Age").InnerText);
+
+                Astronaute a = new Astronaute(nom, prenom, age);
+                
+                Dictionary<int, Journee> joursMission = new Dictionary<int, Journee>();
+                a.setJourneesMission(joursMission);
+
+                astronautes.Add(a);
+                a.getJourneesMission().Clear();
+                astroList.Items.Add(a); // Ajout dans la liste => interface
+
+                XmlNodeList missionNode = n.SelectSingleNode("JourneesMission").SelectNodes("Journee");
+
+                foreach (XmlNode nn in missionNode)
+                {
+                    int num = int.Parse(nn.SelectSingleNode("Numero").InnerText);
+                    String etat = nn.SelectSingleNode("Etat").InnerText;
+                    IEtat etatJournee = new Passe();
+
+                    if (etat.Equals("EnCours"))
+                        etatJournee = new EnCours();
+                    else if (etat.Equals("Futur"))
+                        etatJournee = new Futur();
+
+                    String rapport = nn.SelectSingleNode("Rapport").InnerText;
+
+                    Journee j = new Journee(num, rapport, etatJournee, false);
+                    j.getActivites().Clear();
+                    joursMission.Add(num, j);
+
+                    XmlNodeList activitesNode = nn.SelectSingleNode("Activites").SelectNodes("Activite");
+
+                    foreach (XmlNode nnn in activitesNode)
+                    {
+                        int numA = int.Parse(nnn.SelectSingleNode("Numero").InnerText);
+                        String transport = nnn.SelectSingleNode("Transport").InnerText;
+                        ITransport transportAct = null;
+
+                        if (transport.Equals("Scaphandre"))
+                            transportAct = new Scaphandre();
+                        else if (transport.Equals("Vehicule"))
+                            transportAct = new Vehicule();
+
+                        String description = nnn.SelectSingleNode("Description").InnerText;
+                        etat = nnn.SelectSingleNode("Etat").InnerText;
+                        IEtat etatAct = new Passe();
+
+                        if (etat.Equals("EnCours"))
+                            etatAct = new EnCours();
+                        else if (etat.Equals("Futur"))
+                            etatAct = new Futur();
+
+                        int jD = int.Parse(nnn.SelectSingleNode("HeureDebut").SelectSingleNode("Jours").InnerText);
+                        int hD = int.Parse(nnn.SelectSingleNode("HeureDebut").SelectSingleNode("Heures").InnerText);
+                        int mD = int.Parse(nnn.SelectSingleNode("HeureDebut").SelectSingleNode("Minutes").InnerText);
+                        int sD = int.Parse(nnn.SelectSingleNode("HeureDebut").SelectSingleNode("Secondes").InnerText);
+
+                        int jF = int.Parse(nnn.SelectSingleNode("HeureFin").SelectSingleNode("Jours").InnerText);
+                        int hF = int.Parse(nnn.SelectSingleNode("HeureFin").SelectSingleNode("Heures").InnerText);
+                        int mF = int.Parse(nnn.SelectSingleNode("HeureFin").SelectSingleNode("Minutes").InnerText);
+                        int sF = int.Parse(nnn.SelectSingleNode("HeureFin").SelectSingleNode("Secondes").InnerText);
+
+                        int x = int.Parse(nnn.SelectSingleNode("Lieu").SelectSingleNode("X").InnerText);
+                        int y = int.Parse(nnn.SelectSingleNode("Lieu").SelectSingleNode("Y").InnerText);
+
+                        Lieu l = new Lieu(x, y);
+
+                        Activite aBase = activitesBase[numA];
+                        Activite act;
+
+                        if (aBase.isActiviteExterieure())
+                            if (aBase.isExperience())
+                                act = new ExperienceExterieure(aBase.getTypeActivite(), description, new TimeMartien(jD, hD, mD, sD), new TimeMartien(jF, hF, mF, sF), l);
+                            else
+                                act = new ExplorationExterieure(aBase.getTypeActivite(), description, new TimeMartien(jD, hD, mD, sD), new TimeMartien(jF, hF, mF, sF), l, transportAct);
+                        else
+                            act = new Activite(aBase.getTypeActivite(), description, new TimeMartien(jD, hD, mD, sD), new TimeMartien(jF, hF, mF, sF), l);
+                        
+
+                        act.setDescription(description);
+
+                        act.setEtat(etatAct);
+
+                        j.ajouterActivite(act);
+
+                        p.incrementer();
+                    }
+                    p.incrementer();
+                }
+                p.incrementer();
+            }
+
+            initialisationInterface();
+
+            astronauteSelectionne = astronautes[0];
+            journeesMission = astronauteSelectionne.getJourneesMission();
+            journeeActuelle = journeesMission[numJour];
+
+            changerPeriode(periode);
+            verificationChangementPeriode();
+            mettreAJourHeures();
+            miseAJourEdt(journeesMission[journeeSelectionnee]);
+
+            descriptionTexte.Text = journeesMission[journeeSelectionnee].getDescription();
+            astroList.SelectedItem = astronauteSelectionne;
+
+            p.fermerFenetre();
         }
         #endregion
 
@@ -532,6 +722,7 @@ namespace MarsApp
 
         private void timerJour_Tick(object sender, EventArgs e)
         {
+            //TODO
             TimeMartien nb = TimeMartien.calculerJours(debutMission);
             int numJour = nb.getJours() + 1;
 
