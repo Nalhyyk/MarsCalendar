@@ -64,12 +64,9 @@ namespace MarsApp
 
             if (!chargement)
             {
-                Astronaute a = new Astronaute("Bilat", "Bob", 43);
+                Astronaute a = new Astronaute("Baudry", "Patrick", 69);
                 astronauteSelectionne = a;
                 astronautes.Add(a);
-                astronautes.Add(new Astronaute("Filoutub", "René", 57));
-                astronautes.Add(new Astronaute("Pasda", "Madeleine", 64));
-
 
                 journeesMission = astronauteSelectionne.getJourneesMission();
 
@@ -722,7 +719,6 @@ namespace MarsApp
 
         private void timerJour_Tick(object sender, EventArgs e)
         {
-            //TODO
             TimeMartien nb = TimeMartien.calculerJours(debutMission);
             int numJour = nb.getJours() + 1;
 
@@ -768,5 +764,20 @@ namespace MarsApp
             ia.Show();
         }
         #endregion
+
+        private void ajoutAstro_Click(object sender, EventArgs e)
+        {
+            TimeMartien nb = TimeMartien.calculerJours(debutMission);
+            int numJour = nb.getJours() + 1;
+
+            NouveauAstronaute na = new NouveauAstronaute(astronautes, astroList, numJour);
+            na.Show();
+        }
+
+        private void modifAstro_Click(object sender, EventArgs e)
+        {
+            ModificationAstronaute ma = new ModificationAstronaute(astronauteSelectionne, astroList, astronautes);
+            ma.Show();
+        }
     }
 }

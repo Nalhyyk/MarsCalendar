@@ -228,59 +228,61 @@
             this.descriptionJournee = new System.Windows.Forms.GroupBox();
             this.descriptionTexte = new System.Windows.Forms.TextBox();
             this.saveDesc = new System.Windows.Forms.Button();
+            this.label36 = new System.Windows.Forms.Label();
+            this.astroList = new System.Windows.Forms.ListBox();
+            this.actH0 = new System.Windows.Forms.Label();
+            this.actH1 = new System.Windows.Forms.Label();
+            this.actH3 = new System.Windows.Forms.Label();
+            this.actH2 = new System.Windows.Forms.Label();
+            this.actH7 = new System.Windows.Forms.Label();
+            this.actH6 = new System.Windows.Forms.Label();
+            this.actH5 = new System.Windows.Forms.Label();
+            this.actH4 = new System.Windows.Forms.Label();
+            this.actH11 = new System.Windows.Forms.Label();
+            this.actH10 = new System.Windows.Forms.Label();
+            this.actH9 = new System.Windows.Forms.Label();
+            this.actH8 = new System.Windows.Forms.Label();
+            this.actH23 = new System.Windows.Forms.Label();
+            this.actH22 = new System.Windows.Forms.Label();
+            this.actH21 = new System.Windows.Forms.Label();
+            this.actH20 = new System.Windows.Forms.Label();
+            this.actH19 = new System.Windows.Forms.Label();
+            this.actH18 = new System.Windows.Forms.Label();
+            this.actH17 = new System.Windows.Forms.Label();
+            this.actH16 = new System.Windows.Forms.Label();
+            this.actH15 = new System.Windows.Forms.Label();
+            this.actH14 = new System.Windows.Forms.Label();
+            this.actH13 = new System.Windows.Forms.Label();
+            this.actH12 = new System.Windows.Forms.Label();
+            this.modifAstro = new System.Windows.Forms.PictureBox();
+            this.ajoutAstro = new System.Windows.Forms.PictureBox();
+            this.h23img = new System.Windows.Forms.PictureBox();
+            this.h22img = new System.Windows.Forms.PictureBox();
+            this.h21img = new System.Windows.Forms.PictureBox();
+            this.h20img = new System.Windows.Forms.PictureBox();
+            this.h19img = new System.Windows.Forms.PictureBox();
+            this.h18img = new System.Windows.Forms.PictureBox();
+            this.h17img = new System.Windows.Forms.PictureBox();
+            this.h16img = new System.Windows.Forms.PictureBox();
+            this.h15img = new System.Windows.Forms.PictureBox();
+            this.h14img = new System.Windows.Forms.PictureBox();
+            this.h13img = new System.Windows.Forms.PictureBox();
+            this.h12img = new System.Windows.Forms.PictureBox();
+            this.h11img = new System.Windows.Forms.PictureBox();
+            this.h10img = new System.Windows.Forms.PictureBox();
+            this.h9img = new System.Windows.Forms.PictureBox();
+            this.h8img = new System.Windows.Forms.PictureBox();
+            this.h7img = new System.Windows.Forms.PictureBox();
+            this.h6img = new System.Windows.Forms.PictureBox();
+            this.h5img = new System.Windows.Forms.PictureBox();
+            this.h4img = new System.Windows.Forms.PictureBox();
+            this.h3img = new System.Windows.Forms.PictureBox();
+            this.h2img = new System.Windows.Forms.PictureBox();
+            this.h1img = new System.Windows.Forms.PictureBox();
+            this.h0img = new System.Windows.Forms.PictureBox();
             this.map = new System.Windows.Forms.PictureBox();
             this.suivant = new System.Windows.Forms.PictureBox();
             this.precedent = new System.Windows.Forms.PictureBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.astroList = new System.Windows.Forms.ListBox();
-            this.h0img = new System.Windows.Forms.PictureBox();
-            this.actH0 = new System.Windows.Forms.Label();
-            this.h1img = new System.Windows.Forms.PictureBox();
-            this.actH1 = new System.Windows.Forms.Label();
-            this.h3img = new System.Windows.Forms.PictureBox();
-            this.actH3 = new System.Windows.Forms.Label();
-            this.h2img = new System.Windows.Forms.PictureBox();
-            this.actH2 = new System.Windows.Forms.Label();
-            this.h7img = new System.Windows.Forms.PictureBox();
-            this.actH7 = new System.Windows.Forms.Label();
-            this.h6img = new System.Windows.Forms.PictureBox();
-            this.actH6 = new System.Windows.Forms.Label();
-            this.h5img = new System.Windows.Forms.PictureBox();
-            this.actH5 = new System.Windows.Forms.Label();
-            this.h4img = new System.Windows.Forms.PictureBox();
-            this.actH4 = new System.Windows.Forms.Label();
-            this.h11img = new System.Windows.Forms.PictureBox();
-            this.actH11 = new System.Windows.Forms.Label();
-            this.h10img = new System.Windows.Forms.PictureBox();
-            this.actH10 = new System.Windows.Forms.Label();
-            this.h9img = new System.Windows.Forms.PictureBox();
-            this.actH9 = new System.Windows.Forms.Label();
-            this.h8img = new System.Windows.Forms.PictureBox();
-            this.actH8 = new System.Windows.Forms.Label();
-            this.h23img = new System.Windows.Forms.PictureBox();
-            this.actH23 = new System.Windows.Forms.Label();
-            this.h22img = new System.Windows.Forms.PictureBox();
-            this.actH22 = new System.Windows.Forms.Label();
-            this.h21img = new System.Windows.Forms.PictureBox();
-            this.actH21 = new System.Windows.Forms.Label();
-            this.h20img = new System.Windows.Forms.PictureBox();
-            this.actH20 = new System.Windows.Forms.Label();
-            this.h19img = new System.Windows.Forms.PictureBox();
-            this.actH19 = new System.Windows.Forms.Label();
-            this.h18img = new System.Windows.Forms.PictureBox();
-            this.actH18 = new System.Windows.Forms.Label();
-            this.h17img = new System.Windows.Forms.PictureBox();
-            this.actH17 = new System.Windows.Forms.Label();
-            this.h16img = new System.Windows.Forms.PictureBox();
-            this.actH16 = new System.Windows.Forms.Label();
-            this.h15img = new System.Windows.Forms.PictureBox();
-            this.actH15 = new System.Windows.Forms.Label();
-            this.h14img = new System.Windows.Forms.PictureBox();
-            this.actH14 = new System.Windows.Forms.Label();
-            this.h13img = new System.Windows.Forms.PictureBox();
-            this.actH13 = new System.Windows.Forms.Label();
-            this.h12img = new System.Windows.Forms.PictureBox();
-            this.actH12 = new System.Windows.Forms.Label();
             this.clicDroitActivite.SuspendLayout();
             this.jour50.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.astro50)).BeginInit();
@@ -383,21 +385,8 @@
             this.jour1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.astro1)).BeginInit();
             this.descriptionJournee.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.suivant)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.precedent)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h0img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h1img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h3img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h2img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h7img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h6img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h5img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h4img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h11img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h10img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h9img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h8img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modifAstro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ajoutAstro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h23img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h22img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h21img)).BeginInit();
@@ -410,6 +399,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.h14img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h13img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h12img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h11img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h10img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h9img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h8img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h7img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h6img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h5img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h4img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h3img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h2img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h1img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h0img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suivant)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.precedent)).BeginInit();
             this.SuspendLayout();
             // 
             // clicDroitActivite
@@ -2697,6 +2701,717 @@
             this.saveDesc.UseVisualStyleBackColor = true;
             this.saveDesc.Click += new System.EventHandler(this.saveDesc_Click);
             // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(436, 9);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(92, 17);
+            this.label36.TabIndex = 142;
+            this.label36.Text = "Astronautes :";
+            // 
+            // astroList
+            // 
+            this.astroList.FormattingEnabled = true;
+            this.astroList.Location = new System.Drawing.Point(535, 9);
+            this.astroList.Name = "astroList";
+            this.astroList.Size = new System.Drawing.Size(177, 43);
+            this.astroList.TabIndex = 143;
+            this.astroList.SelectedIndexChanged += new System.EventHandler(this.astroList_SelectedIndexChanged);
+            // 
+            // actH0
+            // 
+            this.actH0.AutoSize = true;
+            this.actH0.BackColor = System.Drawing.Color.Transparent;
+            this.actH0.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH0.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH0.Location = new System.Drawing.Point(932, 54);
+            this.actH0.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH0.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH0.Name = "actH0";
+            this.actH0.Size = new System.Drawing.Size(269, 25);
+            this.actH0.TabIndex = 133;
+            this.actH0.Tag = "0";
+            this.actH0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH1
+            // 
+            this.actH1.AutoSize = true;
+            this.actH1.BackColor = System.Drawing.Color.Transparent;
+            this.actH1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH1.Location = new System.Drawing.Point(932, 76);
+            this.actH1.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH1.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH1.Name = "actH1";
+            this.actH1.Size = new System.Drawing.Size(269, 25);
+            this.actH1.TabIndex = 144;
+            this.actH1.Tag = "1";
+            this.actH1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH3
+            // 
+            this.actH3.AutoSize = true;
+            this.actH3.BackColor = System.Drawing.Color.Transparent;
+            this.actH3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH3.Location = new System.Drawing.Point(932, 120);
+            this.actH3.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH3.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH3.Name = "actH3";
+            this.actH3.Size = new System.Drawing.Size(269, 25);
+            this.actH3.TabIndex = 148;
+            this.actH3.Tag = "3";
+            this.actH3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH2
+            // 
+            this.actH2.AutoSize = true;
+            this.actH2.BackColor = System.Drawing.Color.Transparent;
+            this.actH2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH2.Location = new System.Drawing.Point(932, 98);
+            this.actH2.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH2.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH2.Name = "actH2";
+            this.actH2.Size = new System.Drawing.Size(269, 25);
+            this.actH2.TabIndex = 146;
+            this.actH2.Tag = "2";
+            this.actH2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH7
+            // 
+            this.actH7.AutoSize = true;
+            this.actH7.BackColor = System.Drawing.Color.Transparent;
+            this.actH7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH7.Location = new System.Drawing.Point(932, 208);
+            this.actH7.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH7.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH7.Name = "actH7";
+            this.actH7.Size = new System.Drawing.Size(269, 25);
+            this.actH7.TabIndex = 156;
+            this.actH7.Tag = "7";
+            this.actH7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH6
+            // 
+            this.actH6.AutoSize = true;
+            this.actH6.BackColor = System.Drawing.Color.Transparent;
+            this.actH6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH6.Location = new System.Drawing.Point(932, 186);
+            this.actH6.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH6.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH6.Name = "actH6";
+            this.actH6.Size = new System.Drawing.Size(269, 25);
+            this.actH6.TabIndex = 154;
+            this.actH6.Tag = "6";
+            this.actH6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH5
+            // 
+            this.actH5.AutoSize = true;
+            this.actH5.BackColor = System.Drawing.Color.Transparent;
+            this.actH5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH5.Location = new System.Drawing.Point(932, 164);
+            this.actH5.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH5.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH5.Name = "actH5";
+            this.actH5.Size = new System.Drawing.Size(269, 25);
+            this.actH5.TabIndex = 152;
+            this.actH5.Tag = "5";
+            this.actH5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH4
+            // 
+            this.actH4.AutoSize = true;
+            this.actH4.BackColor = System.Drawing.Color.Transparent;
+            this.actH4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH4.Location = new System.Drawing.Point(932, 142);
+            this.actH4.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH4.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH4.Name = "actH4";
+            this.actH4.Size = new System.Drawing.Size(269, 25);
+            this.actH4.TabIndex = 150;
+            this.actH4.Tag = "4";
+            this.actH4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH11
+            // 
+            this.actH11.AutoSize = true;
+            this.actH11.BackColor = System.Drawing.Color.Transparent;
+            this.actH11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH11.Location = new System.Drawing.Point(932, 298);
+            this.actH11.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH11.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH11.Name = "actH11";
+            this.actH11.Size = new System.Drawing.Size(269, 25);
+            this.actH11.TabIndex = 164;
+            this.actH11.Tag = "11";
+            this.actH11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH11.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH10
+            // 
+            this.actH10.AutoSize = true;
+            this.actH10.BackColor = System.Drawing.Color.Transparent;
+            this.actH10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH10.Location = new System.Drawing.Point(932, 276);
+            this.actH10.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH10.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH10.Name = "actH10";
+            this.actH10.Size = new System.Drawing.Size(269, 25);
+            this.actH10.TabIndex = 162;
+            this.actH10.Tag = "10";
+            this.actH10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH10.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH9
+            // 
+            this.actH9.AutoSize = true;
+            this.actH9.BackColor = System.Drawing.Color.Transparent;
+            this.actH9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH9.Location = new System.Drawing.Point(932, 254);
+            this.actH9.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH9.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH9.Name = "actH9";
+            this.actH9.Size = new System.Drawing.Size(269, 25);
+            this.actH9.TabIndex = 160;
+            this.actH9.Tag = "9";
+            this.actH9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH8
+            // 
+            this.actH8.AutoSize = true;
+            this.actH8.BackColor = System.Drawing.Color.Transparent;
+            this.actH8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH8.Location = new System.Drawing.Point(932, 232);
+            this.actH8.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH8.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH8.Name = "actH8";
+            this.actH8.Size = new System.Drawing.Size(269, 25);
+            this.actH8.TabIndex = 158;
+            this.actH8.Tag = "8";
+            this.actH8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH23
+            // 
+            this.actH23.AutoSize = true;
+            this.actH23.BackColor = System.Drawing.Color.Transparent;
+            this.actH23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH23.Location = new System.Drawing.Point(932, 564);
+            this.actH23.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH23.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH23.Name = "actH23";
+            this.actH23.Size = new System.Drawing.Size(269, 25);
+            this.actH23.TabIndex = 188;
+            this.actH23.Tag = "23";
+            this.actH23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH23.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH22
+            // 
+            this.actH22.AutoSize = true;
+            this.actH22.BackColor = System.Drawing.Color.Transparent;
+            this.actH22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH22.Location = new System.Drawing.Point(932, 542);
+            this.actH22.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH22.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH22.Name = "actH22";
+            this.actH22.Size = new System.Drawing.Size(269, 25);
+            this.actH22.TabIndex = 186;
+            this.actH22.Tag = "22";
+            this.actH22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH22.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH21
+            // 
+            this.actH21.AutoSize = true;
+            this.actH21.BackColor = System.Drawing.Color.Transparent;
+            this.actH21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH21.Location = new System.Drawing.Point(932, 520);
+            this.actH21.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH21.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH21.Name = "actH21";
+            this.actH21.Size = new System.Drawing.Size(269, 25);
+            this.actH21.TabIndex = 184;
+            this.actH21.Tag = "21";
+            this.actH21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH21.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH20
+            // 
+            this.actH20.AutoSize = true;
+            this.actH20.BackColor = System.Drawing.Color.Transparent;
+            this.actH20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH20.Location = new System.Drawing.Point(932, 498);
+            this.actH20.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH20.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH20.Name = "actH20";
+            this.actH20.Size = new System.Drawing.Size(269, 25);
+            this.actH20.TabIndex = 182;
+            this.actH20.Tag = "20";
+            this.actH20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH20.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH19
+            // 
+            this.actH19.AutoSize = true;
+            this.actH19.BackColor = System.Drawing.Color.Transparent;
+            this.actH19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH19.Location = new System.Drawing.Point(932, 474);
+            this.actH19.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH19.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH19.Name = "actH19";
+            this.actH19.Size = new System.Drawing.Size(269, 25);
+            this.actH19.TabIndex = 180;
+            this.actH19.Tag = "19";
+            this.actH19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH19.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH18
+            // 
+            this.actH18.AutoSize = true;
+            this.actH18.BackColor = System.Drawing.Color.Transparent;
+            this.actH18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH18.Location = new System.Drawing.Point(932, 452);
+            this.actH18.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH18.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH18.Name = "actH18";
+            this.actH18.Size = new System.Drawing.Size(269, 25);
+            this.actH18.TabIndex = 178;
+            this.actH18.Tag = "18";
+            this.actH18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH18.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH17
+            // 
+            this.actH17.AutoSize = true;
+            this.actH17.BackColor = System.Drawing.Color.Transparent;
+            this.actH17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH17.Location = new System.Drawing.Point(932, 430);
+            this.actH17.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH17.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH17.Name = "actH17";
+            this.actH17.Size = new System.Drawing.Size(269, 25);
+            this.actH17.TabIndex = 176;
+            this.actH17.Tag = "17";
+            this.actH17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH17.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH16
+            // 
+            this.actH16.AutoSize = true;
+            this.actH16.BackColor = System.Drawing.Color.Transparent;
+            this.actH16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH16.Location = new System.Drawing.Point(932, 408);
+            this.actH16.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH16.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH16.Name = "actH16";
+            this.actH16.Size = new System.Drawing.Size(269, 25);
+            this.actH16.TabIndex = 174;
+            this.actH16.Tag = "16";
+            this.actH16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH16.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH15
+            // 
+            this.actH15.AutoSize = true;
+            this.actH15.BackColor = System.Drawing.Color.Transparent;
+            this.actH15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH15.Location = new System.Drawing.Point(932, 386);
+            this.actH15.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH15.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH15.Name = "actH15";
+            this.actH15.Size = new System.Drawing.Size(269, 25);
+            this.actH15.TabIndex = 172;
+            this.actH15.Tag = "15";
+            this.actH15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH15.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH14
+            // 
+            this.actH14.AutoSize = true;
+            this.actH14.BackColor = System.Drawing.Color.Transparent;
+            this.actH14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH14.Location = new System.Drawing.Point(932, 364);
+            this.actH14.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH14.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH14.Name = "actH14";
+            this.actH14.Size = new System.Drawing.Size(269, 25);
+            this.actH14.TabIndex = 170;
+            this.actH14.Tag = "14";
+            this.actH14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH14.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH13
+            // 
+            this.actH13.AutoSize = true;
+            this.actH13.BackColor = System.Drawing.Color.Transparent;
+            this.actH13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH13.Location = new System.Drawing.Point(932, 342);
+            this.actH13.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH13.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH13.Name = "actH13";
+            this.actH13.Size = new System.Drawing.Size(269, 25);
+            this.actH13.TabIndex = 168;
+            this.actH13.Tag = "13";
+            this.actH13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH13.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // actH12
+            // 
+            this.actH12.AutoSize = true;
+            this.actH12.BackColor = System.Drawing.Color.Transparent;
+            this.actH12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.actH12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.actH12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actH12.Location = new System.Drawing.Point(932, 320);
+            this.actH12.MaximumSize = new System.Drawing.Size(269, 25);
+            this.actH12.MinimumSize = new System.Drawing.Size(269, 25);
+            this.actH12.Name = "actH12";
+            this.actH12.Size = new System.Drawing.Size(269, 25);
+            this.actH12.TabIndex = 166;
+            this.actH12.Tag = "12";
+            this.actH12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actH12.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
+            // 
+            // modifAstro
+            // 
+            this.modifAstro.Image = global::MarsApp.Properties.Resources.Modify;
+            this.modifAstro.Location = new System.Drawing.Point(718, 36);
+            this.modifAstro.Name = "modifAstro";
+            this.modifAstro.Size = new System.Drawing.Size(16, 16);
+            this.modifAstro.TabIndex = 191;
+            this.modifAstro.TabStop = false;
+            this.modifAstro.Click += new System.EventHandler(this.modifAstro_Click);
+            // 
+            // ajoutAstro
+            // 
+            this.ajoutAstro.Image = global::MarsApp.Properties.Resources.Plus;
+            this.ajoutAstro.Location = new System.Drawing.Point(718, 9);
+            this.ajoutAstro.Name = "ajoutAstro";
+            this.ajoutAstro.Size = new System.Drawing.Size(16, 16);
+            this.ajoutAstro.TabIndex = 190;
+            this.ajoutAstro.TabStop = false;
+            this.ajoutAstro.Click += new System.EventHandler(this.ajoutAstro_Click);
+            // 
+            // h23img
+            // 
+            this.h23img.BackColor = System.Drawing.Color.Transparent;
+            this.h23img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h23img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h23img.Location = new System.Drawing.Point(931, 564);
+            this.h23img.Name = "h23img";
+            this.h23img.Size = new System.Drawing.Size(16, 16);
+            this.h23img.TabIndex = 189;
+            this.h23img.TabStop = false;
+            // 
+            // h22img
+            // 
+            this.h22img.BackColor = System.Drawing.Color.Transparent;
+            this.h22img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h22img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h22img.Location = new System.Drawing.Point(931, 542);
+            this.h22img.Name = "h22img";
+            this.h22img.Size = new System.Drawing.Size(16, 16);
+            this.h22img.TabIndex = 187;
+            this.h22img.TabStop = false;
+            // 
+            // h21img
+            // 
+            this.h21img.BackColor = System.Drawing.Color.Transparent;
+            this.h21img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h21img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h21img.Location = new System.Drawing.Point(931, 520);
+            this.h21img.Name = "h21img";
+            this.h21img.Size = new System.Drawing.Size(16, 16);
+            this.h21img.TabIndex = 185;
+            this.h21img.TabStop = false;
+            // 
+            // h20img
+            // 
+            this.h20img.BackColor = System.Drawing.Color.Transparent;
+            this.h20img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h20img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h20img.Location = new System.Drawing.Point(931, 498);
+            this.h20img.Name = "h20img";
+            this.h20img.Size = new System.Drawing.Size(16, 16);
+            this.h20img.TabIndex = 183;
+            this.h20img.TabStop = false;
+            // 
+            // h19img
+            // 
+            this.h19img.BackColor = System.Drawing.Color.Transparent;
+            this.h19img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h19img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h19img.Location = new System.Drawing.Point(931, 474);
+            this.h19img.Name = "h19img";
+            this.h19img.Size = new System.Drawing.Size(16, 16);
+            this.h19img.TabIndex = 181;
+            this.h19img.TabStop = false;
+            // 
+            // h18img
+            // 
+            this.h18img.BackColor = System.Drawing.Color.Transparent;
+            this.h18img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h18img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h18img.Location = new System.Drawing.Point(931, 452);
+            this.h18img.Name = "h18img";
+            this.h18img.Size = new System.Drawing.Size(16, 16);
+            this.h18img.TabIndex = 179;
+            this.h18img.TabStop = false;
+            // 
+            // h17img
+            // 
+            this.h17img.BackColor = System.Drawing.Color.Transparent;
+            this.h17img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h17img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h17img.Location = new System.Drawing.Point(931, 430);
+            this.h17img.Name = "h17img";
+            this.h17img.Size = new System.Drawing.Size(16, 16);
+            this.h17img.TabIndex = 177;
+            this.h17img.TabStop = false;
+            // 
+            // h16img
+            // 
+            this.h16img.BackColor = System.Drawing.Color.Transparent;
+            this.h16img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h16img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h16img.Location = new System.Drawing.Point(931, 408);
+            this.h16img.Name = "h16img";
+            this.h16img.Size = new System.Drawing.Size(16, 16);
+            this.h16img.TabIndex = 175;
+            this.h16img.TabStop = false;
+            // 
+            // h15img
+            // 
+            this.h15img.BackColor = System.Drawing.Color.Transparent;
+            this.h15img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h15img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h15img.Location = new System.Drawing.Point(931, 386);
+            this.h15img.Name = "h15img";
+            this.h15img.Size = new System.Drawing.Size(16, 16);
+            this.h15img.TabIndex = 173;
+            this.h15img.TabStop = false;
+            // 
+            // h14img
+            // 
+            this.h14img.BackColor = System.Drawing.Color.Transparent;
+            this.h14img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h14img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h14img.Location = new System.Drawing.Point(931, 364);
+            this.h14img.Name = "h14img";
+            this.h14img.Size = new System.Drawing.Size(16, 16);
+            this.h14img.TabIndex = 171;
+            this.h14img.TabStop = false;
+            // 
+            // h13img
+            // 
+            this.h13img.BackColor = System.Drawing.Color.Transparent;
+            this.h13img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h13img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h13img.Location = new System.Drawing.Point(931, 342);
+            this.h13img.Name = "h13img";
+            this.h13img.Size = new System.Drawing.Size(16, 16);
+            this.h13img.TabIndex = 169;
+            this.h13img.TabStop = false;
+            // 
+            // h12img
+            // 
+            this.h12img.BackColor = System.Drawing.Color.Transparent;
+            this.h12img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h12img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h12img.Location = new System.Drawing.Point(931, 320);
+            this.h12img.Name = "h12img";
+            this.h12img.Size = new System.Drawing.Size(16, 16);
+            this.h12img.TabIndex = 167;
+            this.h12img.TabStop = false;
+            // 
+            // h11img
+            // 
+            this.h11img.BackColor = System.Drawing.Color.Transparent;
+            this.h11img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h11img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h11img.Location = new System.Drawing.Point(931, 298);
+            this.h11img.Name = "h11img";
+            this.h11img.Size = new System.Drawing.Size(16, 16);
+            this.h11img.TabIndex = 165;
+            this.h11img.TabStop = false;
+            // 
+            // h10img
+            // 
+            this.h10img.BackColor = System.Drawing.Color.Transparent;
+            this.h10img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h10img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h10img.Location = new System.Drawing.Point(931, 276);
+            this.h10img.Name = "h10img";
+            this.h10img.Size = new System.Drawing.Size(16, 16);
+            this.h10img.TabIndex = 163;
+            this.h10img.TabStop = false;
+            // 
+            // h9img
+            // 
+            this.h9img.BackColor = System.Drawing.Color.Transparent;
+            this.h9img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h9img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h9img.Location = new System.Drawing.Point(931, 254);
+            this.h9img.Name = "h9img";
+            this.h9img.Size = new System.Drawing.Size(16, 16);
+            this.h9img.TabIndex = 161;
+            this.h9img.TabStop = false;
+            // 
+            // h8img
+            // 
+            this.h8img.BackColor = System.Drawing.Color.Transparent;
+            this.h8img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h8img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h8img.Location = new System.Drawing.Point(931, 232);
+            this.h8img.Name = "h8img";
+            this.h8img.Size = new System.Drawing.Size(16, 16);
+            this.h8img.TabIndex = 159;
+            this.h8img.TabStop = false;
+            // 
+            // h7img
+            // 
+            this.h7img.BackColor = System.Drawing.Color.Transparent;
+            this.h7img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h7img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h7img.Location = new System.Drawing.Point(931, 208);
+            this.h7img.Name = "h7img";
+            this.h7img.Size = new System.Drawing.Size(16, 16);
+            this.h7img.TabIndex = 157;
+            this.h7img.TabStop = false;
+            // 
+            // h6img
+            // 
+            this.h6img.BackColor = System.Drawing.Color.Transparent;
+            this.h6img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h6img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h6img.Location = new System.Drawing.Point(931, 186);
+            this.h6img.Name = "h6img";
+            this.h6img.Size = new System.Drawing.Size(16, 16);
+            this.h6img.TabIndex = 155;
+            this.h6img.TabStop = false;
+            // 
+            // h5img
+            // 
+            this.h5img.BackColor = System.Drawing.Color.Transparent;
+            this.h5img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h5img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h5img.Location = new System.Drawing.Point(931, 164);
+            this.h5img.Name = "h5img";
+            this.h5img.Size = new System.Drawing.Size(16, 16);
+            this.h5img.TabIndex = 153;
+            this.h5img.TabStop = false;
+            // 
+            // h4img
+            // 
+            this.h4img.BackColor = System.Drawing.Color.Transparent;
+            this.h4img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h4img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h4img.Location = new System.Drawing.Point(931, 142);
+            this.h4img.Name = "h4img";
+            this.h4img.Size = new System.Drawing.Size(16, 16);
+            this.h4img.TabIndex = 151;
+            this.h4img.TabStop = false;
+            // 
+            // h3img
+            // 
+            this.h3img.BackColor = System.Drawing.Color.Transparent;
+            this.h3img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h3img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h3img.Location = new System.Drawing.Point(931, 120);
+            this.h3img.Name = "h3img";
+            this.h3img.Size = new System.Drawing.Size(16, 16);
+            this.h3img.TabIndex = 149;
+            this.h3img.TabStop = false;
+            // 
+            // h2img
+            // 
+            this.h2img.BackColor = System.Drawing.Color.Transparent;
+            this.h2img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h2img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h2img.Location = new System.Drawing.Point(931, 98);
+            this.h2img.Name = "h2img";
+            this.h2img.Size = new System.Drawing.Size(16, 16);
+            this.h2img.TabIndex = 147;
+            this.h2img.TabStop = false;
+            // 
+            // h1img
+            // 
+            this.h1img.BackColor = System.Drawing.Color.Transparent;
+            this.h1img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h1img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h1img.Location = new System.Drawing.Point(931, 76);
+            this.h1img.Name = "h1img";
+            this.h1img.Size = new System.Drawing.Size(16, 16);
+            this.h1img.TabIndex = 145;
+            this.h1img.TabStop = false;
+            // 
+            // h0img
+            // 
+            this.h0img.BackColor = System.Drawing.Color.Transparent;
+            this.h0img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h0img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h0img.Location = new System.Drawing.Point(931, 54);
+            this.h0img.Name = "h0img";
+            this.h0img.Size = new System.Drawing.Size(16, 16);
+            this.h0img.TabIndex = 134;
+            this.h0img.TabStop = false;
+            // 
             // map
             // 
             this.map.BackColor = System.Drawing.Color.Transparent;
@@ -2734,703 +3449,14 @@
             this.precedent.Tag = "-1";
             this.precedent.Click += new System.EventHandler(this.changerPeriode_Click);
             // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(436, 9);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(92, 17);
-            this.label36.TabIndex = 142;
-            this.label36.Text = "Astronautes :";
-            // 
-            // astroList
-            // 
-            this.astroList.FormattingEnabled = true;
-            this.astroList.Location = new System.Drawing.Point(535, 9);
-            this.astroList.Name = "astroList";
-            this.astroList.Size = new System.Drawing.Size(177, 43);
-            this.astroList.TabIndex = 143;
-            this.astroList.SelectedIndexChanged += new System.EventHandler(this.astroList_SelectedIndexChanged);
-            // 
-            // h0img
-            // 
-            this.h0img.BackColor = System.Drawing.Color.Transparent;
-            this.h0img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h0img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h0img.Location = new System.Drawing.Point(931, 54);
-            this.h0img.Name = "h0img";
-            this.h0img.Size = new System.Drawing.Size(16, 16);
-            this.h0img.TabIndex = 134;
-            this.h0img.TabStop = false;
-            // 
-            // actH0
-            // 
-            this.actH0.AutoSize = true;
-            this.actH0.BackColor = System.Drawing.Color.Transparent;
-            this.actH0.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH0.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH0.Location = new System.Drawing.Point(932, 54);
-            this.actH0.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH0.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH0.Name = "actH0";
-            this.actH0.Size = new System.Drawing.Size(269, 25);
-            this.actH0.TabIndex = 133;
-            this.actH0.Tag = "0";
-            this.actH0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h1img
-            // 
-            this.h1img.BackColor = System.Drawing.Color.Transparent;
-            this.h1img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h1img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h1img.Location = new System.Drawing.Point(931, 76);
-            this.h1img.Name = "h1img";
-            this.h1img.Size = new System.Drawing.Size(16, 16);
-            this.h1img.TabIndex = 145;
-            this.h1img.TabStop = false;
-            // 
-            // actH1
-            // 
-            this.actH1.AutoSize = true;
-            this.actH1.BackColor = System.Drawing.Color.Transparent;
-            this.actH1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH1.Location = new System.Drawing.Point(932, 76);
-            this.actH1.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH1.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH1.Name = "actH1";
-            this.actH1.Size = new System.Drawing.Size(269, 25);
-            this.actH1.TabIndex = 144;
-            this.actH1.Tag = "1";
-            this.actH1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h3img
-            // 
-            this.h3img.BackColor = System.Drawing.Color.Transparent;
-            this.h3img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h3img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h3img.Location = new System.Drawing.Point(931, 120);
-            this.h3img.Name = "h3img";
-            this.h3img.Size = new System.Drawing.Size(16, 16);
-            this.h3img.TabIndex = 149;
-            this.h3img.TabStop = false;
-            // 
-            // actH3
-            // 
-            this.actH3.AutoSize = true;
-            this.actH3.BackColor = System.Drawing.Color.Transparent;
-            this.actH3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH3.Location = new System.Drawing.Point(932, 120);
-            this.actH3.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH3.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH3.Name = "actH3";
-            this.actH3.Size = new System.Drawing.Size(269, 25);
-            this.actH3.TabIndex = 148;
-            this.actH3.Tag = "3";
-            this.actH3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h2img
-            // 
-            this.h2img.BackColor = System.Drawing.Color.Transparent;
-            this.h2img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h2img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h2img.Location = new System.Drawing.Point(931, 98);
-            this.h2img.Name = "h2img";
-            this.h2img.Size = new System.Drawing.Size(16, 16);
-            this.h2img.TabIndex = 147;
-            this.h2img.TabStop = false;
-            // 
-            // actH2
-            // 
-            this.actH2.AutoSize = true;
-            this.actH2.BackColor = System.Drawing.Color.Transparent;
-            this.actH2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH2.Location = new System.Drawing.Point(932, 98);
-            this.actH2.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH2.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH2.Name = "actH2";
-            this.actH2.Size = new System.Drawing.Size(269, 25);
-            this.actH2.TabIndex = 146;
-            this.actH2.Tag = "2";
-            this.actH2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h7img
-            // 
-            this.h7img.BackColor = System.Drawing.Color.Transparent;
-            this.h7img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h7img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h7img.Location = new System.Drawing.Point(931, 208);
-            this.h7img.Name = "h7img";
-            this.h7img.Size = new System.Drawing.Size(16, 16);
-            this.h7img.TabIndex = 157;
-            this.h7img.TabStop = false;
-            // 
-            // actH7
-            // 
-            this.actH7.AutoSize = true;
-            this.actH7.BackColor = System.Drawing.Color.Transparent;
-            this.actH7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH7.Location = new System.Drawing.Point(932, 208);
-            this.actH7.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH7.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH7.Name = "actH7";
-            this.actH7.Size = new System.Drawing.Size(269, 25);
-            this.actH7.TabIndex = 156;
-            this.actH7.Tag = "7";
-            this.actH7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h6img
-            // 
-            this.h6img.BackColor = System.Drawing.Color.Transparent;
-            this.h6img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h6img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h6img.Location = new System.Drawing.Point(931, 186);
-            this.h6img.Name = "h6img";
-            this.h6img.Size = new System.Drawing.Size(16, 16);
-            this.h6img.TabIndex = 155;
-            this.h6img.TabStop = false;
-            // 
-            // actH6
-            // 
-            this.actH6.AutoSize = true;
-            this.actH6.BackColor = System.Drawing.Color.Transparent;
-            this.actH6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH6.Location = new System.Drawing.Point(932, 186);
-            this.actH6.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH6.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH6.Name = "actH6";
-            this.actH6.Size = new System.Drawing.Size(269, 25);
-            this.actH6.TabIndex = 154;
-            this.actH6.Tag = "6";
-            this.actH6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h5img
-            // 
-            this.h5img.BackColor = System.Drawing.Color.Transparent;
-            this.h5img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h5img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h5img.Location = new System.Drawing.Point(931, 164);
-            this.h5img.Name = "h5img";
-            this.h5img.Size = new System.Drawing.Size(16, 16);
-            this.h5img.TabIndex = 153;
-            this.h5img.TabStop = false;
-            // 
-            // actH5
-            // 
-            this.actH5.AutoSize = true;
-            this.actH5.BackColor = System.Drawing.Color.Transparent;
-            this.actH5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH5.Location = new System.Drawing.Point(932, 164);
-            this.actH5.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH5.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH5.Name = "actH5";
-            this.actH5.Size = new System.Drawing.Size(269, 25);
-            this.actH5.TabIndex = 152;
-            this.actH5.Tag = "5";
-            this.actH5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h4img
-            // 
-            this.h4img.BackColor = System.Drawing.Color.Transparent;
-            this.h4img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h4img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h4img.Location = new System.Drawing.Point(931, 142);
-            this.h4img.Name = "h4img";
-            this.h4img.Size = new System.Drawing.Size(16, 16);
-            this.h4img.TabIndex = 151;
-            this.h4img.TabStop = false;
-            // 
-            // actH4
-            // 
-            this.actH4.AutoSize = true;
-            this.actH4.BackColor = System.Drawing.Color.Transparent;
-            this.actH4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH4.Location = new System.Drawing.Point(932, 142);
-            this.actH4.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH4.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH4.Name = "actH4";
-            this.actH4.Size = new System.Drawing.Size(269, 25);
-            this.actH4.TabIndex = 150;
-            this.actH4.Tag = "4";
-            this.actH4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h11img
-            // 
-            this.h11img.BackColor = System.Drawing.Color.Transparent;
-            this.h11img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h11img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h11img.Location = new System.Drawing.Point(931, 298);
-            this.h11img.Name = "h11img";
-            this.h11img.Size = new System.Drawing.Size(16, 16);
-            this.h11img.TabIndex = 165;
-            this.h11img.TabStop = false;
-            // 
-            // actH11
-            // 
-            this.actH11.AutoSize = true;
-            this.actH11.BackColor = System.Drawing.Color.Transparent;
-            this.actH11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH11.Location = new System.Drawing.Point(932, 298);
-            this.actH11.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH11.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH11.Name = "actH11";
-            this.actH11.Size = new System.Drawing.Size(269, 25);
-            this.actH11.TabIndex = 164;
-            this.actH11.Tag = "11";
-            this.actH11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH11.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h10img
-            // 
-            this.h10img.BackColor = System.Drawing.Color.Transparent;
-            this.h10img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h10img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h10img.Location = new System.Drawing.Point(931, 276);
-            this.h10img.Name = "h10img";
-            this.h10img.Size = new System.Drawing.Size(16, 16);
-            this.h10img.TabIndex = 163;
-            this.h10img.TabStop = false;
-            // 
-            // actH10
-            // 
-            this.actH10.AutoSize = true;
-            this.actH10.BackColor = System.Drawing.Color.Transparent;
-            this.actH10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH10.Location = new System.Drawing.Point(932, 276);
-            this.actH10.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH10.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH10.Name = "actH10";
-            this.actH10.Size = new System.Drawing.Size(269, 25);
-            this.actH10.TabIndex = 162;
-            this.actH10.Tag = "10";
-            this.actH10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH10.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h9img
-            // 
-            this.h9img.BackColor = System.Drawing.Color.Transparent;
-            this.h9img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h9img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h9img.Location = new System.Drawing.Point(931, 254);
-            this.h9img.Name = "h9img";
-            this.h9img.Size = new System.Drawing.Size(16, 16);
-            this.h9img.TabIndex = 161;
-            this.h9img.TabStop = false;
-            // 
-            // actH9
-            // 
-            this.actH9.AutoSize = true;
-            this.actH9.BackColor = System.Drawing.Color.Transparent;
-            this.actH9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH9.Location = new System.Drawing.Point(932, 254);
-            this.actH9.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH9.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH9.Name = "actH9";
-            this.actH9.Size = new System.Drawing.Size(269, 25);
-            this.actH9.TabIndex = 160;
-            this.actH9.Tag = "9";
-            this.actH9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h8img
-            // 
-            this.h8img.BackColor = System.Drawing.Color.Transparent;
-            this.h8img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h8img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h8img.Location = new System.Drawing.Point(931, 232);
-            this.h8img.Name = "h8img";
-            this.h8img.Size = new System.Drawing.Size(16, 16);
-            this.h8img.TabIndex = 159;
-            this.h8img.TabStop = false;
-            // 
-            // actH8
-            // 
-            this.actH8.AutoSize = true;
-            this.actH8.BackColor = System.Drawing.Color.Transparent;
-            this.actH8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH8.Location = new System.Drawing.Point(932, 232);
-            this.actH8.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH8.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH8.Name = "actH8";
-            this.actH8.Size = new System.Drawing.Size(269, 25);
-            this.actH8.TabIndex = 158;
-            this.actH8.Tag = "8";
-            this.actH8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h23img
-            // 
-            this.h23img.BackColor = System.Drawing.Color.Transparent;
-            this.h23img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h23img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h23img.Location = new System.Drawing.Point(931, 564);
-            this.h23img.Name = "h23img";
-            this.h23img.Size = new System.Drawing.Size(16, 16);
-            this.h23img.TabIndex = 189;
-            this.h23img.TabStop = false;
-            // 
-            // actH23
-            // 
-            this.actH23.AutoSize = true;
-            this.actH23.BackColor = System.Drawing.Color.Transparent;
-            this.actH23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH23.Location = new System.Drawing.Point(932, 564);
-            this.actH23.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH23.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH23.Name = "actH23";
-            this.actH23.Size = new System.Drawing.Size(269, 25);
-            this.actH23.TabIndex = 188;
-            this.actH23.Tag = "23";
-            this.actH23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH23.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h22img
-            // 
-            this.h22img.BackColor = System.Drawing.Color.Transparent;
-            this.h22img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h22img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h22img.Location = new System.Drawing.Point(931, 542);
-            this.h22img.Name = "h22img";
-            this.h22img.Size = new System.Drawing.Size(16, 16);
-            this.h22img.TabIndex = 187;
-            this.h22img.TabStop = false;
-            // 
-            // actH22
-            // 
-            this.actH22.AutoSize = true;
-            this.actH22.BackColor = System.Drawing.Color.Transparent;
-            this.actH22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH22.Location = new System.Drawing.Point(932, 542);
-            this.actH22.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH22.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH22.Name = "actH22";
-            this.actH22.Size = new System.Drawing.Size(269, 25);
-            this.actH22.TabIndex = 186;
-            this.actH22.Tag = "22";
-            this.actH22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH22.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h21img
-            // 
-            this.h21img.BackColor = System.Drawing.Color.Transparent;
-            this.h21img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h21img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h21img.Location = new System.Drawing.Point(931, 520);
-            this.h21img.Name = "h21img";
-            this.h21img.Size = new System.Drawing.Size(16, 16);
-            this.h21img.TabIndex = 185;
-            this.h21img.TabStop = false;
-            // 
-            // actH21
-            // 
-            this.actH21.AutoSize = true;
-            this.actH21.BackColor = System.Drawing.Color.Transparent;
-            this.actH21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH21.Location = new System.Drawing.Point(932, 520);
-            this.actH21.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH21.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH21.Name = "actH21";
-            this.actH21.Size = new System.Drawing.Size(269, 25);
-            this.actH21.TabIndex = 184;
-            this.actH21.Tag = "21";
-            this.actH21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH21.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h20img
-            // 
-            this.h20img.BackColor = System.Drawing.Color.Transparent;
-            this.h20img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h20img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h20img.Location = new System.Drawing.Point(931, 498);
-            this.h20img.Name = "h20img";
-            this.h20img.Size = new System.Drawing.Size(16, 16);
-            this.h20img.TabIndex = 183;
-            this.h20img.TabStop = false;
-            // 
-            // actH20
-            // 
-            this.actH20.AutoSize = true;
-            this.actH20.BackColor = System.Drawing.Color.Transparent;
-            this.actH20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH20.Location = new System.Drawing.Point(932, 498);
-            this.actH20.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH20.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH20.Name = "actH20";
-            this.actH20.Size = new System.Drawing.Size(269, 25);
-            this.actH20.TabIndex = 182;
-            this.actH20.Tag = "20";
-            this.actH20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH20.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h19img
-            // 
-            this.h19img.BackColor = System.Drawing.Color.Transparent;
-            this.h19img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h19img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h19img.Location = new System.Drawing.Point(931, 474);
-            this.h19img.Name = "h19img";
-            this.h19img.Size = new System.Drawing.Size(16, 16);
-            this.h19img.TabIndex = 181;
-            this.h19img.TabStop = false;
-            // 
-            // actH19
-            // 
-            this.actH19.AutoSize = true;
-            this.actH19.BackColor = System.Drawing.Color.Transparent;
-            this.actH19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH19.Location = new System.Drawing.Point(932, 474);
-            this.actH19.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH19.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH19.Name = "actH19";
-            this.actH19.Size = new System.Drawing.Size(269, 25);
-            this.actH19.TabIndex = 180;
-            this.actH19.Tag = "19";
-            this.actH19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH19.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h18img
-            // 
-            this.h18img.BackColor = System.Drawing.Color.Transparent;
-            this.h18img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h18img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h18img.Location = new System.Drawing.Point(931, 452);
-            this.h18img.Name = "h18img";
-            this.h18img.Size = new System.Drawing.Size(16, 16);
-            this.h18img.TabIndex = 179;
-            this.h18img.TabStop = false;
-            // 
-            // actH18
-            // 
-            this.actH18.AutoSize = true;
-            this.actH18.BackColor = System.Drawing.Color.Transparent;
-            this.actH18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH18.Location = new System.Drawing.Point(932, 452);
-            this.actH18.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH18.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH18.Name = "actH18";
-            this.actH18.Size = new System.Drawing.Size(269, 25);
-            this.actH18.TabIndex = 178;
-            this.actH18.Tag = "18";
-            this.actH18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH18.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h17img
-            // 
-            this.h17img.BackColor = System.Drawing.Color.Transparent;
-            this.h17img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h17img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h17img.Location = new System.Drawing.Point(931, 430);
-            this.h17img.Name = "h17img";
-            this.h17img.Size = new System.Drawing.Size(16, 16);
-            this.h17img.TabIndex = 177;
-            this.h17img.TabStop = false;
-            // 
-            // actH17
-            // 
-            this.actH17.AutoSize = true;
-            this.actH17.BackColor = System.Drawing.Color.Transparent;
-            this.actH17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH17.Location = new System.Drawing.Point(932, 430);
-            this.actH17.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH17.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH17.Name = "actH17";
-            this.actH17.Size = new System.Drawing.Size(269, 25);
-            this.actH17.TabIndex = 176;
-            this.actH17.Tag = "17";
-            this.actH17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH17.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h16img
-            // 
-            this.h16img.BackColor = System.Drawing.Color.Transparent;
-            this.h16img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h16img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h16img.Location = new System.Drawing.Point(931, 408);
-            this.h16img.Name = "h16img";
-            this.h16img.Size = new System.Drawing.Size(16, 16);
-            this.h16img.TabIndex = 175;
-            this.h16img.TabStop = false;
-            // 
-            // actH16
-            // 
-            this.actH16.AutoSize = true;
-            this.actH16.BackColor = System.Drawing.Color.Transparent;
-            this.actH16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH16.Location = new System.Drawing.Point(932, 408);
-            this.actH16.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH16.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH16.Name = "actH16";
-            this.actH16.Size = new System.Drawing.Size(269, 25);
-            this.actH16.TabIndex = 174;
-            this.actH16.Tag = "16";
-            this.actH16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH16.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h15img
-            // 
-            this.h15img.BackColor = System.Drawing.Color.Transparent;
-            this.h15img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h15img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h15img.Location = new System.Drawing.Point(931, 386);
-            this.h15img.Name = "h15img";
-            this.h15img.Size = new System.Drawing.Size(16, 16);
-            this.h15img.TabIndex = 173;
-            this.h15img.TabStop = false;
-            // 
-            // actH15
-            // 
-            this.actH15.AutoSize = true;
-            this.actH15.BackColor = System.Drawing.Color.Transparent;
-            this.actH15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH15.Location = new System.Drawing.Point(932, 386);
-            this.actH15.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH15.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH15.Name = "actH15";
-            this.actH15.Size = new System.Drawing.Size(269, 25);
-            this.actH15.TabIndex = 172;
-            this.actH15.Tag = "15";
-            this.actH15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH15.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h14img
-            // 
-            this.h14img.BackColor = System.Drawing.Color.Transparent;
-            this.h14img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h14img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h14img.Location = new System.Drawing.Point(931, 364);
-            this.h14img.Name = "h14img";
-            this.h14img.Size = new System.Drawing.Size(16, 16);
-            this.h14img.TabIndex = 171;
-            this.h14img.TabStop = false;
-            // 
-            // actH14
-            // 
-            this.actH14.AutoSize = true;
-            this.actH14.BackColor = System.Drawing.Color.Transparent;
-            this.actH14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH14.Location = new System.Drawing.Point(932, 364);
-            this.actH14.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH14.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH14.Name = "actH14";
-            this.actH14.Size = new System.Drawing.Size(269, 25);
-            this.actH14.TabIndex = 170;
-            this.actH14.Tag = "14";
-            this.actH14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH14.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h13img
-            // 
-            this.h13img.BackColor = System.Drawing.Color.Transparent;
-            this.h13img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h13img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h13img.Location = new System.Drawing.Point(931, 342);
-            this.h13img.Name = "h13img";
-            this.h13img.Size = new System.Drawing.Size(16, 16);
-            this.h13img.TabIndex = 169;
-            this.h13img.TabStop = false;
-            // 
-            // actH13
-            // 
-            this.actH13.AutoSize = true;
-            this.actH13.BackColor = System.Drawing.Color.Transparent;
-            this.actH13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH13.Location = new System.Drawing.Point(932, 342);
-            this.actH13.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH13.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH13.Name = "actH13";
-            this.actH13.Size = new System.Drawing.Size(269, 25);
-            this.actH13.TabIndex = 168;
-            this.actH13.Tag = "13";
-            this.actH13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH13.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
-            // h12img
-            // 
-            this.h12img.BackColor = System.Drawing.Color.Transparent;
-            this.h12img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h12img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h12img.Location = new System.Drawing.Point(931, 320);
-            this.h12img.Name = "h12img";
-            this.h12img.Size = new System.Drawing.Size(16, 16);
-            this.h12img.TabIndex = 167;
-            this.h12img.TabStop = false;
-            // 
-            // actH12
-            // 
-            this.actH12.AutoSize = true;
-            this.actH12.BackColor = System.Drawing.Color.Transparent;
-            this.actH12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.actH12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.actH12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH12.Location = new System.Drawing.Point(932, 320);
-            this.actH12.MaximumSize = new System.Drawing.Size(269, 25);
-            this.actH12.MinimumSize = new System.Drawing.Size(269, 25);
-            this.actH12.Name = "actH12";
-            this.actH12.Size = new System.Drawing.Size(269, 25);
-            this.actH12.TabIndex = 166;
-            this.actH12.Tag = "12";
-            this.actH12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.actH12.MouseClick += new System.Windows.Forms.MouseEventHandler(this.heure_MouseClick);
-            // 
             // CalendrierMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(233)))), ((int)(((byte)(234)))));
             this.ClientSize = new System.Drawing.Size(1238, 707);
+            this.Controls.Add(this.modifAstro);
+            this.Controls.Add(this.ajoutAstro);
             this.Controls.Add(this.h23img);
             this.Controls.Add(this.h22img);
             this.Controls.Add(this.h21img);
@@ -3727,21 +3753,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.astro1)).EndInit();
             this.descriptionJournee.ResumeLayout(false);
             this.descriptionJournee.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.map)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.suivant)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.precedent)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h0img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h1img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h3img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h2img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h7img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h6img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h5img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h4img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h11img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h10img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h9img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.h8img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modifAstro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ajoutAstro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.h23img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.h22img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.h21img)).EndInit();
@@ -3754,6 +3767,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.h14img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.h13img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.h12img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h11img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h10img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h9img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h8img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h7img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h6img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h5img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h4img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h3img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h2img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h1img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.h0img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.map)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suivant)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.precedent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4012,5 +4040,7 @@
         private System.Windows.Forms.PictureBox h12img;
         private System.Windows.Forms.Label actH12;
         private System.Windows.Forms.ToolStripMenuItem informationsToolStripMenuItem;
+        private System.Windows.Forms.PictureBox ajoutAstro;
+        private System.Windows.Forms.PictureBox modifAstro;
     }
 }

@@ -101,6 +101,42 @@ namespace MarsApp
         /// </summary>
         /// <param name="mission">Un dictionnaire de Journee</param>
         public void setJourneesMission(Dictionary<int, Journee> mission) { this.journeesMission = mission; }
+
+        /// <summary>
+        /// Permet d'obtenir le nom de l'astronaute
+        /// </summary>
+        /// <returns>Le nom de l'astronaute</returns>
+        public String getNom() { return nom; }
+
+        /// <summary>
+        /// Permet d'obtenir le prénom de l'astronaute
+        /// </summary>
+        /// <returns>Le prénom de l'astronaute</returns>
+        public String getPrenom() { return prenom; }
+
+        /// <summary>
+        /// Permet d'obtenir l'âge de l'astronaute
+        /// </summary>
+        /// <returns>L'âge de l'astronaute</returns>
+        public int getAge() { return age; }
+
+        /// <summary>
+        /// Permet de redéfinir le nom de l'astronaute
+        /// </summary>
+        /// <param name="nom">Le nom de l'astronaute</param>
+        public void setNom(String nom) { this.nom = nom; }
+
+        /// <summary>
+        /// Permet de redéfinir le prénom de l'astronaute
+        /// </summary>
+        /// <param name="prenom">Le prénom de l'astronaute</param>
+        public void setPrenom(String prenom) { this.prenom = prenom; }
+
+        /// <summary>
+        /// Permet de redéfinir l'âge de l'astronaute
+        /// </summary>
+        /// <param name="age">L'âge de l'astronaute</param>
+        public void setAge(int age) { this.age = age; }
         #endregion
     }
 }
