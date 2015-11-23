@@ -11,9 +11,82 @@ namespace MarsApp
 {
     public partial class DetailHeure : BaseFenetre
     {
-        public DetailHeure()
+        private Dictionary<int, Label> horaires;
+        private Dictionary<int, Label> heures;
+
+        public DetailHeure(int heureSelectionnee, List<Activite> activites)
         {
             InitializeComponent();
+
+            horaires = new Dictionary<int, Label>();
+            heures = new Dictionary<int, Label>();
+
+            for (int i = 0; i <= 60; i += 10)
+            {
+                Control[] ctrl;
+
+                if (i <= 50)
+                {
+                    ctrl = this.Controls.Find("actM" + i, true);
+                    horaires[i] = (Label)ctrl[0];
+                }
+
+                ctrl = this.Controls.Find("label" + i, true);
+                heures[i] = (Label)ctrl[0];
+            }
+
+            foreach (Activite a in activites)
+            {
+                int debut = a.getHeureDebut().getMinutes();
+                int fin = a.getHeureFin().getMinutes();
+
+                int hDebut = a.getHeureDebut().getHeures();
+                int hFin = a.getHeureFin().getHeures();
+
+                String nom = a.getNom();
+
+                if (hDebut < heureSelectionnee)
+                    debut = 0;
+                if (hFin > heureSelectionnee)
+                    fin = 60;
+
+                if (fin == 0)
+                    fin = 60;
+
+                heures[60].Text = (heureSelectionnee + 1) + "h00";
+
+                for (int i = debut; i < fin; i += 10)
+                {
+                    horaires[i].Text = a.getNom();
+                    heures[i].Text = heureSelectionnee + "h" + i + ((i < 10) ? "0" : "");
+
+                    int h = int.Parse(heures[i].Text.Split('h')[0]);
+                    int m = int.Parse(heures[i].Text.Split('h')[1]);
+
+                    if (h == 24 && m > 40)
+                    {
+                        heures[i].Visible = false;
+                        horaires[i - 10].Visible = false;
+                        this.Size = new Size(379, 158);
+                    }
+
+                    if ((heureSelectionnee + "h" + i + ((i < 10) ? "0" : "")).Equals("24h40"))
+                        heures[i].Text = "0h00";
+
+                    /*foreach (Domaine d in domaines)
+                        if (d.getNomActivites().Contains(a.getNom()) || d.getNom().Equals(a.getNom()))
+                            heures[i].BackColor = Color.FromArgb(d.getCouleur()[0], d.getCouleur()[1], d.getCouleur()[2]);*/
+
+                    /*if (a.isActiviteExterieure())
+                    {
+                        Bitmap img = (a.isExploration()) ? ((ExplorationExterieure) a).deplacement() : ((ExperienceExterieure) a).deplacement();
+                        iconesActivite[i].Image = img;
+                        iconesActivite[i].Visible = true;
+                    }
+                    else
+                        iconesActivite[i].Visible = false;*/
+                }
+            }
         }
     }
 }

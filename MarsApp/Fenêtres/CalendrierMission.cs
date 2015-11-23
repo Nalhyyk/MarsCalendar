@@ -113,7 +113,7 @@ namespace MarsApp
             }
 
             // Stockage des éléments de l'interface [activités journée]
-            for (int i = 0; i < 24; ++i)
+            for (int i = 0; i < 25; ++i)
             {
                 Control[] ctrl = this.Controls.Find("actH" + i, true);
                 heures[i] = (Label)ctrl[0];
@@ -183,15 +183,12 @@ namespace MarsApp
         /// <param name="journee">La journée à mettre à jour</param>
         public void miseAJourEdt(Journee journee)
         {
-            for (int i = 0; i < 24; ++i)
+            for (int i = 0; i < 25; ++i)
                 heures[i].Text = "";
 
             numJourneeLabel.Text = "Journée " + journeeSelectionnee;
 
-            foreach (Activite a in journee.getActivites())
-            {
-                lierActiviteEtEdt(a);
-            }
+            lierActiviteEtEdt();
 
             int jourPeriode = journee.getNumero();
             
@@ -209,39 +206,25 @@ namespace MarsApp
         /// <summary>
         /// Permet d'associer une activité à un label ou un groupe de labels
         /// </summary>
-        /// <param name="a">Une activité</param>
-        public void lierActiviteEtEdt(Activite a)
+        public void lierActiviteEtEdt()
         {
-            int debut = a.getHeureDebut().getHeures() * 60 + a.getHeureDebut().getMinutes();
-            int fin = a.getHeureFin().getHeures() * 60 + a.getHeureFin().getMinutes();
-
-            int duree = fin - debut;
-
-            if (fin == 24 * 60 + 40)
-                fin = 24;
-
-            String nom = a.getNom();
-
-            int hdebut = (int) Math.Truncate((double) debut / 60) + 1;
-            hdebut = (hdebut == 1) ? 0 : hdebut;
-            int hfin = (int)Math.Truncate((double) fin / 60);
-
-            for (int i = hdebut; i <= hfin; ++i)
+            for (int i = 0; i < 25; ++i)
             {
-                heures[i].Text += a.getNom() + ((duree > 60) ? "" : ",");
-                
-                /*foreach (Domaine d in domaines)
-                    if (d.getNomActivites().Contains(a.getNom()) || d.getNom().Equals(a.getNom()))
-                        heures[i].BackColor = Color.FromArgb(d.getCouleur()[0], d.getCouleur()[1], d.getCouleur()[2]);*/
+                List<Activite> acts = journeeActuelle.trouverActivites(i);
 
-                /*if (a.isActiviteExterieure())
+                foreach (Activite a in acts)
                 {
-                    Bitmap img = (a.isExploration()) ? ((ExplorationExterieure) a).deplacement() : ((ExperienceExterieure) a).deplacement();
-                    iconesActivite[i].Image = img;
-                    iconesActivite[i].Visible = true;
+                    heures[i].Text += a.getNom() + ", ";
+
+                    if (a.isActiviteExterieure())
+                    {
+                        Bitmap img = (a.isExploration()) ? ((ExplorationExterieure)a).deplacement() : ((ExperienceExterieure)a).deplacement();
+                        iconesActivite[i].Image = img;
+                        iconesActivite[i].Visible = true;
+                    }
+                    else
+                        iconesActivite[i].Visible = false;
                 }
-                else
-                    iconesActivite[i].Visible = false;*/
             }
         }
 
@@ -767,7 +750,6 @@ namespace MarsApp
             InfoActivite ia = new InfoActivite(activiteAAfficher);
             ia.Show();
         }
-        #endregion
 
         private void ajoutAstro_Click(object sender, EventArgs e)
         {
@@ -783,5 +765,14 @@ namespace MarsApp
             ModificationAstronaute ma = new ModificationAstronaute(astronauteSelectionne, astroList, astronautes);
             ma.Show();
         }
+
+        private void horaire_Click(object sender, EventArgs e)
+        {
+            heureSelectionnee = int.Parse(((Label)sender).Tag.ToString());
+
+            DetailHeure dh = new DetailHeure(heureSelectionnee, journeeActuelle.trouverActivites(heureSelectionnee));
+            dh.Show();
+        }
+        #endregion
     }
 }

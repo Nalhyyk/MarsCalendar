@@ -210,12 +210,15 @@ namespace MarsApp
         /// <param name="t2">TimeMartien</param>
         /// <returns>Résultat inférieur</returns>
         public static bool operator <(TimeMartien t1, TimeMartien t2)
-        {
-            if (t1.getJours() <= t2.getJours())
-                if (t1.getHeures() <= t2.getHeures())
-                    if (t1.getMinutes() <= t2.getMinutes())
-                        if (t1.getSecondes() < t2.getSecondes())
-                            return true;
+        {   
+            if (t1.getHeures() < t2.getHeures())
+                return true;
+            else if (t1.getHeures() == t2.getHeures())
+                if (t1.getMinutes() < t2.getMinutes())
+                    return true;
+                else if (t1.getMinutes() == t2.getMinutes())
+                    if (t1.getSecondes() < t2.getSecondes())
+                        return true;
             return false;
         }
 
@@ -227,11 +230,52 @@ namespace MarsApp
         /// <returns>Résultat inférieur</returns>
         public static bool operator >(TimeMartien t1, TimeMartien t2)
         {
-            if (t1.getJours() >= t2.getJours())
-                if (t1.getHeures() >= t2.getHeures())
-                    if (t1.getMinutes() >= t2.getMinutes())
-                        if (t1.getSecondes() > t2.getSecondes())
-                            return true;
+            if (t1.getHeures() > t2.getHeures())
+                return true;
+            else if (t1.getHeures() == t2.getHeures())
+                if (t1.getMinutes() > t2.getMinutes())
+                    return true;
+                else if (t1.getMinutes() == t2.getMinutes())
+                    if (t1.getSecondes() > t2.getSecondes())
+                        return true;
+            return false;
+        }
+
+        /// <summary>
+        /// Surcharge de l'opérateur <=
+        /// </summary>
+        /// <param name="t1">TimeMartien</param>
+        /// <param name="t2">TimeMartien</param>
+        /// <returns>Résultat inférieur ou égal</returns>
+        public static bool operator <=(TimeMartien t1, TimeMartien t2)
+        {
+            if (t1.getHeures() < t2.getHeures())
+                return true;
+            else if (t1.getHeures() == t2.getHeures())
+                if (t1.getMinutes() < t2.getMinutes())
+                    return true;
+                else if (t1.getMinutes() == t2.getMinutes())
+                    if (t1.getSecondes() <= t2.getSecondes())
+                        return true;
+            return false;
+        }
+
+        /// <summary>
+        /// Surcharge de l'opérateur >=
+        /// </summary>
+        /// <param name="t1">TimeMartien</param>
+        /// <param name="t2">TimeMartien</param>
+        /// <returns>Résultat supérieur ou égal</returns>
+        public static bool operator >=(TimeMartien t1, TimeMartien t2)
+        {
+            if (t1.getHeures() > t2.getHeures())
+                return true;
+            else if (t1.getHeures() == t2.getHeures())
+                if (t1.getMinutes() > t2.getMinutes())
+                    return true;
+                else if (t1.getMinutes() == t2.getMinutes())
+                    if (t1.getSecondes() >= t2.getSecondes())
+                        return true;
             return false;
         }
         #endregion
@@ -264,6 +308,34 @@ namespace MarsApp
             TimeMartien tm = new TimeMartien(0, 0, 0, (int) Math.Truncate(ts.TotalSeconds));
 
             return tm;
+        }
+
+        public static bool sePasseDansPeriode(TimeMartien debutActivite, TimeMartien finActivite, TimeMartien heureDebut, TimeMartien heureFin)
+        {
+            if (finActivite.getHeures() == 0 && finActivite.getMinutes() == 0 && finActivite.getSecondes() == 0)
+                finActivite = new TimeMartien(0, 24, 39, 59);
+
+            if (heureFin.getHeures() == 0 && heureFin.getMinutes() == 0 && heureFin.getSecondes() == 0)
+                heureFin = new TimeMartien(0, 24, 39, 59);
+
+            bool dINFd = (debutActivite <= heureDebut);
+            bool dSUPd = (debutActivite >= heureDebut);
+            bool fINFf = (finActivite <= heureFin);
+            bool fSUPf = (finActivite >= heureFin);
+            bool dINFf = (debutActivite < heureFin);
+            bool dSUPf = (debutActivite > heureFin);
+            bool fINFd = (finActivite < heureDebut);
+            bool fSUPd = (finActivite > heureDebut);
+
+            if (dINFd && fSUPf && dINFf && fSUPd)
+                return true;
+            else if (dSUPd && fINFf && dINFf && fSUPd)
+                return true;
+            else if (dSUPd && fSUPf && dINFf && fSUPd)
+                return true;
+            else if (dINFd && fINFf && dINFf && fSUPd)
+                return true;
+            return false;
         }
 
         public int nbMinutes()

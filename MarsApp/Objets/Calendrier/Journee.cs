@@ -41,16 +41,21 @@ namespace MarsApp
             this.etat = etat;
             this.journeeExterieure = journeeExterieure;
             listeActivites = new List<Activite>();
-            ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(0, 0), new TimeMartien(0, 20), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("Dormir"), "", new TimeMartien(0, 20), new TimeMartien(7, 20), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("Dormir"), "", new TimeMartien(0), new TimeMartien(0, 50), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("LEL"), "", new TimeMartien(0, 50), new TimeMartien(7), new Lieu(0, 0)));
             ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(7), new TimeMartien(8), new Lieu(0, 0)));
             ajouterActivite(new Activite(new TypeActivite("Privé"), "", new TimeMartien(8), new TimeMartien(12), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(12), new TimeMartien(14), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(12), new TimeMartien(13, 50), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("Manger2"), "", new TimeMartien(13, 50), new TimeMartien(14), new Lieu(0, 0)));
             ajouterActivite(new Activite(new TypeActivite("Privé"), "", new TimeMartien(14), new TimeMartien(19), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(19), new TimeMartien(21), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("Privé"), "", new TimeMartien(21), new TimeMartien(23), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("Dormir"), "", new TimeMartien(23), new TimeMartien(24, 30), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("Dormir"), "", new TimeMartien(24, 30), new TimeMartien(24, 40), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(19), new TimeMartien(19, 10), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("MDR"), "", new TimeMartien(19, 10), new TimeMartien(19, 20), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("MDR2"), "", new TimeMartien(19, 20), new TimeMartien(19, 30), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("MDR3"), "", new TimeMartien(19, 30), new TimeMartien(19, 40), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("MDR4"), "", new TimeMartien(19, 40), new TimeMartien(19, 50), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("MDR5"), "", new TimeMartien(19, 50), new TimeMartien(20), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("DODO"), "", new TimeMartien(20), new TimeMartien(24, 20), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("DODOLEL"), "", new TimeMartien(24, 20), new TimeMartien(24, 40), new Lieu(0, 0)));
         }
         #endregion
 
@@ -135,6 +140,28 @@ namespace MarsApp
             }
 
             return null;
+        }
+
+        /// <summary>
+        /// Permet de trouver des activités dans la journée en fonction d'une heure de début
+        /// </summary>
+        /// <param name="heure">Une heure</param>
+        /// <returns>Les activités se passant dans l'heure donnée</returns>
+        public List<Activite> trouverActivites(int heureD)
+        {
+            int heureF = heureD + 1;
+            if (heureF > 24)
+                heureF -= 25;
+
+            List<Activite> acts = new List<Activite>();
+
+            foreach (Activite a in listeActivites)
+            {
+                if (TimeMartien.sePasseDansPeriode(a.getHeureDebut(), a.getHeureFin(), new TimeMartien(heureD), new TimeMartien(heureF)))
+                    acts.Add(a);
+            }
+
+            return acts;
         }
 
         #region Génération XML
