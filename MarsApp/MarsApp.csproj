@@ -73,6 +73,12 @@
     <Compile Include="Fenêtres\CalendrierMission.Designer.cs">
       <DependentUpon>CalendrierMission.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fenêtres\DetailHeure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\DetailHeure.Designer.cs">
+      <DependentUpon>DetailHeure.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fenêtres\GestionCarte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     <Compile Include="Utils\Constantes.cs" />
     <EmbeddedResource Include="Fenêtres\CalendrierMission.resx">
       <DependentUpon>CalendrierMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenêtres\DetailHeure.resx">
+      <DependentUpon>DetailHeure.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fenêtres\GestionCarte.resx">
       <DependentUpon>GestionCarte.cs</DependentUpon>

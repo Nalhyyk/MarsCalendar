@@ -59,13 +59,7 @@ namespace MarsApp
         #region Génération XML
         public void genererXML(XmlDocument xmlDoc, XmlNode lieu)
         {
-            XmlNode x = xmlDoc.CreateElement("X");
-            x.InnerText = this.x.ToString();
-            lieu.AppendChild(x);
-
-            XmlNode y = xmlDoc.CreateElement("Y");
-            y.InnerText = this.y.ToString();
-            lieu.AppendChild(y);
+            lieu.InnerText = this.x.ToString() + "," + this.y.ToString();
         }
         #endregion
 

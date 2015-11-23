@@ -165,7 +165,7 @@ namespace MarsApp
                 else
                     transport.InnerText = ((ExperienceExterieure) this).nomTransport();
             else
-                transport.InnerText = "null";
+                transport.InnerText = "";
 
             activite.AppendChild(transport);
 
@@ -185,7 +185,7 @@ namespace MarsApp
             activite.AppendChild(heureFin);
             this.heureFin.genererXML(xmlDoc, heureFin);
 
-            XmlNode lieu = xmlDoc.CreateElement("Lieu");
+            XmlNode lieu = xmlDoc.CreateElement("XY");
             activite.AppendChild(lieu);
             this.lieu.genererXML(xmlDoc, lieu);
         }

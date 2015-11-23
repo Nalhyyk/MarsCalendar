@@ -202,6 +202,40 @@ namespace MarsApp
         }
         #endregion
 
+        #region Autres surcharges d'opérateurs
+        /// <summary>
+        /// Surcharge de l'opérateur <
+        /// </summary>
+        /// <param name="t1">TimeMartien</param>
+        /// <param name="t2">TimeMartien</param>
+        /// <returns>Résultat inférieur</returns>
+        public static bool operator <(TimeMartien t1, TimeMartien t2)
+        {
+            if (t1.getJours() <= t2.getJours())
+                if (t1.getHeures() <= t2.getHeures())
+                    if (t1.getMinutes() <= t2.getMinutes())
+                        if (t1.getSecondes() < t2.getSecondes())
+                            return true;
+            return false;
+        }
+
+        /// <summary>
+        /// Surcharge de l'opérateur >
+        /// </summary>
+        /// <param name="t1">TimeMartien</param>
+        /// <param name="t2">TimeMartien</param>
+        /// <returns>Résultat inférieur</returns>
+        public static bool operator >(TimeMartien t1, TimeMartien t2)
+        {
+            if (t1.getJours() >= t2.getJours())
+                if (t1.getHeures() >= t2.getHeures())
+                    if (t1.getMinutes() >= t2.getMinutes())
+                        if (t1.getSecondes() > t2.getSecondes())
+                            return true;
+            return false;
+        }
+        #endregion
+
         /// <summary>
         /// Permet de convertir un DateTime en TimeMartien
         /// </summary>
@@ -232,24 +266,15 @@ namespace MarsApp
             return tm;
         }
 
+        public int nbMinutes()
+        {
+            return heure * 60 + minute;
+        }
+
         #region Génération XML
         public void genererXML(XmlDocument xmlDoc, XmlNode heureMartienne)
         {
-            XmlNode jours = xmlDoc.CreateElement("Jours");
-            heureMartienne.AppendChild(jours);
-            jours.InnerText = this.jours.ToString();
-
-            XmlNode heures = xmlDoc.CreateElement("Heures");
-            heureMartienne.AppendChild(heures);
-            heures.InnerText = this.heure.ToString();
-
-            XmlNode minutes = xmlDoc.CreateElement("Minutes");
-            heureMartienne.AppendChild(minutes);
-            minutes.InnerText = this.minute.ToString();
-
-            XmlNode secondes = xmlDoc.CreateElement("Secondes");
-            heureMartienne.AppendChild(secondes);
-            secondes.InnerText = this.seconde.ToString();
+            heureMartienne.InnerText = nbMinutes().ToString();
         }
         #endregion
 

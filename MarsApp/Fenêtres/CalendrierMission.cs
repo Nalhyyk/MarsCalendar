@@ -561,18 +561,13 @@ namespace MarsApp
                         else if (etat.Equals("Futur"))
                             etatAct = new Futur();
 
-                        int jD = int.Parse(nnn.SelectSingleNode("HeureDebut").SelectSingleNode("Jours").InnerText);
-                        int hD = int.Parse(nnn.SelectSingleNode("HeureDebut").SelectSingleNode("Heures").InnerText);
-                        int mD = int.Parse(nnn.SelectSingleNode("HeureDebut").SelectSingleNode("Minutes").InnerText);
-                        int sD = int.Parse(nnn.SelectSingleNode("HeureDebut").SelectSingleNode("Secondes").InnerText);
+                        int mD = int.Parse(nnn.SelectSingleNode("HeureDebut").InnerText);
 
-                        int jF = int.Parse(nnn.SelectSingleNode("HeureFin").SelectSingleNode("Jours").InnerText);
-                        int hF = int.Parse(nnn.SelectSingleNode("HeureFin").SelectSingleNode("Heures").InnerText);
-                        int mF = int.Parse(nnn.SelectSingleNode("HeureFin").SelectSingleNode("Minutes").InnerText);
-                        int sF = int.Parse(nnn.SelectSingleNode("HeureFin").SelectSingleNode("Secondes").InnerText);
+                        int mF = int.Parse(nnn.SelectSingleNode("HeureFin").InnerText);
 
-                        int x = int.Parse(nnn.SelectSingleNode("Lieu").SelectSingleNode("X").InnerText);
-                        int y = int.Parse(nnn.SelectSingleNode("Lieu").SelectSingleNode("Y").InnerText);
+                        String xy = nnn.SelectSingleNode("XY").InnerText;
+                        int x = int.Parse(xy.Split(',')[0]);
+                        int y = int.Parse(xy.Split(',')[1]);
 
                         Lieu l = new Lieu(x, y);
 
@@ -581,11 +576,11 @@ namespace MarsApp
 
                         if (aBase.isActiviteExterieure())
                             if (aBase.isExperience())
-                                act = new ExperienceExterieure(aBase.getTypeActivite(), description, new TimeMartien(jD, hD, mD, sD), new TimeMartien(jF, hF, mF, sF), l);
+                                act = new ExperienceExterieure(aBase.getTypeActivite(), description, new TimeMartien(0, 0, mD, 0), new TimeMartien(0, 0, mF, 0), l);
                             else
-                                act = new ExplorationExterieure(aBase.getTypeActivite(), description, new TimeMartien(jD, hD, mD, sD), new TimeMartien(jF, hF, mF, sF), l, transportAct);
+                                act = new ExplorationExterieure(aBase.getTypeActivite(), description, new TimeMartien(0, 0, mD, 0), new TimeMartien(0, 0, mF, 0), l, transportAct);
                         else
-                            act = new Activite(aBase.getTypeActivite(), description, new TimeMartien(jD, hD, mD, sD), new TimeMartien(jF, hF, mF, sF), l);
+                            act = new Activite(aBase.getTypeActivite(), description, new TimeMartien(0, 0, mD, 0), new TimeMartien(0, 0, mF, 0), l);
                         
 
                         act.setDescription(description);
