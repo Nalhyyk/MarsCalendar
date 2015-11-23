@@ -183,6 +183,9 @@ namespace MarsApp
         /// <param name="journee">La journée à mettre à jour</param>
         public void miseAJourEdt(Journee journee)
         {
+            for (int i = 0; i < 24; ++i)
+                heures[i].Text = "";
+
             numJourneeLabel.Text = "Journée " + journeeSelectionnee;
 
             foreach (Activite a in journee.getActivites())
@@ -209,30 +212,36 @@ namespace MarsApp
         /// <param name="a">Une activité</param>
         public void lierActiviteEtEdt(Activite a)
         {
-            int debut = a.getHeureDebut().getHeures();
-            int fin = a.getHeureFin().getHeures();
+            int debut = a.getHeureDebut().getHeures() * 60 + a.getHeureDebut().getMinutes();
+            int fin = a.getHeureFin().getHeures() * 60 + a.getHeureFin().getMinutes();
 
-            if (fin == 0)
+            int duree = fin - debut;
+
+            if (fin == 24 * 60 + 40)
                 fin = 24;
 
             String nom = a.getNom();
 
-            for (int i = debut; i < fin; ++i)
-            {
-                heures[i].Text = a.getNom();
-                
-                foreach (Domaine d in domaines)
-                    if (d.getNomActivites().Contains(a.getNom()) || d.getNom().Equals(a.getNom()))
-                        heures[i].BackColor = Color.FromArgb(d.getCouleur()[0], d.getCouleur()[1], d.getCouleur()[2]);
+            int hdebut = (int) Math.Truncate((double) debut / 60) + 1;
+            hdebut = (hdebut == 1) ? 0 : hdebut;
+            int hfin = (int)Math.Truncate((double) fin / 60);
 
-                if (a.isActiviteExterieure())
+            for (int i = hdebut; i <= hfin; ++i)
+            {
+                heures[i].Text += a.getNom() + ((duree > 60) ? "" : ",");
+                
+                /*foreach (Domaine d in domaines)
+                    if (d.getNomActivites().Contains(a.getNom()) || d.getNom().Equals(a.getNom()))
+                        heures[i].BackColor = Color.FromArgb(d.getCouleur()[0], d.getCouleur()[1], d.getCouleur()[2]);*/
+
+                /*if (a.isActiviteExterieure())
                 {
                     Bitmap img = (a.isExploration()) ? ((ExplorationExterieure) a).deplacement() : ((ExperienceExterieure) a).deplacement();
                     iconesActivite[i].Image = img;
                     iconesActivite[i].Visible = true;
                 }
                 else
-                    iconesActivite[i].Visible = false;
+                    iconesActivite[i].Visible = false;*/
             }
         }
 

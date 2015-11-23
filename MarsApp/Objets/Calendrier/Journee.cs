@@ -41,14 +41,16 @@ namespace MarsApp
             this.etat = etat;
             this.journeeExterieure = journeeExterieure;
             listeActivites = new List<Activite>();
-            ajouterActivite(new Activite(new TypeActivite("Dormir"), "", new TimeMartien(0), new TimeMartien(7), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(0, 0), new TimeMartien(0, 20), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("Dormir"), "", new TimeMartien(0, 20), new TimeMartien(7, 20), new Lieu(0, 0)));
             ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(7), new TimeMartien(8), new Lieu(0, 0)));
             ajouterActivite(new Activite(new TypeActivite("Privé"), "", new TimeMartien(8), new TimeMartien(12), new Lieu(0, 0)));
             ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(12), new TimeMartien(14), new Lieu(0, 0)));
             ajouterActivite(new Activite(new TypeActivite("Privé"), "", new TimeMartien(14), new TimeMartien(19), new Lieu(0, 0)));
             ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(19), new TimeMartien(21), new Lieu(0, 0)));
             ajouterActivite(new Activite(new TypeActivite("Privé"), "", new TimeMartien(21), new TimeMartien(23), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("Dormir"), "", new TimeMartien(23), new TimeMartien(24, 40), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("Dormir"), "", new TimeMartien(23), new TimeMartien(24, 30), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("Dormir"), "", new TimeMartien(24, 30), new TimeMartien(24, 40), new Lieu(0, 0)));
         }
         #endregion
 
