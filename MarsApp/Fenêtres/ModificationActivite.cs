@@ -28,7 +28,18 @@ namespace MarsApp
         /// <param name="cm">L'interface graphique CalendrierMission</param>
         public ModificationActivite(Journee j, Activite a, CalendrierMission cm)
         {
+            if (a.getHeureFin().getHeures() == 24 && a.getHeureFin().getMinutes() == 39)
+                a.setHeureFin(new TimeMartien(0));
+
             InitializeComponent();
+
+            if (finHeure.Value == 0 && finMinute.Value == 0)
+            {
+                finHeure.Value = 24;
+                finMinute.Value = 40;
+            }
+
+            debutHeure.Maximum = finHeure.Value;
 
             lieu = new Lieu(0, 0);
 
@@ -38,19 +49,15 @@ namespace MarsApp
 
             debutHeure.Value = activiteAModifier.getHeureDebut().getHeures();
             finHeure.Value = activiteAModifier.getHeureFin().getHeures();
-            debutHeure.Minimum = debutHeure.Value;
-            finHeure.Minimum = debutHeure.Value + 1;
-            debutHeure.Maximum = finHeure.Value - 1;
-            finHeure.Maximum = finHeure.Value;
 
-            if (debutHeure.Minimum == 24)
-                debutHeure.Minimum = 0;
-            if (debutHeure.Maximum == 24)
-                debutHeure.Maximum = 0;
-            if (finHeure.Minimum == 24)
-                finHeure.Minimum = 0;
-            if (finHeure.Maximum == 24)
-                finHeure.Maximum = 0;
+            debutMinute.Value = activiteAModifier.getHeureDebut().getMinutes();
+            finMinute.Value = activiteAModifier.getHeureFin().getMinutes();
+
+            debutHeure.Minimum = debutHeure.Value;
+            finHeure.Maximum = (finHeure.Value == 0) ? 24 : finHeure.Value;
+
+            finHeure.Minimum = debutHeure.Value;
+
 
             foreach (Domaine d in CalendrierMission.domaines)
             {
@@ -115,29 +122,30 @@ namespace MarsApp
                     transport = new Scaphandre();
 
                 if (explorationRadio.Checked)
-                    a = new ExplorationExterieure(new TypeActivite(type), descriptionTB.Text, new TimeMartien((int)debutHeure.Value), new TimeMartien((int)finHeure.Value), lieu, transport);
+                    a = new ExplorationExterieure(new TypeActivite(type), descriptionTB.Text, new TimeMartien(0, (int)debutHeure.Value, (int)debutMinute.Value, 0), new TimeMartien(0, (int)finHeure.Value, (int)finMinute.Value, 0), lieu, transport);
                 else
-                    a = new ExperienceExterieure(new TypeActivite(type), descriptionTB.Text, new TimeMartien((int)debutHeure.Value), new TimeMartien((int)finHeure.Value), lieu, transport);
+                    a = new ExperienceExterieure(new TypeActivite(type), descriptionTB.Text, new TimeMartien(0, (int)debutHeure.Value, (int)debutMinute.Value, 0), new TimeMartien(0, (int)finHeure.Value, (int)finMinute.Value, 0), lieu, transport);
             }
             else
-                a = new Activite(new TypeActivite(type), descriptionTB.Text, new TimeMartien((int)debutHeure.Value), new TimeMartien((int)finHeure.Value), new Lieu(0, 0));
+                a = new Activite(new TypeActivite(type), descriptionTB.Text, new TimeMartien(0, (int)debutHeure.Value, (int)debutMinute.Value, 0), new TimeMartien(0, (int)finHeure.Value, (int)finMinute.Value, 0), new Lieu(0, 0));
 
-            if (activiteAModifier.getDuree().getHeures() == 1)
+            /* Découpage activité */
+            if (activiteAModifier.getDuree().getTotalMinutes() == 10)
                 journeeAModifier.ajouterActivite(a);
-            else if (activiteAModifier.getDuree().getHeures() == 2)
+            else if (activiteAModifier.getDuree().getTotalMinutes() == 20)
             {
-                if (activiteAModifier.getHeureDebut().getHeures() < a.getHeureDebut().getHeures())
-                    activiteAModifier.setHeureFin(new TimeMartien((int)debutHeure.Value));
+                if (activiteAModifier.getHeureDebut() < a.getHeureDebut())
+                    activiteAModifier.setHeureFin(new TimeMartien(0, (int)debutHeure.Value, (int)debutMinute.Value, 0));
                 else
-                    activiteAModifier.setHeureDebut(new TimeMartien((int)finHeure.Value));
+                    activiteAModifier.setHeureDebut(new TimeMartien(0, (int)finHeure.Value, (int)finMinute.Value, 0));
 
                 journeeAModifier.ajouterActivite(a);
                 journeeAModifier.ajouterActivite(activiteAModifier);
             }
-            else if (activiteAModifier.getDuree().getHeures() > 2)
+            else if (activiteAModifier.getDuree().getTotalMinutes() > 20)
             {
-                if (activiteAModifier.getHeureDebut().getHeures() < a.getHeureDebut().getHeures()
-                    && activiteAModifier.getHeureFin().getHeures() > a.getHeureFin().getHeures())
+                if (activiteAModifier.getHeureDebut() < a.getHeureDebut()
+                    && activiteAModifier.getHeureFin() > a.getHeureFin())
                 {
                     Activite copie = (activiteAModifier.isActiviteExterieure()) ? null : new Activite(activiteAModifier);
 
@@ -146,22 +154,22 @@ namespace MarsApp
                     else if (copie == null)
                         copie = new ExperienceExterieure((ExperienceExterieure) activiteAModifier);
 
-                    activiteAModifier.setHeureFin(new TimeMartien((int)debutHeure.Value));
-                    copie.setHeureDebut(new TimeMartien((int)finHeure.Value));
+                    activiteAModifier.setHeureFin(new TimeMartien(0, (int)debutHeure.Value, (int)debutMinute.Value, 0));
+                    copie.setHeureDebut(new TimeMartien(0, (int)finHeure.Value, (int)finMinute.Value, 0));
 
                     journeeAModifier.ajouterActivite(copie);
                     journeeAModifier.ajouterActivite(activiteAModifier);
                 }
-                else if (activiteAModifier.getHeureDebut().getHeures() < a.getHeureDebut().getHeures()
-                            && activiteAModifier.getHeureFin().getHeures() == a.getHeureFin().getHeures())
+                else if (activiteAModifier.getHeureDebut() < a.getHeureDebut()
+                            && activiteAModifier.getHeureFin() == a.getHeureFin())
                 {
-                    activiteAModifier.setHeureFin(new TimeMartien((int)debutHeure.Value));
+                    activiteAModifier.setHeureFin(new TimeMartien(0, (int)debutHeure.Value, (int)debutMinute.Value, 0));
                     journeeAModifier.ajouterActivite(activiteAModifier);
                 }
-                else if (activiteAModifier.getHeureDebut().getHeures() == a.getHeureDebut().getHeures()
-                            && activiteAModifier.getHeureFin().getHeures() > a.getHeureFin().getHeures())
+                else if (activiteAModifier.getHeureDebut() == a.getHeureDebut()
+                            && activiteAModifier.getHeureFin() > a.getHeureFin())
                 {
-                    activiteAModifier.setHeureDebut(new TimeMartien((int)finHeure.Value));
+                    activiteAModifier.setHeureDebut(new TimeMartien(0, (int)finHeure.Value, (int)finMinute.Value, 0));
                     journeeAModifier.ajouterActivite(activiteAModifier);
                 }
 
@@ -176,6 +184,19 @@ namespace MarsApp
         {
             SelectionCarte sc = new SelectionCarte(lieu, lieuTB);
             sc.Show();
+        }
+
+        private void duree_ValueChanged(object sender, EventArgs e)
+        {
+            if (finHeure.Value == 24)
+                finMinute.Maximum = 40;
+            else
+                finMinute.Maximum = 60;
+
+            if (debutHeure.Value == 24)
+                debutMinute.Maximum = 40;
+            else
+                debutMinute.Maximum = 60;
         }
         #endregion
     }

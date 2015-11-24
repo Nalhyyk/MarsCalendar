@@ -146,7 +146,7 @@
             this.actM50.Name = "actM50";
             this.actM50.Size = new System.Drawing.Size(269, 25);
             this.actM50.TabIndex = 171;
-            this.actM50.Tag = "5";
+            this.actM50.Tag = "50";
             this.actM50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.actM50.Click += new System.EventHandler(this.heure_click);
             // 
@@ -163,7 +163,7 @@
             this.actM40.Name = "actM40";
             this.actM40.Size = new System.Drawing.Size(269, 25);
             this.actM40.TabIndex = 169;
-            this.actM40.Tag = "4";
+            this.actM40.Tag = "40";
             this.actM40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.actM40.Click += new System.EventHandler(this.heure_click);
             // 
@@ -180,7 +180,7 @@
             this.actM30.Name = "actM30";
             this.actM30.Size = new System.Drawing.Size(269, 25);
             this.actM30.TabIndex = 167;
-            this.actM30.Tag = "3";
+            this.actM30.Tag = "30";
             this.actM30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.actM30.Click += new System.EventHandler(this.heure_click);
             // 
@@ -197,7 +197,7 @@
             this.actM20.Name = "actM20";
             this.actM20.Size = new System.Drawing.Size(269, 25);
             this.actM20.TabIndex = 165;
-            this.actM20.Tag = "2";
+            this.actM20.Tag = "20";
             this.actM20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.actM20.Click += new System.EventHandler(this.heure_click);
             // 
@@ -214,7 +214,7 @@
             this.actM10.Name = "actM10";
             this.actM10.Size = new System.Drawing.Size(269, 25);
             this.actM10.TabIndex = 163;
-            this.actM10.Tag = "1";
+            this.actM10.Tag = "10";
             this.actM10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.actM10.Click += new System.EventHandler(this.heure_click);
             // 
@@ -312,26 +312,26 @@
             this.Modifier,
             this.Supprimer});
             this.clicDroitActivite.Name = "contextMenuStrip1";
-            this.clicDroitActivite.Size = new System.Drawing.Size(153, 92);
+            this.clicDroitActivite.Size = new System.Drawing.Size(143, 70);
             // 
             // informationsToolStripMenuItem
             // 
             this.informationsToolStripMenuItem.Name = "informationsToolStripMenuItem";
-            this.informationsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.informationsToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.informationsToolStripMenuItem.Text = "Informations";
             this.informationsToolStripMenuItem.Click += new System.EventHandler(this.informationsToolStripMenuItem_Click);
             // 
             // Modifier
             // 
             this.Modifier.Name = "Modifier";
-            this.Modifier.Size = new System.Drawing.Size(152, 22);
+            this.Modifier.Size = new System.Drawing.Size(142, 22);
             this.Modifier.Text = "Modifier";
             this.Modifier.Click += new System.EventHandler(this.Modifier_Click);
             // 
             // Supprimer
             // 
             this.Supprimer.Name = "Supprimer";
-            this.Supprimer.Size = new System.Drawing.Size(152, 22);
+            this.Supprimer.Size = new System.Drawing.Size(142, 22);
             this.Supprimer.Text = "Supprimer";
             this.Supprimer.Click += new System.EventHandler(this.Supprimer_Click);
             // 

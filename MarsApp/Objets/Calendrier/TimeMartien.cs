@@ -204,6 +204,38 @@ namespace MarsApp
 
         #region Autres surcharges d'opérateurs
         /// <summary>
+        /// Surcharge de l'opérateur ==
+        /// </summary>
+        /// <param name="t1">TimeMartien</param>
+        /// <param name="t2">TimeMartien</param>
+        /// <returns>Résultat égal</returns>
+        public static bool operator ==(TimeMartien t1, TimeMartien t2)
+        {
+            if (t1.getHeures() == t2.getHeures())
+                if (t1.getMinutes() == t2.getMinutes())
+                    if (t1.getSecondes() == t2.getSecondes())
+                        return true;
+            return false;
+        }
+
+        /// <summary>
+        /// Surcharge de l'opérateur !=
+        /// </summary>
+        /// <param name="t1">TimeMartien</param>
+        /// <param name="t2">TimeMartien</param>
+        /// <returns>Résultat différent</returns>
+        public static bool operator !=(TimeMartien t1, TimeMartien t2)
+        {
+            if (t1.getHeures() != t2.getHeures())
+                return true;
+            if (t1.getMinutes() != t2.getMinutes())
+                return true;
+            if (t1.getSecondes() != t2.getSecondes())
+                return true;
+            return false;
+        }
+        
+        /// <summary>
         /// Surcharge de l'opérateur <
         /// </summary>
         /// <param name="t1">TimeMartien</param>
@@ -380,6 +412,19 @@ namespace MarsApp
         /// </summary>
         /// <returns></returns>
         public int getJours() { return jours; }
+
+        public int getTotalMinutes()
+        {
+            int min = minute;
+            minute = 0;
+
+            while (heure > 0)
+            {
+                min += 60;
+                heure--;
+            }
+            return min;
+        }
         #endregion
 
         /// <summary>

@@ -38,6 +38,8 @@
             this.explorationRadio = new System.Windows.Forms.RadioButton();
             this.experienceRadio = new System.Windows.Forms.RadioButton();
             this.temps = new System.Windows.Forms.GroupBox();
+            this.finMinute = new System.Windows.Forms.NumericUpDown();
+            this.debutMinute = new System.Windows.Forms.NumericUpDown();
             this.finHeure = new System.Windows.Forms.NumericUpDown();
             this.debutHeure = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,6 +56,8 @@
             this.groupBox1.SuspendLayout();
             this.activiteExterieureGB.SuspendLayout();
             this.temps.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.finMinute)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.debutMinute)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.finHeure)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.debutHeure)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -161,6 +165,8 @@
             // 
             // temps
             // 
+            this.temps.Controls.Add(this.finMinute);
+            this.temps.Controls.Add(this.debutMinute);
             this.temps.Controls.Add(this.finHeure);
             this.temps.Controls.Add(this.debutHeure);
             this.temps.Controls.Add(this.label2);
@@ -172,29 +178,57 @@
             this.temps.TabStop = false;
             this.temps.Text = "Durée activité";
             // 
+            // finMinute
+            // 
+            this.finMinute.Location = new System.Drawing.Point(186, 73);
+            this.finMinute.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.finMinute.Name = "finMinute";
+            this.finMinute.Size = new System.Drawing.Size(80, 20);
+            this.finMinute.TabIndex = 9;
+            this.finMinute.ValueChanged += new System.EventHandler(this.duree_ValueChanged);
+            // 
+            // debutMinute
+            // 
+            this.debutMinute.Location = new System.Drawing.Point(186, 33);
+            this.debutMinute.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
+            this.debutMinute.Name = "debutMinute";
+            this.debutMinute.Size = new System.Drawing.Size(80, 20);
+            this.debutMinute.TabIndex = 8;
+            this.debutMinute.ValueChanged += new System.EventHandler(this.duree_ValueChanged);
+            // 
             // finHeure
             // 
-            this.finHeure.Location = new System.Drawing.Point(100, 71);
+            this.finHeure.Location = new System.Drawing.Point(100, 73);
             this.finHeure.Maximum = new decimal(new int[] {
             24,
             0,
             0,
             0});
             this.finHeure.Name = "finHeure";
-            this.finHeure.Size = new System.Drawing.Size(228, 20);
-            this.finHeure.TabIndex = 3;
+            this.finHeure.Size = new System.Drawing.Size(80, 20);
+            this.finHeure.TabIndex = 7;
+            this.finHeure.ValueChanged += new System.EventHandler(this.duree_ValueChanged);
             // 
             // debutHeure
             // 
-            this.debutHeure.Location = new System.Drawing.Point(100, 31);
+            this.debutHeure.Location = new System.Drawing.Point(100, 33);
             this.debutHeure.Maximum = new decimal(new int[] {
             24,
             0,
             0,
             0});
             this.debutHeure.Name = "debutHeure";
-            this.debutHeure.Size = new System.Drawing.Size(228, 20);
-            this.debutHeure.TabIndex = 2;
+            this.debutHeure.Size = new System.Drawing.Size(80, 20);
+            this.debutHeure.TabIndex = 6;
+            this.debutHeure.ValueChanged += new System.EventHandler(this.duree_ValueChanged);
             // 
             // label2
             // 
@@ -329,6 +363,8 @@
             this.activiteExterieureGB.PerformLayout();
             this.temps.ResumeLayout(false);
             this.temps.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.finMinute)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.debutMinute)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.finHeure)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.debutHeure)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -354,8 +390,6 @@
         private System.Windows.Forms.RadioButton explorationRadio;
         private System.Windows.Forms.RadioButton experienceRadio;
         private System.Windows.Forms.GroupBox temps;
-        private System.Windows.Forms.NumericUpDown finHeure;
-        private System.Windows.Forms.NumericUpDown debutHeure;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -367,5 +401,9 @@
         private System.Windows.Forms.GroupBox transportGB;
         private System.Windows.Forms.RadioButton vehiculeRadio;
         private System.Windows.Forms.RadioButton scaphandreRadio;
+        private System.Windows.Forms.NumericUpDown finMinute;
+        private System.Windows.Forms.NumericUpDown debutMinute;
+        private System.Windows.Forms.NumericUpDown finHeure;
+        private System.Windows.Forms.NumericUpDown debutHeure;
     }
 }

@@ -16,10 +16,13 @@ namespace MarsApp
         private Journee journee;
         private CalendrierMission cm;
         private int heureSelectionnee;
+        private int minuteSelectionnee;
 
         public DetailHeure(int heureSelectionnee, List<Activite> activites, Journee journee, CalendrierMission cm)
         {
             InitializeComponent();
+
+            this.heureSelectionnee = heureSelectionnee;
 
             horaires = new Dictionary<int, Label>();
             heures = new Dictionary<int, Label>();
@@ -96,19 +99,19 @@ namespace MarsApp
 
         private void heure_click(object sender, EventArgs e)
         {
-            heureSelectionnee = int.Parse(((Label)sender).Tag.ToString());
+            minuteSelectionnee = int.Parse(((Label)sender).Tag.ToString());
             clicDroitActivite.Show(Cursor.Position);
         }
 
         private void Modifier_Click(object sender, EventArgs e)
         {
-            ModificationActivite ma = new ModificationActivite(journee, journee.trouverActivite(heureSelectionnee), cm);
+            ModificationActivite ma = new ModificationActivite(journee, journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0)), cm);
             ma.Show();
         }
 
         private void informationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            InfoActivite ia = new InfoActivite(journee.trouverActivite(heureSelectionnee));
+            InfoActivite ia = new InfoActivite(journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0)));
             ia.Show();
         }
 
@@ -116,7 +119,7 @@ namespace MarsApp
         {
             if (journee.isModifiable())
             {
-                Activite activiteAModifier = journee.trouverActivite(new TimeMartien(0, 0, heureSelectionnee, 0));
+                Activite activiteAModifier = journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0));
                 Activite a = new Activite(new TypeActivite("Privé"), "", new TimeMartien(activiteAModifier.getHeureDebut().getHeures()), new TimeMartien(activiteAModifier.getHeureFin().getHeures()), new Lieu(0, 0));
 
                 journee.supprimerActivite(activiteAModifier);

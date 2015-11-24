@@ -131,11 +131,17 @@ namespace MarsApp
         /// </summary>
         /// <param name="heure">Une heure</param>
         /// <returns>L'activité se passant à l'heure donnée</returns>
-        public Activite trouverActivite(int heure)
+        public Activite trouverActivite(TimeMartien tm)
         {
+            if (tm.getHeures() == 0 && tm.getMinutes() == 0 && tm.getSecondes() == 0)
+                tm = new TimeMartien(0, 24, 39, 39);
+
             foreach (Activite a in listeActivites)
             {
-                if (a.getHeureDebut().getHeures() <= heure && (a.getHeureFin().getHeures() > heure || a.getHeureFin().getHeures() == 0))
+                if (a.getHeureFin().getHeures() == 0 && a.getHeureFin().getMinutes() == 0 && a.getHeureFin().getSecondes() == 0)
+                    a.setHeureFin(new TimeMartien(0, 24, 39, 39));
+
+                if (a.getHeureDebut() <= tm && a.getHeureFin() > tm)
                     return a;
             }
 

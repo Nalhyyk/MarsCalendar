@@ -162,25 +162,27 @@
             // 
             this.finMinute.Location = new System.Drawing.Point(186, 71);
             this.finMinute.Maximum = new decimal(new int[] {
-            60,
+            59,
             0,
             0,
             0});
             this.finMinute.Name = "finMinute";
             this.finMinute.Size = new System.Drawing.Size(80, 20);
             this.finMinute.TabIndex = 5;
+            this.finMinute.ValueChanged += new System.EventHandler(this.duree_ValueChanged);
             // 
             // debutMinute
             // 
             this.debutMinute.Location = new System.Drawing.Point(186, 31);
             this.debutMinute.Maximum = new decimal(new int[] {
-            60,
+            59,
             0,
             0,
             0});
             this.debutMinute.Name = "debutMinute";
             this.debutMinute.Size = new System.Drawing.Size(80, 20);
             this.debutMinute.TabIndex = 4;
+            this.debutMinute.ValueChanged += new System.EventHandler(this.duree_ValueChanged);
             // 
             // finHeure
             // 
@@ -193,6 +195,7 @@
             this.finHeure.Name = "finHeure";
             this.finHeure.Size = new System.Drawing.Size(80, 20);
             this.finHeure.TabIndex = 3;
+            this.finHeure.ValueChanged += new System.EventHandler(this.duree_ValueChanged);
             // 
             // debutHeure
             // 
@@ -205,6 +208,7 @@
             this.debutHeure.Name = "debutHeure";
             this.debutHeure.Size = new System.Drawing.Size(80, 20);
             this.debutHeure.TabIndex = 2;
+            this.debutHeure.ValueChanged += new System.EventHandler(this.duree_ValueChanged);
             // 
             // label2
             // 

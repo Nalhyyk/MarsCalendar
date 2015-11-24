@@ -22,43 +22,30 @@ namespace MarsApp
         /// </summary>
         public InfoActivite(Activite a)
         {
+            if (a.getHeureFin().getHeures() == 24 && a.getHeureFin().getMinutes() == 39)
+                a.setHeureFin(new TimeMartien(0));
+
             InitializeComponent();
             activiteSelectionnee = a;
 
             debutHeure.Value = activiteSelectionnee.getHeureDebut().getHeures();
             finHeure.Value = activiteSelectionnee.getHeureFin().getHeures();
-            /*debutHeure.Minimum = debutHeure.Value;
-            finHeure.Minimum = debutHeure.Value + 1;
-            debutHeure.Maximum = finHeure.Value - 1;
-            finHeure.Maximum = finHeure.Value;*/
 
             debutMinute.Value = activiteSelectionnee.getHeureDebut().getMinutes();
             finMinute.Value = activiteSelectionnee.getHeureFin().getMinutes();
-            /*debutMinute.Minimum = debutMinute.Value;
-            finMinute.Minimum = debutMinute.Value + 1;
-            debutMinute.Maximum = finMinute.Value - 1;
-            finMinute.Maximum = finMinute.Value;*/
 
-            /*if (debutHeure.Minimum == 24)
-                debutHeure.Minimum = 0;
-            if (debutHeure.Maximum == 24)
-                debutHeure.Maximum = 0;
-            if (finHeure.Minimum == 24)
-                finHeure.Minimum = 0;
-            if (finHeure.Maximum == 24)
-                finHeure.Maximum = 0;*/
+            debutHeure.Minimum = debutHeure.Value;
+            finHeure.Maximum = (finHeure.Value == 0) ? 24 : finHeure.Value;
+            
+            finHeure.Minimum = debutHeure.Value;
 
-            if (finHeure.Value == 24 && finMinute.Value > 39)
+            if (finHeure.Value == 0 && finMinute.Value == 0)
             {
-                finHeure.Value = 0;
-                finMinute.Value -= 40;
+                finHeure.Value = 24;
+                finMinute.Value = 40;
             }
-            if (debutHeure.Maximum == 24)
-                debutHeure.Maximum = 0;
-            if (finHeure.Minimum == 24)
-                finHeure.Minimum = 0;
-            if (finHeure.Maximum == 24)
-                finHeure.Maximum = 0;
+
+            debutHeure.Maximum = finHeure.Value;
 
             foreach (Domaine d in CalendrierMission.domaines)
             {
@@ -98,6 +85,20 @@ namespace MarsApp
         {
             fermerFenetre();
         }
+
+        private void duree_ValueChanged(object sender, EventArgs e)
+        {
+            if (finHeure.Value == 24)
+                finMinute.Maximum = 40;
+            else
+                finMinute.Maximum = 60;
+
+            if (debutHeure.Value == 24)
+                debutMinute.Maximum = 40;
+            else
+                debutMinute.Maximum = 60;
+        }
         #endregion
+
     }
 }

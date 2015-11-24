@@ -613,7 +613,7 @@ namespace MarsApp
 
             if (journee.isModifiable())
             {
-                Activite activiteAModifier = journee.trouverActivite(heureSelectionnee);
+                Activite activiteAModifier = journee.trouverActivite(new TimeMartien(0, 0, heureSelectionnee, 0));
 
                 ModificationActivite ma = new ModificationActivite(journee, activiteAModifier, this);
                 ma.Show();
@@ -724,7 +724,7 @@ namespace MarsApp
         private void informationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Journee journee = journeesMission[journeeSelectionnee];
-            Activite activiteAAfficher = journee.trouverActivite(heureSelectionnee);
+            Activite activiteAAfficher = journee.trouverActivite(new TimeMartien(0, 0, heureSelectionnee, 0));
             InfoActivite ia = new InfoActivite(activiteAAfficher);
             ia.Show();
         }
