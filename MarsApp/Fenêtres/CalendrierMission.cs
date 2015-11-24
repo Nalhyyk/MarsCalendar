@@ -641,28 +641,6 @@ namespace MarsApp
             descriptionTexte.Text = journeesMission[journeeSelectionnee].getDescription();
         }
 
-        private void heure_MouseClick(object sender, MouseEventArgs e)
-        {
-            heureSelectionnee = int.Parse(((Label)sender).Tag.ToString());
-            clicDroitActivite.Show(Cursor.Position);
-        }
-
-        private void Supprimer_Click(object sender, EventArgs e)
-        {
-            Journee journee = journeesMission[journeeSelectionnee];
-
-            if (journee.isModifiable())
-            {
-                Activite activiteAModifier = journee.trouverActivite(heureSelectionnee);
-                Activite a = new Activite(new TypeActivite("Privé"), "", new TimeMartien(activiteAModifier.getHeureDebut().getHeures()), new TimeMartien(activiteAModifier.getHeureFin().getHeures()), new Lieu(0, 0));
-
-                journee.supprimerActivite(activiteAModifier);
-                journee.ajouterActivite(a);
-
-                miseAJourEdt(journee);
-            }
-        }
-
         /// <summary>
         /// Permet de passer à la période précédente/suivante
         /// </summary>
@@ -770,7 +748,7 @@ namespace MarsApp
         {
             heureSelectionnee = int.Parse(((Label)sender).Tag.ToString());
 
-            DetailHeure dh = new DetailHeure(heureSelectionnee, journeeActuelle.trouverActivites(heureSelectionnee));
+            DetailHeure dh = new DetailHeure(heureSelectionnee, journeeActuelle.trouverActivites(heureSelectionnee), journeeActuelle, this);
             dh.Show();
         }
         #endregion

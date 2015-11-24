@@ -37,6 +37,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.descriptionTB = new System.Windows.Forms.TextBox();
             this.temps = new System.Windows.Forms.GroupBox();
+            this.finMinute = new System.Windows.Forms.NumericUpDown();
+            this.debutMinute = new System.Windows.Forms.NumericUpDown();
             this.finHeure = new System.Windows.Forms.NumericUpDown();
             this.debutHeure = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,6 +55,8 @@
             this.lieuGB.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.temps.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.finMinute)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.debutMinute)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.finHeure)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.debutHeure)).BeginInit();
             this.activiteExterieureGB.SuspendLayout();
@@ -141,6 +145,8 @@
             // 
             // temps
             // 
+            this.temps.Controls.Add(this.finMinute);
+            this.temps.Controls.Add(this.debutMinute);
             this.temps.Controls.Add(this.finHeure);
             this.temps.Controls.Add(this.debutHeure);
             this.temps.Controls.Add(this.label2);
@@ -152,6 +158,30 @@
             this.temps.TabStop = false;
             this.temps.Text = "Durée activité";
             // 
+            // finMinute
+            // 
+            this.finMinute.Location = new System.Drawing.Point(186, 71);
+            this.finMinute.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.finMinute.Name = "finMinute";
+            this.finMinute.Size = new System.Drawing.Size(80, 20);
+            this.finMinute.TabIndex = 5;
+            // 
+            // debutMinute
+            // 
+            this.debutMinute.Location = new System.Drawing.Point(186, 31);
+            this.debutMinute.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.debutMinute.Name = "debutMinute";
+            this.debutMinute.Size = new System.Drawing.Size(80, 20);
+            this.debutMinute.TabIndex = 4;
+            // 
             // finHeure
             // 
             this.finHeure.Location = new System.Drawing.Point(100, 71);
@@ -161,7 +191,7 @@
             0,
             0});
             this.finHeure.Name = "finHeure";
-            this.finHeure.Size = new System.Drawing.Size(228, 20);
+            this.finHeure.Size = new System.Drawing.Size(80, 20);
             this.finHeure.TabIndex = 3;
             // 
             // debutHeure
@@ -173,7 +203,7 @@
             0,
             0});
             this.debutHeure.Name = "debutHeure";
-            this.debutHeure.Size = new System.Drawing.Size(228, 20);
+            this.debutHeure.Size = new System.Drawing.Size(80, 20);
             this.debutHeure.TabIndex = 2;
             // 
             // label2
@@ -302,6 +332,8 @@
             this.groupBox2.PerformLayout();
             this.temps.ResumeLayout(false);
             this.temps.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.finMinute)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.debutMinute)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.finHeure)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.debutHeure)).EndInit();
             this.activiteExterieureGB.ResumeLayout(false);
@@ -335,6 +367,8 @@
         private System.Windows.Forms.RadioButton interieurRadio;
         private System.Windows.Forms.Button ok;
         private System.Windows.Forms.TreeView treeView;
+        private System.Windows.Forms.NumericUpDown finMinute;
+        private System.Windows.Forms.NumericUpDown debutMinute;
 
     }
 }

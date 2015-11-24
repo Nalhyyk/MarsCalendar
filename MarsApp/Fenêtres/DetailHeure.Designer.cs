@@ -28,6 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.h5img = new System.Windows.Forms.PictureBox();
+            this.h4img = new System.Windows.Forms.PictureBox();
+            this.h3img = new System.Windows.Forms.PictureBox();
+            this.h2img = new System.Windows.Forms.PictureBox();
+            this.h1img = new System.Windows.Forms.PictureBox();
+            this.h0img = new System.Windows.Forms.PictureBox();
             this.actM50 = new System.Windows.Forms.Label();
             this.actM40 = new System.Windows.Forms.Label();
             this.actM30 = new System.Windows.Forms.Label();
@@ -41,19 +48,90 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label0 = new System.Windows.Forms.Label();
-            this.h5img = new System.Windows.Forms.PictureBox();
-            this.h4img = new System.Windows.Forms.PictureBox();
-            this.h3img = new System.Windows.Forms.PictureBox();
-            this.h2img = new System.Windows.Forms.PictureBox();
-            this.h1img = new System.Windows.Forms.PictureBox();
-            this.h0img = new System.Windows.Forms.PictureBox();
+            this.clicDroitActivite = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.informationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Modifier = new System.Windows.Forms.ToolStripMenuItem();
+            this.Supprimer = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.h5img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h4img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h3img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h2img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h1img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h0img)).BeginInit();
+            this.clicDroitActivite.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // h5img
+            // 
+            this.h5img.BackColor = System.Drawing.Color.Transparent;
+            this.h5img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h5img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h5img.Location = new System.Drawing.Point(70, 132);
+            this.h5img.Name = "h5img";
+            this.h5img.Size = new System.Drawing.Size(16, 16);
+            this.h5img.TabIndex = 172;
+            this.h5img.TabStop = false;
+            this.h5img.Click += new System.EventHandler(this.heure_click);
+            // 
+            // h4img
+            // 
+            this.h4img.BackColor = System.Drawing.Color.Transparent;
+            this.h4img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h4img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h4img.Location = new System.Drawing.Point(70, 110);
+            this.h4img.Name = "h4img";
+            this.h4img.Size = new System.Drawing.Size(16, 16);
+            this.h4img.TabIndex = 170;
+            this.h4img.TabStop = false;
+            this.h4img.Click += new System.EventHandler(this.heure_click);
+            // 
+            // h3img
+            // 
+            this.h3img.BackColor = System.Drawing.Color.Transparent;
+            this.h3img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h3img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h3img.Location = new System.Drawing.Point(70, 88);
+            this.h3img.Name = "h3img";
+            this.h3img.Size = new System.Drawing.Size(16, 16);
+            this.h3img.TabIndex = 168;
+            this.h3img.TabStop = false;
+            this.h3img.Click += new System.EventHandler(this.heure_click);
+            // 
+            // h2img
+            // 
+            this.h2img.BackColor = System.Drawing.Color.Transparent;
+            this.h2img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h2img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h2img.Location = new System.Drawing.Point(70, 66);
+            this.h2img.Name = "h2img";
+            this.h2img.Size = new System.Drawing.Size(16, 16);
+            this.h2img.TabIndex = 166;
+            this.h2img.TabStop = false;
+            this.h2img.Click += new System.EventHandler(this.heure_click);
+            // 
+            // h1img
+            // 
+            this.h1img.BackColor = System.Drawing.Color.Transparent;
+            this.h1img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h1img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h1img.Location = new System.Drawing.Point(70, 44);
+            this.h1img.Name = "h1img";
+            this.h1img.Size = new System.Drawing.Size(16, 16);
+            this.h1img.TabIndex = 164;
+            this.h1img.TabStop = false;
+            this.h1img.Click += new System.EventHandler(this.heure_click);
+            // 
+            // h0img
+            // 
+            this.h0img.BackColor = System.Drawing.Color.Transparent;
+            this.h0img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h0img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h0img.Location = new System.Drawing.Point(70, 22);
+            this.h0img.Name = "h0img";
+            this.h0img.Size = new System.Drawing.Size(16, 16);
+            this.h0img.TabIndex = 162;
+            this.h0img.TabStop = false;
+            this.h0img.Click += new System.EventHandler(this.heure_click);
             // 
             // actM50
             // 
@@ -70,6 +148,7 @@
             this.actM50.TabIndex = 171;
             this.actM50.Tag = "5";
             this.actM50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actM50.Click += new System.EventHandler(this.heure_click);
             // 
             // actM40
             // 
@@ -86,6 +165,7 @@
             this.actM40.TabIndex = 169;
             this.actM40.Tag = "4";
             this.actM40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actM40.Click += new System.EventHandler(this.heure_click);
             // 
             // actM30
             // 
@@ -102,6 +182,7 @@
             this.actM30.TabIndex = 167;
             this.actM30.Tag = "3";
             this.actM30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actM30.Click += new System.EventHandler(this.heure_click);
             // 
             // actM20
             // 
@@ -118,6 +199,7 @@
             this.actM20.TabIndex = 165;
             this.actM20.Tag = "2";
             this.actM20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actM20.Click += new System.EventHandler(this.heure_click);
             // 
             // actM10
             // 
@@ -134,6 +216,7 @@
             this.actM10.TabIndex = 163;
             this.actM10.Tag = "1";
             this.actM10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actM10.Click += new System.EventHandler(this.heure_click);
             // 
             // actM0
             // 
@@ -150,6 +233,7 @@
             this.actM0.TabIndex = 161;
             this.actM0.Tag = "0";
             this.actM0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.actM0.Click += new System.EventHandler(this.heure_click);
             // 
             // label60
             // 
@@ -221,71 +305,35 @@
             this.label0.TabIndex = 154;
             this.label0.Text = "0h00";
             // 
-            // h5img
+            // clicDroitActivite
             // 
-            this.h5img.BackColor = System.Drawing.Color.Transparent;
-            this.h5img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h5img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h5img.Location = new System.Drawing.Point(70, 132);
-            this.h5img.Name = "h5img";
-            this.h5img.Size = new System.Drawing.Size(16, 16);
-            this.h5img.TabIndex = 172;
-            this.h5img.TabStop = false;
+            this.clicDroitActivite.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.informationsToolStripMenuItem,
+            this.Modifier,
+            this.Supprimer});
+            this.clicDroitActivite.Name = "contextMenuStrip1";
+            this.clicDroitActivite.Size = new System.Drawing.Size(153, 92);
             // 
-            // h4img
+            // informationsToolStripMenuItem
             // 
-            this.h4img.BackColor = System.Drawing.Color.Transparent;
-            this.h4img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h4img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h4img.Location = new System.Drawing.Point(70, 110);
-            this.h4img.Name = "h4img";
-            this.h4img.Size = new System.Drawing.Size(16, 16);
-            this.h4img.TabIndex = 170;
-            this.h4img.TabStop = false;
+            this.informationsToolStripMenuItem.Name = "informationsToolStripMenuItem";
+            this.informationsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.informationsToolStripMenuItem.Text = "Informations";
+            this.informationsToolStripMenuItem.Click += new System.EventHandler(this.informationsToolStripMenuItem_Click);
             // 
-            // h3img
+            // Modifier
             // 
-            this.h3img.BackColor = System.Drawing.Color.Transparent;
-            this.h3img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h3img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h3img.Location = new System.Drawing.Point(70, 88);
-            this.h3img.Name = "h3img";
-            this.h3img.Size = new System.Drawing.Size(16, 16);
-            this.h3img.TabIndex = 168;
-            this.h3img.TabStop = false;
+            this.Modifier.Name = "Modifier";
+            this.Modifier.Size = new System.Drawing.Size(152, 22);
+            this.Modifier.Text = "Modifier";
+            this.Modifier.Click += new System.EventHandler(this.Modifier_Click);
             // 
-            // h2img
+            // Supprimer
             // 
-            this.h2img.BackColor = System.Drawing.Color.Transparent;
-            this.h2img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h2img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h2img.Location = new System.Drawing.Point(70, 66);
-            this.h2img.Name = "h2img";
-            this.h2img.Size = new System.Drawing.Size(16, 16);
-            this.h2img.TabIndex = 166;
-            this.h2img.TabStop = false;
-            // 
-            // h1img
-            // 
-            this.h1img.BackColor = System.Drawing.Color.Transparent;
-            this.h1img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h1img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h1img.Location = new System.Drawing.Point(70, 44);
-            this.h1img.Name = "h1img";
-            this.h1img.Size = new System.Drawing.Size(16, 16);
-            this.h1img.TabIndex = 164;
-            this.h1img.TabStop = false;
-            // 
-            // h0img
-            // 
-            this.h0img.BackColor = System.Drawing.Color.Transparent;
-            this.h0img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h0img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h0img.Location = new System.Drawing.Point(70, 22);
-            this.h0img.Name = "h0img";
-            this.h0img.Size = new System.Drawing.Size(16, 16);
-            this.h0img.TabIndex = 162;
-            this.h0img.TabStop = false;
+            this.Supprimer.Name = "Supprimer";
+            this.Supprimer.Size = new System.Drawing.Size(152, 22);
+            this.Supprimer.Text = "Supprimer";
+            this.Supprimer.Click += new System.EventHandler(this.Supprimer_Click);
             // 
             // DetailHeure
             // 
@@ -319,6 +367,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.h2img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.h1img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.h0img)).EndInit();
+            this.clicDroitActivite.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,5 +394,9 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label0;
+        private System.Windows.Forms.ContextMenuStrip clicDroitActivite;
+        private System.Windows.Forms.ToolStripMenuItem informationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Modifier;
+        private System.Windows.Forms.ToolStripMenuItem Supprimer;
     }
 }

@@ -27,13 +27,32 @@ namespace MarsApp
 
             debutHeure.Value = activiteSelectionnee.getHeureDebut().getHeures();
             finHeure.Value = activiteSelectionnee.getHeureFin().getHeures();
-            debutHeure.Minimum = debutHeure.Value;
+            /*debutHeure.Minimum = debutHeure.Value;
             finHeure.Minimum = debutHeure.Value + 1;
             debutHeure.Maximum = finHeure.Value - 1;
-            finHeure.Maximum = finHeure.Value;
+            finHeure.Maximum = finHeure.Value;*/
 
-            if (debutHeure.Minimum == 24)
+            debutMinute.Value = activiteSelectionnee.getHeureDebut().getMinutes();
+            finMinute.Value = activiteSelectionnee.getHeureFin().getMinutes();
+            /*debutMinute.Minimum = debutMinute.Value;
+            finMinute.Minimum = debutMinute.Value + 1;
+            debutMinute.Maximum = finMinute.Value - 1;
+            finMinute.Maximum = finMinute.Value;*/
+
+            /*if (debutHeure.Minimum == 24)
                 debutHeure.Minimum = 0;
+            if (debutHeure.Maximum == 24)
+                debutHeure.Maximum = 0;
+            if (finHeure.Minimum == 24)
+                finHeure.Minimum = 0;
+            if (finHeure.Maximum == 24)
+                finHeure.Maximum = 0;*/
+
+            if (finHeure.Value == 24 && finMinute.Value > 39)
+            {
+                finHeure.Value = 0;
+                finMinute.Value -= 40;
+            }
             if (debutHeure.Maximum == 24)
                 debutHeure.Maximum = 0;
             if (finHeure.Minimum == 24)

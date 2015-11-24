@@ -13,13 +13,18 @@ namespace MarsApp
     {
         private Dictionary<int, Label> horaires;
         private Dictionary<int, Label> heures;
+        private Journee journee;
+        private CalendrierMission cm;
+        private int heureSelectionnee;
 
-        public DetailHeure(int heureSelectionnee, List<Activite> activites)
+        public DetailHeure(int heureSelectionnee, List<Activite> activites, Journee journee, CalendrierMission cm)
         {
             InitializeComponent();
 
             horaires = new Dictionary<int, Label>();
             heures = new Dictionary<int, Label>();
+            this.journee = journee;
+            this.cm = cm;
 
             for (int i = 0; i <= 60; i += 10)
             {
@@ -57,6 +62,9 @@ namespace MarsApp
 
                 for (int i = debut; i < fin; i += 10)
                 {
+                    if ((heureSelectionnee + "h" + i + ((i < 10) ? "0" : "")).Equals("24h40"))
+                        heures[i].Text = "0h00";
+
                     horaires[i].Text = a.getNom();
                     heures[i].Text = heureSelectionnee + "h" + i + ((i < 10) ? "0" : "");
 
@@ -69,9 +77,6 @@ namespace MarsApp
                         horaires[i - 10].Visible = false;
                         this.Size = new Size(379, 158);
                     }
-
-                    if ((heureSelectionnee + "h" + i + ((i < 10) ? "0" : "")).Equals("24h40"))
-                        heures[i].Text = "0h00";
 
                     /*foreach (Domaine d in domaines)
                         if (d.getNomActivites().Contains(a.getNom()) || d.getNom().Equals(a.getNom()))
@@ -86,6 +91,38 @@ namespace MarsApp
                     else
                         iconesActivite[i].Visible = false;*/
                 }
+            }
+        }
+
+        private void heure_click(object sender, EventArgs e)
+        {
+            heureSelectionnee = int.Parse(((Label)sender).Tag.ToString());
+            clicDroitActivite.Show(Cursor.Position);
+        }
+
+        private void Modifier_Click(object sender, EventArgs e)
+        {
+            ModificationActivite ma = new ModificationActivite(journee, journee.trouverActivite(heureSelectionnee), cm);
+            ma.Show();
+        }
+
+        private void informationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InfoActivite ia = new InfoActivite(journee.trouverActivite(heureSelectionnee));
+            ia.Show();
+        }
+
+        private void Supprimer_Click(object sender, EventArgs e)
+        {
+            if (journee.isModifiable())
+            {
+                Activite activiteAModifier = journee.trouverActivite(new TimeMartien(0, 0, heureSelectionnee, 0));
+                Activite a = new Activite(new TypeActivite("Privé"), "", new TimeMartien(activiteAModifier.getHeureDebut().getHeures()), new TimeMartien(activiteAModifier.getHeureFin().getHeures()), new Lieu(0, 0));
+
+                journee.supprimerActivite(activiteAModifier);
+                journee.ajouterActivite(a);
+
+                cm.Refresh();
             }
         }
     }

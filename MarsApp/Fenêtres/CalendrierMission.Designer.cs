@@ -30,10 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalendrierMission));
-            this.clicDroitActivite = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.informationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Modifier = new System.Windows.Forms.ToolStripMenuItem();
-            this.Supprimer = new System.Windows.Forms.ToolStripMenuItem();
             this.label25 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -286,7 +282,6 @@
             this.h24img = new System.Windows.Forms.PictureBox();
             this.actH24 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.clicDroitActivite.SuspendLayout();
             this.jour50.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.astro50)).BeginInit();
             this.jour30.SuspendLayout();
@@ -419,36 +414,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.precedent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h24img)).BeginInit();
             this.SuspendLayout();
-            // 
-            // clicDroitActivite
-            // 
-            this.clicDroitActivite.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.informationsToolStripMenuItem,
-            this.Modifier,
-            this.Supprimer});
-            this.clicDroitActivite.Name = "contextMenuStrip1";
-            this.clicDroitActivite.Size = new System.Drawing.Size(143, 70);
-            // 
-            // informationsToolStripMenuItem
-            // 
-            this.informationsToolStripMenuItem.Name = "informationsToolStripMenuItem";
-            this.informationsToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.informationsToolStripMenuItem.Text = "Informations";
-            this.informationsToolStripMenuItem.Click += new System.EventHandler(this.informationsToolStripMenuItem_Click);
-            // 
-            // Modifier
-            // 
-            this.Modifier.Name = "Modifier";
-            this.Modifier.Size = new System.Drawing.Size(142, 22);
-            this.Modifier.Text = "Modifier";
-            this.Modifier.Click += new System.EventHandler(this.Modifier_Click);
-            // 
-            // Supprimer
-            // 
-            this.Supprimer.Name = "Supprimer";
-            this.Supprimer.Size = new System.Drawing.Size(142, 22);
-            this.Supprimer.Text = "Supprimer";
-            this.Supprimer.Click += new System.EventHandler(this.Supprimer_Click);
             // 
             // label25
             // 
@@ -3645,7 +3610,6 @@
             this.Name = "CalendrierMission";
             this.Text = "CalendrierMission";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CalendrierMission_FormClosed);
-            this.clicDroitActivite.ResumeLayout(false);
             this.jour50.ResumeLayout(false);
             this.jour50.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.astro50)).EndInit();
@@ -4017,9 +3981,6 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.ContextMenuStrip clicDroitActivite;
-        private System.Windows.Forms.ToolStripMenuItem Supprimer;
-        private System.Windows.Forms.ToolStripMenuItem Modifier;
         private System.Windows.Forms.ProgressBar avancementMission;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
@@ -4085,7 +4046,6 @@
         private System.Windows.Forms.Label actH13;
         private System.Windows.Forms.PictureBox h12img;
         private System.Windows.Forms.Label actH12;
-        private System.Windows.Forms.ToolStripMenuItem informationsToolStripMenuItem;
         private System.Windows.Forms.PictureBox ajoutAstro;
         private System.Windows.Forms.PictureBox modifAstro;
         private System.Windows.Forms.PictureBox h24img;
