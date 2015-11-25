@@ -13,19 +13,23 @@ namespace MarsApp
     {
         private Dictionary<int, Label> horaires;
         private Dictionary<int, Label> heures;
+        private Dictionary<int, PictureBox> iconesActivite;
         private Journee journee;
         private CalendrierMission cm;
         private int heureSelectionnee;
         private int minuteSelectionnee;
+        List<Activite> activites;
 
         public DetailHeure(int heureSelectionnee, List<Activite> activites, Journee journee, CalendrierMission cm)
         {
             InitializeComponent();
 
             this.heureSelectionnee = heureSelectionnee;
+            this.activites = activites;
 
             horaires = new Dictionary<int, Label>();
             heures = new Dictionary<int, Label>();
+            iconesActivite = new Dictionary<int, PictureBox>();
             this.journee = journee;
             this.cm = cm;
 
@@ -37,6 +41,9 @@ namespace MarsApp
                 {
                     ctrl = this.Controls.Find("actM" + i, true);
                     horaires[i] = (Label)ctrl[0];
+
+                    ctrl = this.Controls.Find("h" + i + "img", true);
+                    iconesActivite[i] = (PictureBox)ctrl[0];
                 }
 
                 ctrl = this.Controls.Find("label" + i, true);
@@ -81,18 +88,18 @@ namespace MarsApp
                         this.Size = new Size(379, 158);
                     }
 
-                    /*foreach (Domaine d in domaines)
+                    foreach (Domaine d in CalendrierMission.domaines)
                         if (d.getNomActivites().Contains(a.getNom()) || d.getNom().Equals(a.getNom()))
-                            heures[i].BackColor = Color.FromArgb(d.getCouleur()[0], d.getCouleur()[1], d.getCouleur()[2]);*/
+                            horaires[i].BackColor = Color.FromArgb(d.getCouleur()[0], d.getCouleur()[1], d.getCouleur()[2]);
 
-                    /*if (a.isActiviteExterieure())
+                    if (a.isActiviteExterieure())
                     {
-                        Bitmap img = (a.isExploration()) ? ((ExplorationExterieure) a).deplacement() : ((ExperienceExterieure) a).deplacement();
+                        Bitmap img = (a.isExploration()) ? ((ExplorationExterieure)a).deplacement() : ((ExperienceExterieure)a).deplacement();
                         iconesActivite[i].Image = img;
                         iconesActivite[i].Visible = true;
                     }
                     else
-                        iconesActivite[i].Visible = false;*/
+                        iconesActivite[i].Visible = false;
                 }
             }
         }
@@ -105,7 +112,7 @@ namespace MarsApp
 
         private void Modifier_Click(object sender, EventArgs e)
         {
-            ModificationActivite ma = new ModificationActivite(journee, journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0)), cm);
+            ModificationActivite ma = new ModificationActivite(journee, journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0)), cm, this);
             ma.Show();
         }
 

@@ -17,6 +17,7 @@ namespace MarsApp
         private Activite activiteAModifier;
         private Journee journeeAModifier;
         private CalendrierMission cm;
+        private DetailHeure dh;
         private Lieu lieu;
 
         #region Constructeurs
@@ -26,12 +27,13 @@ namespace MarsApp
         /// <param name="j">Une journée</param>
         /// <param name="a">Une activité la journée</param>
         /// <param name="cm">L'interface graphique CalendrierMission</param>
-        public ModificationActivite(Journee j, Activite a, CalendrierMission cm)
+        public ModificationActivite(Journee j, Activite a, CalendrierMission cm, DetailHeure dh)
         {
             if (a.getHeureFin().getHeures() == 24 && a.getHeureFin().getMinutes() == 39)
                 a.setHeureFin(new TimeMartien(0));
 
             InitializeComponent();
+            this.dh = dh;
 
             if (finHeure.Value == 0 && finMinute.Value == 0)
             {
@@ -177,6 +179,8 @@ namespace MarsApp
             }
 
             cm.miseAJourEdt(journeeAModifier);
+            dh.Close();
+            cm.ouvrirDernierDetailHeure();
             fermerFenetre();
         }
 

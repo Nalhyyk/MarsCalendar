@@ -218,6 +218,25 @@ namespace MarsApp
             return false;
         }
 
+        public override bool Equals(object obj)
+        {
+            TimeMartien t2 = obj as TimeMartien;
+
+            if (t2 != null)
+            {
+                if (this.getHeures() == t2.getHeures())
+                    if (this.getMinutes() == t2.getMinutes())
+                        if (this.getSecondes() == t2.getSecondes())
+                            return true;
+            }
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
         /// <summary>
         /// Surcharge de l'opérateur !=
         /// </summary>

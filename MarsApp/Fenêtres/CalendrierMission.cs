@@ -201,6 +201,8 @@ namespace MarsApp
                 icones[jourPeriode].Visible = false;
 
             avancementMission.Value = (int) ((journeeActuelle.getNumero() * 100) / Constantes.NB_JOUR_MISSION);
+
+            this.Refresh();
         }
 
         /// <summary>
@@ -208,9 +210,11 @@ namespace MarsApp
         /// </summary>
         public void lierActiviteEtEdt()
         {
+            Journee j = journeesMission[journeeSelectionnee];
+
             for (int i = 0; i < 25; ++i)
             {
-                List<Activite> acts = journeeActuelle.trouverActivites(i);
+                List<Activite> acts = j.trouverActivites(i);
 
                 foreach (Activite a in acts)
                 {
@@ -326,6 +330,14 @@ namespace MarsApp
 
             d = new Domaine("Secours", new int[] { 255, 204, 255 });
             domaines.Add(d);
+        }
+
+        public void ouvrirDernierDetailHeure()
+        {
+            Journee j = journeesMission[journeeSelectionnee];
+
+            DetailHeure dh = new DetailHeure(heureSelectionnee, j.trouverActivites(heureSelectionnee), j, this);
+            dh.Show();
         }
 
         #region Génération XML
@@ -615,7 +627,7 @@ namespace MarsApp
             {
                 Activite activiteAModifier = journee.trouverActivite(new TimeMartien(0, 0, heureSelectionnee, 0));
 
-                ModificationActivite ma = new ModificationActivite(journee, activiteAModifier, this);
+                ModificationActivite ma = new ModificationActivite(journee, activiteAModifier, this, null);
                 ma.Show();
             }
         }
@@ -747,8 +759,9 @@ namespace MarsApp
         private void horaire_Click(object sender, EventArgs e)
         {
             heureSelectionnee = int.Parse(((Label)sender).Tag.ToString());
+            Journee j = journeesMission[journeeSelectionnee];
 
-            DetailHeure dh = new DetailHeure(heureSelectionnee, journeeActuelle.trouverActivites(heureSelectionnee), journeeActuelle, this);
+            DetailHeure dh = new DetailHeure(heureSelectionnee, j.trouverActivites(heureSelectionnee), j, this);
             dh.Show();
         }
         #endregion

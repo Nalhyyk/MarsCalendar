@@ -101,7 +101,10 @@ namespace MarsApp
             if (other.getNom().Equals(this.getNom()))
                 if (other.isActiviteExterieure() == this.isActiviteExterieure())
                     if (other.isExperience() == this.isExperience())
-                        return true;
+                        if (other.getDescription().Equals(this.description))
+                            if (other.heureDebut == this.heureDebut)
+                                if (other.heureFin == this.heureFin)
+                                    return true;
             return false;
         }
 

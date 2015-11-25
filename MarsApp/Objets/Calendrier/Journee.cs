@@ -77,6 +77,8 @@ namespace MarsApp
         /// <param name="a">Une Activite</param>
         public void supprimerActivite(Activite d)
         {
+            // Le Remove n'a pas été utilisé à cause d'un bug inconnu
+            // qui supprime la mauvaise Activite dans un seul cas précis...
             listeActivites.Remove(d);
             journeeExterieure = mettreAJourJourneeExterieure();
         }
