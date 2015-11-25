@@ -201,7 +201,7 @@ namespace MarsApp
                 icones[jourPeriode].Visible = false;
 
             avancementMission.Value = (int) ((journeeActuelle.getNumero() * 100) / Constantes.NB_JOUR_MISSION);
-
+            mettreAJourActiviteEnCours();
             this.Refresh();
         }
 
@@ -228,6 +228,10 @@ namespace MarsApp
                     }
                     else
                         iconesActivite[i].Visible = false;
+
+                    heures[i].BackColor = Color.FromArgb(   a.couleurActivite()[0],
+                                                            a.couleurActivite()[1],
+                                                            a.couleurActivite()[2]);
                 }
             }
         }
@@ -277,9 +281,7 @@ namespace MarsApp
                 XmlNodeList nodeListTA = node.SelectSingleNode("TypeActivite").SelectNodes("NomTA");
 
                 foreach (XmlNode nnode in nodeListTA)
-                {
                     d.ajouterActivite(new TypeActivite(nnode.InnerText));
-                }
             }
         }
 
@@ -338,6 +340,30 @@ namespace MarsApp
 
             DetailHeure dh = new DetailHeure(heureSelectionnee, j.trouverActivites(heureSelectionnee), j, this);
             dh.Show();
+        }
+
+        //TODO CORRIGER BUG
+        public void mettreAJourActiviteEnCours()
+        {
+            if (journeeSelectionnee == journeeActuelle.getNumero())
+            {
+                TimeMartien heureActuelle = TimeMartien.calculerJours(debutMission);
+
+                for (int k = 1; k <= journeeActuelle.getNumero(); ++k)
+                {
+                    Journee j = journeesMission[k];
+
+                    for (int i = 1; i < heures.Count; ++i)
+                    {
+                        if (heures[i].Tag.ToString().Equals(heureActuelle.getHeures().ToString()) && journeeActuelle.getNumero() == k)
+                            j.trouverActivite(heureActuelle).activiteEnCours();
+                        else if (int.Parse(heures[i].Tag.ToString()) < heureActuelle.getHeures() || journeeActuelle.getNumero() != k)
+                            foreach (Activite a in j.getActivites())
+                                if (a.getHeureFin() < new TimeMartien(0, int.Parse(heures[i].Tag.ToString()), 0, 0) && a.getHeureFin().getHeures() != 0 || journeeActuelle.getNumero() != k)
+                                    a.activitePassee();
+                    }
+                }
+            }
         }
 
         #region Génération XML
@@ -763,6 +789,14 @@ namespace MarsApp
 
             DetailHeure dh = new DetailHeure(heureSelectionnee, j.trouverActivites(heureSelectionnee), j, this);
             dh.Show();
+        }
+
+        private void timerMinute_Tick(object sender, EventArgs e)
+        {
+            if (TimeMartien.calculerJours(debutMission).getMinutes() % 10 == 0)
+            {
+                mettreAJourActiviteEnCours();
+            }
         }
         #endregion
     }

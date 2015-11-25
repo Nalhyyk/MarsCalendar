@@ -19,7 +19,6 @@ namespace MarsApp
         protected IEtat etat;
         protected TimeMartien heureDebut;
         protected TimeMartien heureFin;
-        protected List<Astronaute> listeAstronautes;
         protected Lieu lieu;
 
         #region Constructeurs
@@ -44,7 +43,6 @@ namespace MarsApp
             etat = new Futur();
             this.heureDebut = deb;
             this.heureFin = fin;
-            listeAstronautes = new List<Astronaute>();
             saveFichier = new List<Activite>();
             this.lieu = lieu;
             numero = ++nbActivite;
@@ -57,7 +55,6 @@ namespace MarsApp
             etat = a.etat;
             heureDebut = a.heureDebut;
             heureFin = a.heureFin;
-            listeAstronautes = a.listeAstronautes;
             saveFichier = new List<Activite>();
             lieu = a.lieu;
             numero = ++nbActivite;
@@ -70,6 +67,15 @@ namespace MarsApp
         public void etatActivite()
         {
             etat.etat();
+        }
+
+        /// <summary>
+        /// Permet de connaître la couleur de l'activité
+        /// </summary>
+        /// <returns></returns>
+        public int[] couleurActivite()
+        {
+            return etat.couleur();
         }
 
         /// <summary>

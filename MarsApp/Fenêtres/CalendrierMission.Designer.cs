@@ -282,6 +282,7 @@
             this.h24img = new System.Windows.Forms.PictureBox();
             this.actH24 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
+            this.timerMinute = new System.Windows.Forms.Timer(this.components);
             this.jour50.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.astro50)).BeginInit();
             this.jour30.SuspendLayout();
@@ -3456,6 +3457,11 @@
             this.label28.TabIndex = 192;
             this.label28.Text = "24h40";
             // 
+            // timerMinute
+            // 
+            this.timerMinute.Interval = 60000;
+            this.timerMinute.Tick += new System.EventHandler(this.timerMinute_Tick);
+            // 
             // CalendrierMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4051,5 +4057,6 @@
         private System.Windows.Forms.PictureBox h24img;
         private System.Windows.Forms.Label actH24;
         private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Timer timerMinute;
     }
 }
