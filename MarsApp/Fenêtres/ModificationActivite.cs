@@ -58,7 +58,7 @@ namespace MarsApp
             debutHeure.Minimum = debutHeure.Value;
             finHeure.Maximum = (finHeure.Value == 0) ? 24 : finHeure.Value;
 
-            finHeure.Minimum = debutHeure.Value;
+            finHeure.Minimum = (finHeure.Value == 0) ? 0 : debutHeure.Value;
 
 
             foreach (Domaine d in CalendrierMission.domaines)

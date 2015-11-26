@@ -3459,6 +3459,7 @@
             // 
             // timerMinute
             // 
+            this.timerMinute.Enabled = true;
             this.timerMinute.Interval = 60000;
             this.timerMinute.Tick += new System.EventHandler(this.timerMinute_Tick);
             // 

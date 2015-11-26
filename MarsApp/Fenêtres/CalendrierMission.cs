@@ -90,6 +90,7 @@ namespace MarsApp
 
                 descriptionTexte.Text = journeesMission[journeeSelectionnee].getDescription();
                 astroList.SelectedItem = astronauteSelectionne;
+                mettreAJourActiviteEnCours();
             }
         }
         #endregion
@@ -342,26 +343,27 @@ namespace MarsApp
             dh.Show();
         }
 
-        //TODO CORRIGER BUG
         public void mettreAJourActiviteEnCours()
         {
-            if (journeeSelectionnee == journeeActuelle.getNumero())
+            TimeMartien heureActuelle = TimeMartien.calculerJours(debutMission);
+
+            for (int k = 1; k <= journeeActuelle.getNumero(); ++k)
             {
-                TimeMartien heureActuelle = TimeMartien.calculerJours(debutMission);
+                Journee j = journeesMission[k];
 
-                for (int k = 1; k <= journeeActuelle.getNumero(); ++k)
+                for (int i = 0; i < heures.Count; ++i)
                 {
-                    Journee j = journeesMission[k];
+                    if (heures[i].Tag.ToString().Equals(heureActuelle.getHeures().ToString()) && journeeActuelle.getNumero() == k)
+                        j.trouverActivite(heureActuelle).activiteEnCours();
+                    else if (int.Parse(heures[i].Tag.ToString()) < heureActuelle.getHeures() || journeeActuelle.getNumero() != k)
+                        foreach (Activite a in j.getActivites())
+                        {
+                            TimeMartien tm = new TimeMartien(0, int.Parse(heures[i].Tag.ToString()), 0, 0);
 
-                    for (int i = 1; i < heures.Count; ++i)
-                    {
-                        if (heures[i].Tag.ToString().Equals(heureActuelle.getHeures().ToString()) && journeeActuelle.getNumero() == k)
-                            j.trouverActivite(heureActuelle).activiteEnCours();
-                        else if (int.Parse(heures[i].Tag.ToString()) < heureActuelle.getHeures() || journeeActuelle.getNumero() != k)
-                            foreach (Activite a in j.getActivites())
-                                if (a.getHeureFin() < new TimeMartien(0, int.Parse(heures[i].Tag.ToString()), 0, 0) && a.getHeureFin().getHeures() != 0 || journeeActuelle.getNumero() != k)
+                            if ((a.getHeureFin() < heureActuelle || journeeActuelle.getNumero() != k))
+                                if ((a.getHeureFin().getHeures() != 0 || (a.getHeureFin().getHeures() == 0 && a.getHeureFin().getMinutes() != 0)))
                                     a.activitePassee();
-                    }
+                        }
                 }
             }
         }

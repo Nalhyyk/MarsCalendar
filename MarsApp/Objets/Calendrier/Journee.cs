@@ -41,21 +41,13 @@ namespace MarsApp
             this.etat = etat;
             this.journeeExterieure = journeeExterieure;
             listeActivites = new List<Activite>();
-            ajouterActivite(new Activite(new TypeActivite("Dormir"), "", new TimeMartien(0), new TimeMartien(0, 50), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("LEL"), "", new TimeMartien(0, 50), new TimeMartien(7), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("Dormir"), "", new TimeMartien(0), new TimeMartien(7), new Lieu(0, 0)));
             ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(7), new TimeMartien(8), new Lieu(0, 0)));
             ajouterActivite(new Activite(new TypeActivite("Privé"), "", new TimeMartien(8), new TimeMartien(12), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(12), new TimeMartien(13, 50), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("Manger2"), "", new TimeMartien(13, 50), new TimeMartien(14), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(12), new TimeMartien(14), new Lieu(0, 0)));
             ajouterActivite(new Activite(new TypeActivite("Privé"), "", new TimeMartien(14), new TimeMartien(19), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(19), new TimeMartien(19, 10), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("MDR"), "", new TimeMartien(19, 10), new TimeMartien(19, 20), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("MDR2"), "", new TimeMartien(19, 20), new TimeMartien(19, 30), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("MDR3"), "", new TimeMartien(19, 30), new TimeMartien(19, 40), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("MDR4"), "", new TimeMartien(19, 40), new TimeMartien(19, 50), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("MDR5"), "", new TimeMartien(19, 50), new TimeMartien(20), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("DODO"), "", new TimeMartien(20), new TimeMartien(24, 20), new Lieu(0, 0)));
-            ajouterActivite(new Activite(new TypeActivite("DODOLEL"), "", new TimeMartien(24, 20), new TimeMartien(24, 40), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("Manger"), "", new TimeMartien(19), new TimeMartien(20), new Lieu(0, 0)));
+            ajouterActivite(new Activite(new TypeActivite("Dormir"), "", new TimeMartien(20), new TimeMartien(24, 40), new Lieu(0, 0)));
         }
         #endregion
 
