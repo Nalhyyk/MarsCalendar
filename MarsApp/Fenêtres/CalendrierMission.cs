@@ -148,6 +148,7 @@ namespace MarsApp
                     // Astronaute visible pour les jours en extérieur
                     icones[i].Visible = journeesMission[i + 50 * (periode - 1)].isJourneeExterieure();
                 }
+            Refresh();
         }
 
         /// <summary>
@@ -361,8 +362,13 @@ namespace MarsApp
                             TimeMartien tm = new TimeMartien(0, int.Parse(heures[i].Tag.ToString()), 0, 0);
 
                             if ((a.getHeureFin() < heureActuelle || journeeActuelle.getNumero() != k))
-                                if ((a.getHeureFin().getHeures() != 0 || (a.getHeureFin().getHeures() == 0 && a.getHeureFin().getMinutes() != 0)))
+                            {
+                                if ((a.getHeureFin().getHeures() != 0 || (a.getHeureFin().getHeures() == 0 && a.getHeureFin().getMinutes() == 0)))
                                     a.activitePassee();
+                            }
+                            
+                            if ((j.getNumero() > journeeActuelle.getNumero()) || (j.getNumero() == journeeActuelle.getNumero() && a.getHeureFin().getHeures() == 0 && a.getHeureFin().getMinutes() == 0))
+                                a.activiteAVenir();
                         }
                 }
             }
@@ -647,19 +653,6 @@ namespace MarsApp
         #endregion
 
         #region Evènements
-        private void Modifier_Click(object sender, EventArgs e)
-        {
-            Journee journee = journeesMission[journeeSelectionnee];
-
-            if (journee.isModifiable())
-            {
-                Activite activiteAModifier = journee.trouverActivite(new TimeMartien(0, 0, heureSelectionnee, 0));
-
-                ModificationActivite ma = new ModificationActivite(journee, activiteAModifier, this, null);
-                ma.Show();
-            }
-        }
-
         /// <summary>
         /// Actions lors du clic sur un jour
         /// </summary>
@@ -727,8 +720,6 @@ namespace MarsApp
             TimeMartien nb = TimeMartien.calculerJours(debutMission);
             int numJour = nb.getJours() + 1;
 
-            journeeActuelle = journeesMission[numJour];
-
             for (int i = 1; i < numJour; ++i)
                 journeesMission[i].journeePassee();
             journeeActuelle = journeesMission[numJour];
@@ -761,14 +752,6 @@ namespace MarsApp
             this.Refresh();
         }
 
-        private void informationsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Journee journee = journeesMission[journeeSelectionnee];
-            Activite activiteAAfficher = journee.trouverActivite(new TimeMartien(0, 0, heureSelectionnee, 0));
-            InfoActivite ia = new InfoActivite(activiteAAfficher);
-            ia.Show();
-        }
-
         private void ajoutAstro_Click(object sender, EventArgs e)
         {
             TimeMartien nb = TimeMartien.calculerJours(debutMission);
@@ -795,10 +778,10 @@ namespace MarsApp
 
         private void timerMinute_Tick(object sender, EventArgs e)
         {
-            if (TimeMartien.calculerJours(debutMission).getMinutes() % 10 == 0)
-            {
-                mettreAJourActiviteEnCours();
-            }
+            timerJour_Tick(null, null);
+
+            mettreAJourActiviteEnCours();
+            miseAJourEdt(journeesMission[journeeSelectionnee]);
         }
         #endregion
     }

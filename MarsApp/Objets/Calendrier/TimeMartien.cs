@@ -12,7 +12,6 @@ namespace MarsApp
     public class TimeMartien
     {
         private int jours;
-
         private int heure;
         private int minute;
         private int seconde;
@@ -26,10 +25,10 @@ namespace MarsApp
         /// <param name="seconde">Secondes</param>
         public TimeMartien(int jours, int heure, int minute, int seconde)
         {
-            this.jours = jours;
             this.heure = heure;
             this.minute = minute;
             this.seconde = seconde;
+            this.jours = jours;
             ajouterTemps(0, 0, 0, 0); // On met le TimeMartien sous une forme 'convenable'
         }
 
@@ -452,7 +451,7 @@ namespace MarsApp
         /// <returns>h:m:s</returns>
         public override string ToString()
         {
-            return ++jours + ((jours == 1) ? "er" : "eme") + " jour de mission, " + ((heure.ToString().Length == 1) ? "0" : "") + heure + ":" + ((minute.ToString().Length == 1) ? "0" : "") + minute + ":" + ((seconde.ToString().Length == 1) ? "0" : "") + seconde;
+            return (jours + 1) + ((jours == 1) ? "er" : "eme") + " jour de mission, " + ((heure.ToString().Length == 1) ? "0" : "") + heure + ":" + ((minute.ToString().Length == 1) ? "0" : "") + minute + ":" + ((seconde.ToString().Length == 1) ? "0" : "") + seconde;
         }
     }
 }

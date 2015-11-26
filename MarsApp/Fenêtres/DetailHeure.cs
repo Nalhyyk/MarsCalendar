@@ -129,7 +129,6 @@ namespace MarsApp
 
         private void Supprimer_Click(object sender, EventArgs e)
         {
-            /* METTRE A JOUR CM : ÇA MARCHE PAAAAAAAAS */
             Activite act = journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0));
 
             if (act.isModifiable())
@@ -140,7 +139,9 @@ namespace MarsApp
                 journee.supprimerActivite(activiteAModifier);
                 journee.ajouterActivite(a);
 
-                cm.Refresh();
+                this.Close();
+                cm.ouvrirDernierDetailHeure();
+                cm.miseAJourEdt(journee);
             }
         }
     }

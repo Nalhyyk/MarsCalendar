@@ -128,15 +128,19 @@ namespace MarsApp
         public Activite trouverActivite(TimeMartien tm)
         {
             if (tm.getHeures() == 0 && tm.getMinutes() == 0 && tm.getSecondes() == 0)
-                tm = new TimeMartien(0, 24, 39, 39);
+                tm = new TimeMartien(0, 24, 39, 58);
 
             foreach (Activite a in listeActivites)
             {
                 if (a.getHeureFin().getHeures() == 0 && a.getHeureFin().getMinutes() == 0 && a.getHeureFin().getSecondes() == 0)
-                    a.setHeureFin(new TimeMartien(0, 24, 39, 39));
+                    a.setHeureFin(new TimeMartien(0, 24, 39, 59));
 
                 if (a.getHeureDebut() <= tm && a.getHeureFin() > tm)
+                {
+                    if (a.getHeureFin().getHeures() == 24 && a.getHeureFin().getMinutes() == 39 && a.getHeureFin().getSecondes() == 59)
+                        a.setHeureFin(new TimeMartien(0, 24, 40, 00));
                     return a;
+                }
             }
 
             return null;
