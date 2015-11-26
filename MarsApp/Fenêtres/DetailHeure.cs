@@ -112,8 +112,13 @@ namespace MarsApp
 
         private void Modifier_Click(object sender, EventArgs e)
         {
-            ModificationActivite ma = new ModificationActivite(journee, journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0)), cm, this);
-            ma.Show();
+            Activite a = journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0));
+
+            if (a.isModifiable())
+            {
+                ModificationActivite ma = new ModificationActivite(journee, a, cm, this);
+                ma.Show();
+            }
         }
 
         private void informationsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -124,10 +129,13 @@ namespace MarsApp
 
         private void Supprimer_Click(object sender, EventArgs e)
         {
-            if (journee.isModifiable())
+            /* METTRE A JOUR CM : ÇA MARCHE PAAAAAAAAS */
+            Activite act = journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0));
+
+            if (act.isModifiable())
             {
-                Activite activiteAModifier = journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0));
-                Activite a = new Activite(new TypeActivite("Privé"), "", new TimeMartien(activiteAModifier.getHeureDebut().getHeures()), new TimeMartien(activiteAModifier.getHeureFin().getHeures()), new Lieu(0, 0));
+                Activite activiteAModifier = act;
+                Activite a = new Activite(new TypeActivite("Privé"), "", new TimeMartien(0, activiteAModifier.getHeureDebut().getHeures(), activiteAModifier.getHeureDebut().getMinutes(), 0), new TimeMartien(0, activiteAModifier.getHeureFin().getHeures(), activiteAModifier.getHeureFin().getMinutes(), 0), new Lieu(0, 0));
 
                 journee.supprimerActivite(activiteAModifier);
                 journee.ajouterActivite(a);
