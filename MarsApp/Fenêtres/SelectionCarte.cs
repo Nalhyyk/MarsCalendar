@@ -33,6 +33,11 @@ namespace MarsApp
         #endregion
 
         #region Evènements
+        /// <summary>
+        /// Permet de sauvegarder le point sur lequel on a cliqué
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void map_MouseClick(object sender, MouseEventArgs e)
         {
             lieuAModifier.setLieu(e);
@@ -40,6 +45,11 @@ namespace MarsApp
             fermerFenetre();
         }
 
+        /// <summary>
+        /// Permet d'afficher les coordonnées, près de la souris
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void map_MouseMove(object sender, MouseEventArgs e)
         {
             label1.Location = new Point(e.X + 20, e.Y - 20);

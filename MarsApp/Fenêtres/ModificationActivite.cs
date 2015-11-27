@@ -27,6 +27,7 @@ namespace MarsApp
         /// <param name="j">Une journée</param>
         /// <param name="a">Une activité la journée</param>
         /// <param name="cm">L'interface graphique CalendrierMission</param>
+        /// <param name="dh">L'interface graphique DetailHeure</param>
         public ModificationActivite(Journee j, Activite a, CalendrierMission cm, DetailHeure dh)
         {
             if (a.getHeureFin().getHeures() == 24 && a.getHeureFin().getMinutes() == 39)
@@ -59,7 +60,6 @@ namespace MarsApp
             finHeure.Maximum = (finHeure.Value == 0) ? 24 : finHeure.Value;
 
             finHeure.Minimum = (finHeure.Value == 0) ? 0 : debutHeure.Value;
-
 
             foreach (Domaine d in CalendrierMission.domaines)
             {
@@ -95,6 +95,11 @@ namespace MarsApp
         #endregion
 
         #region Evènements
+        /// <summary>
+        /// Permet d'activer/désactiver les GroupBox en fonction du lieu de l'activité
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void exterieurRadio_CheckedChanged(object sender, EventArgs e)
         {
             activiteExterieureGB.Enabled = (exterieurRadio.Checked) ? true : false;
@@ -102,11 +107,21 @@ namespace MarsApp
             transportGB.Enabled = (exterieurRadio.Checked) ? true : false;
         }
 
+        /// <summary>
+        /// Permet d'annuler les modifications
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void annuler_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
 
+        /// <summary>
+        /// Permet de procéder aux modifications
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void ok_Click(object sender, EventArgs e)
         {
             String type = treeView.SelectedNode.Text;
@@ -187,12 +202,22 @@ namespace MarsApp
             fermerFenetre();
         }
 
+        /// <summary>
+        /// Permet d'afficher la carte pour la sélection d'un lieu
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             SelectionCarte sc = new SelectionCarte(lieu, lieuTB);
             sc.Show();
         }
 
+        /// <summary>
+        /// Permet de jouer avec les Max/Min pour l'heure 20h et > 39 minutes
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void duree_ValueChanged(object sender, EventArgs e)
         {
             if (finHeure.Value == 24)

@@ -48,6 +48,10 @@ namespace MarsApp
             numero = ++nbActivite;
         }
 
+        /// <summary>
+        /// Constructeur par copie
+        /// </summary>
+        /// <param name="a">Une activité</param>
         public Activite(Activite a)
         {
             typeActivite = a.typeActivite;
@@ -102,6 +106,11 @@ namespace MarsApp
             etat = new Futur();
         }
 
+        /// <summary>
+        /// Permet de savoir si deux Activite sont identiques
+        /// </summary>
+        /// <param name="other">Une activité</param>
+        /// <returns>Vrai si les activités sont les mêmes, faux sinon</returns>
         public bool Equals(Activite other)
         {
             if (other.getNom().Equals(this.getNom()))
@@ -114,6 +123,12 @@ namespace MarsApp
             return false;
         }
 
+        #region Génération XML
+        /// <summary>
+        /// Permet de savoir si l'activité est déjà présente dans le fichier XML
+        /// </summary>
+        /// <param name="liste"></param>
+        /// <returns></returns>
         public int activiteRentreeDansFichier(List<Activite> liste)
         {
             foreach (Activite a in liste)
@@ -127,7 +142,15 @@ namespace MarsApp
             return -1;
         }
 
-        #region Génération XML
+        /// <summary>
+        /// Permet de générer la partie XML de l'Activite
+        /// </summary>
+        /// <param name="xmlDoc">XmlDocument global</param>
+        /// <param name="xmlDocActs">XmlDocument pour les activités de base</param>
+        /// <param name="activite">Le noeud de l'activité (global)</param>
+        /// <param name="acts">Le noeud de l'activité (base)</param>
+        /// <param name="listeActivites">La liste des activités de la journée</param>
+        /// <param name="progression">L'interface de progression</param>
         public void genererXML(XmlDocument xmlDoc, XmlDocument xmlDocActs, XmlNode activite, XmlNode acts, List<Activite> listeActivites, Progression progression)
         {
             bool actExt = (isExploration() || isExperience());

@@ -96,12 +96,22 @@ namespace MarsApp
         }
 
         #region Evènements
+        /// <summary>
+        /// Permet de repeindre le composant
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void map_Paint(object sender, PaintEventArgs e)
         {
             foreach (Lieu l in lieuxADessiner)
                 e.Graphics.FillEllipse(new SolidBrush(Color.DarkBlue), l.getXReduit(), l.getYReduit(), 15, 15);
         }
 
+        /// <summary>
+        /// Permet d'afficher les activités en fonction de l'option demandée (toutes, ...)
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènements</param>
         private void activitesExterieures_AfterSelect(object sender, TreeViewEventArgs e)
         {
             TreeNode selected = ((TreeView)sender).SelectedNode;
@@ -112,13 +122,9 @@ namespace MarsApp
                 toutesLesActivitesExterieuresJournee(int.Parse(str[1]));
             }
             else if (selected.Text.StartsWith("Tout"))
-            {
                 toutesLesActivitesExterieures();
-            }
             else
-            {
                 activiteExterieure((Activite)selected.Tag);
-            }
 
             this.Refresh();
         }

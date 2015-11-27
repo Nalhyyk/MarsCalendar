@@ -11,10 +11,9 @@ namespace MarsApp
     /// </summary>
     public class ExperienceExterieure : Activite
     {
-        #region Constructeurs
-
         private ITransport transport;
-
+        
+        #region Constructeurs
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
@@ -54,6 +53,10 @@ namespace MarsApp
         }
         #endregion
 
+        /// <summary>
+        /// Permet d'obtenir l'image du moyen de déplacement
+        /// </summary>
+        /// <returns>L'image du moyen de déplacement</returns>
         public Bitmap deplacement()
         {
             return transport.deplacement();

@@ -9,12 +9,20 @@ using System.Windows.Forms;
 
 namespace MarsApp
 {
+    /// <summary>
+    /// Interface du moteur de recherche des activités passées
+    /// </summary>
     public partial class MoteurRecherche : BaseFenetre
     {
         List<Journee> joursPasses;
         List<Activite> activitesPassees;
         Dictionary<int, Journee> journeesMission;
 
+        #region Constructeurs
+        /// <summary>
+        /// Constructeur paramétré
+        /// </summary>
+        /// <param name="journeesMission">Les journées de la mission</param>
         public MoteurRecherche(Dictionary<int, Journee> journeesMission)
         {
             InitializeComponent();
@@ -30,7 +38,15 @@ namespace MarsApp
 
             chercherDansActivitesPassees(1, 500, "", "");
         }
+        #endregion
 
+        /// <summary>
+        /// Permet de chercher les activitées passées en fonction de certaines informations
+        /// </summary>
+        /// <param name="jourDebut">Journée de début</param>
+        /// <param name="jourFin">Journée de fin</param>
+        /// <param name="nom">Nom de l'activité</param>
+        /// <param name="description">Description de l'activité</param>
         private void chercherDansActivitesPassees(int jourDebut, int jourFin, String nom, String description)
         {
             activitesPassees.Clear();
@@ -65,30 +81,32 @@ namespace MarsApp
             Refresh();
         }
 
+        #region Evènements
+        /// <summary>
+        /// Permet de rechercher les activités
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènements</param>
         private void touche_KeyUp(object sender, KeyEventArgs e)
         {
             chercherDansActivitesPassees((int) jourDebut.Value, (int) jourFin.Value, nomAct.Text, description.Text);
         }
 
+        /// <summary>
+        /// Permet de rechercher les activités
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènements</param>
         private void jour_valueChanged(object sender, EventArgs e)
         {
             chercherDansActivitesPassees((int)jourDebut.Value, (int)jourFin.Value, nomAct.Text, description.Text);
         }
 
-        private void treeView1_TabIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
-        {
-            if (!((TreeView)sender).SelectedNode.Text.StartsWith("Journée"))
-            {
-                InfoActivite ia = new InfoActivite((Activite)((TreeView)sender).SelectedNode.Tag);
-                ia.Show();
-            }
-        }
-
+        /// <summary>
+        /// Permet d'afficher les informations de l'activité sélectionnée
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènements</param>
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
             if (!((TreeView)sender).SelectedNode.Text.StartsWith("Journée"))
@@ -97,5 +115,6 @@ namespace MarsApp
                 ia.Show();
             }
         }
+        #endregion
     }
 }

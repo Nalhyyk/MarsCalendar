@@ -24,6 +24,11 @@ namespace MarsApp
             
         }
 
+        /// <summary>
+        /// Constructeur paramétré
+        /// </summary>
+        /// <param name="nom">Nom du domaine</param>
+        /// <param name="couleur">COuleur du domaine</param>
         public Domaine(String nom, int[] couleur)
         {
             this.nom = nom;

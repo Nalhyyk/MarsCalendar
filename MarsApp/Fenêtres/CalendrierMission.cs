@@ -35,14 +35,23 @@ namespace MarsApp
         public static List<Domaine> domaines;
 
         #region Constructeurs
+        /// <summary>
+        /// Constructeur paramétré
+        /// </summary>
+        /// <param name="dt">Début de la mission</param>
+        /// <param name="chargement">Chargement des données par XML ?</param>
+        /// <param name="marsOMartic">Adresse et nom du fichier XML Mars-o-Matic</param>
+        /// <param name="activitesRefs">Adresse et nom du fichier XML ActivitesRefs</param>
         public CalendrierMission(DateTime dt, bool chargement, String marsOMartic, String activitesRefs) : this(dt, chargement)
         {
             chargerXml(marsOMartic, activitesRefs);
         }
 
         /// <summary>
-        /// Constructeur par défaut
+        /// Constructeur paramétré
         /// </summary>
+        /// <param name="dt">Début de la mission</param>
+        /// <param name="chargement">Chargement des données par XML ?</param>
         public CalendrierMission(DateTime dt, bool chargement)
         {
             InitializeComponent();
@@ -239,54 +248,8 @@ namespace MarsApp
         }
 
         /// <summary>
-        /// Permet d'initialiser les domaines
+        /// Permet de générer des domaines et activités de base
         /// </summary>
-        public void initialiserDomaines()
-        {
-            XmlDocument xmlDoc = new XmlDocument();
-
-            try
-            {
-                xmlDoc.Load("Donnees/Domaines.xml");
-            }
-            catch
-            {
-                string message = "Aucun fichier de sauvegarde n'a été trouvé.";
-                MessageBox.Show(message);
-                creationDomainesAutomatique();
-                return;
-            }
-
-            XmlNodeList nodeListDomaines = xmlDoc.GetElementsByTagName("Domaine");
-
-            foreach (XmlNode node in nodeListDomaines)
-            {
-                String nom = node.SelectSingleNode("NomDom").InnerText;
-                String r = node.SelectSingleNode("Couleur").SelectSingleNode("R").InnerText;
-                String g = node.SelectSingleNode("Couleur").SelectSingleNode("G").InnerText;
-                String b = node.SelectSingleNode("Couleur").SelectSingleNode("B").InnerText;
-                int[] couleur;
-
-                try
-                {
-                    couleur = new int[] { int.Parse(r), int.Parse(g), int.Parse(b) };
-                }
-                catch
-                {
-                    couleur = new int[] { 0, 0, 0 };
-                }
-
-                Domaine d = new Domaine(nom, couleur);
-
-                CalendrierMission.domaines.Add(d);
-
-                XmlNodeList nodeListTA = node.SelectSingleNode("TypeActivite").SelectNodes("NomTA");
-
-                foreach (XmlNode nnode in nodeListTA)
-                    d.ajouterActivite(new TypeActivite(nnode.InnerText));
-            }
-        }
-
         public void creationDomainesAutomatique()
         {
             Domaine d = new Domaine("Vie", new int[] { 255, 204, 204 });
@@ -336,6 +299,9 @@ namespace MarsApp
             domaines.Add(d);
         }
 
+        /// <summary>
+        /// Permet d'ouvrir le dernier Form DetailHeure (afin de le mettre à jour)
+        /// </summary>
         public void ouvrirDernierDetailHeure()
         {
             Journee j = journeesMission[journeeSelectionnee];
@@ -344,6 +310,9 @@ namespace MarsApp
             dh.Show();
         }
 
+        /// <summary>
+        /// Permet de mettre à jour les activités en fonction de si elles sont passées ou non
+        /// </summary>
         public void mettreAJourActiviteEnCours()
         {
             TimeMartien heureActuelle = TimeMartien.calculerJours(debutMission);
@@ -353,7 +322,6 @@ namespace MarsApp
                 Journee j = journeesMission[k];
 
                 for (int i = 0; i < heures.Count; ++i)
-                {
                     if (heures[i].Tag.ToString().Equals(heureActuelle.getHeures().ToString()) && journeeActuelle.getNumero() == k)
                         j.trouverActivite(heureActuelle).activiteEnCours();
                     else if (int.Parse(heures[i].Tag.ToString()) < heureActuelle.getHeures() || journeeActuelle.getNumero() != k)
@@ -362,19 +330,19 @@ namespace MarsApp
                             TimeMartien tm = new TimeMartien(0, int.Parse(heures[i].Tag.ToString()), 0, 0);
 
                             if ((a.getHeureFin() < heureActuelle || journeeActuelle.getNumero() != k))
-                            {
                                 if ((a.getHeureFin().getHeures() != 0 || (a.getHeureFin().getHeures() == 0 && a.getHeureFin().getMinutes() == 0)))
                                     a.activitePassee();
-                            }
                             
                             if ((j.getNumero() > journeeActuelle.getNumero()) || (j.getNumero() == journeeActuelle.getNumero() && a.getHeureFin().getHeures() == 0 && a.getHeureFin().getMinutes() == 0))
                                 a.activiteAVenir();
                         }
-                }
             }
         }
 
         #region Génération XML
+        /// <summary>
+        /// Permet de générer les fichiers XML
+        /// </summary>
         private void genererDocXML()
         {
             int nbElements = this.astronautes.Count;
@@ -489,6 +457,60 @@ namespace MarsApp
         #endregion
 
         #region Chargement XML
+        /// <summary>
+        /// Permet d'initialiser les domaines en les chargeant depuis un fichier XML
+        /// </summary>
+        public void initialiserDomaines()
+        {
+            XmlDocument xmlDoc = new XmlDocument();
+
+            try
+            {
+                xmlDoc.Load("Donnees/Domaines.xml");
+            }
+            catch
+            {
+                string message = "Aucun fichier de sauvegarde n'a été trouvé.";
+                MessageBox.Show(message);
+                creationDomainesAutomatique();
+                return;
+            }
+
+            XmlNodeList nodeListDomaines = xmlDoc.GetElementsByTagName("Domaine");
+
+            foreach (XmlNode node in nodeListDomaines)
+            {
+                String nom = node.SelectSingleNode("NomDom").InnerText;
+                String r = node.SelectSingleNode("Couleur").SelectSingleNode("R").InnerText;
+                String g = node.SelectSingleNode("Couleur").SelectSingleNode("G").InnerText;
+                String b = node.SelectSingleNode("Couleur").SelectSingleNode("B").InnerText;
+                int[] couleur;
+
+                try
+                {
+                    couleur = new int[] { int.Parse(r), int.Parse(g), int.Parse(b) };
+                }
+                catch
+                {
+                    couleur = new int[] { 0, 0, 0 };
+                }
+
+                Domaine d = new Domaine(nom, couleur);
+
+                CalendrierMission.domaines.Add(d);
+
+                XmlNodeList nodeListTA = node.SelectSingleNode("TypeActivite").SelectNodes("NomTA");
+
+                foreach (XmlNode nnode in nodeListTA)
+                    d.ajouterActivite(new TypeActivite(nnode.InnerText));
+            }
+        }
+
+        /// <summary>
+        /// Permet de charger les données depuis un fichier XML
+        /// </summary>
+        /// <param name="marsOMatic">Le fichier XML Mars-o-Matic</param>
+        /// <param name="activitesRefs">Le fichier XML ActivitesRefs associé au fichier précédent</param>
         private void chargerXml(String marsOMatic, String activitesRefs)
         {
             XmlDocument mars = new XmlDocument();
@@ -704,17 +726,32 @@ namespace MarsApp
             mars.Text = TimeMartien.calculerJours(debutMission).ToString();
         }
 
+        /// <summary>
+        /// Mise à jour de l'heure chaque minute
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void timer_Tick(object sender, EventArgs e)
         {
             mettreAJourHeures();
         }
 
+        /// <summary>
+        /// Permet de fermer l'application lors du clic sur la croix rouge
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void CalendrierMission_FormClosed(object sender, FormClosedEventArgs e)
         {
             genererDocXML();
             fermerApplication();
         }
 
+        /// <summary>
+        /// Permet de mettre à jour les jours en fonction de s'ils sont passés ou non
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void timerJour_Tick(object sender, EventArgs e)
         {
             TimeMartien nb = TimeMartien.calculerJours(debutMission);
@@ -731,17 +768,32 @@ namespace MarsApp
             miseAJourEdt(journeesMission[journeeSelectionnee]);
         }
 
+        /// <summary>
+        /// Permet de sauvegarder la description de la journée
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void saveDesc_Click(object sender, EventArgs e)
         {
             journeesMission[journeeSelectionnee].setRapport(descriptionTexte.Text);
         }
 
+        /// <summary>
+        /// Permet d'ouvrir la carte
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void map_Click(object sender, EventArgs e)
         {
             GestionCarte gc = new GestionCarte(journeesMission);
             gc.Show();
         }
 
+        /// <summary>
+        /// Permet de modifier l'EdT en fonction de l'astronaute sélectionné
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void astroList_SelectedIndexChanged(object sender, EventArgs e)
         {
             astronauteSelectionne = (Astronaute) astroList.SelectedItems[0];
@@ -752,6 +804,11 @@ namespace MarsApp
             this.Refresh();
         }
 
+        /// <summary>
+        /// Permet d'ajouter un astronaute
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void ajoutAstro_Click(object sender, EventArgs e)
         {
             TimeMartien nb = TimeMartien.calculerJours(debutMission);
@@ -761,12 +818,22 @@ namespace MarsApp
             na.Show();
         }
 
+        /// <summary>
+        /// Permet de modifier un astronaute
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void modifAstro_Click(object sender, EventArgs e)
         {
             ModificationAstronaute ma = new ModificationAstronaute(astronauteSelectionne, astroList, astronautes);
             ma.Show();
         }
 
+        /// <summary>
+        /// Permet d'afficher les détails d'une heure lorsqu'elle est sélectionnée
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void horaire_Click(object sender, EventArgs e)
         {
             heureSelectionnee = int.Parse(((Label)sender).Tag.ToString());
@@ -776,6 +843,11 @@ namespace MarsApp
             dh.Show();
         }
 
+        /// <summary>
+        /// Permet de mettre à jour les activités en cours toutes les minutes
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void timerMinute_Tick(object sender, EventArgs e)
         {
             timerJour_Tick(null, null);
@@ -784,6 +856,11 @@ namespace MarsApp
             miseAJourEdt(journeesMission[journeeSelectionnee]);
         }
 
+        /// <summary>
+        /// Permet d'ouvrir le moteur de recherche
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void recherche_Click(object sender, EventArgs e)
         {
             MoteurRecherche mr = new MoteurRecherche(journeesMission);

@@ -180,6 +180,11 @@
             // 
             // finMinute
             // 
+            this.finMinute.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.finMinute.Location = new System.Drawing.Point(186, 73);
             this.finMinute.Maximum = new decimal(new int[] {
             59,
@@ -193,6 +198,11 @@
             // 
             // debutMinute
             // 
+            this.debutMinute.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.debutMinute.Location = new System.Drawing.Point(186, 33);
             this.debutMinute.Maximum = new decimal(new int[] {
             59,

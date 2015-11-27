@@ -20,6 +20,7 @@ namespace MarsApp
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
+        /// <param name="a">Activiter à détailler</param>
         public InfoActivite(Activite a)
         {
             if (a.getHeureFin().getHeures() == 24 && a.getHeureFin().getMinutes() == 39)
@@ -81,11 +82,21 @@ namespace MarsApp
         #endregion
 
         #region Evènements
+        /// <summary>
+        /// Permet de fermer la fenêtre
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènements</param>
         private void ok_Click(object sender, EventArgs e)
         {
             fermerFenetre();
         }
 
+        /// <summary>
+        /// Permet de jouer avec les Max/Min pour l'heure 20h et > 39 minutes
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void duree_ValueChanged(object sender, EventArgs e)
         {
             if (finHeure.Value == 24)

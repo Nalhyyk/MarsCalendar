@@ -47,11 +47,19 @@ namespace MarsApp
             journeesMission[numJour].journeeEnCours();
         }
 
+        /// <summary>
+        /// Texte affiché pour la classe
+        /// </summary>
+        /// <returns>nom prénom</returns>
         public override string ToString()
         {
             return nom + " " + prenom;
         }
 
+        /// <summary>
+        /// Permet de compter le nombre de journées, et le nombre d'activités par journée
+        /// </summary>
+        /// <param name="nbElements">Nombre d'éléments</param>
         public void nbJournees(ref int nbElements)
         {
             nbElements += journeesMission.Count;
@@ -61,6 +69,14 @@ namespace MarsApp
         }
 
         #region Génération XML
+        /// <summary>
+        /// Permet de générer la partie XML de Astronaute
+        /// </summary>
+        /// <param name="xmlDoc">XmlDocument global</param>
+        /// <param name="xmlDocActs">XmlDocument pour les activités de base</param>
+        /// <param name="astronaute">Le noeud de l'astronaute</param>
+        /// <param name="acts">Le noeud de l'activité (base)</param>
+        /// <param name="progression">L'interface de progression</param>
         public void genererXML(XmlDocument xmlDoc, XmlDocument xmlDocActs, XmlNode astronaute, XmlNode acts, Progression progression)
         {
             XmlNode nom = xmlDoc.CreateElement("Nom");

@@ -9,6 +9,9 @@ using System.Windows.Forms;
 
 namespace MarsApp
 {
+    /// <summary>
+    /// Interface affichant les détails d'une heure, avec une précision de 10 minutes
+    /// </summary>
     public partial class DetailHeure : BaseFenetre
     {
         private Dictionary<int, Label> horaires;
@@ -20,6 +23,14 @@ namespace MarsApp
         private int minuteSelectionnee;
         List<Activite> activites;
 
+        #region Constructeurs
+        /// <summary>
+        /// COnstructeur paramétré
+        /// </summary>
+        /// <param name="heureSelectionnee">Une heure</param>
+        /// <param name="activites">La liste des activités de la journée</param>
+        /// <param name="journee">La journée</param>
+        /// <param name="cm">Le CalendrierMission source</param>
         public DetailHeure(int heureSelectionnee, List<Activite> activites, Journee journee, CalendrierMission cm)
         {
             InitializeComponent();
@@ -103,13 +114,25 @@ namespace MarsApp
                 }
             }
         }
+        #endregion
 
+        #region Evènements
+        /// <summary>
+        /// Permet d'afficher le ContextMenuStrip
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void heure_click(object sender, EventArgs e)
         {
             minuteSelectionnee = int.Parse(((Label)sender).Tag.ToString());
             clicDroitActivite.Show(Cursor.Position);
         }
 
+        /// <summary>
+        /// Permet de modifier l'activité sélectionnée
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void Modifier_Click(object sender, EventArgs e)
         {
             Activite a = journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0));
@@ -121,12 +144,22 @@ namespace MarsApp
             }
         }
 
+        /// <summary>
+        /// Permet d'obtenir les informations d'une activité
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void informationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             InfoActivite ia = new InfoActivite(journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0)));
             ia.Show();
         }
 
+        /// <summary>
+        /// Permet de supprimer une activité
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void Supprimer_Click(object sender, EventArgs e)
         {
             Activite act = journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0));
@@ -145,4 +178,5 @@ namespace MarsApp
             }
         }
     }
+        #endregion
 }

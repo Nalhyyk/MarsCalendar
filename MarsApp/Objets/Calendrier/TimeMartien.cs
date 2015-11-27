@@ -217,6 +217,11 @@ namespace MarsApp
             return false;
         }
 
+        /// <summary>
+        /// Permet de savoir quand deux TimeMartien sont égaux
+        /// </summary>
+        /// <param name="obj">Un TimeMartien</param>
+        /// <returns>Vrai si les deux TImeMartien sont égaux, faux sinon</returns>
         public override bool Equals(object obj)
         {
             TimeMartien t2 = obj as TimeMartien;
@@ -231,6 +236,10 @@ namespace MarsApp
             return false;
         }
 
+        /// <summary>
+        /// Surcharge du GetHashCode (lié au Equals)
+        /// </summary>
+        /// <returns></returns>
         public override int GetHashCode()
         {
             return base.GetHashCode();
@@ -360,6 +369,14 @@ namespace MarsApp
             return tm;
         }
 
+        /// <summary>
+        /// Permet de savoir si une activité se passe dans la période donnée
+        /// </summary>
+        /// <param name="debutActivite">Début de l'activité</param>
+        /// <param name="finActivite">Fin de l'activité</param>
+        /// <param name="heureDebut">Début de la période</param>
+        /// <param name="heureFin">Fin de la période</param>
+        /// <returns>Vrai si l'activité se passe dans la période, faux sinon</returns>
         public static bool sePasseDansPeriode(TimeMartien debutActivite, TimeMartien finActivite, TimeMartien heureDebut, TimeMartien heureFin)
         {
             if (finActivite.getHeures() == 0 && finActivite.getMinutes() == 0 && finActivite.getSecondes() == 0)
@@ -373,8 +390,6 @@ namespace MarsApp
             bool fINFf = (finActivite <= heureFin);
             bool fSUPf = (finActivite >= heureFin);
             bool dINFf = (debutActivite < heureFin);
-            bool dSUPf = (debutActivite > heureFin);
-            bool fINFd = (finActivite < heureDebut);
             bool fSUPd = (finActivite > heureDebut);
 
             if (dINFd && fSUPf && dINFf && fSUPd)
@@ -388,12 +403,21 @@ namespace MarsApp
             return false;
         }
 
+        /// <summary>
+        /// Permet de calculer le nombre de minutes du temps martien
+        /// </summary>
+        /// <returns></returns>
         public int nbMinutes()
         {
             return heure * 60 + minute;
         }
 
         #region Génération XML
+        /// <summary>
+        /// Permet de générer la partie XML de TimeMartien
+        /// </summary>
+        /// <param name="xmlDoc">XmlDocument</param>
+        /// <param name="heureMartienne">Noeud du TimeMartien</param>
         public void genererXML(XmlDocument xmlDoc, XmlNode heureMartienne)
         {
             heureMartienne.InnerText = nbMinutes().ToString();

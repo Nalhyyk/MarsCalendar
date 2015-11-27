@@ -34,6 +34,8 @@ namespace MarsApp
         /// </summary>
         /// <param name="numero">Le numéro de la journée</param>
         /// <param name="rapport">Le rapport de la journée</param>
+        /// <param name="etat">Etat de la journée</param>
+        /// <param name="journeeExterieure">Journée en extérieur ?</param>
         public Journee(int numero, String rapport, IEtat etat, bool journeeExterieure)
         {
             this.numero = numero;
@@ -169,6 +171,14 @@ namespace MarsApp
         }
 
         #region Génération XML
+        /// <summary>
+        /// Permet de générer la partie XML de l'Activite
+        /// </summary>
+        /// <param name="xmlDoc">XmlDocument global</param>
+        /// <param name="xmlDocActs">XmlDocument pour les activités de base</param>
+        /// <param name="journee">Le noeud de la journée</param>
+        /// <param name="acts">Le noeud de l'activité (base)</param>
+        /// <param name="progression">L'interface de progression</param>
         public void genererXML(XmlDocument xmlDoc, XmlDocument xmlDocActs, XmlNode journee, XmlNode acts, Progression progression)
         {
             XmlNode num = xmlDoc.CreateElement("Numero");

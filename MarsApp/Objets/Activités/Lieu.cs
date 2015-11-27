@@ -39,6 +39,10 @@ namespace MarsApp
         }
         #endregion
 
+        /// <summary>
+        /// Information sur l'objet
+        /// </summary>
+        /// <returns>Informations sur l'objet</returns>
         public override string ToString()
         {
             return x + ";" + y;
@@ -57,6 +61,11 @@ namespace MarsApp
         }
 
         #region Génération XML
+        /// <summary>
+        /// Permet de générer la partie XML de Lieu
+        /// </summary>
+        /// <param name="xmlDoc">XmlDocument</param>
+        /// <param name="lieu">Le noeud du lieu</param>
         public void genererXML(XmlDocument xmlDoc, XmlNode lieu)
         {
             lieu.InnerText = this.x.ToString() + "," + this.y.ToString();

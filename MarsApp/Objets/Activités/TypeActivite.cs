@@ -25,6 +25,11 @@ namespace MarsApp
         #endregion
 
         #region Génération XML
+        /// <summary>
+        /// Permet de générer la partie XML de TypeActivite
+        /// </summary>
+        /// <param name="xmlDoc">XmlDocument</param>
+        /// <param name="typeActivite">Noeud du typeActivite</param>
         public void genererXML(XmlDocument xmlDoc, XmlNode typeActivite)
         {
             XmlNode nom = xmlDoc.CreateElement("Nom");

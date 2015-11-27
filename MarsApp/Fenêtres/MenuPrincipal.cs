@@ -28,6 +28,11 @@ namespace MarsApp
         #endregion
 
         #region Evènements
+        /// <summary>
+        /// Permet de créer les données par défaut, et d'ouvrir le menu "principal" de l'application
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void button1_Click(object sender, EventArgs e)
         {
             DateTime picker = dateTimePicker1.Value;
@@ -38,10 +43,15 @@ namespace MarsApp
             this.cacherFenetre();
         }
 
+        /// <summary>
+        /// Permet de charger le premier fichier XML "Mars-o-Matic"
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void marsomaticFile_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Mars-o-Matic (.xml)|*.xml";
+            ofd.Filter = "Mars-o-Matic (.xml)|Mars-o-Matic*.xml";
 
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -50,10 +60,15 @@ namespace MarsApp
             }
         }
 
+        /// <summary>
+        /// Permet de charger le deuxième fichier XML "ActivitesRefs"
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
         private void activitesRefFile_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "ActivitesRefs (.xml)|*.xml";
+            ofd.Filter = "ActivitesRefs (.xml)|ActivitesRefs*.xml";
 
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -62,6 +77,11 @@ namespace MarsApp
             }
         }
 
+        /// <summary>
+        /// Permet de créer les données à partir des fichiers XML, et d'ouvrir le menu "principal" de l'application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void charger_Click(object sender, EventArgs e)
         {
             if (activitesRefs != null && marsOMatic != null)
