@@ -223,12 +223,18 @@ namespace MarsApp
             if (finHeure.Value == 24)
                 finMinute.Maximum = 40;
             else
-                finMinute.Maximum = 60;
+                finMinute.Maximum = 50;
 
             if (debutHeure.Value == 24)
                 debutMinute.Maximum = 40;
             else
-                debutMinute.Maximum = 60;
+                debutMinute.Maximum = 50;
+
+            String valDebut = debutMinute.Value.ToString();
+            String valFin = finMinute.Value.ToString();
+
+            debutMinute.Value = (debutMinute.Value - int.Parse(valDebut[valDebut.Length - 1].ToString()));
+            finMinute.Value = (finMinute.Value - int.Parse(valFin[valFin.Length - 1].ToString()));
         }
         #endregion
     }
