@@ -132,6 +132,9 @@ namespace MarsApp
                 a = new Activite(new TypeActivite(type), descriptionTB.Text, new TimeMartien(0, (int)debutHeure.Value, (int)debutMinute.Value, 0), new TimeMartien(0, (int)finHeure.Value, (int)finMinute.Value, 0), new Lieu(0, 0));
 
             /* Découpage activité */
+            if (activiteAModifier.getHeureFin().getHeures() == 0 && activiteAModifier.getHeureFin().getMinutes() == 0 && activiteAModifier.getHeureFin().getSecondes() == 0)
+                activiteAModifier.setHeureFin(new TimeMartien(0, 24, 39, 59));
+
             if (activiteAModifier.getDuree().getTotalMinutes() == 10)
                 journeeAModifier.ajouterActivite(a);
             else if (activiteAModifier.getDuree().getTotalMinutes() == 20)
