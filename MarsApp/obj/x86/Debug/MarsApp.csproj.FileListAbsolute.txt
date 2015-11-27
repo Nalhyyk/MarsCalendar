@@ -64,3 +64,4 @@ C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\bin\Debug\System.Windows.Forms.
 C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\bin\Debug\System.Xml.dll
 C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\bin\Debug\System.Xml.Linq.dll
 C:\Users\alexa\Desktop\Mars\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.csprojResolveAssemblyReference.cache
+H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.MoteurRecherche.resources

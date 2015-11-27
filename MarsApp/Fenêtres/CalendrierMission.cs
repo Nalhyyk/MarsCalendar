@@ -783,6 +783,12 @@ namespace MarsApp
             mettreAJourActiviteEnCours();
             miseAJourEdt(journeesMission[journeeSelectionnee]);
         }
+
+        private void recherche_Click(object sender, EventArgs e)
+        {
+            MoteurRecherche mr = new MoteurRecherche(journeesMission);
+            mr.Show();
+        }
         #endregion
     }
 }

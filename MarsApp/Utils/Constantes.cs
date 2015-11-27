@@ -20,5 +20,9 @@ namespace MarsApp
         public const int POSITION_BASE_X = 700;
         public const int POSITION_BASE_Y = 1000;
         public const double RAPPORT_CARTES = 3.421875;
+
+        public const String ETAT_PASSE = "Passé";
+        public const String ETAT_ENCOURS = "EnCours";
+        public const String ETAT_FUTUR = "Futur";
     }
 }

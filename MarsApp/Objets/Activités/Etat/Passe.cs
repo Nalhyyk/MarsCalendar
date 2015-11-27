@@ -22,7 +22,7 @@ namespace MarsApp
 
         public String etat()
         {
-            return "Passé";
+            return Constantes.ETAT_PASSE;
         }
 
         public int[] couleur()

@@ -323,6 +323,12 @@ namespace MarsApp
         /// </summary>
         /// <param name="l">Un lieu</param>
         public void setLieu(Lieu l) { this.lieu = l; }
+
+        /// <summary>
+        /// Permet d'obtenir l'état de l'activité
+        /// </summary>
+        /// <returns>L'état de l'activité</returns>
+        public String getEtat() { return etat.etat(); }
         #endregion
     }
 }

@@ -431,6 +431,10 @@ namespace MarsApp
         /// <returns></returns>
         public int getJours() { return jours; }
 
+        /// <summary>
+        /// Permet d'obtenir le nombre total de minutes du temps martien
+        /// </summary>
+        /// <returns>Le nombre de minutes total</returns>
         public int getTotalMinutes()
         {
             int min = minute;
@@ -443,6 +447,12 @@ namespace MarsApp
             }
             return min;
         }
+
+        /// <summary>
+        /// Permet d'obtenir les informations du temps martien, sans le jour de mission
+        /// </summary>
+        /// <returns>Informations sur le temps martien</returns>
+        public String affichageSansJour() { return ((heure.ToString().Length == 1) ? "0" : "") + heure + ":" + ((minute.ToString().Length == 1) ? "0" : "") + minute + ":" + ((seconde.ToString().Length == 1) ? "0" : "") + seconde; }
         #endregion
 
         /// <summary>
@@ -451,7 +461,7 @@ namespace MarsApp
         /// <returns>h:m:s</returns>
         public override string ToString()
         {
-            return (jours + 1) + ((jours == 1) ? "er" : "eme") + " jour de mission, " + ((heure.ToString().Length == 1) ? "0" : "") + heure + ":" + ((minute.ToString().Length == 1) ? "0" : "") + minute + ":" + ((seconde.ToString().Length == 1) ? "0" : "") + seconde;
+            return (jours + 1) + (((jours + 1) == 1) ? "er" : "eme") + " jour de mission, " + ((heure.ToString().Length == 1) ? "0" : "") + heure + ":" + ((minute.ToString().Length == 1) ? "0" : "") + minute + ":" + ((seconde.ToString().Length == 1) ? "0" : "") + seconde;
         }
     }
 }

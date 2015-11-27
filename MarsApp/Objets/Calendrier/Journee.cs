@@ -263,6 +263,12 @@ namespace MarsApp
         /// </summary>
         /// <param name="activites">Une liste d'activités</param>
         public void setListeActivites(List<Activite> activites) { this.listeActivites = activites; }
+
+        /// <summary>
+        /// Permet d'obtenir l'état de l'activité
+        /// </summary>
+        /// <returns>L'état de l'activité</returns>
+        public String getEtat() { return etat.etat(); }
         #endregion
     }
 }
