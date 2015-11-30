@@ -253,12 +253,27 @@ namespace MarsApp
         /// <returns>Résultat différent</returns>
         public static bool operator !=(TimeMartien t1, TimeMartien t2)
         {
-            if (t1.getHeures() != t2.getHeures())
-                return true;
-            if (t1.getMinutes() != t2.getMinutes())
-                return true;
-            if (t1.getSecondes() != t2.getSecondes())
-                return true;
+            bool estPasNull = true;
+
+            Object a1 = t1;
+            Object a2 = t2;
+
+            if (a1 == null || a2 == null)
+                estPasNull = false;
+
+            if (estPasNull)
+            {
+                if (t1.getHeures() != t2.getHeures())
+                    return true;
+                if (t1.getMinutes() != t2.getMinutes())
+                    return true;
+                if (t1.getSecondes() != t2.getSecondes())
+                    return true;
+                return false;
+            }
+            else
+                if ((a1 == null && a2 != null) || (a1 != null && a2 == null))
+                    return true;
             return false;
         }
         

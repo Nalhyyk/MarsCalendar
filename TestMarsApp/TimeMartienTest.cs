@@ -206,6 +206,11 @@ namespace TestMarsApp
             actFin = new TimeMartien(2, 3, 4, 5);
 
             Assert.IsTrue(TimeMartien.sePasseDansPeriode(actDeb, actFin, deb, fin));
+
+            actDeb = new TimeMartien(1, 1, 3, 4);
+            actFin = new TimeMartien(2, 4, 4, 5);
+
+            Assert.IsTrue(TimeMartien.sePasseDansPeriode(actDeb, actFin, deb, fin));
         }
 
         /// <summary>
@@ -214,7 +219,10 @@ namespace TestMarsApp
         [TestMethod()]
         public void EqualsTest()
         {
-            // TODO
+            TimeMartien t1 = new TimeMartien(0, 10, 20, 30);
+            TimeMartien t2 = new TimeMartien(0, 10, 20, 30);
+
+            Assert.IsTrue(t1.Equals(t2), "Le résultat de l'égalité entre 2 TimeMartien est faux");
         }
 
         /// <summary>
@@ -223,16 +231,17 @@ namespace TestMarsApp
         [TestMethod()]
         public void ajouterTempsTest()
         {
-            // TODO
-        }
+            TimeMartien t1 = new TimeMartien(5, 10, 20, 30);
+            t1.ajouterTemps(2, 10, 21, 35);
+            TimeMartien result = new TimeMartien(7, 20, 42, 5);
 
-        /// <summary>
-        ///Test pour ajouterTemps
-        ///</summary>
-        [TestMethod()]
-        public void ajouterTempsTest1()
-        {
-            // TODO
+            Assert.IsTrue(t1 == result, "Le temps n'a pas bien été ajouté");
+
+            t1 = new TimeMartien(5, 20, 0, 0);
+            t1.ajouterTemps(2, 5, 30, 75);
+            result = new TimeMartien(8, 0, 51, 15);
+
+            Assert.IsTrue(t1 == result, "Le temps n'a pas bien été ajouté");
         }
 
         /// <summary>
