@@ -389,8 +389,8 @@ namespace MarsApp
             bool dSUPd = (debutActivite >= heureDebut);
             bool fINFf = (finActivite <= heureFin);
             bool fSUPf = (finActivite >= heureFin);
-            bool dINFf = (debutActivite < heureFin);
-            bool fSUPd = (finActivite > heureDebut);
+            bool dINFf = (debutActivite < heureFin || debutActivite.getJours() < heureFin.getJours());
+            bool fSUPd = (finActivite > heureDebut || finActivite.getJours() > heureDebut.getJours());
 
             if (dINFd && fSUPf && dINFf && fSUPd)
                 return true;

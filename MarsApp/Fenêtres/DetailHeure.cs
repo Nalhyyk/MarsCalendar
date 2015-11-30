@@ -144,6 +144,16 @@ namespace MarsApp
         private void heure_click(object sender, EventArgs e)
         {
             minuteSelectionnee = int.Parse(((Label)sender).Tag.ToString());
+            Activite a = journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0), ((heureSelectionnee == 0 && minuteSelectionnee == 0) ? true : false));
+            
+            if (!a.isModifiable())
+            {
+                ToolStripItem tsmiModif = clicDroitActivite.Items.Find("Modifier", true)[0];
+                ToolStripItem tsmiSuppr = clicDroitActivite.Items.Find("Supprimer", true)[0];
+                tsmiModif.Enabled = false;
+                tsmiSuppr.Enabled = false;
+            }
+
             clicDroitActivite.Show(Cursor.Position);
         }
 

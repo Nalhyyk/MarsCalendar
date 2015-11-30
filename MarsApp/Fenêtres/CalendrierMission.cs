@@ -881,7 +881,7 @@ namespace MarsApp
         /// <param name="e">Evènement</param>
         private void recherche_Click(object sender, EventArgs e)
         {
-            MoteurRecherche mr = new MoteurRecherche(journeesMission);
+            MoteurRecherche mr = new MoteurRecherche(journeesMission, journeeActuelle.getNumero());
             mr.Show();
         }
         #endregion

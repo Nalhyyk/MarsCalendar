@@ -23,20 +23,21 @@ namespace MarsApp
         /// Constructeur paramétré
         /// </summary>
         /// <param name="journeesMission">Les journées de la mission</param>
-        public MoteurRecherche(Dictionary<int, Journee> journeesMission)
+        public MoteurRecherche(Dictionary<int, Journee> journeesMission, int numJour)
         {
             InitializeComponent();
 
             activitesPassees = new List<Activite>();
             joursPasses = new List<Journee>();
             this.journeesMission = journeesMission;
+            this.jourFin.Value = numJour;
 
-            for (int i = 1; i <= 500; ++i)
+            for (int i = 1; i <= numJour; ++i)
                 if (journeesMission[i].getEtat().Equals(Constantes.ETAT_PASSE) || journeesMission[i].getEtat().Equals(Constantes.ETAT_ENCOURS))
                     joursPasses.Add(journeesMission[i]);
 
 
-            chercherDansActivitesPassees(1, 500, "", "");
+            chercherDansActivitesPassees(1, numJour, "", "");
         }
         #endregion
 
@@ -49,8 +50,11 @@ namespace MarsApp
         /// <param name="description">Description de l'activité</param>
         private void chercherDansActivitesPassees(int jourDebut, int jourFin, String nom, String description)
         {
-            activitesPassees.Clear();
-            treeView1.Nodes.Clear();
+            if (activitesPassees.Count != 0)
+                activitesPassees.Clear();
+
+            if (treeView1.Nodes.Count != 0)
+                treeView1.Nodes.Clear();
 
             foreach (Journee j in joursPasses)
             {
