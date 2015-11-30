@@ -269,15 +269,15 @@ namespace MarsApp
         /// <param name="t2">TimeMartien</param>
         /// <returns>Résultat inférieur</returns>
         public static bool operator <(TimeMartien t1, TimeMartien t2)
-        {   
-            if (t1.getHeures() < t2.getHeures())
-                return true;
-            else if (t1.getHeures() == t2.getHeures())
-                if (t1.getMinutes() < t2.getMinutes())
+        {
+                if (t1.getHeures() < t2.getHeures())
                     return true;
-                else if (t1.getMinutes() == t2.getMinutes())
-                    if (t1.getSecondes() < t2.getSecondes())
+                else if (t1.getHeures() == t2.getHeures())
+                    if (t1.getMinutes() < t2.getMinutes())
                         return true;
+                    else if (t1.getMinutes() == t2.getMinutes())
+                        if (t1.getSecondes() < t2.getSecondes())
+                            return true;
             return false;
         }
 
@@ -289,14 +289,14 @@ namespace MarsApp
         /// <returns>Résultat inférieur</returns>
         public static bool operator >(TimeMartien t1, TimeMartien t2)
         {
-            if (t1.getHeures() > t2.getHeures())
-                return true;
-            else if (t1.getHeures() == t2.getHeures())
-                if (t1.getMinutes() > t2.getMinutes())
+                if (t1.getHeures() > t2.getHeures())
                     return true;
-                else if (t1.getMinutes() == t2.getMinutes())
-                    if (t1.getSecondes() > t2.getSecondes())
+                else if (t1.getHeures() == t2.getHeures())
+                    if (t1.getMinutes() > t2.getMinutes())
                         return true;
+                    else if (t1.getMinutes() == t2.getMinutes())
+                        if (t1.getSecondes() > t2.getSecondes())
+                            return true;
             return false;
         }
 
@@ -308,7 +308,7 @@ namespace MarsApp
         /// <returns>Résultat inférieur ou égal</returns>
         public static bool operator <=(TimeMartien t1, TimeMartien t2)
         {
-            if (t1.getHeures() < t2.getHeures())
+                if (t1.getHeures() < t2.getHeures())
                 return true;
             else if (t1.getHeures() == t2.getHeures())
                 if (t1.getMinutes() < t2.getMinutes())
@@ -327,7 +327,7 @@ namespace MarsApp
         /// <returns>Résultat supérieur ou égal</returns>
         public static bool operator >=(TimeMartien t1, TimeMartien t2)
         {
-            if (t1.getHeures() > t2.getHeures())
+                if (t1.getHeures() > t2.getHeures())
                 return true;
             else if (t1.getHeures() == t2.getHeures())
                 if (t1.getMinutes() > t2.getMinutes())

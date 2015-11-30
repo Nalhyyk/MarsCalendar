@@ -323,7 +323,7 @@ namespace MarsApp
 
                 for (int i = 0; i < heures.Count; ++i)
                     if (heures[i].Tag.ToString().Equals(heureActuelle.getHeures().ToString()) && journeeActuelle.getNumero() == k)
-                        j.trouverActivite(heureActuelle).activiteEnCours();
+                        j.trouverActivite(heureActuelle, ((heureActuelle.getHeures() == 0 && heureActuelle.getMinutes() == 0) ? true : false)).activiteEnCours();
                     else if (int.Parse(heures[i].Tag.ToString()) < heureActuelle.getHeures() || journeeActuelle.getNumero() != k)
                         foreach (Activite a in j.getActivites())
                         {
@@ -337,6 +337,22 @@ namespace MarsApp
                                 a.activiteAVenir();
                         }
             }
+        }
+
+        /// <summary>
+        /// Permet de mettre à jour les journées passées/en cours/futures lors du chargement
+        /// du fichier XML
+        /// </summary>
+        /// <param name="numJour">Numéro du jour actuel</param>
+        public void modificationJourneeActuelle(int numJour)
+        {
+            for (int i = 1; i < numJour; ++i)
+                journeesMission[i].journeePassee();
+
+            for (int i = (numJour + 1); i <= 500; ++i)
+                journeesMission[i].journeeAVenir();
+
+            journeesMission[numJour].journeeEnCours();
         }
 
         #region Génération XML
@@ -450,8 +466,8 @@ namespace MarsApp
             }
 
             xmlDocDom.Save("Donnees/Domaines.xml");
-            xmlDoc.Save("Donnees/Mars-o-Matic.xml");
-            xmlDocActs.Save("Donnees/ActivitesRefs.xml");
+            xmlDoc.Save("Donnees/Mars-o-Matic_" + this.debutMission.Day + "_" + this.debutMission.Month + "_" + this.debutMission.Year + ".xml");
+            xmlDocActs.Save("Donnees/ActivitesRefs_" + this.debutMission.Day + "_" + this.debutMission.Month + "_" + this.debutMission.Year + ".xml");
             progression.fermerFenetre();
         }
         #endregion
@@ -551,9 +567,6 @@ namespace MarsApp
             }
 
             /* Chargement données */
-            TimeMartien nb = TimeMartien.calculerJours(debutMission);
-            int numJour = nb.getJours() + 1;
-
             int jour = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Jour").InnerText);
             int mois = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Mois").InnerText);
             int annee = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Annee").InnerText);
@@ -562,6 +575,9 @@ namespace MarsApp
             int secondes = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Secondes").InnerText);
 
             this.debutMission = new DateTime(annee, mois, jour, heures, minutes, secondes);
+
+            TimeMartien nb = TimeMartien.calculerJours(debutMission);
+            int numJour = nb.getJours() + 1;
 
             XmlNodeList astronautesNodes = mars.GetElementsByTagName("Astronaute");
 
@@ -661,6 +677,8 @@ namespace MarsApp
             astronauteSelectionne = astronautes[0];
             journeesMission = astronauteSelectionne.getJourneesMission();
             journeeActuelle = journeesMission[numJour];
+
+            modificationJourneeActuelle(numJour);
 
             changerPeriode(periode);
             verificationChangementPeriode();

@@ -127,6 +127,15 @@ namespace MarsApp
             String type = treeView.SelectedNode.Text;
             journeeAModifier.supprimerActivite(activiteAModifier);
 
+            try
+            {
+                lieu = new Lieu(int.Parse(lieuTB.Text.Split(';')[0]), int.Parse(lieuTB.Text.Split(';')[1]));
+            }
+            catch
+            {
+                lieu = new Lieu(0, 0);
+            }
+
             Activite a;
 
             if (exterieurRadio.Checked)
@@ -145,6 +154,9 @@ namespace MarsApp
             }
             else
                 a = new Activite(new TypeActivite(type), descriptionTB.Text, new TimeMartien(0, (int)debutHeure.Value, (int)debutMinute.Value, 0), new TimeMartien(0, (int)finHeure.Value, (int)finMinute.Value, 0), new Lieu(0, 0));
+
+            if (a.getHeureFin().getHeures() == 0 && a.getHeureFin().getMinutes() == 0 && a.getHeureFin().getSecondes() == 0)
+                a.setHeureFin(new TimeMartien(0, 24, 39, 59));
 
             /* Découpage activité */
             if (activiteAModifier.getHeureFin().getHeures() == 0 && activiteAModifier.getHeureFin().getMinutes() == 0 && activiteAModifier.getHeureFin().getSecondes() == 0)
@@ -195,6 +207,9 @@ namespace MarsApp
 
                 journeeAModifier.ajouterActivite(a);
             }
+
+            if (a.getHeureFin().getHeures() == 24 && a.getHeureFin().getMinutes() == 39 && a.getHeureFin().getSecondes() == 59)
+                a.setHeureFin(new TimeMartien(0));
 
             cm.miseAJourEdt(journeeAModifier);
             dh.Close();

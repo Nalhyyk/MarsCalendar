@@ -76,8 +76,10 @@ namespace MarsApp
                 if (hFin > heureSelectionnee)
                     fin = 60;
 
-                if (fin == 0)
+                if (fin == 0 && heureSelectionnee != 24)
                     fin = 60;
+                else if (fin == 0 && heureSelectionnee == 24)
+                    fin = 40;
 
                 heures[60].Text = (heureSelectionnee + 1) + "h00";
 
@@ -112,6 +114,23 @@ namespace MarsApp
                     else
                         iconesActivite[i].Visible = false;
                 }
+
+                if (heureSelectionnee == 24)
+                {
+                    for (int i = fin; i < 60; i += 10)
+                    {
+                        heures[i + 10].Visible = false;
+                        iconesActivite[i].Visible = false;
+                        horaires[i].Visible = false;
+                    }
+
+                    if (fin < 60)
+                    {
+                        label40.Text = "0h00";
+                        label60.Visible = false;
+                        this.Size = new Size(379, 158);
+                    }
+                }
             }
         }
         #endregion
@@ -135,7 +154,7 @@ namespace MarsApp
         /// <param name="e">Evènement</param>
         private void Modifier_Click(object sender, EventArgs e)
         {
-            Activite a = journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0));
+            Activite a = journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0), ((heureSelectionnee == 0 && minuteSelectionnee == 0) ? true : false));
 
             if (a.isModifiable())
             {
@@ -151,7 +170,7 @@ namespace MarsApp
         /// <param name="e">Evènement</param>
         private void informationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            InfoActivite ia = new InfoActivite(journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0)));
+            InfoActivite ia = new InfoActivite(journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0), ((heureSelectionnee == 0 && minuteSelectionnee == 0) ? true : false)));
             ia.Show();
         }
 
@@ -162,7 +181,7 @@ namespace MarsApp
         /// <param name="e">Evènement</param>
         private void Supprimer_Click(object sender, EventArgs e)
         {
-            Activite act = journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0));
+            Activite act = journee.trouverActivite(new TimeMartien(0, heureSelectionnee, minuteSelectionnee, 0), ((heureSelectionnee == 0 && minuteSelectionnee == 0) ? true : false));
 
             if (act.isModifiable())
             {

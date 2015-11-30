@@ -37,7 +37,13 @@ namespace MarsApp
         {
             DateTime picker = dateTimePicker1.Value;
             DateTime dt = new DateTime(picker.Year, picker.Month, picker.Day, (int) heures.Value, (int) minutes.Value, 0);
-            
+
+            if (dt > DateTime.Now)
+            {
+                erreurDate.Visible = true;
+                return;
+            }
+
             CalendrierMission cm = new CalendrierMission(dt, false);
             cm.Show();
             this.cacherFenetre();
@@ -88,6 +94,12 @@ namespace MarsApp
             {
                 DateTime picker = dateTimePicker1.Value;
                 DateTime dt = new DateTime(picker.Year, picker.Month, picker.Day, (int)heures.Value, (int)minutes.Value, 0);
+
+                if (dt > DateTime.Now)
+                {
+                    erreurDate.Visible = true;
+                    return;
+                }
 
                 CalendrierMission cm = new CalendrierMission(dt, true, marsOMatic, activitesRefs);
                 cm.Show();

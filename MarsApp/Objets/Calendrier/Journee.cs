@@ -127,9 +127,9 @@ namespace MarsApp
         /// </summary>
         /// <param name="heure">Une heure</param>
         /// <returns>L'activité se passant à l'heure donnée</returns>
-        public Activite trouverActivite(TimeMartien tm)
+        public Activite trouverActivite(TimeMartien tm, bool debut)
         {
-            if (tm.getHeures() == 0 && tm.getMinutes() == 0 && tm.getSecondes() == 0)
+            if (!debut && tm.getHeures() == 0 && tm.getMinutes() == 0 && tm.getSecondes() == 0)
                 tm = new TimeMartien(0, 24, 39, 58);
 
             foreach (Activite a in listeActivites)

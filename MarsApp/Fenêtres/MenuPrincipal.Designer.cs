@@ -44,6 +44,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.erreurDate = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minutes)).BeginInit();
@@ -205,12 +206,24 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "OU";
             // 
+            // erreurDate
+            // 
+            this.erreurDate.AutoSize = true;
+            this.erreurDate.ForeColor = System.Drawing.Color.DarkRed;
+            this.erreurDate.Location = new System.Drawing.Point(9, 216);
+            this.erreurDate.Name = "erreurDate";
+            this.erreurDate.Size = new System.Drawing.Size(356, 13);
+            this.erreurDate.TabIndex = 9;
+            this.erreurDate.Text = "La date de début de mission ne peut pas être supérieure à la date actuelle";
+            this.erreurDate.Visible = false;
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(753, 232);
+            this.Controls.Add(this.erreurDate);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox2);
@@ -247,6 +260,7 @@
         private System.Windows.Forms.NumericUpDown heures;
         private System.Windows.Forms.TextBox activitesRefFile;
         private System.Windows.Forms.TextBox marsomaticFile;
+        private System.Windows.Forms.Label erreurDate;
 
 
 
