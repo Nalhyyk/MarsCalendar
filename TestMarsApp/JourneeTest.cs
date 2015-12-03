@@ -128,13 +128,22 @@ namespace TestMarsApp
         [TestMethod()]
         public void trouverActivitesTest()
         {
-            Journee target = new Journee(); // TODO: initialisez à une valeur appropriée
-            int heureD = 0; // TODO: initialisez à une valeur appropriée
-            List<Activite> expected = null; // TODO: initialisez à une valeur appropriée
-            List<Activite> actual;
-            actual = target.trouverActivites(heureD);
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+            Journee j = new Journee();
+            Activite a1 = new Activite(new TypeActivite("Lel1"), "xD1", new TimeMartien(0), new TimeMartien(10), new Lieu(0, 0));
+            Activite a2 = new Activite(new TypeActivite("Lel2"), "xD2", new TimeMartien(10), new TimeMartien(20), new Lieu(20, 30));
+            Activite a3 = new Activite(new TypeActivite("Lel3"), "xD3", new TimeMartien(20), new TimeMartien(0, 24, 40, 0), new Lieu(12, 45));
+            Activite a4 = new Activite(new TypeActivite("Lel4"), "xD4", new TimeMartien(10), new TimeMartien(15), new Lieu(20, 30));
+
+            j.ajouterActivite(a1);
+            j.ajouterActivite(a2);
+            j.ajouterActivite(a3);
+            j.ajouterActivite(a4);
+
+            List<Activite> trouvees = j.trouverActivites(11);
+
+            Assert.IsNotNull(trouvees, "La fonction trouverActivites ne fonctionne pas");
+
+            //Assert.IsTrue(a2.Equals(trouvees.Find(e => e.getNom().Equals(a2.getNom()))), )
         }
     }
 }
