@@ -129,19 +129,22 @@ namespace MarsApp
         /// <returns>L'activité se passant à l'heure donnée</returns>
         public Activite trouverActivite(TimeMartien tm, bool debut)
         {
-            if (!debut && tm.getHeures() == 0 && tm.getMinutes() == 0 && tm.getSecondes() == 0)
-                tm = new TimeMartien(0, 24, 39, 58);
-
-            foreach (Activite a in listeActivites)
+            if (tm != null)
             {
-                if (a.getHeureFin().getHeures() == 0 && a.getHeureFin().getMinutes() == 0 && a.getHeureFin().getSecondes() == 0)
-                    a.setHeureFin(new TimeMartien(0, 24, 39, 59));
+                if (!debut && tm.getHeures() == 0 && tm.getMinutes() == 0 && tm.getSecondes() == 0)
+                    tm = new TimeMartien(0, 24, 39, 58);
 
-                if (a.getHeureDebut() <= tm && a.getHeureFin() > tm)
+                foreach (Activite a in listeActivites)
                 {
-                    if (a.getHeureFin().getHeures() == 24 && a.getHeureFin().getMinutes() == 39 && a.getHeureFin().getSecondes() == 59)
-                        a.setHeureFin(new TimeMartien(0, 24, 40, 00));
-                    return a;
+                    if (a.getHeureFin().getHeures() == 0 && a.getHeureFin().getMinutes() == 0 && a.getHeureFin().getSecondes() == 0)
+                        a.setHeureFin(new TimeMartien(0, 24, 39, 59));
+
+                    if (a.getHeureDebut() <= tm && a.getHeureFin() > tm)
+                    {
+                        if (a.getHeureFin().getHeures() == 24 && a.getHeureFin().getMinutes() == 39 && a.getHeureFin().getSecondes() == 59)
+                            a.setHeureFin(new TimeMartien(0, 24, 40, 00));
+                        return a;
+                    }
                 }
             }
 
@@ -279,6 +282,12 @@ namespace MarsApp
         /// </summary>
         /// <returns>L'état de l'activité</returns>
         public String getEtat() { return etat.etat(); }
+
+        /// <summary>
+        /// Permet de savoir si la journée est en cours
+        /// </summary>
+        /// <returns>Vrai si la journée est en cours, faux sinon</returns>
+        public bool isEnCours() { return etat.etat().Equals(Constantes.ETAT_ENCOURS); }
         #endregion
     }
 }

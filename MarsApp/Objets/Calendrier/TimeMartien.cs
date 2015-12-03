@@ -355,19 +355,6 @@ namespace MarsApp
         #endregion
 
         /// <summary>
-        /// Permet de convertir un DateTime en TimeMartien
-        /// </summary>
-        /// <param name="dt">Un DateTime</param>
-        /// <returns>Le TImeMartien correspondant au DateTime</returns>
-        public static TimeMartien convertirDateTime(DateTime dt)
-        {
-            TimeSpan ts = new TimeSpan(dt.Ticks);
-            TimeMartien tm = new TimeMartien(0, 0, 0, (int)Math.Truncate(ts.TotalSeconds));
-
-            return tm;
-        }
-
-        /// <summary>
         /// Permet de calculer le nombre de jours passés depuis le DateTime spécifié (en temps martien)
         /// </summary>
         /// <param name="dateDepart">Un DateTime</param>

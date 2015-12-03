@@ -250,16 +250,20 @@ namespace TestMarsApp
         [TestMethod()]
         public void calculerJoursTest()
         {
-            // TODO
-        }
+            DateTime dt = new DateTime(2015, 12, 04, 0, 20, 0);
+            DateTime dt2 = new DateTime(2015, 12, 07, 10, 43, 52);
 
-        /// <summary>
-        ///Test pour convertirDateTime
-        ///</summary>
-        [TestMethod()]
-        public void convertirDateTimeTest()
-        {
-            // TODO
+            /* Algo de calculerJours 
+             * Dépend d'un DateTime.Now, donc méthode inutilisable pour des tests */
+            long ticks = dt2.Ticks - dt.Ticks;
+            TimeSpan ts = new TimeSpan(ticks);
+
+            TimeMartien tm = new TimeMartien(0, 0, 0, (int) Math.Truncate(ts.TotalSeconds));
+
+            TimeMartien result = new TimeMartien(3, 8, 23, 52);
+
+            Assert.IsTrue(tm.Equals(result) && tm.getJours() == result.getJours(), 
+                "Le nombre de jours calculés n'est pas le bon");
         }
 
         /// <summary>
@@ -268,7 +272,11 @@ namespace TestMarsApp
         [TestMethod()]
         public void nbMinutesTest()
         {
-            // TODO
+            TimeMartien tm = new TimeMartien(3, 10, 20, 30);
+            int min = tm.nbMinutes();
+            int result = 620;
+
+            Assert.IsTrue(min == result, "Le nombre de minutes n'est pas bon");
         }
     }
 }

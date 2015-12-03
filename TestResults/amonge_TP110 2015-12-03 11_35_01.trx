@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ad09f050-07fe-4c85-bc61-0ace08e6897a" name="amonge@TP110 2015-12-03 11:35:01" runUser="ENSC\amonge" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Paramètres de test par défaut" id="44524157-2e6f-4c3c-bf17-6ff61497633f">
+    <Deployment runDeploymentRoot="amonge_TP110 2015-12-03 11_35_01">
+      <DeploymentItem filename="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" />
+      <DeploymentItem filename="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" />
+      <DeploymentItem filename="H:\MarsCalendar\MarsApp\bin\Debug\MarsApp.exe" />
+      <DeploymentItem filename="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" />
+      <DeploymentItem filename="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.dll" />
+      <DeploymentItem filename="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Deployment.dll" />
+      <DeploymentItem filename="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll" />
+      <DeploymentItem filename="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll" />
+      <DeploymentItem filename="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-12-03T11:35:01.2120485+01:00" queuing="2015-12-03T11:35:02.4810485+01:00" start="2015-12-03T11:35:02.5980485+01:00" finish="2015-12-03T11:35:25.1430485+01:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="15" executed="14" passed="13" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="1" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="TP110" outcome="Error" timestamp="2015-12-03T11:35:25.1410485+01:00">
+        <Text>Le processus hôte du test s'est fermé de manière inattendue.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="op_SubtractionTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="f6644669-f50c-4388-7dc8-fe05af425923">
+      <Execution id="4f80e12c-f504-45c1-9af7-5dbe1b8c7752" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="op_SubtractionTest" />
+    </UnitTest>
+    <UnitTest name="op_GreaterThanTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="c9f0f471-2d31-de67-2de0-89d4039d23cc">
+      <Execution id="a38112e4-afea-452a-a6df-f3f1de4399ea" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="op_GreaterThanTest" />
+    </UnitTest>
+    <UnitTest name="op_LessThanOrEqualTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="bb187948-68d2-56a7-6ce6-43f4d81003a2">
+      <Execution id="8f2ef989-d760-4853-999b-867e6f8493d4" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="op_LessThanOrEqualTest" />
+    </UnitTest>
+    <UnitTest name="sePasseDansPeriodeTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="44ed7d5c-9545-6874-8556-7a4c0118996f">
+      <Execution id="380558ab-bdcc-467b-a8dc-efe5c86c16e8" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="sePasseDansPeriodeTest" />
+    </UnitTest>
+    <UnitTest name="op_LessThanTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="f657f978-7d26-ba45-a706-065097b1424e">
+      <Execution id="dd9e4efe-76c2-4ff4-b0ff-fb37efcd2f17" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="op_LessThanTest" />
+    </UnitTest>
+    <UnitTest name="EqualsTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="d4fb811d-44ce-bea6-881d-1a522697622c">
+      <Execution id="27f8c5a7-bfdb-4f9f-a64b-6ff7611525c4" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EqualsTest" />
+    </UnitTest>
+    <UnitTest name="op_InequalityTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="25c13d46-3c02-28db-7a85-6e48059a1585">
+      <Execution id="a5152aea-f6dd-4c8d-9108-40819b49a62b" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="op_InequalityTest" />
+    </UnitTest>
+    <UnitTest name="convertirDateTimeTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="67992c97-d63a-b679-ed31-3a04a82e00e3">
+      <Execution id="5c6e6919-c668-4c5b-8e4e-b5bfeff64ba4" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="convertirDateTimeTest" />
+    </UnitTest>
+    <UnitTest name="calculerJoursTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="c2db00ea-1935-07a4-a8dd-b58b3ea840cf">
+      <Execution id="6d5709ea-99eb-4e01-8041-743bccebdd53" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="calculerJoursTest" />
+    </UnitTest>
+    <UnitTest name="ajouterTempsTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="b04e9284-90d4-09de-2200-40f3f83a7290">
+      <Execution id="811c144b-b754-4e83-aa1f-6aa9bb2fc1e2" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ajouterTempsTest" />
+    </UnitTest>
+    <UnitTest name="retirerTempsTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="294e43ef-fe82-562f-4bda-ae8968863b11">
+      <Execution id="f1f2b121-9c00-4097-944a-7aa9df4b47ef" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="retirerTempsTest" />
+    </UnitTest>
+    <UnitTest name="op_EqualityTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="ccb5bfea-159a-7fe7-c85e-a2fb289f43ef">
+      <Execution id="6fd8094b-8c04-4d3a-b373-5cb75a111773" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="op_EqualityTest" />
+    </UnitTest>
+    <UnitTest name="nbMinutesTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="ca65595f-47e4-812a-465c-4464024e361b">
+      <Execution id="cb763dde-c1fa-474e-88ea-c758c0dfced4" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="nbMinutesTest" />
+    </UnitTest>
+    <UnitTest name="op_GreaterThanOrEqualTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="49444014-6bff-29f8-901b-c3baacc0f736">
+      <Execution id="5f06c2c3-089a-4aa4-a268-e49fadb4fdb3" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="op_GreaterThanOrEqualTest" />
+    </UnitTest>
+    <UnitTest name="op_AdditionTest" storage="h:\marscalendar\testmarsapp\bin\debug\testmarsapp.dll" id="560475c1-2040-50a8-7479-8fbede2f9b77">
+      <Execution id="a3f045b5-2da7-46f8-acfe-75f15da92318" />
+      <TestMethod codeBase="H:/MarsCalendar/TestMarsApp/bin/Debug/TestMarsApp.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestMarsApp.TimeMartienTest, TestMarsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="op_AdditionTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Les résultats ne figurent pas dans une liste" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Tous les résultats chargés" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="560475c1-2040-50a8-7479-8fbede2f9b77" executionId="a3f045b5-2da7-46f8-acfe-75f15da92318" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ccb5bfea-159a-7fe7-c85e-a2fb289f43ef" executionId="6fd8094b-8c04-4d3a-b373-5cb75a111773" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c9f0f471-2d31-de67-2de0-89d4039d23cc" executionId="a38112e4-afea-452a-a6df-f3f1de4399ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49444014-6bff-29f8-901b-c3baacc0f736" executionId="5f06c2c3-089a-4aa4-a268-e49fadb4fdb3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="25c13d46-3c02-28db-7a85-6e48059a1585" executionId="a5152aea-f6dd-4c8d-9108-40819b49a62b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f657f978-7d26-ba45-a706-065097b1424e" executionId="dd9e4efe-76c2-4ff4-b0ff-fb37efcd2f17" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb187948-68d2-56a7-6ce6-43f4d81003a2" executionId="8f2ef989-d760-4853-999b-867e6f8493d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f6644669-f50c-4388-7dc8-fe05af425923" executionId="4f80e12c-f504-45c1-9af7-5dbe1b8c7752" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="294e43ef-fe82-562f-4bda-ae8968863b11" executionId="f1f2b121-9c00-4097-944a-7aa9df4b47ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="44ed7d5c-9545-6874-8556-7a4c0118996f" executionId="380558ab-bdcc-467b-a8dc-efe5c86c16e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d4fb811d-44ce-bea6-881d-1a522697622c" executionId="27f8c5a7-bfdb-4f9f-a64b-6ff7611525c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b04e9284-90d4-09de-2200-40f3f83a7290" executionId="811c144b-b754-4e83-aa1f-6aa9bb2fc1e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c2db00ea-1935-07a4-a8dd-b58b3ea840cf" executionId="6d5709ea-99eb-4e01-8041-743bccebdd53" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="67992c97-d63a-b679-ed31-3a04a82e00e3" executionId="5c6e6919-c668-4c5b-8e4e-b5bfeff64ba4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ca65595f-47e4-812a-465c-4464024e361b" executionId="cb763dde-c1fa-474e-88ea-c758c0dfced4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a3f045b5-2da7-46f8-acfe-75f15da92318" testId="560475c1-2040-50a8-7479-8fbede2f9b77" testName="op_AdditionTest" computerName="TP110" duration="00:00:00.0920641" startTime="2015-12-03T11:35:02.7400485+01:00" endTime="2015-12-03T11:35:03.8400485+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3f045b5-2da7-46f8-acfe-75f15da92318">
+    </UnitTestResult>
+    <UnitTestResult executionId="6fd8094b-8c04-4d3a-b373-5cb75a111773" testId="ccb5bfea-159a-7fe7-c85e-a2fb289f43ef" testName="op_EqualityTest" computerName="TP110" duration="00:00:00.0002195" startTime="2015-12-03T11:35:03.8630485+01:00" endTime="2015-12-03T11:35:03.8720485+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6fd8094b-8c04-4d3a-b373-5cb75a111773">
+    </UnitTestResult>
+    <UnitTestResult executionId="a38112e4-afea-452a-a6df-f3f1de4399ea" testId="c9f0f471-2d31-de67-2de0-89d4039d23cc" testName="op_GreaterThanTest" computerName="TP110" duration="00:00:00.0004030" startTime="2015-12-03T11:35:03.8830485+01:00" endTime="2015-12-03T11:35:03.8890485+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a38112e4-afea-452a-a6df-f3f1de4399ea">
+    </UnitTestResult>
+    <UnitTestResult executionId="5f06c2c3-089a-4aa4-a268-e49fadb4fdb3" testId="49444014-6bff-29f8-901b-c3baacc0f736" testName="op_GreaterThanOrEqualTest" computerName="TP110" duration="00:00:00.0002349" startTime="2015-12-03T11:35:03.9000485+01:00" endTime="2015-12-03T11:35:03.9060485+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f06c2c3-089a-4aa4-a268-e49fadb4fdb3">
+    </UnitTestResult>
+    <UnitTestResult executionId="a5152aea-f6dd-4c8d-9108-40819b49a62b" testId="25c13d46-3c02-28db-7a85-6e48059a1585" testName="op_InequalityTest" computerName="TP110" duration="00:00:00.0004679" startTime="2015-12-03T11:35:03.9170485+01:00" endTime="2015-12-03T11:35:03.9230485+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5152aea-f6dd-4c8d-9108-40819b49a62b">
+    </UnitTestResult>
+    <UnitTestResult executionId="dd9e4efe-76c2-4ff4-b0ff-fb37efcd2f17" testId="f657f978-7d26-ba45-a706-065097b1424e" testName="op_LessThanTest" computerName="TP110" duration="00:00:00.0004284" startTime="2015-12-03T11:35:03.9330485+01:00" endTime="2015-12-03T11:35:03.9390485+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd9e4efe-76c2-4ff4-b0ff-fb37efcd2f17">
+    </UnitTestResult>
+    <UnitTestResult executionId="8f2ef989-d760-4853-999b-867e6f8493d4" testId="bb187948-68d2-56a7-6ce6-43f4d81003a2" testName="op_LessThanOrEqualTest" computerName="TP110" duration="00:00:00.0002537" startTime="2015-12-03T11:35:03.9770485+01:00" endTime="2015-12-03T11:35:03.9820485+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8f2ef989-d760-4853-999b-867e6f8493d4">
+    </UnitTestResult>
+    <UnitTestResult executionId="4f80e12c-f504-45c1-9af7-5dbe1b8c7752" testId="f6644669-f50c-4388-7dc8-fe05af425923" testName="op_SubtractionTest" computerName="TP110" duration="00:00:00.0006842" startTime="2015-12-03T11:35:03.9930485+01:00" endTime="2015-12-03T11:35:03.9990485+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f80e12c-f504-45c1-9af7-5dbe1b8c7752">
+    </UnitTestResult>
+    <UnitTestResult executionId="f1f2b121-9c00-4097-944a-7aa9df4b47ef" testId="294e43ef-fe82-562f-4bda-ae8968863b11" testName="retirerTempsTest" computerName="TP110" duration="00:00:00.0003005" startTime="2015-12-03T11:35:04.0100485+01:00" endTime="2015-12-03T11:35:04.0150485+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f1f2b121-9c00-4097-944a-7aa9df4b47ef">
+    </UnitTestResult>
+    <UnitTestResult executionId="380558ab-bdcc-467b-a8dc-efe5c86c16e8" testId="44ed7d5c-9545-6874-8556-7a4c0118996f" testName="sePasseDansPeriodeTest" computerName="TP110" duration="00:00:00.0011980" startTime="2015-12-03T11:35:04.0270485+01:00" endTime="2015-12-03T11:35:04.0340485+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="380558ab-bdcc-467b-a8dc-efe5c86c16e8">
+    </UnitTestResult>
+    <UnitTestResult executionId="27f8c5a7-bfdb-4f9f-a64b-6ff7611525c4" testId="d4fb811d-44ce-bea6-881d-1a522697622c" testName="EqualsTest" computerName="TP110" duration="00:00:00.0003903" startTime="2015-12-03T11:35:04.0450485+01:00" endTime="2015-12-03T11:35:04.0510485+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27f8c5a7-bfdb-4f9f-a64b-6ff7611525c4">
+    </UnitTestResult>
+    <UnitTestResult executionId="811c144b-b754-4e83-aa1f-6aa9bb2fc1e2" testId="b04e9284-90d4-09de-2200-40f3f83a7290" testName="ajouterTempsTest" computerName="TP110" duration="00:00:00.0002975" startTime="2015-12-03T11:35:04.0620485+01:00" endTime="2015-12-03T11:35:04.0680485+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="811c144b-b754-4e83-aa1f-6aa9bb2fc1e2">
+    </UnitTestResult>
+    <UnitTestResult executionId="6d5709ea-99eb-4e01-8041-743bccebdd53" testId="c2db00ea-1935-07a4-a8dd-b58b3ea840cf" testName="calculerJoursTest" computerName="TP110" duration="00:00:00.0004308" startTime="2015-12-03T11:35:04.0790485+01:00" endTime="2015-12-03T11:35:04.0850485+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d5709ea-99eb-4e01-8041-743bccebdd53">
+    </UnitTestResult>
+    <UnitTestResult executionId="5c6e6919-c668-4c5b-8e4e-b5bfeff64ba4" testId="67992c97-d63a-b679-ed31-3a04a82e00e3" testName="convertirDateTimeTest" computerName="TP110" duration="00:00:21.0470000" startTime="2015-12-03T11:35:04.0960485+01:00" endTime="2015-12-03T11:35:25.1430485+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5c6e6919-c668-4c5b-8e4e-b5bfeff64ba4">
+    </UnitTestResult>
+    <UnitTestResult executionId="cb763dde-c1fa-474e-88ea-c758c0dfced4" testId="ca65595f-47e4-812a-465c-4464024e361b" testName="nbMinutesTest" computerName="TP110" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb763dde-c1fa-474e-88ea-c758c0dfced4">
+    </UnitTestResult>
+  </Results>
+</TestRun>

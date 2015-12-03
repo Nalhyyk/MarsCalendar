@@ -69,6 +69,8 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AstronauteTest.cs" />
+    <Compile Include="JourneeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TimeMartienTest.cs" />
   </ItemGroup>
