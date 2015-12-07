@@ -11,22 +11,37 @@ namespace MarsApp
     public class Domaine
     {
         private String nom;
-        private List<String> listeActivites;
+        private List<TypeActivite> listeActivites;
+        private int[] couleur;
+
+        #region Constructeurs
+        /// <summary>
+        /// Constructeur paramétré
+        /// </summary>
+        /// <param name="nom">Nom du domaine</param>
+        public Domaine(String nom) : this(nom, new int[]{0, 0, 0})
+        {
+            
+        }
 
         /// <summary>
         /// Constructeur paramétré
         /// </summary>
-        public Domaine(String nom)
+        /// <param name="nom">Nom du domaine</param>
+        /// <param name="couleur">COuleur du domaine</param>
+        public Domaine(String nom, int[] couleur)
         {
             this.nom = nom;
-            listeActivites = new List<String>();
+            listeActivites = new List<TypeActivite>();
+            this.couleur = couleur;
         }
+        #endregion
 
         /// <summary>
         /// Ajouter une activité
         /// </summary>
-        /// <param name="a">Un nom d'activité</param>
-        public void ajouterActivite(String a)
+        /// <param name="a">Un type d'activité</param>
+        public void ajouterActivite(TypeActivite a)
         {
             listeActivites.Add(a);
         }
@@ -34,16 +49,47 @@ namespace MarsApp
         /// <summary>
         /// Supprimer une activité
         /// </summary>
-        /// <param name="a">Un nom d'activité</param>
-        public void supprimerActivite(String a)
+        /// <param name="a">Un type d'activité</param>
+        public void supprimerActivite(TypeActivite a)
         {
             listeActivites.Remove(a);
         }
 
+        public void nbTypeActivite(ref int nbElements)
+        {
+            nbElements += listeActivites.Count;
+        }
+
+        #region Accesseurs
         /// <summary>
-        /// Renvoie le nom de toutes les activités du Domaine
+        /// Renvoie les types d'activités du Domaine
         /// </summary>
-        /// <returns>Le nom de toutes les activités du Domaine</String></returns>
-        public List<String> getActivites() { return listeActivites; }
+        /// <returns>Les types d'activités du Domaine</returns>
+        public List<TypeActivite> getActivites() { return listeActivites; }
+
+        /// <summary>
+        /// Renvoie les noms des activités du Domaine
+        /// </summary>
+        /// <returns>Les noms des activités du Domaine</returns>
+        public List<String> getNomActivites()
+        {
+            List<String> noms = new List<String>();
+            foreach (TypeActivite a in listeActivites)
+                noms.Add(a.getNom());
+            return noms;
+        }
+
+        /// <summary>
+        /// Renvoie le nom du Domaine
+        /// </summary>
+        /// <returns>Le nom du Domaine</returns>
+        public String getNom() { return nom; }
+
+        /// <summary>
+        /// Renvoie la couleur du domaine
+        /// </summary>
+        /// <returns>La couleur du domaine</returns>
+        public int[] getCouleur() { return couleur; }
+        #endregion
     }
 }

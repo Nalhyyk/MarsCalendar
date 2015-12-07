@@ -13,6 +13,21 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publier\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -33,17 +48,40 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MarsApp.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fenêtres\BaseFenetre.cs">
@@ -52,15 +90,77 @@
     <Compile Include="Fenêtres\BaseFenetre.Designer.cs">
       <DependentUpon>BaseFenetre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fenêtres\CalendrierMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\CalendrierMission.Designer.cs">
+      <DependentUpon>CalendrierMission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fenêtres\DetailHeure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\DetailHeure.Designer.cs">
+      <DependentUpon>DetailHeure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fenêtres\GestionCarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\GestionCarte.Designer.cs">
+      <DependentUpon>GestionCarte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fenêtres\InfoActivite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\InfoActivite.Designer.cs">
+      <DependentUpon>InfoActivite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fenêtres\ModificationActivite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\ModificationActivite.Designer.cs">
+      <DependentUpon>ModificationActivite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fenêtres\ModificationAstronaute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\ModificationAstronaute.Designer.cs">
+      <DependentUpon>ModificationAstronaute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fenêtres\MoteurRecherche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\MoteurRecherche.Designer.cs">
+      <DependentUpon>MoteurRecherche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fenêtres\NouveauAstronaute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\NouveauAstronaute.Designer.cs">
+      <DependentUpon>NouveauAstronaute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fenêtres\Progression.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\Progression.Designer.cs">
+      <DependentUpon>Progression.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fenêtres\SelectionCarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\SelectionCarte.Designer.cs">
+      <DependentUpon>SelectionCarte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Objets\Activités\Activite.cs" />
-    <Compile Include="Fenêtres\App.cs" />
-    <Compile Include="Fenêtres\App.Designer.cs">
-      <DependentUpon>App.cs</DependentUpon>
+    <Compile Include="Fenêtres\MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Objets\Activités\Domaine.cs" />
-    <Compile Include="Objets\Activités\Etat\ActiviteEnCours.cs" />
-    <Compile Include="Objets\Activités\Etat\ActiviteFuture.cs" />
-    <Compile Include="Objets\Activités\Etat\ActivitePassee.cs" />
+    <Compile Include="Objets\Activités\Etat\EnCours.cs" />
+    <Compile Include="Objets\Activités\Etat\Futur.cs" />
+    <Compile Include="Objets\Activités\Etat\Passe.cs" />
     <Compile Include="Objets\Activités\Etat\IEtat.cs" />
     <Compile Include="Objets\Activités\ExperienceExterieure.cs" />
     <Compile Include="Objets\Activités\ExplorationExterieure.cs" />
@@ -68,25 +168,56 @@
     <Compile Include="Objets\Activités\Transport\ITransport.cs" />
     <Compile Include="Objets\Activités\Transport\Scaphandre.cs" />
     <Compile Include="Objets\Activités\Transport\Vehicule.cs" />
+    <Compile Include="Objets\Activités\TypeActivite.cs" />
     <Compile Include="Objets\Astronaute.cs" />
     <Compile Include="Objets\Calendrier\Journee.cs" />
     <Compile Include="Objets\Calendrier\TimeMartien.cs" />
-    <Compile Include="Objets\Carte.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Utils\Constantes.cs" />
-    <EmbeddedResource Include="Fenêtres\App.resx">
-      <DependentUpon>App.cs</DependentUpon>
+    <EmbeddedResource Include="Fenêtres\CalendrierMission.resx">
+      <DependentUpon>CalendrierMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenêtres\DetailHeure.resx">
+      <DependentUpon>DetailHeure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenêtres\GestionCarte.resx">
+      <DependentUpon>GestionCarte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenêtres\InfoActivite.resx">
+      <DependentUpon>InfoActivite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenêtres\MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenêtres\ModificationActivite.resx">
+      <DependentUpon>ModificationActivite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenêtres\ModificationAstronaute.resx">
+      <DependentUpon>ModificationAstronaute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenêtres\MoteurRecherche.resx">
+      <DependentUpon>MoteurRecherche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenêtres\NouveauAstronaute.resx">
+      <DependentUpon>NouveauAstronaute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenêtres\Progression.resx">
+      <DependentUpon>Progression.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fenêtres\SelectionCarte.resx">
+      <DependentUpon>SelectionCarte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -97,7 +228,58 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Ressources\Images\Carte.jpg" />
+    <None Include="Ressources\Images\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Images\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Images\astronaute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Images\astronaut16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Images\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Images\map50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Images\scaphandre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Images\vehicle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Images\Modify.png" />
+    <None Include="Ressources\Images\Plus.png" />
+    <None Include="Ressources\Images\Loupe.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

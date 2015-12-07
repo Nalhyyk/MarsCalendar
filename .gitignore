@@ -1,0 +1,12 @@
+MarsApp/obj/*
+MarsApp/bin/*
+Mars/obj/*
+Mars/bin/*
+Backup/*
+*.exe
+*.exe
+MarsApp/bin/Debug/MarsApp.exe
+MarsApp/bin/Debug/MarsApp.pdb
+MarsApp/obj/x86/Debug/DesignTimeResolveAssemblyReferences.cache
+MarsApp/obj/x86/Debug/MarsApp.exe
+MarsApp/obj/x86/Debug/MarsApp.pdb

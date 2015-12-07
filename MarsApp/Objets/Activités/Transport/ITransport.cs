@@ -2,14 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 
 namespace MarsApp
 {
+    /// <summary>
+    /// Transport utilisé
+    /// </summary>
     public interface ITransport
     {
         /// <summary>
-        /// Permet de se déplacer
+        /// Renvoie l'image du mode de déplacement
         /// </summary>
-        void deplacement();
+        Bitmap deplacement();
+
+        /// <summary>
+        /// Renvoie le nom du transport
+        /// </summary>
+        /// <returns>Le nom du transport</returns>
+        String nomTransport();
     }
 }

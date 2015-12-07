@@ -24,12 +24,19 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="false" />
   <ItemGroup>
     <Folder Include="ModelDefinition\" />
-    <Content Include="DiagrammeClasse.classdiagram">
+    <Content Include="DiagrammeClasses.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="DiagrammeClasse.classdiagram.layout">
+    <Content Include="DiagrammeClasses.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>DiagrammeClasse.classdiagram</DependentUpon>
+      <DependentUpon>DiagrammeClasses.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Interfaces.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Interfaces.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Interfaces.classdiagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\Mars.uml">
       <SubType>Content</SubType>

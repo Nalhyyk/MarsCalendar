@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 
 namespace MarsApp
 {
@@ -10,6 +11,7 @@ namespace MarsApp
     /// </summary>
     class Vehicule : ITransport
     {
+        #region Constructeurs
         /// <summary>
         /// Constructeur par défaut
         /// </summary>
@@ -17,10 +19,17 @@ namespace MarsApp
         {
 
         }
+        #endregion
 
-        public void deplacement()
+        public Bitmap deplacement()
         {
-            Console.WriteLine("Véhicule");
+            return Properties.Resources.vehicle;
+        }
+
+
+        public string nomTransport()
+        {
+            return "Vehicule";
         }
     }
 }

@@ -1,0 +1,15 @@
+H:\MarsCalendar\TestMarsApp\bin\Debug\TestMarsApp.dll
+H:\MarsCalendar\TestMarsApp\bin\Debug\TestMarsApp.pdb
+H:\MarsCalendar\TestMarsApp\bin\Debug\MarsApp.exe
+H:\MarsCalendar\TestMarsApp\bin\Debug\Microsoft.CSharp.dll
+H:\MarsCalendar\TestMarsApp\bin\Debug\System.Data.DataSetExtensions.dll
+H:\MarsCalendar\TestMarsApp\bin\Debug\System.Data.dll
+H:\MarsCalendar\TestMarsApp\bin\Debug\System.Deployment.dll
+H:\MarsCalendar\TestMarsApp\bin\Debug\System.Drawing.dll
+H:\MarsCalendar\TestMarsApp\bin\Debug\System.Windows.Forms.dll
+H:\MarsCalendar\TestMarsApp\bin\Debug\System.Xml.dll
+H:\MarsCalendar\TestMarsApp\bin\Debug\System.Xml.Linq.dll
+H:\MarsCalendar\TestMarsApp\bin\Debug\MarsApp.pdb
+H:\MarsCalendar\TestMarsApp\obj\Debug\TestMarsApp.csprojResolveAssemblyReference.cache
+H:\MarsCalendar\TestMarsApp\obj\Debug\TestMarsApp.dll
+H:\MarsCalendar\TestMarsApp\obj\Debug\TestMarsApp.pdb
