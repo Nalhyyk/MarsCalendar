@@ -19,7 +19,7 @@ namespace MarsApp
         /// <summary>
         /// Renvoie le nom du transport
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Le nom du transport</returns>
         String nomTransport();
     }
 }
