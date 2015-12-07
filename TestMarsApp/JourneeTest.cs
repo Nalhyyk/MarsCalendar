@@ -129,6 +129,7 @@ namespace TestMarsApp
         public void trouverActivitesTest()
         {
             Journee j = new Journee();
+            j.setListeActivites(new List<Activite>());
             Activite a1 = new Activite(new TypeActivite("Lel1"), "xD1", new TimeMartien(0), new TimeMartien(10), new Lieu(0, 0));
             Activite a2 = new Activite(new TypeActivite("Lel2"), "xD2", new TimeMartien(10), new TimeMartien(20), new Lieu(20, 30));
             Activite a3 = new Activite(new TypeActivite("Lel3"), "xD3", new TimeMartien(20), new TimeMartien(0, 24, 40, 0), new Lieu(12, 45));
@@ -143,7 +144,9 @@ namespace TestMarsApp
 
             Assert.IsNotNull(trouvees, "La fonction trouverActivites ne fonctionne pas");
 
-            //Assert.IsTrue(a2.Equals(trouvees.Find(e => e.getNom().Equals(a2.getNom()))), )
+            Assert.IsTrue(a2.Equals(trouvees.Find(e => e.getNom().Equals(a2.getNom()))), "La méthode a trouvé une activité qui ne correspond pas à ce qui est recherché");
+
+            Assert.IsTrue(trouvees.Count == 2, "La méthode n'a pas trouvé le bon nombre d'éléments");
         }
     }
 }
