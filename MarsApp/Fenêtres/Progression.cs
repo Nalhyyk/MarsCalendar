@@ -31,8 +31,8 @@ namespace MarsApp
         /// </summary>
         public void incrementer()
         {
-            this.progressBar1.Value += 1;
-            this.pourcentage.Text = Math.Round(((float) this.progressBar1.Value / (float) this.progressBar1.Maximum) * 100, 0) + "%";
+            this.progressBar1.PerformStep();
+            this.pourcentage.Text = Math.Round(((float)this.progressBar1.Value / (float)this.progressBar1.Maximum) * 100, 0) + "%";
             this.Refresh();
         }
     }
