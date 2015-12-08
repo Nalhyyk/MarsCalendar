@@ -64,3 +64,4 @@ H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.Properties.Resources.resources
 H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.csproj.GenerateResource.Cache
 H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.exe
 H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.pdb
+H:\MarsCalendar\MarsApp\obj\x86\Debug\MarsApp.csprojResolveAssemblyReference.cache

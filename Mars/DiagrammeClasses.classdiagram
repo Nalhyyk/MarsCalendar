@@ -73,6 +73,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="dccb47d9-3473-497e-bddf-e10dd39292f4" />
           </association>
+          <association Id="e179ccda-3c9a-40ee-bc17-1b6db39ed286" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b155bbf8-f5dd-410e-bd11-5b0ed4ae5e4e" LastKnownName="Lieu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b6f75156-92c9-4d4b-b3e6-ce1dbb71fd41" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="edfb34ce-3392-40e0-8c33-6e8526c466a1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="abcd9d75-28a8-4330-bf0a-92158f6eccf0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1075caa5-c7f5-44c4-98c0-998babd2dbff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dd2927b8-87c0-4eb5-b3ab-3122c33841a5" />
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="3e603f49-de17-433c-8d21-ed474b62e1f0" name="nbActivite" visibility="Protected" isLeaf="false" isStatic="true" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1858,6 +1874,98 @@
         <elementDefinition Id="159ec388-1456-4d11-8da1-1e0b27c4a742" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b155bbf8-f5dd-410e-bd11-5b0ed4ae5e4e" name="Lieu" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0340f549-e802-4144-a236-8aae9d7c9560" />
+        <ownedAttributesInternal>
+          <property Id="089e9ae9-c76c-4e35-b102-1e0c520d81af" name="x" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="da14fab1-a568-4dcb-933d-03ad03d49acb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5223a4c7-90f7-41c2-8298-18358087fed7" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="eca9601d-a737-4ed8-98bf-2eb75a06c42c" name="y" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9c902069-00d0-4cb8-abaa-d100eafc75c3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5223a4c7-90f7-41c2-8298-18358087fed7" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b901e5c8-4f6c-45f6-b151-65ea06ca4aa1" name="Lieu" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3b99a186-96be-4895-b3c5-885ece995b89" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="41774e7a-249c-4d04-9fe1-8a84fbf997b9" name="Integer" direction="In" isUnique="false">
+                  <elementDefinition Id="fc656e1b-20d3-4c85-ae4c-436d96660d96" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a4752d27-85e7-4822-b34e-63a7cc0dc750" name="Integer" direction="In" isUnique="false">
+                  <elementDefinition Id="75e9c8aa-ec79-4bbe-80f1-dce3ef58cc57" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="68d23a4c-ff18-4a9c-a2cd-8b29bfd36f13" name="Lieu" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="90c50f3c-85ac-4daa-bcbe-44e39a73985d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="02bd01e7-c025-41d9-b272-c88428b89263" name="MouseEventArgs" direction="In" isUnique="false">
+                  <elementDefinition Id="5ea5b9b0-1fea-449c-97e5-8685d4b634df" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f1f6aea2-c6c5-49f8-84c3-0f6503bf6767" name="convertirPosition" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="84fea368-f19f-41e7-b75f-3f346de1a256" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="be56e0db-8064-4467-816b-e16d0021e65d" name="ref Integer" direction="In" isUnique="false">
+                  <elementDefinition Id="631f3a1c-6800-4ef9-8fc3-0b2d3d13a8dc" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e220742d-db56-43ac-87c5-265ec53bbdcb" name="ref Integer" direction="In" isUnique="false">
+                  <elementDefinition Id="d154a0e9-d4dd-4746-8c07-91f0d52006f9" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="21922b1e-5e35-4cd8-ab39-e8b4b318ab44" direction="Return" isUnique="false">
+                  <elementDefinition Id="4dca1a10-b288-4fa9-bacc-64b8e0d1d4c4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="becf92bc-7f12-496d-804b-3637d33a6224" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="48b3b767-3429-4618-bcc3-640a5c3f057a" name="genererXML" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9a1144de-3e1d-44e3-a539-c904f1a0f9bd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fe68a7f3-4a03-4e6f-aff9-dbd3a908c422" name="XmlDocument" direction="In" isUnique="false">
+                  <elementDefinition Id="d5e95d73-58ce-4bd3-aed5-74bcc9132322" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="961a81fe-a2b8-47db-a2e9-41314aec3b78" name="XmlNode" direction="In" isUnique="false">
+                  <elementDefinition Id="49f05b6e-4fba-44d0-8466-560259ab3702" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="48f2f67e-fe0d-4316-954b-5a6070b715f2" direction="Return" isUnique="false">
+                  <elementDefinition Id="5733fea9-afba-4926-a499-08f4f0a82469" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="becf92bc-7f12-496d-804b-3637d33a6224" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="16fd265e-da84-48eb-8ac0-0ebd7e3a24cd" name="Mars">
     <elementDefinition Id="a1b82b59-d1e0-43fb-a5ca-1696e409ea9f" />
