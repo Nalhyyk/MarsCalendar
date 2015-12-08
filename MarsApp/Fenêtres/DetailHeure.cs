@@ -117,7 +117,7 @@ namespace MarsApp
 
                 if (heureSelectionnee == 24)
                 {
-                    for (int i = fin; i < 60; i += 10)
+                    for (int i = 40; i < 60; i += 10)
                     {
                         heures[i + 10].Visible = false;
                         iconesActivite[i].Visible = false;

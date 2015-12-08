@@ -53,6 +53,7 @@
             this.transportGB = new System.Windows.Forms.GroupBox();
             this.vehiculeRadio = new System.Windows.Forms.RadioButton();
             this.scaphandreRadio = new System.Windows.Forms.RadioButton();
+            this.errDuree = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.activiteExterieureGB.SuspendLayout();
             this.temps.SuspendLayout();
@@ -165,6 +166,7 @@
             // 
             // temps
             // 
+            this.temps.Controls.Add(this.errDuree);
             this.temps.Controls.Add(this.finMinute);
             this.temps.Controls.Add(this.debutMinute);
             this.temps.Controls.Add(this.finHeure);
@@ -351,6 +353,17 @@
             this.scaphandreRadio.Text = "Scaphandre";
             this.scaphandreRadio.UseVisualStyleBackColor = true;
             // 
+            // errDuree
+            // 
+            this.errDuree.AutoSize = true;
+            this.errDuree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.errDuree.Location = new System.Drawing.Point(7, 108);
+            this.errDuree.Name = "errDuree";
+            this.errDuree.Size = new System.Drawing.Size(253, 13);
+            this.errDuree.TabIndex = 10;
+            this.errDuree.Text = "La durée de l\'activité doit être d\'au moins 10 minutes";
+            this.errDuree.Visible = false;
+            // 
             // ModificationActivite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -415,5 +428,6 @@
         private System.Windows.Forms.NumericUpDown debutMinute;
         private System.Windows.Forms.NumericUpDown finHeure;
         private System.Windows.Forms.NumericUpDown debutHeure;
+        private System.Windows.Forms.Label errDuree;
     }
 }
