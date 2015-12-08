@@ -84,9 +84,15 @@ namespace TestMarsApp
         [TestMethod()]
         public void mettreAJourJourneeExterieureTest()
         {
-            Journee target = new Journee(); // TODO: initialisez à une valeur appropriée
-            bool expected = false; // TODO: initialisez à une valeur appropriée
+            Journee target = new Journee();
+            bool expected = false;
             bool actual;
+            actual = target.mettreAJourJourneeExterieure();
+            Assert.AreEqual(expected, actual);
+
+            target = new Journee();
+            target.ajouterActivite(new ExplorationExterieure(new TypeActivite("Toto"), "", new TimeMartien(0), new TimeMartien(2), new Lieu(0, 0), null));
+            expected = true;
             actual = target.mettreAJourJourneeExterieure();
             Assert.AreEqual(expected, actual);
         }
@@ -113,13 +119,23 @@ namespace TestMarsApp
         [TestMethod()]
         public void trouverActiviteTest()
         {
-            Journee target = new Journee(); // TODO: initialisez à une valeur appropriée
-            TimeMartien tm = null; // TODO: initialisez à une valeur appropriée
-            bool debut = false; // TODO: initialisez à une valeur appropriée
-            Activite expected = null; // TODO: initialisez à une valeur appropriée
-            Activite actual;
-            actual = target.trouverActivite(tm, debut);
-            Assert.AreEqual(expected, actual);
+            Journee j = new Journee();
+            j.setListeActivites(new List<Activite>());
+            Activite a1 = new Activite(new TypeActivite("Lel1"), "xD1", new TimeMartien(0), new TimeMartien(10), new Lieu(0, 0));
+            Activite a2 = new Activite(new TypeActivite("Lel2"), "xD2", new TimeMartien(10), new TimeMartien(20), new Lieu(20, 30));
+            Activite a3 = new Activite(new TypeActivite("Lel3"), "xD3", new TimeMartien(20), new TimeMartien(0, 24, 40, 0), new Lieu(12, 45));
+            Activite a4 = new Activite(new TypeActivite("Lel4"), "xD4", new TimeMartien(10), new TimeMartien(15), new Lieu(20, 30));
+
+            j.ajouterActivite(a1);
+            j.ajouterActivite(a2);
+            j.ajouterActivite(a3);
+            j.ajouterActivite(a4);
+
+            Activite trouve = j.trouverActivite(new TimeMartien(8), true);
+
+            Assert.IsNotNull(trouve, "La fonction trouverActivites ne fonctionne pas");
+
+            Assert.IsTrue(trouve.getNom().Equals(a1.getNom()), "La méthode a trouvé une activité qui ne correspond pas à ce qui est recherché");
         }
 
         /// <summary>
