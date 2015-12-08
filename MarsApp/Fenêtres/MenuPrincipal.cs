@@ -41,6 +41,14 @@ namespace MarsApp
             if (dt > DateTime.Now)
             {
                 erreurDate.Visible = true;
+                erreurDate.Text = "La date de début de mission ne peut pas être supérieure à la date actuelle";
+                return;
+            }
+
+            if (TimeMartien.calculerJours(dt).getJours() > 500)
+            {
+                erreurDate.Visible = true;
+                erreurDate.Text = "La durée de la mission dépasse les 500 jours...";
                 return;
             }
 
