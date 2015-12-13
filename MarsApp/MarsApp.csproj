@@ -87,6 +87,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fenêtres\AjouterTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fenêtres\AjouterTA.Designer.cs">
+      <DependentUpon>AjouterTA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fenêtres\BaseFenetre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Utils\Constantes.cs" />
+    <EmbeddedResource Include="Fenêtres\AjouterTA.resx">
+      <DependentUpon>AjouterTA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Fenêtres\BaseFenetre.resx">
       <DependentUpon>BaseFenetre.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,6 +301,7 @@
   <ItemGroup>
     <Content Include="icon_small_Mars.ico" />
     <Content Include="MarsIcone.ico" />
+    <None Include="Ressources\Images\Supprimer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -55,9 +55,22 @@ namespace MarsApp
             listeActivites.Remove(a);
         }
 
+        /// <summary>
+        /// Permet d'ajouter le nombre d'activités présent dans le domaine à la valeur passée par référence
+        /// </summary>
+        /// <param name="nbElements">Un nombre d'éléments</param>
         public void nbTypeActivite(ref int nbElements)
         {
             nbElements += listeActivites.Count;
+        }
+
+        /// <summary>
+        /// Affichage de la classe Domaine
+        /// </summary>
+        /// <returns>nom</returns>
+        public override string ToString()
+        {
+            return nom;
         }
 
         #region Accesseurs

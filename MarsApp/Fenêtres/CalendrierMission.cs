@@ -886,5 +886,13 @@ namespace MarsApp
             mr.Show();
         }
         #endregion
+
+        #region Accesseurs
+        /// <summary>
+        /// Permet d'obtenir la liste des astronautes
+        /// </summary>
+        /// <returns>La liste des astronautes</returns>
+        public List<Astronaute> getAstronautes() { return astronautes; }
+        #endregion
     }
 }

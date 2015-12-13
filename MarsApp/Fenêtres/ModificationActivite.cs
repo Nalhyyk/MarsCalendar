@@ -64,13 +64,7 @@ namespace MarsApp
 
             finHeure.Minimum = (finHeure.Value == 0) ? 0 : debutHeure.Value;
 
-            foreach (Domaine d in CalendrierMission.domaines)
-            {
-                TreeNode tn = treeView.Nodes.Add(d.getNom());
-
-                foreach (TypeActivite ta in d.getActivites())
-                    tn.Nodes.Add(ta.getNom());
-            }
+            remplirTreeView();
 
             descriptionTB.Text = a.getDescription();
 
@@ -86,8 +80,6 @@ namespace MarsApp
             else
                 interieurRadio.Checked = true;
 
-            treeView.ExpandAll();
-
             foreach (TreeNode tn in treeView.Nodes)
                 foreach (TreeNode tnn in tn.Nodes)
                     if (tnn.Text.Equals(a.getNom()))
@@ -101,6 +93,25 @@ namespace MarsApp
             heureFinStatic = new TimeMartien(0, (int) finHeure.Value, (int) finMinute.Value, 0);
         }
         #endregion
+
+
+        /// <summary>
+        /// Permet de remplir le TreeView
+        /// </summary>
+        public void remplirTreeView()
+        {
+            treeView.Nodes.Clear();
+
+            foreach (Domaine d in CalendrierMission.domaines)
+            {
+                TreeNode tn = treeView.Nodes.Add(d.getNom());
+
+                foreach (TypeActivite ta in d.getActivites())
+                    tn.Nodes.Add(ta.getNom());
+            }
+
+            treeView.ExpandAll();
+        }
 
         #region Evènements
         /// <summary>
@@ -292,6 +303,53 @@ namespace MarsApp
 
             debutMinute.Value = (debutMinute.Value - int.Parse(valDebut[valDebut.Length - 1].ToString()));
             finMinute.Value = (finMinute.Value - int.Parse(valFin[valFin.Length - 1].ToString()));
+        }
+
+        /// <summary>
+        /// Permet de supprimer un TypeActivite ou un Domaine
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
+        private void supprimerTA_Click(object sender, EventArgs e)
+        {
+            bool supprimer = true;
+            String taASupprimer = treeView.SelectedNode.Text;
+
+            foreach (Astronaute a in cm.getAstronautes())
+                foreach (Journee j in a.getJourneesNonDictionary())
+                    foreach (Activite ac in j.getActivites())
+                        if (ac.getNom().Equals(taASupprimer))
+                            supprimer = false;
+
+            if (supprimer)
+            {
+                Domaine aSupprimer = null;
+                
+                foreach (Domaine d in CalendrierMission.domaines)
+                {
+                    String ta = d.getNomActivites().Find(el => el.Equals(taASupprimer));
+
+                    if (ta != null)
+                    {
+                        d.supprimerActivite(d.getActivites().Find(el => el.getNom().Equals(ta)));
+                        d.getNomActivites().Remove(ta);
+                    }
+
+                    if (d.getNom().Equals(taASupprimer) && d.getNomActivites().Count == 0)
+                        aSupprimer = d;
+                }
+
+                if (aSupprimer != null)
+                    CalendrierMission.domaines.Remove(aSupprimer);
+            }
+
+            remplirTreeView();
+        }
+
+        private void ajoutTA_Click(object sender, EventArgs e)
+        {
+            AjouterTA ata = new AjouterTA(this);
+            ata.Show();
         }
         #endregion
     }

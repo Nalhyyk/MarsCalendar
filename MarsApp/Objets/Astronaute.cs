@@ -153,6 +153,19 @@ namespace MarsApp
         /// </summary>
         /// <param name="age">L'âge de l'astronaute</param>
         public void setAge(int age) { this.age = age; }
+
+        /// <summary>
+        /// Permet d'obtenir la liste des journées dans une List (et non un Dictionary)
+        /// </summary>
+        /// <returns>La liste des journées</returns>
+        public List<Journee> getJourneesNonDictionary()
+        {
+            List<Journee> journees = new List<Journee>();
+
+            for (int i = 1; i <= 500; ++i)
+                journees.Add(journeesMission[i]);
+            return journees;
+        }
         #endregion
     }
 }

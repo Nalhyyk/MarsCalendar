@@ -183,6 +183,16 @@ namespace MarsApp.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Supprimer {
+            get {
+                object obj = ResourceManager.GetObject("Supprimer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vehicle {
             get {
                 object obj = ResourceManager.GetObject("vehicle", resourceCulture);

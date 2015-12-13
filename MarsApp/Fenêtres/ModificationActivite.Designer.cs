@@ -51,10 +51,12 @@
             this.lieuGB = new System.Windows.Forms.GroupBox();
             this.lieuTB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.transportGB = new System.Windows.Forms.GroupBox();
             this.vehiculeRadio = new System.Windows.Forms.RadioButton();
             this.scaphandreRadio = new System.Windows.Forms.RadioButton();
+            this.supprimerTA = new System.Windows.Forms.PictureBox();
+            this.ajoutTA = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.activiteExterieureGB.SuspendLayout();
             this.temps.SuspendLayout();
@@ -64,8 +66,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.debutHeure)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.lieuGB.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.transportGB.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.supprimerTA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ajoutTA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // treeView
@@ -73,7 +77,7 @@
             this.treeView.AllowDrop = true;
             this.treeView.Location = new System.Drawing.Point(13, 13);
             this.treeView.Name = "treeView";
-            this.treeView.Size = new System.Drawing.Size(231, 537);
+            this.treeView.Size = new System.Drawing.Size(231, 509);
             this.treeView.TabIndex = 0;
             // 
             // annuler
@@ -320,16 +324,6 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Coordonnées :";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MarsApp.Properties.Resources.map50px;
-            this.pictureBox1.Location = new System.Drawing.Point(277, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // transportGB
             // 
             this.transportGB.Controls.Add(this.vehiculeRadio);
@@ -365,11 +359,43 @@
             this.scaphandreRadio.Text = "Scaphandre";
             this.scaphandreRadio.UseVisualStyleBackColor = true;
             // 
+            // supprimerTA
+            // 
+            this.supprimerTA.Image = global::MarsApp.Properties.Resources.Supprimer;
+            this.supprimerTA.Location = new System.Drawing.Point(35, 528);
+            this.supprimerTA.Name = "supprimerTA";
+            this.supprimerTA.Size = new System.Drawing.Size(16, 16);
+            this.supprimerTA.TabIndex = 192;
+            this.supprimerTA.TabStop = false;
+            this.supprimerTA.Click += new System.EventHandler(this.supprimerTA_Click);
+            // 
+            // ajoutTA
+            // 
+            this.ajoutTA.Image = global::MarsApp.Properties.Resources.Plus;
+            this.ajoutTA.Location = new System.Drawing.Point(13, 528);
+            this.ajoutTA.Name = "ajoutTA";
+            this.ajoutTA.Size = new System.Drawing.Size(16, 16);
+            this.ajoutTA.TabIndex = 191;
+            this.ajoutTA.TabStop = false;
+            this.ajoutTA.Click += new System.EventHandler(this.ajoutTA_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MarsApp.Properties.Resources.map50px;
+            this.pictureBox1.Location = new System.Drawing.Point(277, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // ModificationActivite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(605, 562);
+            this.Controls.Add(this.supprimerTA);
+            this.Controls.Add(this.ajoutTA);
             this.Controls.Add(this.transportGB);
             this.Controls.Add(this.lieuGB);
             this.Controls.Add(this.groupBox2);
@@ -396,9 +422,11 @@
             this.groupBox2.PerformLayout();
             this.lieuGB.ResumeLayout(false);
             this.lieuGB.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.transportGB.ResumeLayout(false);
             this.transportGB.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.supprimerTA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ajoutTA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -431,5 +459,7 @@
         private System.Windows.Forms.NumericUpDown finHeure;
         private System.Windows.Forms.NumericUpDown debutHeure;
         private System.Windows.Forms.Label errDuree;
+        private System.Windows.Forms.PictureBox ajoutTA;
+        private System.Windows.Forms.PictureBox supprimerTA;
     }
 }
