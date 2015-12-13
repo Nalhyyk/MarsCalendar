@@ -1101,6 +1101,60 @@
         <elementDefinition Id="601b183d-0c4a-402b-91a2-8095416fafb5" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6138cc16-34cc-48e6-a6df-da391d76eb88" name="AjouterTA" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="408cebdb-f22f-4363-8b3b-e0b0a66d64af" />
+        <generalsInternal>
+          <generalization Id="067bd521-c302-4781-8c39-5e65bb4ea5fe" isSubstitutable="false">
+            <classMoniker Id="b1f62f2f-b160-4b60-b842-191ea997cd9c" LastKnownName="BaseFenetre" />
+            <elementDefinition Id="47319545-f071-4265-bf9a-25c445354078" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="85b2fea2-dc30-4f83-bbac-9292b6681163" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f217bbca-7cb6-4e9f-926b-49a32ce2439e" LastKnownName="ModificationActivite" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="833cd2b1-0b1f-46ea-955c-315013f250c1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="61c2c381-7cc3-4737-9400-3d0164820d36" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f86fb3bc-c19e-4184-a2f3-deb8314d9f5d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f5be777f-1661-4b94-9e42-4bba244f1737" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2825a234-a784-4c41-9f96-50bb63ccb3fb" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="1dfe2cea-d3bf-40fb-b42d-7c32387a7c14" name="couleurTA" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="80f92e38-fd7f-4fa9-9aba-77b20f705dae" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="379fa9f7-18ec-4787-ab1f-c2b821df5027" LastKnownName="Integer[]" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e6ae7e33-28fb-4019-ad35-e44172ab3616" name="AjouterTA" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="38b77a1a-109d-4cbd-bea3-6ed75aaf6f86" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="684bb420-bc9f-4e32-ac96-b92fa555f823" name="ModificationActivite" direction="In" isUnique="false">
+                  <elementDefinition Id="5be877af-9fda-4cf3-a1a8-bb7af8754ab0" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="379fa9f7-18ec-4787-ab1f-c2b821df5027" name="Integer[]" isAbstract="false" isLeaf="false" cachedFullName="Integer[]">
+        <elementDefinition Id="a115b152-6f97-4ab3-ba03-b2fbaa6c9a99" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="697d7556-2b6d-4002-b7da-f8b430d9f041" name="Mars">
     <elementDefinition Id="a1b82b59-d1e0-43fb-a5ca-1696e409ea9f" />

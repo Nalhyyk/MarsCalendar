@@ -6564,6 +6564,105 @@
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="408cebdb-f22f-4363-8b3b-e0b0a66d64af"
+        name="AjouterTA"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="47319545-f071-4265-bf9a-25c445354078"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b59ef193-53ca-4bc5-b54e-b3e1acf02ae6"
+              LastKnownName="BaseFenetre"
+              LastKnownLocation="Mars.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="2825a234-a784-4c41-9f96-50bb63ccb3fb"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="896aa47f-d3e6-45de-b16a-fe50218a7a12"
+              LastKnownName="ModificationActivite"
+              LastKnownLocation="Mars.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="61c2c381-7cc3-4737-9400-3d0164820d36"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f5be777f-1661-4b94-9e42-4bba244f1737"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="80f92e38-fd7f-4fa9-9aba-77b20f705dae"
+            name="couleurTA"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a115b152-6f97-4ab3-ba03-b2fbaa6c9a99"
+                LastKnownName="Integer[]"
+                LastKnownLocation="Mars.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="38b77a1a-109d-4cbd-bea3-6ed75aaf6f86"
+            name="AjouterTA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5be877af-9fda-4cf3-a1a8-bb7af8754ab0"
+                  name="ModificationActivite"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
