@@ -24,5 +24,9 @@ namespace MarsApp
         public const String ETAT_PASSE = "Passé";
         public const String ETAT_ENCOURS = "EnCours";
         public const String ETAT_FUTUR = "Futur";
+
+        public static int[] COULEUR_PASSE = new int[] { 199, 195, 199 };
+        public static int[] COULEUR_ENCOURS = new int[] { 2, 154, 229 };
+        public static int[] COULEUR_FUTUR = new int[] { 51, 184, 121 };
     }
 }

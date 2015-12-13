@@ -66,14 +66,6 @@ namespace MarsApp
         #endregion
 
         /// <summary>
-        /// Affiche l'état de l'activité
-        /// </summary>
-        public void etatActivite()
-        {
-            etat.etat();
-        }
-
-        /// <summary>
         /// Permet de connaître la couleur de l'activité
         /// </summary>
         /// <returns></returns>

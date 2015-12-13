@@ -27,7 +27,7 @@ namespace MarsApp
 
         public int[] couleur()
         {
-            return new int[] { 199, 195, 199};
+            return Constantes.COULEUR_PASSE;
         }
 
         public bool modifiable()

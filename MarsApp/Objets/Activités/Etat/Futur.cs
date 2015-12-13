@@ -28,7 +28,7 @@ namespace MarsApp
 
         public int[] couleur()
         {
-            return new int[] { 51, 184, 121};
+            return Constantes.COULEUR_FUTUR;
         }
 
 

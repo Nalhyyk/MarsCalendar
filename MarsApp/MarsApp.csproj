@@ -299,7 +299,6 @@
     <None Include="Ressources\Icônes\logo_Mars.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="icon_small_Mars.ico" />
     <Content Include="MarsIcone.ico" />
     <None Include="Ressources\Images\Supprimer.png" />
   </ItemGroup>

@@ -60,6 +60,17 @@ namespace MarsApp
             y = (int) Math.Round(y * Constantes.RAPPORT_CARTES, 0) - Constantes.POSITION_BASE_Y;
         }
 
+        public override bool Equals(object obj)
+        {
+            Lieu l = obj as Lieu;
+
+            if (l != null)
+                if (l.x == this.x)
+                    if (l.y == this.y)
+                        return true;
+            return false;
+        }
+
         #region Génération XML
         /// <summary>
         /// Permet de générer la partie XML de Lieu

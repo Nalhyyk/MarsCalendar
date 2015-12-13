@@ -24,6 +24,16 @@ namespace MarsApp
         }
         #endregion
 
+        public override bool Equals(object obj)
+        {
+            TypeActivite ta = obj as TypeActivite;
+
+            if (ta != null)
+                if (ta.nom.Equals(this.nom))
+                    return true;
+            return false;
+        }
+
         #region Génération XML
         /// <summary>
         /// Permet de générer la partie XML de TypeActivite
