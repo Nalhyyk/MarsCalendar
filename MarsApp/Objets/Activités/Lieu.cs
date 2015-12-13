@@ -71,6 +71,11 @@ namespace MarsApp
             return false;
         }
 
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
         #region Génération XML
         /// <summary>
         /// Permet de générer la partie XML de Lieu

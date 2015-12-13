@@ -152,6 +152,24 @@ namespace TestMarsApp
             Assert.AreEqual(a.isExperience(), false, "isExperience ne renvoie pas le bon résultat");
             Assert.AreEqual(a.isExploration(), false, "isExploration ne renvoie pas le bon résultat");
             Assert.AreEqual(a.isModifiable(), true, "isModifiable ne renvoie pas le bon résultat");
+
+            a.setDescription("ahah");
+            a.setHeureDebut(new TimeMartien(1));
+            a.setHeureFin(new TimeMartien(5));
+            a.setLieu(new Lieu(50, -60));
+
+            Assert.AreEqual(a.getDescription(), "ahah", "setDescription ne fonctionne pas");
+            Assert.AreEqual(a.getDuree(), new TimeMartien(4), "setDuree ne fonctionne pas");
+            Assert.AreEqual(a.getHeureDebut(), new TimeMartien(1), "setHeureDebut ne fonctionne pas");
+            Assert.AreEqual(a.getHeureFin(), new TimeMartien(5), "setHeureFin ne fonctionne pas");
+            Assert.AreEqual(a.getLieu(), new Lieu(50, -60), "setLieu ne fonctionne pas");
+
+            String str = "";
+            for (int i = 0; i < 500; ++i)
+                str += i.ToString();
+
+            bool texteOK = a.setDescription(str);
+            Assert.IsFalse(texteOK, "La description dépasse les 400 caractères");
         }
     }
 }

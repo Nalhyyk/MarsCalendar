@@ -131,11 +131,17 @@ namespace TestMarsApp
             j.ajouterActivite(a3);
             j.ajouterActivite(a4);
 
+            Assert.IsNull(j.trouverActivite(null, true), "On ne peut pas rechercher quelque chose de null");
+
             Activite trouve = j.trouverActivite(new TimeMartien(8), true);
 
-            Assert.IsNotNull(trouve, "La fonction trouverActivites ne fonctionne pas");
-
+            Assert.IsNotNull(trouve, "La fonction trouverActivite ne fonctionne pas");
             Assert.IsTrue(trouve.getNom().Equals(a1.getNom()), "La méthode a trouvé une activité qui ne correspond pas à ce qui est recherché");
+
+            trouve = j.trouverActivite(new TimeMartien(0), false);
+
+            Assert.IsNotNull(trouve, "La fonction trouverActivite ne fonctionne pas");
+            Assert.IsTrue(trouve.getNom().Equals(a3.getNom()), "La méthode a trouvé une activité qui ne correspond pas à ce qui est recherché");
         }
 
         /// <summary>
@@ -159,10 +165,101 @@ namespace TestMarsApp
             List<Activite> trouvees = j.trouverActivites(11);
 
             Assert.IsNotNull(trouvees, "La fonction trouverActivites ne fonctionne pas");
-
             Assert.IsTrue(a2.Equals(trouvees.Find(e => e.getNom().Equals(a2.getNom()))), "La méthode a trouvé une activité qui ne correspond pas à ce qui est recherché");
-
             Assert.IsTrue(trouvees.Count == 2, "La méthode n'a pas trouvé le bon nombre d'éléments");
+
+            trouvees = j.trouverActivites(36);
+
+            Assert.IsNotNull(trouvees, "La fonction trouverActivites ne fonctionne pas");
+            Assert.IsTrue(a2.Equals(trouvees.Find(e => e.getNom().Equals(a2.getNom()))), "La méthode a trouvé une activité qui ne correspond pas à ce qui est recherché");
+            Assert.IsTrue(trouvees.Count == 2, "La méthode n'a pas trouvé le bon nombre d'éléments");
+        }
+
+        /// <summary>
+        ///Test pour les accesseurs
+        ///</summary>
+        [TestMethod()]
+        public void accesseursTest()
+        {
+            Journee j = new Journee(54);
+
+            Assert.IsNotNull(j.getActivites(), "getActivites ne revoie pas la bonne valeur");
+            Assert.AreEqual(j.getDescription(), "", "getDescription ne renvoie pas la bonne valeur");
+            Assert.AreEqual(j.getNumero(), 54, "getNumero ne renvoie pas la bonne valeur");
+            Assert.AreEqual(j.isJourneeExterieure(), false, "isJourneeExterieure ne renvoie pas la bonne valeur");
+
+            j.setRapport("LOL");
+            List<Activite> lA = new List<Activite> { new Activite(new TypeActivite("Lel")) };
+            j.setListeActivites(lA);
+            j.setJourneeExterieure(true);
+
+            Assert.AreEqual(j.getActivites(), lA, "setActivites ne fonctionne pas");
+            Assert.AreEqual(j.getDescription(), "LOL", "setDescription ne renvoie pas la bonne valeur");
+            Assert.AreEqual(j.isJourneeExterieure(), true, "setJourneeExterieure ne renvoie pas la bonne valeur");
+
+            String str = "";
+            for (int i = 0; i < 1000; ++i)
+                str += i.ToString();
+
+            bool texteOK = j.setRapport(str);
+            Assert.IsFalse(texteOK, "La description dépasse les 1000 caractères");
+        }
+
+        /// <summary>
+        ///Test pour journeePassee
+        ///</summary>
+        [TestMethod()]
+        public void journeePasseeTest()
+        {
+            Journee j = new Journee();
+
+            j.journeePassee();
+            Assert.AreEqual(j.getEtat(), Constantes.ETAT_PASSE, "L'état de la journée n'est pas le bon");
+        }
+
+        /// <summary>
+        ///Test pour activiteEnCours
+        ///</summary>
+        [TestMethod()]
+        public void journeeEnCoursTest()
+        {
+            Journee j = new Journee();
+
+            j.journeeEnCours();
+            Assert.AreEqual(j.getEtat(), Constantes.ETAT_ENCOURS, "L'état de la journée n'est pas le bon");
+        }
+
+        /// <summary>
+        ///Test pour activiteAVenir
+        ///</summary>
+        [TestMethod()]
+        public void journeeAVenirTest()
+        {
+            Journee j = new Journee();
+
+            j.journeeAVenir();
+            Assert.AreEqual(j.getEtat(), Constantes.ETAT_FUTUR, "L'état de la journée n'est pas le bon");
+        }
+
+        /// <summary>
+        ///Test pour couleurActivite
+        ///</summary>
+        [TestMethod()]
+        public void couleurActiviteTest()
+        {
+            Journee j = new Journee();
+            int[] colP = Constantes.COULEUR_PASSE;
+            int[] colEC = Constantes.COULEUR_ENCOURS;
+            int[] colF = Constantes.COULEUR_FUTUR;
+
+            j.journeePassee();
+            Assert.AreEqual(j.couleurJournee(), colP, "La couleur de la journée n'est pas la bonne");
+
+            j.journeeEnCours();
+            Assert.AreEqual(j.couleurJournee(), colEC, "La couleur de la journée n'est pas la bonne");
+
+            j.journeeAVenir();
+            Assert.AreEqual(j.couleurJournee(), colF, "La couleur de la journée n'est pas la bonne");
         }
     }
 }

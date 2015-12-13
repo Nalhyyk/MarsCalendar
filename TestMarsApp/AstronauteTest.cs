@@ -103,5 +103,38 @@ namespace TestMarsApp
 
             Assert.AreEqual(nbElems, result, "Le nombre d'éléments dans l'EdT de l'astronaute n'est pas bon");
         }
+
+        /// <summary>
+        ///Test pour les accesseurs
+        ///</summary>
+        [TestMethod()]
+        public void accesseursTest()
+        {
+            Astronaute a = new Astronaute("Bob", "Machin", 20);
+
+            Assert.AreEqual(a.getNom(), "Bob", "getNom ne renvoie pas la bonne valeur");
+            Assert.AreEqual(a.getPrenom(), "Machin", "getPrenom ne renvoie pas la bonne valeur");
+            Assert.AreEqual(a.getAge(), 20, "getAge ne renvoie pas la bonne valeur");
+
+            a.creerEdT(1);
+
+            Assert.IsNotNull(a.getJourneesMission(), "getJourneesMission ne renvoie pas la bonne liste");
+            Assert.IsNotNull(a.getJourneesNonDictionary(), "getJourneesNonDictionary ne renvoie pas la bonne liste");
+
+            a.setNom("Marcel");
+            a.setPrenom("Didier");
+            a.setAge(26);
+
+            Dictionary<int, Journee> dict = new Dictionary<int, Journee>();
+            dict.Add(1, new Journee(2));
+            dict.Add(2, new Journee(7));
+
+            a.setJourneesMission(dict);
+
+            Assert.AreEqual(a.getNom(), "Marcel", "setNom ne fonctionne pas");
+            Assert.AreEqual(a.getPrenom(), "Didier", "setPrenom ne fonctionne pas");
+            Assert.AreEqual(a.getAge(), 26, "setAge ne fonctionne pas");
+            Assert.AreEqual(a.getJourneesMission(), dict, "setJourneesMission ne fonctionne pas");
+        }
     }
 }

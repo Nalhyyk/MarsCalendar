@@ -77,6 +77,9 @@
     <Compile Include="JourneeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TimeMartienTest.cs" />
+    <Compile Include="TypeActiviteTest.cs" />
+    <Compile Include="DomaineTest.cs" />
+    <Compile Include="LieuTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MarsApp\MarsApp.csproj">

@@ -162,7 +162,7 @@ namespace MarsApp
         {
             List<Journee> journees = new List<Journee>();
 
-            for (int i = 1; i <= 500; ++i)
+            for (int i = 1; i <= journeesMission.Count; ++i)
                 journees.Add(journeesMission[i]);
             return journees;
         }
