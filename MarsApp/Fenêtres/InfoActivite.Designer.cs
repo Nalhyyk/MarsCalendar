@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoActivite));
             this.transportGB = new System.Windows.Forms.GroupBox();
             this.vehiculeRadio = new System.Windows.Forms.RadioButton();
             this.scaphandreRadio = new System.Windows.Forms.RadioButton();
@@ -336,8 +337,9 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ok);
             this.Controls.Add(this.treeView);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "InfoActivite";
-            this.Text = "InfoActivite";
+            this.Text = "Informations sur l\'activité";
             this.transportGB.ResumeLayout(false);
             this.transportGB.PerformLayout();
             this.lieuGB.ResumeLayout(false);

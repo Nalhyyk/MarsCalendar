@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="a1b82b59-d1e0-43fb-a5ca-1696e409ea9f"
   name="Mars" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -1426,13 +1426,13 @@
                     <literalString
                       Id="551aef0b-8bbc-4e1d-945d-41d4ae207152"
                       name="Lower"
-                      value="1" />
+                      value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
                       Id="8b10ccdb-88f2-4057-b949-95348add7022"
                       name="Upper"
-                      value="1" />
+                      value="*" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -1445,19 +1445,18 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="true"
-                  isNavigableOwned="false">
+                  isComposite="true">
                   <lowerValueInternal>
                     <literalString
                       Id="7f7747bd-5cfd-4aa2-a3c7-dfd5e135f697"
                       name="Lower"
-                      value="*" />
+                      value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
                       Id="7a7c1ae0-6c2c-4710-8ced-6e2576dfdcd9"
                       name="Upper"
-                      value="*" />
+                      value="1" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -2419,13 +2418,13 @@
                     <literalString
                       Id="00da1fa5-b65d-4816-969c-d1458dfe8d1e"
                       name="Lower"
-                      value="1" />
+                      value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
                       Id="dd8ccd6f-4eb5-4722-af98-c6e3cee405df"
                       name="Upper"
-                      value="1" />
+                      value="*" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -2438,19 +2437,18 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="true"
-                  isNavigableOwned="false">
+                  isComposite="true">
                   <lowerValueInternal>
                     <literalString
                       Id="335b66b0-daf4-4100-acb0-d494605a54e7"
                       name="Lower"
-                      value="*" />
+                      value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
                       Id="d36b674f-b5c3-45ea-8fce-92fefc0db4e5"
                       name="Upper"
-                      value="*" />
+                      value="1" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -2896,13 +2894,13 @@
                     <literalString
                       Id="465b8798-ee1a-40d6-b308-b01e83eeefc0"
                       name="Lower"
-                      value="1" />
+                      value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
                       Id="d5843faa-e8c5-4eff-a193-3972a915f0d2"
                       name="Upper"
-                      value="1" />
+                      value="*" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -2915,19 +2913,18 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="true"
-                  isNavigableOwned="false">
+                  isComposite="true">
                   <lowerValueInternal>
                     <literalString
                       Id="51c29b82-a074-4754-b816-7ddc4f0f1580"
                       name="Lower"
-                      value="*" />
+                      value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
                       Id="3a66aaa6-dcdc-4d9f-9a35-0b8b155c39b8"
                       name="Upper"
-                      value="*" />
+                      value="1" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>

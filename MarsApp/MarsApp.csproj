@@ -51,6 +51,9 @@
   <PropertyGroup>
     <StartupObject>MarsApp.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MarsIcone.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
       <Private>True</Private>
@@ -180,6 +183,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Utils\Constantes.cs" />
+    <EmbeddedResource Include="Fenêtres\BaseFenetre.resx">
+      <DependentUpon>BaseFenetre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Fenêtres\CalendrierMission.resx">
       <DependentUpon>CalendrierMission.cs</DependentUpon>
     </EmbeddedResource>
@@ -279,6 +285,13 @@
     <None Include="Ressources\Images\Modify.png" />
     <None Include="Ressources\Images\Plus.png" />
     <None Include="Ressources\Images\Loupe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\Icônes\logo_Mars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon_small_Mars.ico" />
+    <Content Include="MarsIcone.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

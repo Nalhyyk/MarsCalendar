@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificationActivite));
             this.treeView = new System.Windows.Forms.TreeView();
             this.annuler = new System.Windows.Forms.Button();
             this.ok = new System.Windows.Forms.Button();
@@ -38,6 +39,7 @@
             this.explorationRadio = new System.Windows.Forms.RadioButton();
             this.experienceRadio = new System.Windows.Forms.RadioButton();
             this.temps = new System.Windows.Forms.GroupBox();
+            this.errDuree = new System.Windows.Forms.Label();
             this.finMinute = new System.Windows.Forms.NumericUpDown();
             this.debutMinute = new System.Windows.Forms.NumericUpDown();
             this.finHeure = new System.Windows.Forms.NumericUpDown();
@@ -53,7 +55,6 @@
             this.transportGB = new System.Windows.Forms.GroupBox();
             this.vehiculeRadio = new System.Windows.Forms.RadioButton();
             this.scaphandreRadio = new System.Windows.Forms.RadioButton();
-            this.errDuree = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.activiteExterieureGB.SuspendLayout();
             this.temps.SuspendLayout();
@@ -179,6 +180,17 @@
             this.temps.TabIndex = 7;
             this.temps.TabStop = false;
             this.temps.Text = "Durée activité";
+            // 
+            // errDuree
+            // 
+            this.errDuree.AutoSize = true;
+            this.errDuree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.errDuree.Location = new System.Drawing.Point(7, 108);
+            this.errDuree.Name = "errDuree";
+            this.errDuree.Size = new System.Drawing.Size(253, 13);
+            this.errDuree.TabIndex = 10;
+            this.errDuree.Text = "La durée de l\'activité doit être d\'au moins 10 minutes";
+            this.errDuree.Visible = false;
             // 
             // finMinute
             // 
@@ -353,17 +365,6 @@
             this.scaphandreRadio.Text = "Scaphandre";
             this.scaphandreRadio.UseVisualStyleBackColor = true;
             // 
-            // errDuree
-            // 
-            this.errDuree.AutoSize = true;
-            this.errDuree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.errDuree.Location = new System.Drawing.Point(7, 108);
-            this.errDuree.Name = "errDuree";
-            this.errDuree.Size = new System.Drawing.Size(253, 13);
-            this.errDuree.TabIndex = 10;
-            this.errDuree.Text = "La durée de l\'activité doit être d\'au moins 10 minutes";
-            this.errDuree.Visible = false;
-            // 
             // ModificationActivite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -378,8 +379,9 @@
             this.Controls.Add(this.ok);
             this.Controls.Add(this.annuler);
             this.Controls.Add(this.treeView);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ModificationActivite";
-            this.Text = "ModificationActivite";
+            this.Text = "Modification de l\'activité";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.activiteExterieureGB.ResumeLayout(false);

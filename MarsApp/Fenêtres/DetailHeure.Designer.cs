@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetailHeure));
             this.h50img = new System.Windows.Forms.PictureBox();
             this.h40img = new System.Windows.Forms.PictureBox();
             this.h30img = new System.Windows.Forms.PictureBox();
@@ -359,8 +360,9 @@
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label0);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DetailHeure";
-            this.Text = "DetailHeure";
+            this.Text = "Detail de l\'heure";
             ((System.ComponentModel.ISupportInitialize)(this.h50img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.h40img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.h30img)).EndInit();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectionCarte));
             this.map = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
@@ -63,8 +64,9 @@
             this.ClientSize = new System.Drawing.Size(319, 598);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.map);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SelectionCarte";
-            this.Text = "SelectionCarte";
+            this.Text = "Carte de sélection de lieu";
             ((System.ComponentModel.ISupportInitialize)(this.map)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

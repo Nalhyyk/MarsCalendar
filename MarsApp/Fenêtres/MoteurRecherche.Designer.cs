@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MoteurRecherche));
             this.jourFin = new System.Windows.Forms.NumericUpDown();
             this.jourDebut = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
@@ -162,8 +163,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.treeView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MoteurRecherche";
-            this.Text = "MoteurRecherche";
+            this.Text = "Moteur de recherche";
             ((System.ComponentModel.ISupportInitialize)(this.jourFin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jourDebut)).EndInit();
             this.ResumeLayout(false);

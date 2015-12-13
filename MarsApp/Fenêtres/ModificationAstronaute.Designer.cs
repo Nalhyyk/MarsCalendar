@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificationAstronaute));
             this.age = new System.Windows.Forms.NumericUpDown();
             this.annuler = new System.Windows.Forms.Button();
             this.modifier = new System.Windows.Forms.Button();
@@ -120,8 +121,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ModificationAstronaute";
-            this.Text = "ModificationAstronaute";
+            this.Text = "Modification de l\'astronaute";
             ((System.ComponentModel.ISupportInitialize)(this.age)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

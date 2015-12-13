@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.activitesRefFile = new System.Windows.Forms.TextBox();
             this.marsomaticFile = new System.Windows.Forms.TextBox();
@@ -45,6 +45,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.erreurDate = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minutes)).BeginInit();
@@ -61,16 +62,6 @@
             this.label5.Size = new System.Drawing.Size(142, 17);
             this.label5.TabIndex = 6;
             this.label5.Text = "Le calendrier martien";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(257, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(245, 46);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Mars\'o\'matic";
             // 
             // groupBox2
             // 
@@ -217,6 +208,16 @@
             this.erreurDate.Text = "La date de début de mission ne peut pas être supérieure à la date actuelle";
             this.erreurDate.Visible = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(257, 11);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(245, 46);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Mars\'o\'matic";
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,8 +230,9 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuPrincipal";
-            this.Text = "Form1";
+            this.Text = "Menu Principal";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -252,7 +254,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -261,6 +262,7 @@
         private System.Windows.Forms.TextBox activitesRefFile;
         private System.Windows.Forms.TextBox marsomaticFile;
         private System.Windows.Forms.Label erreurDate;
+        private System.Windows.Forms.Label label4;
 
 
 

@@ -3628,8 +3628,9 @@
             this.Controls.Add(this.jour11);
             this.Controls.Add(this.jour4);
             this.Controls.Add(this.jour1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CalendrierMission";
-            this.Text = "CalendrierMission";
+            this.Text = "Calendrier de la mission";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CalendrierMission_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.recherche)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.h24img)).EndInit();

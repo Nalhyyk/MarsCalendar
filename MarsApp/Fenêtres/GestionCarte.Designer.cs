@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionCarte));
             this.map = new System.Windows.Forms.PictureBox();
             this.activitesExterieures = new System.Windows.Forms.TreeView();
             ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
@@ -59,8 +60,9 @@
             this.ClientSize = new System.Drawing.Size(552, 621);
             this.Controls.Add(this.activitesExterieures);
             this.Controls.Add(this.map);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GestionCarte";
-            this.Text = "GestionCarte";
+            this.Text = "Gestion de la carte";
             ((System.ComponentModel.ISupportInitialize)(this.map)).EndInit();
             this.ResumeLayout(false);
 
