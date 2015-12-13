@@ -80,6 +80,7 @@
     <Compile Include="TypeActiviteTest.cs" />
     <Compile Include="DomaineTest.cs" />
     <Compile Include="LieuTest.cs" />
+    <Compile Include="ExplorationExterieureTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MarsApp\MarsApp.csproj">
