@@ -355,12 +355,17 @@ namespace MarsApp
         {
             DateTime dt = DateTime.Now;
 
-            long ticks = dt.Ticks - dateDepart.Ticks;
-            TimeSpan ts = new TimeSpan(ticks);
+            if (dt >= dateDepart)
+            {
+                long ticks = dt.Ticks - dateDepart.Ticks;
+                TimeSpan ts = new TimeSpan(ticks);
 
-            TimeMartien tm = new TimeMartien(0, 0, 0, (int) Math.Truncate(ts.TotalSeconds));
+                TimeMartien tm = new TimeMartien(0, 0, 0, (int)Math.Truncate(ts.TotalSeconds));
 
-            return tm;
+                return tm;
+            }
+            else
+                return new TimeMartien(0, 0, 0, 0);
         }
 
         /// <summary>
