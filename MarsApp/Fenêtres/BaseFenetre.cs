@@ -56,5 +56,18 @@ namespace MarsApp
         {
             this.Hide();
         }
+
+        /// <summary>
+        /// Permet d'agrandir la fenêtre
+        /// </summary>
+        public void agrandirFenetre()
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        public void reduireFenetre()
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

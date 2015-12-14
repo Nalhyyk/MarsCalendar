@@ -70,7 +70,6 @@
             this.label5.Size = new System.Drawing.Size(168, 20);
             this.label5.TabIndex = 6;
             this.label5.Text = "Le calendrier martien";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // groupBox2
             // 
@@ -120,7 +119,6 @@
             this.label2.Size = new System.Drawing.Size(304, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Veuillez charger la mission depuis un fichier XML";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // charger
             // 
@@ -208,7 +206,6 @@
             this.label3.Size = new System.Drawing.Size(270, 19);
             this.label3.TabIndex = 4;
             this.label3.Text = "Veuillez choisir la date de début de mission";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // dateTimePicker1
             // 
@@ -267,7 +264,6 @@
             this.label4.Size = new System.Drawing.Size(305, 58);
             this.label4.TabIndex = 5;
             this.label4.Text = "Mars\'o\'matic";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // panel1
             // 
@@ -281,7 +277,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1006, 89);
             this.panel1.TabIndex = 10;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Reduire
             // 
@@ -296,7 +291,7 @@
             this.Reduire.TabIndex = 9;
             this.Reduire.Text = "-";
             this.Reduire.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Reduire.Click += new System.EventHandler(this.Reduire_Click);
+            this.Reduire.Click += new System.EventHandler(this.reduire_Click);
             // 
             // X
             // 
@@ -311,7 +306,7 @@
             this.X.TabIndex = 8;
             this.X.Text = "X";
             this.X.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.X.Click += new System.EventHandler(this.X_Click);
+            this.X.Click += new System.EventHandler(this.x_Click);
             // 
             // pictureBox1
             // 
@@ -343,7 +338,6 @@
             this.Name = "MenuPrincipal";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Menu Principal";
-            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);

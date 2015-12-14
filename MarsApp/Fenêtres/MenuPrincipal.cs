@@ -125,56 +125,21 @@ namespace MarsApp
                 this.cacherFenetre();
             }
         }
-        #endregion
 
-        private void MenuPrincipal_Load(object sender, EventArgs e)
+        private void x_Click(object sender, EventArgs e)
         {
-
+            fermerApplication();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void reduire_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void X_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void Reduire_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
+            reduireFenetre();
         }
 
         private void agrandir_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+            agrandirFenetre();
         }
+        #endregion
     }
 }
