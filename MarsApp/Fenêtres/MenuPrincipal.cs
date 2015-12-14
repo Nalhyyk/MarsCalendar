@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace MarsApp
 {
@@ -100,16 +101,26 @@ namespace MarsApp
         {
             if (activitesRefs != null && marsOMatic != null)
             {
-                DateTime picker = dateTimePicker1.Value;
-                DateTime dt = new DateTime(picker.Year, picker.Month, picker.Day, (int)heures.Value, (int)minutes.Value, 0);
+                XmlDocument mars = new XmlDocument();
+                mars.Load(marsOMatic);
 
-                if (dt > DateTime.Now)
+                int jour = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Jour").InnerText);
+                int mois = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Mois").InnerText);
+                int annee = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Annee").InnerText);
+                int heures = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Heures").InnerText);
+                int minutes = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Minutes").InnerText);
+                int secondes = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Secondes").InnerText);
+
+                DateTime debutMission = new DateTime(annee, mois, jour, heures, minutes, secondes);
+
+                if (debutMission > DateTime.Now)
                 {
+                    erreurDate.Text = "La date de début de mission ne peut pas être supérieure à la date actuelle";
                     erreurDate.Visible = true;
                     return;
                 }
 
-                CalendrierMission cm = new CalendrierMission(dt, true, marsOMatic, activitesRefs);
+                CalendrierMission cm = new CalendrierMission(debutMission, true, marsOMatic, activitesRefs);
                 cm.Show();
                 this.cacherFenetre();
             }

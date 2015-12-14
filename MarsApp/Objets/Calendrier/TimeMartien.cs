@@ -87,27 +87,25 @@ namespace MarsApp
             this.heure += heure;
 
             // On veut obtenir des secondes comprises entre 0 et 59
-            while (this.seconde > 59)
-            {
-                this.seconde -= 60;
-                ++this.minute;
-            }
+            this.minute += (int) this.seconde / 60;
+            this.seconde %= 60;
 
             // On veut obtenir des minutes comprises entre 0 et 59
-            while (this.minute > 59)
-            {
-                this.minute -= 60;
-                ++this.heure;
-            }
+            this.heure += (int)this.minute / 60;
+            this.minute %= 60;
 
             /* On veut obtenir des heures comprises entre 0 et 24, la limite étant 24h40
              * (au delà de 24h40, on retire 24h et 40m)
              */
-            while (this.heure > 24 || (this.heure == 24 && this.minute > 39))
+            this.jours += (int)this.heure / 25;
+            int diff = this.heure - (this.heure % 24);
+            int nHeure = this.heure;
+            this.heure = this.heure % 25;
+
+            if (diff != 0 && diff != nHeure)
             {
-                this.heure -= 24;
-                this.minute -= 40;
-                this.jours += 1;
+                this.minute += 20 * (nHeure / 25);
+                ajouterTemps(0, 0, 0, 0);
             }
 
             bool passage = false;

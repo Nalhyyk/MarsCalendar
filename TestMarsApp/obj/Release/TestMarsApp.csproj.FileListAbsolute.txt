@@ -1,5 +1,4 @@
 C:\Users\alexa\Desktop\Mars\MarsCalendar\TestMarsApp\bin\Release\TestMarsApp.dll
-C:\Users\alexa\Desktop\Mars\MarsCalendar\TestMarsApp\bin\Release\TestMarsApp.pdb
 C:\Users\alexa\Desktop\Mars\MarsCalendar\TestMarsApp\bin\Release\MarsApp.exe
 C:\Users\alexa\Desktop\Mars\MarsCalendar\TestMarsApp\bin\Release\Microsoft.CSharp.dll
 C:\Users\alexa\Desktop\Mars\MarsCalendar\TestMarsApp\bin\Release\System.Data.DataSetExtensions.dll
@@ -13,3 +12,4 @@ C:\Users\alexa\Desktop\Mars\MarsCalendar\TestMarsApp\bin\Release\MarsApp.pdb
 C:\Users\alexa\Desktop\Mars\MarsCalendar\TestMarsApp\obj\Release\TestMarsApp.csprojResolveAssemblyReference.cache
 C:\Users\alexa\Desktop\Mars\MarsCalendar\TestMarsApp\obj\Release\TestMarsApp.dll
 C:\Users\alexa\Desktop\Mars\MarsCalendar\TestMarsApp\obj\Release\TestMarsApp.pdb
+C:\Users\alexa\Desktop\Mars\MarsCalendar\TestMarsApp\bin\Release\TestMarsApp.pdb

@@ -85,6 +85,9 @@ namespace MarsApp
                 TimeMartien nb = TimeMartien.calculerJours(debutMission);
                 int numJour = nb.getJours() + 1;
 
+                if (numJour > 500)
+                    numJour = 500;
+
                 foreach (Astronaute astro in astronautes)
                 {
                     astro.creerEdT(numJour);
@@ -580,6 +583,9 @@ namespace MarsApp
             TimeMartien nb = TimeMartien.calculerJours(debutMission);
             int numJour = nb.getJours() + 1;
 
+            if (numJour > 500)
+                numJour = 500;
+
             XmlNodeList astronautesNodes = mars.GetElementsByTagName("Astronaute");
 
             foreach (XmlNode n in astronautesNodes)
@@ -774,7 +780,11 @@ namespace MarsApp
         private void timerJour_Tick(object sender, EventArgs e)
         {
             TimeMartien nb = TimeMartien.calculerJours(debutMission);
+            
             int numJour = nb.getJours() + 1;
+
+            if (numJour > 500)
+                numJour = 500;
 
             for (int i = 1; i < numJour; ++i)
                 journeesMission[i].journeePassee();
@@ -785,6 +795,7 @@ namespace MarsApp
             verificationChangementPeriode();
             mettreAJourHeures();
             miseAJourEdt(journeesMission[journeeSelectionnee]);
+            
         }
 
         /// <summary>
@@ -832,6 +843,9 @@ namespace MarsApp
         {
             TimeMartien nb = TimeMartien.calculerJours(debutMission);
             int numJour = nb.getJours() + 1;
+
+            if (numJour > 500)
+                numJour = 500;
 
             NouveauAstronaute na = new NouveauAstronaute(astronautes, astroList, numJour);
             na.Show();
