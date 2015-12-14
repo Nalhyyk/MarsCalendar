@@ -653,7 +653,7 @@ namespace MarsApp
 
                         if (aBase.isActiviteExterieure())
                             if (aBase.isExperience())
-                                act = new ExperienceExterieure(aBase.getTypeActivite(), description, new TimeMartien(0, 0, mD, 0), new TimeMartien(0, 0, mF, 0), l);
+                                act = new ExperienceExterieure(aBase.getTypeActivite(), description, new TimeMartien(0, 0, mD, 0), new TimeMartien(0, 0, mF, 0), l, transportAct);
                             else
                                 act = new ExplorationExterieure(aBase.getTypeActivite(), description, new TimeMartien(0, 0, mD, 0), new TimeMartien(0, 0, mF, 0), l, transportAct);
                         else

@@ -63,9 +63,17 @@ namespace MarsApp
                 exterieurRadio.Checked = true;
 
                 if (a.isExploration())
+                {
                     explorationRadio.Checked = true;
+                    scaphandreRadio.Checked = (((ExplorationExterieure)a).nomTransport().Equals("Scaphandre")) ? true : false;
+                    vehiculeRadio.Checked = !scaphandreRadio.Checked;
+                }
                 else
+                {
                     experienceRadio.Checked = true;
+                    scaphandreRadio.Checked = (((ExperienceExterieure)a).nomTransport().Equals("Scaphandre")) ? true : false;
+                    vehiculeRadio.Checked = !scaphandreRadio.Checked;
+                }
             }
             else
                 interieurRadio.Checked = true;
