@@ -334,8 +334,7 @@ namespace MarsApp
                             TimeMartien tm = new TimeMartien(0, int.Parse(heures[i].Tag.ToString()), 0, 0);
 
                             if ((a.getHeureFin() < heureActuelle || journeeActuelle.getNumero() != k))
-                                if ((a.getHeureFin().getHeures() != 0 || (a.getHeureFin().getHeures() == 0 && a.getHeureFin().getMinutes() == 0)))
-                                    a.activitePassee();
+                                a.activitePassee();
                             
                             if ((j.getNumero() > journeeActuelle.getNumero()) || (j.getNumero() == journeeActuelle.getNumero() && a.getHeureFin().getHeures() == 0 && a.getHeureFin().getMinutes() == 0))
                                 a.activiteAVenir();
@@ -828,6 +827,7 @@ namespace MarsApp
         {
             astronauteSelectionne = (Astronaute) astroList.SelectedItems[0];
             journeesMission = astronauteSelectionne.getJourneesMission();
+            modificationJourneeActuelle(journeeActuelle.getNumero());
             miseAJourEdt(journeesMission[journeeSelectionnee]);
             changerPeriode(periode);
             descriptionTexte.Text = journeesMission[journeeSelectionnee].getDescription();
