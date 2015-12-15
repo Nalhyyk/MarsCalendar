@@ -300,6 +300,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MarsIcone.ico" />
+    <None Include="Ressources\Images\pen.png" />
+    <None Include="Ressources\Images\grosseLoupe.png" />
+    <None Include="Ressources\Images\left.png" />
+    <None Include="Ressources\Images\right.png" />
     <None Include="Ressources\Images\delete96.png" />
     <None Include="Ressources\Images\add30.png" />
     <None Include="Ressources\Images\icon_50px_Mars.png" />
