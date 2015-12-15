@@ -53,11 +53,6 @@
             this.informationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Modifier = new System.Windows.Forms.ToolStripMenuItem();
             this.Supprimer = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.X = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Reduire = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.h50img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h40img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h30img)).BeginInit();
@@ -65,16 +60,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.h10img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h0img)).BeginInit();
             this.clicDroitActivite.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // h50img
             // 
-            this.h50img.BackColor = System.Drawing.Color.Transparent;
+            this.h50img.BackColor = System.Drawing.Color.White;
             this.h50img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h50img.Location = new System.Drawing.Point(115, 214);
-            this.h50img.Margin = new System.Windows.Forms.Padding(4);
+            this.h50img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h50img.Location = new System.Drawing.Point(93, 162);
+            this.h50img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.h50img.Name = "h50img";
             this.h50img.Size = new System.Drawing.Size(21, 20);
             this.h50img.TabIndex = 172;
@@ -83,10 +77,11 @@
             // 
             // h40img
             // 
-            this.h40img.BackColor = System.Drawing.Color.Transparent;
+            this.h40img.BackColor = System.Drawing.Color.White;
             this.h40img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h40img.Location = new System.Drawing.Point(115, 187);
-            this.h40img.Margin = new System.Windows.Forms.Padding(4);
+            this.h40img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h40img.Location = new System.Drawing.Point(93, 135);
+            this.h40img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.h40img.Name = "h40img";
             this.h40img.Size = new System.Drawing.Size(21, 20);
             this.h40img.TabIndex = 170;
@@ -95,10 +90,11 @@
             // 
             // h30img
             // 
-            this.h30img.BackColor = System.Drawing.Color.Transparent;
+            this.h30img.BackColor = System.Drawing.Color.White;
             this.h30img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h30img.Location = new System.Drawing.Point(115, 160);
-            this.h30img.Margin = new System.Windows.Forms.Padding(4);
+            this.h30img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h30img.Location = new System.Drawing.Point(93, 108);
+            this.h30img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.h30img.Name = "h30img";
             this.h30img.Size = new System.Drawing.Size(21, 20);
             this.h30img.TabIndex = 168;
@@ -107,10 +103,11 @@
             // 
             // h20img
             // 
-            this.h20img.BackColor = System.Drawing.Color.Transparent;
+            this.h20img.BackColor = System.Drawing.Color.White;
             this.h20img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h20img.Location = new System.Drawing.Point(115, 133);
-            this.h20img.Margin = new System.Windows.Forms.Padding(4);
+            this.h20img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h20img.Location = new System.Drawing.Point(93, 81);
+            this.h20img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.h20img.Name = "h20img";
             this.h20img.Size = new System.Drawing.Size(21, 20);
             this.h20img.TabIndex = 166;
@@ -119,10 +116,11 @@
             // 
             // h10img
             // 
-            this.h10img.BackColor = System.Drawing.Color.Transparent;
+            this.h10img.BackColor = System.Drawing.Color.White;
             this.h10img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h10img.Location = new System.Drawing.Point(115, 106);
-            this.h10img.Margin = new System.Windows.Forms.Padding(4);
+            this.h10img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h10img.Location = new System.Drawing.Point(93, 54);
+            this.h10img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.h10img.Name = "h10img";
             this.h10img.Size = new System.Drawing.Size(21, 20);
             this.h10img.TabIndex = 164;
@@ -131,10 +129,11 @@
             // 
             // h0img
             // 
-            this.h0img.BackColor = System.Drawing.Color.Transparent;
+            this.h0img.BackColor = System.Drawing.Color.White;
             this.h0img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h0img.Location = new System.Drawing.Point(115, 79);
-            this.h0img.Margin = new System.Windows.Forms.Padding(4);
+            this.h0img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h0img.Location = new System.Drawing.Point(93, 27);
+            this.h0img.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.h0img.Name = "h0img";
             this.h0img.Size = new System.Drawing.Size(21, 20);
             this.h0img.TabIndex = 162;
@@ -148,7 +147,8 @@
             this.actM50.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actM50.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actM50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actM50.Location = new System.Drawing.Point(117, 214);
+            this.actM50.ForeColor = System.Drawing.Color.Black;
+            this.actM50.Location = new System.Drawing.Point(95, 162);
             this.actM50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actM50.MaximumSize = new System.Drawing.Size(359, 31);
             this.actM50.MinimumSize = new System.Drawing.Size(359, 31);
@@ -166,7 +166,8 @@
             this.actM40.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actM40.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actM40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actM40.Location = new System.Drawing.Point(117, 187);
+            this.actM40.ForeColor = System.Drawing.Color.Black;
+            this.actM40.Location = new System.Drawing.Point(95, 135);
             this.actM40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actM40.MaximumSize = new System.Drawing.Size(359, 31);
             this.actM40.MinimumSize = new System.Drawing.Size(359, 31);
@@ -184,7 +185,8 @@
             this.actM30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actM30.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actM30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actM30.Location = new System.Drawing.Point(117, 160);
+            this.actM30.ForeColor = System.Drawing.Color.Black;
+            this.actM30.Location = new System.Drawing.Point(95, 108);
             this.actM30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actM30.MaximumSize = new System.Drawing.Size(359, 31);
             this.actM30.MinimumSize = new System.Drawing.Size(359, 31);
@@ -202,7 +204,8 @@
             this.actM20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actM20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actM20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actM20.Location = new System.Drawing.Point(117, 133);
+            this.actM20.ForeColor = System.Drawing.Color.Black;
+            this.actM20.Location = new System.Drawing.Point(95, 81);
             this.actM20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actM20.MaximumSize = new System.Drawing.Size(359, 31);
             this.actM20.MinimumSize = new System.Drawing.Size(359, 31);
@@ -220,7 +223,8 @@
             this.actM10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actM10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actM10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actM10.Location = new System.Drawing.Point(117, 106);
+            this.actM10.ForeColor = System.Drawing.Color.Black;
+            this.actM10.Location = new System.Drawing.Point(95, 54);
             this.actM10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actM10.MaximumSize = new System.Drawing.Size(359, 31);
             this.actM10.MinimumSize = new System.Drawing.Size(359, 31);
@@ -238,7 +242,8 @@
             this.actM0.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actM0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actM0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actM0.Location = new System.Drawing.Point(117, 79);
+            this.actM0.ForeColor = System.Drawing.Color.Black;
+            this.actM0.Location = new System.Drawing.Point(95, 27);
             this.actM0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actM0.MaximumSize = new System.Drawing.Size(359, 31);
             this.actM0.MinimumSize = new System.Drawing.Size(359, 31);
@@ -252,84 +257,77 @@
             // label60
             // 
             this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.label60.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label60.Location = new System.Drawing.Point(44, 232);
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(16, 174);
             this.label60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(27, 23);
+            this.label60.Size = new System.Drawing.Size(34, 25);
             this.label60.TabIndex = 160;
             this.label60.Text = "1h";
             // 
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.label50.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label50.Location = new System.Drawing.Point(44, 204);
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(16, 146);
             this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(47, 23);
+            this.label50.Size = new System.Drawing.Size(56, 25);
             this.label50.TabIndex = 159;
             this.label50.Text = "0h50";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.label40.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label40.Location = new System.Drawing.Point(44, 177);
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(16, 119);
             this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(48, 23);
+            this.label40.Size = new System.Drawing.Size(56, 25);
             this.label40.TabIndex = 158;
             this.label40.Text = "0h40";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.label30.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label30.Location = new System.Drawing.Point(44, 150);
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(16, 92);
             this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(47, 23);
+            this.label30.Size = new System.Drawing.Size(56, 25);
             this.label30.TabIndex = 157;
             this.label30.Text = "0h30";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.label20.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label20.Location = new System.Drawing.Point(44, 123);
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(16, 65);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(47, 23);
+            this.label20.Size = new System.Drawing.Size(56, 25);
             this.label20.TabIndex = 156;
             this.label20.Text = "0h20";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label10.Location = new System.Drawing.Point(44, 96);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(16, 38);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(45, 23);
+            this.label10.Size = new System.Drawing.Size(56, 25);
             this.label10.TabIndex = 155;
             this.label10.Text = "0h10";
             // 
             // label0
             // 
             this.label0.AutoSize = true;
-            this.label0.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.label0.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label0.Location = new System.Drawing.Point(44, 69);
+            this.label0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label0.Location = new System.Drawing.Point(16, 11);
             this.label0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label0.Name = "label0";
-            this.label0.Size = new System.Drawing.Size(47, 23);
+            this.label0.Size = new System.Drawing.Size(56, 25);
             this.label0.TabIndex = 154;
             this.label0.Text = "0h00";
             // 
@@ -341,105 +339,35 @@
             this.Modifier,
             this.Supprimer});
             this.clicDroitActivite.Name = "contextMenuStrip1";
-            this.clicDroitActivite.Size = new System.Drawing.Size(169, 82);
+            this.clicDroitActivite.Size = new System.Drawing.Size(163, 76);
             // 
             // informationsToolStripMenuItem
             // 
             this.informationsToolStripMenuItem.Name = "informationsToolStripMenuItem";
-            this.informationsToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.informationsToolStripMenuItem.Size = new System.Drawing.Size(162, 24);
             this.informationsToolStripMenuItem.Text = "Informations";
             this.informationsToolStripMenuItem.Click += new System.EventHandler(this.informationsToolStripMenuItem_Click);
             // 
             // Modifier
             // 
             this.Modifier.Name = "Modifier";
-            this.Modifier.Size = new System.Drawing.Size(168, 26);
+            this.Modifier.Size = new System.Drawing.Size(162, 24);
             this.Modifier.Text = "Modifier";
             this.Modifier.Click += new System.EventHandler(this.Modifier_Click);
             // 
             // Supprimer
             // 
             this.Supprimer.Name = "Supprimer";
-            this.Supprimer.Size = new System.Drawing.Size(168, 26);
+            this.Supprimer.Size = new System.Drawing.Size(162, 24);
             this.Supprimer.Text = "Supprimer";
             this.Supprimer.Click += new System.EventHandler(this.Supprimer_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MarsApp.Properties.Resources.icon_50px_Mars;
-            this.pictureBox1.Location = new System.Drawing.Point(5, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 32);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(53)))));
-            this.panel1.Controls.Add(this.X);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.Reduire);
-            this.panel1.Location = new System.Drawing.Point(1, -2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(540, 41);
-            this.panel1.TabIndex = 174;
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            // 
-            // X
-            // 
-            this.X.AutoSize = true;
-            this.X.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
-            this.X.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.X.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.X.Location = new System.Drawing.Point(504, 5);
-            this.X.MaximumSize = new System.Drawing.Size(30, 30);
-            this.X.MinimumSize = new System.Drawing.Size(30, 30);
-            this.X.Name = "X";
-            this.X.Size = new System.Drawing.Size(30, 30);
-            this.X.TabIndex = 173;
-            this.X.Text = "X";
-            this.X.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.X.Click += new System.EventHandler(this.X_Click);
-            this.X.MouseLeave += new System.EventHandler(this.X_MouseLeave);
-            this.X.MouseHover += new System.EventHandler(this.X_MouseHover);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(181, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(202, 23);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Détail de la plage horaire";
-            // 
-            // Reduire
-            // 
-            this.Reduire.AutoSize = true;
-            this.Reduire.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
-            this.Reduire.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Reduire.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Reduire.Location = new System.Drawing.Point(464, 5);
-            this.Reduire.MaximumSize = new System.Drawing.Size(30, 30);
-            this.Reduire.MinimumSize = new System.Drawing.Size(30, 30);
-            this.Reduire.Name = "Reduire";
-            this.Reduire.Size = new System.Drawing.Size(30, 30);
-            this.Reduire.TabIndex = 14;
-            this.Reduire.Text = "-";
-            this.Reduire.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Reduire.Click += new System.EventHandler(this.Reduire_Click);
-            this.Reduire.MouseLeave += new System.EventHandler(this.Reduire_MouseLeave);
-            this.Reduire.MouseHover += new System.EventHandler(this.Reduire_MouseHover);
             // 
             // DetailHeure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(539, 276);
+            this.ClientSize = new System.Drawing.Size(484, 214);
             this.Controls.Add(this.h50img);
             this.Controls.Add(this.h40img);
             this.Controls.Add(this.h30img);
@@ -459,10 +387,9 @@
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label0);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "DetailHeure";
             this.Text = "Detail de l\'heure";
             ((System.ComponentModel.ISupportInitialize)(this.h50img)).EndInit();
@@ -472,9 +399,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.h10img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.h0img)).EndInit();
             this.clicDroitActivite.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -505,10 +429,5 @@
         private System.Windows.Forms.ToolStripMenuItem informationsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem Modifier;
         private System.Windows.Forms.ToolStripMenuItem Supprimer;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label X;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label Reduire;
     }
 }

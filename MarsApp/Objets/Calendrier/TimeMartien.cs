@@ -87,7 +87,7 @@ namespace MarsApp
             this.heure += heure;
 
             // On veut obtenir des secondes comprises entre 0 et 59
-            this.minute += (int)this.seconde / 60;
+            this.minute += (int) this.seconde / 60;
             this.seconde %= 60;
 
             // On veut obtenir des minutes comprises entre 0 et 59
@@ -101,7 +101,7 @@ namespace MarsApp
             int diff = this.heure - (this.heure % 24);
             int nHeure = this.heure;
             this.heure = this.heure % 25;
-            
+
             if (diff != 0 && diff != nHeure)
             {
                 this.minute += 20 * (nHeure / 25);

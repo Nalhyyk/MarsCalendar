@@ -123,39 +123,9 @@ namespace MarsApp.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon_50px_Mars {
-            get {
-                object obj = ResourceManager.GetObject("icon_50px_Mars", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icon_Big_Mars {
-            get {
-                object obj = ResourceManager.GetObject("icon_Big_Mars", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icon_small_Mars {
             get {
                 object obj = ResourceManager.GetObject("icon_small_Mars", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icon_small_Mars1 {
-            get {
-                object obj = ResourceManager.GetObject("icon_small_Mars1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +153,29 @@ namespace MarsApp.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_Mars1 {
+            get {
+                object obj = ResourceManager.GetObject("logo_Mars1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Loupe {
             get {
                 object obj = ResourceManager.GetObject("Loupe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap map_icon {
+            get {
+                object obj = ResourceManager.GetObject("map-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +233,9 @@ namespace MarsApp.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pen {
+        internal static System.Drawing.Bitmap petitmap {
             get {
-                object obj = ResourceManager.GetObject("pen", resourceCulture);
+                object obj = ResourceManager.GetObject("petitmap", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

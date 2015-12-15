@@ -33,11 +33,6 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.timerJour = new System.Windows.Forms.Timer(this.components);
             this.timerMinute = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label37 = new System.Windows.Forms.Label();
-            this.X = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.Reduire = new System.Windows.Forms.Label();
             this.actH24 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.actH23 = new System.Windows.Forms.Label();
@@ -107,110 +102,158 @@
             this.periodeNum = new System.Windows.Forms.Label();
             this.jour50 = new System.Windows.Forms.Panel();
             this.num50 = new System.Windows.Forms.Label();
+            this.astro50 = new System.Windows.Forms.PictureBox();
             this.jour30 = new System.Windows.Forms.Panel();
             this.num30 = new System.Windows.Forms.Label();
+            this.astro30 = new System.Windows.Forms.PictureBox();
             this.jour40 = new System.Windows.Forms.Panel();
             this.num40 = new System.Windows.Forms.Label();
+            this.astro40 = new System.Windows.Forms.PictureBox();
             this.jour29 = new System.Windows.Forms.Panel();
             this.num29 = new System.Windows.Forms.Label();
+            this.astro29 = new System.Windows.Forms.PictureBox();
             this.jour49 = new System.Windows.Forms.Panel();
             this.num49 = new System.Windows.Forms.Label();
+            this.astro49 = new System.Windows.Forms.PictureBox();
             this.jour28 = new System.Windows.Forms.Panel();
             this.num28 = new System.Windows.Forms.Label();
+            this.astro28 = new System.Windows.Forms.PictureBox();
             this.jour39 = new System.Windows.Forms.Panel();
             this.num39 = new System.Windows.Forms.Label();
+            this.astro39 = new System.Windows.Forms.PictureBox();
             this.jour27 = new System.Windows.Forms.Panel();
             this.num27 = new System.Windows.Forms.Label();
+            this.astro27 = new System.Windows.Forms.PictureBox();
             this.jour48 = new System.Windows.Forms.Panel();
             this.num48 = new System.Windows.Forms.Label();
+            this.astro48 = new System.Windows.Forms.PictureBox();
             this.jour26 = new System.Windows.Forms.Panel();
             this.num26 = new System.Windows.Forms.Label();
+            this.astro26 = new System.Windows.Forms.PictureBox();
             this.jour38 = new System.Windows.Forms.Panel();
             this.num38 = new System.Windows.Forms.Label();
+            this.astro38 = new System.Windows.Forms.PictureBox();
             this.jour23 = new System.Windows.Forms.Panel();
             this.num23 = new System.Windows.Forms.Label();
+            this.astro23 = new System.Windows.Forms.PictureBox();
             this.jour47 = new System.Windows.Forms.Panel();
             this.num47 = new System.Windows.Forms.Label();
+            this.astro47 = new System.Windows.Forms.PictureBox();
             this.jour25 = new System.Windows.Forms.Panel();
             this.num25 = new System.Windows.Forms.Label();
+            this.astro25 = new System.Windows.Forms.PictureBox();
             this.jour37 = new System.Windows.Forms.Panel();
             this.num37 = new System.Windows.Forms.Label();
+            this.astro37 = new System.Windows.Forms.PictureBox();
             this.jour22 = new System.Windows.Forms.Panel();
             this.num22 = new System.Windows.Forms.Label();
+            this.astro22 = new System.Windows.Forms.PictureBox();
             this.jour46 = new System.Windows.Forms.Panel();
             this.num46 = new System.Windows.Forms.Label();
+            this.astro46 = new System.Windows.Forms.PictureBox();
             this.jour24 = new System.Windows.Forms.Panel();
             this.num24 = new System.Windows.Forms.Label();
+            this.astro24 = new System.Windows.Forms.PictureBox();
             this.jour36 = new System.Windows.Forms.Panel();
             this.num36 = new System.Windows.Forms.Label();
+            this.astro36 = new System.Windows.Forms.PictureBox();
             this.jour21 = new System.Windows.Forms.Panel();
             this.num21 = new System.Windows.Forms.Label();
+            this.astro21 = new System.Windows.Forms.PictureBox();
             this.jour43 = new System.Windows.Forms.Panel();
             this.num43 = new System.Windows.Forms.Label();
+            this.astro43 = new System.Windows.Forms.PictureBox();
             this.jour20 = new System.Windows.Forms.Panel();
             this.num20 = new System.Windows.Forms.Label();
+            this.astro20 = new System.Windows.Forms.PictureBox();
             this.jour33 = new System.Windows.Forms.Panel();
             this.num33 = new System.Windows.Forms.Label();
+            this.astro33 = new System.Windows.Forms.PictureBox();
             this.jour10 = new System.Windows.Forms.Panel();
             this.num10 = new System.Windows.Forms.Label();
+            this.astro10 = new System.Windows.Forms.PictureBox();
             this.jour45 = new System.Windows.Forms.Panel();
             this.num45 = new System.Windows.Forms.Label();
+            this.astro45 = new System.Windows.Forms.PictureBox();
             this.jour19 = new System.Windows.Forms.Panel();
             this.num19 = new System.Windows.Forms.Label();
+            this.astro19 = new System.Windows.Forms.PictureBox();
             this.jour35 = new System.Windows.Forms.Panel();
             this.num35 = new System.Windows.Forms.Label();
+            this.astro35 = new System.Windows.Forms.PictureBox();
             this.jour9 = new System.Windows.Forms.Panel();
             this.num9 = new System.Windows.Forms.Label();
+            this.astro9 = new System.Windows.Forms.PictureBox();
             this.jour42 = new System.Windows.Forms.Panel();
             this.num42 = new System.Windows.Forms.Label();
+            this.astro42 = new System.Windows.Forms.PictureBox();
             this.jour18 = new System.Windows.Forms.Panel();
             this.num18 = new System.Windows.Forms.Label();
+            this.astro18 = new System.Windows.Forms.PictureBox();
             this.jour44 = new System.Windows.Forms.Panel();
             this.num44 = new System.Windows.Forms.Label();
+            this.astro44 = new System.Windows.Forms.PictureBox();
             this.jour8 = new System.Windows.Forms.Panel();
             this.num8 = new System.Windows.Forms.Label();
+            this.astro8 = new System.Windows.Forms.PictureBox();
             this.jour32 = new System.Windows.Forms.Panel();
             this.num32 = new System.Windows.Forms.Label();
+            this.astro32 = new System.Windows.Forms.PictureBox();
             this.jour41 = new System.Windows.Forms.Panel();
             this.num41 = new System.Windows.Forms.Label();
+            this.astro41 = new System.Windows.Forms.PictureBox();
             this.jour17 = new System.Windows.Forms.Panel();
             this.num17 = new System.Windows.Forms.Label();
+            this.astro17 = new System.Windows.Forms.PictureBox();
             this.jour34 = new System.Windows.Forms.Panel();
             this.num34 = new System.Windows.Forms.Label();
+            this.astro34 = new System.Windows.Forms.PictureBox();
             this.jour7 = new System.Windows.Forms.Panel();
             this.num7 = new System.Windows.Forms.Label();
+            this.astro7 = new System.Windows.Forms.PictureBox();
             this.jour31 = new System.Windows.Forms.Panel();
             this.num31 = new System.Windows.Forms.Label();
+            this.astro31 = new System.Windows.Forms.PictureBox();
             this.jour16 = new System.Windows.Forms.Panel();
             this.num16 = new System.Windows.Forms.Label();
+            this.astro16 = new System.Windows.Forms.PictureBox();
             this.jour6 = new System.Windows.Forms.Panel();
             this.num6 = new System.Windows.Forms.Label();
+            this.astro6 = new System.Windows.Forms.PictureBox();
             this.jour13 = new System.Windows.Forms.Panel();
             this.num13 = new System.Windows.Forms.Label();
+            this.astro13 = new System.Windows.Forms.PictureBox();
             this.jour3 = new System.Windows.Forms.Panel();
             this.num3 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.astro3 = new System.Windows.Forms.PictureBox();
             this.jour15 = new System.Windows.Forms.Panel();
             this.num15 = new System.Windows.Forms.Label();
+            this.astro15 = new System.Windows.Forms.PictureBox();
             this.jour5 = new System.Windows.Forms.Panel();
             this.num5 = new System.Windows.Forms.Label();
+            this.astro5 = new System.Windows.Forms.PictureBox();
             this.jour12 = new System.Windows.Forms.Panel();
             this.num12 = new System.Windows.Forms.Label();
+            this.astro12 = new System.Windows.Forms.PictureBox();
             this.jour14 = new System.Windows.Forms.Panel();
             this.num14 = new System.Windows.Forms.Label();
+            this.astro14 = new System.Windows.Forms.PictureBox();
             this.jour2 = new System.Windows.Forms.Panel();
             this.num2 = new System.Windows.Forms.Label();
+            this.astro2 = new System.Windows.Forms.PictureBox();
             this.jour11 = new System.Windows.Forms.Panel();
             this.num11 = new System.Windows.Forms.Label();
+            this.astro11 = new System.Windows.Forms.PictureBox();
             this.jour4 = new System.Windows.Forms.Panel();
             this.num4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.astro4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.jour1 = new System.Windows.Forms.Panel();
             this.num1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.astro1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.recherche = new System.Windows.Forms.PictureBox();
             this.h24img = new System.Windows.Forms.PictureBox();
             this.modifAstro = new System.Windows.Forms.PictureBox();
@@ -240,112 +283,110 @@
             this.h1img = new System.Windows.Forms.PictureBox();
             this.h0img = new System.Windows.Forms.PictureBox();
             this.map = new System.Windows.Forms.PictureBox();
-            this.astro50 = new System.Windows.Forms.PictureBox();
-            this.astro30 = new System.Windows.Forms.PictureBox();
-            this.astro40 = new System.Windows.Forms.PictureBox();
-            this.astro29 = new System.Windows.Forms.PictureBox();
-            this.astro49 = new System.Windows.Forms.PictureBox();
-            this.astro28 = new System.Windows.Forms.PictureBox();
-            this.astro39 = new System.Windows.Forms.PictureBox();
-            this.astro27 = new System.Windows.Forms.PictureBox();
-            this.astro48 = new System.Windows.Forms.PictureBox();
-            this.astro26 = new System.Windows.Forms.PictureBox();
-            this.astro38 = new System.Windows.Forms.PictureBox();
-            this.astro23 = new System.Windows.Forms.PictureBox();
-            this.astro47 = new System.Windows.Forms.PictureBox();
-            this.astro25 = new System.Windows.Forms.PictureBox();
-            this.astro37 = new System.Windows.Forms.PictureBox();
-            this.astro22 = new System.Windows.Forms.PictureBox();
-            this.astro46 = new System.Windows.Forms.PictureBox();
-            this.astro24 = new System.Windows.Forms.PictureBox();
-            this.astro36 = new System.Windows.Forms.PictureBox();
-            this.astro21 = new System.Windows.Forms.PictureBox();
-            this.astro43 = new System.Windows.Forms.PictureBox();
-            this.astro20 = new System.Windows.Forms.PictureBox();
-            this.astro33 = new System.Windows.Forms.PictureBox();
-            this.astro10 = new System.Windows.Forms.PictureBox();
-            this.astro45 = new System.Windows.Forms.PictureBox();
-            this.astro19 = new System.Windows.Forms.PictureBox();
-            this.astro35 = new System.Windows.Forms.PictureBox();
-            this.astro9 = new System.Windows.Forms.PictureBox();
-            this.astro42 = new System.Windows.Forms.PictureBox();
-            this.astro18 = new System.Windows.Forms.PictureBox();
-            this.astro44 = new System.Windows.Forms.PictureBox();
-            this.astro8 = new System.Windows.Forms.PictureBox();
-            this.astro32 = new System.Windows.Forms.PictureBox();
-            this.astro41 = new System.Windows.Forms.PictureBox();
-            this.astro17 = new System.Windows.Forms.PictureBox();
-            this.astro34 = new System.Windows.Forms.PictureBox();
-            this.astro7 = new System.Windows.Forms.PictureBox();
-            this.astro31 = new System.Windows.Forms.PictureBox();
-            this.astro16 = new System.Windows.Forms.PictureBox();
-            this.astro6 = new System.Windows.Forms.PictureBox();
-            this.astro13 = new System.Windows.Forms.PictureBox();
-            this.astro3 = new System.Windows.Forms.PictureBox();
-            this.astro15 = new System.Windows.Forms.PictureBox();
-            this.astro5 = new System.Windows.Forms.PictureBox();
-            this.astro12 = new System.Windows.Forms.PictureBox();
-            this.astro14 = new System.Windows.Forms.PictureBox();
-            this.astro2 = new System.Windows.Forms.PictureBox();
-            this.astro11 = new System.Windows.Forms.PictureBox();
-            this.astro4 = new System.Windows.Forms.PictureBox();
-            this.astro1 = new System.Windows.Forms.PictureBox();
             this.suivant = new System.Windows.Forms.PictureBox();
             this.precedent = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
             this.descriptionJournee.SuspendLayout();
             this.jour50.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro50)).BeginInit();
             this.jour30.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro30)).BeginInit();
             this.jour40.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro40)).BeginInit();
             this.jour29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro29)).BeginInit();
             this.jour49.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro49)).BeginInit();
             this.jour28.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro28)).BeginInit();
             this.jour39.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro39)).BeginInit();
             this.jour27.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro27)).BeginInit();
             this.jour48.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro48)).BeginInit();
             this.jour26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro26)).BeginInit();
             this.jour38.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro38)).BeginInit();
             this.jour23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro23)).BeginInit();
             this.jour47.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro47)).BeginInit();
             this.jour25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro25)).BeginInit();
             this.jour37.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro37)).BeginInit();
             this.jour22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro22)).BeginInit();
             this.jour46.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro46)).BeginInit();
             this.jour24.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro24)).BeginInit();
             this.jour36.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro36)).BeginInit();
             this.jour21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro21)).BeginInit();
             this.jour43.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro43)).BeginInit();
             this.jour20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro20)).BeginInit();
             this.jour33.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro33)).BeginInit();
             this.jour10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro10)).BeginInit();
             this.jour45.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro45)).BeginInit();
             this.jour19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro19)).BeginInit();
             this.jour35.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro35)).BeginInit();
             this.jour9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro9)).BeginInit();
             this.jour42.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro42)).BeginInit();
             this.jour18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro18)).BeginInit();
             this.jour44.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro44)).BeginInit();
             this.jour8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro8)).BeginInit();
             this.jour32.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro32)).BeginInit();
             this.jour41.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro41)).BeginInit();
             this.jour17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro17)).BeginInit();
             this.jour34.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro34)).BeginInit();
             this.jour7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro7)).BeginInit();
             this.jour31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro31)).BeginInit();
             this.jour16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro16)).BeginInit();
             this.jour6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro6)).BeginInit();
             this.jour13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro13)).BeginInit();
             this.jour3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro3)).BeginInit();
             this.jour15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro15)).BeginInit();
             this.jour5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro5)).BeginInit();
             this.jour12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro12)).BeginInit();
             this.jour14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro14)).BeginInit();
             this.jour2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro2)).BeginInit();
             this.jour11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro11)).BeginInit();
             this.jour4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro4)).BeginInit();
             this.jour1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro1)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recherche)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h24img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.modifAstro)).BeginInit();
@@ -375,56 +416,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.h1img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.h0img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.map)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro50)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro49)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro48)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro46)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro44)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.suivant)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.precedent)).BeginInit();
             this.SuspendLayout();
@@ -446,84 +437,6 @@
             this.timerMinute.Interval = 60000;
             this.timerMinute.Tick += new System.EventHandler(this.timerMinute_Tick);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(53)))));
-            this.panel1.Controls.Add(this.label37);
-            this.panel1.Controls.Add(this.X);
-            this.panel1.Controls.Add(this.label27);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.Reduire);
-            this.panel1.Location = new System.Drawing.Point(-1, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1683, 41);
-            this.panel1.TabIndex = 196;
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label37.Location = new System.Drawing.Point(1603, 5);
-            this.label37.MaximumSize = new System.Drawing.Size(30, 30);
-            this.label37.MinimumSize = new System.Drawing.Size(30, 30);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(30, 30);
-            this.label37.TabIndex = 174;
-            this.label37.Text = "+";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label37.Click += new System.EventHandler(this.label37_Click);
-            this.label37.MouseLeave += new System.EventHandler(this.label37_MouseLeave);
-            this.label37.MouseHover += new System.EventHandler(this.label37_MouseHover);
-            // 
-            // X
-            // 
-            this.X.AutoSize = true;
-            this.X.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
-            this.X.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.X.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.X.Location = new System.Drawing.Point(1639, 5);
-            this.X.MaximumSize = new System.Drawing.Size(30, 30);
-            this.X.MinimumSize = new System.Drawing.Size(30, 30);
-            this.X.Name = "X";
-            this.X.Size = new System.Drawing.Size(30, 30);
-            this.X.TabIndex = 173;
-            this.X.Text = "X";
-            this.X.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.X.Click += new System.EventHandler(this.X_Click);
-            this.X.MouseHover += new System.EventHandler(this.X_MouseHover);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.label27.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.label27.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label27.Location = new System.Drawing.Point(702, 6);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(251, 30);
-            this.label27.TabIndex = 16;
-            this.label27.Text = "Calendrier de la mission";
-            // 
-            // Reduire
-            // 
-            this.Reduire.AutoSize = true;
-            this.Reduire.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
-            this.Reduire.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Reduire.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Reduire.Location = new System.Drawing.Point(1566, 5);
-            this.Reduire.MaximumSize = new System.Drawing.Size(30, 30);
-            this.Reduire.MinimumSize = new System.Drawing.Size(30, 30);
-            this.Reduire.Name = "Reduire";
-            this.Reduire.Size = new System.Drawing.Size(30, 30);
-            this.Reduire.TabIndex = 14;
-            this.Reduire.Text = "-";
-            this.Reduire.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Reduire.Click += new System.EventHandler(this.Reduire_Click);
-            this.Reduire.MouseLeave += new System.EventHandler(this.Reduire_MouseLeave);
-            this.Reduire.MouseHover += new System.EventHandler(this.Reduire_MouseHover);
-            // 
             // actH24
             // 
             this.actH24.AutoSize = true;
@@ -531,7 +444,8 @@
             this.actH24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH24.Location = new System.Drawing.Point(1224, 790);
+            this.actH24.ForeColor = System.Drawing.Color.Black;
+            this.actH24.Location = new System.Drawing.Point(1243, 721);
             this.actH24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH24.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH24.MinimumSize = new System.Drawing.Size(359, 31);
@@ -546,7 +460,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(1137, 800);
+            this.label28.Location = new System.Drawing.Point(1156, 731);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(67, 25);
@@ -560,7 +474,8 @@
             this.actH23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH23.Location = new System.Drawing.Point(1224, 763);
+            this.actH23.ForeColor = System.Drawing.Color.Black;
+            this.actH23.Location = new System.Drawing.Point(1243, 694);
             this.actH23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH23.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH23.MinimumSize = new System.Drawing.Size(359, 31);
@@ -578,7 +493,8 @@
             this.actH22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH22.Location = new System.Drawing.Point(1224, 736);
+            this.actH22.ForeColor = System.Drawing.Color.Black;
+            this.actH22.Location = new System.Drawing.Point(1243, 667);
             this.actH22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH22.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH22.MinimumSize = new System.Drawing.Size(359, 31);
@@ -596,7 +512,8 @@
             this.actH21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH21.Location = new System.Drawing.Point(1224, 709);
+            this.actH21.ForeColor = System.Drawing.Color.Black;
+            this.actH21.Location = new System.Drawing.Point(1243, 640);
             this.actH21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH21.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH21.MinimumSize = new System.Drawing.Size(359, 31);
@@ -614,7 +531,8 @@
             this.actH20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH20.Location = new System.Drawing.Point(1224, 682);
+            this.actH20.ForeColor = System.Drawing.Color.Black;
+            this.actH20.Location = new System.Drawing.Point(1243, 613);
             this.actH20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH20.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH20.MinimumSize = new System.Drawing.Size(359, 31);
@@ -632,7 +550,8 @@
             this.actH19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH19.Location = new System.Drawing.Point(1224, 652);
+            this.actH19.ForeColor = System.Drawing.Color.Black;
+            this.actH19.Location = new System.Drawing.Point(1243, 583);
             this.actH19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH19.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH19.MinimumSize = new System.Drawing.Size(359, 31);
@@ -650,7 +569,8 @@
             this.actH18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH18.Location = new System.Drawing.Point(1224, 625);
+            this.actH18.ForeColor = System.Drawing.Color.Black;
+            this.actH18.Location = new System.Drawing.Point(1243, 556);
             this.actH18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH18.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH18.MinimumSize = new System.Drawing.Size(359, 31);
@@ -668,7 +588,8 @@
             this.actH17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH17.Location = new System.Drawing.Point(1224, 598);
+            this.actH17.ForeColor = System.Drawing.Color.Black;
+            this.actH17.Location = new System.Drawing.Point(1243, 529);
             this.actH17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH17.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH17.MinimumSize = new System.Drawing.Size(359, 31);
@@ -686,7 +607,8 @@
             this.actH16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH16.Location = new System.Drawing.Point(1224, 571);
+            this.actH16.ForeColor = System.Drawing.Color.Black;
+            this.actH16.Location = new System.Drawing.Point(1243, 502);
             this.actH16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH16.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH16.MinimumSize = new System.Drawing.Size(359, 31);
@@ -704,7 +626,8 @@
             this.actH15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH15.Location = new System.Drawing.Point(1224, 544);
+            this.actH15.ForeColor = System.Drawing.Color.Black;
+            this.actH15.Location = new System.Drawing.Point(1243, 475);
             this.actH15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH15.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH15.MinimumSize = new System.Drawing.Size(359, 31);
@@ -722,7 +645,8 @@
             this.actH14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH14.Location = new System.Drawing.Point(1224, 517);
+            this.actH14.ForeColor = System.Drawing.Color.Black;
+            this.actH14.Location = new System.Drawing.Point(1243, 448);
             this.actH14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH14.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH14.MinimumSize = new System.Drawing.Size(359, 31);
@@ -740,7 +664,8 @@
             this.actH13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH13.Location = new System.Drawing.Point(1224, 490);
+            this.actH13.ForeColor = System.Drawing.Color.Black;
+            this.actH13.Location = new System.Drawing.Point(1243, 421);
             this.actH13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH13.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH13.MinimumSize = new System.Drawing.Size(359, 31);
@@ -758,7 +683,8 @@
             this.actH12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH12.Location = new System.Drawing.Point(1224, 463);
+            this.actH12.ForeColor = System.Drawing.Color.Black;
+            this.actH12.Location = new System.Drawing.Point(1243, 394);
             this.actH12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH12.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH12.MinimumSize = new System.Drawing.Size(359, 31);
@@ -776,7 +702,8 @@
             this.actH11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH11.Location = new System.Drawing.Point(1224, 436);
+            this.actH11.ForeColor = System.Drawing.Color.Black;
+            this.actH11.Location = new System.Drawing.Point(1243, 367);
             this.actH11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH11.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH11.MinimumSize = new System.Drawing.Size(359, 31);
@@ -794,7 +721,8 @@
             this.actH10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH10.Location = new System.Drawing.Point(1224, 409);
+            this.actH10.ForeColor = System.Drawing.Color.Black;
+            this.actH10.Location = new System.Drawing.Point(1243, 340);
             this.actH10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH10.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH10.MinimumSize = new System.Drawing.Size(359, 31);
@@ -812,7 +740,8 @@
             this.actH9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH9.Location = new System.Drawing.Point(1224, 382);
+            this.actH9.ForeColor = System.Drawing.Color.Black;
+            this.actH9.Location = new System.Drawing.Point(1243, 313);
             this.actH9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH9.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH9.MinimumSize = new System.Drawing.Size(359, 31);
@@ -830,7 +759,8 @@
             this.actH8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH8.Location = new System.Drawing.Point(1224, 355);
+            this.actH8.ForeColor = System.Drawing.Color.Black;
+            this.actH8.Location = new System.Drawing.Point(1243, 286);
             this.actH8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH8.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH8.MinimumSize = new System.Drawing.Size(359, 31);
@@ -848,7 +778,8 @@
             this.actH7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH7.Location = new System.Drawing.Point(1224, 325);
+            this.actH7.ForeColor = System.Drawing.Color.Black;
+            this.actH7.Location = new System.Drawing.Point(1243, 256);
             this.actH7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH7.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH7.MinimumSize = new System.Drawing.Size(359, 31);
@@ -866,7 +797,8 @@
             this.actH6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH6.Location = new System.Drawing.Point(1224, 298);
+            this.actH6.ForeColor = System.Drawing.Color.Black;
+            this.actH6.Location = new System.Drawing.Point(1243, 229);
             this.actH6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH6.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH6.MinimumSize = new System.Drawing.Size(359, 31);
@@ -884,7 +816,8 @@
             this.actH5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH5.Location = new System.Drawing.Point(1224, 271);
+            this.actH5.ForeColor = System.Drawing.Color.Black;
+            this.actH5.Location = new System.Drawing.Point(1243, 202);
             this.actH5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH5.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH5.MinimumSize = new System.Drawing.Size(359, 31);
@@ -902,7 +835,8 @@
             this.actH4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH4.Location = new System.Drawing.Point(1224, 244);
+            this.actH4.ForeColor = System.Drawing.Color.Black;
+            this.actH4.Location = new System.Drawing.Point(1243, 175);
             this.actH4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH4.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH4.MinimumSize = new System.Drawing.Size(359, 31);
@@ -920,7 +854,8 @@
             this.actH3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH3.Location = new System.Drawing.Point(1224, 217);
+            this.actH3.ForeColor = System.Drawing.Color.Black;
+            this.actH3.Location = new System.Drawing.Point(1243, 148);
             this.actH3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH3.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH3.MinimumSize = new System.Drawing.Size(359, 31);
@@ -938,7 +873,8 @@
             this.actH2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH2.Location = new System.Drawing.Point(1224, 190);
+            this.actH2.ForeColor = System.Drawing.Color.Black;
+            this.actH2.Location = new System.Drawing.Point(1243, 121);
             this.actH2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH2.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH2.MinimumSize = new System.Drawing.Size(359, 31);
@@ -956,7 +892,8 @@
             this.actH1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH1.Location = new System.Drawing.Point(1224, 163);
+            this.actH1.ForeColor = System.Drawing.Color.Black;
+            this.actH1.Location = new System.Drawing.Point(1243, 94);
             this.actH1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH1.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH1.MinimumSize = new System.Drawing.Size(359, 31);
@@ -974,7 +911,8 @@
             this.actH0.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.actH0.Cursor = System.Windows.Forms.Cursors.Hand;
             this.actH0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actH0.Location = new System.Drawing.Point(1224, 135);
+            this.actH0.ForeColor = System.Drawing.Color.Black;
+            this.actH0.Location = new System.Drawing.Point(1243, 66);
             this.actH0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.actH0.MaximumSize = new System.Drawing.Size(359, 31);
             this.actH0.MinimumSize = new System.Drawing.Size(359, 31);
@@ -989,7 +927,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(572, 51);
+            this.label36.Location = new System.Drawing.Point(581, 11);
             this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(109, 20);
@@ -998,9 +936,10 @@
             // 
             // astroList
             // 
+            this.astroList.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.astroList.FormattingEnabled = true;
             this.astroList.ItemHeight = 16;
-            this.astroList.Location = new System.Drawing.Point(704, 51);
+            this.astroList.Location = new System.Drawing.Point(713, 11);
             this.astroList.Margin = new System.Windows.Forms.Padding(4);
             this.astroList.Name = "astroList";
             this.astroList.Size = new System.Drawing.Size(235, 52);
@@ -1009,27 +948,27 @@
             // 
             // descriptionJournee
             // 
-            this.descriptionJournee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(53)))));
+            this.descriptionJournee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
             this.descriptionJournee.Controls.Add(this.descriptionTexte);
             this.descriptionJournee.Controls.Add(this.saveDesc);
-            this.descriptionJournee.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descriptionJournee.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.descriptionJournee.Location = new System.Drawing.Point(91, 756);
+            this.descriptionJournee.ForeColor = System.Drawing.Color.White;
+            this.descriptionJournee.Location = new System.Drawing.Point(128, 679);
             this.descriptionJournee.Margin = new System.Windows.Forms.Padding(4);
             this.descriptionJournee.Name = "descriptionJournee";
             this.descriptionJournee.Padding = new System.Windows.Forms.Padding(4);
-            this.descriptionJournee.Size = new System.Drawing.Size(1042, 119);
+            this.descriptionJournee.Size = new System.Drawing.Size(1001, 119);
             this.descriptionJournee.TabIndex = 140;
             this.descriptionJournee.TabStop = false;
             this.descriptionJournee.Text = "Description journée";
             // 
             // descriptionTexte
             // 
+            this.descriptionTexte.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.descriptionTexte.Location = new System.Drawing.Point(9, 25);
             this.descriptionTexte.Margin = new System.Windows.Forms.Padding(4);
             this.descriptionTexte.Multiline = true;
             this.descriptionTexte.Name = "descriptionTexte";
-            this.descriptionTexte.Size = new System.Drawing.Size(917, 86);
+            this.descriptionTexte.Size = new System.Drawing.Size(893, 86);
             this.descriptionTexte.TabIndex = 142;
             // 
             // saveDesc
@@ -1037,12 +976,10 @@
             this.saveDesc.BackColor = System.Drawing.SystemColors.Highlight;
             this.saveDesc.FlatAppearance.BorderSize = 0;
             this.saveDesc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveDesc.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveDesc.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.saveDesc.Location = new System.Drawing.Point(934, 83);
+            this.saveDesc.Location = new System.Drawing.Point(908, 84);
             this.saveDesc.Margin = new System.Windows.Forms.Padding(4);
             this.saveDesc.Name = "saveDesc";
-            this.saveDesc.Size = new System.Drawing.Size(99, 28);
+            this.saveDesc.Size = new System.Drawing.Size(85, 28);
             this.saveDesc.TabIndex = 141;
             this.saveDesc.Text = "OK";
             this.saveDesc.UseVisualStyleBackColor = false;
@@ -1052,7 +989,7 @@
             // 
             this.mars.AutoSize = true;
             this.mars.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mars.Location = new System.Drawing.Point(268, 83);
+            this.mars.Location = new System.Drawing.Point(265, 39);
             this.mars.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mars.Name = "mars";
             this.mars.Size = new System.Drawing.Size(47, 20);
@@ -1063,7 +1000,7 @@
             // 
             this.terre.AutoSize = true;
             this.terre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.terre.Location = new System.Drawing.Point(270, 55);
+            this.terre.Location = new System.Drawing.Point(267, 11);
             this.terre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.terre.Name = "terre";
             this.terre.Size = new System.Drawing.Size(44, 20);
@@ -1074,7 +1011,7 @@
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(206, 82);
+            this.label35.Location = new System.Drawing.Point(203, 38);
             this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(57, 20);
@@ -1085,7 +1022,7 @@
             // 
             this.labelTerre.AutoSize = true;
             this.labelTerre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTerre.Location = new System.Drawing.Point(202, 55);
+            this.labelTerre.Location = new System.Drawing.Point(199, 11);
             this.labelTerre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTerre.Name = "labelTerre";
             this.labelTerre.Size = new System.Drawing.Size(59, 20);
@@ -1096,7 +1033,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(20, 55);
+            this.label34.Location = new System.Drawing.Point(17, 11);
             this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(154, 20);
@@ -1106,8 +1043,8 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(53)))));
-            this.label33.Location = new System.Drawing.Point(920, 693);
+            this.label33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
+            this.label33.Location = new System.Drawing.Point(939, 624);
             this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(32, 17);
@@ -1117,8 +1054,8 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(53)))));
-            this.label32.Location = new System.Drawing.Point(286, 693);
+            this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
+            this.label32.Location = new System.Drawing.Point(305, 624);
             this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(16, 17);
@@ -1128,18 +1065,17 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(53)))));
-            this.label31.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(525, 716);
+            this.label31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
+            this.label31.Location = new System.Drawing.Point(544, 647);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(172, 19);
+            this.label31.Size = new System.Drawing.Size(172, 17);
             this.label31.TabIndex = 132;
             this.label31.Text = "Avancement de la mission";
             // 
             // avancementMission
             // 
-            this.avancementMission.Location = new System.Drawing.Point(312, 686);
+            this.avancementMission.Location = new System.Drawing.Point(331, 617);
             this.avancementMission.Margin = new System.Windows.Forms.Padding(4);
             this.avancementMission.Name = "avancementMission";
             this.avancementMission.Size = new System.Drawing.Size(600, 28);
@@ -1149,7 +1085,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(1160, 773);
+            this.label25.Location = new System.Drawing.Point(1179, 704);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(45, 25);
@@ -1160,7 +1096,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(1160, 748);
+            this.label21.Location = new System.Drawing.Point(1179, 679);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(45, 25);
@@ -1171,7 +1107,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(1160, 721);
+            this.label22.Location = new System.Drawing.Point(1179, 652);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(45, 25);
@@ -1182,7 +1118,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(1160, 694);
+            this.label23.Location = new System.Drawing.Point(1179, 625);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(45, 25);
@@ -1193,7 +1129,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(1160, 667);
+            this.label24.Location = new System.Drawing.Point(1179, 598);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(45, 25);
@@ -1204,7 +1140,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(1160, 640);
+            this.label17.Location = new System.Drawing.Point(1179, 571);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(45, 25);
@@ -1215,7 +1151,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(1160, 613);
+            this.label18.Location = new System.Drawing.Point(1179, 544);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(45, 25);
@@ -1226,7 +1162,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(1160, 586);
+            this.label19.Location = new System.Drawing.Point(1179, 517);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(45, 25);
@@ -1237,7 +1173,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(1160, 559);
+            this.label20.Location = new System.Drawing.Point(1179, 490);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(45, 25);
@@ -1248,7 +1184,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(1160, 532);
+            this.label13.Location = new System.Drawing.Point(1179, 463);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(45, 25);
@@ -1259,7 +1195,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(1160, 505);
+            this.label14.Location = new System.Drawing.Point(1179, 436);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(45, 25);
@@ -1270,7 +1206,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(1160, 478);
+            this.label15.Location = new System.Drawing.Point(1179, 409);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(45, 25);
@@ -1281,7 +1217,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1160, 451);
+            this.label16.Location = new System.Drawing.Point(1179, 382);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(45, 25);
@@ -1292,7 +1228,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1160, 426);
+            this.label9.Location = new System.Drawing.Point(1179, 357);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(45, 25);
@@ -1303,7 +1239,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(1160, 399);
+            this.label10.Location = new System.Drawing.Point(1179, 330);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(45, 25);
@@ -1314,7 +1250,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(1172, 372);
+            this.label11.Location = new System.Drawing.Point(1191, 303);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(34, 25);
@@ -1325,7 +1261,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(1172, 345);
+            this.label12.Location = new System.Drawing.Point(1191, 276);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(34, 25);
@@ -1336,7 +1272,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1172, 318);
+            this.label5.Location = new System.Drawing.Point(1191, 249);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 25);
@@ -1347,7 +1283,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1172, 288);
+            this.label6.Location = new System.Drawing.Point(1191, 219);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 25);
@@ -1358,7 +1294,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1172, 261);
+            this.label7.Location = new System.Drawing.Point(1191, 192);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(34, 25);
@@ -1369,7 +1305,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1172, 234);
+            this.label8.Location = new System.Drawing.Point(1191, 165);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(34, 25);
@@ -1380,7 +1316,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1172, 207);
+            this.label1.Location = new System.Drawing.Point(1191, 138);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(34, 25);
@@ -1391,7 +1327,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(1172, 180);
+            this.label26.Location = new System.Drawing.Point(1191, 111);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(34, 25);
@@ -1402,7 +1338,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(1172, 153);
+            this.label29.Location = new System.Drawing.Point(1191, 84);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(34, 25);
@@ -1413,7 +1349,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(1172, 126);
+            this.label30.Location = new System.Drawing.Point(1191, 57);
             this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(34, 25);
@@ -1426,7 +1362,7 @@
             this.numJourneeLabel.BackColor = System.Drawing.Color.Transparent;
             this.numJourneeLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.numJourneeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numJourneeLabel.Location = new System.Drawing.Point(1297, 80);
+            this.numJourneeLabel.Location = new System.Drawing.Point(1316, 27);
             this.numJourneeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.numJourneeLabel.MaximumSize = new System.Drawing.Size(200, 0);
             this.numJourneeLabel.MinimumSize = new System.Drawing.Size(200, 0);
@@ -1439,9 +1375,9 @@
             // periodeNum
             // 
             this.periodeNum.AutoSize = true;
-            this.periodeNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(53)))));
+            this.periodeNum.BackColor = System.Drawing.Color.Transparent;
             this.periodeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.periodeNum.Location = new System.Drawing.Point(485, 144);
+            this.periodeNum.Location = new System.Drawing.Point(390, 9);
             this.periodeNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.periodeNum.MaximumSize = new System.Drawing.Size(267, 0);
             this.periodeNum.MinimumSize = new System.Drawing.Size(267, 0);
@@ -1457,7 +1393,7 @@
             this.jour50.Controls.Add(this.num50);
             this.jour50.Controls.Add(this.astro50);
             this.jour50.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour50.Location = new System.Drawing.Point(1021, 588);
+            this.jour50.Location = new System.Drawing.Point(1040, 519);
             this.jour50.Margin = new System.Windows.Forms.Padding(4);
             this.jour50.Name = "jour50";
             this.jour50.Size = new System.Drawing.Size(93, 86);
@@ -1480,12 +1416,23 @@
             this.num50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num50.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro50
+            // 
+            this.astro50.Image = ((System.Drawing.Image)(resources.GetObject("astro50.Image")));
+            this.astro50.Location = new System.Drawing.Point(4, 4);
+            this.astro50.Margin = new System.Windows.Forms.Padding(4);
+            this.astro50.Name = "astro50";
+            this.astro50.Size = new System.Drawing.Size(32, 30);
+            this.astro50.TabIndex = 0;
+            this.astro50.TabStop = false;
+            this.astro50.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour30
             // 
             this.jour30.Controls.Add(this.num30);
             this.jour30.Controls.Add(this.astro30);
             this.jour30.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour30.Location = new System.Drawing.Point(1021, 401);
+            this.jour30.Location = new System.Drawing.Point(1040, 332);
             this.jour30.Margin = new System.Windows.Forms.Padding(4);
             this.jour30.Name = "jour30";
             this.jour30.Size = new System.Drawing.Size(93, 86);
@@ -1508,12 +1455,23 @@
             this.num30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num30.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro30
+            // 
+            this.astro30.Image = ((System.Drawing.Image)(resources.GetObject("astro30.Image")));
+            this.astro30.Location = new System.Drawing.Point(4, 4);
+            this.astro30.Margin = new System.Windows.Forms.Padding(4);
+            this.astro30.Name = "astro30";
+            this.astro30.Size = new System.Drawing.Size(32, 30);
+            this.astro30.TabIndex = 0;
+            this.astro30.TabStop = false;
+            this.astro30.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour40
             // 
             this.jour40.Controls.Add(this.num40);
             this.jour40.Controls.Add(this.astro40);
             this.jour40.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour40.Location = new System.Drawing.Point(1021, 495);
+            this.jour40.Location = new System.Drawing.Point(1040, 426);
             this.jour40.Margin = new System.Windows.Forms.Padding(4);
             this.jour40.Name = "jour40";
             this.jour40.Size = new System.Drawing.Size(93, 86);
@@ -1536,12 +1494,23 @@
             this.num40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num40.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro40
+            // 
+            this.astro40.Image = ((System.Drawing.Image)(resources.GetObject("astro40.Image")));
+            this.astro40.Location = new System.Drawing.Point(4, 4);
+            this.astro40.Margin = new System.Windows.Forms.Padding(4);
+            this.astro40.Name = "astro40";
+            this.astro40.Size = new System.Drawing.Size(32, 30);
+            this.astro40.TabIndex = 0;
+            this.astro40.TabStop = false;
+            this.astro40.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour29
             // 
             this.jour29.Controls.Add(this.num29);
             this.jour29.Controls.Add(this.astro29);
             this.jour29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour29.Location = new System.Drawing.Point(920, 401);
+            this.jour29.Location = new System.Drawing.Point(939, 332);
             this.jour29.Margin = new System.Windows.Forms.Padding(4);
             this.jour29.Name = "jour29";
             this.jour29.Size = new System.Drawing.Size(93, 86);
@@ -1564,12 +1533,23 @@
             this.num29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num29.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro29
+            // 
+            this.astro29.Image = ((System.Drawing.Image)(resources.GetObject("astro29.Image")));
+            this.astro29.Location = new System.Drawing.Point(4, 4);
+            this.astro29.Margin = new System.Windows.Forms.Padding(4);
+            this.astro29.Name = "astro29";
+            this.astro29.Size = new System.Drawing.Size(32, 30);
+            this.astro29.TabIndex = 0;
+            this.astro29.TabStop = false;
+            this.astro29.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour49
             // 
             this.jour49.Controls.Add(this.num49);
             this.jour49.Controls.Add(this.astro49);
             this.jour49.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour49.Location = new System.Drawing.Point(920, 588);
+            this.jour49.Location = new System.Drawing.Point(939, 519);
             this.jour49.Margin = new System.Windows.Forms.Padding(4);
             this.jour49.Name = "jour49";
             this.jour49.Size = new System.Drawing.Size(93, 86);
@@ -1592,12 +1572,23 @@
             this.num49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num49.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro49
+            // 
+            this.astro49.Image = ((System.Drawing.Image)(resources.GetObject("astro49.Image")));
+            this.astro49.Location = new System.Drawing.Point(4, 4);
+            this.astro49.Margin = new System.Windows.Forms.Padding(4);
+            this.astro49.Name = "astro49";
+            this.astro49.Size = new System.Drawing.Size(32, 30);
+            this.astro49.TabIndex = 0;
+            this.astro49.TabStop = false;
+            this.astro49.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour28
             // 
             this.jour28.Controls.Add(this.num28);
             this.jour28.Controls.Add(this.astro28);
             this.jour28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour28.Location = new System.Drawing.Point(818, 401);
+            this.jour28.Location = new System.Drawing.Point(837, 332);
             this.jour28.Margin = new System.Windows.Forms.Padding(4);
             this.jour28.Name = "jour28";
             this.jour28.Size = new System.Drawing.Size(93, 86);
@@ -1620,12 +1611,23 @@
             this.num28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num28.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro28
+            // 
+            this.astro28.Image = ((System.Drawing.Image)(resources.GetObject("astro28.Image")));
+            this.astro28.Location = new System.Drawing.Point(4, 4);
+            this.astro28.Margin = new System.Windows.Forms.Padding(4);
+            this.astro28.Name = "astro28";
+            this.astro28.Size = new System.Drawing.Size(32, 30);
+            this.astro28.TabIndex = 0;
+            this.astro28.TabStop = false;
+            this.astro28.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour39
             // 
             this.jour39.Controls.Add(this.num39);
             this.jour39.Controls.Add(this.astro39);
             this.jour39.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour39.Location = new System.Drawing.Point(920, 495);
+            this.jour39.Location = new System.Drawing.Point(939, 426);
             this.jour39.Margin = new System.Windows.Forms.Padding(4);
             this.jour39.Name = "jour39";
             this.jour39.Size = new System.Drawing.Size(93, 86);
@@ -1648,12 +1650,23 @@
             this.num39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num39.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro39
+            // 
+            this.astro39.Image = ((System.Drawing.Image)(resources.GetObject("astro39.Image")));
+            this.astro39.Location = new System.Drawing.Point(4, 4);
+            this.astro39.Margin = new System.Windows.Forms.Padding(4);
+            this.astro39.Name = "astro39";
+            this.astro39.Size = new System.Drawing.Size(32, 30);
+            this.astro39.TabIndex = 0;
+            this.astro39.TabStop = false;
+            this.astro39.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour27
             // 
             this.jour27.Controls.Add(this.num27);
             this.jour27.Controls.Add(this.astro27);
             this.jour27.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour27.Location = new System.Drawing.Point(717, 401);
+            this.jour27.Location = new System.Drawing.Point(736, 332);
             this.jour27.Margin = new System.Windows.Forms.Padding(4);
             this.jour27.Name = "jour27";
             this.jour27.Size = new System.Drawing.Size(93, 86);
@@ -1676,12 +1689,23 @@
             this.num27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num27.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro27
+            // 
+            this.astro27.Image = ((System.Drawing.Image)(resources.GetObject("astro27.Image")));
+            this.astro27.Location = new System.Drawing.Point(4, 4);
+            this.astro27.Margin = new System.Windows.Forms.Padding(4);
+            this.astro27.Name = "astro27";
+            this.astro27.Size = new System.Drawing.Size(32, 30);
+            this.astro27.TabIndex = 0;
+            this.astro27.TabStop = false;
+            this.astro27.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour48
             // 
             this.jour48.Controls.Add(this.num48);
             this.jour48.Controls.Add(this.astro48);
             this.jour48.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour48.Location = new System.Drawing.Point(818, 588);
+            this.jour48.Location = new System.Drawing.Point(837, 519);
             this.jour48.Margin = new System.Windows.Forms.Padding(4);
             this.jour48.Name = "jour48";
             this.jour48.Size = new System.Drawing.Size(93, 86);
@@ -1704,12 +1728,23 @@
             this.num48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num48.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro48
+            // 
+            this.astro48.Image = ((System.Drawing.Image)(resources.GetObject("astro48.Image")));
+            this.astro48.Location = new System.Drawing.Point(4, 4);
+            this.astro48.Margin = new System.Windows.Forms.Padding(4);
+            this.astro48.Name = "astro48";
+            this.astro48.Size = new System.Drawing.Size(32, 30);
+            this.astro48.TabIndex = 0;
+            this.astro48.TabStop = false;
+            this.astro48.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour26
             // 
             this.jour26.Controls.Add(this.num26);
             this.jour26.Controls.Add(this.astro26);
             this.jour26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour26.Location = new System.Drawing.Point(616, 401);
+            this.jour26.Location = new System.Drawing.Point(635, 332);
             this.jour26.Margin = new System.Windows.Forms.Padding(4);
             this.jour26.Name = "jour26";
             this.jour26.Size = new System.Drawing.Size(93, 86);
@@ -1732,12 +1767,23 @@
             this.num26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num26.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro26
+            // 
+            this.astro26.Image = ((System.Drawing.Image)(resources.GetObject("astro26.Image")));
+            this.astro26.Location = new System.Drawing.Point(4, 4);
+            this.astro26.Margin = new System.Windows.Forms.Padding(4);
+            this.astro26.Name = "astro26";
+            this.astro26.Size = new System.Drawing.Size(32, 30);
+            this.astro26.TabIndex = 0;
+            this.astro26.TabStop = false;
+            this.astro26.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour38
             // 
             this.jour38.Controls.Add(this.num38);
             this.jour38.Controls.Add(this.astro38);
             this.jour38.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour38.Location = new System.Drawing.Point(818, 495);
+            this.jour38.Location = new System.Drawing.Point(837, 426);
             this.jour38.Margin = new System.Windows.Forms.Padding(4);
             this.jour38.Name = "jour38";
             this.jour38.Size = new System.Drawing.Size(93, 86);
@@ -1760,12 +1806,23 @@
             this.num38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num38.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro38
+            // 
+            this.astro38.Image = ((System.Drawing.Image)(resources.GetObject("astro38.Image")));
+            this.astro38.Location = new System.Drawing.Point(4, 4);
+            this.astro38.Margin = new System.Windows.Forms.Padding(4);
+            this.astro38.Name = "astro38";
+            this.astro38.Size = new System.Drawing.Size(32, 30);
+            this.astro38.TabIndex = 0;
+            this.astro38.TabStop = false;
+            this.astro38.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour23
             // 
             this.jour23.Controls.Add(this.num23);
             this.jour23.Controls.Add(this.astro23);
             this.jour23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour23.Location = new System.Drawing.Point(312, 401);
+            this.jour23.Location = new System.Drawing.Point(331, 332);
             this.jour23.Margin = new System.Windows.Forms.Padding(4);
             this.jour23.Name = "jour23";
             this.jour23.Size = new System.Drawing.Size(93, 86);
@@ -1788,12 +1845,23 @@
             this.num23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num23.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro23
+            // 
+            this.astro23.Image = ((System.Drawing.Image)(resources.GetObject("astro23.Image")));
+            this.astro23.Location = new System.Drawing.Point(4, 4);
+            this.astro23.Margin = new System.Windows.Forms.Padding(4);
+            this.astro23.Name = "astro23";
+            this.astro23.Size = new System.Drawing.Size(32, 30);
+            this.astro23.TabIndex = 0;
+            this.astro23.TabStop = false;
+            this.astro23.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour47
             // 
             this.jour47.Controls.Add(this.num47);
             this.jour47.Controls.Add(this.astro47);
             this.jour47.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour47.Location = new System.Drawing.Point(717, 588);
+            this.jour47.Location = new System.Drawing.Point(736, 519);
             this.jour47.Margin = new System.Windows.Forms.Padding(4);
             this.jour47.Name = "jour47";
             this.jour47.Size = new System.Drawing.Size(93, 86);
@@ -1816,12 +1884,23 @@
             this.num47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num47.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro47
+            // 
+            this.astro47.Image = ((System.Drawing.Image)(resources.GetObject("astro47.Image")));
+            this.astro47.Location = new System.Drawing.Point(4, 4);
+            this.astro47.Margin = new System.Windows.Forms.Padding(4);
+            this.astro47.Name = "astro47";
+            this.astro47.Size = new System.Drawing.Size(32, 30);
+            this.astro47.TabIndex = 0;
+            this.astro47.TabStop = false;
+            this.astro47.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour25
             // 
             this.jour25.Controls.Add(this.num25);
             this.jour25.Controls.Add(this.astro25);
             this.jour25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour25.Location = new System.Drawing.Point(514, 401);
+            this.jour25.Location = new System.Drawing.Point(533, 332);
             this.jour25.Margin = new System.Windows.Forms.Padding(4);
             this.jour25.Name = "jour25";
             this.jour25.Size = new System.Drawing.Size(93, 86);
@@ -1844,12 +1923,23 @@
             this.num25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num25.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro25
+            // 
+            this.astro25.Image = ((System.Drawing.Image)(resources.GetObject("astro25.Image")));
+            this.astro25.Location = new System.Drawing.Point(4, 4);
+            this.astro25.Margin = new System.Windows.Forms.Padding(4);
+            this.astro25.Name = "astro25";
+            this.astro25.Size = new System.Drawing.Size(32, 30);
+            this.astro25.TabIndex = 0;
+            this.astro25.TabStop = false;
+            this.astro25.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour37
             // 
             this.jour37.Controls.Add(this.num37);
             this.jour37.Controls.Add(this.astro37);
             this.jour37.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour37.Location = new System.Drawing.Point(717, 495);
+            this.jour37.Location = new System.Drawing.Point(736, 426);
             this.jour37.Margin = new System.Windows.Forms.Padding(4);
             this.jour37.Name = "jour37";
             this.jour37.Size = new System.Drawing.Size(93, 86);
@@ -1872,12 +1962,23 @@
             this.num37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num37.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro37
+            // 
+            this.astro37.Image = ((System.Drawing.Image)(resources.GetObject("astro37.Image")));
+            this.astro37.Location = new System.Drawing.Point(4, 4);
+            this.astro37.Margin = new System.Windows.Forms.Padding(4);
+            this.astro37.Name = "astro37";
+            this.astro37.Size = new System.Drawing.Size(32, 30);
+            this.astro37.TabIndex = 0;
+            this.astro37.TabStop = false;
+            this.astro37.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour22
             // 
             this.jour22.Controls.Add(this.num22);
             this.jour22.Controls.Add(this.astro22);
             this.jour22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour22.Location = new System.Drawing.Point(210, 401);
+            this.jour22.Location = new System.Drawing.Point(229, 332);
             this.jour22.Margin = new System.Windows.Forms.Padding(4);
             this.jour22.Name = "jour22";
             this.jour22.Size = new System.Drawing.Size(93, 86);
@@ -1900,12 +2001,23 @@
             this.num22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num22.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro22
+            // 
+            this.astro22.Image = ((System.Drawing.Image)(resources.GetObject("astro22.Image")));
+            this.astro22.Location = new System.Drawing.Point(4, 4);
+            this.astro22.Margin = new System.Windows.Forms.Padding(4);
+            this.astro22.Name = "astro22";
+            this.astro22.Size = new System.Drawing.Size(32, 30);
+            this.astro22.TabIndex = 0;
+            this.astro22.TabStop = false;
+            this.astro22.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour46
             // 
             this.jour46.Controls.Add(this.num46);
             this.jour46.Controls.Add(this.astro46);
             this.jour46.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour46.Location = new System.Drawing.Point(616, 588);
+            this.jour46.Location = new System.Drawing.Point(635, 519);
             this.jour46.Margin = new System.Windows.Forms.Padding(4);
             this.jour46.Name = "jour46";
             this.jour46.Size = new System.Drawing.Size(93, 86);
@@ -1928,12 +2040,23 @@
             this.num46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num46.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro46
+            // 
+            this.astro46.Image = ((System.Drawing.Image)(resources.GetObject("astro46.Image")));
+            this.astro46.Location = new System.Drawing.Point(4, 4);
+            this.astro46.Margin = new System.Windows.Forms.Padding(4);
+            this.astro46.Name = "astro46";
+            this.astro46.Size = new System.Drawing.Size(32, 30);
+            this.astro46.TabIndex = 0;
+            this.astro46.TabStop = false;
+            this.astro46.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour24
             // 
             this.jour24.Controls.Add(this.num24);
             this.jour24.Controls.Add(this.astro24);
             this.jour24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour24.Location = new System.Drawing.Point(413, 401);
+            this.jour24.Location = new System.Drawing.Point(432, 332);
             this.jour24.Margin = new System.Windows.Forms.Padding(4);
             this.jour24.Name = "jour24";
             this.jour24.Size = new System.Drawing.Size(93, 86);
@@ -1956,12 +2079,23 @@
             this.num24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num24.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro24
+            // 
+            this.astro24.Image = ((System.Drawing.Image)(resources.GetObject("astro24.Image")));
+            this.astro24.Location = new System.Drawing.Point(4, 4);
+            this.astro24.Margin = new System.Windows.Forms.Padding(4);
+            this.astro24.Name = "astro24";
+            this.astro24.Size = new System.Drawing.Size(32, 30);
+            this.astro24.TabIndex = 0;
+            this.astro24.TabStop = false;
+            this.astro24.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour36
             // 
             this.jour36.Controls.Add(this.num36);
             this.jour36.Controls.Add(this.astro36);
             this.jour36.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour36.Location = new System.Drawing.Point(616, 495);
+            this.jour36.Location = new System.Drawing.Point(635, 426);
             this.jour36.Margin = new System.Windows.Forms.Padding(4);
             this.jour36.Name = "jour36";
             this.jour36.Size = new System.Drawing.Size(93, 86);
@@ -1984,12 +2118,23 @@
             this.num36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num36.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro36
+            // 
+            this.astro36.Image = ((System.Drawing.Image)(resources.GetObject("astro36.Image")));
+            this.astro36.Location = new System.Drawing.Point(4, 4);
+            this.astro36.Margin = new System.Windows.Forms.Padding(4);
+            this.astro36.Name = "astro36";
+            this.astro36.Size = new System.Drawing.Size(32, 30);
+            this.astro36.TabIndex = 0;
+            this.astro36.TabStop = false;
+            this.astro36.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour21
             // 
             this.jour21.Controls.Add(this.num21);
             this.jour21.Controls.Add(this.astro21);
             this.jour21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour21.Location = new System.Drawing.Point(109, 401);
+            this.jour21.Location = new System.Drawing.Point(128, 332);
             this.jour21.Margin = new System.Windows.Forms.Padding(4);
             this.jour21.Name = "jour21";
             this.jour21.Size = new System.Drawing.Size(93, 86);
@@ -2012,12 +2157,23 @@
             this.num21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num21.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro21
+            // 
+            this.astro21.Image = ((System.Drawing.Image)(resources.GetObject("astro21.Image")));
+            this.astro21.Location = new System.Drawing.Point(4, 4);
+            this.astro21.Margin = new System.Windows.Forms.Padding(4);
+            this.astro21.Name = "astro21";
+            this.astro21.Size = new System.Drawing.Size(32, 30);
+            this.astro21.TabIndex = 0;
+            this.astro21.TabStop = false;
+            this.astro21.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour43
             // 
             this.jour43.Controls.Add(this.num43);
             this.jour43.Controls.Add(this.astro43);
             this.jour43.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour43.Location = new System.Drawing.Point(312, 588);
+            this.jour43.Location = new System.Drawing.Point(331, 519);
             this.jour43.Margin = new System.Windows.Forms.Padding(4);
             this.jour43.Name = "jour43";
             this.jour43.Size = new System.Drawing.Size(93, 86);
@@ -2040,12 +2196,23 @@
             this.num43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num43.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro43
+            // 
+            this.astro43.Image = ((System.Drawing.Image)(resources.GetObject("astro43.Image")));
+            this.astro43.Location = new System.Drawing.Point(4, 4);
+            this.astro43.Margin = new System.Windows.Forms.Padding(4);
+            this.astro43.Name = "astro43";
+            this.astro43.Size = new System.Drawing.Size(32, 30);
+            this.astro43.TabIndex = 0;
+            this.astro43.TabStop = false;
+            this.astro43.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour20
             // 
             this.jour20.Controls.Add(this.num20);
             this.jour20.Controls.Add(this.astro20);
             this.jour20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour20.Location = new System.Drawing.Point(1021, 308);
+            this.jour20.Location = new System.Drawing.Point(1040, 239);
             this.jour20.Margin = new System.Windows.Forms.Padding(4);
             this.jour20.Name = "jour20";
             this.jour20.Size = new System.Drawing.Size(93, 86);
@@ -2068,12 +2235,23 @@
             this.num20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num20.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro20
+            // 
+            this.astro20.Image = ((System.Drawing.Image)(resources.GetObject("astro20.Image")));
+            this.astro20.Location = new System.Drawing.Point(4, 4);
+            this.astro20.Margin = new System.Windows.Forms.Padding(4);
+            this.astro20.Name = "astro20";
+            this.astro20.Size = new System.Drawing.Size(32, 30);
+            this.astro20.TabIndex = 0;
+            this.astro20.TabStop = false;
+            this.astro20.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour33
             // 
             this.jour33.Controls.Add(this.num33);
             this.jour33.Controls.Add(this.astro33);
             this.jour33.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour33.Location = new System.Drawing.Point(312, 495);
+            this.jour33.Location = new System.Drawing.Point(331, 426);
             this.jour33.Margin = new System.Windows.Forms.Padding(4);
             this.jour33.Name = "jour33";
             this.jour33.Size = new System.Drawing.Size(93, 86);
@@ -2096,12 +2274,23 @@
             this.num33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num33.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro33
+            // 
+            this.astro33.Image = ((System.Drawing.Image)(resources.GetObject("astro33.Image")));
+            this.astro33.Location = new System.Drawing.Point(4, 4);
+            this.astro33.Margin = new System.Windows.Forms.Padding(4);
+            this.astro33.Name = "astro33";
+            this.astro33.Size = new System.Drawing.Size(32, 30);
+            this.astro33.TabIndex = 0;
+            this.astro33.TabStop = false;
+            this.astro33.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour10
             // 
             this.jour10.Controls.Add(this.num10);
             this.jour10.Controls.Add(this.astro10);
             this.jour10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour10.Location = new System.Drawing.Point(1021, 214);
+            this.jour10.Location = new System.Drawing.Point(1040, 145);
             this.jour10.Margin = new System.Windows.Forms.Padding(4);
             this.jour10.Name = "jour10";
             this.jour10.Size = new System.Drawing.Size(93, 86);
@@ -2124,12 +2313,23 @@
             this.num10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num10.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro10
+            // 
+            this.astro10.Image = ((System.Drawing.Image)(resources.GetObject("astro10.Image")));
+            this.astro10.Location = new System.Drawing.Point(4, 4);
+            this.astro10.Margin = new System.Windows.Forms.Padding(4);
+            this.astro10.Name = "astro10";
+            this.astro10.Size = new System.Drawing.Size(32, 30);
+            this.astro10.TabIndex = 0;
+            this.astro10.TabStop = false;
+            this.astro10.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour45
             // 
             this.jour45.Controls.Add(this.num45);
             this.jour45.Controls.Add(this.astro45);
             this.jour45.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour45.Location = new System.Drawing.Point(514, 588);
+            this.jour45.Location = new System.Drawing.Point(533, 519);
             this.jour45.Margin = new System.Windows.Forms.Padding(4);
             this.jour45.Name = "jour45";
             this.jour45.Size = new System.Drawing.Size(93, 86);
@@ -2152,12 +2352,23 @@
             this.num45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num45.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro45
+            // 
+            this.astro45.Image = ((System.Drawing.Image)(resources.GetObject("astro45.Image")));
+            this.astro45.Location = new System.Drawing.Point(4, 4);
+            this.astro45.Margin = new System.Windows.Forms.Padding(4);
+            this.astro45.Name = "astro45";
+            this.astro45.Size = new System.Drawing.Size(32, 30);
+            this.astro45.TabIndex = 0;
+            this.astro45.TabStop = false;
+            this.astro45.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour19
             // 
             this.jour19.Controls.Add(this.num19);
             this.jour19.Controls.Add(this.astro19);
             this.jour19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour19.Location = new System.Drawing.Point(920, 308);
+            this.jour19.Location = new System.Drawing.Point(939, 239);
             this.jour19.Margin = new System.Windows.Forms.Padding(4);
             this.jour19.Name = "jour19";
             this.jour19.Size = new System.Drawing.Size(93, 86);
@@ -2180,12 +2391,23 @@
             this.num19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num19.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro19
+            // 
+            this.astro19.Image = ((System.Drawing.Image)(resources.GetObject("astro19.Image")));
+            this.astro19.Location = new System.Drawing.Point(4, 4);
+            this.astro19.Margin = new System.Windows.Forms.Padding(4);
+            this.astro19.Name = "astro19";
+            this.astro19.Size = new System.Drawing.Size(32, 30);
+            this.astro19.TabIndex = 0;
+            this.astro19.TabStop = false;
+            this.astro19.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour35
             // 
             this.jour35.Controls.Add(this.num35);
             this.jour35.Controls.Add(this.astro35);
             this.jour35.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour35.Location = new System.Drawing.Point(514, 495);
+            this.jour35.Location = new System.Drawing.Point(533, 426);
             this.jour35.Margin = new System.Windows.Forms.Padding(4);
             this.jour35.Name = "jour35";
             this.jour35.Size = new System.Drawing.Size(93, 86);
@@ -2208,12 +2430,23 @@
             this.num35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num35.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro35
+            // 
+            this.astro35.Image = ((System.Drawing.Image)(resources.GetObject("astro35.Image")));
+            this.astro35.Location = new System.Drawing.Point(4, 4);
+            this.astro35.Margin = new System.Windows.Forms.Padding(4);
+            this.astro35.Name = "astro35";
+            this.astro35.Size = new System.Drawing.Size(32, 30);
+            this.astro35.TabIndex = 0;
+            this.astro35.TabStop = false;
+            this.astro35.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour9
             // 
             this.jour9.Controls.Add(this.num9);
             this.jour9.Controls.Add(this.astro9);
             this.jour9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour9.Location = new System.Drawing.Point(920, 214);
+            this.jour9.Location = new System.Drawing.Point(939, 145);
             this.jour9.Margin = new System.Windows.Forms.Padding(4);
             this.jour9.Name = "jour9";
             this.jour9.Size = new System.Drawing.Size(93, 86);
@@ -2236,12 +2469,23 @@
             this.num9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num9.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro9
+            // 
+            this.astro9.Image = ((System.Drawing.Image)(resources.GetObject("astro9.Image")));
+            this.astro9.Location = new System.Drawing.Point(4, 4);
+            this.astro9.Margin = new System.Windows.Forms.Padding(4);
+            this.astro9.Name = "astro9";
+            this.astro9.Size = new System.Drawing.Size(32, 30);
+            this.astro9.TabIndex = 0;
+            this.astro9.TabStop = false;
+            this.astro9.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour42
             // 
             this.jour42.Controls.Add(this.num42);
             this.jour42.Controls.Add(this.astro42);
             this.jour42.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour42.Location = new System.Drawing.Point(210, 588);
+            this.jour42.Location = new System.Drawing.Point(229, 519);
             this.jour42.Margin = new System.Windows.Forms.Padding(4);
             this.jour42.Name = "jour42";
             this.jour42.Size = new System.Drawing.Size(93, 86);
@@ -2264,12 +2508,23 @@
             this.num42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num42.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro42
+            // 
+            this.astro42.Image = ((System.Drawing.Image)(resources.GetObject("astro42.Image")));
+            this.astro42.Location = new System.Drawing.Point(4, 4);
+            this.astro42.Margin = new System.Windows.Forms.Padding(4);
+            this.astro42.Name = "astro42";
+            this.astro42.Size = new System.Drawing.Size(32, 30);
+            this.astro42.TabIndex = 0;
+            this.astro42.TabStop = false;
+            this.astro42.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour18
             // 
             this.jour18.Controls.Add(this.num18);
             this.jour18.Controls.Add(this.astro18);
             this.jour18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour18.Location = new System.Drawing.Point(818, 308);
+            this.jour18.Location = new System.Drawing.Point(837, 239);
             this.jour18.Margin = new System.Windows.Forms.Padding(4);
             this.jour18.Name = "jour18";
             this.jour18.Size = new System.Drawing.Size(93, 86);
@@ -2292,12 +2547,23 @@
             this.num18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num18.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro18
+            // 
+            this.astro18.Image = ((System.Drawing.Image)(resources.GetObject("astro18.Image")));
+            this.astro18.Location = new System.Drawing.Point(4, 4);
+            this.astro18.Margin = new System.Windows.Forms.Padding(4);
+            this.astro18.Name = "astro18";
+            this.astro18.Size = new System.Drawing.Size(32, 30);
+            this.astro18.TabIndex = 0;
+            this.astro18.TabStop = false;
+            this.astro18.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour44
             // 
             this.jour44.Controls.Add(this.num44);
             this.jour44.Controls.Add(this.astro44);
             this.jour44.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour44.Location = new System.Drawing.Point(413, 588);
+            this.jour44.Location = new System.Drawing.Point(432, 519);
             this.jour44.Margin = new System.Windows.Forms.Padding(4);
             this.jour44.Name = "jour44";
             this.jour44.Size = new System.Drawing.Size(93, 86);
@@ -2320,12 +2586,23 @@
             this.num44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num44.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro44
+            // 
+            this.astro44.Image = ((System.Drawing.Image)(resources.GetObject("astro44.Image")));
+            this.astro44.Location = new System.Drawing.Point(4, 4);
+            this.astro44.Margin = new System.Windows.Forms.Padding(4);
+            this.astro44.Name = "astro44";
+            this.astro44.Size = new System.Drawing.Size(32, 30);
+            this.astro44.TabIndex = 0;
+            this.astro44.TabStop = false;
+            this.astro44.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour8
             // 
             this.jour8.Controls.Add(this.num8);
             this.jour8.Controls.Add(this.astro8);
             this.jour8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour8.Location = new System.Drawing.Point(818, 214);
+            this.jour8.Location = new System.Drawing.Point(837, 145);
             this.jour8.Margin = new System.Windows.Forms.Padding(4);
             this.jour8.Name = "jour8";
             this.jour8.Size = new System.Drawing.Size(93, 86);
@@ -2348,12 +2625,23 @@
             this.num8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num8.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro8
+            // 
+            this.astro8.Image = ((System.Drawing.Image)(resources.GetObject("astro8.Image")));
+            this.astro8.Location = new System.Drawing.Point(4, 4);
+            this.astro8.Margin = new System.Windows.Forms.Padding(4);
+            this.astro8.Name = "astro8";
+            this.astro8.Size = new System.Drawing.Size(32, 30);
+            this.astro8.TabIndex = 0;
+            this.astro8.TabStop = false;
+            this.astro8.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour32
             // 
             this.jour32.Controls.Add(this.num32);
             this.jour32.Controls.Add(this.astro32);
             this.jour32.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour32.Location = new System.Drawing.Point(210, 495);
+            this.jour32.Location = new System.Drawing.Point(229, 426);
             this.jour32.Margin = new System.Windows.Forms.Padding(4);
             this.jour32.Name = "jour32";
             this.jour32.Size = new System.Drawing.Size(93, 86);
@@ -2376,12 +2664,23 @@
             this.num32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num32.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro32
+            // 
+            this.astro32.Image = ((System.Drawing.Image)(resources.GetObject("astro32.Image")));
+            this.astro32.Location = new System.Drawing.Point(4, 4);
+            this.astro32.Margin = new System.Windows.Forms.Padding(4);
+            this.astro32.Name = "astro32";
+            this.astro32.Size = new System.Drawing.Size(32, 30);
+            this.astro32.TabIndex = 0;
+            this.astro32.TabStop = false;
+            this.astro32.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour41
             // 
             this.jour41.Controls.Add(this.num41);
             this.jour41.Controls.Add(this.astro41);
             this.jour41.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour41.Location = new System.Drawing.Point(109, 588);
+            this.jour41.Location = new System.Drawing.Point(128, 519);
             this.jour41.Margin = new System.Windows.Forms.Padding(4);
             this.jour41.Name = "jour41";
             this.jour41.Size = new System.Drawing.Size(93, 86);
@@ -2404,12 +2703,23 @@
             this.num41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num41.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro41
+            // 
+            this.astro41.Image = ((System.Drawing.Image)(resources.GetObject("astro41.Image")));
+            this.astro41.Location = new System.Drawing.Point(4, 4);
+            this.astro41.Margin = new System.Windows.Forms.Padding(4);
+            this.astro41.Name = "astro41";
+            this.astro41.Size = new System.Drawing.Size(32, 30);
+            this.astro41.TabIndex = 0;
+            this.astro41.TabStop = false;
+            this.astro41.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour17
             // 
             this.jour17.Controls.Add(this.num17);
             this.jour17.Controls.Add(this.astro17);
             this.jour17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour17.Location = new System.Drawing.Point(717, 308);
+            this.jour17.Location = new System.Drawing.Point(736, 239);
             this.jour17.Margin = new System.Windows.Forms.Padding(4);
             this.jour17.Name = "jour17";
             this.jour17.Size = new System.Drawing.Size(93, 86);
@@ -2432,12 +2742,23 @@
             this.num17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num17.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro17
+            // 
+            this.astro17.Image = ((System.Drawing.Image)(resources.GetObject("astro17.Image")));
+            this.astro17.Location = new System.Drawing.Point(4, 4);
+            this.astro17.Margin = new System.Windows.Forms.Padding(4);
+            this.astro17.Name = "astro17";
+            this.astro17.Size = new System.Drawing.Size(32, 30);
+            this.astro17.TabIndex = 0;
+            this.astro17.TabStop = false;
+            this.astro17.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour34
             // 
             this.jour34.Controls.Add(this.num34);
             this.jour34.Controls.Add(this.astro34);
             this.jour34.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour34.Location = new System.Drawing.Point(413, 495);
+            this.jour34.Location = new System.Drawing.Point(432, 426);
             this.jour34.Margin = new System.Windows.Forms.Padding(4);
             this.jour34.Name = "jour34";
             this.jour34.Size = new System.Drawing.Size(93, 86);
@@ -2460,12 +2781,23 @@
             this.num34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num34.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro34
+            // 
+            this.astro34.Image = ((System.Drawing.Image)(resources.GetObject("astro34.Image")));
+            this.astro34.Location = new System.Drawing.Point(4, 4);
+            this.astro34.Margin = new System.Windows.Forms.Padding(4);
+            this.astro34.Name = "astro34";
+            this.astro34.Size = new System.Drawing.Size(32, 30);
+            this.astro34.TabIndex = 0;
+            this.astro34.TabStop = false;
+            this.astro34.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour7
             // 
             this.jour7.Controls.Add(this.num7);
             this.jour7.Controls.Add(this.astro7);
             this.jour7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour7.Location = new System.Drawing.Point(717, 214);
+            this.jour7.Location = new System.Drawing.Point(736, 145);
             this.jour7.Margin = new System.Windows.Forms.Padding(4);
             this.jour7.Name = "jour7";
             this.jour7.Size = new System.Drawing.Size(93, 86);
@@ -2488,12 +2820,23 @@
             this.num7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num7.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro7
+            // 
+            this.astro7.Image = ((System.Drawing.Image)(resources.GetObject("astro7.Image")));
+            this.astro7.Location = new System.Drawing.Point(4, 4);
+            this.astro7.Margin = new System.Windows.Forms.Padding(4);
+            this.astro7.Name = "astro7";
+            this.astro7.Size = new System.Drawing.Size(32, 30);
+            this.astro7.TabIndex = 0;
+            this.astro7.TabStop = false;
+            this.astro7.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour31
             // 
             this.jour31.Controls.Add(this.num31);
             this.jour31.Controls.Add(this.astro31);
             this.jour31.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour31.Location = new System.Drawing.Point(109, 495);
+            this.jour31.Location = new System.Drawing.Point(128, 426);
             this.jour31.Margin = new System.Windows.Forms.Padding(4);
             this.jour31.Name = "jour31";
             this.jour31.Size = new System.Drawing.Size(93, 86);
@@ -2516,12 +2859,23 @@
             this.num31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num31.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro31
+            // 
+            this.astro31.Image = ((System.Drawing.Image)(resources.GetObject("astro31.Image")));
+            this.astro31.Location = new System.Drawing.Point(4, 4);
+            this.astro31.Margin = new System.Windows.Forms.Padding(4);
+            this.astro31.Name = "astro31";
+            this.astro31.Size = new System.Drawing.Size(32, 30);
+            this.astro31.TabIndex = 0;
+            this.astro31.TabStop = false;
+            this.astro31.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour16
             // 
             this.jour16.Controls.Add(this.num16);
             this.jour16.Controls.Add(this.astro16);
             this.jour16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour16.Location = new System.Drawing.Point(616, 308);
+            this.jour16.Location = new System.Drawing.Point(635, 239);
             this.jour16.Margin = new System.Windows.Forms.Padding(4);
             this.jour16.Name = "jour16";
             this.jour16.Size = new System.Drawing.Size(93, 86);
@@ -2544,12 +2898,23 @@
             this.num16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num16.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro16
+            // 
+            this.astro16.Image = global::MarsApp.Properties.Resources.astronaute;
+            this.astro16.Location = new System.Drawing.Point(4, 4);
+            this.astro16.Margin = new System.Windows.Forms.Padding(4);
+            this.astro16.Name = "astro16";
+            this.astro16.Size = new System.Drawing.Size(32, 30);
+            this.astro16.TabIndex = 0;
+            this.astro16.TabStop = false;
+            this.astro16.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour6
             // 
             this.jour6.Controls.Add(this.num6);
             this.jour6.Controls.Add(this.astro6);
             this.jour6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour6.Location = new System.Drawing.Point(616, 214);
+            this.jour6.Location = new System.Drawing.Point(635, 145);
             this.jour6.Margin = new System.Windows.Forms.Padding(4);
             this.jour6.Name = "jour6";
             this.jour6.Size = new System.Drawing.Size(93, 86);
@@ -2572,12 +2937,23 @@
             this.num6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num6.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro6
+            // 
+            this.astro6.Image = ((System.Drawing.Image)(resources.GetObject("astro6.Image")));
+            this.astro6.Location = new System.Drawing.Point(4, 4);
+            this.astro6.Margin = new System.Windows.Forms.Padding(4);
+            this.astro6.Name = "astro6";
+            this.astro6.Size = new System.Drawing.Size(32, 30);
+            this.astro6.TabIndex = 0;
+            this.astro6.TabStop = false;
+            this.astro6.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour13
             // 
             this.jour13.Controls.Add(this.num13);
             this.jour13.Controls.Add(this.astro13);
             this.jour13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour13.Location = new System.Drawing.Point(312, 308);
+            this.jour13.Location = new System.Drawing.Point(331, 239);
             this.jour13.Margin = new System.Windows.Forms.Padding(4);
             this.jour13.Name = "jour13";
             this.jour13.Size = new System.Drawing.Size(93, 86);
@@ -2600,13 +2976,24 @@
             this.num13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num13.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro13
+            // 
+            this.astro13.Image = ((System.Drawing.Image)(resources.GetObject("astro13.Image")));
+            this.astro13.Location = new System.Drawing.Point(4, 4);
+            this.astro13.Margin = new System.Windows.Forms.Padding(4);
+            this.astro13.Name = "astro13";
+            this.astro13.Size = new System.Drawing.Size(32, 30);
+            this.astro13.TabIndex = 0;
+            this.astro13.TabStop = false;
+            this.astro13.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour3
             // 
             this.jour3.Controls.Add(this.num3);
             this.jour3.Controls.Add(this.label3);
             this.jour3.Controls.Add(this.astro3);
             this.jour3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour3.Location = new System.Drawing.Point(312, 214);
+            this.jour3.Location = new System.Drawing.Point(331, 145);
             this.jour3.Margin = new System.Windows.Forms.Padding(4);
             this.jour3.Name = "jour3";
             this.jour3.Size = new System.Drawing.Size(93, 86);
@@ -2645,12 +3032,23 @@
             this.label3.Text = "1";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // astro3
+            // 
+            this.astro3.Image = global::MarsApp.Properties.Resources.astronaute;
+            this.astro3.Location = new System.Drawing.Point(4, 4);
+            this.astro3.Margin = new System.Windows.Forms.Padding(4);
+            this.astro3.Name = "astro3";
+            this.astro3.Size = new System.Drawing.Size(32, 30);
+            this.astro3.TabIndex = 0;
+            this.astro3.TabStop = false;
+            this.astro3.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour15
             // 
             this.jour15.Controls.Add(this.num15);
             this.jour15.Controls.Add(this.astro15);
             this.jour15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour15.Location = new System.Drawing.Point(514, 308);
+            this.jour15.Location = new System.Drawing.Point(533, 239);
             this.jour15.Margin = new System.Windows.Forms.Padding(4);
             this.jour15.Name = "jour15";
             this.jour15.Size = new System.Drawing.Size(93, 86);
@@ -2673,12 +3071,23 @@
             this.num15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num15.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro15
+            // 
+            this.astro15.Image = ((System.Drawing.Image)(resources.GetObject("astro15.Image")));
+            this.astro15.Location = new System.Drawing.Point(4, 4);
+            this.astro15.Margin = new System.Windows.Forms.Padding(4);
+            this.astro15.Name = "astro15";
+            this.astro15.Size = new System.Drawing.Size(32, 30);
+            this.astro15.TabIndex = 0;
+            this.astro15.TabStop = false;
+            this.astro15.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour5
             // 
             this.jour5.Controls.Add(this.num5);
             this.jour5.Controls.Add(this.astro5);
             this.jour5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour5.Location = new System.Drawing.Point(514, 214);
+            this.jour5.Location = new System.Drawing.Point(533, 145);
             this.jour5.Margin = new System.Windows.Forms.Padding(4);
             this.jour5.Name = "jour5";
             this.jour5.Size = new System.Drawing.Size(93, 86);
@@ -2701,12 +3110,23 @@
             this.num5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num5.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro5
+            // 
+            this.astro5.Image = ((System.Drawing.Image)(resources.GetObject("astro5.Image")));
+            this.astro5.Location = new System.Drawing.Point(4, 4);
+            this.astro5.Margin = new System.Windows.Forms.Padding(4);
+            this.astro5.Name = "astro5";
+            this.astro5.Size = new System.Drawing.Size(32, 30);
+            this.astro5.TabIndex = 0;
+            this.astro5.TabStop = false;
+            this.astro5.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour12
             // 
             this.jour12.Controls.Add(this.num12);
             this.jour12.Controls.Add(this.astro12);
             this.jour12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour12.Location = new System.Drawing.Point(210, 308);
+            this.jour12.Location = new System.Drawing.Point(229, 239);
             this.jour12.Margin = new System.Windows.Forms.Padding(4);
             this.jour12.Name = "jour12";
             this.jour12.Size = new System.Drawing.Size(93, 86);
@@ -2729,12 +3149,23 @@
             this.num12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num12.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro12
+            // 
+            this.astro12.Image = ((System.Drawing.Image)(resources.GetObject("astro12.Image")));
+            this.astro12.Location = new System.Drawing.Point(4, 4);
+            this.astro12.Margin = new System.Windows.Forms.Padding(4);
+            this.astro12.Name = "astro12";
+            this.astro12.Size = new System.Drawing.Size(32, 30);
+            this.astro12.TabIndex = 0;
+            this.astro12.TabStop = false;
+            this.astro12.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour14
             // 
             this.jour14.Controls.Add(this.num14);
             this.jour14.Controls.Add(this.astro14);
             this.jour14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour14.Location = new System.Drawing.Point(413, 308);
+            this.jour14.Location = new System.Drawing.Point(432, 239);
             this.jour14.Margin = new System.Windows.Forms.Padding(4);
             this.jour14.Name = "jour14";
             this.jour14.Size = new System.Drawing.Size(93, 86);
@@ -2757,12 +3188,23 @@
             this.num14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num14.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro14
+            // 
+            this.astro14.Image = ((System.Drawing.Image)(resources.GetObject("astro14.Image")));
+            this.astro14.Location = new System.Drawing.Point(4, 4);
+            this.astro14.Margin = new System.Windows.Forms.Padding(4);
+            this.astro14.Name = "astro14";
+            this.astro14.Size = new System.Drawing.Size(32, 30);
+            this.astro14.TabIndex = 0;
+            this.astro14.TabStop = false;
+            this.astro14.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour2
             // 
             this.jour2.Controls.Add(this.num2);
             this.jour2.Controls.Add(this.astro2);
             this.jour2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour2.Location = new System.Drawing.Point(210, 214);
+            this.jour2.Location = new System.Drawing.Point(229, 145);
             this.jour2.Margin = new System.Windows.Forms.Padding(4);
             this.jour2.Name = "jour2";
             this.jour2.Size = new System.Drawing.Size(93, 86);
@@ -2786,12 +3228,23 @@
             this.num2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num2.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro2
+            // 
+            this.astro2.Image = global::MarsApp.Properties.Resources.astronaute;
+            this.astro2.Location = new System.Drawing.Point(4, 4);
+            this.astro2.Margin = new System.Windows.Forms.Padding(4);
+            this.astro2.Name = "astro2";
+            this.astro2.Size = new System.Drawing.Size(32, 30);
+            this.astro2.TabIndex = 0;
+            this.astro2.TabStop = false;
+            this.astro2.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour11
             // 
             this.jour11.Controls.Add(this.num11);
             this.jour11.Controls.Add(this.astro11);
             this.jour11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour11.Location = new System.Drawing.Point(109, 308);
+            this.jour11.Location = new System.Drawing.Point(128, 239);
             this.jour11.Margin = new System.Windows.Forms.Padding(4);
             this.jour11.Name = "jour11";
             this.jour11.Size = new System.Drawing.Size(93, 86);
@@ -2814,6 +3267,17 @@
             this.num11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num11.Click += new System.EventHandler(this.jour_click);
             // 
+            // astro11
+            // 
+            this.astro11.Image = ((System.Drawing.Image)(resources.GetObject("astro11.Image")));
+            this.astro11.Location = new System.Drawing.Point(4, 4);
+            this.astro11.Margin = new System.Windows.Forms.Padding(4);
+            this.astro11.Name = "astro11";
+            this.astro11.Size = new System.Drawing.Size(32, 30);
+            this.astro11.TabIndex = 0;
+            this.astro11.TabStop = false;
+            this.astro11.Click += new System.EventHandler(this.jour_click);
+            // 
             // jour4
             // 
             this.jour4.Controls.Add(this.num4);
@@ -2821,7 +3285,7 @@
             this.jour4.Controls.Add(this.astro4);
             this.jour4.Controls.Add(this.label4);
             this.jour4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour4.Location = new System.Drawing.Point(413, 214);
+            this.jour4.Location = new System.Drawing.Point(432, 145);
             this.jour4.Margin = new System.Windows.Forms.Padding(4);
             this.jour4.Name = "jour4";
             this.jour4.Size = new System.Drawing.Size(93, 86);
@@ -2859,6 +3323,17 @@
             this.label2.Text = "2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // astro4
+            // 
+            this.astro4.Image = ((System.Drawing.Image)(resources.GetObject("astro4.Image")));
+            this.astro4.Location = new System.Drawing.Point(4, 4);
+            this.astro4.Margin = new System.Windows.Forms.Padding(4);
+            this.astro4.Name = "astro4";
+            this.astro4.Size = new System.Drawing.Size(32, 30);
+            this.astro4.TabIndex = 0;
+            this.astro4.TabStop = false;
+            this.astro4.Click += new System.EventHandler(this.jour_click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -2880,7 +3355,7 @@
             this.jour1.Controls.Add(this.num1);
             this.jour1.Controls.Add(this.astro1);
             this.jour1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.jour1.Location = new System.Drawing.Point(109, 214);
+            this.jour1.Location = new System.Drawing.Point(128, 145);
             this.jour1.Margin = new System.Windows.Forms.Padding(4);
             this.jour1.Name = "jour1";
             this.jour1.Size = new System.Drawing.Size(93, 86);
@@ -2904,924 +3379,6 @@
             this.num1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.num1.Click += new System.EventHandler(this.jour_click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(53)))));
-            this.panel2.Controls.Add(this.suivant);
-            this.panel2.Controls.Add(this.precedent);
-            this.panel2.Location = new System.Drawing.Point(91, 126);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1042, 614);
-            this.panel2.TabIndex = 197;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(53)))));
-            this.panel3.Location = new System.Drawing.Point(1213, 126);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(382, 706);
-            this.panel3.TabIndex = 198;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::MarsApp.Properties.Resources.icon_50px_Mars;
-            this.pictureBox2.Location = new System.Drawing.Point(7, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 32);
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            // 
-            // recherche
-            // 
-            this.recherche.BackColor = System.Drawing.Color.Transparent;
-            this.recherche.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.recherche.Image = global::MarsApp.Properties.Resources.grosseLoupe;
-            this.recherche.Location = new System.Drawing.Point(1283, 839);
-            this.recherche.Margin = new System.Windows.Forms.Padding(4);
-            this.recherche.Name = "recherche";
-            this.recherche.Size = new System.Drawing.Size(85, 79);
-            this.recherche.TabIndex = 195;
-            this.recherche.TabStop = false;
-            this.recherche.Click += new System.EventHandler(this.recherche_Click);
-            // 
-            // h24img
-            // 
-            this.h24img.BackColor = System.Drawing.Color.Transparent;
-            this.h24img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h24img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h24img.Location = new System.Drawing.Point(1222, 790);
-            this.h24img.Margin = new System.Windows.Forms.Padding(4);
-            this.h24img.Name = "h24img";
-            this.h24img.Size = new System.Drawing.Size(21, 20);
-            this.h24img.TabIndex = 194;
-            this.h24img.TabStop = false;
-            // 
-            // modifAstro
-            // 
-            this.modifAstro.BackColor = System.Drawing.Color.Transparent;
-            this.modifAstro.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.modifAstro.Image = global::MarsApp.Properties.Resources.minipen;
-            this.modifAstro.Location = new System.Drawing.Point(946, 80);
-            this.modifAstro.Margin = new System.Windows.Forms.Padding(6);
-            this.modifAstro.Name = "modifAstro";
-            this.modifAstro.Padding = new System.Windows.Forms.Padding(6);
-            this.modifAstro.Size = new System.Drawing.Size(30, 28);
-            this.modifAstro.TabIndex = 191;
-            this.modifAstro.TabStop = false;
-            this.modifAstro.Click += new System.EventHandler(this.modifAstro_Click);
-            // 
-            // ajoutAstro
-            // 
-            this.ajoutAstro.BackColor = System.Drawing.Color.Transparent;
-            this.ajoutAstro.Image = global::MarsApp.Properties.Resources.smallcross;
-            this.ajoutAstro.Location = new System.Drawing.Point(946, 48);
-            this.ajoutAstro.Margin = new System.Windows.Forms.Padding(4);
-            this.ajoutAstro.Name = "ajoutAstro";
-            this.ajoutAstro.Padding = new System.Windows.Forms.Padding(6);
-            this.ajoutAstro.Size = new System.Drawing.Size(30, 28);
-            this.ajoutAstro.TabIndex = 190;
-            this.ajoutAstro.TabStop = false;
-            this.ajoutAstro.Click += new System.EventHandler(this.ajoutAstro_Click);
-            // 
-            // h23img
-            // 
-            this.h23img.BackColor = System.Drawing.Color.Transparent;
-            this.h23img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h23img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h23img.Location = new System.Drawing.Point(1222, 763);
-            this.h23img.Margin = new System.Windows.Forms.Padding(4);
-            this.h23img.Name = "h23img";
-            this.h23img.Size = new System.Drawing.Size(21, 20);
-            this.h23img.TabIndex = 189;
-            this.h23img.TabStop = false;
-            // 
-            // h22img
-            // 
-            this.h22img.BackColor = System.Drawing.Color.Transparent;
-            this.h22img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h22img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h22img.Location = new System.Drawing.Point(1222, 736);
-            this.h22img.Margin = new System.Windows.Forms.Padding(4);
-            this.h22img.Name = "h22img";
-            this.h22img.Size = new System.Drawing.Size(21, 20);
-            this.h22img.TabIndex = 187;
-            this.h22img.TabStop = false;
-            // 
-            // h21img
-            // 
-            this.h21img.BackColor = System.Drawing.Color.Transparent;
-            this.h21img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h21img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h21img.Location = new System.Drawing.Point(1222, 709);
-            this.h21img.Margin = new System.Windows.Forms.Padding(4);
-            this.h21img.Name = "h21img";
-            this.h21img.Size = new System.Drawing.Size(21, 20);
-            this.h21img.TabIndex = 185;
-            this.h21img.TabStop = false;
-            // 
-            // h20img
-            // 
-            this.h20img.BackColor = System.Drawing.Color.Transparent;
-            this.h20img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h20img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h20img.Location = new System.Drawing.Point(1222, 682);
-            this.h20img.Margin = new System.Windows.Forms.Padding(4);
-            this.h20img.Name = "h20img";
-            this.h20img.Size = new System.Drawing.Size(21, 20);
-            this.h20img.TabIndex = 183;
-            this.h20img.TabStop = false;
-            // 
-            // h19img
-            // 
-            this.h19img.BackColor = System.Drawing.Color.Transparent;
-            this.h19img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h19img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h19img.Location = new System.Drawing.Point(1222, 652);
-            this.h19img.Margin = new System.Windows.Forms.Padding(4);
-            this.h19img.Name = "h19img";
-            this.h19img.Size = new System.Drawing.Size(21, 20);
-            this.h19img.TabIndex = 181;
-            this.h19img.TabStop = false;
-            // 
-            // h18img
-            // 
-            this.h18img.BackColor = System.Drawing.Color.Transparent;
-            this.h18img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h18img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h18img.Location = new System.Drawing.Point(1222, 625);
-            this.h18img.Margin = new System.Windows.Forms.Padding(4);
-            this.h18img.Name = "h18img";
-            this.h18img.Size = new System.Drawing.Size(21, 20);
-            this.h18img.TabIndex = 179;
-            this.h18img.TabStop = false;
-            // 
-            // h17img
-            // 
-            this.h17img.BackColor = System.Drawing.Color.Transparent;
-            this.h17img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h17img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h17img.Location = new System.Drawing.Point(1222, 598);
-            this.h17img.Margin = new System.Windows.Forms.Padding(4);
-            this.h17img.Name = "h17img";
-            this.h17img.Size = new System.Drawing.Size(21, 20);
-            this.h17img.TabIndex = 177;
-            this.h17img.TabStop = false;
-            // 
-            // h16img
-            // 
-            this.h16img.BackColor = System.Drawing.Color.Transparent;
-            this.h16img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h16img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h16img.Location = new System.Drawing.Point(1222, 571);
-            this.h16img.Margin = new System.Windows.Forms.Padding(4);
-            this.h16img.Name = "h16img";
-            this.h16img.Size = new System.Drawing.Size(21, 20);
-            this.h16img.TabIndex = 175;
-            this.h16img.TabStop = false;
-            // 
-            // h15img
-            // 
-            this.h15img.BackColor = System.Drawing.Color.Transparent;
-            this.h15img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h15img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h15img.Location = new System.Drawing.Point(1222, 544);
-            this.h15img.Margin = new System.Windows.Forms.Padding(4);
-            this.h15img.Name = "h15img";
-            this.h15img.Size = new System.Drawing.Size(21, 20);
-            this.h15img.TabIndex = 173;
-            this.h15img.TabStop = false;
-            // 
-            // h14img
-            // 
-            this.h14img.BackColor = System.Drawing.Color.Transparent;
-            this.h14img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h14img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h14img.Location = new System.Drawing.Point(1222, 517);
-            this.h14img.Margin = new System.Windows.Forms.Padding(4);
-            this.h14img.Name = "h14img";
-            this.h14img.Size = new System.Drawing.Size(21, 20);
-            this.h14img.TabIndex = 171;
-            this.h14img.TabStop = false;
-            // 
-            // h13img
-            // 
-            this.h13img.BackColor = System.Drawing.Color.Transparent;
-            this.h13img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h13img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h13img.Location = new System.Drawing.Point(1222, 490);
-            this.h13img.Margin = new System.Windows.Forms.Padding(4);
-            this.h13img.Name = "h13img";
-            this.h13img.Size = new System.Drawing.Size(21, 20);
-            this.h13img.TabIndex = 169;
-            this.h13img.TabStop = false;
-            // 
-            // h12img
-            // 
-            this.h12img.BackColor = System.Drawing.Color.Transparent;
-            this.h12img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h12img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h12img.Location = new System.Drawing.Point(1222, 463);
-            this.h12img.Margin = new System.Windows.Forms.Padding(4);
-            this.h12img.Name = "h12img";
-            this.h12img.Size = new System.Drawing.Size(21, 20);
-            this.h12img.TabIndex = 167;
-            this.h12img.TabStop = false;
-            // 
-            // h11img
-            // 
-            this.h11img.BackColor = System.Drawing.Color.Transparent;
-            this.h11img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h11img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h11img.Location = new System.Drawing.Point(1222, 436);
-            this.h11img.Margin = new System.Windows.Forms.Padding(4);
-            this.h11img.Name = "h11img";
-            this.h11img.Size = new System.Drawing.Size(21, 20);
-            this.h11img.TabIndex = 165;
-            this.h11img.TabStop = false;
-            // 
-            // h10img
-            // 
-            this.h10img.BackColor = System.Drawing.Color.Transparent;
-            this.h10img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h10img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h10img.Location = new System.Drawing.Point(1222, 409);
-            this.h10img.Margin = new System.Windows.Forms.Padding(4);
-            this.h10img.Name = "h10img";
-            this.h10img.Size = new System.Drawing.Size(21, 20);
-            this.h10img.TabIndex = 163;
-            this.h10img.TabStop = false;
-            // 
-            // h9img
-            // 
-            this.h9img.BackColor = System.Drawing.Color.Transparent;
-            this.h9img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h9img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h9img.Location = new System.Drawing.Point(1222, 382);
-            this.h9img.Margin = new System.Windows.Forms.Padding(4);
-            this.h9img.Name = "h9img";
-            this.h9img.Size = new System.Drawing.Size(21, 20);
-            this.h9img.TabIndex = 161;
-            this.h9img.TabStop = false;
-            // 
-            // h8img
-            // 
-            this.h8img.BackColor = System.Drawing.Color.Transparent;
-            this.h8img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h8img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h8img.Location = new System.Drawing.Point(1222, 355);
-            this.h8img.Margin = new System.Windows.Forms.Padding(4);
-            this.h8img.Name = "h8img";
-            this.h8img.Size = new System.Drawing.Size(21, 20);
-            this.h8img.TabIndex = 159;
-            this.h8img.TabStop = false;
-            // 
-            // h7img
-            // 
-            this.h7img.BackColor = System.Drawing.Color.Transparent;
-            this.h7img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h7img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h7img.Location = new System.Drawing.Point(1222, 325);
-            this.h7img.Margin = new System.Windows.Forms.Padding(4);
-            this.h7img.Name = "h7img";
-            this.h7img.Size = new System.Drawing.Size(21, 20);
-            this.h7img.TabIndex = 157;
-            this.h7img.TabStop = false;
-            // 
-            // h6img
-            // 
-            this.h6img.BackColor = System.Drawing.Color.Transparent;
-            this.h6img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h6img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h6img.Location = new System.Drawing.Point(1222, 298);
-            this.h6img.Margin = new System.Windows.Forms.Padding(4);
-            this.h6img.Name = "h6img";
-            this.h6img.Size = new System.Drawing.Size(21, 20);
-            this.h6img.TabIndex = 155;
-            this.h6img.TabStop = false;
-            // 
-            // h5img
-            // 
-            this.h5img.BackColor = System.Drawing.Color.Transparent;
-            this.h5img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h5img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h5img.Location = new System.Drawing.Point(1222, 271);
-            this.h5img.Margin = new System.Windows.Forms.Padding(4);
-            this.h5img.Name = "h5img";
-            this.h5img.Size = new System.Drawing.Size(21, 20);
-            this.h5img.TabIndex = 153;
-            this.h5img.TabStop = false;
-            // 
-            // h4img
-            // 
-            this.h4img.BackColor = System.Drawing.Color.Transparent;
-            this.h4img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h4img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h4img.Location = new System.Drawing.Point(1222, 244);
-            this.h4img.Margin = new System.Windows.Forms.Padding(4);
-            this.h4img.Name = "h4img";
-            this.h4img.Size = new System.Drawing.Size(21, 20);
-            this.h4img.TabIndex = 151;
-            this.h4img.TabStop = false;
-            // 
-            // h3img
-            // 
-            this.h3img.BackColor = System.Drawing.Color.Transparent;
-            this.h3img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h3img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h3img.Location = new System.Drawing.Point(1222, 217);
-            this.h3img.Margin = new System.Windows.Forms.Padding(4);
-            this.h3img.Name = "h3img";
-            this.h3img.Size = new System.Drawing.Size(21, 20);
-            this.h3img.TabIndex = 149;
-            this.h3img.TabStop = false;
-            // 
-            // h2img
-            // 
-            this.h2img.BackColor = System.Drawing.Color.Transparent;
-            this.h2img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h2img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h2img.Location = new System.Drawing.Point(1222, 190);
-            this.h2img.Margin = new System.Windows.Forms.Padding(4);
-            this.h2img.Name = "h2img";
-            this.h2img.Size = new System.Drawing.Size(21, 20);
-            this.h2img.TabIndex = 147;
-            this.h2img.TabStop = false;
-            // 
-            // h1img
-            // 
-            this.h1img.BackColor = System.Drawing.Color.Transparent;
-            this.h1img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h1img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h1img.Location = new System.Drawing.Point(1222, 163);
-            this.h1img.Margin = new System.Windows.Forms.Padding(4);
-            this.h1img.Name = "h1img";
-            this.h1img.Size = new System.Drawing.Size(21, 20);
-            this.h1img.TabIndex = 145;
-            this.h1img.TabStop = false;
-            // 
-            // h0img
-            // 
-            this.h0img.BackColor = System.Drawing.Color.Transparent;
-            this.h0img.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.h0img.Image = global::MarsApp.Properties.Resources.astronaut16px;
-            this.h0img.Location = new System.Drawing.Point(1222, 135);
-            this.h0img.Margin = new System.Windows.Forms.Padding(4);
-            this.h0img.Name = "h0img";
-            this.h0img.Size = new System.Drawing.Size(21, 20);
-            this.h0img.TabIndex = 134;
-            this.h0img.TabStop = false;
-            // 
-            // map
-            // 
-            this.map.BackColor = System.Drawing.Color.Transparent;
-            this.map.Image = global::MarsApp.Properties.Resources.map1;
-            this.map.Location = new System.Drawing.Point(1441, 839);
-            this.map.Margin = new System.Windows.Forms.Padding(4);
-            this.map.Name = "map";
-            this.map.Size = new System.Drawing.Size(87, 101);
-            this.map.TabIndex = 141;
-            this.map.TabStop = false;
-            this.map.Click += new System.EventHandler(this.map_Click);
-            // 
-            // astro50
-            // 
-            this.astro50.Image = ((System.Drawing.Image)(resources.GetObject("astro50.Image")));
-            this.astro50.Location = new System.Drawing.Point(4, 4);
-            this.astro50.Margin = new System.Windows.Forms.Padding(4);
-            this.astro50.Name = "astro50";
-            this.astro50.Size = new System.Drawing.Size(32, 30);
-            this.astro50.TabIndex = 0;
-            this.astro50.TabStop = false;
-            this.astro50.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro30
-            // 
-            this.astro30.Image = ((System.Drawing.Image)(resources.GetObject("astro30.Image")));
-            this.astro30.Location = new System.Drawing.Point(4, 4);
-            this.astro30.Margin = new System.Windows.Forms.Padding(4);
-            this.astro30.Name = "astro30";
-            this.astro30.Size = new System.Drawing.Size(32, 30);
-            this.astro30.TabIndex = 0;
-            this.astro30.TabStop = false;
-            this.astro30.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro40
-            // 
-            this.astro40.Image = ((System.Drawing.Image)(resources.GetObject("astro40.Image")));
-            this.astro40.Location = new System.Drawing.Point(4, 4);
-            this.astro40.Margin = new System.Windows.Forms.Padding(4);
-            this.astro40.Name = "astro40";
-            this.astro40.Size = new System.Drawing.Size(32, 30);
-            this.astro40.TabIndex = 0;
-            this.astro40.TabStop = false;
-            this.astro40.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro29
-            // 
-            this.astro29.Image = ((System.Drawing.Image)(resources.GetObject("astro29.Image")));
-            this.astro29.Location = new System.Drawing.Point(4, 4);
-            this.astro29.Margin = new System.Windows.Forms.Padding(4);
-            this.astro29.Name = "astro29";
-            this.astro29.Size = new System.Drawing.Size(32, 30);
-            this.astro29.TabIndex = 0;
-            this.astro29.TabStop = false;
-            this.astro29.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro49
-            // 
-            this.astro49.Image = ((System.Drawing.Image)(resources.GetObject("astro49.Image")));
-            this.astro49.Location = new System.Drawing.Point(4, 4);
-            this.astro49.Margin = new System.Windows.Forms.Padding(4);
-            this.astro49.Name = "astro49";
-            this.astro49.Size = new System.Drawing.Size(32, 30);
-            this.astro49.TabIndex = 0;
-            this.astro49.TabStop = false;
-            this.astro49.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro28
-            // 
-            this.astro28.Image = ((System.Drawing.Image)(resources.GetObject("astro28.Image")));
-            this.astro28.Location = new System.Drawing.Point(4, 4);
-            this.astro28.Margin = new System.Windows.Forms.Padding(4);
-            this.astro28.Name = "astro28";
-            this.astro28.Size = new System.Drawing.Size(32, 30);
-            this.astro28.TabIndex = 0;
-            this.astro28.TabStop = false;
-            this.astro28.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro39
-            // 
-            this.astro39.Image = ((System.Drawing.Image)(resources.GetObject("astro39.Image")));
-            this.astro39.Location = new System.Drawing.Point(4, 4);
-            this.astro39.Margin = new System.Windows.Forms.Padding(4);
-            this.astro39.Name = "astro39";
-            this.astro39.Size = new System.Drawing.Size(32, 30);
-            this.astro39.TabIndex = 0;
-            this.astro39.TabStop = false;
-            this.astro39.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro27
-            // 
-            this.astro27.Image = ((System.Drawing.Image)(resources.GetObject("astro27.Image")));
-            this.astro27.Location = new System.Drawing.Point(4, 4);
-            this.astro27.Margin = new System.Windows.Forms.Padding(4);
-            this.astro27.Name = "astro27";
-            this.astro27.Size = new System.Drawing.Size(32, 30);
-            this.astro27.TabIndex = 0;
-            this.astro27.TabStop = false;
-            this.astro27.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro48
-            // 
-            this.astro48.Image = ((System.Drawing.Image)(resources.GetObject("astro48.Image")));
-            this.astro48.Location = new System.Drawing.Point(4, 4);
-            this.astro48.Margin = new System.Windows.Forms.Padding(4);
-            this.astro48.Name = "astro48";
-            this.astro48.Size = new System.Drawing.Size(32, 30);
-            this.astro48.TabIndex = 0;
-            this.astro48.TabStop = false;
-            this.astro48.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro26
-            // 
-            this.astro26.Image = ((System.Drawing.Image)(resources.GetObject("astro26.Image")));
-            this.astro26.Location = new System.Drawing.Point(4, 4);
-            this.astro26.Margin = new System.Windows.Forms.Padding(4);
-            this.astro26.Name = "astro26";
-            this.astro26.Size = new System.Drawing.Size(32, 30);
-            this.astro26.TabIndex = 0;
-            this.astro26.TabStop = false;
-            this.astro26.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro38
-            // 
-            this.astro38.Image = ((System.Drawing.Image)(resources.GetObject("astro38.Image")));
-            this.astro38.Location = new System.Drawing.Point(4, 4);
-            this.astro38.Margin = new System.Windows.Forms.Padding(4);
-            this.astro38.Name = "astro38";
-            this.astro38.Size = new System.Drawing.Size(32, 30);
-            this.astro38.TabIndex = 0;
-            this.astro38.TabStop = false;
-            this.astro38.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro23
-            // 
-            this.astro23.Image = ((System.Drawing.Image)(resources.GetObject("astro23.Image")));
-            this.astro23.Location = new System.Drawing.Point(4, 4);
-            this.astro23.Margin = new System.Windows.Forms.Padding(4);
-            this.astro23.Name = "astro23";
-            this.astro23.Size = new System.Drawing.Size(32, 30);
-            this.astro23.TabIndex = 0;
-            this.astro23.TabStop = false;
-            this.astro23.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro47
-            // 
-            this.astro47.Image = ((System.Drawing.Image)(resources.GetObject("astro47.Image")));
-            this.astro47.Location = new System.Drawing.Point(4, 4);
-            this.astro47.Margin = new System.Windows.Forms.Padding(4);
-            this.astro47.Name = "astro47";
-            this.astro47.Size = new System.Drawing.Size(32, 30);
-            this.astro47.TabIndex = 0;
-            this.astro47.TabStop = false;
-            this.astro47.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro25
-            // 
-            this.astro25.Image = ((System.Drawing.Image)(resources.GetObject("astro25.Image")));
-            this.astro25.Location = new System.Drawing.Point(4, 4);
-            this.astro25.Margin = new System.Windows.Forms.Padding(4);
-            this.astro25.Name = "astro25";
-            this.astro25.Size = new System.Drawing.Size(32, 30);
-            this.astro25.TabIndex = 0;
-            this.astro25.TabStop = false;
-            this.astro25.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro37
-            // 
-            this.astro37.Image = ((System.Drawing.Image)(resources.GetObject("astro37.Image")));
-            this.astro37.Location = new System.Drawing.Point(4, 4);
-            this.astro37.Margin = new System.Windows.Forms.Padding(4);
-            this.astro37.Name = "astro37";
-            this.astro37.Size = new System.Drawing.Size(32, 30);
-            this.astro37.TabIndex = 0;
-            this.astro37.TabStop = false;
-            this.astro37.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro22
-            // 
-            this.astro22.Image = ((System.Drawing.Image)(resources.GetObject("astro22.Image")));
-            this.astro22.Location = new System.Drawing.Point(4, 4);
-            this.astro22.Margin = new System.Windows.Forms.Padding(4);
-            this.astro22.Name = "astro22";
-            this.astro22.Size = new System.Drawing.Size(32, 30);
-            this.astro22.TabIndex = 0;
-            this.astro22.TabStop = false;
-            this.astro22.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro46
-            // 
-            this.astro46.Image = ((System.Drawing.Image)(resources.GetObject("astro46.Image")));
-            this.astro46.Location = new System.Drawing.Point(4, 4);
-            this.astro46.Margin = new System.Windows.Forms.Padding(4);
-            this.astro46.Name = "astro46";
-            this.astro46.Size = new System.Drawing.Size(32, 30);
-            this.astro46.TabIndex = 0;
-            this.astro46.TabStop = false;
-            this.astro46.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro24
-            // 
-            this.astro24.Image = ((System.Drawing.Image)(resources.GetObject("astro24.Image")));
-            this.astro24.Location = new System.Drawing.Point(4, 4);
-            this.astro24.Margin = new System.Windows.Forms.Padding(4);
-            this.astro24.Name = "astro24";
-            this.astro24.Size = new System.Drawing.Size(32, 30);
-            this.astro24.TabIndex = 0;
-            this.astro24.TabStop = false;
-            this.astro24.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro36
-            // 
-            this.astro36.Image = ((System.Drawing.Image)(resources.GetObject("astro36.Image")));
-            this.astro36.Location = new System.Drawing.Point(4, 4);
-            this.astro36.Margin = new System.Windows.Forms.Padding(4);
-            this.astro36.Name = "astro36";
-            this.astro36.Size = new System.Drawing.Size(32, 30);
-            this.astro36.TabIndex = 0;
-            this.astro36.TabStop = false;
-            this.astro36.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro21
-            // 
-            this.astro21.Image = ((System.Drawing.Image)(resources.GetObject("astro21.Image")));
-            this.astro21.Location = new System.Drawing.Point(4, 4);
-            this.astro21.Margin = new System.Windows.Forms.Padding(4);
-            this.astro21.Name = "astro21";
-            this.astro21.Size = new System.Drawing.Size(32, 30);
-            this.astro21.TabIndex = 0;
-            this.astro21.TabStop = false;
-            this.astro21.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro43
-            // 
-            this.astro43.Image = ((System.Drawing.Image)(resources.GetObject("astro43.Image")));
-            this.astro43.Location = new System.Drawing.Point(4, 4);
-            this.astro43.Margin = new System.Windows.Forms.Padding(4);
-            this.astro43.Name = "astro43";
-            this.astro43.Size = new System.Drawing.Size(32, 30);
-            this.astro43.TabIndex = 0;
-            this.astro43.TabStop = false;
-            this.astro43.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro20
-            // 
-            this.astro20.Image = ((System.Drawing.Image)(resources.GetObject("astro20.Image")));
-            this.astro20.Location = new System.Drawing.Point(4, 4);
-            this.astro20.Margin = new System.Windows.Forms.Padding(4);
-            this.astro20.Name = "astro20";
-            this.astro20.Size = new System.Drawing.Size(32, 30);
-            this.astro20.TabIndex = 0;
-            this.astro20.TabStop = false;
-            this.astro20.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro33
-            // 
-            this.astro33.Image = ((System.Drawing.Image)(resources.GetObject("astro33.Image")));
-            this.astro33.Location = new System.Drawing.Point(4, 4);
-            this.astro33.Margin = new System.Windows.Forms.Padding(4);
-            this.astro33.Name = "astro33";
-            this.astro33.Size = new System.Drawing.Size(32, 30);
-            this.astro33.TabIndex = 0;
-            this.astro33.TabStop = false;
-            this.astro33.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro10
-            // 
-            this.astro10.Image = ((System.Drawing.Image)(resources.GetObject("astro10.Image")));
-            this.astro10.Location = new System.Drawing.Point(4, 4);
-            this.astro10.Margin = new System.Windows.Forms.Padding(4);
-            this.astro10.Name = "astro10";
-            this.astro10.Size = new System.Drawing.Size(32, 30);
-            this.astro10.TabIndex = 0;
-            this.astro10.TabStop = false;
-            this.astro10.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro45
-            // 
-            this.astro45.Image = ((System.Drawing.Image)(resources.GetObject("astro45.Image")));
-            this.astro45.Location = new System.Drawing.Point(4, 4);
-            this.astro45.Margin = new System.Windows.Forms.Padding(4);
-            this.astro45.Name = "astro45";
-            this.astro45.Size = new System.Drawing.Size(32, 30);
-            this.astro45.TabIndex = 0;
-            this.astro45.TabStop = false;
-            this.astro45.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro19
-            // 
-            this.astro19.Image = ((System.Drawing.Image)(resources.GetObject("astro19.Image")));
-            this.astro19.Location = new System.Drawing.Point(4, 4);
-            this.astro19.Margin = new System.Windows.Forms.Padding(4);
-            this.astro19.Name = "astro19";
-            this.astro19.Size = new System.Drawing.Size(32, 30);
-            this.astro19.TabIndex = 0;
-            this.astro19.TabStop = false;
-            this.astro19.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro35
-            // 
-            this.astro35.Image = ((System.Drawing.Image)(resources.GetObject("astro35.Image")));
-            this.astro35.Location = new System.Drawing.Point(4, 4);
-            this.astro35.Margin = new System.Windows.Forms.Padding(4);
-            this.astro35.Name = "astro35";
-            this.astro35.Size = new System.Drawing.Size(32, 30);
-            this.astro35.TabIndex = 0;
-            this.astro35.TabStop = false;
-            this.astro35.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro9
-            // 
-            this.astro9.Image = ((System.Drawing.Image)(resources.GetObject("astro9.Image")));
-            this.astro9.Location = new System.Drawing.Point(4, 4);
-            this.astro9.Margin = new System.Windows.Forms.Padding(4);
-            this.astro9.Name = "astro9";
-            this.astro9.Size = new System.Drawing.Size(32, 30);
-            this.astro9.TabIndex = 0;
-            this.astro9.TabStop = false;
-            this.astro9.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro42
-            // 
-            this.astro42.Image = ((System.Drawing.Image)(resources.GetObject("astro42.Image")));
-            this.astro42.Location = new System.Drawing.Point(4, 4);
-            this.astro42.Margin = new System.Windows.Forms.Padding(4);
-            this.astro42.Name = "astro42";
-            this.astro42.Size = new System.Drawing.Size(32, 30);
-            this.astro42.TabIndex = 0;
-            this.astro42.TabStop = false;
-            this.astro42.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro18
-            // 
-            this.astro18.Image = ((System.Drawing.Image)(resources.GetObject("astro18.Image")));
-            this.astro18.Location = new System.Drawing.Point(4, 4);
-            this.astro18.Margin = new System.Windows.Forms.Padding(4);
-            this.astro18.Name = "astro18";
-            this.astro18.Size = new System.Drawing.Size(32, 30);
-            this.astro18.TabIndex = 0;
-            this.astro18.TabStop = false;
-            this.astro18.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro44
-            // 
-            this.astro44.Image = ((System.Drawing.Image)(resources.GetObject("astro44.Image")));
-            this.astro44.Location = new System.Drawing.Point(4, 4);
-            this.astro44.Margin = new System.Windows.Forms.Padding(4);
-            this.astro44.Name = "astro44";
-            this.astro44.Size = new System.Drawing.Size(32, 30);
-            this.astro44.TabIndex = 0;
-            this.astro44.TabStop = false;
-            this.astro44.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro8
-            // 
-            this.astro8.Image = ((System.Drawing.Image)(resources.GetObject("astro8.Image")));
-            this.astro8.Location = new System.Drawing.Point(4, 4);
-            this.astro8.Margin = new System.Windows.Forms.Padding(4);
-            this.astro8.Name = "astro8";
-            this.astro8.Size = new System.Drawing.Size(32, 30);
-            this.astro8.TabIndex = 0;
-            this.astro8.TabStop = false;
-            this.astro8.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro32
-            // 
-            this.astro32.Image = ((System.Drawing.Image)(resources.GetObject("astro32.Image")));
-            this.astro32.Location = new System.Drawing.Point(4, 4);
-            this.astro32.Margin = new System.Windows.Forms.Padding(4);
-            this.astro32.Name = "astro32";
-            this.astro32.Size = new System.Drawing.Size(32, 30);
-            this.astro32.TabIndex = 0;
-            this.astro32.TabStop = false;
-            this.astro32.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro41
-            // 
-            this.astro41.Image = ((System.Drawing.Image)(resources.GetObject("astro41.Image")));
-            this.astro41.Location = new System.Drawing.Point(4, 4);
-            this.astro41.Margin = new System.Windows.Forms.Padding(4);
-            this.astro41.Name = "astro41";
-            this.astro41.Size = new System.Drawing.Size(32, 30);
-            this.astro41.TabIndex = 0;
-            this.astro41.TabStop = false;
-            this.astro41.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro17
-            // 
-            this.astro17.Image = ((System.Drawing.Image)(resources.GetObject("astro17.Image")));
-            this.astro17.Location = new System.Drawing.Point(4, 4);
-            this.astro17.Margin = new System.Windows.Forms.Padding(4);
-            this.astro17.Name = "astro17";
-            this.astro17.Size = new System.Drawing.Size(32, 30);
-            this.astro17.TabIndex = 0;
-            this.astro17.TabStop = false;
-            this.astro17.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro34
-            // 
-            this.astro34.Image = ((System.Drawing.Image)(resources.GetObject("astro34.Image")));
-            this.astro34.Location = new System.Drawing.Point(4, 4);
-            this.astro34.Margin = new System.Windows.Forms.Padding(4);
-            this.astro34.Name = "astro34";
-            this.astro34.Size = new System.Drawing.Size(32, 30);
-            this.astro34.TabIndex = 0;
-            this.astro34.TabStop = false;
-            this.astro34.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro7
-            // 
-            this.astro7.Image = ((System.Drawing.Image)(resources.GetObject("astro7.Image")));
-            this.astro7.Location = new System.Drawing.Point(4, 4);
-            this.astro7.Margin = new System.Windows.Forms.Padding(4);
-            this.astro7.Name = "astro7";
-            this.astro7.Size = new System.Drawing.Size(32, 30);
-            this.astro7.TabIndex = 0;
-            this.astro7.TabStop = false;
-            this.astro7.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro31
-            // 
-            this.astro31.Image = ((System.Drawing.Image)(resources.GetObject("astro31.Image")));
-            this.astro31.Location = new System.Drawing.Point(4, 4);
-            this.astro31.Margin = new System.Windows.Forms.Padding(4);
-            this.astro31.Name = "astro31";
-            this.astro31.Size = new System.Drawing.Size(32, 30);
-            this.astro31.TabIndex = 0;
-            this.astro31.TabStop = false;
-            this.astro31.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro16
-            // 
-            this.astro16.Image = global::MarsApp.Properties.Resources.astronaute;
-            this.astro16.Location = new System.Drawing.Point(4, 4);
-            this.astro16.Margin = new System.Windows.Forms.Padding(4);
-            this.astro16.Name = "astro16";
-            this.astro16.Size = new System.Drawing.Size(32, 30);
-            this.astro16.TabIndex = 0;
-            this.astro16.TabStop = false;
-            this.astro16.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro6
-            // 
-            this.astro6.Image = ((System.Drawing.Image)(resources.GetObject("astro6.Image")));
-            this.astro6.Location = new System.Drawing.Point(4, 4);
-            this.astro6.Margin = new System.Windows.Forms.Padding(4);
-            this.astro6.Name = "astro6";
-            this.astro6.Size = new System.Drawing.Size(32, 30);
-            this.astro6.TabIndex = 0;
-            this.astro6.TabStop = false;
-            this.astro6.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro13
-            // 
-            this.astro13.Image = ((System.Drawing.Image)(resources.GetObject("astro13.Image")));
-            this.astro13.Location = new System.Drawing.Point(4, 4);
-            this.astro13.Margin = new System.Windows.Forms.Padding(4);
-            this.astro13.Name = "astro13";
-            this.astro13.Size = new System.Drawing.Size(32, 30);
-            this.astro13.TabIndex = 0;
-            this.astro13.TabStop = false;
-            this.astro13.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro3
-            // 
-            this.astro3.Image = global::MarsApp.Properties.Resources.astronaute;
-            this.astro3.Location = new System.Drawing.Point(4, 4);
-            this.astro3.Margin = new System.Windows.Forms.Padding(4);
-            this.astro3.Name = "astro3";
-            this.astro3.Size = new System.Drawing.Size(32, 30);
-            this.astro3.TabIndex = 0;
-            this.astro3.TabStop = false;
-            this.astro3.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro15
-            // 
-            this.astro15.Image = ((System.Drawing.Image)(resources.GetObject("astro15.Image")));
-            this.astro15.Location = new System.Drawing.Point(4, 4);
-            this.astro15.Margin = new System.Windows.Forms.Padding(4);
-            this.astro15.Name = "astro15";
-            this.astro15.Size = new System.Drawing.Size(32, 30);
-            this.astro15.TabIndex = 0;
-            this.astro15.TabStop = false;
-            this.astro15.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro5
-            // 
-            this.astro5.Image = ((System.Drawing.Image)(resources.GetObject("astro5.Image")));
-            this.astro5.Location = new System.Drawing.Point(4, 4);
-            this.astro5.Margin = new System.Windows.Forms.Padding(4);
-            this.astro5.Name = "astro5";
-            this.astro5.Size = new System.Drawing.Size(32, 30);
-            this.astro5.TabIndex = 0;
-            this.astro5.TabStop = false;
-            this.astro5.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro12
-            // 
-            this.astro12.Image = ((System.Drawing.Image)(resources.GetObject("astro12.Image")));
-            this.astro12.Location = new System.Drawing.Point(4, 4);
-            this.astro12.Margin = new System.Windows.Forms.Padding(4);
-            this.astro12.Name = "astro12";
-            this.astro12.Size = new System.Drawing.Size(32, 30);
-            this.astro12.TabIndex = 0;
-            this.astro12.TabStop = false;
-            this.astro12.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro14
-            // 
-            this.astro14.Image = ((System.Drawing.Image)(resources.GetObject("astro14.Image")));
-            this.astro14.Location = new System.Drawing.Point(4, 4);
-            this.astro14.Margin = new System.Windows.Forms.Padding(4);
-            this.astro14.Name = "astro14";
-            this.astro14.Size = new System.Drawing.Size(32, 30);
-            this.astro14.TabIndex = 0;
-            this.astro14.TabStop = false;
-            this.astro14.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro2
-            // 
-            this.astro2.Image = global::MarsApp.Properties.Resources.astronaute;
-            this.astro2.Location = new System.Drawing.Point(4, 4);
-            this.astro2.Margin = new System.Windows.Forms.Padding(4);
-            this.astro2.Name = "astro2";
-            this.astro2.Size = new System.Drawing.Size(32, 30);
-            this.astro2.TabIndex = 0;
-            this.astro2.TabStop = false;
-            this.astro2.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro11
-            // 
-            this.astro11.Image = ((System.Drawing.Image)(resources.GetObject("astro11.Image")));
-            this.astro11.Location = new System.Drawing.Point(4, 4);
-            this.astro11.Margin = new System.Windows.Forms.Padding(4);
-            this.astro11.Name = "astro11";
-            this.astro11.Size = new System.Drawing.Size(32, 30);
-            this.astro11.TabIndex = 0;
-            this.astro11.TabStop = false;
-            this.astro11.Click += new System.EventHandler(this.jour_click);
-            // 
-            // astro4
-            // 
-            this.astro4.Image = ((System.Drawing.Image)(resources.GetObject("astro4.Image")));
-            this.astro4.Location = new System.Drawing.Point(4, 4);
-            this.astro4.Margin = new System.Windows.Forms.Padding(4);
-            this.astro4.Name = "astro4";
-            this.astro4.Size = new System.Drawing.Size(32, 30);
-            this.astro4.TabIndex = 0;
-            this.astro4.TabStop = false;
-            this.astro4.Click += new System.EventHandler(this.jour_click);
-            // 
             // astro1
             // 
             this.astro1.BackColor = System.Drawing.Color.Transparent;
@@ -3834,16 +3391,370 @@
             this.astro1.TabStop = false;
             this.astro1.Click += new System.EventHandler(this.jour_click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
+            this.panel1.Controls.Add(this.periodeNum);
+            this.panel1.Location = new System.Drawing.Point(115, 72);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1029, 596);
+            this.panel1.TabIndex = 196;
+            // 
+            // recherche
+            // 
+            this.recherche.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.recherche.Image = global::MarsApp.Properties.Resources.grosseLoupe;
+            this.recherche.Location = new System.Drawing.Point(1311, 763);
+            this.recherche.Margin = new System.Windows.Forms.Padding(4);
+            this.recherche.Name = "recherche";
+            this.recherche.Size = new System.Drawing.Size(75, 70);
+            this.recherche.TabIndex = 195;
+            this.recherche.TabStop = false;
+            this.recherche.Click += new System.EventHandler(this.recherche_Click);
+            // 
+            // h24img
+            // 
+            this.h24img.BackColor = System.Drawing.Color.White;
+            this.h24img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h24img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h24img.Location = new System.Drawing.Point(1241, 721);
+            this.h24img.Margin = new System.Windows.Forms.Padding(4);
+            this.h24img.Name = "h24img";
+            this.h24img.Size = new System.Drawing.Size(21, 20);
+            this.h24img.TabIndex = 194;
+            this.h24img.TabStop = false;
+            // 
+            // modifAstro
+            // 
+            this.modifAstro.Image = global::MarsApp.Properties.Resources.minipen;
+            this.modifAstro.Location = new System.Drawing.Point(957, 44);
+            this.modifAstro.Margin = new System.Windows.Forms.Padding(4);
+            this.modifAstro.Name = "modifAstro";
+            this.modifAstro.Size = new System.Drawing.Size(21, 20);
+            this.modifAstro.TabIndex = 191;
+            this.modifAstro.TabStop = false;
+            this.modifAstro.Click += new System.EventHandler(this.modifAstro_Click);
+            // 
+            // ajoutAstro
+            // 
+            this.ajoutAstro.Image = global::MarsApp.Properties.Resources.smallcross;
+            this.ajoutAstro.Location = new System.Drawing.Point(957, 11);
+            this.ajoutAstro.Margin = new System.Windows.Forms.Padding(4);
+            this.ajoutAstro.Name = "ajoutAstro";
+            this.ajoutAstro.Size = new System.Drawing.Size(21, 20);
+            this.ajoutAstro.TabIndex = 190;
+            this.ajoutAstro.TabStop = false;
+            this.ajoutAstro.Click += new System.EventHandler(this.ajoutAstro_Click);
+            // 
+            // h23img
+            // 
+            this.h23img.BackColor = System.Drawing.Color.White;
+            this.h23img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h23img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h23img.Location = new System.Drawing.Point(1241, 694);
+            this.h23img.Margin = new System.Windows.Forms.Padding(4);
+            this.h23img.Name = "h23img";
+            this.h23img.Size = new System.Drawing.Size(21, 20);
+            this.h23img.TabIndex = 189;
+            this.h23img.TabStop = false;
+            // 
+            // h22img
+            // 
+            this.h22img.BackColor = System.Drawing.Color.White;
+            this.h22img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h22img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h22img.Location = new System.Drawing.Point(1241, 667);
+            this.h22img.Margin = new System.Windows.Forms.Padding(4);
+            this.h22img.Name = "h22img";
+            this.h22img.Size = new System.Drawing.Size(21, 20);
+            this.h22img.TabIndex = 187;
+            this.h22img.TabStop = false;
+            // 
+            // h21img
+            // 
+            this.h21img.BackColor = System.Drawing.Color.White;
+            this.h21img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h21img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h21img.Location = new System.Drawing.Point(1241, 640);
+            this.h21img.Margin = new System.Windows.Forms.Padding(4);
+            this.h21img.Name = "h21img";
+            this.h21img.Size = new System.Drawing.Size(21, 20);
+            this.h21img.TabIndex = 185;
+            this.h21img.TabStop = false;
+            // 
+            // h20img
+            // 
+            this.h20img.BackColor = System.Drawing.Color.White;
+            this.h20img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h20img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h20img.Location = new System.Drawing.Point(1241, 613);
+            this.h20img.Margin = new System.Windows.Forms.Padding(4);
+            this.h20img.Name = "h20img";
+            this.h20img.Size = new System.Drawing.Size(21, 20);
+            this.h20img.TabIndex = 183;
+            this.h20img.TabStop = false;
+            // 
+            // h19img
+            // 
+            this.h19img.BackColor = System.Drawing.Color.White;
+            this.h19img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h19img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h19img.Location = new System.Drawing.Point(1241, 583);
+            this.h19img.Margin = new System.Windows.Forms.Padding(4);
+            this.h19img.Name = "h19img";
+            this.h19img.Size = new System.Drawing.Size(21, 20);
+            this.h19img.TabIndex = 181;
+            this.h19img.TabStop = false;
+            // 
+            // h18img
+            // 
+            this.h18img.BackColor = System.Drawing.Color.White;
+            this.h18img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h18img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h18img.Location = new System.Drawing.Point(1241, 556);
+            this.h18img.Margin = new System.Windows.Forms.Padding(4);
+            this.h18img.Name = "h18img";
+            this.h18img.Size = new System.Drawing.Size(21, 20);
+            this.h18img.TabIndex = 179;
+            this.h18img.TabStop = false;
+            // 
+            // h17img
+            // 
+            this.h17img.BackColor = System.Drawing.Color.White;
+            this.h17img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h17img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h17img.Location = new System.Drawing.Point(1241, 529);
+            this.h17img.Margin = new System.Windows.Forms.Padding(4);
+            this.h17img.Name = "h17img";
+            this.h17img.Size = new System.Drawing.Size(21, 20);
+            this.h17img.TabIndex = 177;
+            this.h17img.TabStop = false;
+            // 
+            // h16img
+            // 
+            this.h16img.BackColor = System.Drawing.Color.White;
+            this.h16img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h16img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h16img.Location = new System.Drawing.Point(1241, 502);
+            this.h16img.Margin = new System.Windows.Forms.Padding(4);
+            this.h16img.Name = "h16img";
+            this.h16img.Size = new System.Drawing.Size(21, 20);
+            this.h16img.TabIndex = 175;
+            this.h16img.TabStop = false;
+            // 
+            // h15img
+            // 
+            this.h15img.BackColor = System.Drawing.Color.White;
+            this.h15img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h15img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h15img.Location = new System.Drawing.Point(1241, 475);
+            this.h15img.Margin = new System.Windows.Forms.Padding(4);
+            this.h15img.Name = "h15img";
+            this.h15img.Size = new System.Drawing.Size(21, 20);
+            this.h15img.TabIndex = 173;
+            this.h15img.TabStop = false;
+            // 
+            // h14img
+            // 
+            this.h14img.BackColor = System.Drawing.Color.White;
+            this.h14img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h14img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h14img.Location = new System.Drawing.Point(1241, 448);
+            this.h14img.Margin = new System.Windows.Forms.Padding(4);
+            this.h14img.Name = "h14img";
+            this.h14img.Size = new System.Drawing.Size(21, 20);
+            this.h14img.TabIndex = 171;
+            this.h14img.TabStop = false;
+            // 
+            // h13img
+            // 
+            this.h13img.BackColor = System.Drawing.Color.White;
+            this.h13img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h13img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h13img.Location = new System.Drawing.Point(1241, 421);
+            this.h13img.Margin = new System.Windows.Forms.Padding(4);
+            this.h13img.Name = "h13img";
+            this.h13img.Size = new System.Drawing.Size(21, 20);
+            this.h13img.TabIndex = 169;
+            this.h13img.TabStop = false;
+            // 
+            // h12img
+            // 
+            this.h12img.BackColor = System.Drawing.Color.White;
+            this.h12img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h12img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h12img.Location = new System.Drawing.Point(1241, 394);
+            this.h12img.Margin = new System.Windows.Forms.Padding(4);
+            this.h12img.Name = "h12img";
+            this.h12img.Size = new System.Drawing.Size(21, 20);
+            this.h12img.TabIndex = 167;
+            this.h12img.TabStop = false;
+            // 
+            // h11img
+            // 
+            this.h11img.BackColor = System.Drawing.Color.White;
+            this.h11img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h11img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h11img.Location = new System.Drawing.Point(1241, 367);
+            this.h11img.Margin = new System.Windows.Forms.Padding(4);
+            this.h11img.Name = "h11img";
+            this.h11img.Size = new System.Drawing.Size(21, 20);
+            this.h11img.TabIndex = 165;
+            this.h11img.TabStop = false;
+            // 
+            // h10img
+            // 
+            this.h10img.BackColor = System.Drawing.Color.White;
+            this.h10img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h10img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h10img.Location = new System.Drawing.Point(1241, 340);
+            this.h10img.Margin = new System.Windows.Forms.Padding(4);
+            this.h10img.Name = "h10img";
+            this.h10img.Size = new System.Drawing.Size(21, 20);
+            this.h10img.TabIndex = 163;
+            this.h10img.TabStop = false;
+            // 
+            // h9img
+            // 
+            this.h9img.BackColor = System.Drawing.Color.White;
+            this.h9img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h9img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h9img.Location = new System.Drawing.Point(1241, 313);
+            this.h9img.Margin = new System.Windows.Forms.Padding(4);
+            this.h9img.Name = "h9img";
+            this.h9img.Size = new System.Drawing.Size(21, 20);
+            this.h9img.TabIndex = 161;
+            this.h9img.TabStop = false;
+            // 
+            // h8img
+            // 
+            this.h8img.BackColor = System.Drawing.Color.White;
+            this.h8img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h8img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h8img.Location = new System.Drawing.Point(1241, 286);
+            this.h8img.Margin = new System.Windows.Forms.Padding(4);
+            this.h8img.Name = "h8img";
+            this.h8img.Size = new System.Drawing.Size(21, 20);
+            this.h8img.TabIndex = 159;
+            this.h8img.TabStop = false;
+            // 
+            // h7img
+            // 
+            this.h7img.BackColor = System.Drawing.Color.White;
+            this.h7img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h7img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h7img.Location = new System.Drawing.Point(1241, 256);
+            this.h7img.Margin = new System.Windows.Forms.Padding(4);
+            this.h7img.Name = "h7img";
+            this.h7img.Size = new System.Drawing.Size(21, 20);
+            this.h7img.TabIndex = 157;
+            this.h7img.TabStop = false;
+            // 
+            // h6img
+            // 
+            this.h6img.BackColor = System.Drawing.Color.White;
+            this.h6img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h6img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h6img.Location = new System.Drawing.Point(1241, 229);
+            this.h6img.Margin = new System.Windows.Forms.Padding(4);
+            this.h6img.Name = "h6img";
+            this.h6img.Size = new System.Drawing.Size(21, 20);
+            this.h6img.TabIndex = 155;
+            this.h6img.TabStop = false;
+            // 
+            // h5img
+            // 
+            this.h5img.BackColor = System.Drawing.Color.White;
+            this.h5img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h5img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h5img.Location = new System.Drawing.Point(1241, 202);
+            this.h5img.Margin = new System.Windows.Forms.Padding(4);
+            this.h5img.Name = "h5img";
+            this.h5img.Size = new System.Drawing.Size(21, 20);
+            this.h5img.TabIndex = 153;
+            this.h5img.TabStop = false;
+            // 
+            // h4img
+            // 
+            this.h4img.BackColor = System.Drawing.Color.White;
+            this.h4img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h4img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h4img.Location = new System.Drawing.Point(1241, 175);
+            this.h4img.Margin = new System.Windows.Forms.Padding(4);
+            this.h4img.Name = "h4img";
+            this.h4img.Size = new System.Drawing.Size(21, 20);
+            this.h4img.TabIndex = 151;
+            this.h4img.TabStop = false;
+            // 
+            // h3img
+            // 
+            this.h3img.BackColor = System.Drawing.Color.White;
+            this.h3img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h3img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h3img.Location = new System.Drawing.Point(1241, 148);
+            this.h3img.Margin = new System.Windows.Forms.Padding(4);
+            this.h3img.Name = "h3img";
+            this.h3img.Size = new System.Drawing.Size(21, 20);
+            this.h3img.TabIndex = 149;
+            this.h3img.TabStop = false;
+            // 
+            // h2img
+            // 
+            this.h2img.BackColor = System.Drawing.Color.White;
+            this.h2img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h2img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h2img.Location = new System.Drawing.Point(1241, 121);
+            this.h2img.Margin = new System.Windows.Forms.Padding(4);
+            this.h2img.Name = "h2img";
+            this.h2img.Size = new System.Drawing.Size(21, 20);
+            this.h2img.TabIndex = 147;
+            this.h2img.TabStop = false;
+            // 
+            // h1img
+            // 
+            this.h1img.BackColor = System.Drawing.Color.White;
+            this.h1img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h1img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h1img.Location = new System.Drawing.Point(1241, 94);
+            this.h1img.Margin = new System.Windows.Forms.Padding(4);
+            this.h1img.Name = "h1img";
+            this.h1img.Size = new System.Drawing.Size(21, 20);
+            this.h1img.TabIndex = 145;
+            this.h1img.TabStop = false;
+            // 
+            // h0img
+            // 
+            this.h0img.BackColor = System.Drawing.Color.White;
+            this.h0img.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.h0img.Image = global::MarsApp.Properties.Resources.astronaut16px;
+            this.h0img.Location = new System.Drawing.Point(1241, 66);
+            this.h0img.Margin = new System.Windows.Forms.Padding(4);
+            this.h0img.Name = "h0img";
+            this.h0img.Size = new System.Drawing.Size(21, 20);
+            this.h0img.TabIndex = 134;
+            this.h0img.TabStop = false;
+            // 
+            // map
+            // 
+            this.map.BackColor = System.Drawing.Color.Transparent;
+            this.map.Image = global::MarsApp.Properties.Resources.map_icon;
+            this.map.Location = new System.Drawing.Point(1447, 763);
+            this.map.Margin = new System.Windows.Forms.Padding(4);
+            this.map.Name = "map";
+            this.map.Size = new System.Drawing.Size(69, 70);
+            this.map.TabIndex = 141;
+            this.map.TabStop = false;
+            this.map.Click += new System.EventHandler(this.map_Click);
+            // 
             // suivant
             // 
-            this.suivant.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.suivant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(53)))));
             this.suivant.Cursor = System.Windows.Forms.Cursors.Hand;
             this.suivant.Image = global::MarsApp.Properties.Resources.right;
-            this.suivant.Location = new System.Drawing.Point(987, 27);
+            this.suivant.Location = new System.Drawing.Point(1091, 84);
             this.suivant.Margin = new System.Windows.Forms.Padding(4);
             this.suivant.Name = "suivant";
-            this.suivant.Size = new System.Drawing.Size(46, 41);
+            this.suivant.Size = new System.Drawing.Size(43, 39);
             this.suivant.TabIndex = 78;
             this.suivant.TabStop = false;
             this.suivant.Tag = "1";
@@ -3851,10 +3762,10 @@
             // 
             // precedent
             // 
-            this.precedent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(44)))), ((int)(((byte)(53)))));
+            this.precedent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
             this.precedent.Cursor = System.Windows.Forms.Cursors.Hand;
             this.precedent.Image = global::MarsApp.Properties.Resources.left;
-            this.precedent.Location = new System.Drawing.Point(18, 27);
+            this.precedent.Location = new System.Drawing.Point(128, 84);
             this.precedent.Margin = new System.Windows.Forms.Padding(4);
             this.precedent.Name = "precedent";
             this.precedent.Size = new System.Drawing.Size(43, 39);
@@ -3868,8 +3779,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(1676, 953);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1651, 898);
             this.Controls.Add(this.recherche);
             this.Controls.Add(this.h24img);
             this.Controls.Add(this.actH24);
@@ -3963,7 +3873,8 @@
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.numJourneeLabel);
-            this.Controls.Add(this.periodeNum);
+            this.Controls.Add(this.suivant);
+            this.Controls.Add(this.precedent);
             this.Controls.Add(this.jour50);
             this.Controls.Add(this.jour30);
             this.Controls.Add(this.jour40);
@@ -4014,121 +3925,167 @@
             this.Controls.Add(this.jour11);
             this.Controls.Add(this.jour4);
             this.Controls.Add(this.jour1);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "CalendrierMission";
             this.Text = "Calendrier de la mission";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CalendrierMission_FormClosed);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.descriptionJournee.ResumeLayout(false);
             this.descriptionJournee.PerformLayout();
             this.jour50.ResumeLayout(false);
             this.jour50.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro50)).EndInit();
             this.jour30.ResumeLayout(false);
             this.jour30.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro30)).EndInit();
             this.jour40.ResumeLayout(false);
             this.jour40.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro40)).EndInit();
             this.jour29.ResumeLayout(false);
             this.jour29.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro29)).EndInit();
             this.jour49.ResumeLayout(false);
             this.jour49.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro49)).EndInit();
             this.jour28.ResumeLayout(false);
             this.jour28.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro28)).EndInit();
             this.jour39.ResumeLayout(false);
             this.jour39.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro39)).EndInit();
             this.jour27.ResumeLayout(false);
             this.jour27.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro27)).EndInit();
             this.jour48.ResumeLayout(false);
             this.jour48.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro48)).EndInit();
             this.jour26.ResumeLayout(false);
             this.jour26.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro26)).EndInit();
             this.jour38.ResumeLayout(false);
             this.jour38.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro38)).EndInit();
             this.jour23.ResumeLayout(false);
             this.jour23.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro23)).EndInit();
             this.jour47.ResumeLayout(false);
             this.jour47.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro47)).EndInit();
             this.jour25.ResumeLayout(false);
             this.jour25.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro25)).EndInit();
             this.jour37.ResumeLayout(false);
             this.jour37.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro37)).EndInit();
             this.jour22.ResumeLayout(false);
             this.jour22.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro22)).EndInit();
             this.jour46.ResumeLayout(false);
             this.jour46.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro46)).EndInit();
             this.jour24.ResumeLayout(false);
             this.jour24.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro24)).EndInit();
             this.jour36.ResumeLayout(false);
             this.jour36.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro36)).EndInit();
             this.jour21.ResumeLayout(false);
             this.jour21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro21)).EndInit();
             this.jour43.ResumeLayout(false);
             this.jour43.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro43)).EndInit();
             this.jour20.ResumeLayout(false);
             this.jour20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro20)).EndInit();
             this.jour33.ResumeLayout(false);
             this.jour33.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro33)).EndInit();
             this.jour10.ResumeLayout(false);
             this.jour10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro10)).EndInit();
             this.jour45.ResumeLayout(false);
             this.jour45.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro45)).EndInit();
             this.jour19.ResumeLayout(false);
             this.jour19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro19)).EndInit();
             this.jour35.ResumeLayout(false);
             this.jour35.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro35)).EndInit();
             this.jour9.ResumeLayout(false);
             this.jour9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro9)).EndInit();
             this.jour42.ResumeLayout(false);
             this.jour42.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro42)).EndInit();
             this.jour18.ResumeLayout(false);
             this.jour18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro18)).EndInit();
             this.jour44.ResumeLayout(false);
             this.jour44.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro44)).EndInit();
             this.jour8.ResumeLayout(false);
             this.jour8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro8)).EndInit();
             this.jour32.ResumeLayout(false);
             this.jour32.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro32)).EndInit();
             this.jour41.ResumeLayout(false);
             this.jour41.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro41)).EndInit();
             this.jour17.ResumeLayout(false);
             this.jour17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro17)).EndInit();
             this.jour34.ResumeLayout(false);
             this.jour34.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro34)).EndInit();
             this.jour7.ResumeLayout(false);
             this.jour7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro7)).EndInit();
             this.jour31.ResumeLayout(false);
             this.jour31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro31)).EndInit();
             this.jour16.ResumeLayout(false);
             this.jour16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro16)).EndInit();
             this.jour6.ResumeLayout(false);
             this.jour6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro6)).EndInit();
             this.jour13.ResumeLayout(false);
             this.jour13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro13)).EndInit();
             this.jour3.ResumeLayout(false);
             this.jour3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro3)).EndInit();
             this.jour15.ResumeLayout(false);
             this.jour15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro15)).EndInit();
             this.jour5.ResumeLayout(false);
             this.jour5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro5)).EndInit();
             this.jour12.ResumeLayout(false);
             this.jour12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro12)).EndInit();
             this.jour14.ResumeLayout(false);
             this.jour14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro14)).EndInit();
             this.jour2.ResumeLayout(false);
             this.jour2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro2)).EndInit();
             this.jour11.ResumeLayout(false);
             this.jour11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro11)).EndInit();
             this.jour4.ResumeLayout(false);
             this.jour4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.astro4)).EndInit();
             this.jour1.ResumeLayout(false);
             this.jour1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astro1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recherche)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.h24img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.modifAstro)).EndInit();
@@ -4158,56 +4115,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.h1img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.h0img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.map)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro50)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro49)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro48)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro46)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro44)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.astro1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.suivant)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.precedent)).EndInit();
             this.ResumeLayout(false);
@@ -4472,12 +4379,5 @@
         private System.Windows.Forms.Timer timerMinute;
         private System.Windows.Forms.PictureBox recherche;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label X;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label Reduire;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
     }
 }

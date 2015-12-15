@@ -121,41 +121,38 @@
   <data name="Modify" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Ressources\Images\Modify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="astronaut16px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\astronaut16px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="vehicle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\vehicle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\Plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_small_Mars1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Icônes\icon_small_Mars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="smallcross" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\smallcross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\add30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="astronaute" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\astronaute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="map1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="smallpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\smallpen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_Big_Mars" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\icon_Big_Mars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="scaphandre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\Images\scaphandre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Supprimer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Ressources\Images\Supprimer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_50px_Mars" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\icon_50px_Mars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="smallcross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smallcross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="map-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\Images\map-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minipen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minipen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="astronaute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\Images\astronaute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_Mars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\Icônes\logo_Mars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smallpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smallpen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Carte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\Images\Carte.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="petitmap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\Images\petitmap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="map1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\Images\map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="next" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Ressources\Images\next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,37 +163,37 @@
   <data name="previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Ressources\Images\previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="scaphandre" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\scaphandre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="astronaut16px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\Images\astronaut16px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="grosseLoupe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\grosseLoupe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\grosseLoupe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\pen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_small_Mars" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\icon_small_Mars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo_Mars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="logo_Mars1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Ressources\Icônes\logo_Mars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Carte" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\Carte.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_small_Mars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\Icônes\icon_small_Mars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\Images\Plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Loupe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Ressources\Images\Loupe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vehicle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\Images\vehicle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="map50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Ressources\Images\map50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minipen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ressources\Images\minipen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ressources\Images\add30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

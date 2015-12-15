@@ -300,16 +300,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MarsIcone.ico" />
-    <None Include="Ressources\Images\pen.png" />
-    <None Include="Ressources\Images\grosseLoupe.png" />
-    <None Include="Ressources\Images\left.png" />
-    <None Include="Ressources\Images\right.png" />
-    <None Include="Ressources\Images\delete96.png" />
     <None Include="Ressources\Images\add30.png" />
-    <None Include="Ressources\Images\icon_50px_Mars.png" />
+    <None Include="Ressources\Images\delete96.png" />
+    <None Include="Ressources\Images\petitmap.png" />
     <None Include="Ressources\Icônes\icon_small_Mars.png" />
-    <None Include="Ressources\Images\icon_small_Mars.png" />
-    <None Include="Ressources\Images\icon_Big_Mars.png" />
+    <None Include="Ressources\Images\map-icon.png" />
+    <None Include="Resources\grosseLoupe.png" />
+    <None Include="Resources\minipen.png" />
+    <None Include="Resources\smallpen.png" />
+    <None Include="Resources\smallcross.png" />
+    <None Include="Resources\right.png" />
+    <None Include="Resources\left.png" />
     <None Include="Ressources\Images\Supprimer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
