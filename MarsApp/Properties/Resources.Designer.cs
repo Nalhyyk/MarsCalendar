@@ -63,6 +63,16 @@ namespace MarsApp.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add30 {
+            get {
+                object obj = ResourceManager.GetObject("add30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap astronaut16px {
             get {
                 object obj = ResourceManager.GetObject("astronaut16px", resourceCulture);
@@ -86,6 +96,26 @@ namespace MarsApp.Properties {
         internal static System.Drawing.Bitmap Carte {
             get {
                 object obj = ResourceManager.GetObject("Carte", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete96 {
+            get {
+                object obj = ResourceManager.GetObject("delete96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_50px_Mars {
+            get {
+                object obj = ResourceManager.GetObject("icon_50px_Mars", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

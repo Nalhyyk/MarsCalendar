@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
+using System.Runtime.InteropServices;
 
 namespace MarsApp
 {
@@ -17,6 +18,12 @@ namespace MarsApp
     {
         private String marsOMatic;
         private String activitesRefs;
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
 
         #region Constructeurs
         /// <summary>
@@ -37,7 +44,7 @@ namespace MarsApp
         private void button1_Click(object sender, EventArgs e)
         {
             DateTime picker = dateTimePicker1.Value;
-            DateTime dt = new DateTime(picker.Year, picker.Month, picker.Day, (int) heures.Value, (int) minutes.Value, 0);
+            DateTime dt = new DateTime(picker.Year, picker.Month, picker.Day, (int)heures.Value, (int)minutes.Value, 0);
 
             if (dt > DateTime.Now)
             {
@@ -110,9 +117,9 @@ namespace MarsApp
                 int heures = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Heures").InnerText);
                 int minutes = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Minutes").InnerText);
                 int secondes = int.Parse(mars.SelectSingleNode("Donnees").SelectSingleNode("DebutMission").SelectSingleNode("Secondes").InnerText);
-                
+
                 DateTime debutMission = new DateTime(annee, mois, jour, heures, minutes, secondes);
-                
+
                 if (debutMission > DateTime.Now)
                 {
                     erreurDate.Text = "La date de début de mission ne peut pas être supérieure à la date actuelle";
@@ -126,20 +133,78 @@ namespace MarsApp
             }
         }
 
-        private void x_Click(object sender, EventArgs e)
-        {
-            fermerApplication();
-        }
-
-        private void reduire_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Permet de réduire la fenêtre en cours
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
+        private void Reduire_Click(object sender, EventArgs e)
         {
             reduireFenetre();
         }
 
-        private void agrandir_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Permet de fermer l'application
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
+        private void X_Click(object sender, EventArgs e)
         {
-            agrandirFenetre();
+            fermerApplication();
         }
+
+        /// <summary>
+        /// Permet de déplacer la fenêtre par la zone du haut
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+        }
+
+        /// <summary>
+        /// Permet de modifier la couleur du bouton lors du survol
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
+        private void Reduire_MouseHover(object sender, EventArgs e)
+        {
+            Reduire.BackColor = System.Drawing.Color.FromArgb(0, 148, 241);
+        }
+
+        /// <summary>
+        /// Permet de revenir à l'état de base après le survol
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
+        private void Reduire_MouseLeave(object sender, EventArgs e)
+        {
+            Reduire.BackColor = System.Drawing.Color.FromArgb(17, 19, 23);
+        }
+
+        /// <summary>
+        /// Permet de modifier la couleur du bouton lors du survol
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
+        private void X_MouseHover(object sender, EventArgs e)
+        {
+            X.BackColor = System.Drawing.Color.FromArgb(0, 148, 241);
+        }
+
+        /// <summary>
+        /// Permet de revenir à l'état de base après le survol
+        /// </summary>
+        /// <param name="sender">Objet source</param>
+        /// <param name="e">Evènement</param>
+        private void X_MouseLeave(object sender, EventArgs e)
+        {
+            X.BackColor = System.Drawing.Color.FromArgb(17, 19, 23);
+        }
+
+
         #endregion
     }
 }

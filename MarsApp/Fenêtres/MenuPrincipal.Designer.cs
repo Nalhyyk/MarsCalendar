@@ -62,12 +62,12 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkGray;
-            this.label5.Location = new System.Drawing.Point(485, 59);
+            this.label5.Location = new System.Drawing.Point(501, 56);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(168, 20);
+            this.label5.Size = new System.Drawing.Size(171, 23);
             this.label5.TabIndex = 6;
             this.label5.Text = "Le calendrier martien";
             // 
@@ -256,12 +256,13 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Font = new System.Drawing.Font("Verdana", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label4.Location = new System.Drawing.Point(361, 5);
+            this.label4.Location = new System.Drawing.Point(343, 1);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(305, 58);
+            this.label4.Size = new System.Drawing.Size(340, 60);
             this.label4.TabIndex = 5;
             this.label4.Text = "Mars\'o\'matic";
             // 
@@ -277,6 +278,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1006, 89);
             this.panel1.TabIndex = 10;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // Reduire
             // 
@@ -291,7 +293,9 @@
             this.Reduire.TabIndex = 9;
             this.Reduire.Text = "-";
             this.Reduire.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Reduire.Click += new System.EventHandler(this.reduire_Click);
+            this.Reduire.Click += new System.EventHandler(this.Reduire_Click);
+            this.Reduire.MouseLeave += new System.EventHandler(this.Reduire_MouseLeave);
+            this.Reduire.MouseHover += new System.EventHandler(this.Reduire_MouseHover);
             // 
             // X
             // 
@@ -306,7 +310,9 @@
             this.X.TabIndex = 8;
             this.X.Text = "X";
             this.X.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.X.Click += new System.EventHandler(this.x_Click);
+            this.X.Click += new System.EventHandler(this.X_Click);
+            this.X.MouseLeave += new System.EventHandler(this.X_MouseLeave);
+            this.X.MouseHover += new System.EventHandler(this.X_MouseHover);
             // 
             // pictureBox1
             // 
