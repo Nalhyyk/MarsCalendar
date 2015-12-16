@@ -51,12 +51,12 @@
             this.lieuGB = new System.Windows.Forms.GroupBox();
             this.lieuTB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.transportGB = new System.Windows.Forms.GroupBox();
             this.vehiculeRadio = new System.Windows.Forms.RadioButton();
             this.scaphandreRadio = new System.Windows.Forms.RadioButton();
             this.supprimerTA = new System.Windows.Forms.PictureBox();
             this.ajoutTA = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.activiteExterieureGB.SuspendLayout();
             this.temps.SuspendLayout();
@@ -66,20 +66,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.debutHeure)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.lieuGB.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.transportGB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.supprimerTA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ajoutTA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // treeView
             // 
             this.treeView.AllowDrop = true;
             this.treeView.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.treeView.Location = new System.Drawing.Point(17, 16);
-            this.treeView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.treeView.Location = new System.Drawing.Point(13, 13);
             this.treeView.Name = "treeView";
-            this.treeView.Size = new System.Drawing.Size(307, 626);
+            this.treeView.Size = new System.Drawing.Size(231, 509);
             this.treeView.TabIndex = 0;
             // 
             // annuler
@@ -88,10 +87,9 @@
             this.annuler.FlatAppearance.BorderSize = 0;
             this.annuler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.annuler.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.annuler.Location = new System.Drawing.Point(595, 650);
-            this.annuler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.annuler.Location = new System.Drawing.Point(446, 528);
             this.annuler.Name = "annuler";
-            this.annuler.Size = new System.Drawing.Size(100, 28);
+            this.annuler.Size = new System.Drawing.Size(75, 23);
             this.annuler.TabIndex = 1;
             this.annuler.Text = "Annuler";
             this.annuler.UseVisualStyleBackColor = false;
@@ -103,10 +101,9 @@
             this.ok.FlatAppearance.BorderSize = 0;
             this.ok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ok.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.ok.Location = new System.Drawing.Point(437, 651);
-            this.ok.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ok.Location = new System.Drawing.Point(328, 529);
             this.ok.Name = "ok";
-            this.ok.Size = new System.Drawing.Size(100, 28);
+            this.ok.Size = new System.Drawing.Size(75, 23);
             this.ok.TabIndex = 2;
             this.ok.Text = "OK";
             this.ok.UseVisualStyleBackColor = false;
@@ -116,10 +113,9 @@
             // 
             this.interieurRadio.AutoSize = true;
             this.interieurRadio.Checked = true;
-            this.interieurRadio.Location = new System.Drawing.Point(11, 23);
-            this.interieurRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.interieurRadio.Location = new System.Drawing.Point(8, 19);
             this.interieurRadio.Name = "interieurRadio";
-            this.interieurRadio.Size = new System.Drawing.Size(81, 21);
+            this.interieurRadio.Size = new System.Drawing.Size(63, 17);
             this.interieurRadio.TabIndex = 3;
             this.interieurRadio.TabStop = true;
             this.interieurRadio.Text = "Intérieur";
@@ -128,10 +124,9 @@
             // exterieurRadio
             // 
             this.exterieurRadio.AutoSize = true;
-            this.exterieurRadio.Location = new System.Drawing.Point(104, 23);
-            this.exterieurRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.exterieurRadio.Location = new System.Drawing.Point(78, 19);
             this.exterieurRadio.Name = "exterieurRadio";
-            this.exterieurRadio.Size = new System.Drawing.Size(85, 21);
+            this.exterieurRadio.Size = new System.Drawing.Size(66, 17);
             this.exterieurRadio.TabIndex = 4;
             this.exterieurRadio.Text = "Extérieur";
             this.exterieurRadio.UseVisualStyleBackColor = true;
@@ -143,11 +138,9 @@
             this.groupBox1.Controls.Add(this.exterieurRadio);
             this.groupBox1.Controls.Add(this.interieurRadio);
             this.groupBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox1.Location = new System.Drawing.Point(333, 16);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(250, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(204, 58);
+            this.groupBox1.Size = new System.Drawing.Size(153, 47);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Localisation";
@@ -159,11 +152,9 @@
             this.activiteExterieureGB.Controls.Add(this.experienceRadio);
             this.activiteExterieureGB.Enabled = false;
             this.activiteExterieureGB.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.activiteExterieureGB.Location = new System.Drawing.Point(545, 16);
-            this.activiteExterieureGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.activiteExterieureGB.Location = new System.Drawing.Point(409, 13);
             this.activiteExterieureGB.Name = "activiteExterieureGB";
-            this.activiteExterieureGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.activiteExterieureGB.Size = new System.Drawing.Size(237, 58);
+            this.activiteExterieureGB.Size = new System.Drawing.Size(178, 47);
             this.activiteExterieureGB.TabIndex = 6;
             this.activiteExterieureGB.TabStop = false;
             this.activiteExterieureGB.Text = "Activité extérieure";
@@ -171,10 +162,9 @@
             // explorationRadio
             // 
             this.explorationRadio.AutoSize = true;
-            this.explorationRadio.Location = new System.Drawing.Point(123, 23);
-            this.explorationRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.explorationRadio.Location = new System.Drawing.Point(92, 19);
             this.explorationRadio.Name = "explorationRadio";
-            this.explorationRadio.Size = new System.Drawing.Size(99, 21);
+            this.explorationRadio.Size = new System.Drawing.Size(77, 17);
             this.explorationRadio.TabIndex = 1;
             this.explorationRadio.TabStop = true;
             this.explorationRadio.Text = "Exploration";
@@ -184,10 +174,9 @@
             // 
             this.experienceRadio.AutoSize = true;
             this.experienceRadio.Checked = true;
-            this.experienceRadio.Location = new System.Drawing.Point(9, 23);
-            this.experienceRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.experienceRadio.Location = new System.Drawing.Point(7, 19);
             this.experienceRadio.Name = "experienceRadio";
-            this.experienceRadio.Size = new System.Drawing.Size(99, 21);
+            this.experienceRadio.Size = new System.Drawing.Size(78, 17);
             this.experienceRadio.TabIndex = 0;
             this.experienceRadio.TabStop = true;
             this.experienceRadio.Text = "Expérience";
@@ -204,11 +193,9 @@
             this.temps.Controls.Add(this.label2);
             this.temps.Controls.Add(this.label1);
             this.temps.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.temps.Location = new System.Drawing.Point(333, 150);
-            this.temps.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.temps.Location = new System.Drawing.Point(250, 122);
             this.temps.Name = "temps";
-            this.temps.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.temps.Size = new System.Drawing.Size(448, 156);
+            this.temps.Size = new System.Drawing.Size(336, 127);
             this.temps.TabIndex = 7;
             this.temps.TabStop = false;
             this.temps.Text = "Durée activité";
@@ -217,10 +204,9 @@
             // 
             this.errDuree.AutoSize = true;
             this.errDuree.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.errDuree.Location = new System.Drawing.Point(61, 125);
-            this.errDuree.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.errDuree.Location = new System.Drawing.Point(46, 102);
             this.errDuree.Name = "errDuree";
-            this.errDuree.Size = new System.Drawing.Size(340, 17);
+            this.errDuree.Size = new System.Drawing.Size(253, 13);
             this.errDuree.TabIndex = 10;
             this.errDuree.Text = "La durée de l\'activité doit être d\'au moins 10 minutes";
             this.errDuree.Visible = false;
@@ -233,15 +219,14 @@
             0,
             0,
             0});
-            this.finMinute.Location = new System.Drawing.Point(248, 90);
-            this.finMinute.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.finMinute.Location = new System.Drawing.Point(186, 73);
             this.finMinute.Maximum = new decimal(new int[] {
             59,
             0,
             0,
             0});
             this.finMinute.Name = "finMinute";
-            this.finMinute.Size = new System.Drawing.Size(107, 22);
+            this.finMinute.Size = new System.Drawing.Size(80, 20);
             this.finMinute.TabIndex = 9;
             this.finMinute.ValueChanged += new System.EventHandler(this.duree_ValueChanged);
             // 
@@ -253,65 +238,60 @@
             0,
             0,
             0});
-            this.debutMinute.Location = new System.Drawing.Point(248, 41);
-            this.debutMinute.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.debutMinute.Location = new System.Drawing.Point(186, 33);
             this.debutMinute.Maximum = new decimal(new int[] {
             59,
             0,
             0,
             0});
             this.debutMinute.Name = "debutMinute";
-            this.debutMinute.Size = new System.Drawing.Size(107, 22);
+            this.debutMinute.Size = new System.Drawing.Size(80, 20);
             this.debutMinute.TabIndex = 8;
             this.debutMinute.ValueChanged += new System.EventHandler(this.duree_ValueChanged);
             // 
             // finHeure
             // 
             this.finHeure.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.finHeure.Location = new System.Drawing.Point(133, 90);
-            this.finHeure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.finHeure.Location = new System.Drawing.Point(100, 73);
             this.finHeure.Maximum = new decimal(new int[] {
             24,
             0,
             0,
             0});
             this.finHeure.Name = "finHeure";
-            this.finHeure.Size = new System.Drawing.Size(107, 22);
+            this.finHeure.Size = new System.Drawing.Size(80, 20);
             this.finHeure.TabIndex = 7;
             this.finHeure.ValueChanged += new System.EventHandler(this.duree_ValueChanged);
             // 
             // debutHeure
             // 
             this.debutHeure.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.debutHeure.Location = new System.Drawing.Point(133, 41);
-            this.debutHeure.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.debutHeure.Location = new System.Drawing.Point(100, 33);
             this.debutHeure.Maximum = new decimal(new int[] {
             24,
             0,
             0,
             0});
             this.debutHeure.Name = "debutHeure";
-            this.debutHeure.Size = new System.Drawing.Size(107, 22);
+            this.debutHeure.Size = new System.Drawing.Size(80, 20);
             this.debutHeure.TabIndex = 6;
             this.debutHeure.ValueChanged += new System.EventHandler(this.duree_ValueChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 90);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(7, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 17);
+            this.label2.Size = new System.Drawing.Size(71, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Heure de fin :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 41);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(7, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 17);
+            this.label1.Size = new System.Drawing.Size(87, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Heure de début :";
             // 
@@ -320,11 +300,9 @@
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(43)))), ((int)(((byte)(54)))));
             this.groupBox2.Controls.Add(this.descriptionTB);
             this.groupBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox2.Location = new System.Drawing.Point(335, 434);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(251, 353);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(448, 208);
+            this.groupBox2.Size = new System.Drawing.Size(336, 169);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Description";
@@ -332,11 +310,10 @@
             // descriptionTB
             // 
             this.descriptionTB.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.descriptionTB.Location = new System.Drawing.Point(12, 25);
-            this.descriptionTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.descriptionTB.Location = new System.Drawing.Point(9, 20);
             this.descriptionTB.Multiline = true;
             this.descriptionTB.Name = "descriptionTB";
-            this.descriptionTB.Size = new System.Drawing.Size(423, 175);
+            this.descriptionTB.Size = new System.Drawing.Size(318, 143);
             this.descriptionTB.TabIndex = 0;
             // 
             // lieuGB
@@ -347,11 +324,9 @@
             this.lieuGB.Controls.Add(this.pictureBox1);
             this.lieuGB.Enabled = false;
             this.lieuGB.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lieuGB.Location = new System.Drawing.Point(335, 327);
-            this.lieuGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lieuGB.Location = new System.Drawing.Point(251, 266);
             this.lieuGB.Name = "lieuGB";
-            this.lieuGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lieuGB.Size = new System.Drawing.Size(448, 89);
+            this.lieuGB.Size = new System.Drawing.Size(336, 72);
             this.lieuGB.TabIndex = 9;
             this.lieuGB.TabStop = false;
             this.lieuGB.Text = "Lieu";
@@ -359,22 +334,32 @@
             // lieuTB
             // 
             this.lieuTB.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.lieuTB.Location = new System.Drawing.Point(132, 37);
-            this.lieuTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lieuTB.Location = new System.Drawing.Point(99, 30);
             this.lieuTB.Name = "lieuTB";
-            this.lieuTB.Size = new System.Drawing.Size(228, 22);
+            this.lieuTB.Size = new System.Drawing.Size(172, 20);
             this.lieuTB.TabIndex = 2;
             this.lieuTB.Text = "0;0";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 41);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(6, 33);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 17);
+            this.label3.Size = new System.Drawing.Size(76, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Coordonnées :";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::MarsApp.Properties.Resources.petitmap;
+            this.pictureBox1.Location = new System.Drawing.Point(276, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Size = new System.Drawing.Size(56, 51);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // transportGB
             // 
@@ -383,11 +368,9 @@
             this.transportGB.Controls.Add(this.scaphandreRadio);
             this.transportGB.Enabled = false;
             this.transportGB.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.transportGB.Location = new System.Drawing.Point(545, 81);
-            this.transportGB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.transportGB.Location = new System.Drawing.Point(409, 66);
             this.transportGB.Name = "transportGB";
-            this.transportGB.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.transportGB.Size = new System.Drawing.Size(237, 58);
+            this.transportGB.Size = new System.Drawing.Size(178, 47);
             this.transportGB.TabIndex = 7;
             this.transportGB.TabStop = false;
             this.transportGB.Text = "Transport";
@@ -395,10 +378,9 @@
             // vehiculeRadio
             // 
             this.vehiculeRadio.AutoSize = true;
-            this.vehiculeRadio.Location = new System.Drawing.Point(123, 23);
-            this.vehiculeRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.vehiculeRadio.Location = new System.Drawing.Point(92, 19);
             this.vehiculeRadio.Name = "vehiculeRadio";
-            this.vehiculeRadio.Size = new System.Drawing.Size(83, 21);
+            this.vehiculeRadio.Size = new System.Drawing.Size(66, 17);
             this.vehiculeRadio.TabIndex = 1;
             this.vehiculeRadio.TabStop = true;
             this.vehiculeRadio.Text = "Véhicule";
@@ -408,10 +390,9 @@
             // 
             this.scaphandreRadio.AutoSize = true;
             this.scaphandreRadio.Checked = true;
-            this.scaphandreRadio.Location = new System.Drawing.Point(9, 23);
-            this.scaphandreRadio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.scaphandreRadio.Location = new System.Drawing.Point(7, 19);
             this.scaphandreRadio.Name = "scaphandreRadio";
-            this.scaphandreRadio.Size = new System.Drawing.Size(106, 21);
+            this.scaphandreRadio.Size = new System.Drawing.Size(83, 17);
             this.scaphandreRadio.TabIndex = 0;
             this.scaphandreRadio.TabStop = true;
             this.scaphandreRadio.Text = "Scaphandre";
@@ -419,45 +400,34 @@
             // 
             // supprimerTA
             // 
+            this.supprimerTA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.supprimerTA.Image = global::MarsApp.Properties.Resources.delete96;
-            this.supprimerTA.Location = new System.Drawing.Point(176, 650);
-            this.supprimerTA.Margin = new System.Windows.Forms.Padding(4);
+            this.supprimerTA.Location = new System.Drawing.Point(125, 528);
             this.supprimerTA.Name = "supprimerTA";
-            this.supprimerTA.Padding = new System.Windows.Forms.Padding(4);
-            this.supprimerTA.Size = new System.Drawing.Size(32, 34);
+            this.supprimerTA.Padding = new System.Windows.Forms.Padding(3);
+            this.supprimerTA.Size = new System.Drawing.Size(30, 28);
             this.supprimerTA.TabIndex = 192;
             this.supprimerTA.TabStop = false;
             this.supprimerTA.Click += new System.EventHandler(this.supprimerTA_Click);
             // 
             // ajoutTA
             // 
+            this.ajoutTA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ajoutTA.Image = global::MarsApp.Properties.Resources.add30;
-            this.ajoutTA.Location = new System.Drawing.Point(115, 649);
-            this.ajoutTA.Margin = new System.Windows.Forms.Padding(4);
+            this.ajoutTA.Location = new System.Drawing.Point(90, 528);
             this.ajoutTA.Name = "ajoutTA";
-            this.ajoutTA.Padding = new System.Windows.Forms.Padding(4);
-            this.ajoutTA.Size = new System.Drawing.Size(33, 34);
+            this.ajoutTA.Padding = new System.Windows.Forms.Padding(3);
+            this.ajoutTA.Size = new System.Drawing.Size(29, 29);
             this.ajoutTA.TabIndex = 191;
             this.ajoutTA.TabStop = false;
             this.ajoutTA.Click += new System.EventHandler(this.ajoutTA_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MarsApp.Properties.Resources.petitmap;
-            this.pictureBox1.Location = new System.Drawing.Point(385, 23);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(55, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // ModificationActivite
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(19)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(807, 692);
+            this.ClientSize = new System.Drawing.Size(605, 562);
             this.Controls.Add(this.supprimerTA);
             this.Controls.Add(this.ajoutTA);
             this.Controls.Add(this.transportGB);
@@ -470,7 +440,7 @@
             this.Controls.Add(this.annuler);
             this.Controls.Add(this.treeView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ModificationActivite";
             this.Text = "Modification de l\'activité";
             this.groupBox1.ResumeLayout(false);
@@ -487,11 +457,11 @@
             this.groupBox2.PerformLayout();
             this.lieuGB.ResumeLayout(false);
             this.lieuGB.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.transportGB.ResumeLayout(false);
             this.transportGB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.supprimerTA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ajoutTA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
