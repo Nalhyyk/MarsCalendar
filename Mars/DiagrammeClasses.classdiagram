@@ -624,12 +624,12 @@
               <associationHasOwnedEnds>
                 <memberEnd Id="5f72b597-a49a-4c75-8611-811aee14ea8e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
                   <lowerValueInternal>
-                    <literalString Id="19dcdf59-5c08-4703-90a2-4d58f6db959c" name="Lower" value="*">
+                    <literalString Id="19dcdf59-5c08-4703-90a2-4d58f6db959c" name="Lower" value="1">
                       <elementDefinition Id="551aef0b-8bbc-4e1d-945d-41d4ae207152" />
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="f5371e90-048c-4a45-b1d0-7837120a5488" name="Upper" value="*">
+                    <literalString Id="f5371e90-048c-4a45-b1d0-7837120a5488" name="Upper" value="1">
                       <elementDefinition Id="8b10ccdb-88f2-4057-b949-95348add7022" />
                     </literalString>
                   </upperValueInternal>
@@ -639,12 +639,12 @@
               <associationHasOwnedEnds>
                 <memberEnd Id="720b670d-7b5b-4362-88fc-d97bcdb83f1c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
                   <lowerValueInternal>
-                    <literalString Id="5ed7350f-c3f6-486c-b808-57c7c6b4aef4" name="Lower" value="1">
+                    <literalString Id="5ed7350f-c3f6-486c-b808-57c7c6b4aef4" name="Lower" value="*">
                       <elementDefinition Id="7f7747bd-5cfd-4aa2-a3c7-dfd5e135f697" />
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="b6b64f21-6034-4c65-9de2-e988c58892c4" name="Upper" value="1">
+                    <literalString Id="b6b64f21-6034-4c65-9de2-e988c58892c4" name="Upper" value="*">
                       <elementDefinition Id="7a7c1ae0-6c2c-4710-8ced-6e2576dfdcd9" />
                     </literalString>
                   </upperValueInternal>
@@ -1118,12 +1118,12 @@
               <associationHasOwnedEnds>
                 <memberEnd Id="35e76268-0dea-41d3-9840-f8e1f0eba425" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
                   <lowerValueInternal>
-                    <literalString Id="105255d3-b513-454c-8613-2884f6b1c9ae" name="Lower" value="*">
+                    <literalString Id="105255d3-b513-454c-8613-2884f6b1c9ae" name="Lower" value="1">
                       <elementDefinition Id="00da1fa5-b65d-4816-969c-d1458dfe8d1e" />
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="730c3b85-7dfe-494a-ab1c-728c3b38fc6e" name="Upper" value="*">
+                    <literalString Id="730c3b85-7dfe-494a-ab1c-728c3b38fc6e" name="Upper" value="1">
                       <elementDefinition Id="dd8ccd6f-4eb5-4722-af98-c6e3cee405df" />
                     </literalString>
                   </upperValueInternal>
@@ -1133,12 +1133,12 @@
               <associationHasOwnedEnds>
                 <memberEnd Id="18cfca15-3a50-45fc-bb67-903881377d37" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
                   <lowerValueInternal>
-                    <literalString Id="1da609dc-3fa6-4c78-910e-793b2f482bb5" name="Lower" value="1">
+                    <literalString Id="1da609dc-3fa6-4c78-910e-793b2f482bb5" name="Lower" value="*">
                       <elementDefinition Id="335b66b0-daf4-4100-acb0-d494605a54e7" />
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="2938a59d-7104-4850-9b45-79220b3fe971" name="Upper" value="1">
+                    <literalString Id="2938a59d-7104-4850-9b45-79220b3fe971" name="Upper" value="*">
                       <elementDefinition Id="d36b674f-b5c3-45ea-8fce-92fefc0db4e5" />
                     </literalString>
                   </upperValueInternal>
@@ -1381,12 +1381,12 @@
               <associationHasOwnedEnds>
                 <memberEnd Id="602ad976-3415-41c2-bae7-6e4c718d1b7b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
                   <lowerValueInternal>
-                    <literalString Id="bdc6d054-2da5-4e66-a742-83dd503aebba" name="Lower" value="*">
+                    <literalString Id="bdc6d054-2da5-4e66-a742-83dd503aebba" name="Lower" value="1">
                       <elementDefinition Id="465b8798-ee1a-40d6-b308-b01e83eeefc0" />
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="b23b774c-10cb-4850-8212-bca982d468ad" name="Upper" value="*">
+                    <literalString Id="b23b774c-10cb-4850-8212-bca982d468ad" name="Upper" value="1">
                       <elementDefinition Id="d5843faa-e8c5-4eff-a193-3972a915f0d2" />
                     </literalString>
                   </upperValueInternal>
@@ -1396,12 +1396,12 @@
               <associationHasOwnedEnds>
                 <memberEnd Id="0dd62c5a-ab7b-43fe-848b-4bbbb19fcfa2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
                   <lowerValueInternal>
-                    <literalString Id="68a4c708-038d-416b-b064-e13e1f5f4874" name="Lower" value="1">
+                    <literalString Id="68a4c708-038d-416b-b064-e13e1f5f4874" name="Lower" value="*">
                       <elementDefinition Id="51c29b82-a074-4754-b816-7ddc4f0f1580" />
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="19eae424-176b-4dec-a91c-471f2d1cfcf5" name="Upper" value="1">
+                    <literalString Id="19eae424-176b-4dec-a91c-471f2d1cfcf5" name="Upper" value="*">
                       <elementDefinition Id="3a66aaa6-dcdc-4d9f-9a35-0b8b155c39b8" />
                     </literalString>
                   </upperValueInternal>
